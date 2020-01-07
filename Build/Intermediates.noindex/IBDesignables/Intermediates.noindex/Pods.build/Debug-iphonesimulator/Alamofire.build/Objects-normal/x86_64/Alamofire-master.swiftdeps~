@@ -1,0 +1,21 @@
+version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
+options: "ecc55d524cee8dc7a510fbe79117133b"
+build_time: [1577126804, 978225000]
+inputs:
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/AFError.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/Alamofire.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/MultipartFormData.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/NetworkReachabilityManager.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/Notifications.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/ParameterEncoding.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/Request.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/Response.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/ResponseSerialization.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/Result.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/ServerTrustPolicy.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/SessionDelegate.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/SessionManager.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/TaskDelegate.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/Timeline.swift": [1565367988, 0]
+  "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/Validation.swift": [1565367988, 0]

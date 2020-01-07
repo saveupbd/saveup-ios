@@ -1,0 +1,6 @@
+framework module Pods_LeUITests {
+  umbrella header "Pods-LeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
