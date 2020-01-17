@@ -289,7 +289,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         
         var postString = ""
         if let tempUserID = UserDefaults.standard.object(forKey: "UserID"){
-            postString = "otp_code=\(self.otpCode!)&user_id=\(tempUserID)&merchant_id=37"
+            postString = "otp_code=\(self.otpCode!)&user_id=\(tempUserID)&merchant_id=\(self.otpMerchantId!)"
         }else{
             postString = "otp_code=\(self.otpCode!)&merchant_id=37"
         }
@@ -369,8 +369,10 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         var request = URLRequest(url:myUrl!)
         request.httpMethod = "POST";
         var postString = ""
+        let merID = UserDefaults.standard.object(forKey: "merchant_id") as! String
+        let finalMerchantId = Int(merID)
         if let tempUserID = UserDefaults.standard.object(forKey: "UserID"){
-            postString = "amount=30&user_id=\(tempUserID)&merchant_id=37&product_id=\(product_id!)"
+            postString = "amount=30&user_id=\(tempUserID)&merchant_id=\(finalMerchantId!)&product_id=\(product_id!)"
         }else{
             postString = "product_id=\(product_id!)&amount=\(product_size_id!)&merchantId=\(product_color_id!)"
         }
