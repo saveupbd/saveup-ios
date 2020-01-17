@@ -23,10 +23,10 @@ class Popular: NSObject {
         
         self.product_id = String(Popular["product_id"] as! NSInteger)
         self.product_title = Popular["product_title"] as? String
-        self.product_price = String(Popular["product_price"] as! String)
+        self.product_price = String(Popular["product_price"] as! NSInteger)
         self.product_image = Popular["product_image"] as? String
         self.currency_symbol = Popular["currency_symbol"] as? String
-        self.product_discount_price = String(Popular["product_discount_price"] as! String)
+        self.product_discount_price = String(Popular["product_discount_price"] as! NSInteger)
         self.product_percentage = String(Popular["product_percentage"] as! NSInteger)
         self.merchant_name = Popular["merchant_name"] as? String
     }

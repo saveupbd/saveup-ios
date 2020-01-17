@@ -281,6 +281,178 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         
     }
     
+    
+    func verifyOtp() {
+        let myUrl = URL(string: String(format:"%@api/order_otp_verified", Api_Base_URL));
+        var request = URLRequest(url:myUrl!)
+        request.httpMethod = "POST"
+        
+        var postString = ""
+        if let tempUserID = UserDefaults.standard.object(forKey: "UserID"){
+            postString = "otp_code=\(self.otpCode!)&user_id=\(tempUserID)&merchant_id=37"
+        }else{
+            postString = "otp_code=\(self.otpCode!)&merchant_id=37"
+        }
+        
+        request.httpBody = postString.data(using: String.Encoding.utf8);
+        
+        let task = URLSession.shared.dataTask(with: request, completionHandler: {
+            data, response, error in
+            
+            //Got response from server
+            DispatchQueue.main.async {
+                
+                if (error != nil) {
+                    
+                    self.view.hideToastActivity()
+                    return
+                }
+                do {
+                    let json =  try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
+                    //print("Here\(json!)")
+                    
+                    self.view.hideToastActivity()
+                    
+                    if let parseJSON = json {
+                        
+                        if parseJSON.object(forKey: "status") as! NSInteger == 200 {
+                            
+                            //         {"status":200,"message":"OTP Code Successfully Verified. Your payable amount TK 46","loyality_point":465,"total_loyality_point":1843}
+                            
+                            let mess = parseJSON.object(forKey: "message") as? String
+                            let point = parseJSON.object(forKey: "loyality_point") as? NSInteger
+                            let total_point = parseJSON.object(forKey: "total_loyality_point") as? NSInteger
+                            let alert = UIAlertController(title: "OTP Code", message: mess, preferredStyle: UIAlertController.Style.alert)
+                            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler:{ (ACTION :UIAlertAction!)in
+                                self.dismiss(animated: true, completion: nil)
+                                
+                            }))
+                            
+                            DispatchQueue.main.async {
+                                self.view.hideToastActivity()
+                                self.present(alert, animated: true, completion: nil)
+                            }
+                            
+                        }
+                        else {
+                            
+                            var style = ToastStyle()
+                            style.messageFont = messageFont!
+                            style.messageColor = UIColor.white
+                            style.messageAlignment = .center
+                            style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
+                            
+                            self.view.makeToast(parseJSON.object(forKey: "message") as! String, duration: 3.0, position: .center, style: style)
+                        }
+                    }
+                }
+                catch {
+                    
+                    //print(error)
+                    self.view.hideToastActivity()
+                }
+            }
+        })
+        task.resume()
+    }
+    
+    var otpMessage:String?
+    var otpCode:NSInteger?
+    var otpMerchantId:NSInteger?
+    
+    var otpTextField: UITextField?
+    
+    func payNowPressed() {
+        let myUrl = URL(string: String(format:"%@api/order_by_otp", Api_Base_URL));
+        //print(myUrl!)
+        
+        var request = URLRequest(url:myUrl!)
+        request.httpMethod = "POST";
+        var postString = ""
+        if let tempUserID = UserDefaults.standard.object(forKey: "UserID"){
+            postString = "amount=30&user_id=\(tempUserID)&merchant_id=37&product_id=\(product_id!)"
+        }else{
+            postString = "product_id=\(product_id!)&amount=\(product_size_id!)&merchantId=\(product_color_id!)"
+        }
+        
+        request.httpBody = postString.data(using: String.Encoding.utf8);
+        
+        let task = URLSession.shared.dataTask(with: request, completionHandler: {
+            data, response, error in
+            
+            //Got response from server
+            DispatchQueue.main.async {
+                
+                if (error != nil) {
+                    
+                    self.view.hideToastActivity()
+                    return
+                }
+                do {
+                    let json =  try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
+                    //print("Here\(json!)")
+                    
+                    self.view.hideToastActivity()
+                    
+                    if let parseJSON = json {
+                        
+                        if parseJSON.object(forKey: "status") as! NSInteger == 200 {
+                            DispatchQueue.main.async {
+                                self.otpMessage = parseJSON.object(forKey: "message") as? String
+                                //self.otpCode = parseJSON.object(forKey: "code") as? NSInteger
+                                self.otpMerchantId = parseJSON.object(forKey: "merchant_id") as? NSInteger
+                                let alert = UIAlertController(title: "OTP Code", message: self.otpMessage, preferredStyle: UIAlertController.Style.alert)
+                                
+                                alert.addTextField(configurationHandler: { (textField) in
+                                    //self.otpTextField = textField
+                                    textField.placeholder = "Enter OTP Here"
+                                    textField.keyboardType = .numberPad
+                                    if #available(iOS 12.0, *) {
+                                        textField.textContentType = .oneTimeCode
+                                    } else {
+                                        // Fallback on earlier versions
+                                    }
+                                })
+                                
+                                alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.cancel, handler:{ (ACTION :UIAlertAction!)in
+                                    self.dismiss(animated: true, completion: nil)
+                                    
+                                }))
+                                alert.addAction(UIAlertAction(title: "Proceed", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in
+                                    if let textField = alert.textFields?.first{
+                                        self.otpCode = Int(textField.text!)
+                                    }
+                                    //print(self.otpCode)
+                                    self.verifyOtp()
+                                }))
+                                
+                                self.view.hideToastActivity()
+                                self.present(alert, animated: true, completion: nil)
+                            }
+                            
+                        }
+                        else {
+                            
+                            var style = ToastStyle()
+                            style.messageFont = messageFont!
+                            style.messageColor = UIColor.white
+                            style.messageAlignment = .center
+                            style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
+                            
+                            self.view.makeToast(parseJSON.object(forKey: "message") as! String, duration: 3.0, position: .center, style: style)
+                        }
+                    }
+                }
+                catch {
+                    
+                    //print(error)
+                    self.view.hideToastActivity()
+                }
+            }
+        })
+        task.resume()
+    }
+    
     @IBAction func btnAddToCartPressed(_ sender: UIButton) {
         let reachability = Reachability()!
         
@@ -304,7 +476,8 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                     self.view.hideToastActivity()
                     return
                 }else{
-                    self.addcartApi()
+                    //self.addcartApi()
+                    self.payNowPressed()
                 }
             }
             
