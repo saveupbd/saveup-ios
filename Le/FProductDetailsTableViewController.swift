@@ -322,7 +322,9 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                             let mess = parseJSON.object(forKey: "message") as? String
                             let point = parseJSON.object(forKey: "loyality_point") as? NSInteger
                             let total_point = parseJSON.object(forKey: "total_loyality_point") as? NSInteger
-                            let alert = UIAlertController(title: "OTP Code", message: mess, preferredStyle: UIAlertController.Style.alert)
+                            let pointmessage = "You have got \(point!) points. Your total loyality point is \(total_point!)."
+                            
+                            let alert = UIAlertController(title: "OTP Code", message: mess! + ". " + pointmessage, preferredStyle: UIAlertController.Style.alert)
                             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.cancel, handler:{ (ACTION :UIAlertAction!)in
                                 self.dismiss(animated: true, completion: nil)
                                 
@@ -359,7 +361,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
     var otpMessage:String?
     var otpCode:NSInteger?
     var otpMerchantId:NSInteger?
-    
+    var otpAmount:NSInteger?
     var otpTextField: UITextField?
     
     func payNowPressed() {
@@ -372,7 +374,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         let merID = UserDefaults.standard.object(forKey: "merchant_id") as! String
         let finalMerchantId = Int(merID)
         if let tempUserID = UserDefaults.standard.object(forKey: "UserID"){
-            postString = "amount=30&user_id=\(tempUserID)&merchant_id=\(finalMerchantId!)&product_id=\(product_id!)"
+            postString = "amount=\(self.otpAmount!)&user_id=\(tempUserID)&merchant_id=\(finalMerchantId!)&product_id=\(product_id!)"
         }else{
             postString = "product_id=\(product_id!)&amount=\(product_size_id!)&merchantId=\(product_color_id!)"
         }
@@ -460,7 +462,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         
         if reachability.isReachable {
             self.view.hideToastActivity()
-            self.view.makeToastActivity(.center)
+            //self.view.makeToastActivity(.center)
             DispatchQueue.main.async {
                 if (UserDefaults.standard.object(forKey: "UserID") == nil){
                     let alert = UIAlertController(title: "Error", message: "You need to login to access this feature", preferredStyle: UIAlertController.Style.alert)
@@ -475,16 +477,34 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                         self.present(theViewController, animated: true, completion: nil)
                     }))
                     self.present(alert, animated: true, completion: nil)
-                    self.view.hideToastActivity()
+                    //self.view.hideToastActivity()
                     return
                 }else{
                     //self.addcartApi()
-                    self.payNowPressed()
+                    
+                    let alert = UIAlertController(title: "Payment", message: "Please enter amount to pay", preferredStyle: UIAlertController.Style.alert)
+                    
+                    alert.addTextField(configurationHandler: { (textField) in
+                        //self.otpTextField = textField
+                        textField.placeholder = "Enter amount Here"
+                        textField.keyboardType = .decimalPad
+                        
+                    })
+                    
+                    alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.cancel, handler:{ (ACTION :UIAlertAction!)in
+                        self.dismiss(animated: true, completion: nil)
+                        
+                    }))
+                    alert.addAction(UIAlertAction(title: "Proceed", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in
+                        if let textField = alert.textFields?.first{
+                            self.otpAmount = Int(textField.text!)
+                        }
+                        self.payNowPressed()
+                    }))
+                    self.present(alert, animated: true, completion: nil)
                 }
             }
-            
-        }
-        else {
+        }else {
             self.showNetworkErrorAlert()
         }
     }
