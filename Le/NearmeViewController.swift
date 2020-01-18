@@ -92,7 +92,14 @@ class NearmeViewController: UIViewController, MKMapViewDelegate, CLLocationManag
         print(currentLat)
         print(currentLong)
         
-        let postString = "user_id=\(UserDefaults.standard.object(forKey: "UserID")!)&latitude=\(currentLat)&longitude=\(currentLong)&lang=en)"//\(product_id!)
+        var postString = ""
+        if let tempUserID = UserDefaults.standard.object(forKey: "UserID"){
+            postString = "user_id=\(UserDefaults.standard.object(forKey: "UserID")!)&latitude=\(currentLat)&longitude=\(currentLong)&lang=en)"
+        }else{
+            postString = "latitude=\(currentLat)&longitude=\(currentLong)&lang=en)"
+        }
+        
+        //let postString = "user_id=\(UserDefaults.standard.object(forKey: "UserID")!)&latitude=\(currentLat)&longitude=\(currentLong)&lang=en)"//\(product_id!)
         
         
         //let postString = "user_id=\(UserDefaults.standard.object(forKey: "UserID")!)&latitude=23.788788&longitude=90.403445&lang=en)"//\(product_id!)
