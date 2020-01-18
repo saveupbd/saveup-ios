@@ -234,7 +234,12 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
         case 7:
             tableCell = tableView.dequeueReusableCell(withIdentifier: "FGiftDealsTableViewCell", for: indexPath) as! FGiftDealsTableViewCell
             if popularArray.count != 0 {
+                tableCell.textLabel?.numberOfLines = 2
                 tableCell.textLabel?.text = popularArray[indexPath.row].product_title
+                tableCell.detailTextLabel!.numberOfLines = 0
+                tableCell.detailTextLabel!.text = "\(popularArray[indexPath.row].merchant_name!)\n\("৳" + popularArray[indexPath.row].product_discount_price!)\n\(popularArray[indexPath.row].product_percentage! + "% off")"
+                tableCell.imageView?.kf.setImage(with: (StringToURL(text: popularArray[indexPath.row].product_image)))
+                tableCell.imageView?.image = tableCell.imageView?.image?.resized(toWidth:tableCell.contentView.bounds.width/3, height: tableCell.contentView.bounds.height - 2.0)
             }else{
                 tableCell.textLabel?.text = "No items available currently"
                 tableCell.textLabel?.textAlignment = .center
@@ -314,6 +319,13 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
             self.navigationController?.pushViewController(objProduct, animated: true)
             UserDefaults.standard.set(true, forKey: "giftButton")
             return
+        case 7:
+        let objProductDetails = self.storyboard?.instantiateViewController(withIdentifier: "FProductDetailsTableViewController") as! FProductDetailsTableViewController
+        objProductDetails.category_name = "Hot Deals"
+        UserDefaults.standard.set(popularArray[indexPath.row].product_id, forKey: "temp_pro_id")
+        objProductDetails.product_id = popularArray[indexPath.row].product_id
+        self.navigationController?.pushViewController(objProductDetails, animated: true)
+        return
         default:
             return
         }

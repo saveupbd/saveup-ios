@@ -321,7 +321,9 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                             
                             let mess = parseJSON.object(forKey: "message") as? String
                             let point = parseJSON.object(forKey: "loyality_point") as? NSInteger
+                            UserDefaults.standard.set(point, forKey: "loyality_point")
                             let total_point = parseJSON.object(forKey: "total_loyality_point") as? NSInteger
+                            UserDefaults.standard.set(total_point, forKey: "total_loyality_point")
                             let pointmessage = "You have got \(point!) points. Your total loyality point is \(total_point!)."
                             
                             let alert = UIAlertController(title: "OTP Code", message: mess! + ". " + pointmessage, preferredStyle: UIAlertController.Style.alert)
