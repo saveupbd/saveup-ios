@@ -24,8 +24,8 @@ class MyAccViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         self.profileOptionsTableView.tableFooterView = UIView()
-        profileOptionsArray = ["My Vouchers","My Cart","My Wishlist","Change Password"]
-        profileOptionsSubArray = ["Show Vouchers Bought","Show all cart items","Show all Wishlist items",""]
+        profileOptionsArray = ["My Vouchers"/*,"My Cart"*/,"My Wishlist","Change Password"]
+        profileOptionsSubArray = ["Show Vouchers Bought",/*"Show all cart items",*/"Show all Wishlist items",""]
         self.profileOptionsTableView.delegate = self
         self.profileOptionsTableView.dataSource = self
         
@@ -35,7 +35,7 @@ class MyAccViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         editButton.addTarget(self, action: #selector(self.editAction(_:)), for: UIControl.Event.touchUpInside)
         
         let rightButton = UIBarButtonItem(customView: editButton)
-        self.navigationItem.rightBarButtonItem = rightButton
+        //self.navigationItem.rightBarButtonItem = rightButton
         profileImg.layer.borderColor = UIColor.systemTeal.cgColor
         profileImg.layer.borderWidth = 0.5
         if reachability.isReachable {
@@ -165,16 +165,16 @@ class MyAccViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "MyOrdersViewController" ) as! MyOrdersViewController
             self.navigationController?.pushViewController(vc, animated: true)
             return
-        case 1://cart
-            let objMyCart = self.storyboard?.instantiateViewController(withIdentifier: "MyCartViewController") as! MyCartViewController
-            objMyCart.screen_value = ""
-            self.navigationController?.pushViewController(objMyCart, animated: true)
-            return
-        case 2://wishlist
+//        case 1://cart
+//            let objMyCart = self.storyboard?.instantiateViewController(withIdentifier: "MyCartViewController") as! MyCartViewController
+//            objMyCart.screen_value = ""
+//            self.navigationController?.pushViewController(objMyCart, animated: true)
+//            return
+        case 1://wishlist
             let objMyWishlist = self.storyboard?.instantiateViewController(withIdentifier: "FWishListTableViewController") as! FWishListTableViewController
             self.navigationController?.pushViewController(objMyWishlist, animated: true)
             return
-        case 3://change password
+        case 2://change password
             let objPassword = self.storyboard?.instantiateViewController(withIdentifier: "PasswordViewController") as! PasswordViewController
             self.navigationController?.pushViewController(objPassword, animated: true)
             return

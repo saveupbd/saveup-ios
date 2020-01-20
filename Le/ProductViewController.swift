@@ -283,7 +283,7 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
         cartButton.badgeTextColor = UIColor.white
         
         let rightButton = UIBarButtonItem(customView: cartButton)
-        self.navigationItem.rightBarButtonItem = rightButton
+        //self.navigationItem.rightBarButtonItem = rightButton
     }
     
     //for cart count
@@ -339,7 +339,7 @@ class ProductViewController: UIViewController, UITableViewDelegate, UITableViewD
                                 
                                 //label
                                 let rightButton = UIBarButtonItem(customView: cartButton)
-                                self.navigationItem.rightBarButtonItem = rightButton
+                                //self.navigationItem.rightBarButtonItem = rightButton
                                 
                             }
                         }

@@ -112,7 +112,7 @@ class SubViewController: UIViewController, UITableViewDelegate, UITableViewDataS
         cartButton.badgeTextColor = UIColor.white
         
         let rightButton = UIBarButtonItem(customView: cartButton)
-        self.navigationItem.rightBarButtonItem = rightButton
+        //self.navigationItem.rightBarButtonItem = rightButton
     }
     
     //for cart update
@@ -173,7 +173,7 @@ class SubViewController: UIViewController, UITableViewDelegate, UITableViewDataS
                                 
                                 //label
                                 let rightButton = UIBarButtonItem(customView: cartButton)
-                                self.navigationItem.rightBarButtonItem = rightButton
+                                //self.navigationItem.rightBarButtonItem = rightButton
 
                             }
                         }

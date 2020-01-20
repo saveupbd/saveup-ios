@@ -83,7 +83,7 @@ class DealDetailsViewController: UIViewController, UITableViewDelegate, UITableV
         cartButton.badgeTextColor = UIColor.white
         
         let rightButton = UIBarButtonItem(customView: cartButton)
-        self.navigationItem.rightBarButtonItem = rightButton
+        //self.navigationItem.rightBarButtonItem = rightButton
         
        // UserDefaults.standard.removeObject(forKey: "CartCount")
     }
@@ -141,7 +141,7 @@ class DealDetailsViewController: UIViewController, UITableViewDelegate, UITableV
                                 
                                 //label
                                 let rightButton = UIBarButtonItem(customView: cartButton)
-                                self.navigationItem.rightBarButtonItem = rightButton
+                                //self.navigationItem.rightBarButtonItem = rightButton
                                 
                             }
                         }

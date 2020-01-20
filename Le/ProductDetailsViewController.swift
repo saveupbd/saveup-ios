@@ -348,7 +348,7 @@ class ProductDetailsViewController: UIViewController, UITableViewDelegate, UITab
         cartButton.badgeTextColor = UIColor.white
         self.COLORVIEW_Y_AXIS = self.colorView.frame.minY
         let rightButton = UIBarButtonItem(customView: cartButton)
-        self.navigationItem.rightBarButtonItem = rightButton
+        //self.navigationItem.rightBarButtonItem = rightButton
         
         // UserDefaults.standard.removeObject(forKey: "CartCount")
         
@@ -1301,7 +1301,7 @@ class ProductDetailsViewController: UIViewController, UITableViewDelegate, UITab
                             cartButton.badgeTextColor = UIColor.white
                             
                             let rightButton = UIBarButtonItem(customView: cartButton)
-                            self.navigationItem.rightBarButtonItem = rightButton
+                            //self.navigationItem.rightBarButtonItem = rightButton
                             
                             var style = ToastStyle()
                             style.messageFont = messageFont!

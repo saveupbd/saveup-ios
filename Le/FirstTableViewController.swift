@@ -43,9 +43,9 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
         nameLabel.font = UIFont(name: "SanFranciscoText-Regular", size: 15)
         nameLabel.textColor = UIColor.white
         
-        let rightButton = UIBarButtonItem(customView: cartButton)
+        //let rightButton = UIBarButtonItem(customView: cartButton)
         let rightButton1 = UIBarButtonItem(customView: nameLabel)
-        self.navigationItem.rightBarButtonItems = [rightButton, rightButton1]
+        self.navigationItem.rightBarButtonItems = [/*rightButton,*/ rightButton1]
         
         
         if reachability.isReachable {

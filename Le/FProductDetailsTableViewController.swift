@@ -268,7 +268,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         cartButton.badgeTextColor = UIColor.white
         //self.COLORVIEW_Y_AXIS = self.colorView.frame.minY
         let rightButton = UIBarButtonItem(customView: cartButton)
-        self.navigationItem.rightBarButtonItem = rightButton
+        //self.navigationItem.rightBarButtonItem = rightButton
         //createFloatingButton()
     }
     override func viewWillDisappear(_ animated: Bool) {
@@ -561,7 +561,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                             cartButton.badgeTextColor = UIColor.white
                             
                             let rightButton = UIBarButtonItem(customView: cartButton)
-                            self.navigationItem.rightBarButtonItem = rightButton
+                            //self.navigationItem.rightBarButtonItem = rightButton
                             
                             var style = ToastStyle()
                             style.messageFont = messageFont!
@@ -904,7 +904,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                                 cartButton.badgeString = "\(cartValue)"
                                 cartButton.badgeTextColor = UIColor.white
                                 let rightButton = UIBarButtonItem(customView: cartButton)
-                                self.navigationItem.rightBarButtonItems = [rightButton]
+                                //self.navigationItem.rightBarButtonItems = [rightButton]
                                 
                                 
                                 

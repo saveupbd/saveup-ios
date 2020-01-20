@@ -278,7 +278,7 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
         cartButton.badgeTextColor = UIColor.white
         
         let rightButton = UIBarButtonItem(customView: cartButton)
-        self.navigationItem.rightBarButtonItem = rightButton
+        //self.navigationItem.rightBarButtonItem = rightButton
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -811,7 +811,7 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
                                 
                                 //label
                                 let rightButton = UIBarButtonItem(customView: cartButton)
-                                self.navigationItem.rightBarButtonItem = rightButton
+                                //self.navigationItem.rightBarButtonItem = rightButton
                                 
                             }
                         }
