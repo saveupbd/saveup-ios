@@ -7,9 +7,11 @@
 //
 
 import UIKit
+import WebKit
 
 class TermsViewController: UIViewController {
 
+    @IBOutlet weak var termsWebView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -23,6 +25,26 @@ class TermsViewController: UIViewController {
         
         let LeftButton = UIBarButtonItem(customView: leftbutton)
         self.navigationItem.leftBarButtonItem = LeftButton
+        
+        
+        let myURL = URL(string:"https://saveupbd.com/terms-and-condition")
+        let myRequest = URLRequest(url: myURL!)
+        termsWebView.navigationDelegate = self as? WKNavigationDelegate
+        termsWebView.load(myRequest)
+
+
+//        self.navigationController?.isNavigationBarHidden = false
+//        self.navigationItem.title = "Help"
+
+        if revealViewController() != nil {
+
+            let rightRevealButtonItem: UIBarButtonItem = UIBarButtonItem(image: UIImage(named: "menu")!, style: .done, target: self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)))
+            self.navigationItem.leftBarButtonItem = rightRevealButtonItem
+            self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
+            view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
+        }
+        
     }
 
     @objc func backAction(_ sender: UIButton!) {

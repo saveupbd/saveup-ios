@@ -13,7 +13,16 @@ class NearMeListTableViewController: UITableViewController,CLLocationManagerDele
     var nearmeArray = [NearMe]()
     var merchantArray = [String]()
     
-    var  locationManager = CLLocationManager()
+    lazy var locationManager: CLLocationManager = {
+        var _locationManager = CLLocationManager()
+        _locationManager.delegate = self
+        _locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        _locationManager.activityType = .automotiveNavigation
+        _locationManager.distanceFilter = 10.0  // Movement threshold for new events
+        _locationManager.allowsBackgroundLocationUpdates = true // allow in background
+
+        return _locationManager
+    }()
     var currentLong = 0.0
     var currentLat = 0.0
     override func viewDidLoad() {
@@ -36,18 +45,8 @@ class NearMeListTableViewController: UITableViewController,CLLocationManagerDele
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        determineMyCurrentLocation()
-        
-        let reachability = Reachability()!
-        
-        if reachability.isReachable {
-            self.view.hideToastActivity()
-            self.view.makeToastActivity(.center)
-            nearbyApi()
-        }
-        else {
-            showNetworkErrorAlert()
-        }
+        locationManager.requestAlwaysAuthorization()
+        locationManager.startUpdatingLocation()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -73,7 +72,7 @@ class NearMeListTableViewController: UITableViewController,CLLocationManagerDele
             //let region = MKCoordinateRegion(center: userLocation.coordinate, latitudinalMeters: 10000, longitudinalMeters: 10000)
             
             //self.mapView.setRegion(region, animated: true)
-           //self.nearbyApi()
+           self.nearbyApi()
         }
     }
     
@@ -89,10 +88,10 @@ class NearMeListTableViewController: UITableViewController,CLLocationManagerDele
     }
     
     func determineMyCurrentLocation() {
-        //locationManager = CLLocationManager()
-        //locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
+//        locationManager = CLLocationManager()
+//        locationManager.delegate = self
+//        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+//        locationManager.requestAlwaysAuthorization()
         
         if CLLocationManager.locationServicesEnabled() {
             locationManager.startUpdatingLocation()

@@ -8,8 +8,7 @@
 
 import UIKit
 
-class StoresViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+class StoresViewController: UIViewController, UITableViewDelegate, UITableViewDataSource,FilterViewDelegate {
     @IBOutlet weak var storesTable : UITableView!
     
     var page_no: Int! = 1
@@ -21,7 +20,7 @@ class StoresViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         storesTable.dataSource = self
         storesTable.delegate = self
-
+        filterCategory?.filterDel = self
         // Do any additional setup after loading the view.
         self.navigationController?.isNavigationBarHidden = false
         self.navigationItem.title = "Merchants"
@@ -51,34 +50,34 @@ class StoresViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         
         //filter
-        filterView =  FilterView(frame: CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y, width: self.view.frame.size.width, height: self.view.frame.size.height))
-        self.view.addSubview(filterView)
-        filterView.isHidden = true
-        filterView.backView.layer.cornerRadius = 10
-        
-        filterView.underButton.addTarget(self, action: #selector(StoresViewController.underAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.oneButton.addTarget(self, action: #selector(StoresViewController.oneAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.twoButton.addTarget(self, action: #selector(StoresViewController.twoAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.fiveButton.addTarget(self, action: #selector(StoresViewController.fiveAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.overButton.addTarget(self, action: #selector(StoresViewController.overAction(_:)), for: UIControl.Event.touchUpInside)
-
-        filterView.zeroButton.addTarget(self, action: #selector(StoresViewController.zeroAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.tenButton.addTarget(self, action: #selector(StoresViewController.tenAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.twentyButton.addTarget(self, action: #selector(StoresViewController.twentyAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView =  FilterView(frame: CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y, width: self.view.frame.size.width, height: self.view.frame.size.height))
+//        self.view.addSubview(filterView)
+//        filterView.isHidden = true
+//        filterView.backView.layer.cornerRadius = 10
+//
+//        filterView.underButton.addTarget(self, action: #selector(StoresViewController.underAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.oneButton.addTarget(self, action: #selector(StoresViewController.oneAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.twoButton.addTarget(self, action: #selector(StoresViewController.twoAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.fiveButton.addTarget(self, action: #selector(StoresViewController.fiveAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.overButton.addTarget(self, action: #selector(StoresViewController.overAction(_:)), for: UIControl.Event.touchUpInside)
+//
+//        filterView.zeroButton.addTarget(self, action: #selector(StoresViewController.zeroAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.tenButton.addTarget(self, action: #selector(StoresViewController.tenAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.twentyButton.addTarget(self, action: #selector(StoresViewController.twentyAction(_:)), for: UIControl.Event.touchUpInside)
         
         //Not using
 //        filterView.thirtyButton.addTarget(self, action: #selector(ProductViewController.thirtyAction(_:)), for: UIControlEvents.touchUpInside)
 //        filterView.fourtyButton.addTarget(self, action: #selector(ProductViewController.fourtyAction(_:)), for: UIControlEvents.touchUpInside)
         //end
         
-        filterView.fiftyButton.addTarget(self, action: #selector(StoresViewController.fiftyAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.outButton.addTarget(self, action: #selector(StoresViewController.outAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.resetButton.addTarget(self, action: #selector(StoresViewController.resetFilterAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.cancelButton.addTarget(self, action: #selector(StoresViewController.cancelFilterAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.fiftyButton.addTarget(self, action: #selector(StoresViewController.fiftyAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.outButton.addTarget(self, action: #selector(StoresViewController.outAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.resetButton.addTarget(self, action: #selector(StoresViewController.resetFilterAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.cancelButton.addTarget(self, action: #selector(StoresViewController.cancelFilterAction(_:)), for: UIControl.Event.touchUpInside)
         
         //filter end
         
-        filterView.cancelButton.addTarget(self, action: #selector(StoresViewController.cancelFilterAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.cancelButton.addTarget(self, action: #selector(StoresViewController.cancelFilterAction(_:)), for: UIControl.Event.touchUpInside)
     }
     
     @objc func resetFilterAction(_ sender: UIButton!) {
@@ -114,6 +113,107 @@ class StoresViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         else {
             self.self.showNetworkErrorAlert()
+        }
+    }
+    func didSelect(category: String) {
+        switch category {
+        case "Food":
+            let reachability = Reachability()!
+            if reachability.isReachable {
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+                merchantFilterStoresApi()
+            }
+            else {
+                self.showNetworkErrorAlert()
+            }
+            return
+        case "Travel":
+            self.page_no = 1
+
+            
+
+             let reachability = Reachability()!
+
+             if reachability.isReachable {
+
+                 self.view.hideToastActivity()
+                 self.view.makeToastActivity(.center)
+
+                 //            self.productApi()
+               fourthAction()
+             }
+             else {
+
+                 self.self.showNetworkErrorAlert()
+             }
+            return
+        case "Fitness":
+            let reachability = Reachability()!
+
+            if reachability.isReachable {
+
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+
+                //            self.productApi()
+               seventhAction()
+
+            }
+            else {
+
+                self.self.showNetworkErrorAlert()
+            }
+            return
+        case "Beauty":
+            let reachability = Reachability()!
+
+            if reachability.isReachable {
+
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+
+
+                oneAction()
+
+            }
+            else {
+
+                self.showNetworkErrorAlert()
+            }
+            return
+        case "Services":
+            let reachability = Reachability()!
+
+            if reachability.isReachable {
+
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+
+                eightAction()
+            }
+            else {
+
+                self.showNetworkErrorAlert()
+            }
+            return
+        case "Reset":
+            let reachability = Reachability()!
+            
+            if reachability.isReachable {
+                
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+               storesApiforreset()
+            }
+            else {
+                self.self.showNetworkErrorAlert()
+            }
+            return
+        case "Cancel":
+            return
+        default:
+            return
         }
     }
     
@@ -340,10 +440,15 @@ class StoresViewController: UIViewController, UITableViewDelegate, UITableViewDa
         filterView.isHidden = true
     }
 
-    
+    var filterCategory:FilterByCategoryViewController!
     @IBAction func filterButton(_ sender: UIButton) {
-        filterView.isHidden = false
-        UIApplication.shared.keyWindow?.addSubview(filterView)
+//        filterView.isHidden = false
+//        UIApplication.shared.keyWindow?.addSubview(filterView)
+        let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "FilterByCategoryViewController") as! FilterByCategoryViewController
+        theViewController.filterDel = self
+        theViewController.modalPresentationStyle = .fullScreen
+        theViewController.modalPresentationStyle = .overCurrentContext
+        self.present(theViewController, animated: true, completion: nil)
     }
     
     @objc func underAction(_ sender: UIButton!) {

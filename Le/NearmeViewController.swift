@@ -147,28 +147,17 @@ class NearmeViewController: UIViewController, MKMapViewDelegate, CLLocationManag
                                     for item in reposArray {
                                         self.nearmeArray.append(NearMe(NearMe: item))
                                         print(self.nearmeArray)
+                                        print(item)
                                     }
-                                    
-                                    for locations in self.nearmeArray {
-                                     //   self.merchantArray.append(locations)
-                                        let merchant_id = locations.merchant_id
-                                     //   self.merchantArray.append(merchant_id!)
-                                        print(merchant_id!)
-                                    }
-     
                                     
                                     for location in self.nearmeArray {
+                                        let merchant_id = location.merchant_id
+                                        print(merchant_id!)
                                         let annotation = MKPointAnnotation()
                                         annotation.title = location.store_name
                                         annotation.subtitle = "Deals - " + location.product_count!
-                                   
-                                       // annotation.subtitle = location.merchant_id!
-                                       // annotation.subtitle = "Deals - " + location.deal_count!
                                         _  = location.merchant_id
                                         
-                                       //self.annotation.description = location.merchant_id
-                                        //annotation. = location.merchant_id
-                                       
                                         UserDefaults.standard.set("\(location.merchant_id!)", forKey: "merchant_id")
                                         annotation.coordinate = CLLocationCoordinate2D(latitude: Double(location.store_latitude)!, longitude: Double(location.store_longitude)!)
                                         self.mapView.addAnnotation(annotation)

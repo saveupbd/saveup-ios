@@ -178,6 +178,21 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
         return imageURL
     }
     
+    func setShadowAndRoundedBorder(customCell:UITableViewCell){
+        customCell.layer.cornerRadius = 5
+        customCell.layer.borderWidth = 0.9
+        
+        customCell.layer.borderColor = UIColor.init(named: "appThemeColor")?.cgColor
+        customCell.layer.masksToBounds = true
+        
+        customCell.layer.shadowColor = UIColor.black.cgColor
+        customCell.layer.shadowOffset = CGSize(width: 0, height: 1.5)
+        customCell.layer.shadowRadius = 3
+        customCell.layer.shadowOpacity = 0.3
+        customCell.layer.masksToBounds = false
+        customCell.layer.shadowPath = UIBezierPath(roundedRect:customCell.bounds, cornerRadius:customCell.contentView.layer.cornerRadius).cgPath
+    }
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var tableCell = UITableViewCell()
         switch indexPath.section {
@@ -214,10 +229,16 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
         case 5:
             tableCell = tableView.dequeueReusableCell(withIdentifier: "FHotDealsTableViewCell", for: indexPath) as! FHotDealsTableViewCell
             if fiftyPercentArray.count != 0 {
+                self.setShadowAndRoundedBorder(customCell: tableCell)
                 tableCell.textLabel?.numberOfLines = 2
                 tableCell.textLabel?.text = fiftyPercentArray[indexPath.row].product_title
                 tableCell.detailTextLabel!.numberOfLines = 0
-                tableCell.detailTextLabel!.text = "\(fiftyPercentArray[indexPath.row].merchant_name!)\n\("৳" + fiftyPercentArray[indexPath.row].product_discount_price!)\n\(fiftyPercentArray[indexPath.row].product_percentage! + "% off")"
+                if fiftyPercentArray[indexPath.row].product_type != "all_item"{
+                    tableCell.detailTextLabel!.text = "\(fiftyPercentArray[indexPath.row].merchant_name!)\n\("৳" + fiftyPercentArray[indexPath.row].product_discount_price!)"
+                }else{
+                    tableCell.detailTextLabel!.text = "\(fiftyPercentArray[indexPath.row].merchant_name!)\n\(fiftyPercentArray[indexPath.row].product_percentage! + "% off")"
+                }
+                
                 tableCell.imageView?.kf.setImage(with: (StringToURL(text: fiftyPercentArray[indexPath.row].product_image)))
                 tableCell.imageView?.image = tableCell.imageView?.image?.resized(toWidth:tableCell.contentView.bounds.width/3, height: tableCell.contentView.bounds.height - 2.0)
             }else{
@@ -228,7 +249,7 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
             return tableCell
         case 6:
             tableCell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
-            tableCell.textLabel?.text = "Gift Items"
+            tableCell.textLabel?.text = "Top Picks"
             tableCell.detailTextLabel?.text = "See All"
             return tableCell
         case 7:

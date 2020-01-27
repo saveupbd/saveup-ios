@@ -15,7 +15,7 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterView" customModule="SaveUp_BD" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FilterView" customModule="SaveUp" customModuleProvider="target">
             <connections>
                 <outlet property="backView" destination="tuB-dg-F08" id="Bad-c8-3K7"/>
                 <outlet property="cancelButton" destination="shv-Rc-i5B" id="y9b-fK-ffC"/>
@@ -23,13 +23,10 @@
                 <outlet property="fiveButton" destination="GEc-Du-O5s" id="rY8-le-BBN"/>
                 <outlet property="oneButton" destination="lq4-Y2-FKT" id="7ea-6f-xbq"/>
                 <outlet property="outButton" destination="gMd-Ft-OXM" id="Gqa-XC-sje"/>
-                <outlet property="overButton" destination="cLe-NO-kNy" id="hUN-ba-bhf"/>
                 <outlet property="resetButton" destination="bYs-gY-TV6" id="AjN-6h-MAB"/>
                 <outlet property="tenButton" destination="Lib-Kf-qMZ" id="5td-3n-DLC"/>
                 <outlet property="twentyButton" destination="64g-2u-igJ" id="8bg-4e-48f"/>
-                <outlet property="twoButton" destination="40J-Jj-I08" id="AQz-SP-QPG"/>
                 <outlet property="underButton" destination="bQb-7V-Bh4" id="txC-A2-7jJ"/>
-                <outlet property="zeroButton" destination="JeM-pd-1m1" id="OYl-Ww-hNu"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -80,14 +77,6 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="40J-Jj-I08">
-                            <rect key="frame" x="0.0" y="105" width="240" height="35"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
-                            <state key="normal" title="HEALTH">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bE2-So-grH">
                             <rect key="frame" x="0.0" y="140" width="240" height="1"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -106,27 +95,11 @@
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cLe-NO-kNy">
-                            <rect key="frame" x="0.0" y="175" width="240" height="35"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
-                            <state key="normal" title="FASHION">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dR0-F4-o3x">
                             <rect key="frame" x="0.0" y="210" width="240" height="1"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JeM-pd-1m1">
-                            <rect key="frame" x="0.0" y="210" width="240" height="35"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" name="SanFranciscoText-Regular" family="San Francisco Text" pointSize="16"/>
-                            <state key="normal" title="MASSAGE ">
-                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            </state>
-                        </button>
                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uk7-YJ-eSI">
                             <rect key="frame" x="0.0" y="244" width="240" height="1"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>

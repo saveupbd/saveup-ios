@@ -24,6 +24,8 @@ let Valid_Email_Message = "Please enter a valid email"
 
 let Password_Message = "Please enter your password"
 
+let Conf_Password_Message = "Password Mismatch"
+
 let Old_Message = "Please enter your old password"
 
 let New_Message = "Please enter your new password"

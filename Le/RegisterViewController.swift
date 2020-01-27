@@ -23,6 +23,7 @@ var accountKit: AKFAccountKit!
     @IBOutlet weak var termsButton : UIButton!
     @IBOutlet weak var registerButton : UIButton!
     
+    @IBOutlet weak var confirmPassText: UITextField!
     var acceptBool = false
     var countryidString: String!
     var cityidString: String!
@@ -68,6 +69,7 @@ var accountKit: AKFAccountKit!
         nameText.attributedPlaceholder! = NSAttributedString(string: "Name", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :nameText.font!])
         emailText.attributedPlaceholder! = NSAttributedString(string: "Email", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :emailText.font!])
         passwordText.attributedPlaceholder! = NSAttributedString(string: "Password", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :passwordText.font!])
+        confirmPassText.attributedPlaceholder! = NSAttributedString(string: "Confirm Password", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :confirmPassText.font!])
         countryText.attributedPlaceholder! = NSAttributedString(string: "Country", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :countryText.font!])
         cityText.attributedPlaceholder! = NSAttributedString(string: "City", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :cityText.font!])
         
@@ -124,6 +126,7 @@ var accountKit: AKFAccountKit!
         nameText.resignFirstResponder()
         emailText.resignFirstResponder()
         passwordText.resignFirstResponder()
+        confirmPassText.resignFirstResponder()
     }
     
     @objc func backAction(_ sender: UIButton!) {
@@ -136,7 +139,7 @@ var accountKit: AKFAccountKit!
         nameText.resignFirstResponder()
         emailText.resignFirstResponder()
         passwordText.resignFirstResponder()
-        
+        confirmPassText.resignFirstResponder()
         let objCountry = self.storyboard?.instantiateViewController(withIdentifier: "CountryViewController") as! CountryViewController
         objCountry.countryDelegate = self
         self.navigationController?.pushViewController(objCountry, animated: true)
@@ -159,7 +162,7 @@ var accountKit: AKFAccountKit!
             nameText.resignFirstResponder()
             emailText.resignFirstResponder()
             passwordText.resignFirstResponder()
-            
+            confirmPassText.resignFirstResponder()
             let objCity = self.storyboard?.instantiateViewController(withIdentifier: "CityViewController") as! CityViewController
             objCity.countryId = Int(countryidString)!
             objCity.cityDelegate = self
@@ -219,6 +222,11 @@ var accountKit: AKFAccountKit!
                 messageToast(messageStr: Password_Message)
                 passwordText.becomeFirstResponder()
             }
+            else if passwordText.text != confirmPassText.text {
+                    
+                    messageToast(messageStr: Conf_Password_Message)
+                    confirmPassText.becomeFirstResponder()
+                }
 //            else if (passwordText.text?.count)! < 6 {
 //
 //                messageToast(messageStr: Length_Message)
@@ -346,6 +354,10 @@ var accountKit: AKFAccountKit!
         else if (textField == passwordText) {
             
             passwordText.resignFirstResponder()
+        }
+        else if (textField == confirmPassText) {
+            
+            confirmPassText.resignFirstResponder()
         }
         
         return true

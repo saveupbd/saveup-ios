@@ -826,8 +826,8 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             
             return
         case 6://direction
-            let storeLat = UserDefaults.standard.value(forKey: "latitude") as! String
-            let storeLong = UserDefaults.standard.value(forKey: "longitude") as! String
+            let storeLat = UserDefaults.standard.value(forKey: "latitude") as! Double
+            let storeLong = UserDefaults.standard.value(forKey: "longitude") as! Double
             if let url = URL(string: "comgooglemaps://?saddr=&daddr=\(storeLat),\(storeLong)&directionsmode=driving") {
                 UIApplication.shared.open(url, options: [:])
             }
@@ -1064,11 +1064,11 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                             self.redemptionText = parseJSON.value(forKeyPath: "product_details.redemption") as! String
                             
                             
-                            let store_latitude  = parseJSON.value(forKeyPath: "product_details.store_details.store_latitude") as? String
+                            let store_latitude  = parseJSON.value(forKeyPath: "product_details.store_details.store_latitude") as? Double
                             let userDefaultStore = UserDefaults.standard //userDefault object
                             userDefaultStore.set(store_latitude, forKey: "latitude")
                             print( "lat -- \(self.directionLabel?.text )")
-                            let store_longitude  = parseJSON.value(forKeyPath: "product_details.store_details.store_longitude") as? String
+                            let store_longitude  = parseJSON.value(forKeyPath: "product_details.store_details.store_longitude") as? Double
                             userDefaultStore.set(store_longitude, forKey: "longitude")
                             print(store_longitude)
                             

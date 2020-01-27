@@ -8,15 +8,8 @@ target 'Le' do
   # Pods for Le
     pod 'Alamofire'
     pod 'SwiftyJSON'
-
-  target 'LeTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'LeUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
+    pod 'Firebase/Auth'
+    pod 'Firebase'
+    pod 'Firebase/Core'
+    pod 'Firebase/RemoteConfig'
 end

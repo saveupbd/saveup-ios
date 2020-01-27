@@ -10,6 +10,7 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import AccountKit
+import Firebase
 class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UIGestureRecognizerDelegate, AKFViewControllerDelegate {
     var accountKit: AKFAccountKit!
     @IBOutlet weak var loginScroll : UIScrollView!
@@ -20,6 +21,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UIGesture
     @IBOutlet weak var facebookButton: FBSDKLoginButton!
     @IBOutlet weak var forgotButton : UIButton!
     @IBOutlet weak var registerButton : UIButton!
+    @IBOutlet weak var btnFbLogin: UIButton!
+    @IBOutlet weak var btnGoogleLogin: UIButton!
     
     @IBOutlet weak var btnGuest: UIButton!
     var nameString:String?
@@ -63,7 +66,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UIGesture
         emailText.attributedPlaceholder! = NSAttributedString(string: "Email", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :emailText.font!])
         passwordText.attributedPlaceholder! = NSAttributedString(string: "Password", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :passwordText.font!])
         
-        configureFacebook()
+        //configureFacebook()
         
         //let scrollgesture: UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(handleTap))
         //scrollgesture.delegate = self
@@ -131,13 +134,37 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UIGesture
         passwordText.resignFirstResponder()
     }
     
+    
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+    }
+    
     @IBAction func btnGuestPressed(_ sender: UIButton) {
-        self.view.makeToastActivity(.center)
-        var rootVC : UIViewController?
-        rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RootTabBarController")
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        appDelegate.window?.rootViewController = rootVC
-        UserDefaults.standard.set(true, forKey: AppConfig.UserdefaultKeys.GUEST_MODE)
+        
+        let reachability = Reachability()!
+
+        if reachability.isReachable {
+            
+            btnGuest.alpha = 1.0
+            
+            UIView.animate(withDuration: 0.3, delay: 0.0, options: [], animations: {
+                //self.btnGuest.alpha = 0.2
+                self.view.makeToastActivity(.center)
+            }, completion: { (com) in
+                var rootVC : UIViewController?
+                rootVC = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "RootTabBarController")
+                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                appDelegate.window?.rootViewController = rootVC
+                UserDefaults.standard.set(true, forKey: AppConfig.UserdefaultKeys.GUEST_MODE)
+            })
+            
+        }else{
+            self.showNetworkErrorAlert()
+        }
+        
+        
     }
     
     
@@ -362,11 +389,24 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate, UIGesture
     }
     
     //    MARK: Other Methods
-    func configureFacebook()
-    {
-        facebookButton.readPermissions = ["public_profile", "email"];
+    func configureFacebook(){
         facebookButton.delegate = self
+        facebookButton.readPermissions = ["public_profile", "email"];
+        
     }
+    
+    @IBAction func btnGoogleLoginPressed(_ sender: UIButton) {
+        
+        
+    }
+    
+    
+    @IBAction func btnFacebookLoginPressed(_ sender: UIButton) {
+        
+        
+    }
+    
+    
     
     func facebookApi() {
         

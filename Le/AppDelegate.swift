@@ -9,6 +9,7 @@
 import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool{
-        
+        FirebaseApp.configure()
         FBSDKApplicationDelegate.sharedInstance().application (application, didFinishLaunchingWithOptions: launchOptions)
         let color1 = UIColor(red: 0.0/255.0, green:170.0/255.0, blue: 227.0/255.0, alpha: 1.0).cgColor
         let color2 = UIColor(red: 0.0/255.0, green: 170.0/255.0, blue: 227.0/255.0, alpha: 1.0).cgColor

@@ -122,9 +122,19 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
         cell.backgroundColor = UIColor.white
         cell.productTitle.text = topOffersArray[indexPath.row].product_title
         cell.productCategory.text = topOffersArray[indexPath.row].merchant_name
-        cell.originalPrice.text = "৳" + topOffersArray[indexPath.row].product_discount_price
-        cell.cutOffPrice.attributedText = topOffersArray[indexPath.row].product_price.strikeThrough()
-        cell.offPercentage.text = topOffersArray[indexPath.row].product_percentage + "% off"
+        
+        if topOffersArray[indexPath.row].product_type == "all_item"  {
+            cell.offPercentage.text = topOffersArray[indexPath.row].product_percentage + "% off"
+        }else{
+            //if topOffersArray[indexPath.row].product_discount_price != nil{
+                cell.originalPrice.text = "৳" + topOffersArray[indexPath.row].product_discount_price
+            //}
+            
+            cell.cutOffPrice.attributedText = topOffersArray[indexPath.row].product_price.strikeThrough()
+        }
+        
+        
+        
         cell.productImage.kf.setImage(with: (StringToURL(text: topOffersArray[indexPath.row].product_image)))
         cell.productImage.yy_imageURL = URL(string: topOffersArray[indexPath.row].product_image)
         return cell
