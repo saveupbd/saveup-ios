@@ -2,265 +2,455 @@
 provides-top-level:
 - "TermsViewController"
 provides-nominal:
-- "9SaveUp_BD19TermsViewControllerC"
+- "6SaveUp19TermsViewControllerC"
 provides-member:
-- ["9SaveUp_BD19TermsViewControllerC", ""]
+- ["6SaveUp19TermsViewControllerC", ""]
 provides-dynamic-lookup:
 - "backAction"
 - "didReceiveMemoryWarning"
+- "termsWebView"
 - "viewDidLoad"
 depends-top-level:
+- !private "!="
 - "AssignmentPrecedence"
 - !private "BooleanLiteralType"
 - !private "CGRect"
 - "CastingPrecedence"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
+- !private "SWRevealViewController"
 - !private "StringLiteralType"
 - "TermsViewController"
 - !private "UIBarButtonItem"
 - "UIButton"
+- !private "UIColor"
 - !private "UIControl"
 - !private "UIImage"
 - "UIViewController"
+- !private "URL"
+- !private "URLRequest"
+- !private "WKNavigationDelegate"
+- "WKWebView"
 depends-member:
 - !private ["So12UIButtonTypeV", "custom"]
 - !private ["So15CALayerDelegateP", "ButtonType"]
 - !private ["So15CALayerDelegateP", "Event"]
 - !private ["So15CALayerDelegateP", "State"]
+- !private ["So15CALayerDelegateP", "addGestureRecognizer"]
 - !private ["So15CALayerDelegateP", "addTarget"]
 - !private ["So15CALayerDelegateP", "frame"]
 - !private ["So15CALayerDelegateP", "init"]
+- !private ["So15CALayerDelegateP", "load"]
+- !private ["So15CALayerDelegateP", "navigationDelegate"]
 - !private ["So15CALayerDelegateP", "setImage"]
 - !private ["So6CGRectV", "init"]
 - !private ["s7CVarArgP", "ButtonType"]
 - !private ["s7CVarArgP", "CGRect"]
 - !private ["s7CVarArgP", "Event"]
+- !private ["s7CVarArgP", "SWRevealViewController"]
 - !private ["s7CVarArgP", "State"]
 - !private ["s7CVarArgP", "TermsViewController"]
 - !private ["s7CVarArgP", "UIBarButtonItem"]
 - !private ["s7CVarArgP", "UIButton"]
+- !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "UIControl"]
 - !private ["s7CVarArgP", "UIImage"]
+- !private ["s7CVarArgP", "URL"]
+- !private ["s7CVarArgP", "URLRequest"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "addGestureRecognizer"]
 - !private ["s7CVarArgP", "addTarget"]
 - !private ["s7CVarArgP", "backAction"]
 - !private ["s7CVarArgP", "didReceiveMemoryWarning"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "leftBarButtonItem"]
+- !private ["s7CVarArgP", "load"]
 - !private ["s7CVarArgP", "navigationController"]
+- !private ["s7CVarArgP", "navigationDelegate"]
 - !private ["s7CVarArgP", "navigationItem"]
+- !private ["s7CVarArgP", "panGestureRecognizer"]
 - !private ["s7CVarArgP", "popViewController"]
+- !private ["s7CVarArgP", "revealToggle"]
+- !private ["s7CVarArgP", "revealViewController"]
 - !private ["s7CVarArgP", "setImage"]
+- !private ["s7CVarArgP", "tapGestureRecognizer"]
+- !private ["s7CVarArgP", "termsWebView"]
+- !private ["s7CVarArgP", "tintColor"]
 - !private ["s7CVarArgP", "title"]
+- !private ["s7CVarArgP", "view"]
 - !private ["s7CVarArgP", "viewDidLoad"]
+- !private ["s7CVarArgP", "white"]
 - !private ["s28CustomDebugStringConvertibleP", "ButtonType"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
 - !private ["s28CustomDebugStringConvertibleP", "Event"]
+- !private ["s28CustomDebugStringConvertibleP", "SWRevealViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "State"]
 - !private ["s28CustomDebugStringConvertibleP", "TermsViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "UIButton"]
+- !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "UIControl"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
+- !private ["s28CustomDebugStringConvertibleP", "URL"]
+- !private ["s28CustomDebugStringConvertibleP", "URLRequest"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "addGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "addTarget"]
 - !private ["s28CustomDebugStringConvertibleP", "backAction"]
 - !private ["s28CustomDebugStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "leftBarButtonItem"]
+- !private ["s28CustomDebugStringConvertibleP", "load"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationDelegate"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
+- !private ["s28CustomDebugStringConvertibleP", "panGestureRecognizer"]
 - !private ["s28CustomDebugStringConvertibleP", "popViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "revealToggle"]
+- !private ["s28CustomDebugStringConvertibleP", "revealViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "setImage"]
+- !private ["s28CustomDebugStringConvertibleP", "tapGestureRecognizer"]
+- !private ["s28CustomDebugStringConvertibleP", "termsWebView"]
+- !private ["s28CustomDebugStringConvertibleP", "tintColor"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
+- !private ["s28CustomDebugStringConvertibleP", "view"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
+- !private ["s28CustomDebugStringConvertibleP", "white"]
+- !private ["s17CustomReflectableP", "addGestureRecognizer"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "load"]
+- !private ["s17CustomReflectableP", "navigationDelegate"]
+- !private ["s17CustomReflectableP", "panGestureRecognizer"]
+- !private ["s17CustomReflectableP", "tapGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "ButtonType"]
 - !private ["s23CustomStringConvertibleP", "CGRect"]
 - !private ["s23CustomStringConvertibleP", "Event"]
+- !private ["s23CustomStringConvertibleP", "SWRevealViewController"]
 - !private ["s23CustomStringConvertibleP", "State"]
 - !private ["s23CustomStringConvertibleP", "TermsViewController"]
 - !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "UIButton"]
+- !private ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "UIControl"]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
+- !private ["s23CustomStringConvertibleP", "URL"]
+- !private ["s23CustomStringConvertibleP", "URLRequest"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "addGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "addTarget"]
 - !private ["s23CustomStringConvertibleP", "backAction"]
 - !private ["s23CustomStringConvertibleP", "didReceiveMemoryWarning"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "leftBarButtonItem"]
+- !private ["s23CustomStringConvertibleP", "load"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["s23CustomStringConvertibleP", "navigationDelegate"]
 - !private ["s23CustomStringConvertibleP", "navigationItem"]
+- !private ["s23CustomStringConvertibleP", "panGestureRecognizer"]
 - !private ["s23CustomStringConvertibleP", "popViewController"]
+- !private ["s23CustomStringConvertibleP", "revealToggle"]
+- !private ["s23CustomStringConvertibleP", "revealViewController"]
 - !private ["s23CustomStringConvertibleP", "setImage"]
+- !private ["s23CustomStringConvertibleP", "tapGestureRecognizer"]
+- !private ["s23CustomStringConvertibleP", "termsWebView"]
+- !private ["s23CustomStringConvertibleP", "tintColor"]
 - !private ["s23CustomStringConvertibleP", "title"]
+- !private ["s23CustomStringConvertibleP", "view"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
+- !private ["s23CustomStringConvertibleP", "white"]
+- !private ["Se", "addGestureRecognizer"]
 - !private ["Se", "init"]
+- !private ["Se", "load"]
+- !private ["Se", "navigationDelegate"]
+- !private ["Se", "panGestureRecognizer"]
+- !private ["Se", "tapGestureRecognizer"]
+- !private ["SE", "addGestureRecognizer"]
 - !private ["SE", "init"]
+- !private ["SE", "load"]
+- !private ["SE", "navigationDelegate"]
+- !private ["SE", "panGestureRecognizer"]
+- !private ["SE", "tapGestureRecognizer"]
 - !private ["SQ", "ButtonType"]
 - !private ["SQ", "CGRect"]
 - !private ["SQ", "Event"]
+- !private ["SQ", "SWRevealViewController"]
 - !private ["SQ", "State"]
 - !private ["SQ", "TermsViewController"]
 - !private ["SQ", "UIBarButtonItem"]
 - !private ["SQ", "UIButton"]
+- !private ["SQ", "UIColor"]
 - !private ["SQ", "UIControl"]
 - !private ["SQ", "UIImage"]
+- !private ["SQ", "URL"]
+- !private ["SQ", "URLRequest"]
 - ["SQ", ""]
+- !private ["SQ", "addGestureRecognizer"]
 - !private ["SQ", "addTarget"]
 - !private ["SQ", "backAction"]
 - !private ["SQ", "custom"]
 - !private ["SQ", "didReceiveMemoryWarning"]
+- !private ["SQ", "done"]
 - !private ["SQ", "frame"]
 - !private ["SQ", "init"]
 - !private ["SQ", "leftBarButtonItem"]
+- !private ["SQ", "load"]
 - !private ["SQ", "navigationController"]
+- !private ["SQ", "navigationDelegate"]
 - !private ["SQ", "navigationItem"]
+- !private ["SQ", "panGestureRecognizer"]
 - !private ["SQ", "popViewController"]
+- !private ["SQ", "revealToggle"]
+- !private ["SQ", "revealViewController"]
 - !private ["SQ", "setImage"]
+- !private ["SQ", "tapGestureRecognizer"]
+- !private ["SQ", "termsWebView"]
+- !private ["SQ", "tintColor"]
 - !private ["SQ", "title"]
 - !private ["SQ", "touchUpInside"]
+- !private ["SQ", "view"]
 - !private ["SQ", "viewDidLoad"]
+- !private ["SQ", "white"]
 - !private ["So15UIControlEventsV", "touchUpInside"]
 - !private ["s25ExpressibleByArrayLiteralP", "init"]
 - !private ["s25ExpressibleByArrayLiteralP", "touchUpInside"]
+- !private ["s23ExpressibleByNilLiteralP", "addGestureRecognizer"]
+- !private ["s23ExpressibleByNilLiteralP", "load"]
+- !private ["s23ExpressibleByNilLiteralP", "navigationDelegate"]
+- !private ["s23ExpressibleByNilLiteralP", "panGestureRecognizer"]
+- !private ["s23ExpressibleByNilLiteralP", "tapGestureRecognizer"]
 - !private ["SH", "ButtonType"]
 - !private ["SH", "CGRect"]
 - !private ["SH", "Event"]
+- !private ["SH", "SWRevealViewController"]
 - !private ["SH", "State"]
 - !private ["SH", "TermsViewController"]
 - !private ["SH", "UIBarButtonItem"]
 - !private ["SH", "UIButton"]
+- !private ["SH", "UIColor"]
 - !private ["SH", "UIControl"]
 - !private ["SH", "UIImage"]
+- !private ["SH", "URL"]
+- !private ["SH", "URLRequest"]
 - ["SH", ""]
+- !private ["SH", "addGestureRecognizer"]
 - !private ["SH", "addTarget"]
 - !private ["SH", "backAction"]
 - !private ["SH", "custom"]
 - !private ["SH", "didReceiveMemoryWarning"]
+- !private ["SH", "done"]
 - !private ["SH", "frame"]
 - !private ["SH", "init"]
 - !private ["SH", "leftBarButtonItem"]
+- !private ["SH", "load"]
 - !private ["SH", "navigationController"]
+- !private ["SH", "navigationDelegate"]
 - !private ["SH", "navigationItem"]
+- !private ["SH", "panGestureRecognizer"]
 - !private ["SH", "popViewController"]
+- !private ["SH", "revealToggle"]
+- !private ["SH", "revealViewController"]
 - !private ["SH", "setImage"]
+- !private ["SH", "tapGestureRecognizer"]
+- !private ["SH", "termsWebView"]
+- !private ["SH", "tintColor"]
 - !private ["SH", "title"]
+- !private ["SH", "view"]
 - !private ["SH", "viewDidLoad"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "ButtonType"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "addTarget"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "frame"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "init"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "setImage"]
+- !private ["SH", "white"]
+- !private ["6SaveUp20KingfisherCompatibleP", "ButtonType"]
+- !private ["6SaveUp20KingfisherCompatibleP", "addTarget"]
+- !private ["6SaveUp20KingfisherCompatibleP", "frame"]
+- !private ["6SaveUp20KingfisherCompatibleP", "init"]
+- !private ["6SaveUp20KingfisherCompatibleP", "setImage"]
 - !private ["So8NSCodingP", "ButtonType"]
 - !private ["So8NSCodingP", "CGRect"]
 - !private ["So8NSCodingP", "Event"]
+- !private ["So8NSCodingP", "SWRevealViewController"]
 - !private ["So8NSCodingP", "State"]
 - !private ["So8NSCodingP", "TermsViewController"]
 - !private ["So8NSCodingP", "UIBarButtonItem"]
 - !private ["So8NSCodingP", "UIButton"]
+- !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "UIControl"]
 - !private ["So8NSCodingP", "UIImage"]
+- !private ["So8NSCodingP", "URL"]
+- !private ["So8NSCodingP", "URLRequest"]
 - ["So8NSCodingP", ""]
+- !private ["So8NSCodingP", "addGestureRecognizer"]
 - !private ["So8NSCodingP", "addTarget"]
 - !private ["So8NSCodingP", "backAction"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
 - !private ["So8NSCodingP", "frame"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "leftBarButtonItem"]
+- !private ["So8NSCodingP", "load"]
 - !private ["So8NSCodingP", "navigationController"]
+- !private ["So8NSCodingP", "navigationDelegate"]
 - !private ["So8NSCodingP", "navigationItem"]
+- !private ["So8NSCodingP", "panGestureRecognizer"]
 - !private ["So8NSCodingP", "popViewController"]
+- !private ["So8NSCodingP", "revealToggle"]
+- !private ["So8NSCodingP", "revealViewController"]
 - !private ["So8NSCodingP", "setImage"]
+- !private ["So8NSCodingP", "tapGestureRecognizer"]
+- !private ["So8NSCodingP", "termsWebView"]
+- !private ["So8NSCodingP", "tintColor"]
 - !private ["So8NSCodingP", "title"]
+- !private ["So8NSCodingP", "view"]
 - !private ["So8NSCodingP", "viewDidLoad"]
+- !private ["So8NSCodingP", "white"]
+- !private ["So9NSCopyingP", "white"]
 - !private ["So26NSExtensionRequestHandlingP", "CGRect"]
+- !private ["So26NSExtensionRequestHandlingP", "SWRevealViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "TermsViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItem"]
 - !private ["So26NSExtensionRequestHandlingP", "UIButton"]
+- !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - !private ["So26NSExtensionRequestHandlingP", "UIControl"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImage"]
+- !private ["So26NSExtensionRequestHandlingP", "URL"]
+- !private ["So26NSExtensionRequestHandlingP", "URLRequest"]
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "backAction"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
+- !private ["So26NSExtensionRequestHandlingP", "panGestureRecognizer"]
 - !private ["So26NSExtensionRequestHandlingP", "popViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "revealToggle"]
+- !private ["So26NSExtensionRequestHandlingP", "revealViewController"]
+- !private ["So26NSExtensionRequestHandlingP", "tapGestureRecognizer"]
+- !private ["So26NSExtensionRequestHandlingP", "termsWebView"]
+- !private ["So26NSExtensionRequestHandlingP", "view"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So21NSItemProviderReadingP", "init"]
+- !private ["So21NSItemProviderReadingP", "white"]
 - !private ["So21NSItemProviderWritingP", "init"]
+- !private ["So21NSItemProviderWritingP", "white"]
 - !private ["So8NSObjectC", "ButtonType"]
 - !private ["So8NSObjectC", "CGRect"]
 - !private ["So8NSObjectC", "Event"]
+- !private ["So8NSObjectC", "SWRevealViewController"]
 - !private ["So8NSObjectC", "State"]
 - !private ["So8NSObjectC", "TermsViewController"]
 - !private ["So8NSObjectC", "UIBarButtonItem"]
 - ["So8NSObjectC", "UIButton"]
+- !private ["So8NSObjectC", "UIColor"]
 - !private ["So8NSObjectC", "UIControl"]
 - !private ["So8NSObjectC", "UIImage"]
+- !private ["So8NSObjectC", "URL"]
+- !private ["So8NSObjectC", "URLRequest"]
+- !private ["So8NSObjectC", "WKNavigationDelegate"]
+- ["So8NSObjectC", "WKWebView"]
+- !private ["So8NSObjectC", "addGestureRecognizer"]
 - !private ["So8NSObjectC", "addTarget"]
 - ["So8NSObjectC", "backAction"]
 - ["So8NSObjectC", "didReceiveMemoryWarning"]
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "leftBarButtonItem"]
+- !private ["So8NSObjectC", "load"]
 - !private ["So8NSObjectC", "navigationController"]
+- !private ["So8NSObjectC", "navigationDelegate"]
 - !private ["So8NSObjectC", "navigationItem"]
+- !private ["So8NSObjectC", "panGestureRecognizer"]
 - !private ["So8NSObjectC", "popViewController"]
+- !private ["So8NSObjectC", "revealToggle"]
+- !private ["So8NSObjectC", "revealViewController"]
 - !private ["So8NSObjectC", "setImage"]
+- !private ["So8NSObjectC", "tapGestureRecognizer"]
+- ["So8NSObjectC", "termsWebView"]
+- !private ["So8NSObjectC", "tintColor"]
 - !private ["So8NSObjectC", "title"]
+- !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewDidLoad"]
+- !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectP", "ButtonType"]
 - !private ["So8NSObjectP", "CGRect"]
 - !private ["So8NSObjectP", "Event"]
+- !private ["So8NSObjectP", "SWRevealViewController"]
 - !private ["So8NSObjectP", "State"]
 - !private ["So8NSObjectP", "TermsViewController"]
 - !private ["So8NSObjectP", "UIBarButtonItem"]
 - !private ["So8NSObjectP", "UIButton"]
+- !private ["So8NSObjectP", "UIColor"]
 - !private ["So8NSObjectP", "UIControl"]
 - !private ["So8NSObjectP", "UIImage"]
+- !private ["So8NSObjectP", "URL"]
+- !private ["So8NSObjectP", "URLRequest"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "addGestureRecognizer"]
 - !private ["So8NSObjectP", "addTarget"]
 - !private ["So8NSObjectP", "backAction"]
 - !private ["So8NSObjectP", "didReceiveMemoryWarning"]
 - !private ["So8NSObjectP", "frame"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "leftBarButtonItem"]
+- !private ["So8NSObjectP", "load"]
 - !private ["So8NSObjectP", "navigationController"]
+- !private ["So8NSObjectP", "navigationDelegate"]
 - !private ["So8NSObjectP", "navigationItem"]
+- !private ["So8NSObjectP", "panGestureRecognizer"]
 - !private ["So8NSObjectP", "popViewController"]
+- !private ["So8NSObjectP", "revealToggle"]
+- !private ["So8NSObjectP", "revealViewController"]
 - !private ["So8NSObjectP", "setImage"]
+- !private ["So8NSObjectP", "tapGestureRecognizer"]
+- !private ["So8NSObjectP", "termsWebView"]
+- !private ["So8NSObjectP", "tintColor"]
 - !private ["So8NSObjectP", "title"]
+- !private ["So8NSObjectP", "view"]
 - !private ["So8NSObjectP", "viewDidLoad"]
+- !private ["So8NSObjectP", "white"]
 - !private ["So14NSSecureCodingP", "init"]
+- !private ["So14NSSecureCodingP", "white"]
 - !private ["s9OptionSetP", "init"]
 - !private ["s9OptionSetP", "touchUpInside"]
-- !private ["9SaveUp_BD11PlaceholderP", "init"]
+- !private ["Sq", "addGestureRecognizer"]
+- !private ["Sq", "load"]
+- !private ["Sq", "navigationDelegate"]
+- !private ["Sq", "panGestureRecognizer"]
+- !private ["Sq", "tapGestureRecognizer"]
+- !private ["6SaveUp11PlaceholderP", "init"]
 - !private ["SY", "custom"]
+- !private ["SY", "done"]
 - !private ["SY", "init"]
 - !private ["SY", "touchUpInside"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- !private ["6SaveUp8ResourceP", "init"]
+- !private ["So22SWRevealViewControllerC", "panGestureRecognizer"]
+- !private ["So22SWRevealViewControllerC", "revealToggle"]
+- !private ["So22SWRevealViewControllerC", "tapGestureRecognizer"]
 - !private ["s10SetAlgebraP", "init"]
 - !private ["s10SetAlgebraP", "touchUpInside"]
 - !private ["So14UIControlStateV", "init"]
-- !private ["9SaveUp_BD19TermsViewControllerC", "CGRect"]
-- !private ["9SaveUp_BD19TermsViewControllerC", "TermsViewController"]
-- !private ["9SaveUp_BD19TermsViewControllerC", "UIBarButtonItem"]
-- ["9SaveUp_BD19TermsViewControllerC", "UIButton"]
-- !private ["9SaveUp_BD19TermsViewControllerC", "UIControl"]
-- !private ["9SaveUp_BD19TermsViewControllerC", "UIImage"]
-- ["9SaveUp_BD19TermsViewControllerC", "backAction"]
-- ["9SaveUp_BD19TermsViewControllerC", "deinit"]
-- ["9SaveUp_BD19TermsViewControllerC", "didReceiveMemoryWarning"]
-- ["9SaveUp_BD19TermsViewControllerC", "init"]
-- !private ["9SaveUp_BD19TermsViewControllerC", "navigationController"]
-- !private ["9SaveUp_BD19TermsViewControllerC", "navigationItem"]
-- ["9SaveUp_BD19TermsViewControllerC", "viewDidLoad"]
+- !private ["So20UIBarButtonItemStyleV", "done"]
+- !private ["6SaveUp19TermsViewControllerC", "CGRect"]
+- !private ["6SaveUp19TermsViewControllerC", "SWRevealViewController"]
+- !private ["6SaveUp19TermsViewControllerC", "TermsViewController"]
+- !private ["6SaveUp19TermsViewControllerC", "UIBarButtonItem"]
+- ["6SaveUp19TermsViewControllerC", "UIButton"]
+- !private ["6SaveUp19TermsViewControllerC", "UIColor"]
+- !private ["6SaveUp19TermsViewControllerC", "UIControl"]
+- !private ["6SaveUp19TermsViewControllerC", "UIImage"]
+- !private ["6SaveUp19TermsViewControllerC", "URL"]
+- !private ["6SaveUp19TermsViewControllerC", "URLRequest"]
+- !private ["6SaveUp19TermsViewControllerC", "WKNavigationDelegate"]
+- ["6SaveUp19TermsViewControllerC", "WKWebView"]
+- ["6SaveUp19TermsViewControllerC", "backAction"]
+- ["6SaveUp19TermsViewControllerC", "deinit"]
+- ["6SaveUp19TermsViewControllerC", "didReceiveMemoryWarning"]
+- ["6SaveUp19TermsViewControllerC", "init"]
+- !private ["6SaveUp19TermsViewControllerC", "navigationController"]
+- !private ["6SaveUp19TermsViewControllerC", "navigationItem"]
+- !private ["6SaveUp19TermsViewControllerC", "revealViewController"]
+- ["6SaveUp19TermsViewControllerC", "termsWebView"]
+- !private ["6SaveUp19TermsViewControllerC", "view"]
+- ["6SaveUp19TermsViewControllerC", "viewDidLoad"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "ButtonType"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "frame"]
@@ -269,57 +459,91 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "ButtonType"]
 - !private ["So29UIAccessibilityIdentificationP", "Event"]
 - !private ["So29UIAccessibilityIdentificationP", "State"]
+- !private ["So29UIAccessibilityIdentificationP", "addGestureRecognizer"]
 - !private ["So29UIAccessibilityIdentificationP", "addTarget"]
 - !private ["So29UIAccessibilityIdentificationP", "frame"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
+- !private ["So29UIAccessibilityIdentificationP", "load"]
+- !private ["So29UIAccessibilityIdentificationP", "navigationDelegate"]
 - !private ["So29UIAccessibilityIdentificationP", "setImage"]
+- !private ["So29UIAccessibilityIdentificationP", "tintColor"]
 - !private ["So12UIAppearanceP", "ButtonType"]
 - !private ["So12UIAppearanceP", "Event"]
 - !private ["So12UIAppearanceP", "State"]
+- !private ["So12UIAppearanceP", "addGestureRecognizer"]
 - !private ["So12UIAppearanceP", "addTarget"]
 - !private ["So12UIAppearanceP", "frame"]
 - !private ["So12UIAppearanceP", "init"]
+- !private ["So12UIAppearanceP", "load"]
+- !private ["So12UIAppearanceP", "navigationDelegate"]
 - !private ["So12UIAppearanceP", "setImage"]
+- !private ["So12UIAppearanceP", "tintColor"]
 - !private ["So21UIAppearanceContainerP", "ButtonType"]
 - !private ["So21UIAppearanceContainerP", "CGRect"]
 - !private ["So21UIAppearanceContainerP", "Event"]
+- !private ["So21UIAppearanceContainerP", "SWRevealViewController"]
 - !private ["So21UIAppearanceContainerP", "State"]
 - !private ["So21UIAppearanceContainerP", "TermsViewController"]
 - !private ["So21UIAppearanceContainerP", "UIBarButtonItem"]
 - !private ["So21UIAppearanceContainerP", "UIButton"]
+- !private ["So21UIAppearanceContainerP", "UIColor"]
 - !private ["So21UIAppearanceContainerP", "UIControl"]
 - !private ["So21UIAppearanceContainerP", "UIImage"]
+- !private ["So21UIAppearanceContainerP", "URL"]
+- !private ["So21UIAppearanceContainerP", "URLRequest"]
 - ["So21UIAppearanceContainerP", ""]
+- !private ["So21UIAppearanceContainerP", "addGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "addTarget"]
 - !private ["So21UIAppearanceContainerP", "backAction"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
 - !private ["So21UIAppearanceContainerP", "frame"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "load"]
 - !private ["So21UIAppearanceContainerP", "navigationController"]
+- !private ["So21UIAppearanceContainerP", "navigationDelegate"]
 - !private ["So21UIAppearanceContainerP", "navigationItem"]
+- !private ["So21UIAppearanceContainerP", "panGestureRecognizer"]
 - !private ["So21UIAppearanceContainerP", "popViewController"]
+- !private ["So21UIAppearanceContainerP", "revealToggle"]
+- !private ["So21UIAppearanceContainerP", "revealViewController"]
 - !private ["So21UIAppearanceContainerP", "setImage"]
+- !private ["So21UIAppearanceContainerP", "tapGestureRecognizer"]
+- !private ["So21UIAppearanceContainerP", "termsWebView"]
+- !private ["So21UIAppearanceContainerP", "view"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So15UIBarButtonItemC", "init"]
+- !private ["So15UIBarButtonItemC", "tintColor"]
 - !private ["So9UIBarItemC", "init"]
+- !private ["So9UIBarItemC", "tintColor"]
 - !private ["So8UIButtonC", "ButtonType"]
 - !private ["So8UIButtonC", "addTarget"]
 - !private ["So8UIButtonC", "frame"]
 - !private ["So8UIButtonC", "init"]
 - !private ["So8UIButtonC", "setImage"]
+- !private ["So7UIColorC", "white"]
 - !private ["So18UIContentContainerP", "CGRect"]
+- !private ["So18UIContentContainerP", "SWRevealViewController"]
 - !private ["So18UIContentContainerP", "TermsViewController"]
 - !private ["So18UIContentContainerP", "UIBarButtonItem"]
 - !private ["So18UIContentContainerP", "UIButton"]
+- !private ["So18UIContentContainerP", "UIColor"]
 - !private ["So18UIContentContainerP", "UIControl"]
 - !private ["So18UIContentContainerP", "UIImage"]
+- !private ["So18UIContentContainerP", "URL"]
+- !private ["So18UIContentContainerP", "URLRequest"]
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "backAction"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "navigationController"]
 - !private ["So18UIContentContainerP", "navigationItem"]
+- !private ["So18UIContentContainerP", "panGestureRecognizer"]
 - !private ["So18UIContentContainerP", "popViewController"]
+- !private ["So18UIContentContainerP", "revealToggle"]
+- !private ["So18UIContentContainerP", "revealViewController"]
+- !private ["So18UIContentContainerP", "tapGestureRecognizer"]
+- !private ["So18UIContentContainerP", "termsWebView"]
+- !private ["So18UIContentContainerP", "view"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So9UIControlC", "ButtonType"]
 - !private ["So9UIControlC", "Event"]
@@ -331,59 +555,87 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "ButtonType"]
 - !private ["So17UICoordinateSpaceP", "Event"]
 - !private ["So17UICoordinateSpaceP", "State"]
+- !private ["So17UICoordinateSpaceP", "addGestureRecognizer"]
 - !private ["So17UICoordinateSpaceP", "addTarget"]
 - !private ["So17UICoordinateSpaceP", "frame"]
 - !private ["So17UICoordinateSpaceP", "init"]
+- !private ["So17UICoordinateSpaceP", "load"]
+- !private ["So17UICoordinateSpaceP", "navigationDelegate"]
 - !private ["So17UICoordinateSpaceP", "setImage"]
 - !private ["So13UIDynamicItemP", "ButtonType"]
 - !private ["So13UIDynamicItemP", "Event"]
 - !private ["So13UIDynamicItemP", "State"]
+- !private ["So13UIDynamicItemP", "addGestureRecognizer"]
 - !private ["So13UIDynamicItemP", "addTarget"]
 - !private ["So13UIDynamicItemP", "frame"]
 - !private ["So13UIDynamicItemP", "init"]
+- !private ["So13UIDynamicItemP", "load"]
+- !private ["So13UIDynamicItemP", "navigationDelegate"]
 - !private ["So13UIDynamicItemP", "setImage"]
 - !private ["So18UIFocusEnvironmentP", "ButtonType"]
 - !private ["So18UIFocusEnvironmentP", "CGRect"]
 - !private ["So18UIFocusEnvironmentP", "Event"]
+- !private ["So18UIFocusEnvironmentP", "SWRevealViewController"]
 - !private ["So18UIFocusEnvironmentP", "State"]
 - !private ["So18UIFocusEnvironmentP", "TermsViewController"]
 - !private ["So18UIFocusEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UIFocusEnvironmentP", "UIButton"]
+- !private ["So18UIFocusEnvironmentP", "UIColor"]
 - !private ["So18UIFocusEnvironmentP", "UIControl"]
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
+- !private ["So18UIFocusEnvironmentP", "URL"]
+- !private ["So18UIFocusEnvironmentP", "URLRequest"]
 - ["So18UIFocusEnvironmentP", ""]
+- !private ["So18UIFocusEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "addTarget"]
 - !private ["So18UIFocusEnvironmentP", "backAction"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "load"]
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
+- !private ["So18UIFocusEnvironmentP", "navigationDelegate"]
 - !private ["So18UIFocusEnvironmentP", "navigationItem"]
+- !private ["So18UIFocusEnvironmentP", "panGestureRecognizer"]
 - !private ["So18UIFocusEnvironmentP", "popViewController"]
+- !private ["So18UIFocusEnvironmentP", "revealToggle"]
+- !private ["So18UIFocusEnvironmentP", "revealViewController"]
 - !private ["So18UIFocusEnvironmentP", "setImage"]
+- !private ["So18UIFocusEnvironmentP", "tapGestureRecognizer"]
+- !private ["So18UIFocusEnvironmentP", "termsWebView"]
+- !private ["So18UIFocusEnvironmentP", "view"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So11UIFocusItemP", "ButtonType"]
 - !private ["So11UIFocusItemP", "Event"]
 - !private ["So11UIFocusItemP", "State"]
+- !private ["So11UIFocusItemP", "addGestureRecognizer"]
 - !private ["So11UIFocusItemP", "addTarget"]
 - !private ["So11UIFocusItemP", "frame"]
 - !private ["So11UIFocusItemP", "init"]
+- !private ["So11UIFocusItemP", "load"]
+- !private ["So11UIFocusItemP", "navigationDelegate"]
 - !private ["So11UIFocusItemP", "setImage"]
 - !private ["So20UIFocusItemContainerP", "ButtonType"]
 - !private ["So20UIFocusItemContainerP", "Event"]
 - !private ["So20UIFocusItemContainerP", "State"]
+- !private ["So20UIFocusItemContainerP", "addGestureRecognizer"]
 - !private ["So20UIFocusItemContainerP", "addTarget"]
 - !private ["So20UIFocusItemContainerP", "frame"]
 - !private ["So20UIFocusItemContainerP", "init"]
+- !private ["So20UIFocusItemContainerP", "load"]
+- !private ["So20UIFocusItemContainerP", "navigationDelegate"]
 - !private ["So20UIFocusItemContainerP", "setImage"]
 - !private ["So7UIImageC", "init"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "init"]
 - !private ["So24UILargeContentViewerItemP", "ButtonType"]
 - !private ["So24UILargeContentViewerItemP", "Event"]
 - !private ["So24UILargeContentViewerItemP", "State"]
+- !private ["So24UILargeContentViewerItemP", "addGestureRecognizer"]
 - !private ["So24UILargeContentViewerItemP", "addTarget"]
 - !private ["So24UILargeContentViewerItemP", "frame"]
 - !private ["So24UILargeContentViewerItemP", "init"]
+- !private ["So24UILargeContentViewerItemP", "load"]
+- !private ["So24UILargeContentViewerItemP", "navigationDelegate"]
 - !private ["So24UILargeContentViewerItemP", "setImage"]
 - !private ["So22UINavigationControllerC", "popViewController"]
 - !private ["So16UINavigationItemC", "leftBarButtonItem"]
@@ -391,195 +643,332 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "ButtonType"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
 - !private ["So30UIPasteConfigurationSupportingP", "Event"]
+- !private ["So30UIPasteConfigurationSupportingP", "SWRevealViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "State"]
 - !private ["So30UIPasteConfigurationSupportingP", "TermsViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIControl"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "URL"]
+- !private ["So30UIPasteConfigurationSupportingP", "URLRequest"]
 - ["So30UIPasteConfigurationSupportingP", ""]
+- !private ["So30UIPasteConfigurationSupportingP", "addGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "addTarget"]
 - !private ["So30UIPasteConfigurationSupportingP", "backAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "load"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationDelegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "panGestureRecognizer"]
 - !private ["So30UIPasteConfigurationSupportingP", "popViewController"]
+- !private ["So30UIPasteConfigurationSupportingP", "revealToggle"]
+- !private ["So30UIPasteConfigurationSupportingP", "revealViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "setImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "tapGestureRecognizer"]
+- !private ["So30UIPasteConfigurationSupportingP", "termsWebView"]
+- !private ["So30UIPasteConfigurationSupportingP", "view"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - !private ["So11UIResponderC", "ButtonType"]
 - !private ["So11UIResponderC", "CGRect"]
 - !private ["So11UIResponderC", "Event"]
+- !private ["So11UIResponderC", "SWRevealViewController"]
 - !private ["So11UIResponderC", "State"]
 - !private ["So11UIResponderC", "TermsViewController"]
 - !private ["So11UIResponderC", "UIBarButtonItem"]
 - ["So11UIResponderC", "UIButton"]
+- !private ["So11UIResponderC", "UIColor"]
 - !private ["So11UIResponderC", "UIControl"]
 - !private ["So11UIResponderC", "UIImage"]
+- !private ["So11UIResponderC", "URL"]
+- !private ["So11UIResponderC", "URLRequest"]
+- !private ["So11UIResponderC", "WKNavigationDelegate"]
+- ["So11UIResponderC", "WKWebView"]
+- !private ["So11UIResponderC", "addGestureRecognizer"]
 - !private ["So11UIResponderC", "addTarget"]
 - ["So11UIResponderC", "backAction"]
 - ["So11UIResponderC", "didReceiveMemoryWarning"]
 - !private ["So11UIResponderC", "frame"]
 - ["So11UIResponderC", "init"]
+- !private ["So11UIResponderC", "load"]
 - !private ["So11UIResponderC", "navigationController"]
+- !private ["So11UIResponderC", "navigationDelegate"]
 - !private ["So11UIResponderC", "navigationItem"]
+- !private ["So11UIResponderC", "panGestureRecognizer"]
 - !private ["So11UIResponderC", "popViewController"]
+- !private ["So11UIResponderC", "revealToggle"]
+- !private ["So11UIResponderC", "revealViewController"]
 - !private ["So11UIResponderC", "setImage"]
+- !private ["So11UIResponderC", "tapGestureRecognizer"]
+- ["So11UIResponderC", "termsWebView"]
+- !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "ButtonType"]
 - !private ["So30UIResponderStandardEditActionsP", "CGRect"]
 - !private ["So30UIResponderStandardEditActionsP", "Event"]
+- !private ["So30UIResponderStandardEditActionsP", "SWRevealViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "State"]
 - !private ["So30UIResponderStandardEditActionsP", "TermsViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItem"]
 - !private ["So30UIResponderStandardEditActionsP", "UIButton"]
+- !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "UIControl"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
+- !private ["So30UIResponderStandardEditActionsP", "URL"]
+- !private ["So30UIResponderStandardEditActionsP", "URLRequest"]
 - ["So30UIResponderStandardEditActionsP", ""]
+- !private ["So30UIResponderStandardEditActionsP", "addGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "addTarget"]
 - !private ["So30UIResponderStandardEditActionsP", "backAction"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "load"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationDelegate"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
+- !private ["So30UIResponderStandardEditActionsP", "panGestureRecognizer"]
 - !private ["So30UIResponderStandardEditActionsP", "popViewController"]
+- !private ["So30UIResponderStandardEditActionsP", "revealToggle"]
+- !private ["So30UIResponderStandardEditActionsP", "revealViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "setImage"]
+- !private ["So30UIResponderStandardEditActionsP", "tapGestureRecognizer"]
+- !private ["So30UIResponderStandardEditActionsP", "termsWebView"]
+- !private ["So30UIResponderStandardEditActionsP", "view"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "ButtonType"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "frame"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "setImage"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "tintColor"]
 - !private ["So16UIStateRestoringP", "CGRect"]
+- !private ["So16UIStateRestoringP", "SWRevealViewController"]
 - !private ["So16UIStateRestoringP", "TermsViewController"]
 - !private ["So16UIStateRestoringP", "UIBarButtonItem"]
 - !private ["So16UIStateRestoringP", "UIButton"]
+- !private ["So16UIStateRestoringP", "UIColor"]
 - !private ["So16UIStateRestoringP", "UIControl"]
 - !private ["So16UIStateRestoringP", "UIImage"]
+- !private ["So16UIStateRestoringP", "URL"]
+- !private ["So16UIStateRestoringP", "URLRequest"]
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "backAction"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "navigationController"]
 - !private ["So16UIStateRestoringP", "navigationItem"]
+- !private ["So16UIStateRestoringP", "panGestureRecognizer"]
 - !private ["So16UIStateRestoringP", "popViewController"]
+- !private ["So16UIStateRestoringP", "revealToggle"]
+- !private ["So16UIStateRestoringP", "revealViewController"]
+- !private ["So16UIStateRestoringP", "tapGestureRecognizer"]
+- !private ["So16UIStateRestoringP", "termsWebView"]
+- !private ["So16UIStateRestoringP", "view"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "ButtonType"]
 - !private ["So18UITraitEnvironmentP", "CGRect"]
 - !private ["So18UITraitEnvironmentP", "Event"]
+- !private ["So18UITraitEnvironmentP", "SWRevealViewController"]
 - !private ["So18UITraitEnvironmentP", "State"]
 - !private ["So18UITraitEnvironmentP", "TermsViewController"]
 - !private ["So18UITraitEnvironmentP", "UIBarButtonItem"]
 - !private ["So18UITraitEnvironmentP", "UIButton"]
+- !private ["So18UITraitEnvironmentP", "UIColor"]
 - !private ["So18UITraitEnvironmentP", "UIControl"]
 - !private ["So18UITraitEnvironmentP", "UIImage"]
+- !private ["So18UITraitEnvironmentP", "URL"]
+- !private ["So18UITraitEnvironmentP", "URLRequest"]
 - ["So18UITraitEnvironmentP", ""]
+- !private ["So18UITraitEnvironmentP", "addGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "addTarget"]
 - !private ["So18UITraitEnvironmentP", "backAction"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
 - !private ["So18UITraitEnvironmentP", "frame"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "load"]
 - !private ["So18UITraitEnvironmentP", "navigationController"]
+- !private ["So18UITraitEnvironmentP", "navigationDelegate"]
 - !private ["So18UITraitEnvironmentP", "navigationItem"]
+- !private ["So18UITraitEnvironmentP", "panGestureRecognizer"]
 - !private ["So18UITraitEnvironmentP", "popViewController"]
+- !private ["So18UITraitEnvironmentP", "revealToggle"]
+- !private ["So18UITraitEnvironmentP", "revealViewController"]
 - !private ["So18UITraitEnvironmentP", "setImage"]
+- !private ["So18UITraitEnvironmentP", "tapGestureRecognizer"]
+- !private ["So18UITraitEnvironmentP", "termsWebView"]
+- !private ["So18UITraitEnvironmentP", "view"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So23UIUserActivityRestoringP", "ButtonType"]
 - !private ["So23UIUserActivityRestoringP", "CGRect"]
 - !private ["So23UIUserActivityRestoringP", "Event"]
+- !private ["So23UIUserActivityRestoringP", "SWRevealViewController"]
 - !private ["So23UIUserActivityRestoringP", "State"]
 - !private ["So23UIUserActivityRestoringP", "TermsViewController"]
 - !private ["So23UIUserActivityRestoringP", "UIBarButtonItem"]
 - !private ["So23UIUserActivityRestoringP", "UIButton"]
+- !private ["So23UIUserActivityRestoringP", "UIColor"]
 - !private ["So23UIUserActivityRestoringP", "UIControl"]
 - !private ["So23UIUserActivityRestoringP", "UIImage"]
+- !private ["So23UIUserActivityRestoringP", "URL"]
+- !private ["So23UIUserActivityRestoringP", "URLRequest"]
 - ["So23UIUserActivityRestoringP", ""]
+- !private ["So23UIUserActivityRestoringP", "addGestureRecognizer"]
 - !private ["So23UIUserActivityRestoringP", "addTarget"]
 - !private ["So23UIUserActivityRestoringP", "backAction"]
 - !private ["So23UIUserActivityRestoringP", "didReceiveMemoryWarning"]
 - !private ["So23UIUserActivityRestoringP", "frame"]
 - !private ["So23UIUserActivityRestoringP", "init"]
+- !private ["So23UIUserActivityRestoringP", "load"]
 - !private ["So23UIUserActivityRestoringP", "navigationController"]
+- !private ["So23UIUserActivityRestoringP", "navigationDelegate"]
 - !private ["So23UIUserActivityRestoringP", "navigationItem"]
+- !private ["So23UIUserActivityRestoringP", "panGestureRecognizer"]
 - !private ["So23UIUserActivityRestoringP", "popViewController"]
+- !private ["So23UIUserActivityRestoringP", "revealToggle"]
+- !private ["So23UIUserActivityRestoringP", "revealViewController"]
 - !private ["So23UIUserActivityRestoringP", "setImage"]
+- !private ["So23UIUserActivityRestoringP", "tapGestureRecognizer"]
+- !private ["So23UIUserActivityRestoringP", "termsWebView"]
+- !private ["So23UIUserActivityRestoringP", "view"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - !private ["So6UIViewC", "ButtonType"]
 - !private ["So6UIViewC", "Event"]
 - !private ["So6UIViewC", "State"]
+- !private ["So6UIViewC", "addGestureRecognizer"]
 - !private ["So6UIViewC", "addTarget"]
 - !private ["So6UIViewC", "frame"]
 - !private ["So6UIViewC", "init"]
+- !private ["So6UIViewC", "load"]
+- !private ["So6UIViewC", "navigationDelegate"]
 - !private ["So6UIViewC", "setImage"]
 - !private ["So16UIViewControllerC", "CGRect"]
+- !private ["So16UIViewControllerC", "SWRevealViewController"]
 - !private ["So16UIViewControllerC", "TermsViewController"]
 - !private ["So16UIViewControllerC", "UIBarButtonItem"]
 - ["So16UIViewControllerC", "UIButton"]
+- !private ["So16UIViewControllerC", "UIColor"]
 - !private ["So16UIViewControllerC", "UIControl"]
 - !private ["So16UIViewControllerC", "UIImage"]
+- !private ["So16UIViewControllerC", "URL"]
+- !private ["So16UIViewControllerC", "URLRequest"]
+- !private ["So16UIViewControllerC", "WKNavigationDelegate"]
+- ["So16UIViewControllerC", "WKWebView"]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "backAction"]
 - ["So16UIViewControllerC", "didReceiveMemoryWarning"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "navigationController"]
 - !private ["So16UIViewControllerC", "navigationItem"]
+- !private ["So16UIViewControllerC", "panGestureRecognizer"]
 - !private ["So16UIViewControllerC", "popViewController"]
+- !private ["So16UIViewControllerC", "revealToggle"]
+- !private ["So16UIViewControllerC", "revealViewController"]
+- !private ["So16UIViewControllerC", "tapGestureRecognizer"]
+- ["So16UIViewControllerC", "termsWebView"]
+- !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewDidLoad"]
+- !private ["10Foundation3URLV", "init"]
+- !private ["10Foundation10URLRequestV", "init"]
+- !private ["So9WKWebViewC", "load"]
+- !private ["So9WKWebViewC", "navigationDelegate"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s26_ExpressibleByColorLiteralP", "white"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ButtonType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Event"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "SWRevealViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "State"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "TermsViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIControl"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "URLRequest"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addTarget"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "backAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "didReceiveMemoryWarning"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "leftBarButtonItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "load"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationDelegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "panGestureRecognizer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "popViewController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "revealToggle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "revealViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tapGestureRecognizer"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "termsWebView"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tintColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ButtonType"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGRect"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Event"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "SWRevealViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "State"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TermsViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIBarButtonItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIButton"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIControl"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImage"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "URL"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "URLRequest"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addGestureRecognizer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addTarget"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "backAction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "didReceiveMemoryWarning"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "frame"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "leftBarButtonItem"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "load"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationDelegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationItem"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "panGestureRecognizer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "popViewController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "revealToggle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "revealViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setImage"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tapGestureRecognizer"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "termsWebView"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tintColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "title"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "view"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "white"]
+- !private ["s21_ObjectiveCBridgeableP", "addGestureRecognizer"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "load"]
+- !private ["s21_ObjectiveCBridgeableP", "navigationDelegate"]
+- !private ["s21_ObjectiveCBridgeableP", "panGestureRecognizer"]
+- !private ["s21_ObjectiveCBridgeableP", "tapGestureRecognizer"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "ButtonType"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "Event"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "State"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "addGestureRecognizer"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "addTarget"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "frame"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "load"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "navigationDelegate"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setImage"]
 depends-nominal:
 - !private "So12UIButtonTypeV"
@@ -594,9 +983,11 @@ depends-nominal:
 - "SQ"
 - !private "So15UIControlEventsV"
 - !private "s25ExpressibleByArrayLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - "SH"
-- !private "9SaveUp_BD20KingfisherCompatibleP"
+- !private "6SaveUp20KingfisherCompatibleP"
 - "So8NSCodingP"
+- !private "So9NSCopyingP"
 - "So26NSExtensionRequestHandlingP"
 - !private "So21NSItemProviderReadingP"
 - !private "So21NSItemProviderWritingP"
@@ -604,11 +995,16 @@ depends-nominal:
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
 - !private "s9OptionSetP"
-- !private "9SaveUp_BD11PlaceholderP"
+- !private "Sq"
+- !private "6SaveUp11PlaceholderP"
 - !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "6SaveUp8ResourceP"
+- !private "So22SWRevealViewControllerC"
 - !private "s10SetAlgebraP"
 - !private "So14UIControlStateV"
-- "9SaveUp_BD19TermsViewControllerC"
+- !private "So20UIBarButtonItemStyleV"
+- "6SaveUp19TermsViewControllerC"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
@@ -616,6 +1012,7 @@ depends-nominal:
 - !private "So15UIBarButtonItemC"
 - !private "So9UIBarItemC"
 - !private "So8UIButtonC"
+- !private "So7UIColorC"
 - "So18UIContentContainerP"
 - !private "So9UIControlC"
 - !private "So17UICoordinateSpaceP"
@@ -637,7 +1034,12 @@ depends-nominal:
 - "So23UIUserActivityRestoringP"
 - !private "So6UIViewC"
 - "So16UIViewControllerC"
+- !private "10Foundation3URLV"
+- !private "10Foundation10URLRequestV"
+- !private "So9WKWebViewC"
 - !private "s30_CustomPlaygroundQuickLookableP"
+- !private "s26_ExpressibleByColorLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s26_ExpressibleByImageLiteralP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
@@ -687,6 +1089,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CATransform3D.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUUID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUUID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
@@ -697,6 +1101,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Sparse/BLAS.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/alloca.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Alpha.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/LinearAlgebra.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
@@ -705,6 +1113,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolMetadata.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/quota.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach-o/stab.h"
@@ -880,6 +1289,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIFilterShape.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureScope.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFResponseType.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFButtonType.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/ctype.h"
@@ -891,6 +1301,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/xlocale/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/runetype.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKitCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/semaphore.h"
@@ -915,6 +1326,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/trace_base.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/readpassphrase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLResponse.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchResponse.h"
@@ -928,9 +1340,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSCompoundPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSComparisonPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginFlowState.h"
@@ -955,6 +1369,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/net/if.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_offsetof.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBag.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FIRRemoteConfig.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLHeading.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemsConfigurationReading.h"
@@ -1020,6 +1436,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/shims/KeyPath.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/math.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/tgmath.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/kauth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/objc/objc-api.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/port_obj.h"
@@ -1040,6 +1458,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_task.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecSharedCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDecimal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/signal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/machine/signal.h"
@@ -1055,6 +1476,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIKernel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/dyld_kernel.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES3/gl.h"
@@ -1156,6 +1578,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileVersion.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Conversion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneSession.h"
@@ -1188,6 +1611,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Quadrature/Integration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderItemDecoration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStateRestoration.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteConfiguration.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PayPalMobile/PayPalConfiguration.h"
@@ -1256,6 +1680,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProcessInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach_debug/ipc_info.h"
@@ -1299,6 +1725,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/workloop.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/grp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarButtonItemGroup.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/group.h"
@@ -1325,6 +1752,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/FileProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingCurveProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemProvider.h"
@@ -1434,6 +1870,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextDragPreviewRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKTileOverlayRenderer.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchCompleter.h"
@@ -1557,6 +1994,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFontMetrics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_statistics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetDiagnostics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPreferences.h"
@@ -1566,6 +2005,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/vImage_Utilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPathUtilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageProperties.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/times.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTDefines.h"
@@ -1620,6 +2062,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/secure/_strings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/paths.h"
@@ -1672,6 +2116,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityAdditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneDefinitions.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapSnapshotOptions.h"
@@ -1690,6 +2135,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPreviewParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDragPreviewParameters.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetworkErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManagerErrors.h"
@@ -1856,7 +2302,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mach_init.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_inherit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLVisit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
@@ -2049,7 +2497,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/activity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProxy.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Modules/module.modulemap"
@@ -2071,4 +2525,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "446e96bad9824529e9a3b36ba68760f3"
+interface-hash: "a91bd174e3412d70a9d1b781c776aba4"

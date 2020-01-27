@@ -2,9 +2,9 @@
 provides-top-level:
 - "FirstTableViewController"
 provides-nominal:
-- "9SaveUp_BD24FirstTableViewControllerC"
+- "6SaveUp24FirstTableViewControllerC"
 provides-member:
-- ["9SaveUp_BD24FirstTableViewControllerC", ""]
+- ["6SaveUp24FirstTableViewControllerC", ""]
 - ["So7UIImageC", ""]
 - ["So16UIViewControllerC", ""]
 - ["So7UIImageC", "resized"]
@@ -79,6 +79,7 @@ depends-top-level:
 - !private "UIAlertController"
 - !private "UIApplication"
 - !private "UIBarButtonItem"
+- !private "UIBezierPath"
 - "UIButton"
 - "UICollectionView"
 - !private "UIColor"
@@ -137,80 +138,82 @@ depends-member:
 - !private ["s10ArraySliceV", "product_image"]
 - !private ["s10ArraySliceV", "product_percentage"]
 - !private ["s10ArraySliceV", "product_title"]
-- !private ["9SaveUp_BD11BannersHomeC", "banner_id"]
-- !private ["9SaveUp_BD11BannersHomeC", "init"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "Api_Base_URL"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "BannersHome"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "CGRect"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "CGSize"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "CategoryHome"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "DealsHome"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "DispatchQueue"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "FiftyPercent"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "JSONSerialization"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "MIBadgeButton"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "NSData"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "NSURL"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "Popular"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "Reachability"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "String"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "StringToURL"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "ToastStyle"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "TopOffers"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "UIAlertAction"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "UIAlertController"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "UIApplication"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "UIBarButtonItem"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "UIButton"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "UIColor"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "UIControl"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "UIFont"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "UIImage"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "UILabel"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "UITableViewCell"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "URL"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "UserDefaults"]
-- ["9SaveUp_BD21BannersSelectDelegateP", ""]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "bannersArray"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "btnBeautyPressed"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "btnFitnessPressed"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "btnFoodPressed"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "btnServicePressed"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "btnTravelPressed"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "cartAction"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "categoryHomeArray"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "collectionView"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "dealsArray"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "dismiss"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "doThisWhenButtonIsTapped"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "fiftyPercentArray"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "floatButton"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "hitHomeAPI"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "masterSearchBar"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "messageFont"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "navigationController"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "navigationItem"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "popularArray"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "position"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "positionForBar"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "present"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "print"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "reachability"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "searchBar"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "searchBarBookmarkButtonClicked"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "searchBarCancelButtonClicked"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "searchBarResultsListButtonClicked"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "searchBarSearchButtonClicked"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "searchBarShouldBeginEditing"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "searchBarShouldEndEditing"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "searchBarTextDidBeginEditing"]
-- ["9SaveUp_BD21BannersSelectDelegateP", "searchBarTextDidEndEditing"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "showNetworkErrorAlert"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "storyboard"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "tabBarController"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "tableView"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "topOffersArray"]
-- !private ["9SaveUp_BD21BannersSelectDelegateP", "view"]
+- !private ["6SaveUp11BannersHomeC", "banner_id"]
+- !private ["6SaveUp11BannersHomeC", "init"]
+- !private ["6SaveUp21BannersSelectDelegateP", "Api_Base_URL"]
+- ["6SaveUp21BannersSelectDelegateP", "BannersHome"]
+- !private ["6SaveUp21BannersSelectDelegateP", "CGRect"]
+- !private ["6SaveUp21BannersSelectDelegateP", "CGSize"]
+- ["6SaveUp21BannersSelectDelegateP", "CategoryHome"]
+- ["6SaveUp21BannersSelectDelegateP", "DealsHome"]
+- !private ["6SaveUp21BannersSelectDelegateP", "DispatchQueue"]
+- ["6SaveUp21BannersSelectDelegateP", "FiftyPercent"]
+- !private ["6SaveUp21BannersSelectDelegateP", "JSONSerialization"]
+- !private ["6SaveUp21BannersSelectDelegateP", "MIBadgeButton"]
+- !private ["6SaveUp21BannersSelectDelegateP", "NSData"]
+- !private ["6SaveUp21BannersSelectDelegateP", "NSURL"]
+- ["6SaveUp21BannersSelectDelegateP", "Popular"]
+- ["6SaveUp21BannersSelectDelegateP", "Reachability"]
+- !private ["6SaveUp21BannersSelectDelegateP", "String"]
+- !private ["6SaveUp21BannersSelectDelegateP", "StringToURL"]
+- !private ["6SaveUp21BannersSelectDelegateP", "ToastStyle"]
+- ["6SaveUp21BannersSelectDelegateP", "TopOffers"]
+- !private ["6SaveUp21BannersSelectDelegateP", "UIAlertAction"]
+- !private ["6SaveUp21BannersSelectDelegateP", "UIAlertController"]
+- !private ["6SaveUp21BannersSelectDelegateP", "UIApplication"]
+- !private ["6SaveUp21BannersSelectDelegateP", "UIBarButtonItem"]
+- !private ["6SaveUp21BannersSelectDelegateP", "UIBezierPath"]
+- ["6SaveUp21BannersSelectDelegateP", "UIButton"]
+- !private ["6SaveUp21BannersSelectDelegateP", "UIColor"]
+- !private ["6SaveUp21BannersSelectDelegateP", "UIControl"]
+- !private ["6SaveUp21BannersSelectDelegateP", "UIFont"]
+- !private ["6SaveUp21BannersSelectDelegateP", "UIImage"]
+- !private ["6SaveUp21BannersSelectDelegateP", "UILabel"]
+- !private ["6SaveUp21BannersSelectDelegateP", "UITableViewCell"]
+- !private ["6SaveUp21BannersSelectDelegateP", "URL"]
+- !private ["6SaveUp21BannersSelectDelegateP", "UserDefaults"]
+- ["6SaveUp21BannersSelectDelegateP", ""]
+- !private ["6SaveUp21BannersSelectDelegateP", "bannersArray"]
+- ["6SaveUp21BannersSelectDelegateP", "btnBeautyPressed"]
+- ["6SaveUp21BannersSelectDelegateP", "btnFitnessPressed"]
+- ["6SaveUp21BannersSelectDelegateP", "btnFoodPressed"]
+- ["6SaveUp21BannersSelectDelegateP", "btnServicePressed"]
+- ["6SaveUp21BannersSelectDelegateP", "btnTravelPressed"]
+- !private ["6SaveUp21BannersSelectDelegateP", "cartAction"]
+- !private ["6SaveUp21BannersSelectDelegateP", "categoryHomeArray"]
+- ["6SaveUp21BannersSelectDelegateP", "collectionView"]
+- !private ["6SaveUp21BannersSelectDelegateP", "dealsArray"]
+- !private ["6SaveUp21BannersSelectDelegateP", "dismiss"]
+- !private ["6SaveUp21BannersSelectDelegateP", "doThisWhenButtonIsTapped"]
+- !private ["6SaveUp21BannersSelectDelegateP", "fiftyPercentArray"]
+- !private ["6SaveUp21BannersSelectDelegateP", "floatButton"]
+- !private ["6SaveUp21BannersSelectDelegateP", "hitHomeAPI"]
+- !private ["6SaveUp21BannersSelectDelegateP", "masterSearchBar"]
+- !private ["6SaveUp21BannersSelectDelegateP", "messageFont"]
+- !private ["6SaveUp21BannersSelectDelegateP", "navigationController"]
+- !private ["6SaveUp21BannersSelectDelegateP", "navigationItem"]
+- !private ["6SaveUp21BannersSelectDelegateP", "popularArray"]
+- ["6SaveUp21BannersSelectDelegateP", "position"]
+- ["6SaveUp21BannersSelectDelegateP", "positionForBar"]
+- !private ["6SaveUp21BannersSelectDelegateP", "present"]
+- !private ["6SaveUp21BannersSelectDelegateP", "print"]
+- !private ["6SaveUp21BannersSelectDelegateP", "reachability"]
+- ["6SaveUp21BannersSelectDelegateP", "searchBar"]
+- ["6SaveUp21BannersSelectDelegateP", "searchBarBookmarkButtonClicked"]
+- ["6SaveUp21BannersSelectDelegateP", "searchBarCancelButtonClicked"]
+- ["6SaveUp21BannersSelectDelegateP", "searchBarResultsListButtonClicked"]
+- ["6SaveUp21BannersSelectDelegateP", "searchBarSearchButtonClicked"]
+- ["6SaveUp21BannersSelectDelegateP", "searchBarShouldBeginEditing"]
+- ["6SaveUp21BannersSelectDelegateP", "searchBarShouldEndEditing"]
+- ["6SaveUp21BannersSelectDelegateP", "searchBarTextDidBeginEditing"]
+- ["6SaveUp21BannersSelectDelegateP", "searchBarTextDidEndEditing"]
+- !private ["6SaveUp21BannersSelectDelegateP", "setShadowAndRoundedBorder"]
+- !private ["6SaveUp21BannersSelectDelegateP", "showNetworkErrorAlert"]
+- !private ["6SaveUp21BannersSelectDelegateP", "storyboard"]
+- !private ["6SaveUp21BannersSelectDelegateP", "tabBarController"]
+- !private ["6SaveUp21BannersSelectDelegateP", "tableView"]
+- !private ["6SaveUp21BannersSelectDelegateP", "topOffersArray"]
+- !private ["6SaveUp21BannersSelectDelegateP", "view"]
 - !private ["SK", "Encoding"]
 - !private ["SK", "append"]
 - !private ["SK", "banner_id"]
@@ -234,6 +237,7 @@ depends-member:
 - !private ["So7CALayerC", "shadowColor"]
 - !private ["So7CALayerC", "shadowOffset"]
 - !private ["So7CALayerC", "shadowOpacity"]
+- !private ["So7CALayerC", "shadowPath"]
 - !private ["So7CALayerC", "shadowRadius"]
 - !private ["So15CALayerDelegateP", "Event"]
 - !private ["So15CALayerDelegateP", "State"]
@@ -281,6 +285,7 @@ depends-member:
 - !private ["So13CAMediaTimingP", "shadowColor"]
 - !private ["So13CAMediaTimingP", "shadowOffset"]
 - !private ["So13CAMediaTimingP", "shadowOpacity"]
+- !private ["So13CAMediaTimingP", "shadowPath"]
 - !private ["So13CAMediaTimingP", "shadowRadius"]
 - !private ["So7CGPointV", "center"]
 - !private ["So7CGPointV", "top"]
@@ -317,6 +322,7 @@ depends-member:
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIBarButtonItem"]
+- !private ["s7CVarArgP", "UIBezierPath"]
 - ["s7CVarArgP", "UIButton"]
 - !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "UIControl"]
@@ -357,6 +363,7 @@ depends-member:
 - !private ["s7CVarArgP", "category_name"]
 - !private ["s7CVarArgP", "center"]
 - !private ["s7CVarArgP", "cgColor"]
+- !private ["s7CVarArgP", "cgPath"]
 - !private ["s7CVarArgP", "collectionCellDelegate"]
 - ["s7CVarArgP", "collectionView"]
 - !private ["s7CVarArgP", "contentView"]
@@ -438,10 +445,12 @@ depends-member:
 - !private ["s7CVarArgP", "selectionStyle"]
 - !private ["s7CVarArgP", "set"]
 - !private ["s7CVarArgP", "setImage"]
+- !private ["s7CVarArgP", "setShadowAndRoundedBorder"]
 - !private ["s7CVarArgP", "setTitle"]
 - !private ["s7CVarArgP", "shadowColor"]
 - !private ["s7CVarArgP", "shadowOffset"]
 - !private ["s7CVarArgP", "shadowOpacity"]
+- !private ["s7CVarArgP", "shadowPath"]
 - !private ["s7CVarArgP", "shadowRadius"]
 - !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "showNetworkErrorAlert"]
@@ -470,85 +479,87 @@ depends-member:
 - !private ["s7CVarArgP", "viewWillAppear"]
 - !private ["s7CVarArgP", "viewWillDisappear"]
 - !private ["s7CVarArgP", "white"]
-- !private ["9SaveUp_BD12CategoryHomeC", "category_id"]
-- !private ["9SaveUp_BD12CategoryHomeC", "category_name"]
-- !private ["9SaveUp_BD12CategoryHomeC", "init"]
-- !private ["9SaveUp_BD12CategoryHomeC", "sub_category_list"]
-- !private ["9SaveUp_BD33CategoryProductListViewControllerC", "parent_category_id"]
-- !private ["9SaveUp_BD33CategoryProductListViewControllerC", "parent_category_name"]
-- !private ["9SaveUp_BD33CategoryProductListViewControllerC", "sec_category_id"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "Api_Base_URL"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "BannersHome"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "CGRect"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "CGSize"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "CategoryHome"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "DealsHome"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "DispatchQueue"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "FiftyPercent"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "JSONSerialization"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "MIBadgeButton"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "NSData"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "NSURL"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "Popular"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "Reachability"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "String"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "StringToURL"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "ToastStyle"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "TopOffers"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "UIAlertAction"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "UIAlertController"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "UIApplication"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "UIBarButtonItem"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "UIButton"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "UIColor"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "UIControl"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "UIFont"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "UIImage"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "UILabel"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "UITableViewCell"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "URL"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "UserDefaults"]
-- ["9SaveUp_BD22CategorySelectDelegateP", ""]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "bannersArray"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "btnBeautyPressed"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "btnFitnessPressed"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "btnFoodPressed"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "btnServicePressed"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "btnTravelPressed"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "cartAction"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "categoryHomeArray"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "collectionView"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "dealsArray"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "dismiss"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "doThisWhenButtonIsTapped"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "fiftyPercentArray"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "floatButton"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "hitHomeAPI"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "masterSearchBar"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "messageFont"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "navigationController"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "navigationItem"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "popularArray"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "position"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "positionForBar"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "present"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "print"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "reachability"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "searchBar"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "searchBarBookmarkButtonClicked"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "searchBarCancelButtonClicked"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "searchBarResultsListButtonClicked"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "searchBarSearchButtonClicked"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "searchBarShouldBeginEditing"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "searchBarShouldEndEditing"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "searchBarTextDidBeginEditing"]
-- ["9SaveUp_BD22CategorySelectDelegateP", "searchBarTextDidEndEditing"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "showNetworkErrorAlert"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "storyboard"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "tabBarController"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "tableView"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "topOffersArray"]
-- !private ["9SaveUp_BD22CategorySelectDelegateP", "view"]
+- !private ["6SaveUp12CategoryHomeC", "category_id"]
+- !private ["6SaveUp12CategoryHomeC", "category_name"]
+- !private ["6SaveUp12CategoryHomeC", "init"]
+- !private ["6SaveUp12CategoryHomeC", "sub_category_list"]
+- !private ["6SaveUp33CategoryProductListViewControllerC", "parent_category_id"]
+- !private ["6SaveUp33CategoryProductListViewControllerC", "parent_category_name"]
+- !private ["6SaveUp33CategoryProductListViewControllerC", "sec_category_id"]
+- !private ["6SaveUp22CategorySelectDelegateP", "Api_Base_URL"]
+- ["6SaveUp22CategorySelectDelegateP", "BannersHome"]
+- !private ["6SaveUp22CategorySelectDelegateP", "CGRect"]
+- !private ["6SaveUp22CategorySelectDelegateP", "CGSize"]
+- ["6SaveUp22CategorySelectDelegateP", "CategoryHome"]
+- ["6SaveUp22CategorySelectDelegateP", "DealsHome"]
+- !private ["6SaveUp22CategorySelectDelegateP", "DispatchQueue"]
+- ["6SaveUp22CategorySelectDelegateP", "FiftyPercent"]
+- !private ["6SaveUp22CategorySelectDelegateP", "JSONSerialization"]
+- !private ["6SaveUp22CategorySelectDelegateP", "MIBadgeButton"]
+- !private ["6SaveUp22CategorySelectDelegateP", "NSData"]
+- !private ["6SaveUp22CategorySelectDelegateP", "NSURL"]
+- ["6SaveUp22CategorySelectDelegateP", "Popular"]
+- ["6SaveUp22CategorySelectDelegateP", "Reachability"]
+- !private ["6SaveUp22CategorySelectDelegateP", "String"]
+- !private ["6SaveUp22CategorySelectDelegateP", "StringToURL"]
+- !private ["6SaveUp22CategorySelectDelegateP", "ToastStyle"]
+- ["6SaveUp22CategorySelectDelegateP", "TopOffers"]
+- !private ["6SaveUp22CategorySelectDelegateP", "UIAlertAction"]
+- !private ["6SaveUp22CategorySelectDelegateP", "UIAlertController"]
+- !private ["6SaveUp22CategorySelectDelegateP", "UIApplication"]
+- !private ["6SaveUp22CategorySelectDelegateP", "UIBarButtonItem"]
+- !private ["6SaveUp22CategorySelectDelegateP", "UIBezierPath"]
+- ["6SaveUp22CategorySelectDelegateP", "UIButton"]
+- !private ["6SaveUp22CategorySelectDelegateP", "UIColor"]
+- !private ["6SaveUp22CategorySelectDelegateP", "UIControl"]
+- !private ["6SaveUp22CategorySelectDelegateP", "UIFont"]
+- !private ["6SaveUp22CategorySelectDelegateP", "UIImage"]
+- !private ["6SaveUp22CategorySelectDelegateP", "UILabel"]
+- !private ["6SaveUp22CategorySelectDelegateP", "UITableViewCell"]
+- !private ["6SaveUp22CategorySelectDelegateP", "URL"]
+- !private ["6SaveUp22CategorySelectDelegateP", "UserDefaults"]
+- ["6SaveUp22CategorySelectDelegateP", ""]
+- !private ["6SaveUp22CategorySelectDelegateP", "bannersArray"]
+- ["6SaveUp22CategorySelectDelegateP", "btnBeautyPressed"]
+- ["6SaveUp22CategorySelectDelegateP", "btnFitnessPressed"]
+- ["6SaveUp22CategorySelectDelegateP", "btnFoodPressed"]
+- ["6SaveUp22CategorySelectDelegateP", "btnServicePressed"]
+- ["6SaveUp22CategorySelectDelegateP", "btnTravelPressed"]
+- !private ["6SaveUp22CategorySelectDelegateP", "cartAction"]
+- !private ["6SaveUp22CategorySelectDelegateP", "categoryHomeArray"]
+- ["6SaveUp22CategorySelectDelegateP", "collectionView"]
+- !private ["6SaveUp22CategorySelectDelegateP", "dealsArray"]
+- !private ["6SaveUp22CategorySelectDelegateP", "dismiss"]
+- !private ["6SaveUp22CategorySelectDelegateP", "doThisWhenButtonIsTapped"]
+- !private ["6SaveUp22CategorySelectDelegateP", "fiftyPercentArray"]
+- !private ["6SaveUp22CategorySelectDelegateP", "floatButton"]
+- !private ["6SaveUp22CategorySelectDelegateP", "hitHomeAPI"]
+- !private ["6SaveUp22CategorySelectDelegateP", "masterSearchBar"]
+- !private ["6SaveUp22CategorySelectDelegateP", "messageFont"]
+- !private ["6SaveUp22CategorySelectDelegateP", "navigationController"]
+- !private ["6SaveUp22CategorySelectDelegateP", "navigationItem"]
+- !private ["6SaveUp22CategorySelectDelegateP", "popularArray"]
+- ["6SaveUp22CategorySelectDelegateP", "position"]
+- ["6SaveUp22CategorySelectDelegateP", "positionForBar"]
+- !private ["6SaveUp22CategorySelectDelegateP", "present"]
+- !private ["6SaveUp22CategorySelectDelegateP", "print"]
+- !private ["6SaveUp22CategorySelectDelegateP", "reachability"]
+- ["6SaveUp22CategorySelectDelegateP", "searchBar"]
+- ["6SaveUp22CategorySelectDelegateP", "searchBarBookmarkButtonClicked"]
+- ["6SaveUp22CategorySelectDelegateP", "searchBarCancelButtonClicked"]
+- ["6SaveUp22CategorySelectDelegateP", "searchBarResultsListButtonClicked"]
+- ["6SaveUp22CategorySelectDelegateP", "searchBarSearchButtonClicked"]
+- ["6SaveUp22CategorySelectDelegateP", "searchBarShouldBeginEditing"]
+- ["6SaveUp22CategorySelectDelegateP", "searchBarShouldEndEditing"]
+- ["6SaveUp22CategorySelectDelegateP", "searchBarTextDidBeginEditing"]
+- ["6SaveUp22CategorySelectDelegateP", "searchBarTextDidEndEditing"]
+- !private ["6SaveUp22CategorySelectDelegateP", "setShadowAndRoundedBorder"]
+- !private ["6SaveUp22CategorySelectDelegateP", "showNetworkErrorAlert"]
+- !private ["6SaveUp22CategorySelectDelegateP", "storyboard"]
+- !private ["6SaveUp22CategorySelectDelegateP", "tabBarController"]
+- !private ["6SaveUp22CategorySelectDelegateP", "tableView"]
+- !private ["6SaveUp22CategorySelectDelegateP", "topOffersArray"]
+- !private ["6SaveUp22CategorySelectDelegateP", "view"]
 - !private ["Sl", "Encoding"]
 - !private ["Sl", "append"]
 - !private ["Sl", "banner_id"]
@@ -606,6 +617,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIBarButtonItem"]
+- !private ["s28CustomDebugStringConvertibleP", "UIBezierPath"]
 - ["s28CustomDebugStringConvertibleP", "UIButton"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "UIControl"]
@@ -646,6 +658,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "category_name"]
 - !private ["s28CustomDebugStringConvertibleP", "center"]
 - !private ["s28CustomDebugStringConvertibleP", "cgColor"]
+- !private ["s28CustomDebugStringConvertibleP", "cgPath"]
 - !private ["s28CustomDebugStringConvertibleP", "collectionCellDelegate"]
 - ["s28CustomDebugStringConvertibleP", "collectionView"]
 - !private ["s28CustomDebugStringConvertibleP", "contentView"]
@@ -732,10 +745,12 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "selectionStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "set"]
 - !private ["s28CustomDebugStringConvertibleP", "setImage"]
+- !private ["s28CustomDebugStringConvertibleP", "setShadowAndRoundedBorder"]
 - !private ["s28CustomDebugStringConvertibleP", "setTitle"]
 - !private ["s28CustomDebugStringConvertibleP", "shadowColor"]
 - !private ["s28CustomDebugStringConvertibleP", "shadowOffset"]
 - !private ["s28CustomDebugStringConvertibleP", "shadowOpacity"]
+- !private ["s28CustomDebugStringConvertibleP", "shadowPath"]
 - !private ["s28CustomDebugStringConvertibleP", "shadowRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "showNetworkErrorAlert"]
@@ -827,6 +842,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIBarButtonItem"]
+- !private ["s23CustomStringConvertibleP", "UIBezierPath"]
 - ["s23CustomStringConvertibleP", "UIButton"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "UIControl"]
@@ -869,6 +885,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "category_name"]
 - !private ["s23CustomStringConvertibleP", "center"]
 - !private ["s23CustomStringConvertibleP", "cgColor"]
+- !private ["s23CustomStringConvertibleP", "cgPath"]
 - !private ["s23CustomStringConvertibleP", "collectionCellDelegate"]
 - ["s23CustomStringConvertibleP", "collectionView"]
 - !private ["s23CustomStringConvertibleP", "contentView"]
@@ -954,10 +971,12 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "selectionStyle"]
 - !private ["s23CustomStringConvertibleP", "set"]
 - !private ["s23CustomStringConvertibleP", "setImage"]
+- !private ["s23CustomStringConvertibleP", "setShadowAndRoundedBorder"]
 - !private ["s23CustomStringConvertibleP", "setTitle"]
 - !private ["s23CustomStringConvertibleP", "shadowColor"]
 - !private ["s23CustomStringConvertibleP", "shadowOffset"]
 - !private ["s23CustomStringConvertibleP", "shadowOpacity"]
+- !private ["s23CustomStringConvertibleP", "shadowPath"]
 - !private ["s23CustomStringConvertibleP", "shadowRadius"]
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "showNetworkErrorAlert"]
@@ -998,7 +1017,7 @@ depends-member:
 - !private ["10Foundation12DataProtocolP", "product_percentage"]
 - !private ["10Foundation12DataProtocolP", "product_title"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
-- !private ["9SaveUp_BD9DealsHomeC", "init"]
+- !private ["6SaveUp9DealsHomeC", "init"]
 - !private ["Se", "Encoding"]
 - !private ["Se", "append"]
 - !private ["Se", "center"]
@@ -1083,6 +1102,7 @@ depends-member:
 - !private ["SQ", "UIAlertController"]
 - !private ["SQ", "UIApplication"]
 - !private ["SQ", "UIBarButtonItem"]
+- !private ["SQ", "UIBezierPath"]
 - ["SQ", "UIButton"]
 - !private ["SQ", "UIColor"]
 - !private ["SQ", "UIControl"]
@@ -1125,6 +1145,7 @@ depends-member:
 - !private ["SQ", "category_name"]
 - !private ["SQ", "center"]
 - !private ["SQ", "cgColor"]
+- !private ["SQ", "cgPath"]
 - !private ["SQ", "collectionCellDelegate"]
 - ["SQ", "collectionView"]
 - !private ["SQ", "contentView"]
@@ -1218,10 +1239,12 @@ depends-member:
 - !private ["SQ", "selectionStyle"]
 - !private ["SQ", "set"]
 - !private ["SQ", "setImage"]
+- !private ["SQ", "setShadowAndRoundedBorder"]
 - !private ["SQ", "setTitle"]
 - !private ["SQ", "shadowColor"]
 - !private ["SQ", "shadowOffset"]
 - !private ["SQ", "shadowOpacity"]
+- !private ["SQ", "shadowPath"]
 - !private ["SQ", "shadowRadius"]
 - !private ["SQ", "shared"]
 - !private ["SQ", "showNetworkErrorAlert"]
@@ -1297,119 +1320,121 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "Encoding"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "addingPercentEscapes"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["9SaveUp_BD20FBannerTableViewCellC", "bannerDel"]
-- !private ["9SaveUp_BD24FCategoriesTableViewCellC", "catDel"]
-- !private ["9SaveUp_BD24FCategoriesTableViewCellC", "selectionStyle"]
-- !private ["9SaveUp_BD20FLatestTableViewCellC", "collectionCellDelegate"]
-- !private ["9SaveUp_BD20FLatestTableViewCellC", "tag"]
-- !private ["9SaveUp_BD34FProductDetailsTableViewControllerC", "category_name"]
-- !private ["9SaveUp_BD34FProductDetailsTableViewControllerC", "product_id"]
-- !private ["9SaveUp_BD12FiftyPercentC", "init"]
-- !private ["9SaveUp_BD12FiftyPercentC", "merchant_name"]
-- !private ["9SaveUp_BD12FiftyPercentC", "product_discount_price"]
-- !private ["9SaveUp_BD12FiftyPercentC", "product_id"]
-- !private ["9SaveUp_BD12FiftyPercentC", "product_image"]
-- !private ["9SaveUp_BD12FiftyPercentC", "product_percentage"]
-- !private ["9SaveUp_BD12FiftyPercentC", "product_title"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "Api_Base_URL"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "BannersHome"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "Bool"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "CGFloat"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "CGRect"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "CGSize"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "CategoryHome"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "CategoryProductListViewController"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "Data"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "DealsHome"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "DispatchQueue"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "FBannerTableViewCell"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "FCategoriesTableViewCell"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "FGiftDealsTableViewCell"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "FHotDealsTableViewCell"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "FLatestTableViewCell"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "FProductDetailsTableViewController"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "FiftyPercent"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "IndexPath"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "Int"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "JSONSerialization"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "ListViewController"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "MIBadgeButton"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "MyCartViewController"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "NSData"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "NSDictionary"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "NSInteger"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "NSString"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "NSURL"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "Popular"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "Reachability"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "String"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "StringToURL"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "ToastStyle"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "TopOffers"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "UIAlertAction"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "UIAlertController"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "UIApplication"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "UIBarButtonItem"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "UIButton"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "UICollectionView"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "UIColor"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "UIControl"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "UIFont"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "UIImage"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "UILabel"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "UISearchBar"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "UITableView"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "UITableViewCell"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "URL"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "UserDefaults"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "bannersArray"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "btnBeautyPressed"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "btnFitnessPressed"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "btnFoodPressed"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "btnServicePressed"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "btnTravelPressed"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "cartAction"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "categoryHomeArray"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "collectionView"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "dealsArray"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "deinit"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "dismiss"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "doThisWhenButtonIsTapped"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "fiftyPercentArray"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "floatButton"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "hitHomeAPI"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "init"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "masterSearchBar"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "messageFont"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "messageToast"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "navigationController"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "navigationItem"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "numberOfSections"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "popularArray"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "position"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "positionForBar"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "present"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "print"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "reachability"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "searchBar"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "searchBarBookmarkButtonClicked"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "searchBarCancelButtonClicked"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "searchBarResultsListButtonClicked"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "searchBarSearchButtonClicked"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "searchBarShouldBeginEditing"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "searchBarShouldEndEditing"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "searchBarTextDidBeginEditing"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "searchBarTextDidEndEditing"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "setupFloatingButton"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "showNetworkErrorAlert"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "storyboard"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "tabBarController"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "tableView"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "topOffersArray"]
-- !private ["9SaveUp_BD24FirstTableViewControllerC", "view"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "viewDidLoad"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "viewWillAppear"]
-- ["9SaveUp_BD24FirstTableViewControllerC", "viewWillDisappear"]
+- !private ["6SaveUp20FBannerTableViewCellC", "bannerDel"]
+- !private ["6SaveUp24FCategoriesTableViewCellC", "catDel"]
+- !private ["6SaveUp24FCategoriesTableViewCellC", "selectionStyle"]
+- !private ["6SaveUp20FLatestTableViewCellC", "collectionCellDelegate"]
+- !private ["6SaveUp20FLatestTableViewCellC", "tag"]
+- !private ["6SaveUp34FProductDetailsTableViewControllerC", "category_name"]
+- !private ["6SaveUp34FProductDetailsTableViewControllerC", "product_id"]
+- !private ["6SaveUp12FiftyPercentC", "init"]
+- !private ["6SaveUp12FiftyPercentC", "merchant_name"]
+- !private ["6SaveUp12FiftyPercentC", "product_discount_price"]
+- !private ["6SaveUp12FiftyPercentC", "product_id"]
+- !private ["6SaveUp12FiftyPercentC", "product_image"]
+- !private ["6SaveUp12FiftyPercentC", "product_percentage"]
+- !private ["6SaveUp12FiftyPercentC", "product_title"]
+- !private ["6SaveUp24FirstTableViewControllerC", "Api_Base_URL"]
+- ["6SaveUp24FirstTableViewControllerC", "BannersHome"]
+- ["6SaveUp24FirstTableViewControllerC", "Bool"]
+- ["6SaveUp24FirstTableViewControllerC", "CGFloat"]
+- !private ["6SaveUp24FirstTableViewControllerC", "CGRect"]
+- !private ["6SaveUp24FirstTableViewControllerC", "CGSize"]
+- ["6SaveUp24FirstTableViewControllerC", "CategoryHome"]
+- !private ["6SaveUp24FirstTableViewControllerC", "CategoryProductListViewController"]
+- !private ["6SaveUp24FirstTableViewControllerC", "Data"]
+- ["6SaveUp24FirstTableViewControllerC", "DealsHome"]
+- !private ["6SaveUp24FirstTableViewControllerC", "DispatchQueue"]
+- !private ["6SaveUp24FirstTableViewControllerC", "FBannerTableViewCell"]
+- !private ["6SaveUp24FirstTableViewControllerC", "FCategoriesTableViewCell"]
+- !private ["6SaveUp24FirstTableViewControllerC", "FGiftDealsTableViewCell"]
+- !private ["6SaveUp24FirstTableViewControllerC", "FHotDealsTableViewCell"]
+- !private ["6SaveUp24FirstTableViewControllerC", "FLatestTableViewCell"]
+- !private ["6SaveUp24FirstTableViewControllerC", "FProductDetailsTableViewController"]
+- ["6SaveUp24FirstTableViewControllerC", "FiftyPercent"]
+- ["6SaveUp24FirstTableViewControllerC", "IndexPath"]
+- ["6SaveUp24FirstTableViewControllerC", "Int"]
+- !private ["6SaveUp24FirstTableViewControllerC", "JSONSerialization"]
+- !private ["6SaveUp24FirstTableViewControllerC", "ListViewController"]
+- !private ["6SaveUp24FirstTableViewControllerC", "MIBadgeButton"]
+- !private ["6SaveUp24FirstTableViewControllerC", "MyCartViewController"]
+- !private ["6SaveUp24FirstTableViewControllerC", "NSData"]
+- !private ["6SaveUp24FirstTableViewControllerC", "NSDictionary"]
+- !private ["6SaveUp24FirstTableViewControllerC", "NSInteger"]
+- !private ["6SaveUp24FirstTableViewControllerC", "NSString"]
+- !private ["6SaveUp24FirstTableViewControllerC", "NSURL"]
+- ["6SaveUp24FirstTableViewControllerC", "Popular"]
+- ["6SaveUp24FirstTableViewControllerC", "Reachability"]
+- ["6SaveUp24FirstTableViewControllerC", "String"]
+- ["6SaveUp24FirstTableViewControllerC", "StringToURL"]
+- !private ["6SaveUp24FirstTableViewControllerC", "ToastStyle"]
+- ["6SaveUp24FirstTableViewControllerC", "TopOffers"]
+- !private ["6SaveUp24FirstTableViewControllerC", "UIAlertAction"]
+- !private ["6SaveUp24FirstTableViewControllerC", "UIAlertController"]
+- !private ["6SaveUp24FirstTableViewControllerC", "UIApplication"]
+- !private ["6SaveUp24FirstTableViewControllerC", "UIBarButtonItem"]
+- !private ["6SaveUp24FirstTableViewControllerC", "UIBezierPath"]
+- ["6SaveUp24FirstTableViewControllerC", "UIButton"]
+- ["6SaveUp24FirstTableViewControllerC", "UICollectionView"]
+- !private ["6SaveUp24FirstTableViewControllerC", "UIColor"]
+- !private ["6SaveUp24FirstTableViewControllerC", "UIControl"]
+- !private ["6SaveUp24FirstTableViewControllerC", "UIFont"]
+- !private ["6SaveUp24FirstTableViewControllerC", "UIImage"]
+- !private ["6SaveUp24FirstTableViewControllerC", "UILabel"]
+- ["6SaveUp24FirstTableViewControllerC", "UISearchBar"]
+- ["6SaveUp24FirstTableViewControllerC", "UITableView"]
+- ["6SaveUp24FirstTableViewControllerC", "UITableViewCell"]
+- ["6SaveUp24FirstTableViewControllerC", "URL"]
+- !private ["6SaveUp24FirstTableViewControllerC", "UserDefaults"]
+- ["6SaveUp24FirstTableViewControllerC", "bannersArray"]
+- ["6SaveUp24FirstTableViewControllerC", "btnBeautyPressed"]
+- ["6SaveUp24FirstTableViewControllerC", "btnFitnessPressed"]
+- ["6SaveUp24FirstTableViewControllerC", "btnFoodPressed"]
+- ["6SaveUp24FirstTableViewControllerC", "btnServicePressed"]
+- ["6SaveUp24FirstTableViewControllerC", "btnTravelPressed"]
+- ["6SaveUp24FirstTableViewControllerC", "cartAction"]
+- ["6SaveUp24FirstTableViewControllerC", "categoryHomeArray"]
+- ["6SaveUp24FirstTableViewControllerC", "collectionView"]
+- ["6SaveUp24FirstTableViewControllerC", "dealsArray"]
+- ["6SaveUp24FirstTableViewControllerC", "deinit"]
+- !private ["6SaveUp24FirstTableViewControllerC", "dismiss"]
+- !private ["6SaveUp24FirstTableViewControllerC", "doThisWhenButtonIsTapped"]
+- ["6SaveUp24FirstTableViewControllerC", "fiftyPercentArray"]
+- ["6SaveUp24FirstTableViewControllerC", "floatButton"]
+- ["6SaveUp24FirstTableViewControllerC", "hitHomeAPI"]
+- ["6SaveUp24FirstTableViewControllerC", "init"]
+- ["6SaveUp24FirstTableViewControllerC", "masterSearchBar"]
+- !private ["6SaveUp24FirstTableViewControllerC", "messageFont"]
+- ["6SaveUp24FirstTableViewControllerC", "messageToast"]
+- !private ["6SaveUp24FirstTableViewControllerC", "navigationController"]
+- !private ["6SaveUp24FirstTableViewControllerC", "navigationItem"]
+- ["6SaveUp24FirstTableViewControllerC", "numberOfSections"]
+- ["6SaveUp24FirstTableViewControllerC", "popularArray"]
+- ["6SaveUp24FirstTableViewControllerC", "position"]
+- ["6SaveUp24FirstTableViewControllerC", "positionForBar"]
+- !private ["6SaveUp24FirstTableViewControllerC", "present"]
+- !private ["6SaveUp24FirstTableViewControllerC", "print"]
+- ["6SaveUp24FirstTableViewControllerC", "reachability"]
+- ["6SaveUp24FirstTableViewControllerC", "searchBar"]
+- ["6SaveUp24FirstTableViewControllerC", "searchBarBookmarkButtonClicked"]
+- ["6SaveUp24FirstTableViewControllerC", "searchBarCancelButtonClicked"]
+- ["6SaveUp24FirstTableViewControllerC", "searchBarResultsListButtonClicked"]
+- ["6SaveUp24FirstTableViewControllerC", "searchBarSearchButtonClicked"]
+- ["6SaveUp24FirstTableViewControllerC", "searchBarShouldBeginEditing"]
+- ["6SaveUp24FirstTableViewControllerC", "searchBarShouldEndEditing"]
+- ["6SaveUp24FirstTableViewControllerC", "searchBarTextDidBeginEditing"]
+- ["6SaveUp24FirstTableViewControllerC", "searchBarTextDidEndEditing"]
+- ["6SaveUp24FirstTableViewControllerC", "setShadowAndRoundedBorder"]
+- ["6SaveUp24FirstTableViewControllerC", "setupFloatingButton"]
+- !private ["6SaveUp24FirstTableViewControllerC", "showNetworkErrorAlert"]
+- !private ["6SaveUp24FirstTableViewControllerC", "storyboard"]
+- !private ["6SaveUp24FirstTableViewControllerC", "tabBarController"]
+- ["6SaveUp24FirstTableViewControllerC", "tableView"]
+- ["6SaveUp24FirstTableViewControllerC", "topOffersArray"]
+- !private ["6SaveUp24FirstTableViewControllerC", "view"]
+- ["6SaveUp24FirstTableViewControllerC", "viewDidLoad"]
+- ["6SaveUp24FirstTableViewControllerC", "viewWillAppear"]
+- ["6SaveUp24FirstTableViewControllerC", "viewWillDisappear"]
 - !private ["SH", "Api_Base_URL"]
 - ["SH", "BannersHome"]
 - !private ["SH", "CGRect"]
@@ -1436,6 +1461,7 @@ depends-member:
 - !private ["SH", "UIAlertController"]
 - !private ["SH", "UIApplication"]
 - !private ["SH", "UIBarButtonItem"]
+- !private ["SH", "UIBezierPath"]
 - ["SH", "UIButton"]
 - !private ["SH", "UIColor"]
 - !private ["SH", "UIControl"]
@@ -1478,6 +1504,7 @@ depends-member:
 - !private ["SH", "category_name"]
 - !private ["SH", "center"]
 - !private ["SH", "cgColor"]
+- !private ["SH", "cgPath"]
 - !private ["SH", "collectionCellDelegate"]
 - ["SH", "collectionView"]
 - !private ["SH", "contentView"]
@@ -1568,10 +1595,12 @@ depends-member:
 - !private ["SH", "selectionStyle"]
 - !private ["SH", "set"]
 - !private ["SH", "setImage"]
+- !private ["SH", "setShadowAndRoundedBorder"]
 - !private ["SH", "setTitle"]
 - !private ["SH", "shadowColor"]
 - !private ["SH", "shadowOffset"]
 - !private ["SH", "shadowOpacity"]
+- !private ["SH", "shadowPath"]
 - !private ["SH", "shadowRadius"]
 - !private ["SH", "shared"]
 - !private ["SH", "showNetworkErrorAlert"]
@@ -1606,121 +1635,123 @@ depends-member:
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["10Foundation9IndexPathV", "section"]
 - !private ["So19NSJSONSerializationC", "jsonObject"]
-- !private ["9SaveUp_BD10KingfisherC", "setImage"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "CGRect"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "CGSize"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "Encoding"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "UIGraphicsEndImageContext"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "addTarget"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "backgroundColor"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "center"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "draw"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "frame"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "image"]
-- ["9SaveUp_BD20KingfisherCompatibleP", "init"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "keyWindow"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "kf"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "layer"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "removeFromSuperview"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "resized"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "scale"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "setImage"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "setTitle"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "shared"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "superview"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "Api_Base_URL"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "BannersHome"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "CGRect"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "CGSize"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "CategoryHome"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "DealsHome"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "DispatchQueue"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "FiftyPercent"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "JSONSerialization"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "MIBadgeButton"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "NSData"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "NSURL"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "Popular"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "Reachability"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "String"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "StringToURL"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "ToastStyle"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "TopOffers"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "UIAlertAction"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "UIAlertController"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "UIApplication"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "UIBarButtonItem"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "UIButton"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "UIColor"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "UIControl"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "UIFont"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "UIImage"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "UILabel"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "UITableViewCell"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "URL"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "UserDefaults"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", ""]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "bannersArray"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "btnBeautyPressed"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "btnFitnessPressed"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "btnFoodPressed"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "btnServicePressed"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "btnTravelPressed"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "cartAction"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "categoryHomeArray"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "collectionView"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "dealsArray"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "dismiss"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "doThisWhenButtonIsTapped"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "fiftyPercentArray"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "floatButton"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "hitHomeAPI"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "masterSearchBar"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "messageFont"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "navigationController"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "navigationItem"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "popularArray"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "position"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "positionForBar"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "present"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "print"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "reachability"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "searchBar"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "searchBarBookmarkButtonClicked"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "searchBarCancelButtonClicked"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "searchBarResultsListButtonClicked"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "searchBarSearchButtonClicked"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "searchBarShouldBeginEditing"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "searchBarShouldEndEditing"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "searchBarTextDidBeginEditing"]
-- ["9SaveUp_BD28LatestCollectionCellDelegateP", "searchBarTextDidEndEditing"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "showNetworkErrorAlert"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "storyboard"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "tabBarController"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "tableView"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "topOffersArray"]
-- !private ["9SaveUp_BD28LatestCollectionCellDelegateP", "view"]
-- !private ["9SaveUp_BD18ListViewControllerC", "category_name"]
-- !private ["9SaveUp_BD18ListViewControllerC", "discount"]
-- !private ["9SaveUp_BD18ListViewControllerC", "featured"]
-- !private ["9SaveUp_BD18ListViewControllerC", "is_approved"]
-- !private ["9SaveUp_BD18ListViewControllerC", "is_published"]
-- !private ["9SaveUp_BD18ListViewControllerC", "main_category_id"]
-- !private ["9SaveUp_BD18ListViewControllerC", "screenString"]
-- !private ["9SaveUp_BD18ListViewControllerC", "sec_category_id"]
-- !private ["9SaveUp_BD18ListViewControllerC", "sort_order_by"]
-- !private ["9SaveUp_BD18ListViewControllerC", "sub_category_id"]
-- !private ["9SaveUp_BD18ListViewControllerC", "sub_sec_category_id"]
-- !private ["9SaveUp_BD18ListViewControllerC", "titleString"]
+- !private ["6SaveUp10KingfisherC", "setImage"]
+- !private ["6SaveUp20KingfisherCompatibleP", "CGRect"]
+- !private ["6SaveUp20KingfisherCompatibleP", "CGSize"]
+- !private ["6SaveUp20KingfisherCompatibleP", "Encoding"]
+- !private ["6SaveUp20KingfisherCompatibleP", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["6SaveUp20KingfisherCompatibleP", "UIGraphicsEndImageContext"]
+- !private ["6SaveUp20KingfisherCompatibleP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["6SaveUp20KingfisherCompatibleP", "addTarget"]
+- !private ["6SaveUp20KingfisherCompatibleP", "backgroundColor"]
+- !private ["6SaveUp20KingfisherCompatibleP", "center"]
+- !private ["6SaveUp20KingfisherCompatibleP", "draw"]
+- !private ["6SaveUp20KingfisherCompatibleP", "frame"]
+- !private ["6SaveUp20KingfisherCompatibleP", "image"]
+- ["6SaveUp20KingfisherCompatibleP", "init"]
+- !private ["6SaveUp20KingfisherCompatibleP", "keyWindow"]
+- !private ["6SaveUp20KingfisherCompatibleP", "kf"]
+- !private ["6SaveUp20KingfisherCompatibleP", "layer"]
+- !private ["6SaveUp20KingfisherCompatibleP", "removeFromSuperview"]
+- !private ["6SaveUp20KingfisherCompatibleP", "resized"]
+- !private ["6SaveUp20KingfisherCompatibleP", "scale"]
+- !private ["6SaveUp20KingfisherCompatibleP", "setImage"]
+- !private ["6SaveUp20KingfisherCompatibleP", "setTitle"]
+- !private ["6SaveUp20KingfisherCompatibleP", "shared"]
+- !private ["6SaveUp20KingfisherCompatibleP", "superview"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "Api_Base_URL"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "BannersHome"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "CGRect"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "CGSize"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "CategoryHome"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "DealsHome"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "DispatchQueue"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "FiftyPercent"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "JSONSerialization"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "MIBadgeButton"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "NSData"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "NSURL"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "Popular"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "Reachability"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "String"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "StringToURL"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "ToastStyle"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "TopOffers"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "UIAlertAction"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "UIAlertController"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "UIApplication"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "UIBarButtonItem"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "UIBezierPath"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "UIButton"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "UIColor"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "UIControl"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "UIFont"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "UIImage"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "UILabel"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "UITableViewCell"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "URL"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "UserDefaults"]
+- ["6SaveUp28LatestCollectionCellDelegateP", ""]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "bannersArray"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "btnBeautyPressed"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "btnFitnessPressed"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "btnFoodPressed"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "btnServicePressed"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "btnTravelPressed"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "cartAction"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "categoryHomeArray"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "collectionView"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "dealsArray"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "dismiss"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "doThisWhenButtonIsTapped"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "fiftyPercentArray"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "floatButton"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "hitHomeAPI"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "masterSearchBar"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "messageFont"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "navigationController"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "navigationItem"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "popularArray"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "position"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "positionForBar"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "present"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "print"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "reachability"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "searchBar"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "searchBarBookmarkButtonClicked"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "searchBarCancelButtonClicked"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "searchBarResultsListButtonClicked"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "searchBarSearchButtonClicked"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "searchBarShouldBeginEditing"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "searchBarShouldEndEditing"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "searchBarTextDidBeginEditing"]
+- ["6SaveUp28LatestCollectionCellDelegateP", "searchBarTextDidEndEditing"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "setShadowAndRoundedBorder"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "showNetworkErrorAlert"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "storyboard"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "tabBarController"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "tableView"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "topOffersArray"]
+- !private ["6SaveUp28LatestCollectionCellDelegateP", "view"]
+- !private ["6SaveUp18ListViewControllerC", "category_name"]
+- !private ["6SaveUp18ListViewControllerC", "discount"]
+- !private ["6SaveUp18ListViewControllerC", "featured"]
+- !private ["6SaveUp18ListViewControllerC", "is_approved"]
+- !private ["6SaveUp18ListViewControllerC", "is_published"]
+- !private ["6SaveUp18ListViewControllerC", "main_category_id"]
+- !private ["6SaveUp18ListViewControllerC", "screenString"]
+- !private ["6SaveUp18ListViewControllerC", "sec_category_id"]
+- !private ["6SaveUp18ListViewControllerC", "sort_order_by"]
+- !private ["6SaveUp18ListViewControllerC", "sub_category_id"]
+- !private ["6SaveUp18ListViewControllerC", "sub_sec_category_id"]
+- !private ["6SaveUp18ListViewControllerC", "titleString"]
 - !private ["s25LosslessStringConvertibleP", "Encoding"]
 - !private ["s25LosslessStringConvertibleP", "init"]
-- !private ["9SaveUp_BD13MIBadgeButtonC", "addTarget"]
-- !private ["9SaveUp_BD13MIBadgeButtonC", "deinit"]
-- !private ["9SaveUp_BD13MIBadgeButtonC", "frame"]
-- !private ["9SaveUp_BD13MIBadgeButtonC", "init"]
-- !private ["9SaveUp_BD13MIBadgeButtonC", "setImage"]
+- !private ["6SaveUp13MIBadgeButtonC", "addTarget"]
+- !private ["6SaveUp13MIBadgeButtonC", "deinit"]
+- !private ["6SaveUp13MIBadgeButtonC", "frame"]
+- !private ["6SaveUp13MIBadgeButtonC", "init"]
+- !private ["6SaveUp13MIBadgeButtonC", "setImage"]
 - !private ["s10MirrorPathP", "Encoding"]
 - !private ["s10MirrorPathP", "init"]
 - !private ["SM", "append"]
@@ -1741,7 +1772,7 @@ depends-member:
 - !private ["10Foundation19MutableDataProtocolP", "count"]
 - ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
-- !private ["9SaveUp_BD20MyCartViewControllerC", "screen_value"]
+- !private ["6SaveUp20MyCartViewControllerC", "screen_value"]
 - !private ["So8NSCodingP", "Api_Base_URL"]
 - ["So8NSCodingP", "BannersHome"]
 - !private ["So8NSCodingP", "CGRect"]
@@ -1767,6 +1798,7 @@ depends-member:
 - !private ["So8NSCodingP", "UIAlertController"]
 - !private ["So8NSCodingP", "UIApplication"]
 - !private ["So8NSCodingP", "UIBarButtonItem"]
+- !private ["So8NSCodingP", "UIBezierPath"]
 - ["So8NSCodingP", "UIButton"]
 - !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "UIControl"]
@@ -1803,6 +1835,7 @@ depends-member:
 - !private ["So8NSCodingP", "category_name"]
 - !private ["So8NSCodingP", "center"]
 - !private ["So8NSCodingP", "cgColor"]
+- !private ["So8NSCodingP", "cgPath"]
 - !private ["So8NSCodingP", "collectionCellDelegate"]
 - ["So8NSCodingP", "collectionView"]
 - !private ["So8NSCodingP", "contentView"]
@@ -1873,10 +1906,12 @@ depends-member:
 - !private ["So8NSCodingP", "sec_category_id"]
 - !private ["So8NSCodingP", "selectionStyle"]
 - !private ["So8NSCodingP", "setImage"]
+- !private ["So8NSCodingP", "setShadowAndRoundedBorder"]
 - !private ["So8NSCodingP", "setTitle"]
 - !private ["So8NSCodingP", "shadowColor"]
 - !private ["So8NSCodingP", "shadowOffset"]
 - !private ["So8NSCodingP", "shadowOpacity"]
+- !private ["So8NSCodingP", "shadowPath"]
 - !private ["So8NSCodingP", "shadowRadius"]
 - !private ["So8NSCodingP", "showNetworkErrorAlert"]
 - !private ["So8NSCodingP", "showsCancelButton"]
@@ -1906,6 +1941,7 @@ depends-member:
 - !private ["So9NSCopyingP", "addingPercentEscapes"]
 - !private ["So9NSCopyingP", "black"]
 - !private ["So9NSCopyingP", "cgColor"]
+- !private ["So9NSCopyingP", "cgPath"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "object"]
 - !private ["So9NSCopyingP", "subscript"]
@@ -1936,6 +1972,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
 - !private ["So26NSExtensionRequestHandlingP", "UIBarButtonItem"]
+- !private ["So26NSExtensionRequestHandlingP", "UIBezierPath"]
 - ["So26NSExtensionRequestHandlingP", "UIButton"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - !private ["So26NSExtensionRequestHandlingP", "UIControl"]
@@ -1997,6 +2034,7 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "searchBarTextDidBeginEditing"]
 - ["So26NSExtensionRequestHandlingP", "searchBarTextDidEndEditing"]
 - !private ["So26NSExtensionRequestHandlingP", "sec_category_id"]
+- !private ["So26NSExtensionRequestHandlingP", "setShadowAndRoundedBorder"]
 - !private ["So26NSExtensionRequestHandlingP", "showNetworkErrorAlert"]
 - !private ["So26NSExtensionRequestHandlingP", "sort_order_by"]
 - !private ["So26NSExtensionRequestHandlingP", "storyboard"]
@@ -2085,6 +2123,7 @@ depends-member:
 - !private ["So8NSObjectC", "UIAlertController"]
 - !private ["So8NSObjectC", "UIApplication"]
 - !private ["So8NSObjectC", "UIBarButtonItem"]
+- !private ["So8NSObjectC", "UIBezierPath"]
 - ["So8NSObjectC", "UIButton"]
 - ["So8NSObjectC", "UICollectionView"]
 - !private ["So8NSObjectC", "UIColor"]
@@ -2126,6 +2165,7 @@ depends-member:
 - !private ["So8NSObjectC", "category_name"]
 - !private ["So8NSObjectC", "center"]
 - !private ["So8NSObjectC", "cgColor"]
+- !private ["So8NSObjectC", "cgPath"]
 - !private ["So8NSObjectC", "collectionCellDelegate"]
 - ["So8NSObjectC", "collectionView"]
 - !private ["So8NSObjectC", "contentView"]
@@ -2209,12 +2249,14 @@ depends-member:
 - !private ["So8NSObjectC", "set"]
 - !private ["So8NSObjectC", "setImage"]
 - ["So8NSObjectC", "setNavBarButton"]
+- ["So8NSObjectC", "setShadowAndRoundedBorder"]
 - !private ["So8NSObjectC", "setTitle"]
 - ["So8NSObjectC", "setTopLogo"]
 - ["So8NSObjectC", "setupFloatingButton"]
 - !private ["So8NSObjectC", "shadowColor"]
 - !private ["So8NSObjectC", "shadowOffset"]
 - !private ["So8NSObjectC", "shadowOpacity"]
+- !private ["So8NSObjectC", "shadowPath"]
 - !private ["So8NSObjectC", "shadowRadius"]
 - !private ["So8NSObjectC", "shared"]
 - ["So8NSObjectC", "showNetworkErrorAlert"]
@@ -2268,6 +2310,7 @@ depends-member:
 - !private ["So8NSObjectP", "UIAlertController"]
 - !private ["So8NSObjectP", "UIApplication"]
 - !private ["So8NSObjectP", "UIBarButtonItem"]
+- !private ["So8NSObjectP", "UIBezierPath"]
 - ["So8NSObjectP", "UIButton"]
 - !private ["So8NSObjectP", "UIColor"]
 - !private ["So8NSObjectP", "UIControl"]
@@ -2307,6 +2350,7 @@ depends-member:
 - !private ["So8NSObjectP", "category_name"]
 - !private ["So8NSObjectP", "center"]
 - !private ["So8NSObjectP", "cgColor"]
+- !private ["So8NSObjectP", "cgPath"]
 - !private ["So8NSObjectP", "collectionCellDelegate"]
 - ["So8NSObjectP", "collectionView"]
 - !private ["So8NSObjectP", "contentView"]
@@ -2387,10 +2431,12 @@ depends-member:
 - !private ["So8NSObjectP", "selectionStyle"]
 - !private ["So8NSObjectP", "set"]
 - !private ["So8NSObjectP", "setImage"]
+- !private ["So8NSObjectP", "setShadowAndRoundedBorder"]
 - !private ["So8NSObjectP", "setTitle"]
 - !private ["So8NSObjectP", "shadowColor"]
 - !private ["So8NSObjectP", "shadowOffset"]
 - !private ["So8NSObjectP", "shadowOpacity"]
+- !private ["So8NSObjectP", "shadowPath"]
 - !private ["So8NSObjectP", "shadowRadius"]
 - !private ["So8NSObjectP", "shared"]
 - !private ["So8NSObjectP", "showNetworkErrorAlert"]
@@ -2429,6 +2475,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "borderColor"]
 - !private ["So14NSSecureCodingP", "borderWidth"]
 - !private ["So14NSSecureCodingP", "cgColor"]
+- !private ["So14NSSecureCodingP", "cgPath"]
 - !private ["So14NSSecureCodingP", "cornerRadius"]
 - !private ["So14NSSecureCodingP", "draw"]
 - !private ["So14NSSecureCodingP", "init"]
@@ -2439,6 +2486,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "shadowColor"]
 - !private ["So14NSSecureCodingP", "shadowOffset"]
 - !private ["So14NSSecureCodingP", "shadowOpacity"]
+- !private ["So14NSSecureCodingP", "shadowPath"]
 - !private ["So14NSSecureCodingP", "shadowRadius"]
 - !private ["So14NSSecureCodingP", "subscript"]
 - !private ["So14NSSecureCodingP", "white"]
@@ -2462,17 +2510,22 @@ depends-member:
 - !private ["Sq", "resignFirstResponder"]
 - !private ["Sq", "showsCancelButton"]
 - !private ["Sq", "text"]
-- !private ["9SaveUp_BD11PlaceholderP", "CGRect"]
-- !private ["9SaveUp_BD11PlaceholderP", "CGSize"]
-- !private ["9SaveUp_BD11PlaceholderP", "UIGraphicsBeginImageContextWithOptions"]
-- !private ["9SaveUp_BD11PlaceholderP", "UIGraphicsEndImageContext"]
-- !private ["9SaveUp_BD11PlaceholderP", "UIGraphicsGetImageFromCurrentImageContext"]
-- !private ["9SaveUp_BD11PlaceholderP", "draw"]
-- !private ["9SaveUp_BD11PlaceholderP", "init"]
-- !private ["9SaveUp_BD11PlaceholderP", "resized"]
-- !private ["9SaveUp_BD11PlaceholderP", "scale"]
-- !private ["9SaveUp_BD7PopularC", "init"]
-- !private ["9SaveUp_BD7PopularC", "product_title"]
+- !private ["6SaveUp11PlaceholderP", "CGRect"]
+- !private ["6SaveUp11PlaceholderP", "CGSize"]
+- !private ["6SaveUp11PlaceholderP", "UIGraphicsBeginImageContextWithOptions"]
+- !private ["6SaveUp11PlaceholderP", "UIGraphicsEndImageContext"]
+- !private ["6SaveUp11PlaceholderP", "UIGraphicsGetImageFromCurrentImageContext"]
+- !private ["6SaveUp11PlaceholderP", "draw"]
+- !private ["6SaveUp11PlaceholderP", "init"]
+- !private ["6SaveUp11PlaceholderP", "resized"]
+- !private ["6SaveUp11PlaceholderP", "scale"]
+- !private ["6SaveUp7PopularC", "init"]
+- !private ["6SaveUp7PopularC", "merchant_name"]
+- !private ["6SaveUp7PopularC", "product_discount_price"]
+- !private ["6SaveUp7PopularC", "product_id"]
+- !private ["6SaveUp7PopularC", "product_image"]
+- !private ["6SaveUp7PopularC", "product_percentage"]
+- !private ["6SaveUp7PopularC", "product_title"]
 - !private ["Sk", "append"]
 - !private ["Sk", "banner_id"]
 - !private ["Sk", "count"]
@@ -2512,15 +2565,15 @@ depends-member:
 - !private ["SY", "right"]
 - !private ["SY", "touchUpInside"]
 - !private ["SY", "utf8"]
-- ["9SaveUp_BD12ReachabilityC", "init"]
-- !private ["9SaveUp_BD12ReachabilityC", "isReachable"]
+- ["6SaveUp12ReachabilityC", "init"]
+- !private ["6SaveUp12ReachabilityC", "isReachable"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "item"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["10Foundation20ReferenceConvertibleP", "section"]
-- !private ["9SaveUp_BD29RelatedCollectionCellDelegateP", "category_name"]
-- !private ["9SaveUp_BD29RelatedCollectionCellDelegateP", "product_id"]
-- !private ["9SaveUp_BD8ResourceP", "init"]
+- !private ["6SaveUp29RelatedCollectionCellDelegateP", "category_name"]
+- !private ["6SaveUp29RelatedCollectionCellDelegateP", "product_id"]
+- !private ["6SaveUp8ResourceP", "init"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "main"]
 - !private ["So29UITableViewCellSelectionStyleV", "none"]
@@ -2560,15 +2613,15 @@ depends-member:
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "Encoding"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["9SaveUp_BD13ToastPositionO", "center"]
-- !private ["9SaveUp_BD13ToastPositionO", "top"]
-- !private ["9SaveUp_BD10ToastStyleV", "backgroundColor"]
-- !private ["9SaveUp_BD10ToastStyleV", "init"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageAlignment"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageColor"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageFont"]
-- !private ["9SaveUp_BD9TopOffersC", "init"]
-- !private ["9SaveUp_BD9TopOffersC", "product_id"]
+- !private ["6SaveUp13ToastPositionO", "center"]
+- !private ["6SaveUp13ToastPositionO", "top"]
+- !private ["6SaveUp10ToastStyleV", "backgroundColor"]
+- !private ["6SaveUp10ToastStyleV", "init"]
+- !private ["6SaveUp10ToastStyleV", "messageAlignment"]
+- !private ["6SaveUp10ToastStyleV", "messageColor"]
+- !private ["6SaveUp10ToastStyleV", "messageFont"]
+- !private ["6SaveUp9TopOffersC", "init"]
+- !private ["6SaveUp9TopOffersC", "product_id"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "backgroundColor"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "center"]
@@ -2697,6 +2750,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
 - !private ["So21UIAppearanceContainerP", "UIApplication"]
 - !private ["So21UIAppearanceContainerP", "UIBarButtonItem"]
+- !private ["So21UIAppearanceContainerP", "UIBezierPath"]
 - ["So21UIAppearanceContainerP", "UIButton"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
 - !private ["So21UIAppearanceContainerP", "UIControl"]
@@ -2786,6 +2840,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "sec_category_id"]
 - !private ["So21UIAppearanceContainerP", "selectionStyle"]
 - !private ["So21UIAppearanceContainerP", "setImage"]
+- !private ["So21UIAppearanceContainerP", "setShadowAndRoundedBorder"]
 - !private ["So21UIAppearanceContainerP", "setTitle"]
 - !private ["So21UIAppearanceContainerP", "showNetworkErrorAlert"]
 - !private ["So21UIAppearanceContainerP", "showsCancelButton"]
@@ -2838,6 +2893,7 @@ depends-member:
 - !private ["So24UIBarPositioningDelegateP", "UIAlertController"]
 - !private ["So24UIBarPositioningDelegateP", "UIApplication"]
 - !private ["So24UIBarPositioningDelegateP", "UIBarButtonItem"]
+- !private ["So24UIBarPositioningDelegateP", "UIBezierPath"]
 - ["So24UIBarPositioningDelegateP", "UIButton"]
 - !private ["So24UIBarPositioningDelegateP", "UIColor"]
 - !private ["So24UIBarPositioningDelegateP", "UIControl"]
@@ -2882,12 +2938,15 @@ depends-member:
 - ["So24UIBarPositioningDelegateP", "searchBarShouldEndEditing"]
 - ["So24UIBarPositioningDelegateP", "searchBarTextDidBeginEditing"]
 - ["So24UIBarPositioningDelegateP", "searchBarTextDidEndEditing"]
+- !private ["So24UIBarPositioningDelegateP", "setShadowAndRoundedBorder"]
 - !private ["So24UIBarPositioningDelegateP", "showNetworkErrorAlert"]
 - !private ["So24UIBarPositioningDelegateP", "storyboard"]
 - !private ["So24UIBarPositioningDelegateP", "tabBarController"]
 - !private ["So24UIBarPositioningDelegateP", "tableView"]
 - !private ["So24UIBarPositioningDelegateP", "topOffersArray"]
 - !private ["So24UIBarPositioningDelegateP", "view"]
+- !private ["So12UIBezierPathC", "cgPath"]
+- !private ["So12UIBezierPathC", "init"]
 - !private ["So8UIButtonC", "addTarget"]
 - !private ["So8UIButtonC", "backgroundColor"]
 - !private ["So8UIButtonC", "center"]
@@ -2976,6 +3035,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "UIAlertController"]
 - !private ["So18UIContentContainerP", "UIApplication"]
 - !private ["So18UIContentContainerP", "UIBarButtonItem"]
+- !private ["So18UIContentContainerP", "UIBezierPath"]
 - ["So18UIContentContainerP", "UIButton"]
 - !private ["So18UIContentContainerP", "UIColor"]
 - !private ["So18UIContentContainerP", "UIControl"]
@@ -3037,6 +3097,7 @@ depends-member:
 - ["So18UIContentContainerP", "searchBarTextDidBeginEditing"]
 - ["So18UIContentContainerP", "searchBarTextDidEndEditing"]
 - !private ["So18UIContentContainerP", "sec_category_id"]
+- !private ["So18UIContentContainerP", "setShadowAndRoundedBorder"]
 - !private ["So18UIContentContainerP", "showNetworkErrorAlert"]
 - !private ["So18UIContentContainerP", "sort_order_by"]
 - !private ["So18UIContentContainerP", "storyboard"]
@@ -3175,6 +3236,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
 - !private ["So18UIFocusEnvironmentP", "UIApplication"]
 - !private ["So18UIFocusEnvironmentP", "UIBarButtonItem"]
+- !private ["So18UIFocusEnvironmentP", "UIBezierPath"]
 - ["So18UIFocusEnvironmentP", "UIButton"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
 - !private ["So18UIFocusEnvironmentP", "UIControl"]
@@ -3264,6 +3326,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "sec_category_id"]
 - !private ["So18UIFocusEnvironmentP", "selectionStyle"]
 - !private ["So18UIFocusEnvironmentP", "setImage"]
+- !private ["So18UIFocusEnvironmentP", "setShadowAndRoundedBorder"]
 - !private ["So18UIFocusEnvironmentP", "setTitle"]
 - !private ["So18UIFocusEnvironmentP", "showNetworkErrorAlert"]
 - !private ["So18UIFocusEnvironmentP", "showsCancelButton"]
@@ -3368,12 +3431,14 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
 - !private ["So6UIFontC", "init"]
 - !private ["So27UIGestureRecognizerDelegateP", "bannerDel"]
+- !private ["So27UIGestureRecognizerDelegateP", "bounds"]
 - !private ["So27UIGestureRecognizerDelegateP", "catDel"]
 - !private ["So27UIGestureRecognizerDelegateP", "collectionCellDelegate"]
 - !private ["So27UIGestureRecognizerDelegateP", "contentView"]
 - !private ["So27UIGestureRecognizerDelegateP", "detailTextLabel"]
 - !private ["So27UIGestureRecognizerDelegateP", "imageView"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
+- !private ["So27UIGestureRecognizerDelegateP", "layer"]
 - !private ["So27UIGestureRecognizerDelegateP", "selectionStyle"]
 - !private ["So27UIGestureRecognizerDelegateP", "tag"]
 - !private ["So27UIGestureRecognizerDelegateP", "textLabel"]
@@ -3479,6 +3544,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIBarButtonItem"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIBezierPath"]
 - ["So30UIPasteConfigurationSupportingP", "UIButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIControl"]
@@ -3569,6 +3635,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "sec_category_id"]
 - !private ["So30UIPasteConfigurationSupportingP", "selectionStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "setImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "setShadowAndRoundedBorder"]
 - !private ["So30UIPasteConfigurationSupportingP", "setTitle"]
 - !private ["So30UIPasteConfigurationSupportingP", "shared"]
 - !private ["So30UIPasteConfigurationSupportingP", "showNetworkErrorAlert"]
@@ -3634,6 +3701,7 @@ depends-member:
 - !private ["So11UIResponderC", "UIAlertController"]
 - !private ["So11UIResponderC", "UIApplication"]
 - !private ["So11UIResponderC", "UIBarButtonItem"]
+- !private ["So11UIResponderC", "UIBezierPath"]
 - ["So11UIResponderC", "UIButton"]
 - ["So11UIResponderC", "UICollectionView"]
 - !private ["So11UIResponderC", "UIColor"]
@@ -3729,6 +3797,7 @@ depends-member:
 - !private ["So11UIResponderC", "selectionStyle"]
 - !private ["So11UIResponderC", "setImage"]
 - ["So11UIResponderC", "setNavBarButton"]
+- ["So11UIResponderC", "setShadowAndRoundedBorder"]
 - !private ["So11UIResponderC", "setTitle"]
 - ["So11UIResponderC", "setTopLogo"]
 - ["So11UIResponderC", "setupFloatingButton"]
@@ -3779,6 +3848,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - !private ["So30UIResponderStandardEditActionsP", "UIBarButtonItem"]
+- !private ["So30UIResponderStandardEditActionsP", "UIBezierPath"]
 - ["So30UIResponderStandardEditActionsP", "UIButton"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "UIControl"]
@@ -3869,6 +3939,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "sec_category_id"]
 - !private ["So30UIResponderStandardEditActionsP", "selectionStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "setImage"]
+- !private ["So30UIResponderStandardEditActionsP", "setShadowAndRoundedBorder"]
 - !private ["So30UIResponderStandardEditActionsP", "setTitle"]
 - !private ["So30UIResponderStandardEditActionsP", "shared"]
 - !private ["So30UIResponderStandardEditActionsP", "showNetworkErrorAlert"]
@@ -3916,6 +3987,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "UIAlertController"]
 - !private ["So20UIScrollViewDelegateP", "UIApplication"]
 - !private ["So20UIScrollViewDelegateP", "UIBarButtonItem"]
+- !private ["So20UIScrollViewDelegateP", "UIBezierPath"]
 - ["So20UIScrollViewDelegateP", "UIButton"]
 - !private ["So20UIScrollViewDelegateP", "UIColor"]
 - !private ["So20UIScrollViewDelegateP", "UIControl"]
@@ -3975,6 +4047,7 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "searchBarTextDidBeginEditing"]
 - ["So20UIScrollViewDelegateP", "searchBarTextDidEndEditing"]
 - !private ["So20UIScrollViewDelegateP", "sec_category_id"]
+- !private ["So20UIScrollViewDelegateP", "setShadowAndRoundedBorder"]
 - !private ["So20UIScrollViewDelegateP", "showNetworkErrorAlert"]
 - !private ["So20UIScrollViewDelegateP", "sort_order_by"]
 - !private ["So20UIScrollViewDelegateP", "storyboard"]
@@ -4015,6 +4088,7 @@ depends-member:
 - !private ["So19UISearchBarDelegateP", "UIAlertController"]
 - !private ["So19UISearchBarDelegateP", "UIApplication"]
 - !private ["So19UISearchBarDelegateP", "UIBarButtonItem"]
+- !private ["So19UISearchBarDelegateP", "UIBezierPath"]
 - ["So19UISearchBarDelegateP", "UIButton"]
 - !private ["So19UISearchBarDelegateP", "UIColor"]
 - !private ["So19UISearchBarDelegateP", "UIControl"]
@@ -4059,6 +4133,7 @@ depends-member:
 - ["So19UISearchBarDelegateP", "searchBarShouldEndEditing"]
 - ["So19UISearchBarDelegateP", "searchBarTextDidBeginEditing"]
 - ["So19UISearchBarDelegateP", "searchBarTextDidEndEditing"]
+- !private ["So19UISearchBarDelegateP", "setShadowAndRoundedBorder"]
 - !private ["So19UISearchBarDelegateP", "showNetworkErrorAlert"]
 - !private ["So19UISearchBarDelegateP", "storyboard"]
 - !private ["So19UISearchBarDelegateP", "tabBarController"]
@@ -4102,6 +4177,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "UIAlertController"]
 - !private ["So16UIStateRestoringP", "UIApplication"]
 - !private ["So16UIStateRestoringP", "UIBarButtonItem"]
+- !private ["So16UIStateRestoringP", "UIBezierPath"]
 - ["So16UIStateRestoringP", "UIButton"]
 - !private ["So16UIStateRestoringP", "UIColor"]
 - !private ["So16UIStateRestoringP", "UIControl"]
@@ -4163,6 +4239,7 @@ depends-member:
 - ["So16UIStateRestoringP", "searchBarTextDidBeginEditing"]
 - ["So16UIStateRestoringP", "searchBarTextDidEndEditing"]
 - !private ["So16UIStateRestoringP", "sec_category_id"]
+- !private ["So16UIStateRestoringP", "setShadowAndRoundedBorder"]
 - !private ["So16UIStateRestoringP", "showNetworkErrorAlert"]
 - !private ["So16UIStateRestoringP", "sort_order_by"]
 - !private ["So16UIStateRestoringP", "storyboard"]
@@ -4184,12 +4261,14 @@ depends-member:
 - !private ["So11UITableViewC", "dequeueReusableCell"]
 - !private ["So11UITableViewC", "reloadData"]
 - !private ["So15UITableViewCellC", "bannerDel"]
+- !private ["So15UITableViewCellC", "bounds"]
 - !private ["So15UITableViewCellC", "catDel"]
 - !private ["So15UITableViewCellC", "collectionCellDelegate"]
 - !private ["So15UITableViewCellC", "contentView"]
 - !private ["So15UITableViewCellC", "detailTextLabel"]
 - !private ["So15UITableViewCellC", "imageView"]
 - !private ["So15UITableViewCellC", "init"]
+- !private ["So15UITableViewCellC", "layer"]
 - !private ["So15UITableViewCellC", "selectionStyle"]
 - !private ["So15UITableViewCellC", "tag"]
 - !private ["So15UITableViewCellC", "textLabel"]
@@ -4232,6 +4311,7 @@ depends-member:
 - !private ["So21UITableViewControllerC", "UIAlertController"]
 - !private ["So21UITableViewControllerC", "UIApplication"]
 - !private ["So21UITableViewControllerC", "UIBarButtonItem"]
+- !private ["So21UITableViewControllerC", "UIBezierPath"]
 - ["So21UITableViewControllerC", "UIButton"]
 - ["So21UITableViewControllerC", "UICollectionView"]
 - !private ["So21UITableViewControllerC", "UIColor"]
@@ -4282,6 +4362,7 @@ depends-member:
 - ["So21UITableViewControllerC", "searchBarShouldEndEditing"]
 - ["So21UITableViewControllerC", "searchBarTextDidBeginEditing"]
 - ["So21UITableViewControllerC", "searchBarTextDidEndEditing"]
+- ["So21UITableViewControllerC", "setShadowAndRoundedBorder"]
 - ["So21UITableViewControllerC", "setupFloatingButton"]
 - !private ["So21UITableViewControllerC", "showNetworkErrorAlert"]
 - !private ["So21UITableViewControllerC", "storyboard"]
@@ -4314,6 +4395,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "UIAlertController"]
 - !private ["So21UITableViewDataSourceP", "UIApplication"]
 - !private ["So21UITableViewDataSourceP", "UIBarButtonItem"]
+- !private ["So21UITableViewDataSourceP", "UIBezierPath"]
 - ["So21UITableViewDataSourceP", "UIButton"]
 - !private ["So21UITableViewDataSourceP", "UIColor"]
 - !private ["So21UITableViewDataSourceP", "UIControl"]
@@ -4362,6 +4444,7 @@ depends-member:
 - ["So21UITableViewDataSourceP", "searchBarShouldEndEditing"]
 - ["So21UITableViewDataSourceP", "searchBarTextDidBeginEditing"]
 - ["So21UITableViewDataSourceP", "searchBarTextDidEndEditing"]
+- !private ["So21UITableViewDataSourceP", "setShadowAndRoundedBorder"]
 - !private ["So21UITableViewDataSourceP", "showNetworkErrorAlert"]
 - !private ["So21UITableViewDataSourceP", "storyboard"]
 - !private ["So21UITableViewDataSourceP", "tabBarController"]
@@ -4393,6 +4476,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "UIAlertController"]
 - !private ["So19UITableViewDelegateP", "UIApplication"]
 - !private ["So19UITableViewDelegateP", "UIBarButtonItem"]
+- !private ["So19UITableViewDelegateP", "UIBezierPath"]
 - ["So19UITableViewDelegateP", "UIButton"]
 - !private ["So19UITableViewDelegateP", "UIColor"]
 - !private ["So19UITableViewDelegateP", "UIControl"]
@@ -4441,6 +4525,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "searchBarShouldEndEditing"]
 - ["So19UITableViewDelegateP", "searchBarTextDidBeginEditing"]
 - ["So19UITableViewDelegateP", "searchBarTextDidEndEditing"]
+- !private ["So19UITableViewDelegateP", "setShadowAndRoundedBorder"]
 - !private ["So19UITableViewDelegateP", "showNetworkErrorAlert"]
 - !private ["So19UITableViewDelegateP", "storyboard"]
 - !private ["So19UITableViewDelegateP", "tabBarController"]
@@ -4480,6 +4565,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
 - !private ["So18UITraitEnvironmentP", "UIApplication"]
 - !private ["So18UITraitEnvironmentP", "UIBarButtonItem"]
+- !private ["So18UITraitEnvironmentP", "UIBezierPath"]
 - ["So18UITraitEnvironmentP", "UIButton"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - !private ["So18UITraitEnvironmentP", "UIControl"]
@@ -4569,6 +4655,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "sec_category_id"]
 - !private ["So18UITraitEnvironmentP", "selectionStyle"]
 - !private ["So18UITraitEnvironmentP", "setImage"]
+- !private ["So18UITraitEnvironmentP", "setShadowAndRoundedBorder"]
 - !private ["So18UITraitEnvironmentP", "setTitle"]
 - !private ["So18UITraitEnvironmentP", "showNetworkErrorAlert"]
 - !private ["So18UITraitEnvironmentP", "showsCancelButton"]
@@ -4616,6 +4703,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "UIAlertController"]
 - !private ["So23UIUserActivityRestoringP", "UIApplication"]
 - !private ["So23UIUserActivityRestoringP", "UIBarButtonItem"]
+- !private ["So23UIUserActivityRestoringP", "UIBezierPath"]
 - ["So23UIUserActivityRestoringP", "UIButton"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
 - !private ["So23UIUserActivityRestoringP", "UIControl"]
@@ -4706,6 +4794,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "sec_category_id"]
 - !private ["So23UIUserActivityRestoringP", "selectionStyle"]
 - !private ["So23UIUserActivityRestoringP", "setImage"]
+- !private ["So23UIUserActivityRestoringP", "setShadowAndRoundedBorder"]
 - !private ["So23UIUserActivityRestoringP", "setTitle"]
 - !private ["So23UIUserActivityRestoringP", "shared"]
 - !private ["So23UIUserActivityRestoringP", "showNetworkErrorAlert"]
@@ -4808,6 +4897,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "UIAlertController"]
 - !private ["So16UIViewControllerC", "UIApplication"]
 - !private ["So16UIViewControllerC", "UIBarButtonItem"]
+- !private ["So16UIViewControllerC", "UIBezierPath"]
 - ["So16UIViewControllerC", "UIButton"]
 - ["So16UIViewControllerC", "UICollectionView"]
 - !private ["So16UIViewControllerC", "UIColor"]
@@ -4874,6 +4964,7 @@ depends-member:
 - ["So16UIViewControllerC", "searchBarTextDidEndEditing"]
 - !private ["So16UIViewControllerC", "sec_category_id"]
 - ["So16UIViewControllerC", "setNavBarButton"]
+- ["So16UIViewControllerC", "setShadowAndRoundedBorder"]
 - ["So16UIViewControllerC", "setTopLogo"]
 - ["So16UIViewControllerC", "setupFloatingButton"]
 - ["So16UIViewControllerC", "showNetworkErrorAlert"]
@@ -4984,6 +5075,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBarButtonItem"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIBezierPath"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIControl"]
@@ -5023,6 +5115,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "category_name"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "center"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cgColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "cgPath"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "collectionCellDelegate"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "collectionView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentView"]
@@ -5103,10 +5196,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "selectionStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "set"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setShadowAndRoundedBorder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setTitle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOffset"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowOpacity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowPath"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shadowRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "showNetworkErrorAlert"]
@@ -5160,6 +5255,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIAlertController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIApplication"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIBarButtonItem"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIBezierPath"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIButton"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIControl"]
@@ -5199,6 +5295,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "category_name"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "center"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "cgColor"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "cgPath"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "collectionCellDelegate"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "collectionView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "contentView"]
@@ -5279,10 +5376,12 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "selectionStyle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "set"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setImage"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setShadowAndRoundedBorder"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setTitle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shadowColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shadowOffset"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shadowOpacity"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shadowPath"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shadowRadius"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showNetworkErrorAlert"]
@@ -5380,8 +5479,8 @@ depends-nominal:
 - "10Accelerate0A13MutableBufferP"
 - "Sa"
 - !private "s10ArraySliceV"
-- !private "9SaveUp_BD11BannersHomeC"
-- "9SaveUp_BD21BannersSelectDelegateP"
+- !private "6SaveUp11BannersHomeC"
+- "6SaveUp21BannersSelectDelegateP"
 - "SK"
 - "So12UIButtonTypeV"
 - !private "So7CALayerC"
@@ -5391,9 +5490,9 @@ depends-nominal:
 - !private "So6CGRectV"
 - !private "So6CGSizeV"
 - "s7CVarArgP"
-- !private "9SaveUp_BD12CategoryHomeC"
-- !private "9SaveUp_BD33CategoryProductListViewControllerC"
-- "9SaveUp_BD22CategorySelectDelegateP"
+- !private "6SaveUp12CategoryHomeC"
+- !private "6SaveUp33CategoryProductListViewControllerC"
+- "6SaveUp22CategorySelectDelegateP"
 - "Sl"
 - !private "SL"
 - "10Foundation15ContiguousBytesP"
@@ -5401,7 +5500,7 @@ depends-nominal:
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "10Foundation12DataProtocolP"
-- !private "9SaveUp_BD9DealsHomeC"
+- !private "6SaveUp9DealsHomeC"
 - "Se"
 - !private "s26DefaultStringInterpolationV"
 - !private "So18OS_dispatch_objectC"
@@ -5417,25 +5516,25 @@ depends-nominal:
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "9SaveUp_BD20FBannerTableViewCellC"
-- !private "9SaveUp_BD24FCategoriesTableViewCellC"
-- !private "9SaveUp_BD20FLatestTableViewCellC"
-- !private "9SaveUp_BD34FProductDetailsTableViewControllerC"
-- !private "9SaveUp_BD12FiftyPercentC"
-- "9SaveUp_BD24FirstTableViewControllerC"
+- !private "6SaveUp20FBannerTableViewCellC"
+- !private "6SaveUp24FCategoriesTableViewCellC"
+- !private "6SaveUp20FLatestTableViewCellC"
+- !private "6SaveUp34FProductDetailsTableViewControllerC"
+- !private "6SaveUp12FiftyPercentC"
+- "6SaveUp24FirstTableViewControllerC"
 - "SH"
 - !private "10Foundation9IndexPathV"
 - !private "So19NSJSONSerializationC"
-- !private "9SaveUp_BD10KingfisherC"
-- "9SaveUp_BD20KingfisherCompatibleP"
-- "9SaveUp_BD28LatestCollectionCellDelegateP"
-- !private "9SaveUp_BD18ListViewControllerC"
+- !private "6SaveUp10KingfisherC"
+- "6SaveUp20KingfisherCompatibleP"
+- "6SaveUp28LatestCollectionCellDelegateP"
+- !private "6SaveUp18ListViewControllerC"
 - !private "s25LosslessStringConvertibleP"
-- !private "9SaveUp_BD13MIBadgeButtonC"
+- !private "6SaveUp13MIBadgeButtonC"
 - !private "s10MirrorPathP"
 - "SM"
 - "10Foundation19MutableDataProtocolP"
-- !private "9SaveUp_BD20MyCartViewControllerC"
+- !private "6SaveUp20MyCartViewControllerC"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So6NSDataC"
@@ -5454,15 +5553,15 @@ depends-nominal:
 - !private "So9OS_objectC"
 - !private "s9OptionSetP"
 - !private "Sq"
-- !private "9SaveUp_BD11PlaceholderP"
-- !private "9SaveUp_BD7PopularC"
+- !private "6SaveUp11PlaceholderP"
+- !private "6SaveUp7PopularC"
 - "Sk"
 - "Sm"
 - "SY"
-- "9SaveUp_BD12ReachabilityC"
+- "6SaveUp12ReachabilityC"
 - !private "10Foundation20ReferenceConvertibleP"
-- !private "9SaveUp_BD29RelatedCollectionCellDelegateP"
-- !private "9SaveUp_BD8ResourceP"
+- !private "6SaveUp29RelatedCollectionCellDelegateP"
+- !private "6SaveUp8ResourceP"
 - !private "7Combine9SchedulerP"
 - !private "So29UITableViewCellSelectionStyleV"
 - "ST"
@@ -5475,9 +5574,9 @@ depends-nominal:
 - !private "So18UIAlertActionStyleV"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "9SaveUp_BD13ToastPositionO"
-- !private "9SaveUp_BD10ToastStyleV"
-- !private "9SaveUp_BD9TopOffersC"
+- !private "6SaveUp13ToastPositionO"
+- !private "6SaveUp10ToastStyleV"
+- !private "6SaveUp9TopOffersC"
 - "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
 - !private "So13UIAlertActionC"
@@ -5489,6 +5588,7 @@ depends-nominal:
 - !private "So9UIBarItemC"
 - !private "So16UIBarPositioningP"
 - "So24UIBarPositioningDelegateP"
+- !private "So12UIBezierPathC"
 - "So8UIButtonC"
 - !private "So26UICollectionViewDataSourceP"
 - !private "So24UICollectionViewDelegateP"
@@ -5600,6 +5700,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CATransform3D.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUUID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUUID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
@@ -5610,6 +5712,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Sparse/BLAS.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/alloca.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Alpha.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/LinearAlgebra.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
@@ -5618,6 +5724,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolMetadata.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/quota.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach-o/stab.h"
@@ -5793,6 +5900,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIFilterShape.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureScope.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFResponseType.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFButtonType.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/ctype.h"
@@ -5804,6 +5912,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/xlocale/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/runetype.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKitCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/semaphore.h"
@@ -5828,6 +5937,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/trace_base.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/readpassphrase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLResponse.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchResponse.h"
@@ -5841,9 +5951,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSCompoundPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSComparisonPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginFlowState.h"
@@ -5869,6 +5981,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/_types/_offsetof.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBag.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/i386/fp_reg.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FIRRemoteConfig.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/mig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLHeading.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemsConfigurationReading.h"
@@ -5933,6 +6047,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/shims/KeyPath.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/math.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/tgmath.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/kauth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/objc-api.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/port_obj.h"
@@ -5953,6 +6069,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_task.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecSharedCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDecimal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/i386/signal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/signal.h"
@@ -5968,6 +6087,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIKernel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/dyld_kernel.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES3/gl.h"
@@ -6069,6 +6189,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileVersion.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Conversion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneSession.h"
@@ -6101,6 +6222,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Quadrature/Integration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderItemDecoration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStateRestoration.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteConfiguration.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PayPalMobile/PayPalConfiguration.h"
@@ -6169,6 +6291,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProcessInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach_debug/ipc_info.h"
@@ -6212,6 +6336,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/workloop.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/grp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarButtonItemGroup.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/group.h"
@@ -6238,6 +6363,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/FileProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingCurveProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemProvider.h"
@@ -6348,6 +6482,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextDragPreviewRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKTileOverlayRenderer.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchCompleter.h"
@@ -6471,6 +6606,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFontMetrics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_statistics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetDiagnostics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPreferences.h"
@@ -6480,6 +6617,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/vImage_Utilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPathUtilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageProperties.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/times.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTDefines.h"
@@ -6535,6 +6675,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/secure/_strings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/paths.h"
@@ -6587,6 +6729,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityAdditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneDefinitions.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapSnapshotOptions.h"
@@ -6605,6 +6748,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPreviewParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDragPreviewParameters.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetworkErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManagerErrors.h"
@@ -6771,7 +6915,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/mach_init.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_inherit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLVisit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
@@ -6964,7 +7110,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/activity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProxy.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Modules/module.modulemap"
@@ -6986,4 +7138,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "b8d97ab52ab30c7fc0f551f802cb657b"
+interface-hash: "d80c3f65d05d26b6695885c67d969f80"

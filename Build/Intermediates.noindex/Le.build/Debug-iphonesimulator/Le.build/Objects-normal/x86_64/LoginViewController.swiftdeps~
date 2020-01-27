@@ -1,17 +1,18 @@
 ### Swift dependencies file v0 ###
 provides-top-level:
 - "LoginViewController"
-- "vSpinner"
 provides-nominal:
-- "9SaveUp_BD19LoginViewControllerC"
+- "6SaveUp19LoginViewControllerC"
 provides-member:
-- ["9SaveUp_BD19LoginViewControllerC", ""]
+- ["6SaveUp19LoginViewControllerC", ""]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "setAwsomeBackgroundImage"]
-- ["So16UIViewControllerC", "showSpinner"]
-- ["So16UIViewControllerC", "removeSpinner"]
 provides-dynamic-lookup:
 - "bgImage"
+- "btnFacebookLoginPressed"
+- "btnFbLogin"
+- "btnGoogleLogin"
+- "btnGoogleLoginPressed"
 - "btnGuest"
 - "btnGuestPressed"
 - "didReceiveMemoryWarning"
@@ -24,9 +25,9 @@ provides-dynamic-lookup:
 - "loginScroll"
 - "passwordText"
 - "registerButton"
-- "viewDidDisappear"
 - "viewDidLoad"
 - "viewWillAppear"
+- "viewWillDisappear"
 depends-top-level:
 - !private "!="
 - !private "-"
@@ -72,7 +73,6 @@ depends-top-level:
 - "TernaryPrecedence"
 - !private "TimeInterval"
 - !private "ToastStyle"
-- !private "UIActivityIndicatorView"
 - !private "UIAlertAction"
 - !private "UIAlertController"
 - !private "UIApplication"
@@ -86,7 +86,7 @@ depends-top-level:
 - !private "UIStoryboard"
 - "UITapGestureRecognizer"
 - "UITextField"
-- "UIView"
+- !private "UIView"
 - "UIViewController"
 - !private "URL"
 - !private "URLRequest"
@@ -97,7 +97,6 @@ depends-top-level:
 - !private "Void"
 - !private "messageFont"
 - !private "print"
-- "vSpinner"
 depends-member:
 - !private ["So13AKFAccountKitC", "currentAccessToken"]
 - !private ["So13AKFAccountKitC", "init"]
@@ -154,7 +153,7 @@ depends-member:
 - ["So25AKFViewControllerDelegateP", ""]
 - !private ["So25AKFViewControllerDelegateP", "accountKit"]
 - !private ["So25AKFViewControllerDelegateP", "animateViewMoving"]
-- !private ["So25AKFViewControllerDelegateP", "configureFacebook"]
+- !private ["So25AKFViewControllerDelegateP", "btnGuest"]
 - !private ["So25AKFViewControllerDelegateP", "dismissKeyBoardTappedOutside"]
 - !private ["So25AKFViewControllerDelegateP", "emailString"]
 - !private ["So25AKFViewControllerDelegateP", "emailText"]
@@ -175,10 +174,8 @@ depends-member:
 - !private ["So25AKFViewControllerDelegateP", "passwordText"]
 - !private ["So25AKFViewControllerDelegateP", "present"]
 - !private ["So25AKFViewControllerDelegateP", "print"]
-- !private ["So25AKFViewControllerDelegateP", "removeSpinner"]
 - !private ["So25AKFViewControllerDelegateP", "setAwsomeBackgroundImage"]
 - !private ["So25AKFViewControllerDelegateP", "showNetworkErrorAlert"]
-- !private ["So25AKFViewControllerDelegateP", "showSpinner"]
 - !private ["So25AKFViewControllerDelegateP", "storyboard"]
 - !private ["So25AKFViewControllerDelegateP", "view"]
 - ["So25AKFViewControllerDelegateP", "viewController"]
@@ -187,9 +184,9 @@ depends-member:
 - !private ["10Accelerate0A6BufferP", "subscript"]
 - !private ["10Accelerate0A13MutableBufferP", "count"]
 - !private ["10Accelerate0A13MutableBufferP", "subscript"]
-- !private ["9SaveUp_BD9AppConfigC", "UserdefaultKeys"]
-- !private ["9SaveUp_BD11AppDelegateC", "deinit"]
-- !private ["9SaveUp_BD11AppDelegateC", "window"]
+- !private ["6SaveUp9AppConfigC", "UserdefaultKeys"]
+- !private ["6SaveUp11AppDelegateC", "deinit"]
+- !private ["6SaveUp11AppDelegateC", "window"]
 - !private ["Sa", "count"]
 - !private ["Sa", "subscript"]
 - !private ["SK", "Encoding"]
@@ -198,13 +195,11 @@ depends-member:
 - !private ["SK", "init"]
 - !private ["SK", "subscript"]
 - !private ["So15CALayerDelegateP", "ContentMode"]
-- !private ["So15CALayerDelegateP", "addSubview"]
+- !private ["So15CALayerDelegateP", "alpha"]
+- !private ["So15CALayerDelegateP", "animate"]
 - !private ["So15CALayerDelegateP", "attributedPlaceholder"]
-- !private ["So15CALayerDelegateP", "backgroundColor"]
 - !private ["So15CALayerDelegateP", "becomeFirstResponder"]
 - !private ["So15CALayerDelegateP", "beginAnimations"]
-- !private ["So15CALayerDelegateP", "bounds"]
-- !private ["So15CALayerDelegateP", "center"]
 - !private ["So15CALayerDelegateP", "commitAnimations"]
 - !private ["So15CALayerDelegateP", "contentMode"]
 - !private ["So15CALayerDelegateP", "delegate"]
@@ -218,12 +213,10 @@ depends-member:
 - !private ["So15CALayerDelegateP", "makeToast"]
 - !private ["So15CALayerDelegateP", "makeToastActivity"]
 - !private ["So15CALayerDelegateP", "readPermissions"]
-- !private ["So15CALayerDelegateP", "removeFromSuperview"]
 - !private ["So15CALayerDelegateP", "resignFirstResponder"]
 - !private ["So15CALayerDelegateP", "rootViewController"]
 - !private ["So15CALayerDelegateP", "setAnimationBeginsFromCurrentState"]
 - !private ["So15CALayerDelegateP", "setAnimationDuration"]
-- !private ["So15CALayerDelegateP", "startAnimating"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So7CGPointV", "center"]
 - !private ["So6CGRectV", "offsetBy"]
@@ -249,7 +242,6 @@ depends-member:
 - !private ["s7CVarArgP", "Reachability"]
 - !private ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "ToastStyle"]
-- !private ["s7CVarArgP", "UIActivityIndicatorView"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIApplication"]
@@ -269,17 +261,16 @@ depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "accountKit"]
 - !private ["s7CVarArgP", "addAction"]
-- !private ["s7CVarArgP", "addSubview"]
+- !private ["s7CVarArgP", "alpha"]
+- !private ["s7CVarArgP", "animate"]
 - !private ["s7CVarArgP", "animateViewMoving"]
 - !private ["s7CVarArgP", "async"]
 - !private ["s7CVarArgP", "attributedPlaceholder"]
-- !private ["s7CVarArgP", "backgroundColor"]
 - !private ["s7CVarArgP", "becomeFirstResponder"]
 - !private ["s7CVarArgP", "beginAnimations"]
 - !private ["s7CVarArgP", "bounds"]
-- !private ["s7CVarArgP", "center"]
+- !private ["s7CVarArgP", "btnGuest"]
 - !private ["s7CVarArgP", "commitAnimations"]
-- !private ["s7CVarArgP", "configureFacebook"]
 - !private ["s7CVarArgP", "contentMode"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "current"]
@@ -327,8 +318,6 @@ depends-member:
 - !private ["s7CVarArgP", "present"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "readPermissions"]
-- !private ["s7CVarArgP", "removeFromSuperview"]
-- !private ["s7CVarArgP", "removeSpinner"]
 - !private ["s7CVarArgP", "resignFirstResponder"]
 - !private ["s7CVarArgP", "resume"]
 - !private ["s7CVarArgP", "rootViewController"]
@@ -338,23 +327,20 @@ depends-member:
 - !private ["s7CVarArgP", "setAwsomeBackgroundImage"]
 - !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "showNetworkErrorAlert"]
-- !private ["s7CVarArgP", "showSpinner"]
 - !private ["s7CVarArgP", "standard"]
 - !private ["s7CVarArgP", "start"]
-- !private ["s7CVarArgP", "startAnimating"]
 - !private ["s7CVarArgP", "storyboard"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "synchronize"]
 - !private ["s7CVarArgP", "text"]
-- !private ["s7CVarArgP", "vSpinner"]
 - !private ["s7CVarArgP", "value"]
 - !private ["s7CVarArgP", "view"]
 - ["s7CVarArgP", "viewController"]
 - ["s7CVarArgP", "viewControllerDidCancel"]
 - !private ["s7CVarArgP", "viewControllerForPhoneLogin"]
-- !private ["s7CVarArgP", "viewDidDisappear"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "viewWillAppear"]
+- !private ["s7CVarArgP", "viewWillDisappear"]
 - !private ["s7CVarArgP", "white"]
 - !private ["s7CVarArgP", "window"]
 - !private ["Sl", "Encoding"]
@@ -391,7 +377,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "Reachability"]
 - !private ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "ToastStyle"]
-- !private ["s28CustomDebugStringConvertibleP", "UIActivityIndicatorView"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
@@ -411,17 +396,17 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "accountKit"]
 - !private ["s28CustomDebugStringConvertibleP", "addAction"]
-- !private ["s28CustomDebugStringConvertibleP", "addSubview"]
+- !private ["s28CustomDebugStringConvertibleP", "alpha"]
+- !private ["s28CustomDebugStringConvertibleP", "animate"]
 - !private ["s28CustomDebugStringConvertibleP", "animateViewMoving"]
 - !private ["s28CustomDebugStringConvertibleP", "async"]
 - !private ["s28CustomDebugStringConvertibleP", "attributedPlaceholder"]
-- !private ["s28CustomDebugStringConvertibleP", "backgroundColor"]
 - !private ["s28CustomDebugStringConvertibleP", "becomeFirstResponder"]
 - !private ["s28CustomDebugStringConvertibleP", "beginAnimations"]
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "btnGuest"]
 - !private ["s28CustomDebugStringConvertibleP", "center"]
 - !private ["s28CustomDebugStringConvertibleP", "commitAnimations"]
-- !private ["s28CustomDebugStringConvertibleP", "configureFacebook"]
 - !private ["s28CustomDebugStringConvertibleP", "contentMode"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "current"]
@@ -472,8 +457,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "present"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "readPermissions"]
-- !private ["s28CustomDebugStringConvertibleP", "removeFromSuperview"]
-- !private ["s28CustomDebugStringConvertibleP", "removeSpinner"]
 - !private ["s28CustomDebugStringConvertibleP", "resignFirstResponder"]
 - !private ["s28CustomDebugStringConvertibleP", "resume"]
 - !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
@@ -483,27 +466,25 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "setAwsomeBackgroundImage"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "showNetworkErrorAlert"]
-- !private ["s28CustomDebugStringConvertibleP", "showSpinner"]
 - !private ["s28CustomDebugStringConvertibleP", "standard"]
 - !private ["s28CustomDebugStringConvertibleP", "start"]
-- !private ["s28CustomDebugStringConvertibleP", "startAnimating"]
 - !private ["s28CustomDebugStringConvertibleP", "storyboard"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "synchronize"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "uuidString"]
-- !private ["s28CustomDebugStringConvertibleP", "vSpinner"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
 - ["s28CustomDebugStringConvertibleP", "viewController"]
 - ["s28CustomDebugStringConvertibleP", "viewControllerDidCancel"]
 - !private ["s28CustomDebugStringConvertibleP", "viewControllerForPhoneLogin"]
-- !private ["s28CustomDebugStringConvertibleP", "viewDidDisappear"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
+- !private ["s28CustomDebugStringConvertibleP", "viewWillDisappear"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s28CustomDebugStringConvertibleP", "window"]
 - !private ["s17CustomReflectableP", "Encoding"]
+- !private ["s17CustomReflectableP", "alpha"]
 - !private ["s17CustomReflectableP", "attributedPlaceholder"]
 - !private ["s17CustomReflectableP", "becomeFirstResponder"]
 - !private ["s17CustomReflectableP", "center"]
@@ -553,7 +534,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "Reachability"]
 - !private ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "ToastStyle"]
-- !private ["s23CustomStringConvertibleP", "UIActivityIndicatorView"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
@@ -573,19 +553,18 @@ depends-member:
 - ["s23CustomStringConvertibleP", ""]
 - !private ["s23CustomStringConvertibleP", "accountKit"]
 - !private ["s23CustomStringConvertibleP", "addAction"]
-- !private ["s23CustomStringConvertibleP", "addSubview"]
+- !private ["s23CustomStringConvertibleP", "alpha"]
+- !private ["s23CustomStringConvertibleP", "animate"]
 - !private ["s23CustomStringConvertibleP", "animateViewMoving"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "async"]
 - !private ["s23CustomStringConvertibleP", "attributedPlaceholder"]
-- !private ["s23CustomStringConvertibleP", "backgroundColor"]
 - !private ["s23CustomStringConvertibleP", "becomeFirstResponder"]
 - !private ["s23CustomStringConvertibleP", "beginAnimations"]
 - !private ["s23CustomStringConvertibleP", "bounds"]
-- !private ["s23CustomStringConvertibleP", "center"]
+- !private ["s23CustomStringConvertibleP", "btnGuest"]
 - !private ["s23CustomStringConvertibleP", "commitAnimations"]
-- !private ["s23CustomStringConvertibleP", "configureFacebook"]
 - !private ["s23CustomStringConvertibleP", "contentMode"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "current"]
@@ -635,8 +614,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "present"]
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "readPermissions"]
-- !private ["s23CustomStringConvertibleP", "removeFromSuperview"]
-- !private ["s23CustomStringConvertibleP", "removeSpinner"]
 - !private ["s23CustomStringConvertibleP", "resignFirstResponder"]
 - !private ["s23CustomStringConvertibleP", "resume"]
 - !private ["s23CustomStringConvertibleP", "rootViewController"]
@@ -646,30 +623,28 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "setAwsomeBackgroundImage"]
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "showNetworkErrorAlert"]
-- !private ["s23CustomStringConvertibleP", "showSpinner"]
 - !private ["s23CustomStringConvertibleP", "standard"]
 - !private ["s23CustomStringConvertibleP", "start"]
-- !private ["s23CustomStringConvertibleP", "startAnimating"]
 - !private ["s23CustomStringConvertibleP", "storyboard"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "synchronize"]
 - !private ["s23CustomStringConvertibleP", "text"]
 - !private ["s23CustomStringConvertibleP", "utf8"]
 - !private ["s23CustomStringConvertibleP", "uuidString"]
-- !private ["s23CustomStringConvertibleP", "vSpinner"]
 - !private ["s23CustomStringConvertibleP", "value"]
 - !private ["s23CustomStringConvertibleP", "view"]
 - ["s23CustomStringConvertibleP", "viewController"]
 - ["s23CustomStringConvertibleP", "viewControllerDidCancel"]
 - !private ["s23CustomStringConvertibleP", "viewControllerForPhoneLogin"]
-- !private ["s23CustomStringConvertibleP", "viewDidDisappear"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "viewWillAppear"]
+- !private ["s23CustomStringConvertibleP", "viewWillDisappear"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - !private ["s23CustomStringConvertibleP", "window"]
 - !private ["10Foundation12DataProtocolP", "count"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["Se", "Encoding"]
+- !private ["Se", "alpha"]
 - !private ["Se", "attributedPlaceholder"]
 - !private ["Se", "becomeFirstResponder"]
 - !private ["Se", "center"]
@@ -700,6 +675,7 @@ depends-member:
 - !private ["So17OS_dispatch_queueC", "async"]
 - !private ["So17OS_dispatch_queueC", "main"]
 - !private ["SE", "Encoding"]
+- !private ["SE", "alpha"]
 - !private ["SE", "attributedPlaceholder"]
 - !private ["SE", "becomeFirstResponder"]
 - !private ["SE", "center"]
@@ -746,7 +722,6 @@ depends-member:
 - !private ["SQ", "Reachability"]
 - !private ["SQ", "String"]
 - !private ["SQ", "ToastStyle"]
-- !private ["SQ", "UIActivityIndicatorView"]
 - !private ["SQ", "UIAlertAction"]
 - !private ["SQ", "UIAlertController"]
 - !private ["SQ", "UIApplication"]
@@ -767,19 +742,19 @@ depends-member:
 - !private ["SQ", "accessToken"]
 - !private ["SQ", "accountKit"]
 - !private ["SQ", "addAction"]
-- !private ["SQ", "addSubview"]
 - !private ["SQ", "alert"]
+- !private ["SQ", "alpha"]
+- !private ["SQ", "animate"]
 - !private ["SQ", "animateViewMoving"]
 - !private ["SQ", "async"]
 - !private ["SQ", "attributedPlaceholder"]
-- !private ["SQ", "backgroundColor"]
 - !private ["SQ", "becomeFirstResponder"]
 - !private ["SQ", "beginAnimations"]
 - !private ["SQ", "black"]
 - !private ["SQ", "bounds"]
+- !private ["SQ", "btnGuest"]
 - !private ["SQ", "center"]
 - !private ["SQ", "commitAnimations"]
-- !private ["SQ", "configureFacebook"]
 - !private ["SQ", "contentMode"]
 - !private ["SQ", "count"]
 - !private ["SQ", "current"]
@@ -834,8 +809,6 @@ depends-member:
 - !private ["SQ", "present"]
 - !private ["SQ", "print"]
 - !private ["SQ", "readPermissions"]
-- !private ["SQ", "removeFromSuperview"]
-- !private ["SQ", "removeSpinner"]
 - !private ["SQ", "resignFirstResponder"]
 - !private ["SQ", "resume"]
 - !private ["SQ", "rootViewController"]
@@ -846,10 +819,8 @@ depends-member:
 - !private ["SQ", "setAwsomeBackgroundImage"]
 - !private ["SQ", "shared"]
 - !private ["SQ", "showNetworkErrorAlert"]
-- !private ["SQ", "showSpinner"]
 - !private ["SQ", "standard"]
 - !private ["SQ", "start"]
-- !private ["SQ", "startAnimating"]
 - !private ["SQ", "storyboard"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "synchronize"]
@@ -857,17 +828,15 @@ depends-member:
 - !private ["SQ", "translucent"]
 - !private ["SQ", "utf8"]
 - !private ["SQ", "uuidString"]
-- !private ["SQ", "vSpinner"]
 - !private ["SQ", "value"]
 - !private ["SQ", "view"]
 - ["SQ", "viewController"]
 - ["SQ", "viewControllerDidCancel"]
 - !private ["SQ", "viewControllerForPhoneLogin"]
-- !private ["SQ", "viewDidDisappear"]
 - !private ["SQ", "viewDidLoad"]
 - !private ["SQ", "viewWillAppear"]
+- !private ["SQ", "viewWillDisappear"]
 - !private ["SQ", "white"]
-- !private ["SQ", "whiteLarge"]
 - !private ["SQ", "window"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
 - !private ["s25ExpressibleByArrayLiteralP", "mutableContainers"]
@@ -879,6 +848,7 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "count"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "data"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "alpha"]
 - !private ["s23ExpressibleByNilLiteralP", "attributedPlaceholder"]
 - !private ["s23ExpressibleByNilLiteralP", "becomeFirstResponder"]
 - !private ["s23ExpressibleByNilLiteralP", "currentAccessToken"]
@@ -950,7 +920,7 @@ depends-member:
 - ["So24FBSDKLoginButtonDelegateP", ""]
 - !private ["So24FBSDKLoginButtonDelegateP", "accountKit"]
 - !private ["So24FBSDKLoginButtonDelegateP", "animateViewMoving"]
-- !private ["So24FBSDKLoginButtonDelegateP", "configureFacebook"]
+- !private ["So24FBSDKLoginButtonDelegateP", "btnGuest"]
 - !private ["So24FBSDKLoginButtonDelegateP", "dismissKeyBoardTappedOutside"]
 - !private ["So24FBSDKLoginButtonDelegateP", "emailString"]
 - !private ["So24FBSDKLoginButtonDelegateP", "emailText"]
@@ -971,10 +941,8 @@ depends-member:
 - !private ["So24FBSDKLoginButtonDelegateP", "passwordText"]
 - !private ["So24FBSDKLoginButtonDelegateP", "present"]
 - !private ["So24FBSDKLoginButtonDelegateP", "print"]
-- !private ["So24FBSDKLoginButtonDelegateP", "removeSpinner"]
 - !private ["So24FBSDKLoginButtonDelegateP", "setAwsomeBackgroundImage"]
 - !private ["So24FBSDKLoginButtonDelegateP", "showNetworkErrorAlert"]
-- !private ["So24FBSDKLoginButtonDelegateP", "showSpinner"]
 - !private ["So24FBSDKLoginButtonDelegateP", "storyboard"]
 - !private ["So24FBSDKLoginButtonDelegateP", "view"]
 - ["So24FBSDKLoginButtonDelegateP", "viewController"]
@@ -1003,7 +971,6 @@ depends-member:
 - !private ["SH", "Reachability"]
 - !private ["SH", "String"]
 - !private ["SH", "ToastStyle"]
-- !private ["SH", "UIActivityIndicatorView"]
 - !private ["SH", "UIAlertAction"]
 - !private ["SH", "UIAlertController"]
 - !private ["SH", "UIApplication"]
@@ -1024,19 +991,19 @@ depends-member:
 - !private ["SH", "accessToken"]
 - !private ["SH", "accountKit"]
 - !private ["SH", "addAction"]
-- !private ["SH", "addSubview"]
 - !private ["SH", "alert"]
+- !private ["SH", "alpha"]
+- !private ["SH", "animate"]
 - !private ["SH", "animateViewMoving"]
 - !private ["SH", "async"]
 - !private ["SH", "attributedPlaceholder"]
-- !private ["SH", "backgroundColor"]
 - !private ["SH", "becomeFirstResponder"]
 - !private ["SH", "beginAnimations"]
 - !private ["SH", "black"]
 - !private ["SH", "bounds"]
+- !private ["SH", "btnGuest"]
 - !private ["SH", "center"]
 - !private ["SH", "commitAnimations"]
-- !private ["SH", "configureFacebook"]
 - !private ["SH", "contentMode"]
 - !private ["SH", "count"]
 - !private ["SH", "current"]
@@ -1089,8 +1056,6 @@ depends-member:
 - !private ["SH", "present"]
 - !private ["SH", "print"]
 - !private ["SH", "readPermissions"]
-- !private ["SH", "removeFromSuperview"]
-- !private ["SH", "removeSpinner"]
 - !private ["SH", "resignFirstResponder"]
 - !private ["SH", "resume"]
 - !private ["SH", "rootViewController"]
@@ -1101,10 +1066,8 @@ depends-member:
 - !private ["SH", "setAwsomeBackgroundImage"]
 - !private ["SH", "shared"]
 - !private ["SH", "showNetworkErrorAlert"]
-- !private ["SH", "showSpinner"]
 - !private ["SH", "standard"]
 - !private ["SH", "start"]
-- !private ["SH", "startAnimating"]
 - !private ["SH", "storyboard"]
 - !private ["SH", "subscript"]
 - !private ["SH", "synchronize"]
@@ -1112,130 +1075,131 @@ depends-member:
 - !private ["SH", "translucent"]
 - !private ["SH", "utf8"]
 - !private ["SH", "uuidString"]
-- !private ["SH", "vSpinner"]
 - !private ["SH", "value"]
 - !private ["SH", "view"]
 - ["SH", "viewController"]
 - ["SH", "viewControllerDidCancel"]
 - !private ["SH", "viewControllerForPhoneLogin"]
-- !private ["SH", "viewDidDisappear"]
 - !private ["SH", "viewDidLoad"]
 - !private ["SH", "viewWillAppear"]
+- !private ["SH", "viewWillDisappear"]
 - !private ["SH", "white"]
-- !private ["SH", "whiteLarge"]
 - !private ["SH", "window"]
 - !private ["So19NSJSONSerializationC", "jsonObject"]
 - !private ["So21NSAttributedStringKeya", "font"]
 - !private ["So21NSAttributedStringKeya", "foregroundColor"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "Encoding"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "contentMode"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "count"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "data"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "delegate"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "image"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "init"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "isEnabled"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "readPermissions"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "shared"]
-- ["9SaveUp_BD19LoginViewControllerC", "AKFAccountKit"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "AKFBackgroundTint"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "AKFSkinManager"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "AKFSkinType"]
-- ["9SaveUp_BD19LoginViewControllerC", "AKFViewController"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "Api_Base_URL"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "AppConfig"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "AppDelegate"]
-- ["9SaveUp_BD19LoginViewControllerC", "Bool"]
-- ["9SaveUp_BD19LoginViewControllerC", "CGFloat"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "DispatchQueue"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "Email_Message"]
-- ["9SaveUp_BD19LoginViewControllerC", "Error"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "FBSDKAccessToken"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "FBSDKGraphRequest"]
-- ["9SaveUp_BD19LoginViewControllerC", "FBSDKLoginButton"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "FBSDKLoginManager"]
-- ["9SaveUp_BD19LoginViewControllerC", "FBSDKLoginManagerLoginResult"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "JSONSerialization"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "NSAttributedString"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "NSDictionary"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "NSInteger"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "NSPredicate"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "Password_Message"]
-- ["9SaveUp_BD19LoginViewControllerC", "PrepareloginViewController"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "Reachability"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "RegisterViewController"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "RootTabBarController"]
-- ["9SaveUp_BD19LoginViewControllerC", "String"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "TimeInterval"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "ToastStyle"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "UIAlertAction"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "UIAlertController"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "UIApplication"]
-- ["9SaveUp_BD19LoginViewControllerC", "UIButton"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "UIColor"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "UIImage"]
-- ["9SaveUp_BD19LoginViewControllerC", "UIImageView"]
-- ["9SaveUp_BD19LoginViewControllerC", "UIScrollView"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "UIStoryboard"]
-- ["9SaveUp_BD19LoginViewControllerC", "UITapGestureRecognizer"]
-- ["9SaveUp_BD19LoginViewControllerC", "UITextField"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "UIView"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "UIViewController"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "URL"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "URLRequest"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "URLSession"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "UUID"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "UserDefaults"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "Valid_Email_Message"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "Void"]
-- ["9SaveUp_BD19LoginViewControllerC", "accountKit"]
-- ["9SaveUp_BD19LoginViewControllerC", "animateViewMoving"]
-- ["9SaveUp_BD19LoginViewControllerC", "bgImage"]
-- ["9SaveUp_BD19LoginViewControllerC", "btnGuest"]
-- ["9SaveUp_BD19LoginViewControllerC", "btnGuestPressed"]
-- ["9SaveUp_BD19LoginViewControllerC", "configureFacebook"]
-- ["9SaveUp_BD19LoginViewControllerC", "deinit"]
-- ["9SaveUp_BD19LoginViewControllerC", "didReceiveMemoryWarning"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "dismissKeyBoardTappedOutside"]
-- ["9SaveUp_BD19LoginViewControllerC", "emailString"]
-- ["9SaveUp_BD19LoginViewControllerC", "emailText"]
-- ["9SaveUp_BD19LoginViewControllerC", "facebookApi"]
-- ["9SaveUp_BD19LoginViewControllerC", "facebookButton"]
-- ["9SaveUp_BD19LoginViewControllerC", "fbidString"]
-- ["9SaveUp_BD19LoginViewControllerC", "fbtokenString"]
-- ["9SaveUp_BD19LoginViewControllerC", "forgotButton"]
-- ["9SaveUp_BD19LoginViewControllerC", "gestureRecognizer"]
-- ["9SaveUp_BD19LoginViewControllerC", "gestureRecognizerShouldBegin"]
-- ["9SaveUp_BD19LoginViewControllerC", "handleTap"]
-- ["9SaveUp_BD19LoginViewControllerC", "init"]
-- ["9SaveUp_BD19LoginViewControllerC", "isValidEmail"]
-- ["9SaveUp_BD19LoginViewControllerC", "loginApi"]
-- ["9SaveUp_BD19LoginViewControllerC", "loginButton"]
-- ["9SaveUp_BD19LoginViewControllerC", "loginButtonDidLogOut"]
-- ["9SaveUp_BD19LoginViewControllerC", "loginButtonWillLogin"]
-- ["9SaveUp_BD19LoginViewControllerC", "loginScroll"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "messageFont"]
-- ["9SaveUp_BD19LoginViewControllerC", "messageToast"]
-- ["9SaveUp_BD19LoginViewControllerC", "nameString"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "navigationController"]
-- ["9SaveUp_BD19LoginViewControllerC", "passwordText"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "present"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "print"]
-- ["9SaveUp_BD19LoginViewControllerC", "registerButton"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "removeSpinner"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "setAwsomeBackgroundImage"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "showNetworkErrorAlert"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "showSpinner"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "storyboard"]
-- ["9SaveUp_BD19LoginViewControllerC", "textFieldDidBeginEditing"]
-- ["9SaveUp_BD19LoginViewControllerC", "textFieldDidEndEditing"]
-- ["9SaveUp_BD19LoginViewControllerC", "textFieldShouldReturn"]
-- !private ["9SaveUp_BD19LoginViewControllerC", "view"]
-- ["9SaveUp_BD19LoginViewControllerC", "viewController"]
-- ["9SaveUp_BD19LoginViewControllerC", "viewControllerDidCancel"]
-- ["9SaveUp_BD19LoginViewControllerC", "viewDidDisappear"]
-- ["9SaveUp_BD19LoginViewControllerC", "viewDidLoad"]
-- ["9SaveUp_BD19LoginViewControllerC", "viewWillAppear"]
+- !private ["6SaveUp20KingfisherCompatibleP", "Encoding"]
+- !private ["6SaveUp20KingfisherCompatibleP", "alpha"]
+- !private ["6SaveUp20KingfisherCompatibleP", "contentMode"]
+- !private ["6SaveUp20KingfisherCompatibleP", "count"]
+- !private ["6SaveUp20KingfisherCompatibleP", "data"]
+- !private ["6SaveUp20KingfisherCompatibleP", "delegate"]
+- !private ["6SaveUp20KingfisherCompatibleP", "image"]
+- !private ["6SaveUp20KingfisherCompatibleP", "init"]
+- !private ["6SaveUp20KingfisherCompatibleP", "isEnabled"]
+- !private ["6SaveUp20KingfisherCompatibleP", "readPermissions"]
+- !private ["6SaveUp20KingfisherCompatibleP", "shared"]
+- ["6SaveUp19LoginViewControllerC", "AKFAccountKit"]
+- !private ["6SaveUp19LoginViewControllerC", "AKFBackgroundTint"]
+- !private ["6SaveUp19LoginViewControllerC", "AKFSkinManager"]
+- !private ["6SaveUp19LoginViewControllerC", "AKFSkinType"]
+- ["6SaveUp19LoginViewControllerC", "AKFViewController"]
+- !private ["6SaveUp19LoginViewControllerC", "Api_Base_URL"]
+- !private ["6SaveUp19LoginViewControllerC", "AppConfig"]
+- !private ["6SaveUp19LoginViewControllerC", "AppDelegate"]
+- ["6SaveUp19LoginViewControllerC", "Bool"]
+- ["6SaveUp19LoginViewControllerC", "CGFloat"]
+- !private ["6SaveUp19LoginViewControllerC", "DispatchQueue"]
+- !private ["6SaveUp19LoginViewControllerC", "Email_Message"]
+- ["6SaveUp19LoginViewControllerC", "Error"]
+- !private ["6SaveUp19LoginViewControllerC", "FBSDKAccessToken"]
+- !private ["6SaveUp19LoginViewControllerC", "FBSDKGraphRequest"]
+- ["6SaveUp19LoginViewControllerC", "FBSDKLoginButton"]
+- !private ["6SaveUp19LoginViewControllerC", "FBSDKLoginManager"]
+- ["6SaveUp19LoginViewControllerC", "FBSDKLoginManagerLoginResult"]
+- !private ["6SaveUp19LoginViewControllerC", "JSONSerialization"]
+- !private ["6SaveUp19LoginViewControllerC", "NSAttributedString"]
+- !private ["6SaveUp19LoginViewControllerC", "NSDictionary"]
+- !private ["6SaveUp19LoginViewControllerC", "NSInteger"]
+- !private ["6SaveUp19LoginViewControllerC", "NSPredicate"]
+- !private ["6SaveUp19LoginViewControllerC", "Password_Message"]
+- ["6SaveUp19LoginViewControllerC", "PrepareloginViewController"]
+- !private ["6SaveUp19LoginViewControllerC", "Reachability"]
+- !private ["6SaveUp19LoginViewControllerC", "RegisterViewController"]
+- !private ["6SaveUp19LoginViewControllerC", "RootTabBarController"]
+- ["6SaveUp19LoginViewControllerC", "String"]
+- !private ["6SaveUp19LoginViewControllerC", "TimeInterval"]
+- !private ["6SaveUp19LoginViewControllerC", "ToastStyle"]
+- !private ["6SaveUp19LoginViewControllerC", "UIAlertAction"]
+- !private ["6SaveUp19LoginViewControllerC", "UIAlertController"]
+- !private ["6SaveUp19LoginViewControllerC", "UIApplication"]
+- ["6SaveUp19LoginViewControllerC", "UIButton"]
+- !private ["6SaveUp19LoginViewControllerC", "UIColor"]
+- !private ["6SaveUp19LoginViewControllerC", "UIImage"]
+- ["6SaveUp19LoginViewControllerC", "UIImageView"]
+- ["6SaveUp19LoginViewControllerC", "UIScrollView"]
+- !private ["6SaveUp19LoginViewControllerC", "UIStoryboard"]
+- ["6SaveUp19LoginViewControllerC", "UITapGestureRecognizer"]
+- ["6SaveUp19LoginViewControllerC", "UITextField"]
+- !private ["6SaveUp19LoginViewControllerC", "UIView"]
+- !private ["6SaveUp19LoginViewControllerC", "UIViewController"]
+- !private ["6SaveUp19LoginViewControllerC", "URL"]
+- !private ["6SaveUp19LoginViewControllerC", "URLRequest"]
+- !private ["6SaveUp19LoginViewControllerC", "URLSession"]
+- !private ["6SaveUp19LoginViewControllerC", "UUID"]
+- !private ["6SaveUp19LoginViewControllerC", "UserDefaults"]
+- !private ["6SaveUp19LoginViewControllerC", "Valid_Email_Message"]
+- !private ["6SaveUp19LoginViewControllerC", "Void"]
+- ["6SaveUp19LoginViewControllerC", "accountKit"]
+- ["6SaveUp19LoginViewControllerC", "animateViewMoving"]
+- ["6SaveUp19LoginViewControllerC", "bgImage"]
+- ["6SaveUp19LoginViewControllerC", "btnFacebookLoginPressed"]
+- ["6SaveUp19LoginViewControllerC", "btnFbLogin"]
+- ["6SaveUp19LoginViewControllerC", "btnGoogleLogin"]
+- ["6SaveUp19LoginViewControllerC", "btnGoogleLoginPressed"]
+- ["6SaveUp19LoginViewControllerC", "btnGuest"]
+- ["6SaveUp19LoginViewControllerC", "btnGuestPressed"]
+- ["6SaveUp19LoginViewControllerC", "configureFacebook"]
+- ["6SaveUp19LoginViewControllerC", "deinit"]
+- ["6SaveUp19LoginViewControllerC", "didReceiveMemoryWarning"]
+- !private ["6SaveUp19LoginViewControllerC", "dismissKeyBoardTappedOutside"]
+- ["6SaveUp19LoginViewControllerC", "emailString"]
+- ["6SaveUp19LoginViewControllerC", "emailText"]
+- ["6SaveUp19LoginViewControllerC", "facebookApi"]
+- ["6SaveUp19LoginViewControllerC", "facebookButton"]
+- ["6SaveUp19LoginViewControllerC", "fbidString"]
+- ["6SaveUp19LoginViewControllerC", "fbtokenString"]
+- ["6SaveUp19LoginViewControllerC", "forgotButton"]
+- ["6SaveUp19LoginViewControllerC", "gestureRecognizer"]
+- ["6SaveUp19LoginViewControllerC", "gestureRecognizerShouldBegin"]
+- ["6SaveUp19LoginViewControllerC", "handleTap"]
+- ["6SaveUp19LoginViewControllerC", "init"]
+- ["6SaveUp19LoginViewControllerC", "isValidEmail"]
+- ["6SaveUp19LoginViewControllerC", "loginApi"]
+- ["6SaveUp19LoginViewControllerC", "loginButton"]
+- ["6SaveUp19LoginViewControllerC", "loginButtonDidLogOut"]
+- ["6SaveUp19LoginViewControllerC", "loginButtonWillLogin"]
+- ["6SaveUp19LoginViewControllerC", "loginScroll"]
+- !private ["6SaveUp19LoginViewControllerC", "messageFont"]
+- ["6SaveUp19LoginViewControllerC", "messageToast"]
+- ["6SaveUp19LoginViewControllerC", "nameString"]
+- !private ["6SaveUp19LoginViewControllerC", "navigationController"]
+- ["6SaveUp19LoginViewControllerC", "passwordText"]
+- !private ["6SaveUp19LoginViewControllerC", "present"]
+- !private ["6SaveUp19LoginViewControllerC", "print"]
+- ["6SaveUp19LoginViewControllerC", "registerButton"]
+- !private ["6SaveUp19LoginViewControllerC", "setAwsomeBackgroundImage"]
+- !private ["6SaveUp19LoginViewControllerC", "showNetworkErrorAlert"]
+- !private ["6SaveUp19LoginViewControllerC", "storyboard"]
+- ["6SaveUp19LoginViewControllerC", "textFieldDidBeginEditing"]
+- ["6SaveUp19LoginViewControllerC", "textFieldDidEndEditing"]
+- ["6SaveUp19LoginViewControllerC", "textFieldShouldReturn"]
+- !private ["6SaveUp19LoginViewControllerC", "view"]
+- ["6SaveUp19LoginViewControllerC", "viewController"]
+- ["6SaveUp19LoginViewControllerC", "viewControllerDidCancel"]
+- ["6SaveUp19LoginViewControllerC", "viewDidLoad"]
+- ["6SaveUp19LoginViewControllerC", "viewWillAppear"]
+- ["6SaveUp19LoginViewControllerC", "viewWillDisappear"]
 - !private ["s25LosslessStringConvertibleP", "Encoding"]
 - !private ["s25LosslessStringConvertibleP", "count"]
 - !private ["s25LosslessStringConvertibleP", "data"]
@@ -1271,7 +1235,6 @@ depends-member:
 - !private ["So8NSCodingP", "Reachability"]
 - !private ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "ToastStyle"]
-- !private ["So8NSCodingP", "UIActivityIndicatorView"]
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertController"]
 - !private ["So8NSCodingP", "UIApplication"]
@@ -1290,16 +1253,14 @@ depends-member:
 - ["So8NSCodingP", ""]
 - !private ["So8NSCodingP", "accountKit"]
 - !private ["So8NSCodingP", "addAction"]
-- !private ["So8NSCodingP", "addSubview"]
+- !private ["So8NSCodingP", "alpha"]
+- !private ["So8NSCodingP", "animate"]
 - !private ["So8NSCodingP", "animateViewMoving"]
 - !private ["So8NSCodingP", "attributedPlaceholder"]
-- !private ["So8NSCodingP", "backgroundColor"]
 - !private ["So8NSCodingP", "becomeFirstResponder"]
 - !private ["So8NSCodingP", "beginAnimations"]
-- !private ["So8NSCodingP", "bounds"]
-- !private ["So8NSCodingP", "center"]
+- !private ["So8NSCodingP", "btnGuest"]
 - !private ["So8NSCodingP", "commitAnimations"]
-- !private ["So8NSCodingP", "configureFacebook"]
 - !private ["So8NSCodingP", "contentMode"]
 - !private ["So8NSCodingP", "count"]
 - !private ["So8NSCodingP", "current"]
@@ -1341,27 +1302,22 @@ depends-member:
 - !private ["So8NSCodingP", "present"]
 - !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "readPermissions"]
-- !private ["So8NSCodingP", "removeFromSuperview"]
-- !private ["So8NSCodingP", "removeSpinner"]
 - !private ["So8NSCodingP", "resignFirstResponder"]
 - !private ["So8NSCodingP", "rootViewController"]
 - !private ["So8NSCodingP", "setAnimationBeginsFromCurrentState"]
 - !private ["So8NSCodingP", "setAnimationDuration"]
 - !private ["So8NSCodingP", "setAwsomeBackgroundImage"]
 - !private ["So8NSCodingP", "showNetworkErrorAlert"]
-- !private ["So8NSCodingP", "showSpinner"]
-- !private ["So8NSCodingP", "startAnimating"]
 - !private ["So8NSCodingP", "storyboard"]
 - !private ["So8NSCodingP", "subscript"]
 - !private ["So8NSCodingP", "text"]
-- !private ["So8NSCodingP", "vSpinner"]
 - !private ["So8NSCodingP", "value"]
 - !private ["So8NSCodingP", "view"]
 - ["So8NSCodingP", "viewController"]
 - ["So8NSCodingP", "viewControllerDidCancel"]
-- !private ["So8NSCodingP", "viewDidDisappear"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So8NSCodingP", "viewWillAppear"]
+- !private ["So8NSCodingP", "viewWillDisappear"]
 - !private ["So8NSCodingP", "white"]
 - !private ["So9NSCopyingP", "Key"]
 - !private ["So9NSCopyingP", "count"]
@@ -1397,7 +1353,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "Reachability"]
 - !private ["So26NSExtensionRequestHandlingP", "String"]
 - !private ["So26NSExtensionRequestHandlingP", "ToastStyle"]
-- !private ["So26NSExtensionRequestHandlingP", "UIActivityIndicatorView"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
@@ -1417,7 +1372,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "accountKit"]
 - !private ["So26NSExtensionRequestHandlingP", "addAction"]
 - !private ["So26NSExtensionRequestHandlingP", "animateViewMoving"]
-- !private ["So26NSExtensionRequestHandlingP", "configureFacebook"]
+- !private ["So26NSExtensionRequestHandlingP", "btnGuest"]
 - !private ["So26NSExtensionRequestHandlingP", "didReceiveMemoryWarning"]
 - !private ["So26NSExtensionRequestHandlingP", "dismissKeyBoardTappedOutside"]
 - !private ["So26NSExtensionRequestHandlingP", "emailString"]
@@ -1442,18 +1397,15 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "passwordText"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
-- !private ["So26NSExtensionRequestHandlingP", "removeSpinner"]
 - !private ["So26NSExtensionRequestHandlingP", "setAwsomeBackgroundImage"]
 - !private ["So26NSExtensionRequestHandlingP", "showNetworkErrorAlert"]
-- !private ["So26NSExtensionRequestHandlingP", "showSpinner"]
 - !private ["So26NSExtensionRequestHandlingP", "storyboard"]
-- !private ["So26NSExtensionRequestHandlingP", "vSpinner"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
 - ["So26NSExtensionRequestHandlingP", "viewController"]
 - ["So26NSExtensionRequestHandlingP", "viewControllerDidCancel"]
-- !private ["So26NSExtensionRequestHandlingP", "viewDidDisappear"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
+- !private ["So26NSExtensionRequestHandlingP", "viewWillDisappear"]
 - !private ["So17NSFastEnumerationP", "object"]
 - !private ["So17NSFastEnumerationP", "subscript"]
 - !private ["So17NSFastEnumerationP", "value"]
@@ -1509,7 +1461,6 @@ depends-member:
 - ["So8NSObjectC", "String"]
 - !private ["So8NSObjectC", "TimeInterval"]
 - !private ["So8NSObjectC", "ToastStyle"]
-- !private ["So8NSObjectC", "UIActivityIndicatorView"]
 - !private ["So8NSObjectC", "UIAlertAction"]
 - !private ["So8NSObjectC", "UIAlertController"]
 - !private ["So8NSObjectC", "UIApplication"]
@@ -1522,7 +1473,7 @@ depends-member:
 - !private ["So8NSObjectC", "UIStoryboard"]
 - ["So8NSObjectC", "UITapGestureRecognizer"]
 - ["So8NSObjectC", "UITextField"]
-- ["So8NSObjectC", "UIView"]
+- !private ["So8NSObjectC", "UIView"]
 - !private ["So8NSObjectC", "UIViewController"]
 - !private ["So8NSObjectC", "URL"]
 - !private ["So8NSObjectC", "URLRequest"]
@@ -1534,18 +1485,21 @@ depends-member:
 - !private ["So8NSObjectC", "Void"]
 - ["So8NSObjectC", "accountKit"]
 - !private ["So8NSObjectC", "addAction"]
-- !private ["So8NSObjectC", "addSubview"]
+- !private ["So8NSObjectC", "alpha"]
+- !private ["So8NSObjectC", "animate"]
 - ["So8NSObjectC", "animateViewMoving"]
 - !private ["So8NSObjectC", "async"]
 - !private ["So8NSObjectC", "attributedPlaceholder"]
-- !private ["So8NSObjectC", "backgroundColor"]
 - !private ["So8NSObjectC", "becomeFirstResponder"]
 - !private ["So8NSObjectC", "beginAnimations"]
 - ["So8NSObjectC", "bgImage"]
 - !private ["So8NSObjectC", "bounds"]
+- ["So8NSObjectC", "btnFacebookLoginPressed"]
+- ["So8NSObjectC", "btnFbLogin"]
+- ["So8NSObjectC", "btnGoogleLogin"]
+- ["So8NSObjectC", "btnGoogleLoginPressed"]
 - ["So8NSObjectC", "btnGuest"]
 - ["So8NSObjectC", "btnGuestPressed"]
-- !private ["So8NSObjectC", "center"]
 - !private ["So8NSObjectC", "commitAnimations"]
 - ["So8NSObjectC", "configureFacebook"]
 - !private ["So8NSObjectC", "contentMode"]
@@ -1600,8 +1554,6 @@ depends-member:
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "readPermissions"]
 - ["So8NSObjectC", "registerButton"]
-- !private ["So8NSObjectC", "removeFromSuperview"]
-- ["So8NSObjectC", "removeSpinner"]
 - !private ["So8NSObjectC", "resignFirstResponder"]
 - !private ["So8NSObjectC", "resume"]
 - !private ["So8NSObjectC", "rootViewController"]
@@ -1611,10 +1563,8 @@ depends-member:
 - ["So8NSObjectC", "setAwsomeBackgroundImage"]
 - !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "showNetworkErrorAlert"]
-- ["So8NSObjectC", "showSpinner"]
 - !private ["So8NSObjectC", "standard"]
 - !private ["So8NSObjectC", "start"]
-- !private ["So8NSObjectC", "startAnimating"]
 - !private ["So8NSObjectC", "storyboard"]
 - !private ["So8NSObjectC", "subscript"]
 - !private ["So8NSObjectC", "synchronize"]
@@ -1622,15 +1572,14 @@ depends-member:
 - ["So8NSObjectC", "textFieldDidBeginEditing"]
 - ["So8NSObjectC", "textFieldDidEndEditing"]
 - ["So8NSObjectC", "textFieldShouldReturn"]
-- !private ["So8NSObjectC", "vSpinner"]
 - !private ["So8NSObjectC", "value"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewController"]
 - ["So8NSObjectC", "viewControllerDidCancel"]
 - !private ["So8NSObjectC", "viewControllerForPhoneLogin"]
-- ["So8NSObjectC", "viewDidDisappear"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewWillAppear"]
+- ["So8NSObjectC", "viewWillDisappear"]
 - !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectC", "window"]
 - !private ["So8NSObjectP", "AKFAccountKit"]
@@ -1654,7 +1603,6 @@ depends-member:
 - !private ["So8NSObjectP", "Reachability"]
 - !private ["So8NSObjectP", "String"]
 - !private ["So8NSObjectP", "ToastStyle"]
-- !private ["So8NSObjectP", "UIActivityIndicatorView"]
 - !private ["So8NSObjectP", "UIAlertAction"]
 - !private ["So8NSObjectP", "UIAlertController"]
 - !private ["So8NSObjectP", "UIApplication"]
@@ -1674,17 +1622,16 @@ depends-member:
 - ["So8NSObjectP", ""]
 - !private ["So8NSObjectP", "accountKit"]
 - !private ["So8NSObjectP", "addAction"]
-- !private ["So8NSObjectP", "addSubview"]
+- !private ["So8NSObjectP", "alpha"]
+- !private ["So8NSObjectP", "animate"]
 - !private ["So8NSObjectP", "animateViewMoving"]
 - !private ["So8NSObjectP", "async"]
 - !private ["So8NSObjectP", "attributedPlaceholder"]
-- !private ["So8NSObjectP", "backgroundColor"]
 - !private ["So8NSObjectP", "becomeFirstResponder"]
 - !private ["So8NSObjectP", "beginAnimations"]
 - !private ["So8NSObjectP", "bounds"]
-- !private ["So8NSObjectP", "center"]
+- !private ["So8NSObjectP", "btnGuest"]
 - !private ["So8NSObjectP", "commitAnimations"]
-- !private ["So8NSObjectP", "configureFacebook"]
 - !private ["So8NSObjectP", "contentMode"]
 - !private ["So8NSObjectP", "count"]
 - !private ["So8NSObjectP", "current"]
@@ -1734,8 +1681,6 @@ depends-member:
 - !private ["So8NSObjectP", "present"]
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "readPermissions"]
-- !private ["So8NSObjectP", "removeFromSuperview"]
-- !private ["So8NSObjectP", "removeSpinner"]
 - !private ["So8NSObjectP", "resignFirstResponder"]
 - !private ["So8NSObjectP", "resume"]
 - !private ["So8NSObjectP", "rootViewController"]
@@ -1745,24 +1690,21 @@ depends-member:
 - !private ["So8NSObjectP", "setAwsomeBackgroundImage"]
 - !private ["So8NSObjectP", "shared"]
 - !private ["So8NSObjectP", "showNetworkErrorAlert"]
-- !private ["So8NSObjectP", "showSpinner"]
 - !private ["So8NSObjectP", "standard"]
 - !private ["So8NSObjectP", "start"]
-- !private ["So8NSObjectP", "startAnimating"]
 - !private ["So8NSObjectP", "storyboard"]
 - !private ["So8NSObjectP", "subscript"]
 - !private ["So8NSObjectP", "synchronize"]
 - !private ["So8NSObjectP", "text"]
 - !private ["So8NSObjectP", "uiManager"]
-- !private ["So8NSObjectP", "vSpinner"]
 - !private ["So8NSObjectP", "value"]
 - !private ["So8NSObjectP", "view"]
 - ["So8NSObjectP", "viewController"]
 - ["So8NSObjectP", "viewControllerDidCancel"]
 - !private ["So8NSObjectP", "viewControllerForPhoneLogin"]
-- !private ["So8NSObjectP", "viewDidDisappear"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - !private ["So8NSObjectP", "viewWillAppear"]
+- !private ["So8NSObjectP", "viewWillDisappear"]
 - !private ["So8NSObjectP", "white"]
 - !private ["So8NSObjectP", "window"]
 - !private ["So11NSPredicateC", "evaluate"]
@@ -1784,6 +1726,7 @@ depends-member:
 - !private ["So9OS_objectC", "async"]
 - !private ["So9OS_objectC", "main"]
 - !private ["s9OptionSetP", "mutableContainers"]
+- !private ["Sq", "alpha"]
 - !private ["Sq", "attributedPlaceholder"]
 - !private ["Sq", "becomeFirstResponder"]
 - !private ["Sq", "currentAccessToken"]
@@ -1800,7 +1743,7 @@ depends-member:
 - !private ["Sq", "start"]
 - !private ["Sq", "text"]
 - !private ["Sq", "viewControllerForPhoneLogin"]
-- !private ["9SaveUp_BD11PlaceholderP", "init"]
+- !private ["6SaveUp11PlaceholderP", "init"]
 - !private ["So19NSProgressReportingP", "resume"]
 - !private ["Sk", "count"]
 - !private ["Sk", "subscript"]
@@ -1821,15 +1764,14 @@ depends-member:
 - !private ["SY", "scaleAspectFill"]
 - !private ["SY", "translucent"]
 - !private ["SY", "utf8"]
-- !private ["SY", "whiteLarge"]
-- !private ["9SaveUp_BD12ReachabilityC", "init"]
-- !private ["9SaveUp_BD12ReachabilityC", "isReachable"]
+- !private ["6SaveUp12ReachabilityC", "init"]
+- !private ["6SaveUp12ReachabilityC", "isReachable"]
 - !private ["So20NSJSONReadingOptionsV", "mutableContainers"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpBody"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "uuidString"]
-- !private ["9SaveUp_BD8ResourceP", "init"]
+- !private ["6SaveUp8ResourceP", "init"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "main"]
 - !private ["ST", "Encoding"]
@@ -1852,7 +1794,6 @@ depends-member:
 - !private ["Sy", "init"]
 - !private ["So22UIAlertControllerStyleV", "alert"]
 - !private ["So18UIAlertActionStyleV", "default"]
-- !private ["So28UIActivityIndicatorViewStyleV", "whiteLarge"]
 - !private ["s16TextOutputStreamP", "Encoding"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
@@ -1863,12 +1804,13 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "count"]
 - !private ["s20TextOutputStreamableP", "data"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["9SaveUp_BD13ToastPositionO", "center"]
-- !private ["9SaveUp_BD10ToastStyleV", "backgroundColor"]
-- !private ["9SaveUp_BD10ToastStyleV", "init"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageAlignment"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageColor"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageFont"]
+- !private ["6SaveUp13ToastPositionO", "center"]
+- !private ["6SaveUp10ToastStyleV", "backgroundColor"]
+- !private ["6SaveUp10ToastStyleV", "init"]
+- !private ["6SaveUp10ToastStyleV", "messageAlignment"]
+- !private ["6SaveUp10ToastStyleV", "messageColor"]
+- !private ["6SaveUp10ToastStyleV", "messageFont"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "alpha"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "contentMode"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "delegate"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
@@ -1876,13 +1818,11 @@ depends-member:
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isEnabled"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "readPermissions"]
 - !private ["So29UIAccessibilityIdentificationP", "ContentMode"]
-- !private ["So29UIAccessibilityIdentificationP", "addSubview"]
+- !private ["So29UIAccessibilityIdentificationP", "alpha"]
+- !private ["So29UIAccessibilityIdentificationP", "animate"]
 - !private ["So29UIAccessibilityIdentificationP", "attributedPlaceholder"]
-- !private ["So29UIAccessibilityIdentificationP", "backgroundColor"]
 - !private ["So29UIAccessibilityIdentificationP", "becomeFirstResponder"]
 - !private ["So29UIAccessibilityIdentificationP", "beginAnimations"]
-- !private ["So29UIAccessibilityIdentificationP", "bounds"]
-- !private ["So29UIAccessibilityIdentificationP", "center"]
 - !private ["So29UIAccessibilityIdentificationP", "commitAnimations"]
 - !private ["So29UIAccessibilityIdentificationP", "contentMode"]
 - !private ["So29UIAccessibilityIdentificationP", "delegate"]
@@ -1896,27 +1836,20 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "makeToast"]
 - !private ["So29UIAccessibilityIdentificationP", "makeToastActivity"]
 - !private ["So29UIAccessibilityIdentificationP", "readPermissions"]
-- !private ["So29UIAccessibilityIdentificationP", "removeFromSuperview"]
 - !private ["So29UIAccessibilityIdentificationP", "resignFirstResponder"]
 - !private ["So29UIAccessibilityIdentificationP", "rootViewController"]
 - !private ["So29UIAccessibilityIdentificationP", "setAnimationBeginsFromCurrentState"]
 - !private ["So29UIAccessibilityIdentificationP", "setAnimationDuration"]
-- !private ["So29UIAccessibilityIdentificationP", "startAnimating"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
-- !private ["So23UIActivityIndicatorViewC", "center"]
-- !private ["So23UIActivityIndicatorViewC", "init"]
-- !private ["So23UIActivityIndicatorViewC", "startAnimating"]
 - !private ["So13UIAlertActionC", "init"]
 - !private ["So17UIAlertControllerC", "addAction"]
 - !private ["So17UIAlertControllerC", "init"]
 - !private ["So12UIAppearanceP", "ContentMode"]
-- !private ["So12UIAppearanceP", "addSubview"]
+- !private ["So12UIAppearanceP", "alpha"]
+- !private ["So12UIAppearanceP", "animate"]
 - !private ["So12UIAppearanceP", "attributedPlaceholder"]
-- !private ["So12UIAppearanceP", "backgroundColor"]
 - !private ["So12UIAppearanceP", "becomeFirstResponder"]
 - !private ["So12UIAppearanceP", "beginAnimations"]
-- !private ["So12UIAppearanceP", "bounds"]
-- !private ["So12UIAppearanceP", "center"]
 - !private ["So12UIAppearanceP", "commitAnimations"]
 - !private ["So12UIAppearanceP", "contentMode"]
 - !private ["So12UIAppearanceP", "delegate"]
@@ -1930,12 +1863,10 @@ depends-member:
 - !private ["So12UIAppearanceP", "makeToast"]
 - !private ["So12UIAppearanceP", "makeToastActivity"]
 - !private ["So12UIAppearanceP", "readPermissions"]
-- !private ["So12UIAppearanceP", "removeFromSuperview"]
 - !private ["So12UIAppearanceP", "resignFirstResponder"]
 - !private ["So12UIAppearanceP", "rootViewController"]
 - !private ["So12UIAppearanceP", "setAnimationBeginsFromCurrentState"]
 - !private ["So12UIAppearanceP", "setAnimationDuration"]
-- !private ["So12UIAppearanceP", "startAnimating"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So21UIAppearanceContainerP", "AKFAccountKit"]
 - !private ["So21UIAppearanceContainerP", "AKFBackgroundTint"]
@@ -1957,7 +1888,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "Reachability"]
 - !private ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "ToastStyle"]
-- !private ["So21UIAppearanceContainerP", "UIActivityIndicatorView"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
 - !private ["So21UIAppearanceContainerP", "UIApplication"]
@@ -1976,16 +1906,14 @@ depends-member:
 - ["So21UIAppearanceContainerP", ""]
 - !private ["So21UIAppearanceContainerP", "accountKit"]
 - !private ["So21UIAppearanceContainerP", "addAction"]
-- !private ["So21UIAppearanceContainerP", "addSubview"]
+- !private ["So21UIAppearanceContainerP", "alpha"]
+- !private ["So21UIAppearanceContainerP", "animate"]
 - !private ["So21UIAppearanceContainerP", "animateViewMoving"]
 - !private ["So21UIAppearanceContainerP", "attributedPlaceholder"]
-- !private ["So21UIAppearanceContainerP", "backgroundColor"]
 - !private ["So21UIAppearanceContainerP", "becomeFirstResponder"]
 - !private ["So21UIAppearanceContainerP", "beginAnimations"]
-- !private ["So21UIAppearanceContainerP", "bounds"]
-- !private ["So21UIAppearanceContainerP", "center"]
+- !private ["So21UIAppearanceContainerP", "btnGuest"]
 - !private ["So21UIAppearanceContainerP", "commitAnimations"]
-- !private ["So21UIAppearanceContainerP", "configureFacebook"]
 - !private ["So21UIAppearanceContainerP", "contentMode"]
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "didReceiveMemoryWarning"]
@@ -2021,28 +1949,24 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "present"]
 - !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "readPermissions"]
-- !private ["So21UIAppearanceContainerP", "removeFromSuperview"]
-- !private ["So21UIAppearanceContainerP", "removeSpinner"]
 - !private ["So21UIAppearanceContainerP", "resignFirstResponder"]
 - !private ["So21UIAppearanceContainerP", "rootViewController"]
 - !private ["So21UIAppearanceContainerP", "setAnimationBeginsFromCurrentState"]
 - !private ["So21UIAppearanceContainerP", "setAnimationDuration"]
 - !private ["So21UIAppearanceContainerP", "setAwsomeBackgroundImage"]
 - !private ["So21UIAppearanceContainerP", "showNetworkErrorAlert"]
-- !private ["So21UIAppearanceContainerP", "showSpinner"]
-- !private ["So21UIAppearanceContainerP", "startAnimating"]
 - !private ["So21UIAppearanceContainerP", "storyboard"]
 - !private ["So21UIAppearanceContainerP", "text"]
-- !private ["So21UIAppearanceContainerP", "vSpinner"]
 - !private ["So21UIAppearanceContainerP", "view"]
 - ["So21UIAppearanceContainerP", "viewController"]
 - ["So21UIAppearanceContainerP", "viewControllerDidCancel"]
-- !private ["So21UIAppearanceContainerP", "viewDidDisappear"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
+- !private ["So21UIAppearanceContainerP", "viewWillDisappear"]
 - !private ["So13UIApplicationC", "delegate"]
 - !private ["So13UIApplicationC", "shared"]
 - !private ["So21UIApplicationDelegateP", "window"]
+- !private ["So8UIButtonC", "alpha"]
 - !private ["So8UIButtonC", "delegate"]
 - !private ["So8UIButtonC", "isEnabled"]
 - !private ["So8UIButtonC", "readPermissions"]
@@ -2068,7 +1992,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "Reachability"]
 - !private ["So18UIContentContainerP", "String"]
 - !private ["So18UIContentContainerP", "ToastStyle"]
-- !private ["So18UIContentContainerP", "UIActivityIndicatorView"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
 - !private ["So18UIContentContainerP", "UIApplication"]
@@ -2088,7 +2011,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "accountKit"]
 - !private ["So18UIContentContainerP", "addAction"]
 - !private ["So18UIContentContainerP", "animateViewMoving"]
-- !private ["So18UIContentContainerP", "configureFacebook"]
+- !private ["So18UIContentContainerP", "btnGuest"]
 - !private ["So18UIContentContainerP", "didReceiveMemoryWarning"]
 - !private ["So18UIContentContainerP", "dismissKeyBoardTappedOutside"]
 - !private ["So18UIContentContainerP", "emailString"]
@@ -2113,23 +2036,21 @@ depends-member:
 - !private ["So18UIContentContainerP", "passwordText"]
 - !private ["So18UIContentContainerP", "present"]
 - !private ["So18UIContentContainerP", "print"]
-- !private ["So18UIContentContainerP", "removeSpinner"]
 - !private ["So18UIContentContainerP", "setAwsomeBackgroundImage"]
 - !private ["So18UIContentContainerP", "showNetworkErrorAlert"]
-- !private ["So18UIContentContainerP", "showSpinner"]
 - !private ["So18UIContentContainerP", "storyboard"]
-- !private ["So18UIContentContainerP", "vSpinner"]
 - !private ["So18UIContentContainerP", "view"]
 - ["So18UIContentContainerP", "viewController"]
 - ["So18UIContentContainerP", "viewControllerDidCancel"]
-- !private ["So18UIContentContainerP", "viewDidDisappear"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So18UIContentContainerP", "viewWillAppear"]
+- !private ["So18UIContentContainerP", "viewWillDisappear"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "attributedPlaceholder"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "becomeFirstResponder"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "font"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "resignFirstResponder"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
+- !private ["So9UIControlC", "alpha"]
 - !private ["So9UIControlC", "attributedPlaceholder"]
 - !private ["So9UIControlC", "becomeFirstResponder"]
 - !private ["So9UIControlC", "delegate"]
@@ -2139,13 +2060,11 @@ depends-member:
 - !private ["So9UIControlC", "resignFirstResponder"]
 - !private ["So9UIControlC", "text"]
 - !private ["So17UICoordinateSpaceP", "ContentMode"]
-- !private ["So17UICoordinateSpaceP", "addSubview"]
+- !private ["So17UICoordinateSpaceP", "alpha"]
+- !private ["So17UICoordinateSpaceP", "animate"]
 - !private ["So17UICoordinateSpaceP", "attributedPlaceholder"]
-- !private ["So17UICoordinateSpaceP", "backgroundColor"]
 - !private ["So17UICoordinateSpaceP", "becomeFirstResponder"]
 - !private ["So17UICoordinateSpaceP", "beginAnimations"]
-- !private ["So17UICoordinateSpaceP", "bounds"]
-- !private ["So17UICoordinateSpaceP", "center"]
 - !private ["So17UICoordinateSpaceP", "commitAnimations"]
 - !private ["So17UICoordinateSpaceP", "contentMode"]
 - !private ["So17UICoordinateSpaceP", "delegate"]
@@ -2159,21 +2078,17 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "makeToast"]
 - !private ["So17UICoordinateSpaceP", "makeToastActivity"]
 - !private ["So17UICoordinateSpaceP", "readPermissions"]
-- !private ["So17UICoordinateSpaceP", "removeFromSuperview"]
 - !private ["So17UICoordinateSpaceP", "resignFirstResponder"]
 - !private ["So17UICoordinateSpaceP", "rootViewController"]
 - !private ["So17UICoordinateSpaceP", "setAnimationBeginsFromCurrentState"]
 - !private ["So17UICoordinateSpaceP", "setAnimationDuration"]
-- !private ["So17UICoordinateSpaceP", "startAnimating"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So13UIDynamicItemP", "ContentMode"]
-- !private ["So13UIDynamicItemP", "addSubview"]
+- !private ["So13UIDynamicItemP", "alpha"]
+- !private ["So13UIDynamicItemP", "animate"]
 - !private ["So13UIDynamicItemP", "attributedPlaceholder"]
-- !private ["So13UIDynamicItemP", "backgroundColor"]
 - !private ["So13UIDynamicItemP", "becomeFirstResponder"]
 - !private ["So13UIDynamicItemP", "beginAnimations"]
-- !private ["So13UIDynamicItemP", "bounds"]
-- !private ["So13UIDynamicItemP", "center"]
 - !private ["So13UIDynamicItemP", "commitAnimations"]
 - !private ["So13UIDynamicItemP", "contentMode"]
 - !private ["So13UIDynamicItemP", "delegate"]
@@ -2187,12 +2102,10 @@ depends-member:
 - !private ["So13UIDynamicItemP", "makeToast"]
 - !private ["So13UIDynamicItemP", "makeToastActivity"]
 - !private ["So13UIDynamicItemP", "readPermissions"]
-- !private ["So13UIDynamicItemP", "removeFromSuperview"]
 - !private ["So13UIDynamicItemP", "resignFirstResponder"]
 - !private ["So13UIDynamicItemP", "rootViewController"]
 - !private ["So13UIDynamicItemP", "setAnimationBeginsFromCurrentState"]
 - !private ["So13UIDynamicItemP", "setAnimationDuration"]
-- !private ["So13UIDynamicItemP", "startAnimating"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So18UIFocusEnvironmentP", "AKFAccountKit"]
 - !private ["So18UIFocusEnvironmentP", "AKFBackgroundTint"]
@@ -2214,7 +2127,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "Reachability"]
 - !private ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "ToastStyle"]
-- !private ["So18UIFocusEnvironmentP", "UIActivityIndicatorView"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
 - !private ["So18UIFocusEnvironmentP", "UIApplication"]
@@ -2233,16 +2145,14 @@ depends-member:
 - ["So18UIFocusEnvironmentP", ""]
 - !private ["So18UIFocusEnvironmentP", "accountKit"]
 - !private ["So18UIFocusEnvironmentP", "addAction"]
-- !private ["So18UIFocusEnvironmentP", "addSubview"]
+- !private ["So18UIFocusEnvironmentP", "alpha"]
+- !private ["So18UIFocusEnvironmentP", "animate"]
 - !private ["So18UIFocusEnvironmentP", "animateViewMoving"]
 - !private ["So18UIFocusEnvironmentP", "attributedPlaceholder"]
-- !private ["So18UIFocusEnvironmentP", "backgroundColor"]
 - !private ["So18UIFocusEnvironmentP", "becomeFirstResponder"]
 - !private ["So18UIFocusEnvironmentP", "beginAnimations"]
-- !private ["So18UIFocusEnvironmentP", "bounds"]
-- !private ["So18UIFocusEnvironmentP", "center"]
+- !private ["So18UIFocusEnvironmentP", "btnGuest"]
 - !private ["So18UIFocusEnvironmentP", "commitAnimations"]
-- !private ["So18UIFocusEnvironmentP", "configureFacebook"]
 - !private ["So18UIFocusEnvironmentP", "contentMode"]
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "didReceiveMemoryWarning"]
@@ -2278,33 +2188,26 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "present"]
 - !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "readPermissions"]
-- !private ["So18UIFocusEnvironmentP", "removeFromSuperview"]
-- !private ["So18UIFocusEnvironmentP", "removeSpinner"]
 - !private ["So18UIFocusEnvironmentP", "resignFirstResponder"]
 - !private ["So18UIFocusEnvironmentP", "rootViewController"]
 - !private ["So18UIFocusEnvironmentP", "setAnimationBeginsFromCurrentState"]
 - !private ["So18UIFocusEnvironmentP", "setAnimationDuration"]
 - !private ["So18UIFocusEnvironmentP", "setAwsomeBackgroundImage"]
 - !private ["So18UIFocusEnvironmentP", "showNetworkErrorAlert"]
-- !private ["So18UIFocusEnvironmentP", "showSpinner"]
-- !private ["So18UIFocusEnvironmentP", "startAnimating"]
 - !private ["So18UIFocusEnvironmentP", "storyboard"]
 - !private ["So18UIFocusEnvironmentP", "text"]
-- !private ["So18UIFocusEnvironmentP", "vSpinner"]
 - !private ["So18UIFocusEnvironmentP", "view"]
 - ["So18UIFocusEnvironmentP", "viewController"]
 - ["So18UIFocusEnvironmentP", "viewControllerDidCancel"]
-- !private ["So18UIFocusEnvironmentP", "viewDidDisappear"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
+- !private ["So18UIFocusEnvironmentP", "viewWillDisappear"]
 - !private ["So11UIFocusItemP", "ContentMode"]
-- !private ["So11UIFocusItemP", "addSubview"]
+- !private ["So11UIFocusItemP", "alpha"]
+- !private ["So11UIFocusItemP", "animate"]
 - !private ["So11UIFocusItemP", "attributedPlaceholder"]
-- !private ["So11UIFocusItemP", "backgroundColor"]
 - !private ["So11UIFocusItemP", "becomeFirstResponder"]
 - !private ["So11UIFocusItemP", "beginAnimations"]
-- !private ["So11UIFocusItemP", "bounds"]
-- !private ["So11UIFocusItemP", "center"]
 - !private ["So11UIFocusItemP", "commitAnimations"]
 - !private ["So11UIFocusItemP", "contentMode"]
 - !private ["So11UIFocusItemP", "delegate"]
@@ -2318,21 +2221,17 @@ depends-member:
 - !private ["So11UIFocusItemP", "makeToast"]
 - !private ["So11UIFocusItemP", "makeToastActivity"]
 - !private ["So11UIFocusItemP", "readPermissions"]
-- !private ["So11UIFocusItemP", "removeFromSuperview"]
 - !private ["So11UIFocusItemP", "resignFirstResponder"]
 - !private ["So11UIFocusItemP", "rootViewController"]
 - !private ["So11UIFocusItemP", "setAnimationBeginsFromCurrentState"]
 - !private ["So11UIFocusItemP", "setAnimationDuration"]
-- !private ["So11UIFocusItemP", "startAnimating"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So20UIFocusItemContainerP", "ContentMode"]
-- !private ["So20UIFocusItemContainerP", "addSubview"]
+- !private ["So20UIFocusItemContainerP", "alpha"]
+- !private ["So20UIFocusItemContainerP", "animate"]
 - !private ["So20UIFocusItemContainerP", "attributedPlaceholder"]
-- !private ["So20UIFocusItemContainerP", "backgroundColor"]
 - !private ["So20UIFocusItemContainerP", "becomeFirstResponder"]
 - !private ["So20UIFocusItemContainerP", "beginAnimations"]
-- !private ["So20UIFocusItemContainerP", "bounds"]
-- !private ["So20UIFocusItemContainerP", "center"]
 - !private ["So20UIFocusItemContainerP", "commitAnimations"]
 - !private ["So20UIFocusItemContainerP", "contentMode"]
 - !private ["So20UIFocusItemContainerP", "delegate"]
@@ -2346,12 +2245,10 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "makeToast"]
 - !private ["So20UIFocusItemContainerP", "makeToastActivity"]
 - !private ["So20UIFocusItemContainerP", "readPermissions"]
-- !private ["So20UIFocusItemContainerP", "removeFromSuperview"]
 - !private ["So20UIFocusItemContainerP", "resignFirstResponder"]
 - !private ["So20UIFocusItemContainerP", "rootViewController"]
 - !private ["So20UIFocusItemContainerP", "setAnimationBeginsFromCurrentState"]
 - !private ["So20UIFocusItemContainerP", "setAnimationDuration"]
-- !private ["So20UIFocusItemContainerP", "startAnimating"]
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So27UIGestureRecognizerDelegateP", "AKFAccountKit"]
 - !private ["So27UIGestureRecognizerDelegateP", "AKFBackgroundTint"]
@@ -2388,7 +2285,7 @@ depends-member:
 - ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "accountKit"]
 - !private ["So27UIGestureRecognizerDelegateP", "animateViewMoving"]
-- !private ["So27UIGestureRecognizerDelegateP", "configureFacebook"]
+- !private ["So27UIGestureRecognizerDelegateP", "btnGuest"]
 - !private ["So27UIGestureRecognizerDelegateP", "dismissKeyBoardTappedOutside"]
 - !private ["So27UIGestureRecognizerDelegateP", "emailString"]
 - !private ["So27UIGestureRecognizerDelegateP", "emailText"]
@@ -2409,10 +2306,8 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "passwordText"]
 - !private ["So27UIGestureRecognizerDelegateP", "present"]
 - !private ["So27UIGestureRecognizerDelegateP", "print"]
-- !private ["So27UIGestureRecognizerDelegateP", "removeSpinner"]
 - !private ["So27UIGestureRecognizerDelegateP", "setAwsomeBackgroundImage"]
 - !private ["So27UIGestureRecognizerDelegateP", "showNetworkErrorAlert"]
-- !private ["So27UIGestureRecognizerDelegateP", "showSpinner"]
 - !private ["So27UIGestureRecognizerDelegateP", "storyboard"]
 - !private ["So27UIGestureRecognizerDelegateP", "view"]
 - ["So27UIGestureRecognizerDelegateP", "viewController"]
@@ -2428,13 +2323,11 @@ depends-member:
 - !private ["So10UIKeyInputP", "resignFirstResponder"]
 - !private ["So10UIKeyInputP", "text"]
 - !private ["So24UILargeContentViewerItemP", "ContentMode"]
-- !private ["So24UILargeContentViewerItemP", "addSubview"]
+- !private ["So24UILargeContentViewerItemP", "alpha"]
+- !private ["So24UILargeContentViewerItemP", "animate"]
 - !private ["So24UILargeContentViewerItemP", "attributedPlaceholder"]
-- !private ["So24UILargeContentViewerItemP", "backgroundColor"]
 - !private ["So24UILargeContentViewerItemP", "becomeFirstResponder"]
 - !private ["So24UILargeContentViewerItemP", "beginAnimations"]
-- !private ["So24UILargeContentViewerItemP", "bounds"]
-- !private ["So24UILargeContentViewerItemP", "center"]
 - !private ["So24UILargeContentViewerItemP", "commitAnimations"]
 - !private ["So24UILargeContentViewerItemP", "contentMode"]
 - !private ["So24UILargeContentViewerItemP", "delegate"]
@@ -2448,12 +2341,10 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "makeToast"]
 - !private ["So24UILargeContentViewerItemP", "makeToastActivity"]
 - !private ["So24UILargeContentViewerItemP", "readPermissions"]
-- !private ["So24UILargeContentViewerItemP", "removeFromSuperview"]
 - !private ["So24UILargeContentViewerItemP", "resignFirstResponder"]
 - !private ["So24UILargeContentViewerItemP", "rootViewController"]
 - !private ["So24UILargeContentViewerItemP", "setAnimationBeginsFromCurrentState"]
 - !private ["So24UILargeContentViewerItemP", "setAnimationDuration"]
-- !private ["So24UILargeContentViewerItemP", "startAnimating"]
 - !private ["So24UILargeContentViewerItemP", "text"]
 - !private ["So24UIModalPresentationStyleV", "fullScreen"]
 - !private ["So22UINavigationControllerC", "isNavigationBarHidden"]
@@ -2477,7 +2368,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "Reachability"]
 - !private ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "ToastStyle"]
-- !private ["So30UIPasteConfigurationSupportingP", "UIActivityIndicatorView"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
@@ -2496,16 +2386,14 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", ""]
 - !private ["So30UIPasteConfigurationSupportingP", "accountKit"]
 - !private ["So30UIPasteConfigurationSupportingP", "addAction"]
-- !private ["So30UIPasteConfigurationSupportingP", "addSubview"]
+- !private ["So30UIPasteConfigurationSupportingP", "alpha"]
+- !private ["So30UIPasteConfigurationSupportingP", "animate"]
 - !private ["So30UIPasteConfigurationSupportingP", "animateViewMoving"]
 - !private ["So30UIPasteConfigurationSupportingP", "attributedPlaceholder"]
-- !private ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "becomeFirstResponder"]
 - !private ["So30UIPasteConfigurationSupportingP", "beginAnimations"]
-- !private ["So30UIPasteConfigurationSupportingP", "bounds"]
-- !private ["So30UIPasteConfigurationSupportingP", "center"]
+- !private ["So30UIPasteConfigurationSupportingP", "btnGuest"]
 - !private ["So30UIPasteConfigurationSupportingP", "commitAnimations"]
-- !private ["So30UIPasteConfigurationSupportingP", "configureFacebook"]
 - !private ["So30UIPasteConfigurationSupportingP", "contentMode"]
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "didReceiveMemoryWarning"]
@@ -2541,8 +2429,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "readPermissions"]
-- !private ["So30UIPasteConfigurationSupportingP", "removeFromSuperview"]
-- !private ["So30UIPasteConfigurationSupportingP", "removeSpinner"]
 - !private ["So30UIPasteConfigurationSupportingP", "resignFirstResponder"]
 - !private ["So30UIPasteConfigurationSupportingP", "rootViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "setAnimationBeginsFromCurrentState"]
@@ -2550,17 +2436,14 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "setAwsomeBackgroundImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "shared"]
 - !private ["So30UIPasteConfigurationSupportingP", "showNetworkErrorAlert"]
-- !private ["So30UIPasteConfigurationSupportingP", "showSpinner"]
-- !private ["So30UIPasteConfigurationSupportingP", "startAnimating"]
 - !private ["So30UIPasteConfigurationSupportingP", "storyboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
-- !private ["So30UIPasteConfigurationSupportingP", "vSpinner"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
 - ["So30UIPasteConfigurationSupportingP", "viewController"]
 - ["So30UIPasteConfigurationSupportingP", "viewControllerDidCancel"]
-- !private ["So30UIPasteConfigurationSupportingP", "viewDidDisappear"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewWillDisappear"]
 - !private ["So30UIPasteConfigurationSupportingP", "window"]
 - ["So11UIResponderC", "AKFAccountKit"]
 - !private ["So11UIResponderC", "AKFBackgroundTint"]
@@ -2594,7 +2477,6 @@ depends-member:
 - ["So11UIResponderC", "String"]
 - !private ["So11UIResponderC", "TimeInterval"]
 - !private ["So11UIResponderC", "ToastStyle"]
-- !private ["So11UIResponderC", "UIActivityIndicatorView"]
 - !private ["So11UIResponderC", "UIAlertAction"]
 - !private ["So11UIResponderC", "UIAlertController"]
 - !private ["So11UIResponderC", "UIApplication"]
@@ -2607,7 +2489,7 @@ depends-member:
 - !private ["So11UIResponderC", "UIStoryboard"]
 - ["So11UIResponderC", "UITapGestureRecognizer"]
 - ["So11UIResponderC", "UITextField"]
-- ["So11UIResponderC", "UIView"]
+- !private ["So11UIResponderC", "UIView"]
 - !private ["So11UIResponderC", "UIViewController"]
 - !private ["So11UIResponderC", "URL"]
 - !private ["So11UIResponderC", "URLRequest"]
@@ -2618,17 +2500,19 @@ depends-member:
 - !private ["So11UIResponderC", "Void"]
 - ["So11UIResponderC", "accountKit"]
 - !private ["So11UIResponderC", "addAction"]
-- !private ["So11UIResponderC", "addSubview"]
+- !private ["So11UIResponderC", "alpha"]
+- !private ["So11UIResponderC", "animate"]
 - ["So11UIResponderC", "animateViewMoving"]
 - !private ["So11UIResponderC", "attributedPlaceholder"]
-- !private ["So11UIResponderC", "backgroundColor"]
 - !private ["So11UIResponderC", "becomeFirstResponder"]
 - !private ["So11UIResponderC", "beginAnimations"]
 - ["So11UIResponderC", "bgImage"]
-- !private ["So11UIResponderC", "bounds"]
+- ["So11UIResponderC", "btnFacebookLoginPressed"]
+- ["So11UIResponderC", "btnFbLogin"]
+- ["So11UIResponderC", "btnGoogleLogin"]
+- ["So11UIResponderC", "btnGoogleLoginPressed"]
 - ["So11UIResponderC", "btnGuest"]
 - ["So11UIResponderC", "btnGuestPressed"]
-- !private ["So11UIResponderC", "center"]
 - !private ["So11UIResponderC", "commitAnimations"]
 - ["So11UIResponderC", "configureFacebook"]
 - !private ["So11UIResponderC", "contentMode"]
@@ -2671,8 +2555,6 @@ depends-member:
 - !private ["So11UIResponderC", "print"]
 - !private ["So11UIResponderC", "readPermissions"]
 - ["So11UIResponderC", "registerButton"]
-- !private ["So11UIResponderC", "removeFromSuperview"]
-- ["So11UIResponderC", "removeSpinner"]
 - !private ["So11UIResponderC", "resignFirstResponder"]
 - !private ["So11UIResponderC", "rootViewController"]
 - !private ["So11UIResponderC", "setAnimationBeginsFromCurrentState"]
@@ -2680,20 +2562,17 @@ depends-member:
 - ["So11UIResponderC", "setAwsomeBackgroundImage"]
 - !private ["So11UIResponderC", "shared"]
 - !private ["So11UIResponderC", "showNetworkErrorAlert"]
-- ["So11UIResponderC", "showSpinner"]
-- !private ["So11UIResponderC", "startAnimating"]
 - !private ["So11UIResponderC", "storyboard"]
 - !private ["So11UIResponderC", "text"]
 - ["So11UIResponderC", "textFieldDidBeginEditing"]
 - ["So11UIResponderC", "textFieldDidEndEditing"]
 - ["So11UIResponderC", "textFieldShouldReturn"]
-- !private ["So11UIResponderC", "vSpinner"]
 - !private ["So11UIResponderC", "view"]
 - ["So11UIResponderC", "viewController"]
 - ["So11UIResponderC", "viewControllerDidCancel"]
-- ["So11UIResponderC", "viewDidDisappear"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewWillAppear"]
+- ["So11UIResponderC", "viewWillDisappear"]
 - !private ["So11UIResponderC", "window"]
 - !private ["So30UIResponderStandardEditActionsP", "AKFAccountKit"]
 - !private ["So30UIResponderStandardEditActionsP", "AKFBackgroundTint"]
@@ -2715,7 +2594,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "Reachability"]
 - !private ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "ToastStyle"]
-- !private ["So30UIResponderStandardEditActionsP", "UIActivityIndicatorView"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
@@ -2734,16 +2612,14 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", ""]
 - !private ["So30UIResponderStandardEditActionsP", "accountKit"]
 - !private ["So30UIResponderStandardEditActionsP", "addAction"]
-- !private ["So30UIResponderStandardEditActionsP", "addSubview"]
+- !private ["So30UIResponderStandardEditActionsP", "alpha"]
+- !private ["So30UIResponderStandardEditActionsP", "animate"]
 - !private ["So30UIResponderStandardEditActionsP", "animateViewMoving"]
 - !private ["So30UIResponderStandardEditActionsP", "attributedPlaceholder"]
-- !private ["So30UIResponderStandardEditActionsP", "backgroundColor"]
 - !private ["So30UIResponderStandardEditActionsP", "becomeFirstResponder"]
 - !private ["So30UIResponderStandardEditActionsP", "beginAnimations"]
-- !private ["So30UIResponderStandardEditActionsP", "bounds"]
-- !private ["So30UIResponderStandardEditActionsP", "center"]
+- !private ["So30UIResponderStandardEditActionsP", "btnGuest"]
 - !private ["So30UIResponderStandardEditActionsP", "commitAnimations"]
-- !private ["So30UIResponderStandardEditActionsP", "configureFacebook"]
 - !private ["So30UIResponderStandardEditActionsP", "contentMode"]
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "didReceiveMemoryWarning"]
@@ -2779,8 +2655,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "present"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "readPermissions"]
-- !private ["So30UIResponderStandardEditActionsP", "removeFromSuperview"]
-- !private ["So30UIResponderStandardEditActionsP", "removeSpinner"]
 - !private ["So30UIResponderStandardEditActionsP", "resignFirstResponder"]
 - !private ["So30UIResponderStandardEditActionsP", "rootViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "setAnimationBeginsFromCurrentState"]
@@ -2788,21 +2662,19 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "setAwsomeBackgroundImage"]
 - !private ["So30UIResponderStandardEditActionsP", "shared"]
 - !private ["So30UIResponderStandardEditActionsP", "showNetworkErrorAlert"]
-- !private ["So30UIResponderStandardEditActionsP", "showSpinner"]
-- !private ["So30UIResponderStandardEditActionsP", "startAnimating"]
 - !private ["So30UIResponderStandardEditActionsP", "storyboard"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
-- !private ["So30UIResponderStandardEditActionsP", "vSpinner"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
 - ["So30UIResponderStandardEditActionsP", "viewController"]
 - ["So30UIResponderStandardEditActionsP", "viewControllerDidCancel"]
-- !private ["So30UIResponderStandardEditActionsP", "viewDidDisappear"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
+- !private ["So30UIResponderStandardEditActionsP", "viewWillDisappear"]
 - !private ["So30UIResponderStandardEditActionsP", "window"]
 - !private ["So8UIScreenC", "bounds"]
 - !private ["So8UIScreenC", "main"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "alpha"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "isEnabled"]
@@ -2826,7 +2698,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "Reachability"]
 - !private ["So16UIStateRestoringP", "String"]
 - !private ["So16UIStateRestoringP", "ToastStyle"]
-- !private ["So16UIStateRestoringP", "UIActivityIndicatorView"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
 - !private ["So16UIStateRestoringP", "UIApplication"]
@@ -2846,7 +2717,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "accountKit"]
 - !private ["So16UIStateRestoringP", "addAction"]
 - !private ["So16UIStateRestoringP", "animateViewMoving"]
-- !private ["So16UIStateRestoringP", "configureFacebook"]
+- !private ["So16UIStateRestoringP", "btnGuest"]
 - !private ["So16UIStateRestoringP", "didReceiveMemoryWarning"]
 - !private ["So16UIStateRestoringP", "dismissKeyBoardTappedOutside"]
 - !private ["So16UIStateRestoringP", "emailString"]
@@ -2871,18 +2742,15 @@ depends-member:
 - !private ["So16UIStateRestoringP", "passwordText"]
 - !private ["So16UIStateRestoringP", "present"]
 - !private ["So16UIStateRestoringP", "print"]
-- !private ["So16UIStateRestoringP", "removeSpinner"]
 - !private ["So16UIStateRestoringP", "setAwsomeBackgroundImage"]
 - !private ["So16UIStateRestoringP", "showNetworkErrorAlert"]
-- !private ["So16UIStateRestoringP", "showSpinner"]
 - !private ["So16UIStateRestoringP", "storyboard"]
-- !private ["So16UIStateRestoringP", "vSpinner"]
 - !private ["So16UIStateRestoringP", "view"]
 - ["So16UIStateRestoringP", "viewController"]
 - ["So16UIStateRestoringP", "viewControllerDidCancel"]
-- !private ["So16UIStateRestoringP", "viewDidDisappear"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So16UIStateRestoringP", "viewWillAppear"]
+- !private ["So16UIStateRestoringP", "viewWillDisappear"]
 - !private ["So12UIStoryboardC", "init"]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
 - !private ["So15UITextDraggableP", "attributedPlaceholder"]
@@ -2935,7 +2803,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "Reachability"]
 - !private ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "ToastStyle"]
-- !private ["So18UITraitEnvironmentP", "UIActivityIndicatorView"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
 - !private ["So18UITraitEnvironmentP", "UIApplication"]
@@ -2954,16 +2821,15 @@ depends-member:
 - ["So18UITraitEnvironmentP", ""]
 - !private ["So18UITraitEnvironmentP", "accountKit"]
 - !private ["So18UITraitEnvironmentP", "addAction"]
-- !private ["So18UITraitEnvironmentP", "addSubview"]
+- !private ["So18UITraitEnvironmentP", "alpha"]
+- !private ["So18UITraitEnvironmentP", "animate"]
 - !private ["So18UITraitEnvironmentP", "animateViewMoving"]
 - !private ["So18UITraitEnvironmentP", "attributedPlaceholder"]
-- !private ["So18UITraitEnvironmentP", "backgroundColor"]
 - !private ["So18UITraitEnvironmentP", "becomeFirstResponder"]
 - !private ["So18UITraitEnvironmentP", "beginAnimations"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
-- !private ["So18UITraitEnvironmentP", "center"]
+- !private ["So18UITraitEnvironmentP", "btnGuest"]
 - !private ["So18UITraitEnvironmentP", "commitAnimations"]
-- !private ["So18UITraitEnvironmentP", "configureFacebook"]
 - !private ["So18UITraitEnvironmentP", "contentMode"]
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "didReceiveMemoryWarning"]
@@ -3000,25 +2866,20 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "present"]
 - !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "readPermissions"]
-- !private ["So18UITraitEnvironmentP", "removeFromSuperview"]
-- !private ["So18UITraitEnvironmentP", "removeSpinner"]
 - !private ["So18UITraitEnvironmentP", "resignFirstResponder"]
 - !private ["So18UITraitEnvironmentP", "rootViewController"]
 - !private ["So18UITraitEnvironmentP", "setAnimationBeginsFromCurrentState"]
 - !private ["So18UITraitEnvironmentP", "setAnimationDuration"]
 - !private ["So18UITraitEnvironmentP", "setAwsomeBackgroundImage"]
 - !private ["So18UITraitEnvironmentP", "showNetworkErrorAlert"]
-- !private ["So18UITraitEnvironmentP", "showSpinner"]
-- !private ["So18UITraitEnvironmentP", "startAnimating"]
 - !private ["So18UITraitEnvironmentP", "storyboard"]
 - !private ["So18UITraitEnvironmentP", "text"]
-- !private ["So18UITraitEnvironmentP", "vSpinner"]
 - !private ["So18UITraitEnvironmentP", "view"]
 - ["So18UITraitEnvironmentP", "viewController"]
 - ["So18UITraitEnvironmentP", "viewControllerDidCancel"]
-- !private ["So18UITraitEnvironmentP", "viewDidDisappear"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
+- !private ["So18UITraitEnvironmentP", "viewWillDisappear"]
 - !private ["So23UIUserActivityRestoringP", "AKFAccountKit"]
 - !private ["So23UIUserActivityRestoringP", "AKFBackgroundTint"]
 - !private ["So23UIUserActivityRestoringP", "AKFSkinManager"]
@@ -3039,7 +2900,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "Reachability"]
 - !private ["So23UIUserActivityRestoringP", "String"]
 - !private ["So23UIUserActivityRestoringP", "ToastStyle"]
-- !private ["So23UIUserActivityRestoringP", "UIActivityIndicatorView"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertAction"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertController"]
 - !private ["So23UIUserActivityRestoringP", "UIApplication"]
@@ -3058,16 +2918,14 @@ depends-member:
 - ["So23UIUserActivityRestoringP", ""]
 - !private ["So23UIUserActivityRestoringP", "accountKit"]
 - !private ["So23UIUserActivityRestoringP", "addAction"]
-- !private ["So23UIUserActivityRestoringP", "addSubview"]
+- !private ["So23UIUserActivityRestoringP", "alpha"]
+- !private ["So23UIUserActivityRestoringP", "animate"]
 - !private ["So23UIUserActivityRestoringP", "animateViewMoving"]
 - !private ["So23UIUserActivityRestoringP", "attributedPlaceholder"]
-- !private ["So23UIUserActivityRestoringP", "backgroundColor"]
 - !private ["So23UIUserActivityRestoringP", "becomeFirstResponder"]
 - !private ["So23UIUserActivityRestoringP", "beginAnimations"]
-- !private ["So23UIUserActivityRestoringP", "bounds"]
-- !private ["So23UIUserActivityRestoringP", "center"]
+- !private ["So23UIUserActivityRestoringP", "btnGuest"]
 - !private ["So23UIUserActivityRestoringP", "commitAnimations"]
-- !private ["So23UIUserActivityRestoringP", "configureFacebook"]
 - !private ["So23UIUserActivityRestoringP", "contentMode"]
 - !private ["So23UIUserActivityRestoringP", "delegate"]
 - !private ["So23UIUserActivityRestoringP", "didReceiveMemoryWarning"]
@@ -3103,8 +2961,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "present"]
 - !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "readPermissions"]
-- !private ["So23UIUserActivityRestoringP", "removeFromSuperview"]
-- !private ["So23UIUserActivityRestoringP", "removeSpinner"]
 - !private ["So23UIUserActivityRestoringP", "resignFirstResponder"]
 - !private ["So23UIUserActivityRestoringP", "rootViewController"]
 - !private ["So23UIUserActivityRestoringP", "setAnimationBeginsFromCurrentState"]
@@ -3112,26 +2968,21 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "setAwsomeBackgroundImage"]
 - !private ["So23UIUserActivityRestoringP", "shared"]
 - !private ["So23UIUserActivityRestoringP", "showNetworkErrorAlert"]
-- !private ["So23UIUserActivityRestoringP", "showSpinner"]
-- !private ["So23UIUserActivityRestoringP", "startAnimating"]
 - !private ["So23UIUserActivityRestoringP", "storyboard"]
 - !private ["So23UIUserActivityRestoringP", "text"]
-- !private ["So23UIUserActivityRestoringP", "vSpinner"]
 - !private ["So23UIUserActivityRestoringP", "view"]
 - ["So23UIUserActivityRestoringP", "viewController"]
 - ["So23UIUserActivityRestoringP", "viewControllerDidCancel"]
-- !private ["So23UIUserActivityRestoringP", "viewDidDisappear"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - !private ["So23UIUserActivityRestoringP", "viewWillAppear"]
+- !private ["So23UIUserActivityRestoringP", "viewWillDisappear"]
 - !private ["So23UIUserActivityRestoringP", "window"]
 - !private ["So6UIViewC", "ContentMode"]
-- !private ["So6UIViewC", "addSubview"]
+- !private ["So6UIViewC", "alpha"]
+- !private ["So6UIViewC", "animate"]
 - !private ["So6UIViewC", "attributedPlaceholder"]
-- !private ["So6UIViewC", "backgroundColor"]
 - !private ["So6UIViewC", "becomeFirstResponder"]
 - !private ["So6UIViewC", "beginAnimations"]
-- !private ["So6UIViewC", "bounds"]
-- !private ["So6UIViewC", "center"]
 - !private ["So6UIViewC", "commitAnimations"]
 - !private ["So6UIViewC", "contentMode"]
 - !private ["So6UIViewC", "delegate"]
@@ -3145,12 +2996,10 @@ depends-member:
 - !private ["So6UIViewC", "makeToast"]
 - !private ["So6UIViewC", "makeToastActivity"]
 - !private ["So6UIViewC", "readPermissions"]
-- !private ["So6UIViewC", "removeFromSuperview"]
 - !private ["So6UIViewC", "resignFirstResponder"]
 - !private ["So6UIViewC", "rootViewController"]
 - !private ["So6UIViewC", "setAnimationBeginsFromCurrentState"]
 - !private ["So6UIViewC", "setAnimationDuration"]
-- !private ["So6UIViewC", "startAnimating"]
 - !private ["So6UIViewC", "text"]
 - ["So16UIViewControllerC", "AKFAccountKit"]
 - !private ["So16UIViewControllerC", "AKFBackgroundTint"]
@@ -3183,7 +3032,6 @@ depends-member:
 - ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "TimeInterval"]
 - !private ["So16UIViewControllerC", "ToastStyle"]
-- !private ["So16UIViewControllerC", "UIActivityIndicatorView"]
 - !private ["So16UIViewControllerC", "UIAlertAction"]
 - !private ["So16UIViewControllerC", "UIAlertController"]
 - !private ["So16UIViewControllerC", "UIApplication"]
@@ -3196,7 +3044,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "UIStoryboard"]
 - ["So16UIViewControllerC", "UITapGestureRecognizer"]
 - ["So16UIViewControllerC", "UITextField"]
-- ["So16UIViewControllerC", "UIView"]
+- !private ["So16UIViewControllerC", "UIView"]
 - !private ["So16UIViewControllerC", "UIViewController"]
 - !private ["So16UIViewControllerC", "URL"]
 - !private ["So16UIViewControllerC", "URLRequest"]
@@ -3210,6 +3058,10 @@ depends-member:
 - !private ["So16UIViewControllerC", "addAction"]
 - ["So16UIViewControllerC", "animateViewMoving"]
 - ["So16UIViewControllerC", "bgImage"]
+- ["So16UIViewControllerC", "btnFacebookLoginPressed"]
+- ["So16UIViewControllerC", "btnFbLogin"]
+- ["So16UIViewControllerC", "btnGoogleLogin"]
+- ["So16UIViewControllerC", "btnGoogleLoginPressed"]
 - ["So16UIViewControllerC", "btnGuest"]
 - ["So16UIViewControllerC", "btnGuestPressed"]
 - ["So16UIViewControllerC", "configureFacebook"]
@@ -3242,21 +3094,18 @@ depends-member:
 - !private ["So16UIViewControllerC", "present"]
 - !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "registerButton"]
-- ["So16UIViewControllerC", "removeSpinner"]
 - ["So16UIViewControllerC", "setAwsomeBackgroundImage"]
 - !private ["So16UIViewControllerC", "showNetworkErrorAlert"]
-- ["So16UIViewControllerC", "showSpinner"]
 - !private ["So16UIViewControllerC", "storyboard"]
 - ["So16UIViewControllerC", "textFieldDidBeginEditing"]
 - ["So16UIViewControllerC", "textFieldDidEndEditing"]
 - ["So16UIViewControllerC", "textFieldShouldReturn"]
-- !private ["So16UIViewControllerC", "vSpinner"]
 - !private ["So16UIViewControllerC", "view"]
 - ["So16UIViewControllerC", "viewController"]
 - ["So16UIViewControllerC", "viewControllerDidCancel"]
-- ["So16UIViewControllerC", "viewDidDisappear"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewWillAppear"]
+- ["So16UIViewControllerC", "viewWillDisappear"]
 - !private ["So8UIWindowC", "rootViewController"]
 - !private ["10Foundation3URLV", "init"]
 - !private ["10Foundation10URLRequestV", "httpBody"]
@@ -3271,7 +3120,7 @@ depends-member:
 - !private ["So14NSUserDefaultsC", "set"]
 - !private ["So14NSUserDefaultsC", "standard"]
 - !private ["So14NSUserDefaultsC", "synchronize"]
-- !private ["9SaveUp_BD9AppConfigC15UserdefaultKeysV", "GUEST_MODE"]
+- !private ["6SaveUp9AppConfigC15UserdefaultKeysV", "GUEST_MODE"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "Encoding"]
@@ -3332,7 +3181,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Reachability"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ToastStyle"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIActivityIndicatorView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
@@ -3352,17 +3200,16 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "accountKit"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addAction"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "addSubview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "alpha"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "animate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "animateViewMoving"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "attributedPlaceholder"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "becomeFirstResponder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "beginAnimations"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "center"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "btnGuest"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "commitAnimations"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "configureFacebook"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentMode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "count"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
@@ -3410,8 +3257,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "readPermissions"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeFromSuperview"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "removeSpinner"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resignFirstResponder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
@@ -3421,23 +3266,20 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setAwsomeBackgroundImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "showNetworkErrorAlert"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "showSpinner"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "start"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "startAnimating"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "storyboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "synchronize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "vSpinner"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewControllerDidCancel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewControllerForPhoneLogin"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidDisappear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillDisappear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "window"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AKFAccountKit"]
@@ -3461,7 +3303,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Reachability"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "String"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ToastStyle"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIActivityIndicatorView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIAlertAction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIAlertController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIApplication"]
@@ -3481,17 +3322,16 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "accountKit"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addAction"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addSubview"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "alpha"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "animate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "animateViewMoving"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "async"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "attributedPlaceholder"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "backgroundColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "becomeFirstResponder"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "beginAnimations"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bounds"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "center"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "btnGuest"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "commitAnimations"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "configureFacebook"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "contentMode"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "count"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "current"]
@@ -3539,8 +3379,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "present"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "readPermissions"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "removeFromSuperview"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "removeSpinner"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resignFirstResponder"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resume"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rootViewController"]
@@ -3550,26 +3388,24 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setAwsomeBackgroundImage"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showNetworkErrorAlert"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showSpinner"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "standard"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "start"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "startAnimating"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "storyboard"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "subscript"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "synchronize"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "text"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "vSpinner"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "value"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "view"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewController"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewControllerDidCancel"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewControllerForPhoneLogin"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidDisappear"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewWillAppear"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewWillDisappear"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "white"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "window"]
 - !private ["s21_ObjectiveCBridgeableP", "Encoding"]
+- !private ["s21_ObjectiveCBridgeableP", "alpha"]
 - !private ["s21_ObjectiveCBridgeableP", "attributedPlaceholder"]
 - !private ["s21_ObjectiveCBridgeableP", "becomeFirstResponder"]
 - !private ["s21_ObjectiveCBridgeableP", "center"]
@@ -3599,13 +3435,11 @@ depends-member:
 - !private ["s20_SwiftNewtypeWrapperP", "font"]
 - !private ["s20_SwiftNewtypeWrapperP", "foregroundColor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "ContentMode"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "addSubview"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "alpha"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "animate"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "attributedPlaceholder"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "becomeFirstResponder"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "beginAnimations"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "bounds"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "center"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "commitAnimations"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "contentMode"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "delegate"]
@@ -3619,12 +3453,10 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "makeToast"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "makeToastActivity"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "readPermissions"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "removeFromSuperview"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "resignFirstResponder"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "rootViewController"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setAnimationBeginsFromCurrentState"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setAnimationDuration"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "startAnimating"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
 depends-nominal:
 - !private "So13AKFAccountKitC"
@@ -3639,8 +3471,8 @@ depends-nominal:
 - "So25AKFViewControllerDelegateP"
 - !private "10Accelerate0A6BufferP"
 - !private "10Accelerate0A13MutableBufferP"
-- !private "9SaveUp_BD9AppConfigC"
-- !private "9SaveUp_BD11AppDelegateC"
+- !private "6SaveUp9AppConfigC"
+- !private "6SaveUp11AppDelegateC"
 - !private "Sa"
 - !private "SK"
 - !private "So15CALayerDelegateP"
@@ -3679,8 +3511,8 @@ depends-nominal:
 - "SH"
 - !private "So19NSJSONSerializationC"
 - !private "So21NSAttributedStringKeya"
-- !private "9SaveUp_BD20KingfisherCompatibleP"
-- "9SaveUp_BD19LoginViewControllerC"
+- !private "6SaveUp20KingfisherCompatibleP"
+- "6SaveUp19LoginViewControllerC"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - !private "SM"
@@ -3703,15 +3535,15 @@ depends-nominal:
 - !private "So9OS_objectC"
 - !private "s9OptionSetP"
 - !private "Sq"
-- !private "9SaveUp_BD11PlaceholderP"
+- !private "6SaveUp11PlaceholderP"
 - !private "So19NSProgressReportingP"
 - !private "Sk"
 - !private "Sm"
 - !private "SY"
-- !private "9SaveUp_BD12ReachabilityC"
+- !private "6SaveUp12ReachabilityC"
 - !private "So20NSJSONReadingOptionsV"
 - !private "10Foundation20ReferenceConvertibleP"
-- !private "9SaveUp_BD8ResourceP"
+- !private "6SaveUp8ResourceP"
 - !private "7Combine9SchedulerP"
 - !private "ST"
 - !private "s10SetAlgebraP"
@@ -3720,14 +3552,12 @@ depends-nominal:
 - !private "Sy"
 - !private "So22UIAlertControllerStyleV"
 - !private "So18UIAlertActionStyleV"
-- !private "So28UIActivityIndicatorViewStyleV"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "9SaveUp_BD13ToastPositionO"
-- !private "9SaveUp_BD10ToastStyleV"
+- !private "6SaveUp13ToastPositionO"
+- !private "6SaveUp10ToastStyleV"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
-- !private "So23UIActivityIndicatorViewC"
 - !private "So13UIAlertActionC"
 - !private "So17UIAlertControllerC"
 - !private "So12UIAppearanceP"
@@ -3777,7 +3607,7 @@ depends-nominal:
 - !private "So16NSURLSessionTaskC"
 - !private "10Foundation4UUIDV"
 - !private "So14NSUserDefaultsC"
-- !private "9SaveUp_BD9AppConfigC15UserdefaultKeysV"
+- !private "6SaveUp9AppConfigC15UserdefaultKeysV"
 - !private "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s24_DestructorSafeContainerP"
@@ -3838,6 +3668,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CATransform3D.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUUID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUUID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
@@ -3848,6 +3680,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Sparse/BLAS.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/alloca.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Alpha.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/LinearAlgebra.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
@@ -3856,6 +3692,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolMetadata.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/quota.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach-o/stab.h"
@@ -4031,6 +3868,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIFilterShape.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureScope.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFResponseType.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFButtonType.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/ctype.h"
@@ -4042,6 +3880,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/xlocale/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/runetype.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKitCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/semaphore.h"
@@ -4066,6 +3905,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/trace_base.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/readpassphrase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLResponse.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchResponse.h"
@@ -4079,9 +3919,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSCompoundPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSComparisonPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginFlowState.h"
@@ -4107,6 +3949,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/_types/_offsetof.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBag.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/i386/fp_reg.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FIRRemoteConfig.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/mig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLHeading.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemsConfigurationReading.h"
@@ -4171,6 +4015,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/shims/KeyPath.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/math.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/tgmath.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/kauth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/objc-api.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/port_obj.h"
@@ -4191,6 +4037,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_task.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecSharedCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDecimal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/i386/signal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/signal.h"
@@ -4206,6 +4055,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIKernel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/dyld_kernel.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES3/gl.h"
@@ -4307,6 +4157,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileVersion.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Conversion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneSession.h"
@@ -4339,6 +4190,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Quadrature/Integration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderItemDecoration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStateRestoration.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteConfiguration.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PayPalMobile/PayPalConfiguration.h"
@@ -4407,6 +4259,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProcessInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach_debug/ipc_info.h"
@@ -4450,6 +4304,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/workloop.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/grp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarButtonItemGroup.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/group.h"
@@ -4476,6 +4331,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/FileProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingCurveProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemProvider.h"
@@ -4586,6 +4450,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextDragPreviewRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKTileOverlayRenderer.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchCompleter.h"
@@ -4709,6 +4574,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFontMetrics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_statistics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetDiagnostics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPreferences.h"
@@ -4718,6 +4585,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/vImage_Utilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPathUtilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageProperties.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/times.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTDefines.h"
@@ -4773,6 +4643,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/secure/_strings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/paths.h"
@@ -4825,6 +4697,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityAdditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneDefinitions.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapSnapshotOptions.h"
@@ -4843,6 +4716,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPreviewParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDragPreviewParameters.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetworkErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManagerErrors.h"
@@ -5009,7 +4883,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/mach_init.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_inherit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLVisit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
@@ -5202,7 +5078,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/activity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProxy.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Modules/module.modulemap"
@@ -5224,4 +5106,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "8160629b31a8d3668754feb1eb7bb5c2"
+interface-hash: "6cedb6ac8cbfc93dc8b53b39a0401745"

@@ -2,9 +2,9 @@
 provides-top-level:
 - "MyOrdersViewController"
 provides-nominal:
-- "9SaveUp_BD22MyOrdersViewControllerC"
+- "6SaveUp22MyOrdersViewControllerC"
 provides-member:
-- ["9SaveUp_BD22MyOrdersViewControllerC", ""]
+- ["6SaveUp22MyOrdersViewControllerC", ""]
 provides-dynamic-lookup:
 - "btnCOD"
 - "btnPaypal"
@@ -354,12 +354,12 @@ depends-member:
 - !private ["10Foundation15ContiguousBytesP", "shipping_name"]
 - !private ["10Foundation15ContiguousBytesP", "sort"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
-- !private ["9SaveUp_BD10CustomCellC", "deliveryImage"]
-- !private ["9SaveUp_BD10CustomCellC", "orderOwnerLabel"]
-- !private ["9SaveUp_BD10CustomCellC", "orderTotal"]
-- !private ["9SaveUp_BD10CustomCellC", "orderdateLabel"]
-- !private ["9SaveUp_BD10CustomCellC", "orderstatusLabel"]
-- !private ["9SaveUp_BD10CustomCellC", "selectionStyle"]
+- !private ["6SaveUp10CustomCellC", "deliveryImage"]
+- !private ["6SaveUp10CustomCellC", "orderOwnerLabel"]
+- !private ["6SaveUp10CustomCellC", "orderTotal"]
+- !private ["6SaveUp10CustomCellC", "orderdateLabel"]
+- !private ["6SaveUp10CustomCellC", "orderstatusLabel"]
+- !private ["6SaveUp10CustomCellC", "selectionStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "Api_Base_URL"]
 - !private ["s28CustomDebugStringConvertibleP", "ButtonType"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
@@ -723,16 +723,16 @@ depends-member:
 - !private ["Se", "top"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
-- !private ["9SaveUp_BD21DetailsViewControllerC", "amount"]
-- !private ["9SaveUp_BD21DetailsViewControllerC", "couponCode"]
-- !private ["9SaveUp_BD21DetailsViewControllerC", "day"]
-- !private ["9SaveUp_BD21DetailsViewControllerC", "merchantName"]
-- !private ["9SaveUp_BD21DetailsViewControllerC", "orderId"]
-- !private ["9SaveUp_BD21DetailsViewControllerC", "order_image"]
-- !private ["9SaveUp_BD21DetailsViewControllerC", "orderdate"]
-- !private ["9SaveUp_BD21DetailsViewControllerC", "redeemValue"]
-- !private ["9SaveUp_BD21DetailsViewControllerC", "statusString"]
-- !private ["9SaveUp_BD21DetailsViewControllerC", "titleString"]
+- !private ["6SaveUp21DetailsViewControllerC", "amount"]
+- !private ["6SaveUp21DetailsViewControllerC", "couponCode"]
+- !private ["6SaveUp21DetailsViewControllerC", "day"]
+- !private ["6SaveUp21DetailsViewControllerC", "merchantName"]
+- !private ["6SaveUp21DetailsViewControllerC", "orderId"]
+- !private ["6SaveUp21DetailsViewControllerC", "order_image"]
+- !private ["6SaveUp21DetailsViewControllerC", "orderdate"]
+- !private ["6SaveUp21DetailsViewControllerC", "redeemValue"]
+- !private ["6SaveUp21DetailsViewControllerC", "statusString"]
+- !private ["6SaveUp21DetailsViewControllerC", "titleString"]
 - !private ["So18OS_dispatch_objectC", "async"]
 - !private ["So18OS_dispatch_objectC", "main"]
 - !private ["So17OS_dispatch_queueC", "async"]
@@ -1099,14 +1099,14 @@ depends-member:
 - !private ["SH", "white"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["So19NSJSONSerializationC", "jsonObject"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "ButtonType"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "Encoding"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "addTarget"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "backgroundColor"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "data"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "frame"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "init"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "setImage"]
+- !private ["6SaveUp20KingfisherCompatibleP", "ButtonType"]
+- !private ["6SaveUp20KingfisherCompatibleP", "Encoding"]
+- !private ["6SaveUp20KingfisherCompatibleP", "addTarget"]
+- !private ["6SaveUp20KingfisherCompatibleP", "backgroundColor"]
+- !private ["6SaveUp20KingfisherCompatibleP", "data"]
+- !private ["6SaveUp20KingfisherCompatibleP", "frame"]
+- !private ["6SaveUp20KingfisherCompatibleP", "init"]
+- !private ["6SaveUp20KingfisherCompatibleP", "setImage"]
 - !private ["s25LosslessStringConvertibleP", "Encoding"]
 - !private ["s25LosslessStringConvertibleP", "data"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -1139,85 +1139,85 @@ depends-member:
 - !private ["10Foundation19MutableDataProtocolP", "removeAll"]
 - !private ["10Foundation19MutableDataProtocolP", "sort"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "Api_Base_URL"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "Bool"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "CGRect"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "CustomCell"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "DetailsViewController"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "DispatchQueue"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "IndexPath"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "Int"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "JSONSerialization"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "NSDictionary"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "NSInteger"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "OrdersCOD"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "OrdersPaypal"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "Reachability"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "String"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "ToastStyle"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "UIBarButtonItem"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "UIButton"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "UIColor"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "UIControl"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "UIImage"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "UITableView"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "UITableViewCell"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "UIView"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "URL"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "URLRequest"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "URLSession"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "UserDefaults"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "btnCOD"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "btnPaypal"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "btn_value"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "deinit"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "didReceiveMemoryWarning"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "indexPathForPreferredFocusedView"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "init"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "loadView"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "messageFont"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "messageToast"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "myordersApi"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "myordersApiForReload"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "myordersApiForReloadRedeem"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "myordersCODArray"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "myordersPaypalArray"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "myordersTable"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "navigationController"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "navigationItem"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "numberOfSections"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "numberOfSectionsInTableView"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "orderProductList"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "orderProductListArray"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "page_no"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "print"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "reloadAction"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "scrollViewDidEndDecelerating"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "scrollViewDidEndDragging"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "scrollViewDidEndScrollingAnimation"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "scrollViewDidEndZooming"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "scrollViewDidScroll"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "scrollViewDidScrollToTop"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "scrollViewDidZoom"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "scrollViewShouldScrollToTop"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "scrollViewWillBeginDecelerating"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "scrollViewWillBeginDragging"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "scrollViewWillBeginZooming"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "scrollViewWillEndDragging"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "sectionIndexTitles"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "sectionIndexTitlesForTableView"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "showNetworkErrorAlert"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "storyboard"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "tableView"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "tableViewDidEndMultipleSelectionInteraction"]
-- !private ["9SaveUp_BD22MyOrdersViewControllerC", "view"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "viewDidAppear"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "viewDidLoad"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "viewForZooming"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "viewForZoomingInScrollView"]
-- ["9SaveUp_BD22MyOrdersViewControllerC", "viewWillAppear"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "Api_Base_URL"]
+- ["6SaveUp22MyOrdersViewControllerC", "Bool"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "CGRect"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "CustomCell"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "DetailsViewController"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "DispatchQueue"]
+- ["6SaveUp22MyOrdersViewControllerC", "IndexPath"]
+- ["6SaveUp22MyOrdersViewControllerC", "Int"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "JSONSerialization"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "NSDictionary"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "NSInteger"]
+- ["6SaveUp22MyOrdersViewControllerC", "OrdersCOD"]
+- ["6SaveUp22MyOrdersViewControllerC", "OrdersPaypal"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "Reachability"]
+- ["6SaveUp22MyOrdersViewControllerC", "String"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "ToastStyle"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "UIBarButtonItem"]
+- ["6SaveUp22MyOrdersViewControllerC", "UIButton"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "UIColor"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "UIControl"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "UIImage"]
+- ["6SaveUp22MyOrdersViewControllerC", "UITableView"]
+- ["6SaveUp22MyOrdersViewControllerC", "UITableViewCell"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "UIView"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "URL"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "URLRequest"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "URLSession"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "UserDefaults"]
+- ["6SaveUp22MyOrdersViewControllerC", "btnCOD"]
+- ["6SaveUp22MyOrdersViewControllerC", "btnPaypal"]
+- ["6SaveUp22MyOrdersViewControllerC", "btn_value"]
+- ["6SaveUp22MyOrdersViewControllerC", "deinit"]
+- ["6SaveUp22MyOrdersViewControllerC", "didReceiveMemoryWarning"]
+- ["6SaveUp22MyOrdersViewControllerC", "indexPathForPreferredFocusedView"]
+- ["6SaveUp22MyOrdersViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
+- ["6SaveUp22MyOrdersViewControllerC", "init"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "loadView"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "messageFont"]
+- ["6SaveUp22MyOrdersViewControllerC", "messageToast"]
+- ["6SaveUp22MyOrdersViewControllerC", "myordersApi"]
+- ["6SaveUp22MyOrdersViewControllerC", "myordersApiForReload"]
+- ["6SaveUp22MyOrdersViewControllerC", "myordersApiForReloadRedeem"]
+- ["6SaveUp22MyOrdersViewControllerC", "myordersCODArray"]
+- ["6SaveUp22MyOrdersViewControllerC", "myordersPaypalArray"]
+- ["6SaveUp22MyOrdersViewControllerC", "myordersTable"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "navigationController"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "navigationItem"]
+- ["6SaveUp22MyOrdersViewControllerC", "numberOfSections"]
+- ["6SaveUp22MyOrdersViewControllerC", "numberOfSectionsInTableView"]
+- ["6SaveUp22MyOrdersViewControllerC", "orderProductList"]
+- ["6SaveUp22MyOrdersViewControllerC", "orderProductListArray"]
+- ["6SaveUp22MyOrdersViewControllerC", "page_no"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "print"]
+- ["6SaveUp22MyOrdersViewControllerC", "reloadAction"]
+- ["6SaveUp22MyOrdersViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
+- ["6SaveUp22MyOrdersViewControllerC", "scrollViewDidEndDecelerating"]
+- ["6SaveUp22MyOrdersViewControllerC", "scrollViewDidEndDragging"]
+- ["6SaveUp22MyOrdersViewControllerC", "scrollViewDidEndScrollingAnimation"]
+- ["6SaveUp22MyOrdersViewControllerC", "scrollViewDidEndZooming"]
+- ["6SaveUp22MyOrdersViewControllerC", "scrollViewDidScroll"]
+- ["6SaveUp22MyOrdersViewControllerC", "scrollViewDidScrollToTop"]
+- ["6SaveUp22MyOrdersViewControllerC", "scrollViewDidZoom"]
+- ["6SaveUp22MyOrdersViewControllerC", "scrollViewShouldScrollToTop"]
+- ["6SaveUp22MyOrdersViewControllerC", "scrollViewWillBeginDecelerating"]
+- ["6SaveUp22MyOrdersViewControllerC", "scrollViewWillBeginDragging"]
+- ["6SaveUp22MyOrdersViewControllerC", "scrollViewWillBeginZooming"]
+- ["6SaveUp22MyOrdersViewControllerC", "scrollViewWillEndDragging"]
+- ["6SaveUp22MyOrdersViewControllerC", "sectionIndexTitles"]
+- ["6SaveUp22MyOrdersViewControllerC", "sectionIndexTitlesForTableView"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "showNetworkErrorAlert"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "storyboard"]
+- ["6SaveUp22MyOrdersViewControllerC", "tableView"]
+- ["6SaveUp22MyOrdersViewControllerC", "tableViewDidEndMultipleSelectionInteraction"]
+- !private ["6SaveUp22MyOrdersViewControllerC", "view"]
+- ["6SaveUp22MyOrdersViewControllerC", "viewDidAppear"]
+- ["6SaveUp22MyOrdersViewControllerC", "viewDidLoad"]
+- ["6SaveUp22MyOrdersViewControllerC", "viewForZooming"]
+- ["6SaveUp22MyOrdersViewControllerC", "viewForZoomingInScrollView"]
+- ["6SaveUp22MyOrdersViewControllerC", "viewWillAppear"]
 - !private ["So8NSCodingP", "Api_Base_URL"]
 - !private ["So8NSCodingP", "ButtonType"]
 - !private ["So8NSCodingP", "CGRect"]
@@ -1727,36 +1727,36 @@ depends-member:
 - !private ["Sq", "tableFooterView"]
 - !private ["Sq", "text"]
 - !private ["Sq", "textColor"]
-- !private ["9SaveUp_BD9OrdersCODC", "coupon_code"]
-- !private ["9SaveUp_BD9OrdersCODC", "currency_symbol"]
-- !private ["9SaveUp_BD9OrdersCODC", "day"]
-- !private ["9SaveUp_BD9OrdersCODC", "image"]
-- !private ["9SaveUp_BD9OrdersCODC", "init"]
-- !private ["9SaveUp_BD9OrdersCODC", "is_redeem"]
-- !private ["9SaveUp_BD9OrdersCODC", "merchant_name"]
-- !private ["9SaveUp_BD9OrdersCODC", "orderDate"]
-- !private ["9SaveUp_BD9OrdersCODC", "order_date"]
-- !private ["9SaveUp_BD9OrdersCODC", "order_id"]
-- !private ["9SaveUp_BD9OrdersCODC", "order_status"]
-- !private ["9SaveUp_BD9OrdersCODC", "order_title"]
-- !private ["9SaveUp_BD9OrdersCODC", "order_total"]
-- !private ["9SaveUp_BD9OrdersCODC", "payment_status"]
-- !private ["9SaveUp_BD9OrdersCODC", "shipping_name"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "coupon_code"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "currency_symbol"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "day"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "image"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "init"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "is_redeem"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "merchant_name"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "order_date"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "order_id"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "order_status"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "order_title"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "order_total"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "payment_status"]
-- !private ["9SaveUp_BD12OrdersPaypalC", "shipping_name"]
-- !private ["9SaveUp_BD11PlaceholderP", "init"]
+- !private ["6SaveUp9OrdersCODC", "coupon_code"]
+- !private ["6SaveUp9OrdersCODC", "currency_symbol"]
+- !private ["6SaveUp9OrdersCODC", "day"]
+- !private ["6SaveUp9OrdersCODC", "image"]
+- !private ["6SaveUp9OrdersCODC", "init"]
+- !private ["6SaveUp9OrdersCODC", "is_redeem"]
+- !private ["6SaveUp9OrdersCODC", "merchant_name"]
+- !private ["6SaveUp9OrdersCODC", "orderDate"]
+- !private ["6SaveUp9OrdersCODC", "order_date"]
+- !private ["6SaveUp9OrdersCODC", "order_id"]
+- !private ["6SaveUp9OrdersCODC", "order_status"]
+- !private ["6SaveUp9OrdersCODC", "order_title"]
+- !private ["6SaveUp9OrdersCODC", "order_total"]
+- !private ["6SaveUp9OrdersCODC", "payment_status"]
+- !private ["6SaveUp9OrdersCODC", "shipping_name"]
+- !private ["6SaveUp12OrdersPaypalC", "coupon_code"]
+- !private ["6SaveUp12OrdersPaypalC", "currency_symbol"]
+- !private ["6SaveUp12OrdersPaypalC", "day"]
+- !private ["6SaveUp12OrdersPaypalC", "image"]
+- !private ["6SaveUp12OrdersPaypalC", "init"]
+- !private ["6SaveUp12OrdersPaypalC", "is_redeem"]
+- !private ["6SaveUp12OrdersPaypalC", "merchant_name"]
+- !private ["6SaveUp12OrdersPaypalC", "order_date"]
+- !private ["6SaveUp12OrdersPaypalC", "order_id"]
+- !private ["6SaveUp12OrdersPaypalC", "order_status"]
+- !private ["6SaveUp12OrdersPaypalC", "order_title"]
+- !private ["6SaveUp12OrdersPaypalC", "order_total"]
+- !private ["6SaveUp12OrdersPaypalC", "payment_status"]
+- !private ["6SaveUp12OrdersPaypalC", "shipping_name"]
+- !private ["6SaveUp11PlaceholderP", "init"]
 - !private ["So19NSProgressReportingP", "resume"]
 - !private ["Sk", "append"]
 - !private ["Sk", "count"]
@@ -1806,14 +1806,14 @@ depends-member:
 - !private ["SY", "none"]
 - !private ["SY", "touchUpInside"]
 - !private ["SY", "utf8"]
-- !private ["9SaveUp_BD12ReachabilityC", "init"]
-- !private ["9SaveUp_BD12ReachabilityC", "isReachable"]
+- !private ["6SaveUp12ReachabilityC", "init"]
+- !private ["6SaveUp12ReachabilityC", "isReachable"]
 - !private ["So20NSJSONReadingOptionsV", "mutableContainers"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpBody"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
-- !private ["9SaveUp_BD8ResourceP", "init"]
+- !private ["6SaveUp8ResourceP", "init"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "main"]
 - !private ["So29UITableViewCellSelectionStyleV", "none"]
@@ -1860,14 +1860,14 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "Encoding"]
 - !private ["s20TextOutputStreamableP", "data"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["9SaveUp_BD13ToastPositionO", "bottom"]
-- !private ["9SaveUp_BD13ToastPositionO", "center"]
-- !private ["9SaveUp_BD13ToastPositionO", "top"]
-- !private ["9SaveUp_BD10ToastStyleV", "backgroundColor"]
-- !private ["9SaveUp_BD10ToastStyleV", "init"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageAlignment"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageColor"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageFont"]
+- !private ["6SaveUp13ToastPositionO", "bottom"]
+- !private ["6SaveUp13ToastPositionO", "center"]
+- !private ["6SaveUp13ToastPositionO", "top"]
+- !private ["6SaveUp10ToastStyleV", "backgroundColor"]
+- !private ["6SaveUp10ToastStyleV", "init"]
+- !private ["6SaveUp10ToastStyleV", "messageAlignment"]
+- !private ["6SaveUp10ToastStyleV", "messageColor"]
+- !private ["6SaveUp10ToastStyleV", "messageFont"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "ButtonType"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "backgroundColor"]
@@ -3681,14 +3681,14 @@ depends-nominal:
 - "Sl"
 - !private "SL"
 - "10Foundation15ContiguousBytesP"
-- !private "9SaveUp_BD10CustomCellC"
+- !private "6SaveUp10CustomCellC"
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - "10Foundation12DataProtocolP"
 - "Se"
 - !private "s26DefaultStringInterpolationV"
-- !private "9SaveUp_BD21DetailsViewControllerC"
+- !private "6SaveUp21DetailsViewControllerC"
 - !private "So18OS_dispatch_objectC"
 - !private "So17OS_dispatch_queueC"
 - "SE"
@@ -3705,12 +3705,12 @@ depends-nominal:
 - "SH"
 - !private "10Foundation9IndexPathV"
 - !private "So19NSJSONSerializationC"
-- !private "9SaveUp_BD20KingfisherCompatibleP"
+- !private "6SaveUp20KingfisherCompatibleP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "SM"
 - "10Foundation19MutableDataProtocolP"
-- "9SaveUp_BD22MyOrdersViewControllerC"
+- "6SaveUp22MyOrdersViewControllerC"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So12NSDictionaryC"
@@ -3727,17 +3727,17 @@ depends-nominal:
 - !private "So9OS_objectC"
 - !private "s9OptionSetP"
 - !private "Sq"
-- !private "9SaveUp_BD9OrdersCODC"
-- !private "9SaveUp_BD12OrdersPaypalC"
-- !private "9SaveUp_BD11PlaceholderP"
+- !private "6SaveUp9OrdersCODC"
+- !private "6SaveUp12OrdersPaypalC"
+- !private "6SaveUp11PlaceholderP"
 - !private "So19NSProgressReportingP"
 - "Sk"
 - "Sm"
 - !private "SY"
-- !private "9SaveUp_BD12ReachabilityC"
+- !private "6SaveUp12ReachabilityC"
 - !private "So20NSJSONReadingOptionsV"
 - !private "10Foundation20ReferenceConvertibleP"
-- !private "9SaveUp_BD8ResourceP"
+- !private "6SaveUp8ResourceP"
 - !private "7Combine9SchedulerP"
 - !private "So29UITableViewCellSelectionStyleV"
 - "ST"
@@ -3748,8 +3748,8 @@ depends-nominal:
 - !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "9SaveUp_BD13ToastPositionO"
-- !private "9SaveUp_BD10ToastStyleV"
+- !private "6SaveUp13ToastPositionO"
+- !private "6SaveUp10ToastStyleV"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
@@ -3857,6 +3857,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CATransform3D.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUUID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUUID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
@@ -3867,6 +3869,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Sparse/BLAS.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/alloca.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Alpha.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/LinearAlgebra.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
@@ -3875,6 +3881,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolMetadata.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/quota.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach-o/stab.h"
@@ -4050,6 +4057,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIFilterShape.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureScope.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFResponseType.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFButtonType.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/ctype.h"
@@ -4061,6 +4069,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/xlocale/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/runetype.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKitCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/semaphore.h"
@@ -4085,6 +4094,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/trace_base.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/readpassphrase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLResponse.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchResponse.h"
@@ -4098,9 +4108,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSCompoundPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSComparisonPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginFlowState.h"
@@ -4125,6 +4137,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/net/if.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_offsetof.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBag.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FIRRemoteConfig.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLHeading.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemsConfigurationReading.h"
@@ -4190,6 +4204,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/shims/KeyPath.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/math.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/tgmath.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/kauth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/objc/objc-api.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/port_obj.h"
@@ -4210,6 +4226,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_task.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecSharedCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDecimal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/signal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/machine/signal.h"
@@ -4225,6 +4244,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIKernel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/dyld_kernel.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES3/gl.h"
@@ -4326,6 +4346,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileVersion.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Conversion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneSession.h"
@@ -4358,6 +4379,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Quadrature/Integration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderItemDecoration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStateRestoration.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteConfiguration.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PayPalMobile/PayPalConfiguration.h"
@@ -4426,6 +4448,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProcessInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach_debug/ipc_info.h"
@@ -4469,6 +4493,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/workloop.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/grp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarButtonItemGroup.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/group.h"
@@ -4495,6 +4520,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/FileProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingCurveProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemProvider.h"
@@ -4604,6 +4638,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextDragPreviewRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKTileOverlayRenderer.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchCompleter.h"
@@ -4727,6 +4762,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFontMetrics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_statistics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetDiagnostics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPreferences.h"
@@ -4736,6 +4773,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/vImage_Utilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPathUtilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageProperties.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/times.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTDefines.h"
@@ -4790,6 +4830,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/secure/_strings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/paths.h"
@@ -4842,6 +4884,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityAdditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneDefinitions.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapSnapshotOptions.h"
@@ -4860,6 +4903,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPreviewParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDragPreviewParameters.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetworkErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManagerErrors.h"
@@ -5026,7 +5070,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mach_init.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_inherit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLVisit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
@@ -5219,7 +5265,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/activity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProxy.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Modules/module.modulemap"

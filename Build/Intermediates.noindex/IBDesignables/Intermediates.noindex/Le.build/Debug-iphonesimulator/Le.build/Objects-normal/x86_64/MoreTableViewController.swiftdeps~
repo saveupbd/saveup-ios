@@ -2,16 +2,16 @@
 provides-top-level:
 - "MoreTableViewController"
 provides-nominal:
-- "9SaveUp_BD23MoreTableViewControllerC"
+- "6SaveUp23MoreTableViewControllerC"
 provides-member:
-- ["9SaveUp_BD23MoreTableViewControllerC", ""]
+- ["6SaveUp23MoreTableViewControllerC", ""]
 provides-dynamic-lookup:
 - "doThisWhenButtonIsTapped"
 - "numberOfSections"
 - "tableView"
+- "viewDidDisappear"
 - "viewDidLoad"
 - "viewWillAppear"
-- "viewWillDisappear"
 depends-top-level:
 - !private "!="
 - !private "-"
@@ -167,6 +167,7 @@ depends-member:
 - !private ["s7CVarArgP", "storyboard"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "superview"]
+- !private ["s7CVarArgP", "synchronize"]
 - !private ["s7CVarArgP", "tabBar"]
 - !private ["s7CVarArgP", "tabBarController"]
 - !private ["s7CVarArgP", "tableFooterView"]
@@ -175,9 +176,9 @@ depends-member:
 - !private ["s7CVarArgP", "textLabel"]
 - !private ["s7CVarArgP", "title"]
 - !private ["s7CVarArgP", "view"]
+- !private ["s7CVarArgP", "viewDidDisappear"]
 - !private ["s7CVarArgP", "viewDidLoad"]
 - !private ["s7CVarArgP", "viewWillAppear"]
-- !private ["s7CVarArgP", "viewWillDisappear"]
 - !private ["s7CVarArgP", "yy_imageURL"]
 - !private ["Sl", "count"]
 - !private ["Sl", "init"]
@@ -255,6 +256,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "storyboard"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "superview"]
+- !private ["s28CustomDebugStringConvertibleP", "synchronize"]
 - !private ["s28CustomDebugStringConvertibleP", "tabBar"]
 - !private ["s28CustomDebugStringConvertibleP", "tabBarController"]
 - !private ["s28CustomDebugStringConvertibleP", "tableFooterView"]
@@ -263,9 +265,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "textLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "title"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
+- !private ["s28CustomDebugStringConvertibleP", "viewDidDisappear"]
 - !private ["s28CustomDebugStringConvertibleP", "viewDidLoad"]
 - !private ["s28CustomDebugStringConvertibleP", "viewWillAppear"]
-- !private ["s28CustomDebugStringConvertibleP", "viewWillDisappear"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s28CustomDebugStringConvertibleP", "x"]
 - !private ["s28CustomDebugStringConvertibleP", "yy_imageURL"]
@@ -350,6 +352,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "storyboard"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "superview"]
+- !private ["s23CustomStringConvertibleP", "synchronize"]
 - !private ["s23CustomStringConvertibleP", "tabBar"]
 - !private ["s23CustomStringConvertibleP", "tabBarController"]
 - !private ["s23CustomStringConvertibleP", "tableFooterView"]
@@ -358,9 +361,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "textLabel"]
 - !private ["s23CustomStringConvertibleP", "title"]
 - !private ["s23CustomStringConvertibleP", "view"]
+- !private ["s23CustomStringConvertibleP", "viewDidDisappear"]
 - !private ["s23CustomStringConvertibleP", "viewDidLoad"]
 - !private ["s23CustomStringConvertibleP", "viewWillAppear"]
-- !private ["s23CustomStringConvertibleP", "viewWillDisappear"]
 - !private ["s23CustomStringConvertibleP", "yy_imageURL"]
 - !private ["10Foundation12DataProtocolP", "count"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
@@ -471,6 +474,7 @@ depends-member:
 - !private ["SQ", "storyboard"]
 - !private ["SQ", "subscript"]
 - !private ["SQ", "superview"]
+- !private ["SQ", "synchronize"]
 - !private ["SQ", "tabBar"]
 - !private ["SQ", "tabBarController"]
 - !private ["SQ", "tableFooterView"]
@@ -480,9 +484,9 @@ depends-member:
 - !private ["SQ", "title"]
 - !private ["SQ", "touchUpInside"]
 - !private ["SQ", "view"]
+- !private ["SQ", "viewDidDisappear"]
 - !private ["SQ", "viewDidLoad"]
 - !private ["SQ", "viewWillAppear"]
-- !private ["SQ", "viewWillDisappear"]
 - !private ["SQ", "width"]
 - !private ["SQ", "x"]
 - !private ["SQ", "yy_imageURL"]
@@ -574,6 +578,7 @@ depends-member:
 - !private ["SH", "storyboard"]
 - !private ["SH", "subscript"]
 - !private ["SH", "superview"]
+- !private ["SH", "synchronize"]
 - !private ["SH", "tabBar"]
 - !private ["SH", "tabBarController"]
 - !private ["SH", "tableFooterView"]
@@ -582,69 +587,69 @@ depends-member:
 - !private ["SH", "textLabel"]
 - !private ["SH", "title"]
 - !private ["SH", "view"]
+- !private ["SH", "viewDidDisappear"]
 - !private ["SH", "viewDidLoad"]
 - !private ["SH", "viewWillAppear"]
-- !private ["SH", "viewWillDisappear"]
 - !private ["SH", "yy_imageURL"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["10Foundation9IndexPathV", "section"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "addTarget"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "backgroundColor"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "center"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "frame"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "image"]
-- ["9SaveUp_BD20KingfisherCompatibleP", "init"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "keyWindow"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "layer"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "removeFromSuperview"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "setTitle"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "shared"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "superview"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "yy_imageURL"]
+- !private ["6SaveUp20KingfisherCompatibleP", "addTarget"]
+- !private ["6SaveUp20KingfisherCompatibleP", "backgroundColor"]
+- !private ["6SaveUp20KingfisherCompatibleP", "center"]
+- !private ["6SaveUp20KingfisherCompatibleP", "frame"]
+- !private ["6SaveUp20KingfisherCompatibleP", "image"]
+- ["6SaveUp20KingfisherCompatibleP", "init"]
+- !private ["6SaveUp20KingfisherCompatibleP", "keyWindow"]
+- !private ["6SaveUp20KingfisherCompatibleP", "layer"]
+- !private ["6SaveUp20KingfisherCompatibleP", "removeFromSuperview"]
+- !private ["6SaveUp20KingfisherCompatibleP", "setTitle"]
+- !private ["6SaveUp20KingfisherCompatibleP", "shared"]
+- !private ["6SaveUp20KingfisherCompatibleP", "superview"]
+- !private ["6SaveUp20KingfisherCompatibleP", "yy_imageURL"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
-- !private ["9SaveUp_BD22MoreImageTableViewCellC", "profileImage"]
-- !private ["9SaveUp_BD22MoreImageTableViewCellC", "profileNameLabel"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "Bool"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "Bundle"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "CGFloat"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "CGRect"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "CGSize"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "DispatchQueue"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "IndexPath"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "Int"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "MoreImageTableViewCell"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "String"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "UIAlertAction"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "UIAlertController"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "UIApplication"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "UIButton"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "UIColor"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "UIImage"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "UITableView"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "UITableViewCell"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "UIView"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "URL"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "UserDefaults"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "deinit"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "dismiss"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "doThisWhenButtonIsTapped"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "floatButton"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "init"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "moreOptions"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "navigationController"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "numberOfSections"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "present"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "print"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "setupFloatingButton"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "storyboard"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "tabBarController"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "tableView"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "title"]
-- !private ["9SaveUp_BD23MoreTableViewControllerC", "view"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "viewDidLoad"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "viewWillAppear"]
-- ["9SaveUp_BD23MoreTableViewControllerC", "viewWillDisappear"]
+- !private ["6SaveUp22MoreImageTableViewCellC", "profileImage"]
+- !private ["6SaveUp22MoreImageTableViewCellC", "profileNameLabel"]
+- ["6SaveUp23MoreTableViewControllerC", "Bool"]
+- !private ["6SaveUp23MoreTableViewControllerC", "Bundle"]
+- ["6SaveUp23MoreTableViewControllerC", "CGFloat"]
+- !private ["6SaveUp23MoreTableViewControllerC", "CGRect"]
+- !private ["6SaveUp23MoreTableViewControllerC", "CGSize"]
+- !private ["6SaveUp23MoreTableViewControllerC", "DispatchQueue"]
+- ["6SaveUp23MoreTableViewControllerC", "IndexPath"]
+- ["6SaveUp23MoreTableViewControllerC", "Int"]
+- !private ["6SaveUp23MoreTableViewControllerC", "MoreImageTableViewCell"]
+- ["6SaveUp23MoreTableViewControllerC", "String"]
+- !private ["6SaveUp23MoreTableViewControllerC", "UIAlertAction"]
+- !private ["6SaveUp23MoreTableViewControllerC", "UIAlertController"]
+- !private ["6SaveUp23MoreTableViewControllerC", "UIApplication"]
+- ["6SaveUp23MoreTableViewControllerC", "UIButton"]
+- !private ["6SaveUp23MoreTableViewControllerC", "UIColor"]
+- !private ["6SaveUp23MoreTableViewControllerC", "UIImage"]
+- ["6SaveUp23MoreTableViewControllerC", "UITableView"]
+- ["6SaveUp23MoreTableViewControllerC", "UITableViewCell"]
+- !private ["6SaveUp23MoreTableViewControllerC", "UIView"]
+- !private ["6SaveUp23MoreTableViewControllerC", "URL"]
+- !private ["6SaveUp23MoreTableViewControllerC", "UserDefaults"]
+- ["6SaveUp23MoreTableViewControllerC", "deinit"]
+- !private ["6SaveUp23MoreTableViewControllerC", "dismiss"]
+- !private ["6SaveUp23MoreTableViewControllerC", "doThisWhenButtonIsTapped"]
+- ["6SaveUp23MoreTableViewControllerC", "floatButton"]
+- ["6SaveUp23MoreTableViewControllerC", "init"]
+- ["6SaveUp23MoreTableViewControllerC", "moreOptions"]
+- !private ["6SaveUp23MoreTableViewControllerC", "navigationController"]
+- ["6SaveUp23MoreTableViewControllerC", "numberOfSections"]
+- !private ["6SaveUp23MoreTableViewControllerC", "present"]
+- !private ["6SaveUp23MoreTableViewControllerC", "print"]
+- ["6SaveUp23MoreTableViewControllerC", "setupFloatingButton"]
+- !private ["6SaveUp23MoreTableViewControllerC", "storyboard"]
+- !private ["6SaveUp23MoreTableViewControllerC", "tabBarController"]
+- ["6SaveUp23MoreTableViewControllerC", "tableView"]
+- !private ["6SaveUp23MoreTableViewControllerC", "title"]
+- !private ["6SaveUp23MoreTableViewControllerC", "view"]
+- ["6SaveUp23MoreTableViewControllerC", "viewDidDisappear"]
+- ["6SaveUp23MoreTableViewControllerC", "viewDidLoad"]
+- ["6SaveUp23MoreTableViewControllerC", "viewWillAppear"]
 - !private ["SM", "count"]
 - !private ["SM", "row"]
 - !private ["SM", "section"]
@@ -711,9 +716,9 @@ depends-member:
 - !private ["So8NSCodingP", "textLabel"]
 - !private ["So8NSCodingP", "title"]
 - !private ["So8NSCodingP", "view"]
+- !private ["So8NSCodingP", "viewDidDisappear"]
 - !private ["So8NSCodingP", "viewDidLoad"]
 - !private ["So8NSCodingP", "viewWillAppear"]
-- !private ["So8NSCodingP", "viewWillDisappear"]
 - !private ["So8NSCodingP", "yy_imageURL"]
 - !private ["So9NSCopyingP", "Style"]
 - !private ["So9NSCopyingP", "black"]
@@ -753,9 +758,9 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "title"]
 - !private ["So26NSExtensionRequestHandlingP", "view"]
+- !private ["So26NSExtensionRequestHandlingP", "viewDidDisappear"]
 - !private ["So26NSExtensionRequestHandlingP", "viewDidLoad"]
 - !private ["So26NSExtensionRequestHandlingP", "viewWillAppear"]
-- !private ["So26NSExtensionRequestHandlingP", "viewWillDisappear"]
 - !private ["So21NSItemProviderReadingP", "black"]
 - !private ["So21NSItemProviderReadingP", "cgColor"]
 - !private ["So21NSItemProviderReadingP", "init"]
@@ -830,6 +835,7 @@ depends-member:
 - !private ["So8NSObjectC", "standard"]
 - !private ["So8NSObjectC", "storyboard"]
 - !private ["So8NSObjectC", "superview"]
+- !private ["So8NSObjectC", "synchronize"]
 - !private ["So8NSObjectC", "tabBar"]
 - !private ["So8NSObjectC", "tabBarController"]
 - !private ["So8NSObjectC", "tableFooterView"]
@@ -838,9 +844,9 @@ depends-member:
 - !private ["So8NSObjectC", "textLabel"]
 - !private ["So8NSObjectC", "title"]
 - !private ["So8NSObjectC", "view"]
+- ["So8NSObjectC", "viewDidDisappear"]
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewWillAppear"]
-- ["So8NSObjectC", "viewWillDisappear"]
 - !private ["So8NSObjectC", "yy_imageURL"]
 - !private ["So8NSObjectP", "Bundle"]
 - !private ["So8NSObjectP", "CGRect"]
@@ -903,6 +909,7 @@ depends-member:
 - !private ["So8NSObjectP", "standard"]
 - !private ["So8NSObjectP", "storyboard"]
 - !private ["So8NSObjectP", "superview"]
+- !private ["So8NSObjectP", "synchronize"]
 - !private ["So8NSObjectP", "tabBar"]
 - !private ["So8NSObjectP", "tabBarController"]
 - !private ["So8NSObjectP", "tableFooterView"]
@@ -911,9 +918,9 @@ depends-member:
 - !private ["So8NSObjectP", "textLabel"]
 - !private ["So8NSObjectP", "title"]
 - !private ["So8NSObjectP", "view"]
+- !private ["So8NSObjectP", "viewDidDisappear"]
 - !private ["So8NSObjectP", "viewDidLoad"]
 - !private ["So8NSObjectP", "viewWillAppear"]
-- !private ["So8NSObjectP", "viewWillDisappear"]
 - !private ["So8NSObjectP", "yy_imageURL"]
 - !private ["So14NSSecureCodingP", "black"]
 - !private ["So14NSSecureCodingP", "borderColor"]
@@ -936,7 +943,7 @@ depends-member:
 - !private ["Sq", "tableFooterView"]
 - !private ["Sq", "text"]
 - !private ["Sq", "yy_imageURL"]
-- !private ["9SaveUp_BD11PlaceholderP", "init"]
+- !private ["6SaveUp11PlaceholderP", "init"]
 - !private ["Sk", "count"]
 - !private ["Sk", "row"]
 - !private ["Sk", "section"]
@@ -954,7 +961,7 @@ depends-member:
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
 - !private ["10Foundation20ReferenceConvertibleP", "section"]
-- !private ["9SaveUp_BD8ResourceP", "init"]
+- !private ["6SaveUp8ResourceP", "init"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "main"]
 - !private ["ST", "count"]
@@ -1078,9 +1085,9 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "textLabel"]
 - !private ["So21UIAppearanceContainerP", "title"]
 - !private ["So21UIAppearanceContainerP", "view"]
+- !private ["So21UIAppearanceContainerP", "viewDidDisappear"]
 - !private ["So21UIAppearanceContainerP", "viewDidLoad"]
 - !private ["So21UIAppearanceContainerP", "viewWillAppear"]
-- !private ["So21UIAppearanceContainerP", "viewWillDisappear"]
 - !private ["So21UIAppearanceContainerP", "yy_imageURL"]
 - !private ["So13UIApplicationC", "keyWindow"]
 - !private ["So13UIApplicationC", "shared"]
@@ -1130,9 +1137,9 @@ depends-member:
 - !private ["So18UIContentContainerP", "tableView"]
 - !private ["So18UIContentContainerP", "title"]
 - !private ["So18UIContentContainerP", "view"]
+- !private ["So18UIContentContainerP", "viewDidDisappear"]
 - !private ["So18UIContentContainerP", "viewDidLoad"]
 - !private ["So18UIContentContainerP", "viewWillAppear"]
-- !private ["So18UIContentContainerP", "viewWillDisappear"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - !private ["So9UIControlC", "addTarget"]
 - !private ["So9UIControlC", "backgroundColor"]
@@ -1231,9 +1238,9 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "textLabel"]
 - !private ["So18UIFocusEnvironmentP", "title"]
 - !private ["So18UIFocusEnvironmentP", "view"]
+- !private ["So18UIFocusEnvironmentP", "viewDidDisappear"]
 - !private ["So18UIFocusEnvironmentP", "viewDidLoad"]
 - !private ["So18UIFocusEnvironmentP", "viewWillAppear"]
-- !private ["So18UIFocusEnvironmentP", "viewWillDisappear"]
 - !private ["So18UIFocusEnvironmentP", "yy_imageURL"]
 - !private ["So11UIFocusItemP", "addSubview"]
 - !private ["So11UIFocusItemP", "addTarget"]
@@ -1300,7 +1307,6 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "textLabel"]
 - !private ["So24UILargeContentViewerItemP", "yy_imageURL"]
 - !private ["So24UIModalPresentationStyleV", "fullScreen"]
-- !private ["So22UINavigationControllerC", "present"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "Bundle"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
@@ -1354,9 +1360,9 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "textLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "title"]
 - !private ["So30UIPasteConfigurationSupportingP", "view"]
+- !private ["So30UIPasteConfigurationSupportingP", "viewDidDisappear"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
-- !private ["So30UIPasteConfigurationSupportingP", "viewWillDisappear"]
 - !private ["So30UIPasteConfigurationSupportingP", "yy_imageURL"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "Bundle"]
@@ -1417,9 +1423,9 @@ depends-member:
 - !private ["So11UIResponderC", "textLabel"]
 - !private ["So11UIResponderC", "title"]
 - !private ["So11UIResponderC", "view"]
+- ["So11UIResponderC", "viewDidDisappear"]
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewWillAppear"]
-- ["So11UIResponderC", "viewWillDisappear"]
 - !private ["So11UIResponderC", "yy_imageURL"]
 - !private ["So30UIResponderStandardEditActionsP", "Bundle"]
 - !private ["So30UIResponderStandardEditActionsP", "CGRect"]
@@ -1473,9 +1479,9 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "textLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "title"]
 - !private ["So30UIResponderStandardEditActionsP", "view"]
+- !private ["So30UIResponderStandardEditActionsP", "viewDidDisappear"]
 - !private ["So30UIResponderStandardEditActionsP", "viewDidLoad"]
 - !private ["So30UIResponderStandardEditActionsP", "viewWillAppear"]
-- !private ["So30UIResponderStandardEditActionsP", "viewWillDisappear"]
 - !private ["So30UIResponderStandardEditActionsP", "yy_imageURL"]
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "tableFooterView"]
@@ -1508,9 +1514,9 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "tableView"]
 - !private ["So20UIScrollViewDelegateP", "title"]
 - !private ["So20UIScrollViewDelegateP", "view"]
+- !private ["So20UIScrollViewDelegateP", "viewDidDisappear"]
 - !private ["So20UIScrollViewDelegateP", "viewDidLoad"]
 - !private ["So20UIScrollViewDelegateP", "viewWillAppear"]
-- !private ["So20UIScrollViewDelegateP", "viewWillDisappear"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "Style"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "addTarget"]
@@ -1558,9 +1564,9 @@ depends-member:
 - !private ["So16UIStateRestoringP", "tableView"]
 - !private ["So16UIStateRestoringP", "title"]
 - !private ["So16UIStateRestoringP", "view"]
+- !private ["So16UIStateRestoringP", "viewDidDisappear"]
 - !private ["So16UIStateRestoringP", "viewDidLoad"]
 - !private ["So16UIStateRestoringP", "viewWillAppear"]
-- !private ["So16UIStateRestoringP", "viewWillDisappear"]
 - !private ["So12UIStoryboardC", "instantiateViewController"]
 - !private ["So8UITabBarC", "frame"]
 - !private ["So18UITabBarControllerC", "tabBar"]
@@ -1607,9 +1613,9 @@ depends-member:
 - ["So21UITableViewControllerC", "tableView"]
 - !private ["So21UITableViewControllerC", "title"]
 - !private ["So21UITableViewControllerC", "view"]
+- ["So21UITableViewControllerC", "viewDidDisappear"]
 - ["So21UITableViewControllerC", "viewDidLoad"]
 - ["So21UITableViewControllerC", "viewWillAppear"]
-- ["So21UITableViewControllerC", "viewWillDisappear"]
 - !private ["So21UITableViewDataSourceP", "Bundle"]
 - !private ["So21UITableViewDataSourceP", "CGRect"]
 - !private ["So21UITableViewDataSourceP", "CGSize"]
@@ -1639,9 +1645,9 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So21UITableViewDataSourceP", "title"]
 - !private ["So21UITableViewDataSourceP", "view"]
+- !private ["So21UITableViewDataSourceP", "viewDidDisappear"]
 - !private ["So21UITableViewDataSourceP", "viewDidLoad"]
 - !private ["So21UITableViewDataSourceP", "viewWillAppear"]
-- !private ["So21UITableViewDataSourceP", "viewWillDisappear"]
 - !private ["So19UITableViewDelegateP", "Bundle"]
 - !private ["So19UITableViewDelegateP", "CGRect"]
 - !private ["So19UITableViewDelegateP", "CGSize"]
@@ -1671,9 +1677,9 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "tableView"]
 - !private ["So19UITableViewDelegateP", "title"]
 - !private ["So19UITableViewDelegateP", "view"]
+- !private ["So19UITableViewDelegateP", "viewDidDisappear"]
 - !private ["So19UITableViewDelegateP", "viewDidLoad"]
 - !private ["So19UITableViewDelegateP", "viewWillAppear"]
-- !private ["So19UITableViewDelegateP", "viewWillDisappear"]
 - !private ["So18UITraitEnvironmentP", "Bundle"]
 - !private ["So18UITraitEnvironmentP", "CGRect"]
 - !private ["So18UITraitEnvironmentP", "CGSize"]
@@ -1724,9 +1730,9 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "textLabel"]
 - !private ["So18UITraitEnvironmentP", "title"]
 - !private ["So18UITraitEnvironmentP", "view"]
+- !private ["So18UITraitEnvironmentP", "viewDidDisappear"]
 - !private ["So18UITraitEnvironmentP", "viewDidLoad"]
 - !private ["So18UITraitEnvironmentP", "viewWillAppear"]
-- !private ["So18UITraitEnvironmentP", "viewWillDisappear"]
 - !private ["So18UITraitEnvironmentP", "yy_imageURL"]
 - !private ["So23UIUserActivityRestoringP", "Bundle"]
 - !private ["So23UIUserActivityRestoringP", "CGRect"]
@@ -1780,9 +1786,9 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "textLabel"]
 - !private ["So23UIUserActivityRestoringP", "title"]
 - !private ["So23UIUserActivityRestoringP", "view"]
+- !private ["So23UIUserActivityRestoringP", "viewDidDisappear"]
 - !private ["So23UIUserActivityRestoringP", "viewDidLoad"]
 - !private ["So23UIUserActivityRestoringP", "viewWillAppear"]
-- !private ["So23UIUserActivityRestoringP", "viewWillDisappear"]
 - !private ["So23UIUserActivityRestoringP", "yy_imageURL"]
 - !private ["So6UIViewC", "addSubview"]
 - !private ["So6UIViewC", "addTarget"]
@@ -1843,14 +1849,15 @@ depends-member:
 - ["So16UIViewControllerC", "tableView"]
 - !private ["So16UIViewControllerC", "title"]
 - !private ["So16UIViewControllerC", "view"]
+- ["So16UIViewControllerC", "viewDidDisappear"]
 - ["So16UIViewControllerC", "viewDidLoad"]
 - ["So16UIViewControllerC", "viewWillAppear"]
-- ["So16UIViewControllerC", "viewWillDisappear"]
 - !private ["So8UIWindowC", "addSubview"]
 - !private ["10Foundation3URLV", "init"]
 - !private ["So14NSUserDefaultsC", "object"]
 - !private ["So14NSUserDefaultsC", "removeObject"]
 - !private ["So14NSUserDefaultsC", "standard"]
+- !private ["So14NSUserDefaultsC", "synchronize"]
 - !private ["So19YYAnimatedImageViewC", "image"]
 - !private ["So19YYAnimatedImageViewC", "yy_imageURL"]
 - !private ["s14_ArrayProtocolP", "count"]
@@ -1935,6 +1942,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "storyboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "superview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "synchronize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tabBar"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tabBarController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "tableFooterView"]
@@ -1943,9 +1951,9 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "textLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "title"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidDisappear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewDidLoad"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillAppear"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "viewWillDisappear"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "yy_imageURL"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Bundle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGRect"]
@@ -2008,6 +2016,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "standard"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "storyboard"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "superview"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "synchronize"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tabBar"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tabBarController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tableFooterView"]
@@ -2016,9 +2025,9 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "textLabel"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "title"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "view"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidDisappear"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewDidLoad"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewWillAppear"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewWillDisappear"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "yy_imageURL"]
 - !private ["s21_ObjectiveCBridgeableP", "center"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
@@ -2090,11 +2099,11 @@ depends-nominal:
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
 - "SH"
 - !private "10Foundation9IndexPathV"
-- "9SaveUp_BD20KingfisherCompatibleP"
+- "6SaveUp20KingfisherCompatibleP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
-- !private "9SaveUp_BD22MoreImageTableViewCellC"
-- "9SaveUp_BD23MoreTableViewControllerC"
+- !private "6SaveUp22MoreImageTableViewCellC"
+- "6SaveUp23MoreTableViewControllerC"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
 - "So8NSCodingP"
@@ -2108,12 +2117,12 @@ depends-nominal:
 - !private "So9OS_objectC"
 - !private "s9OptionSetP"
 - !private "Sq"
-- !private "9SaveUp_BD11PlaceholderP"
+- !private "6SaveUp11PlaceholderP"
 - !private "Sk"
 - !private "Sm"
 - "SY"
 - !private "10Foundation20ReferenceConvertibleP"
-- !private "9SaveUp_BD8ResourceP"
+- !private "6SaveUp8ResourceP"
 - !private "7Combine9SchedulerP"
 - !private "ST"
 - !private "s10SetAlgebraP"
@@ -2235,6 +2244,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CATransform3D.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUUID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUUID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
@@ -2245,6 +2256,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Sparse/BLAS.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/alloca.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Alpha.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/LinearAlgebra.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
@@ -2253,6 +2267,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolMetadata.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/quota.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach-o/stab.h"
@@ -2428,6 +2443,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIFilterShape.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureScope.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFResponseType.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFButtonType.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/ctype.h"
@@ -2439,6 +2455,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/xlocale/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/runetype.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKitCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/semaphore.h"
@@ -2463,6 +2480,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/trace_base.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/readpassphrase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLResponse.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchResponse.h"
@@ -2476,9 +2494,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSCompoundPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSComparisonPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginFlowState.h"
@@ -2568,6 +2588,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/shims/KeyPath.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/math.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/tgmath.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/kauth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/objc-api.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/port_obj.h"
@@ -2588,6 +2610,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_task.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecSharedCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDecimal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/i386/signal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/signal.h"
@@ -2603,6 +2628,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIKernel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/dyld_kernel.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES3/gl.h"
@@ -2704,6 +2730,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileVersion.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Conversion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneSession.h"
@@ -2736,6 +2763,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Quadrature/Integration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderItemDecoration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStateRestoration.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteConfiguration.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PayPalMobile/PayPalConfiguration.h"
@@ -2804,6 +2832,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProcessInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach_debug/ipc_info.h"
@@ -2847,6 +2877,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/workloop.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/grp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarButtonItemGroup.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/group.h"
@@ -2873,6 +2904,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/FileProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingCurveProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemProvider.h"
@@ -2983,6 +3023,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextDragPreviewRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKTileOverlayRenderer.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchCompleter.h"
@@ -3106,6 +3147,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFontMetrics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_statistics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetDiagnostics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPreferences.h"
@@ -3115,6 +3158,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/vImage_Utilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPathUtilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageProperties.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/times.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTDefines.h"
@@ -3170,6 +3216,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/secure/_strings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/paths.h"
@@ -3222,6 +3270,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityAdditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneDefinitions.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapSnapshotOptions.h"
@@ -3240,6 +3289,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPreviewParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDragPreviewParameters.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetworkErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManagerErrors.h"
@@ -3406,7 +3456,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/mach_init.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_inherit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLVisit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
@@ -3599,7 +3651,12 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/activity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProxy.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Modules/module.modulemap"
@@ -3621,4 +3678,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a9091a2fddc122206d6fa080a7c32c7d"
+interface-hash: "b517994e39f7070a5c1c719a13a42706"

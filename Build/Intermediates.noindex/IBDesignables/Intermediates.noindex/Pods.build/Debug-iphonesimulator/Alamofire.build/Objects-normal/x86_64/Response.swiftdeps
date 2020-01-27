@@ -28,7 +28,6 @@ provides-member:
 - ["9Alamofire8ResponseP", "add"]
 provides-dynamic-lookup:
 depends-top-level:
-- !private "!="
 - !private "??"
 - "AnyObject"
 - "AssignmentPrecedence"
@@ -41,40 +40,35 @@ depends-top-level:
 - "DefaultDownloadResponse"
 - "DownloadResponse"
 - "Error"
-- !private "FloatLiteralType"
+- "FloatLiteralType"
 - "HTTPURLResponse"
-- !private "IntegerLiteralType"
+- "IntegerLiteralType"
 - "Response"
 - "Result"
 - "String"
 - !private "StringLiteralType"
-- "TernaryPrecedence"
 - "Timeline"
 - "URL"
 - "URLRequest"
 - "URLSessionTaskMetrics"
-- !private "UnicodeScalarType"
+- !private "UTF8"
+- "UnicodeScalarType"
 depends-member:
-- !private ["Sa", "append"]
-- !private ["Sa", "joined"]
-- !private ["SK", "append"]
 - !private ["SK", "count"]
-- !private ["SK", "joined"]
-- !private ["s7CVarArgP", "append"]
-- !private ["s7CVarArgP", "joined"]
-- !private ["Sl", "append"]
+- !private ["SK", "init"]
+- !private ["s7CVarArgP", "init"]
 - !private ["Sl", "count"]
-- !private ["Sl", "joined"]
-- !private ["10Foundation15ContiguousBytesP", "append"]
+- !private ["Sl", "init"]
+- !private ["SL", "init"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
-- !private ["10Foundation15ContiguousBytesP", "joined"]
 - !private ["s28CustomDebugStringConvertibleP", "DataResponse"]
 - !private ["s28CustomDebugStringConvertibleP", "DownloadResponse"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "Timeline"]
+- !private ["s28CustomDebugStringConvertibleP", "UTF8"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - ["s28CustomDebugStringConvertibleP", "_metrics"]
 - ["s28CustomDebugStringConvertibleP", "add"]
-- !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "data"]
 - ["s28CustomDebugStringConvertibleP", "debugDescription"]
@@ -83,9 +77,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "error"]
 - !private ["s28CustomDebugStringConvertibleP", "flatMap"]
 - !private ["s28CustomDebugStringConvertibleP", "flatMapError"]
+- !private ["s28CustomDebugStringConvertibleP", "httpBody"]
 - !private ["s28CustomDebugStringConvertibleP", "httpMethod"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
-- !private ["s28CustomDebugStringConvertibleP", "joined"]
 - !private ["s28CustomDebugStringConvertibleP", "map"]
 - !private ["s28CustomDebugStringConvertibleP", "mapError"]
 - !private ["s28CustomDebugStringConvertibleP", "path"]
@@ -96,17 +90,19 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "temporaryURL"]
 - !private ["s28CustomDebugStringConvertibleP", "timeline"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
-- !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "httpBody"]
 - !private ["s17CustomReflectableP", "httpMethod"]
-- !private ["s17CustomReflectableP", "joined"]
+- !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "map"]
 - !private ["s23CustomStringConvertibleP", "DataResponse"]
 - !private ["s23CustomStringConvertibleP", "DownloadResponse"]
+- !private ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "Timeline"]
+- !private ["s23CustomStringConvertibleP", "UTF8"]
 - ["s23CustomStringConvertibleP", ""]
 - ["s23CustomStringConvertibleP", "_metrics"]
 - ["s23CustomStringConvertibleP", "add"]
-- !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
 - !private ["s23CustomStringConvertibleP", "count"]
@@ -117,9 +113,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "error"]
 - !private ["s23CustomStringConvertibleP", "flatMap"]
 - !private ["s23CustomStringConvertibleP", "flatMapError"]
+- !private ["s23CustomStringConvertibleP", "httpBody"]
 - !private ["s23CustomStringConvertibleP", "httpMethod"]
 - !private ["s23CustomStringConvertibleP", "init"]
-- !private ["s23CustomStringConvertibleP", "joined"]
 - !private ["s23CustomStringConvertibleP", "map"]
 - !private ["s23CustomStringConvertibleP", "mapError"]
 - !private ["s23CustomStringConvertibleP", "path"]
@@ -131,9 +127,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "timeline"]
 - !private ["s23CustomStringConvertibleP", "value"]
 - !private ["10Foundation4DataV", "count"]
-- !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "count"]
-- !private ["10Foundation12DataProtocolP", "joined"]
 - ["9Alamofire12DataResponseV", "AnyObject"]
 - ["9Alamofire12DataResponseV", "Data"]
 - ["9Alamofire12DataResponseV", "DataResponse"]
@@ -144,6 +138,7 @@ depends-member:
 - ["9Alamofire12DataResponseV", "Timeline"]
 - ["9Alamofire12DataResponseV", "URLRequest"]
 - ["9Alamofire12DataResponseV", "URLSessionTaskMetrics"]
+- !private ["9Alamofire12DataResponseV", "UTF8"]
 - ["9Alamofire12DataResponseV", "_metrics"]
 - ["9Alamofire12DataResponseV", "add"]
 - ["9Alamofire12DataResponseV", "data"]
@@ -162,9 +157,9 @@ depends-member:
 - ["9Alamofire12DataResponseV", "result"]
 - ["9Alamofire12DataResponseV", "timeline"]
 - ["9Alamofire12DataResponseV", "value"]
-- !private ["Se", "append"]
 - !private ["Se", "count"]
-- !private ["Se", "joined"]
+- !private ["Se", "init"]
+- !private ["Se", "map"]
 - !private ["Se", "path"]
 - ["9Alamofire19DefaultDataResponseV", "AnyObject"]
 - ["9Alamofire19DefaultDataResponseV", "Data"]
@@ -216,6 +211,7 @@ depends-member:
 - ["9Alamofire16DownloadResponseV", "URL"]
 - ["9Alamofire16DownloadResponseV", "URLRequest"]
 - ["9Alamofire16DownloadResponseV", "URLSessionTaskMetrics"]
+- !private ["9Alamofire16DownloadResponseV", "UTF8"]
 - ["9Alamofire16DownloadResponseV", "_metrics"]
 - ["9Alamofire16DownloadResponseV", "add"]
 - ["9Alamofire16DownloadResponseV", "debugDescription"]
@@ -236,42 +232,46 @@ depends-member:
 - ["9Alamofire16DownloadResponseV", "temporaryURL"]
 - ["9Alamofire16DownloadResponseV", "timeline"]
 - ["9Alamofire16DownloadResponseV", "value"]
-- !private ["SE", "append"]
 - !private ["SE", "count"]
-- !private ["SE", "joined"]
+- !private ["SE", "init"]
+- !private ["SE", "map"]
 - !private ["SE", "path"]
-- !private ["SQ", "append"]
 - !private ["SQ", "count"]
+- !private ["SQ", "httpBody"]
 - !private ["SQ", "httpMethod"]
-- !private ["SQ", "joined"]
+- !private ["SQ", "init"]
+- !private ["SQ", "map"]
 - !private ["SQ", "path"]
-- !private ["s25ExpressibleByArrayLiteralP", "append"]
-- !private ["s25ExpressibleByArrayLiteralP", "joined"]
-- !private ["SH", "append"]
+- !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "map"]
+- !private ["s32ExpressibleByStringInterpolationP", "init"]
+- !private ["s26ExpressibleByStringLiteralP", "init"]
+- !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["SH", "count"]
+- !private ["SH", "httpBody"]
 - !private ["SH", "httpMethod"]
-- !private ["SH", "joined"]
+- !private ["SH", "init"]
+- !private ["SH", "map"]
 - !private ["SH", "path"]
-- !private ["SM", "append"]
+- !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s10MirrorPathP", "init"]
 - !private ["SM", "count"]
-- !private ["SM", "joined"]
-- !private ["10Foundation19MutableDataProtocolP", "append"]
 - !private ["10Foundation19MutableDataProtocolP", "count"]
-- !private ["10Foundation19MutableDataProtocolP", "joined"]
-- !private ["Sk", "append"]
+- !private ["Sq", "map"]
 - !private ["Sk", "count"]
-- !private ["Sk", "joined"]
-- !private ["Sm", "append"]
 - !private ["Sm", "count"]
-- !private ["Sm", "joined"]
+- !private ["Sm", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "count"]
+- !private ["10Foundation20ReferenceConvertibleP", "httpBody"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
 - !private ["10Foundation20ReferenceConvertibleP", "path"]
 - ["9Alamofire8ResponseP", "AnyObject"]
 - !private ["9Alamofire8ResponseP", "DataResponse"]
 - !private ["9Alamofire8ResponseP", "DownloadResponse"]
+- !private ["9Alamofire8ResponseP", "String"]
 - !private ["9Alamofire8ResponseP", "Timeline"]
 - !private ["9Alamofire8ResponseP", "URLSessionTaskMetrics"]
+- !private ["9Alamofire8ResponseP", "UTF8"]
 - ["9Alamofire8ResponseP", ""]
 - ["9Alamofire8ResponseP", "_metrics"]
 - ["9Alamofire8ResponseP", "add"]
@@ -295,40 +295,44 @@ depends-member:
 - !private ["9Alamofire6ResultO", "map"]
 - !private ["9Alamofire6ResultO", "mapError"]
 - !private ["9Alamofire6ResultO", "value"]
-- !private ["ST", "append"]
 - !private ["ST", "count"]
-- !private ["ST", "joined"]
+- !private ["ST", "init"]
+- !private ["SS", "init"]
 - !private ["s27StringInterpolationProtocolP", "appendInterpolation"]
 - !private ["s27StringInterpolationProtocolP", "appendLiteral"]
+- !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "appendInterpolation"]
 - !private ["s16TextOutputStreamP", "appendLiteral"]
+- !private ["s16TextOutputStreamP", "init"]
+- !private ["s20TextOutputStreamableP", "init"]
 - !private ["9Alamofire8TimelineV", "debugDescription"]
 - !private ["9Alamofire8TimelineV", "deinit"]
 - !private ["9Alamofire8TimelineV", "init"]
 - !private ["10Foundation3URLV", "path"]
+- !private ["9Alamofire14URLConvertibleP", "init"]
 - !private ["9Alamofire14URLConvertibleP", "path"]
+- !private ["10Foundation10URLRequestV", "httpBody"]
 - !private ["10Foundation10URLRequestV", "httpMethod"]
+- !private ["9Alamofire21URLRequestConvertibleP", "httpBody"]
 - !private ["9Alamofire21URLRequestConvertibleP", "httpMethod"]
-- !private ["s14_ArrayProtocolP", "append"]
-- !private ["s14_ArrayProtocolP", "joined"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "init"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "path"]
-- !private ["s24_DestructorSafeContainerP", "append"]
-- !private ["s24_DestructorSafeContainerP", "joined"]
+- !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "path"]
-- !private ["s19_HasContiguousBytesP", "append"]
-- !private ["s19_HasContiguousBytesP", "joined"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
-- !private ["s35_HasCustomAnyHashableRepresentationP", "joined"]
-- !private ["s21_ObjectiveCBridgeableP", "append"]
+- !private ["s19_HasContiguousBytesP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "httpBody"]
 - !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
-- !private ["s21_ObjectiveCBridgeableP", "joined"]
+- !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "map"]
 - !private ["s21_ObjectiveCBridgeableP", "path"]
 depends-nominal:
-- !private "Sa"
 - !private "SK"
 - !private "s7CVarArgP"
 - !private "Sl"
+- !private "SL"
 - !private "10Foundation15ContiguousBytesP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
@@ -343,29 +347,39 @@ depends-nominal:
 - "9Alamofire16DownloadResponseV"
 - !private "SE"
 - !private "SQ"
-- !private "s25ExpressibleByArrayLiteralP"
+- !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s32ExpressibleByStringInterpolationP"
+- !private "s26ExpressibleByStringLiteralP"
+- !private "s33ExpressibleByUnicodeScalarLiteralP"
 - !private "SH"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
 - !private "SM"
 - !private "10Foundation19MutableDataProtocolP"
+- !private "Sq"
 - !private "Sk"
 - !private "Sm"
 - !private "10Foundation20ReferenceConvertibleP"
 - "9Alamofire8ResponseP"
 - !private "9Alamofire6ResultO"
 - !private "ST"
+- !private "SS"
 - !private "s27StringInterpolationProtocolP"
+- !private "Sy"
 - !private "s16TextOutputStreamP"
+- !private "s20TextOutputStreamableP"
 - !private "9Alamofire8TimelineV"
 - !private "10Foundation3URLV"
 - !private "9Alamofire14URLConvertibleP"
 - !private "10Foundation10URLRequestV"
 - !private "9Alamofire21URLRequestConvertibleP"
-- !private "s14_ArrayProtocolP"
 - !private "s30_CustomPlaygroundQuickLookableP"
-- !private "s24_DestructorSafeContainerP"
+- !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s34_ExpressibleByBuiltinStringLiteralP"
+- !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s19_HasContiguousBytesP"
-- !private "s35_HasCustomAnyHashableRepresentationP"
 - !private "s21_ObjectiveCBridgeableP"
 depends-dynamic-lookup:
 depends-external:

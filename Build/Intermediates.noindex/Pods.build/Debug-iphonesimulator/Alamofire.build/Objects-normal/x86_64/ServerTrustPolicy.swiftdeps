@@ -39,6 +39,7 @@ depends-top-level:
 - !private "SecTrustCopyPublicKey"
 - !private "SecTrustCreateWithCertificates"
 - !private "SecTrustEvaluate"
+- !private "SecTrustEvaluateWithError"
 - !private "SecTrustGetCertificateAtIndex"
 - !private "SecTrustGetCertificateCount"
 - !private "SecTrustResultType"
@@ -221,6 +222,7 @@ depends-member:
 - !private ["9Alamofire17ServerTrustPolicyO", "SecTrustCopyPublicKey"]
 - !private ["9Alamofire17ServerTrustPolicyO", "SecTrustCreateWithCertificates"]
 - !private ["9Alamofire17ServerTrustPolicyO", "SecTrustEvaluate"]
+- !private ["9Alamofire17ServerTrustPolicyO", "SecTrustEvaluateWithError"]
 - !private ["9Alamofire17ServerTrustPolicyO", "SecTrustGetCertificateAtIndex"]
 - !private ["9Alamofire17ServerTrustPolicyO", "SecTrustGetCertificateCount"]
 - !private ["9Alamofire17ServerTrustPolicyO", "SecTrustResultType"]

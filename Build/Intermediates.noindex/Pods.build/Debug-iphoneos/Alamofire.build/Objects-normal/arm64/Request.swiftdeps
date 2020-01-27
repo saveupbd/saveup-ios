@@ -548,6 +548,7 @@ depends-member:
 - ["9Alamofire15DownloadRequestC0B7OptionsV", "union"]
 - ["9Alamofire15DownloadRequestC0B7OptionsV", "update"]
 - !private ["9Alamofire15DownloadRequestC", "AdaptError"]
+- ["9Alamofire15DownloadRequestC", "Bool"]
 - ["9Alamofire15DownloadRequestC", "Data"]
 - ["9Alamofire15DownloadRequestC", "DispatchQueue"]
 - ["9Alamofire15DownloadRequestC", "DownloadFileDestination"]
@@ -1170,6 +1171,7 @@ depends-member:
 - !private ["10Foundation20ReferenceConvertibleP", "url"]
 - !private ["9Alamofire7RequestC", "AdaptError"]
 - !private ["9Alamofire7RequestC", "AnyHashable"]
+- ["9Alamofire7RequestC", "Bool"]
 - ["9Alamofire7RequestC", "CFAbsoluteTime"]
 - !private ["9Alamofire7RequestC", "CFAbsoluteTimeGetCurrent"]
 - ["9Alamofire7RequestC", "Data"]
@@ -3012,4 +3014,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c078c9809745f4a547f17162df4fc41e"
+interface-hash: "09e0dc76ee939df6022801f3befd6b05"

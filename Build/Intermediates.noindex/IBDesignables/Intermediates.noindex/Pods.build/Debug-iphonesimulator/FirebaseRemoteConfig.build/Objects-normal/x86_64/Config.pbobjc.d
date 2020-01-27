@@ -1,0 +1,44 @@
+dependencies: \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseRemoteConfig/FirebaseRemoteConfig/Sources/Protos/wireless/android/config/proto/Config.pbobjc.m \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/FirebaseRemoteConfig.build/module.modulemap \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Protobuf.build/module.modulemap \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBUnknownField_PackagePrivate.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBUnknownFieldSet_PackagePrivate.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBUtilities_PackagePrivate.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBRootObject_PackagePrivate.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBProtocolBuffers_RuntimeSupport.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/google/protobuf/Wrappers.pbobjc.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/google/protobuf/Type.pbobjc.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/google/protobuf/Struct.pbobjc.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/google/protobuf/SourceContext.pbobjc.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/google/protobuf/FieldMask.pbobjc.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/google/protobuf/Empty.pbobjc.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/google/protobuf/Api.pbobjc.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/google/protobuf/Timestamp.pbobjc.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/google/protobuf/Duration.pbobjc.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/google/protobuf/Any.pbobjc.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBWellKnownTypes.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBUtilities.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBUnknownFieldSet.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBUnknownField.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBRootObject.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBProtocolBuffers.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBMessage_PackagePrivate.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBMessage.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBExtensionRegistry.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBExtensionInternals.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBDictionary_PackagePrivate.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBDictionary.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBDescriptor_PackagePrivate.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBDescriptor.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBCodedOutputStream_PackagePrivate.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBWireFormat.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBCodedOutputStream.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBCodedInputStream_PackagePrivate.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBCodedInputStream.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBArray_PackagePrivate.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBBootstrap.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBRuntimeTypes.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Protobuf/objectivec/GPBArray.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Target\ Support\ Files/Protobuf/Protobuf-umbrella.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseRemoteConfig/FirebaseRemoteConfig/Sources/Protos/wireless/android/config/proto/Config.pbobjc.h

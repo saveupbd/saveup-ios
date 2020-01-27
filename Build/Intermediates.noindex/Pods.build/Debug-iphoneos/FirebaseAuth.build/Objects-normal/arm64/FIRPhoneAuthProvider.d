@@ -1,0 +1,43 @@
+dependencies: \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProvider/Phone/FIRPhoneAuthProvider.m \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/FirebaseAuth.build/module.modulemap \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRPhoneAuthProvider.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/Pods.build/Debug-iphoneos/FirebaseCore.build/module.modulemap \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseCore/FirebaseCore/Sources/Private/FIRLogger.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIROptions.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseCore/FirebaseCore/Sources/Public/FirebaseCore.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRLoggerLevel.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRConfiguration.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseCore/FirebaseCore/Sources/Public/FIRApp.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Target\ Support\ Files/FirebaseCore/FirebaseCore-umbrella.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/AuthProvider/Phone/FIRPhoneAuthCredential_Internal.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRPhoneAuthCredential.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthCredential.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/SystemService/FIRAuthAPNSToken.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthAPNSTokenType.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/SystemService/FIRAuthAPNSTokenManager.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/SystemService/FIRAuthAppCredential.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/SystemService/FIRAuthAppCredentialManager.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Storage/FIRAuthKeychainServices.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Auth/FIRAuthGlobalWorkQueue.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Auth/FIRAuth_Internal.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuth.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthErrors.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Headers/Public/FirebaseAuthInterop/FIRAuthInterop.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthURLPresenter.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/SystemService/FIRAuthNotificationManager.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthErrorUtils.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthBackend.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FIRAuthSettings.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Utilities/FIRAuthWebUtils.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Public/FirebaseAuthVersion.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRGetProjectConfigRequest.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRIdentityToolkitRequest.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRequestConfiguration.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRPCRequest.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRGetProjectConfigResponse.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/FIRAuthRPCResponse.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRSendVerificationCodeRequest.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRSendVerificationCodeResponse.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRVerifyClientRequest.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAuth/Firebase/Auth/Source/Backend/RPC/FIRVerifyClientResponse.h

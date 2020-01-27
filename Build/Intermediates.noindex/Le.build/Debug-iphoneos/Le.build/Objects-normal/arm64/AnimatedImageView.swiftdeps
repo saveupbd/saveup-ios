@@ -7,27 +7,27 @@ provides-top-level:
 - "Animator"
 - "=="
 provides-nominal:
-- "9SaveUp_BD25AnimatedImageViewDelegateP"
-- "9SaveUp_BD17AnimatedImageViewC"
-- "9SaveUp_BD17AnimatedImageViewC11TargetProxyC"
-- "9SaveUp_BD17AnimatedImageViewC11RepeatCountO"
-- "9SaveUp_BD13AnimatedFrameV"
-- "9SaveUp_BD16AnimatorDelegateP"
-- "9SaveUp_BD8AnimatorC"
+- "6SaveUp25AnimatedImageViewDelegateP"
+- "6SaveUp17AnimatedImageViewC"
+- "6SaveUp17AnimatedImageViewC11TargetProxyC"
+- "6SaveUp17AnimatedImageViewC11RepeatCountO"
+- "6SaveUp13AnimatedFrameV"
+- "6SaveUp16AnimatorDelegateP"
+- "6SaveUp8AnimatorC"
 - "So16CGImageSourceRefa"
 provides-member:
-- ["9SaveUp_BD25AnimatedImageViewDelegateP", ""]
-- ["9SaveUp_BD17AnimatedImageViewC", ""]
-- ["9SaveUp_BD17AnimatedImageViewC11TargetProxyC", ""]
-- ["9SaveUp_BD17AnimatedImageViewC11RepeatCountO", ""]
-- ["9SaveUp_BD13AnimatedFrameV", ""]
-- ["9SaveUp_BD16AnimatorDelegateP", ""]
-- ["9SaveUp_BD8AnimatorC", ""]
+- ["6SaveUp25AnimatedImageViewDelegateP", ""]
+- ["6SaveUp17AnimatedImageViewC", ""]
+- ["6SaveUp17AnimatedImageViewC11TargetProxyC", ""]
+- ["6SaveUp17AnimatedImageViewC11RepeatCountO", ""]
+- ["6SaveUp13AnimatedFrameV", ""]
+- ["6SaveUp16AnimatorDelegateP", ""]
+- ["6SaveUp8AnimatorC", ""]
 - ["So16CGImageSourceRefa", ""]
-- ["9SaveUp_BD10KingfisherC", ""]
-- ["9SaveUp_BD25AnimatedImageViewDelegateP", "animatedImageView"]
-- ["9SaveUp_BD25AnimatedImageViewDelegateP", "animatedImageViewDidFinishAnimating"]
-- ["9SaveUp_BD10KingfisherC", "gifProperties"]
+- ["6SaveUp10KingfisherC", ""]
+- ["6SaveUp25AnimatedImageViewDelegateP", "animatedImageView"]
+- ["6SaveUp25AnimatedImageViewDelegateP", "animatedImageViewDidFinishAnimating"]
+- ["6SaveUp10KingfisherC", "gifProperties"]
 provides-dynamic-lookup:
 - "didMoveToSuperview"
 - "didMoveToWindow"
@@ -114,144 +114,144 @@ depends-member:
 - !private ["10Accelerate0A13MutableBufferP", "reserveCapacity"]
 - !private ["10Accelerate0A13MutableBufferP", "subscript"]
 - !private ["s18AdditiveArithmeticP", "init"]
-- ["9SaveUp_BD13AnimatedFrameV", "AnimatedFrame"]
-- ["9SaveUp_BD13AnimatedFrameV", "Image"]
-- ["9SaveUp_BD13AnimatedFrameV", "TimeInterval"]
-- ["9SaveUp_BD13AnimatedFrameV", "duration"]
-- ["9SaveUp_BD13AnimatedFrameV", "image"]
-- ["9SaveUp_BD13AnimatedFrameV", "init"]
-- ["9SaveUp_BD13AnimatedFrameV", "null"]
-- !private ["9SaveUp_BD17AnimatedImageViewC", "$__lazy_storage_$_displayLink"]
-- ["9SaveUp_BD17AnimatedImageViewC", "AnimatedImageView"]
-- ["9SaveUp_BD17AnimatedImageViewC", "AnimatedImageViewDelegate"]
-- ["9SaveUp_BD17AnimatedImageViewC", "Animator"]
-- ["9SaveUp_BD17AnimatedImageViewC", "Bool"]
-- ["9SaveUp_BD17AnimatedImageViewC", "CADisplayLink"]
-- ["9SaveUp_BD17AnimatedImageViewC", "CALayer"]
-- !private ["9SaveUp_BD17AnimatedImageViewC", "CFTimeInterval"]
-- !private ["9SaveUp_BD17AnimatedImageViewC", "Double"]
-- ["9SaveUp_BD17AnimatedImageViewC", "Equatable"]
-- ["9SaveUp_BD17AnimatedImageViewC", "Image"]
-- ["9SaveUp_BD17AnimatedImageViewC", "RepeatCount"]
-- ["9SaveUp_BD17AnimatedImageViewC", "RunLoop"]
-- ["9SaveUp_BD17AnimatedImageViewC", "TargetProxy"]
-- ["9SaveUp_BD17AnimatedImageViewC", "UInt"]
-- ["9SaveUp_BD17AnimatedImageViewC", "animator"]
-- ["9SaveUp_BD17AnimatedImageViewC", "autoPlayAnimatedImage"]
-- !private ["9SaveUp_BD17AnimatedImageViewC", "bounds"]
-- !private ["9SaveUp_BD17AnimatedImageViewC", "contentMode"]
-- ["9SaveUp_BD17AnimatedImageViewC", "deinit"]
-- ["9SaveUp_BD17AnimatedImageViewC", "delegate"]
-- !private ["9SaveUp_BD17AnimatedImageViewC", "didMove"]
-- ["9SaveUp_BD17AnimatedImageViewC", "didMoveToSuperview"]
-- ["9SaveUp_BD17AnimatedImageViewC", "didMoveToWindow"]
-- ["9SaveUp_BD17AnimatedImageViewC", "display"]
-- !private ["9SaveUp_BD17AnimatedImageViewC", "displayLink"]
-- ["9SaveUp_BD17AnimatedImageViewC", "framePreloadCount"]
-- ["9SaveUp_BD17AnimatedImageViewC", "image"]
-- ["9SaveUp_BD17AnimatedImageViewC", "init"]
-- ["9SaveUp_BD17AnimatedImageViewC", "isAnimating"]
-- ["9SaveUp_BD17AnimatedImageViewC", "isDisplayLinkInitialized"]
-- !private ["9SaveUp_BD17AnimatedImageViewC", "layer"]
-- ["9SaveUp_BD17AnimatedImageViewC", "needsPrescaling"]
-- ["9SaveUp_BD17AnimatedImageViewC", "repeatCount"]
-- !private ["9SaveUp_BD17AnimatedImageViewC", "reset"]
-- ["9SaveUp_BD17AnimatedImageViewC", "runLoopMode"]
-- !private ["9SaveUp_BD17AnimatedImageViewC", "setNeedsDisplay"]
-- ["9SaveUp_BD17AnimatedImageViewC", "shouldPreloadAllAnimation"]
-- ["9SaveUp_BD17AnimatedImageViewC", "startAnimating"]
-- ["9SaveUp_BD17AnimatedImageViewC", "stopAnimating"]
-- !private ["9SaveUp_BD17AnimatedImageViewC", "superview"]
-- !private ["9SaveUp_BD17AnimatedImageViewC", "updateFrame"]
-- !private ["9SaveUp_BD17AnimatedImageViewC", "window"]
-- ["9SaveUp_BD25AnimatedImageViewDelegateP", "AnimatedImageView"]
-- ["9SaveUp_BD25AnimatedImageViewDelegateP", "UInt"]
-- ["9SaveUp_BD25AnimatedImageViewDelegateP", "animatedImageView"]
-- ["9SaveUp_BD25AnimatedImageViewDelegateP", "animatedImageViewDidFinishAnimating"]
-- !private ["9SaveUp_BD8AnimatorC", "$__lazy_storage_$_preloadQueue"]
-- ["9SaveUp_BD8AnimatorC", "AnimatedFrame"]
-- ["9SaveUp_BD8AnimatorC", "AnimatedImageView"]
-- ["9SaveUp_BD8AnimatorC", "AnimatorDelegate"]
-- ["9SaveUp_BD8AnimatorC", "Bool"]
-- ["9SaveUp_BD8AnimatorC", "CFTimeInterval"]
-- ["9SaveUp_BD8AnimatorC", "CGImageSource"]
-- !private ["9SaveUp_BD8AnimatorC", "CGImageSourceCopyProperties"]
-- !private ["9SaveUp_BD8AnimatorC", "CGImageSourceCreateImageAtIndex"]
-- !private ["9SaveUp_BD8AnimatorC", "CGImageSourceGetCount"]
-- ["9SaveUp_BD8AnimatorC", "CGSize"]
-- ["9SaveUp_BD8AnimatorC", "DispatchQueue"]
-- !private ["9SaveUp_BD8AnimatorC", "Double"]
-- ["9SaveUp_BD8AnimatorC", "Image"]
-- ["9SaveUp_BD8AnimatorC", "Int"]
-- !private ["9SaveUp_BD8AnimatorC", "NSDictionary"]
-- !private ["9SaveUp_BD8AnimatorC", "String"]
-- ["9SaveUp_BD8AnimatorC", "TimeInterval"]
-- ["9SaveUp_BD8AnimatorC", "UIImage"]
-- ["9SaveUp_BD8AnimatorC", "UIView"]
-- ["9SaveUp_BD8AnimatorC", "UInt"]
-- !private ["9SaveUp_BD8AnimatorC", "animatedFrames"]
-- ["9SaveUp_BD8AnimatorC", "contentMode"]
-- ["9SaveUp_BD8AnimatorC", "currentFrame"]
-- !private ["9SaveUp_BD8AnimatorC", "currentFrameIndex"]
-- !private ["9SaveUp_BD8AnimatorC", "currentFrameIndexInBuffer"]
-- !private ["9SaveUp_BD8AnimatorC", "currentPreloadIndex"]
-- !private ["9SaveUp_BD8AnimatorC", "currentRepeatCount"]
-- !private ["9SaveUp_BD8AnimatorC", "delegate"]
-- ["9SaveUp_BD8AnimatorC", "frame"]
-- !private ["9SaveUp_BD8AnimatorC", "frameCount"]
-- !private ["9SaveUp_BD8AnimatorC", "imageSource"]
-- ["9SaveUp_BD8AnimatorC", "init"]
-- ["9SaveUp_BD8AnimatorC", "isReachMaxRepeatCount"]
-- !private ["9SaveUp_BD8AnimatorC", "kCGImagePropertyGIFDelayTime"]
-- !private ["9SaveUp_BD8AnimatorC", "kCGImagePropertyGIFDictionary"]
-- !private ["9SaveUp_BD8AnimatorC", "kCGImagePropertyGIFLoopCount"]
-- !private ["9SaveUp_BD8AnimatorC", "kCGImagePropertyGIFUnclampedDelayTime"]
-- !private ["9SaveUp_BD8AnimatorC", "loopCount"]
-- !private ["9SaveUp_BD8AnimatorC", "maxFrameCount"]
-- !private ["9SaveUp_BD8AnimatorC", "maxRepeatCount"]
-- !private ["9SaveUp_BD8AnimatorC", "maxTimeStep"]
-- !private ["9SaveUp_BD8AnimatorC", "min"]
-- !private ["9SaveUp_BD8AnimatorC", "needsPrescaling"]
-- !private ["9SaveUp_BD8AnimatorC", "preloadFrame"]
-- !private ["9SaveUp_BD8AnimatorC", "preloadFrameAsynchronously"]
-- !private ["9SaveUp_BD8AnimatorC", "preloadQueue"]
-- !private ["9SaveUp_BD8AnimatorC", "prepareFrame"]
-- !private ["9SaveUp_BD8AnimatorC", "prepareFrames"]
-- ["9SaveUp_BD8AnimatorC", "prepareFramesAsynchronously"]
-- !private ["9SaveUp_BD8AnimatorC", "pure"]
-- !private ["9SaveUp_BD8AnimatorC", "size"]
-- !private ["9SaveUp_BD8AnimatorC", "timeSinceLastFrameChange"]
-- ["9SaveUp_BD8AnimatorC", "updateCurrentFrame"]
-- ["9SaveUp_BD16AnimatorDelegateP", "Animator"]
-- ["9SaveUp_BD16AnimatorDelegateP", "CADisplayLink"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "Double"]
-- ["9SaveUp_BD16AnimatorDelegateP", "RepeatCount"]
-- ["9SaveUp_BD16AnimatorDelegateP", "RunLoop"]
-- ["9SaveUp_BD16AnimatorDelegateP", "TargetProxy"]
-- ["9SaveUp_BD16AnimatorDelegateP", "UInt"]
-- ["9SaveUp_BD16AnimatorDelegateP", ""]
-- ["9SaveUp_BD16AnimatorDelegateP", "animator"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "autoPlayAnimatedImage"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "bounds"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "contentMode"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "delegate"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "didMove"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "displayLink"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "framePreloadCount"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "image"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "isAnimating"]
-- ["9SaveUp_BD16AnimatorDelegateP", "isDisplayLinkInitialized"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "layer"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "needsPrescaling"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "repeatCount"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "reset"]
-- ["9SaveUp_BD16AnimatorDelegateP", "runLoopMode"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "setNeedsDisplay"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "startAnimating"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "stopAnimating"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "superview"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "updateFrame"]
-- !private ["9SaveUp_BD16AnimatorDelegateP", "window"]
+- ["6SaveUp13AnimatedFrameV", "AnimatedFrame"]
+- ["6SaveUp13AnimatedFrameV", "Image"]
+- ["6SaveUp13AnimatedFrameV", "TimeInterval"]
+- ["6SaveUp13AnimatedFrameV", "duration"]
+- ["6SaveUp13AnimatedFrameV", "image"]
+- ["6SaveUp13AnimatedFrameV", "init"]
+- ["6SaveUp13AnimatedFrameV", "null"]
+- !private ["6SaveUp17AnimatedImageViewC", "$__lazy_storage_$_displayLink"]
+- ["6SaveUp17AnimatedImageViewC", "AnimatedImageView"]
+- ["6SaveUp17AnimatedImageViewC", "AnimatedImageViewDelegate"]
+- ["6SaveUp17AnimatedImageViewC", "Animator"]
+- ["6SaveUp17AnimatedImageViewC", "Bool"]
+- ["6SaveUp17AnimatedImageViewC", "CADisplayLink"]
+- ["6SaveUp17AnimatedImageViewC", "CALayer"]
+- !private ["6SaveUp17AnimatedImageViewC", "CFTimeInterval"]
+- !private ["6SaveUp17AnimatedImageViewC", "Double"]
+- ["6SaveUp17AnimatedImageViewC", "Equatable"]
+- ["6SaveUp17AnimatedImageViewC", "Image"]
+- ["6SaveUp17AnimatedImageViewC", "RepeatCount"]
+- ["6SaveUp17AnimatedImageViewC", "RunLoop"]
+- ["6SaveUp17AnimatedImageViewC", "TargetProxy"]
+- ["6SaveUp17AnimatedImageViewC", "UInt"]
+- ["6SaveUp17AnimatedImageViewC", "animator"]
+- ["6SaveUp17AnimatedImageViewC", "autoPlayAnimatedImage"]
+- !private ["6SaveUp17AnimatedImageViewC", "bounds"]
+- !private ["6SaveUp17AnimatedImageViewC", "contentMode"]
+- ["6SaveUp17AnimatedImageViewC", "deinit"]
+- ["6SaveUp17AnimatedImageViewC", "delegate"]
+- !private ["6SaveUp17AnimatedImageViewC", "didMove"]
+- ["6SaveUp17AnimatedImageViewC", "didMoveToSuperview"]
+- ["6SaveUp17AnimatedImageViewC", "didMoveToWindow"]
+- ["6SaveUp17AnimatedImageViewC", "display"]
+- !private ["6SaveUp17AnimatedImageViewC", "displayLink"]
+- ["6SaveUp17AnimatedImageViewC", "framePreloadCount"]
+- ["6SaveUp17AnimatedImageViewC", "image"]
+- ["6SaveUp17AnimatedImageViewC", "init"]
+- ["6SaveUp17AnimatedImageViewC", "isAnimating"]
+- ["6SaveUp17AnimatedImageViewC", "isDisplayLinkInitialized"]
+- !private ["6SaveUp17AnimatedImageViewC", "layer"]
+- ["6SaveUp17AnimatedImageViewC", "needsPrescaling"]
+- ["6SaveUp17AnimatedImageViewC", "repeatCount"]
+- !private ["6SaveUp17AnimatedImageViewC", "reset"]
+- ["6SaveUp17AnimatedImageViewC", "runLoopMode"]
+- !private ["6SaveUp17AnimatedImageViewC", "setNeedsDisplay"]
+- ["6SaveUp17AnimatedImageViewC", "shouldPreloadAllAnimation"]
+- ["6SaveUp17AnimatedImageViewC", "startAnimating"]
+- ["6SaveUp17AnimatedImageViewC", "stopAnimating"]
+- !private ["6SaveUp17AnimatedImageViewC", "superview"]
+- !private ["6SaveUp17AnimatedImageViewC", "updateFrame"]
+- !private ["6SaveUp17AnimatedImageViewC", "window"]
+- ["6SaveUp25AnimatedImageViewDelegateP", "AnimatedImageView"]
+- ["6SaveUp25AnimatedImageViewDelegateP", "UInt"]
+- ["6SaveUp25AnimatedImageViewDelegateP", "animatedImageView"]
+- ["6SaveUp25AnimatedImageViewDelegateP", "animatedImageViewDidFinishAnimating"]
+- !private ["6SaveUp8AnimatorC", "$__lazy_storage_$_preloadQueue"]
+- ["6SaveUp8AnimatorC", "AnimatedFrame"]
+- ["6SaveUp8AnimatorC", "AnimatedImageView"]
+- ["6SaveUp8AnimatorC", "AnimatorDelegate"]
+- ["6SaveUp8AnimatorC", "Bool"]
+- ["6SaveUp8AnimatorC", "CFTimeInterval"]
+- ["6SaveUp8AnimatorC", "CGImageSource"]
+- !private ["6SaveUp8AnimatorC", "CGImageSourceCopyProperties"]
+- !private ["6SaveUp8AnimatorC", "CGImageSourceCreateImageAtIndex"]
+- !private ["6SaveUp8AnimatorC", "CGImageSourceGetCount"]
+- ["6SaveUp8AnimatorC", "CGSize"]
+- ["6SaveUp8AnimatorC", "DispatchQueue"]
+- !private ["6SaveUp8AnimatorC", "Double"]
+- ["6SaveUp8AnimatorC", "Image"]
+- ["6SaveUp8AnimatorC", "Int"]
+- !private ["6SaveUp8AnimatorC", "NSDictionary"]
+- !private ["6SaveUp8AnimatorC", "String"]
+- ["6SaveUp8AnimatorC", "TimeInterval"]
+- ["6SaveUp8AnimatorC", "UIImage"]
+- ["6SaveUp8AnimatorC", "UIView"]
+- ["6SaveUp8AnimatorC", "UInt"]
+- !private ["6SaveUp8AnimatorC", "animatedFrames"]
+- ["6SaveUp8AnimatorC", "contentMode"]
+- ["6SaveUp8AnimatorC", "currentFrame"]
+- !private ["6SaveUp8AnimatorC", "currentFrameIndex"]
+- !private ["6SaveUp8AnimatorC", "currentFrameIndexInBuffer"]
+- !private ["6SaveUp8AnimatorC", "currentPreloadIndex"]
+- !private ["6SaveUp8AnimatorC", "currentRepeatCount"]
+- !private ["6SaveUp8AnimatorC", "delegate"]
+- ["6SaveUp8AnimatorC", "frame"]
+- !private ["6SaveUp8AnimatorC", "frameCount"]
+- !private ["6SaveUp8AnimatorC", "imageSource"]
+- ["6SaveUp8AnimatorC", "init"]
+- ["6SaveUp8AnimatorC", "isReachMaxRepeatCount"]
+- !private ["6SaveUp8AnimatorC", "kCGImagePropertyGIFDelayTime"]
+- !private ["6SaveUp8AnimatorC", "kCGImagePropertyGIFDictionary"]
+- !private ["6SaveUp8AnimatorC", "kCGImagePropertyGIFLoopCount"]
+- !private ["6SaveUp8AnimatorC", "kCGImagePropertyGIFUnclampedDelayTime"]
+- !private ["6SaveUp8AnimatorC", "loopCount"]
+- !private ["6SaveUp8AnimatorC", "maxFrameCount"]
+- !private ["6SaveUp8AnimatorC", "maxRepeatCount"]
+- !private ["6SaveUp8AnimatorC", "maxTimeStep"]
+- !private ["6SaveUp8AnimatorC", "min"]
+- !private ["6SaveUp8AnimatorC", "needsPrescaling"]
+- !private ["6SaveUp8AnimatorC", "preloadFrame"]
+- !private ["6SaveUp8AnimatorC", "preloadFrameAsynchronously"]
+- !private ["6SaveUp8AnimatorC", "preloadQueue"]
+- !private ["6SaveUp8AnimatorC", "prepareFrame"]
+- !private ["6SaveUp8AnimatorC", "prepareFrames"]
+- ["6SaveUp8AnimatorC", "prepareFramesAsynchronously"]
+- !private ["6SaveUp8AnimatorC", "pure"]
+- !private ["6SaveUp8AnimatorC", "size"]
+- !private ["6SaveUp8AnimatorC", "timeSinceLastFrameChange"]
+- ["6SaveUp8AnimatorC", "updateCurrentFrame"]
+- ["6SaveUp16AnimatorDelegateP", "Animator"]
+- ["6SaveUp16AnimatorDelegateP", "CADisplayLink"]
+- !private ["6SaveUp16AnimatorDelegateP", "Double"]
+- ["6SaveUp16AnimatorDelegateP", "RepeatCount"]
+- ["6SaveUp16AnimatorDelegateP", "RunLoop"]
+- ["6SaveUp16AnimatorDelegateP", "TargetProxy"]
+- ["6SaveUp16AnimatorDelegateP", "UInt"]
+- ["6SaveUp16AnimatorDelegateP", ""]
+- ["6SaveUp16AnimatorDelegateP", "animator"]
+- !private ["6SaveUp16AnimatorDelegateP", "autoPlayAnimatedImage"]
+- !private ["6SaveUp16AnimatorDelegateP", "bounds"]
+- !private ["6SaveUp16AnimatorDelegateP", "contentMode"]
+- !private ["6SaveUp16AnimatorDelegateP", "delegate"]
+- !private ["6SaveUp16AnimatorDelegateP", "didMove"]
+- !private ["6SaveUp16AnimatorDelegateP", "displayLink"]
+- !private ["6SaveUp16AnimatorDelegateP", "framePreloadCount"]
+- !private ["6SaveUp16AnimatorDelegateP", "image"]
+- !private ["6SaveUp16AnimatorDelegateP", "isAnimating"]
+- ["6SaveUp16AnimatorDelegateP", "isDisplayLinkInitialized"]
+- !private ["6SaveUp16AnimatorDelegateP", "layer"]
+- !private ["6SaveUp16AnimatorDelegateP", "needsPrescaling"]
+- !private ["6SaveUp16AnimatorDelegateP", "repeatCount"]
+- !private ["6SaveUp16AnimatorDelegateP", "reset"]
+- ["6SaveUp16AnimatorDelegateP", "runLoopMode"]
+- !private ["6SaveUp16AnimatorDelegateP", "setNeedsDisplay"]
+- !private ["6SaveUp16AnimatorDelegateP", "startAnimating"]
+- !private ["6SaveUp16AnimatorDelegateP", "stopAnimating"]
+- !private ["6SaveUp16AnimatorDelegateP", "superview"]
+- !private ["6SaveUp16AnimatorDelegateP", "updateFrame"]
+- !private ["6SaveUp16AnimatorDelegateP", "window"]
 - ["Sa", "Int"]
 - !private ["Sa", "count"]
 - !private ["Sa", "indices"]
@@ -645,54 +645,54 @@ depends-member:
 - !private ["SH", "superview"]
 - !private ["SH", "updateFrame"]
 - !private ["SH", "window"]
-- !private ["9SaveUp_BD11ImageSourceC", "imageRef"]
-- ["9SaveUp_BD10KingfisherC", "CGImageSource"]
-- !private ["9SaveUp_BD10KingfisherC", "CGImageSourceCopyPropertiesAtIndex"]
-- !private ["9SaveUp_BD10KingfisherC", "Dictionary"]
-- ["9SaveUp_BD10KingfisherC", "Double"]
-- ["9SaveUp_BD10KingfisherC", "Int"]
-- ["9SaveUp_BD10KingfisherC", "String"]
-- !private ["9SaveUp_BD10KingfisherC", "base"]
-- ["9SaveUp_BD10KingfisherC", "gifProperties"]
-- !private ["9SaveUp_BD10KingfisherC", "imageSource"]
-- !private ["9SaveUp_BD10KingfisherC", "kCGImagePropertyGIFDictionary"]
-- !private ["9SaveUp_BD10KingfisherC", "resize"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "Animator"]
-- ["9SaveUp_BD20KingfisherCompatibleP", "CADisplayLink"]
-- ["9SaveUp_BD20KingfisherCompatibleP", "CompatibleType"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "Double"]
-- ["9SaveUp_BD20KingfisherCompatibleP", "RepeatCount"]
-- ["9SaveUp_BD20KingfisherCompatibleP", "RunLoop"]
-- ["9SaveUp_BD20KingfisherCompatibleP", "TargetProxy"]
-- ["9SaveUp_BD20KingfisherCompatibleP", ""]
-- ["9SaveUp_BD20KingfisherCompatibleP", "_Default_CompatibleType"]
-- ["9SaveUp_BD20KingfisherCompatibleP", "animator"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "autoPlayAnimatedImage"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "bounds"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "cgImage"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "contentMode"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "delegate"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "didMove"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "didMoveToSuperview"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "didMoveToWindow"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "displayLink"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "framePreloadCount"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "image"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "init"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "isAnimating"]
-- ["9SaveUp_BD20KingfisherCompatibleP", "isDisplayLinkInitialized"]
-- ["9SaveUp_BD20KingfisherCompatibleP", "kf"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "layer"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "needsPrescaling"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "repeatCount"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "reset"]
-- ["9SaveUp_BD20KingfisherCompatibleP", "runLoopMode"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "setNeedsDisplay"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "startAnimating"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "stopAnimating"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "superview"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "updateFrame"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "window"]
+- !private ["6SaveUp11ImageSourceC", "imageRef"]
+- ["6SaveUp10KingfisherC", "CGImageSource"]
+- !private ["6SaveUp10KingfisherC", "CGImageSourceCopyPropertiesAtIndex"]
+- !private ["6SaveUp10KingfisherC", "Dictionary"]
+- ["6SaveUp10KingfisherC", "Double"]
+- ["6SaveUp10KingfisherC", "Int"]
+- ["6SaveUp10KingfisherC", "String"]
+- !private ["6SaveUp10KingfisherC", "base"]
+- ["6SaveUp10KingfisherC", "gifProperties"]
+- !private ["6SaveUp10KingfisherC", "imageSource"]
+- !private ["6SaveUp10KingfisherC", "kCGImagePropertyGIFDictionary"]
+- !private ["6SaveUp10KingfisherC", "resize"]
+- !private ["6SaveUp20KingfisherCompatibleP", "Animator"]
+- ["6SaveUp20KingfisherCompatibleP", "CADisplayLink"]
+- ["6SaveUp20KingfisherCompatibleP", "CompatibleType"]
+- !private ["6SaveUp20KingfisherCompatibleP", "Double"]
+- ["6SaveUp20KingfisherCompatibleP", "RepeatCount"]
+- ["6SaveUp20KingfisherCompatibleP", "RunLoop"]
+- ["6SaveUp20KingfisherCompatibleP", "TargetProxy"]
+- ["6SaveUp20KingfisherCompatibleP", ""]
+- ["6SaveUp20KingfisherCompatibleP", "_Default_CompatibleType"]
+- ["6SaveUp20KingfisherCompatibleP", "animator"]
+- !private ["6SaveUp20KingfisherCompatibleP", "autoPlayAnimatedImage"]
+- !private ["6SaveUp20KingfisherCompatibleP", "bounds"]
+- !private ["6SaveUp20KingfisherCompatibleP", "cgImage"]
+- !private ["6SaveUp20KingfisherCompatibleP", "contentMode"]
+- !private ["6SaveUp20KingfisherCompatibleP", "delegate"]
+- !private ["6SaveUp20KingfisherCompatibleP", "didMove"]
+- !private ["6SaveUp20KingfisherCompatibleP", "didMoveToSuperview"]
+- !private ["6SaveUp20KingfisherCompatibleP", "didMoveToWindow"]
+- !private ["6SaveUp20KingfisherCompatibleP", "displayLink"]
+- !private ["6SaveUp20KingfisherCompatibleP", "framePreloadCount"]
+- !private ["6SaveUp20KingfisherCompatibleP", "image"]
+- !private ["6SaveUp20KingfisherCompatibleP", "init"]
+- !private ["6SaveUp20KingfisherCompatibleP", "isAnimating"]
+- ["6SaveUp20KingfisherCompatibleP", "isDisplayLinkInitialized"]
+- ["6SaveUp20KingfisherCompatibleP", "kf"]
+- !private ["6SaveUp20KingfisherCompatibleP", "layer"]
+- !private ["6SaveUp20KingfisherCompatibleP", "needsPrescaling"]
+- !private ["6SaveUp20KingfisherCompatibleP", "repeatCount"]
+- !private ["6SaveUp20KingfisherCompatibleP", "reset"]
+- ["6SaveUp20KingfisherCompatibleP", "runLoopMode"]
+- !private ["6SaveUp20KingfisherCompatibleP", "setNeedsDisplay"]
+- !private ["6SaveUp20KingfisherCompatibleP", "startAnimating"]
+- !private ["6SaveUp20KingfisherCompatibleP", "stopAnimating"]
+- !private ["6SaveUp20KingfisherCompatibleP", "superview"]
+- !private ["6SaveUp20KingfisherCompatibleP", "updateFrame"]
+- !private ["6SaveUp20KingfisherCompatibleP", "window"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - ["So13NSRunLoopModea", "common"]
 - !private ["SM", "count"]
@@ -865,9 +865,9 @@ depends-member:
 - ["So9OS_objectC", "init"]
 - !private ["Sq", "map"]
 - ["Sq", "none"]
-- !private ["9SaveUp_BD11PlaceholderP", "cgImage"]
-- !private ["9SaveUp_BD11PlaceholderP", "init"]
-- !private ["9SaveUp_BD11PlaceholderP", "kf"]
+- !private ["6SaveUp11PlaceholderP", "cgImage"]
+- !private ["6SaveUp11PlaceholderP", "init"]
+- !private ["6SaveUp11PlaceholderP", "kf"]
 - !private ["Sk", "count"]
 - !private ["Sk", "indices"]
 - ["Sk", "init"]
@@ -883,14 +883,14 @@ depends-member:
 - !private ["Sm", "subscript"]
 - ["SY", "common"]
 - ["SY", "scaleToFill"]
-- ["9SaveUp_BD17AnimatedImageViewC11RepeatCountO", "=="]
-- ["9SaveUp_BD17AnimatedImageViewC11RepeatCountO", "Bool"]
-- ["9SaveUp_BD17AnimatedImageViewC11RepeatCountO", "RepeatCount"]
-- ["9SaveUp_BD17AnimatedImageViewC11RepeatCountO", "UInt"]
-- ["9SaveUp_BD17AnimatedImageViewC11RepeatCountO", "deinit"]
-- ["9SaveUp_BD17AnimatedImageViewC11RepeatCountO", "finite"]
-- ["9SaveUp_BD17AnimatedImageViewC11RepeatCountO", "infinite"]
-- ["9SaveUp_BD17AnimatedImageViewC11RepeatCountO", "once"]
+- ["6SaveUp17AnimatedImageViewC11RepeatCountO", "=="]
+- ["6SaveUp17AnimatedImageViewC11RepeatCountO", "Bool"]
+- ["6SaveUp17AnimatedImageViewC11RepeatCountO", "RepeatCount"]
+- ["6SaveUp17AnimatedImageViewC11RepeatCountO", "UInt"]
+- ["6SaveUp17AnimatedImageViewC11RepeatCountO", "deinit"]
+- ["6SaveUp17AnimatedImageViewC11RepeatCountO", "finite"]
+- ["6SaveUp17AnimatedImageViewC11RepeatCountO", "infinite"]
+- ["6SaveUp17AnimatedImageViewC11RepeatCountO", "once"]
 - ["So9NSRunLoopC", "Mode"]
 - ["So9NSRunLoopC", "main"]
 - !private ["s10SIMDScalarP", "init"]
@@ -906,10 +906,10 @@ depends-member:
 - !private ["ST", "subscript"]
 - !private ["s13SignedNumericP", "init"]
 - !private ["Sx", "init"]
-- ["9SaveUp_BD17AnimatedImageViewC11TargetProxyC", "AnimatedImageView"]
-- ["9SaveUp_BD17AnimatedImageViewC11TargetProxyC", "init"]
-- ["9SaveUp_BD17AnimatedImageViewC11TargetProxyC", "onScreenUpdate"]
-- !private ["9SaveUp_BD17AnimatedImageViewC11TargetProxyC", "target"]
+- ["6SaveUp17AnimatedImageViewC11TargetProxyC", "AnimatedImageView"]
+- ["6SaveUp17AnimatedImageViewC11TargetProxyC", "init"]
+- ["6SaveUp17AnimatedImageViewC11TargetProxyC", "onScreenUpdate"]
+- !private ["6SaveUp17AnimatedImageViewC11TargetProxyC", "target"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "Animator"]
 - ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "CADisplayLink"]
@@ -1686,11 +1686,11 @@ depends-nominal:
 - "10Accelerate0A6BufferP"
 - "10Accelerate0A13MutableBufferP"
 - !private "s18AdditiveArithmeticP"
-- "9SaveUp_BD13AnimatedFrameV"
-- "9SaveUp_BD17AnimatedImageViewC"
-- "9SaveUp_BD25AnimatedImageViewDelegateP"
-- "9SaveUp_BD8AnimatorC"
-- "9SaveUp_BD16AnimatorDelegateP"
+- "6SaveUp13AnimatedFrameV"
+- "6SaveUp17AnimatedImageViewC"
+- "6SaveUp25AnimatedImageViewDelegateP"
+- "6SaveUp8AnimatorC"
+- "6SaveUp16AnimatorDelegateP"
 - "Sa"
 - "SK"
 - !private "SB"
@@ -1723,9 +1723,9 @@ depends-nominal:
 - "s23ExpressibleByNilLiteralP"
 - !private "SF"
 - "SH"
-- !private "9SaveUp_BD11ImageSourceC"
-- "9SaveUp_BD10KingfisherC"
-- "9SaveUp_BD20KingfisherCompatibleP"
+- !private "6SaveUp11ImageSourceC"
+- "6SaveUp10KingfisherC"
+- "6SaveUp20KingfisherCompatibleP"
 - !private "s25LosslessStringConvertibleP"
 - "So13NSRunLoopModea"
 - "SM"
@@ -1743,20 +1743,20 @@ depends-nominal:
 - !private "Sj"
 - "So9OS_objectC"
 - "Sq"
-- !private "9SaveUp_BD11PlaceholderP"
+- !private "6SaveUp11PlaceholderP"
 - "Sk"
 - !private "Sn"
 - !private "SX"
 - "Sm"
 - "SY"
-- "9SaveUp_BD17AnimatedImageViewC11RepeatCountO"
+- "6SaveUp17AnimatedImageViewC11RepeatCountO"
 - "So9NSRunLoopC"
 - !private "s10SIMDScalarP"
 - "7Combine9SchedulerP"
 - "ST"
 - !private "s13SignedNumericP"
 - !private "Sx"
-- "9SaveUp_BD17AnimatedImageViewC11TargetProxyC"
+- "6SaveUp17AnimatedImageViewC11TargetProxyC"
 - !private "s20TextOutputStreamableP"
 - "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
@@ -1841,6 +1841,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CATransform3D.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUUID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUUID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
@@ -1851,6 +1853,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Sparse/BLAS.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/alloca.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Alpha.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/LinearAlgebra.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
@@ -1859,6 +1865,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolMetadata.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/quota.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach-o/stab.h"
@@ -2034,6 +2041,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIFilterShape.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureScope.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFResponseType.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFButtonType.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/ctype.h"
@@ -2045,6 +2053,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/xlocale/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/runetype.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKitCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/semaphore.h"
@@ -2069,6 +2078,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/trace_base.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/readpassphrase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLResponse.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchResponse.h"
@@ -2082,9 +2092,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSCompoundPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSComparisonPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginFlowState.h"
@@ -2109,6 +2121,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/net/if.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_offsetof.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBag.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FIRRemoteConfig.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLHeading.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemsConfigurationReading.h"
@@ -2174,6 +2188,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/shims/KeyPath.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/math.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/tgmath.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/kauth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/objc/objc-api.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/port_obj.h"
@@ -2194,6 +2210,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_task.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecSharedCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDecimal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/signal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/machine/signal.h"
@@ -2209,6 +2228,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIKernel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/dyld_kernel.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES3/gl.h"
@@ -2310,6 +2330,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileVersion.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Conversion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneSession.h"
@@ -2342,6 +2363,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Quadrature/Integration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderItemDecoration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStateRestoration.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteConfiguration.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PayPalMobile/PayPalConfiguration.h"
@@ -2410,6 +2432,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProcessInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach_debug/ipc_info.h"
@@ -2453,6 +2477,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/workloop.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/grp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarButtonItemGroup.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/group.h"
@@ -2479,6 +2504,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/FileProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingCurveProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemProvider.h"
@@ -2588,6 +2622,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextDragPreviewRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKTileOverlayRenderer.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchCompleter.h"
@@ -2711,6 +2746,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFontMetrics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_statistics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetDiagnostics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPreferences.h"
@@ -2720,6 +2757,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/vImage_Utilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPathUtilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageProperties.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/times.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTDefines.h"
@@ -2774,6 +2814,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/secure/_strings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/paths.h"
@@ -2826,6 +2868,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityAdditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneDefinitions.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapSnapshotOptions.h"
@@ -2844,6 +2887,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPreviewParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDragPreviewParameters.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetworkErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManagerErrors.h"
@@ -3010,7 +3054,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mach_init.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_inherit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLVisit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
@@ -3203,7 +3249,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/activity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProxy.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Modules/module.modulemap"

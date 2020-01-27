@@ -2,9 +2,9 @@
 provides-top-level:
 - "NearMeListTableViewController"
 provides-nominal:
-- "9SaveUp_BD29NearMeListTableViewControllerC"
+- "6SaveUp29NearMeListTableViewControllerC"
 provides-member:
-- ["9SaveUp_BD29NearMeListTableViewControllerC", ""]
+- ["6SaveUp29NearMeListTableViewControllerC", ""]
 provides-dynamic-lookup:
 - "locationManager"
 - "numberOfSections"
@@ -22,7 +22,7 @@ depends-top-level:
 - !private "Api_Base_URL"
 - "AssignmentPrecedence"
 - "Bool"
-- !private "BooleanLiteralType"
+- "BooleanLiteralType"
 - "CGFloat"
 - !private "CGRect"
 - "CLLocation"
@@ -41,7 +41,6 @@ depends-top-level:
 - "NearMe"
 - "NearMeListTableViewController"
 - !private "NearmeViewController"
-- !private "Reachability"
 - !private "StoreDetailsViewController"
 - "String"
 - "StringLiteralType"
@@ -59,7 +58,7 @@ depends-top-level:
 - !private "URLRequest"
 - !private "URLSession"
 - !private "UserDefaults"
-- !private "kCLLocationAccuracyBest"
+- "kCLLocationAccuracyNearestTenMeters"
 - !private "messageFont"
 - !private "print"
 depends-member:
@@ -116,7 +115,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "kf"]
 - !private ["So15CALayerDelegateP", "makeToast"]
-- !private ["So15CALayerDelegateP", "makeToastActivity"]
 - !private ["So15CALayerDelegateP", "reloadData"]
 - !private ["So15CALayerDelegateP", "setImage"]
 - !private ["So15CALayerDelegateP", "setNeedsLayout"]
@@ -127,11 +125,15 @@ depends-member:
 - !private ["So6CGRectV", "height"]
 - !private ["So6CGRectV", "init"]
 - !private ["So6CGRectV", "width"]
+- ["So14CLActivityTypeV", "automotiveNavigation"]
 - !private ["So10CLLocationC", "coordinate"]
 - !private ["So22CLLocationCoordinate2DV", "latitude"]
 - !private ["So22CLLocationCoordinate2DV", "longitude"]
-- !private ["So17CLLocationManagerC", "delegate"]
-- !private ["So17CLLocationManagerC", "desiredAccuracy"]
+- ["So17CLLocationManagerC", "activityType"]
+- ["So17CLLocationManagerC", "allowsBackgroundLocationUpdates"]
+- ["So17CLLocationManagerC", "delegate"]
+- ["So17CLLocationManagerC", "desiredAccuracy"]
+- ["So17CLLocationManagerC", "distanceFilter"]
 - ["So17CLLocationManagerC", "init"]
 - !private ["So17CLLocationManagerC", "locationServicesEnabled"]
 - !private ["So17CLLocationManagerC", "requestAlwaysAuthorization"]
@@ -146,7 +148,6 @@ depends-member:
 - !private ["So25CLLocationManagerDelegateP", "JSONSerialization"]
 - !private ["So25CLLocationManagerDelegateP", "NSURL"]
 - ["So25CLLocationManagerDelegateP", "NearMe"]
-- !private ["So25CLLocationManagerDelegateP", "Reachability"]
 - ["So25CLLocationManagerDelegateP", "String"]
 - !private ["So25CLLocationManagerDelegateP", "StringToURL"]
 - !private ["So25CLLocationManagerDelegateP", "ToastStyle"]
@@ -161,8 +162,7 @@ depends-member:
 - ["So25CLLocationManagerDelegateP", ""]
 - !private ["So25CLLocationManagerDelegateP", "currentLat"]
 - !private ["So25CLLocationManagerDelegateP", "currentLong"]
-- !private ["So25CLLocationManagerDelegateP", "determineMyCurrentLocation"]
-- !private ["So25CLLocationManagerDelegateP", "kCLLocationAccuracyBest"]
+- ["So25CLLocationManagerDelegateP", "kCLLocationAccuracyNearestTenMeters"]
 - ["So25CLLocationManagerDelegateP", "locationManager"]
 - ["So25CLLocationManagerDelegateP", "locationManagerDidPauseLocationUpdates"]
 - ["So25CLLocationManagerDelegateP", "locationManagerDidResumeLocationUpdates"]
@@ -174,7 +174,6 @@ depends-member:
 - !private ["So25CLLocationManagerDelegateP", "nearmeArray"]
 - !private ["So25CLLocationManagerDelegateP", "print"]
 - !private ["So25CLLocationManagerDelegateP", "showMapView"]
-- !private ["So25CLLocationManagerDelegateP", "showNetworkErrorAlert"]
 - !private ["So25CLLocationManagerDelegateP", "storyboard"]
 - !private ["So25CLLocationManagerDelegateP", "tableView"]
 - !private ["So25CLLocationManagerDelegateP", "title"]
@@ -189,7 +188,6 @@ depends-member:
 - !private ["s7CVarArgP", "JSONSerialization"]
 - !private ["s7CVarArgP", "NSURL"]
 - ["s7CVarArgP", "NearMe"]
-- !private ["s7CVarArgP", "Reachability"]
 - !private ["s7CVarArgP", "State"]
 - ["s7CVarArgP", "String"]
 - !private ["s7CVarArgP", "StringToURL"]
@@ -203,7 +201,9 @@ depends-member:
 - !private ["s7CVarArgP", "URLSession"]
 - !private ["s7CVarArgP", "UserDefaults"]
 - ["s7CVarArgP", ""]
+- ["s7CVarArgP", "activityType"]
 - !private ["s7CVarArgP", "addTarget"]
+- ["s7CVarArgP", "allowsBackgroundLocationUpdates"]
 - !private ["s7CVarArgP", "append"]
 - !private ["s7CVarArgP", "async"]
 - !private ["s7CVarArgP", "black"]
@@ -216,11 +216,11 @@ depends-member:
 - !private ["s7CVarArgP", "data"]
 - !private ["s7CVarArgP", "dataSource"]
 - !private ["s7CVarArgP", "dataTask"]
-- !private ["s7CVarArgP", "delegate"]
+- ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "dequeueReusableCell"]
-- !private ["s7CVarArgP", "desiredAccuracy"]
+- ["s7CVarArgP", "desiredAccuracy"]
 - !private ["s7CVarArgP", "detailTextLabel"]
-- !private ["s7CVarArgP", "determineMyCurrentLocation"]
+- ["s7CVarArgP", "distanceFilter"]
 - !private ["s7CVarArgP", "frame"]
 - !private ["s7CVarArgP", "hideToastActivity"]
 - !private ["s7CVarArgP", "image"]
@@ -228,7 +228,7 @@ depends-member:
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "instantiateViewController"]
 - !private ["s7CVarArgP", "jsonObject"]
-- !private ["s7CVarArgP", "kCLLocationAccuracyBest"]
+- ["s7CVarArgP", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["s7CVarArgP", "kf"]
 - ["s7CVarArgP", "locationManager"]
 - ["s7CVarArgP", "locationManagerDidPauseLocationUpdates"]
@@ -237,7 +237,6 @@ depends-member:
 - !private ["s7CVarArgP", "locationServicesEnabled"]
 - !private ["s7CVarArgP", "main"]
 - !private ["s7CVarArgP", "makeToast"]
-- !private ["s7CVarArgP", "makeToastActivity"]
 - !private ["s7CVarArgP", "merchant_id"]
 - !private ["s7CVarArgP", "messageFont"]
 - !private ["s7CVarArgP", "navigationController"]
@@ -259,7 +258,6 @@ depends-member:
 - !private ["s7CVarArgP", "shared"]
 - !private ["s7CVarArgP", "shop_id"]
 - !private ["s7CVarArgP", "showMapView"]
-- !private ["s7CVarArgP", "showNetworkErrorAlert"]
 - !private ["s7CVarArgP", "standard"]
 - !private ["s7CVarArgP", "startUpdatingHeading"]
 - !private ["s7CVarArgP", "startUpdatingLocation"]
@@ -312,7 +310,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "JSONSerialization"]
 - !private ["s28CustomDebugStringConvertibleP", "NSURL"]
 - ["s28CustomDebugStringConvertibleP", "NearMe"]
-- !private ["s28CustomDebugStringConvertibleP", "Reachability"]
 - !private ["s28CustomDebugStringConvertibleP", "State"]
 - ["s28CustomDebugStringConvertibleP", "String"]
 - !private ["s28CustomDebugStringConvertibleP", "StringToURL"]
@@ -326,7 +323,9 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "URLSession"]
 - !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- ["s28CustomDebugStringConvertibleP", "activityType"]
 - !private ["s28CustomDebugStringConvertibleP", "addTarget"]
+- ["s28CustomDebugStringConvertibleP", "allowsBackgroundLocationUpdates"]
 - !private ["s28CustomDebugStringConvertibleP", "append"]
 - !private ["s28CustomDebugStringConvertibleP", "async"]
 - !private ["s28CustomDebugStringConvertibleP", "black"]
@@ -340,11 +339,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "data"]
 - !private ["s28CustomDebugStringConvertibleP", "dataSource"]
 - !private ["s28CustomDebugStringConvertibleP", "dataTask"]
-- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
-- !private ["s28CustomDebugStringConvertibleP", "desiredAccuracy"]
+- ["s28CustomDebugStringConvertibleP", "desiredAccuracy"]
 - !private ["s28CustomDebugStringConvertibleP", "detailTextLabel"]
-- !private ["s28CustomDebugStringConvertibleP", "determineMyCurrentLocation"]
+- ["s28CustomDebugStringConvertibleP", "distanceFilter"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "hideToastActivity"]
@@ -355,7 +354,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "jsonObject"]
-- !private ["s28CustomDebugStringConvertibleP", "kCLLocationAccuracyBest"]
+- ["s28CustomDebugStringConvertibleP", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["s28CustomDebugStringConvertibleP", "kf"]
 - ["s28CustomDebugStringConvertibleP", "locationManager"]
 - ["s28CustomDebugStringConvertibleP", "locationManagerDidPauseLocationUpdates"]
@@ -364,7 +363,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "locationServicesEnabled"]
 - !private ["s28CustomDebugStringConvertibleP", "main"]
 - !private ["s28CustomDebugStringConvertibleP", "makeToast"]
-- !private ["s28CustomDebugStringConvertibleP", "makeToastActivity"]
 - !private ["s28CustomDebugStringConvertibleP", "merchant_id"]
 - !private ["s28CustomDebugStringConvertibleP", "messageFont"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
@@ -387,7 +385,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "shop_id"]
 - !private ["s28CustomDebugStringConvertibleP", "showMapView"]
-- !private ["s28CustomDebugStringConvertibleP", "showNetworkErrorAlert"]
 - !private ["s28CustomDebugStringConvertibleP", "standard"]
 - !private ["s28CustomDebugStringConvertibleP", "startUpdatingHeading"]
 - !private ["s28CustomDebugStringConvertibleP", "startUpdatingLocation"]
@@ -422,7 +419,6 @@ depends-member:
 - !private ["s17CustomReflectableP", "httpMethod"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "makeToast"]
-- !private ["s17CustomReflectableP", "makeToastActivity"]
 - !private ["s17CustomReflectableP", "merchant_id"]
 - !private ["s17CustomReflectableP", "object"]
 - !private ["s17CustomReflectableP", "product_count"]
@@ -443,7 +439,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "JSONSerialization"]
 - !private ["s23CustomStringConvertibleP", "NSURL"]
 - ["s23CustomStringConvertibleP", "NearMe"]
-- !private ["s23CustomStringConvertibleP", "Reachability"]
 - !private ["s23CustomStringConvertibleP", "State"]
 - ["s23CustomStringConvertibleP", "String"]
 - !private ["s23CustomStringConvertibleP", "StringToURL"]
@@ -457,7 +452,9 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "URLSession"]
 - !private ["s23CustomStringConvertibleP", "UserDefaults"]
 - ["s23CustomStringConvertibleP", ""]
+- ["s23CustomStringConvertibleP", "activityType"]
 - !private ["s23CustomStringConvertibleP", "addTarget"]
+- ["s23CustomStringConvertibleP", "allowsBackgroundLocationUpdates"]
 - !private ["s23CustomStringConvertibleP", "append"]
 - !private ["s23CustomStringConvertibleP", "appendInterpolation"]
 - !private ["s23CustomStringConvertibleP", "appendLiteral"]
@@ -472,11 +469,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "data"]
 - !private ["s23CustomStringConvertibleP", "dataSource"]
 - !private ["s23CustomStringConvertibleP", "dataTask"]
-- !private ["s23CustomStringConvertibleP", "delegate"]
+- ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
-- !private ["s23CustomStringConvertibleP", "desiredAccuracy"]
+- ["s23CustomStringConvertibleP", "desiredAccuracy"]
 - !private ["s23CustomStringConvertibleP", "detailTextLabel"]
-- !private ["s23CustomStringConvertibleP", "determineMyCurrentLocation"]
+- ["s23CustomStringConvertibleP", "distanceFilter"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - !private ["s23CustomStringConvertibleP", "hideToastActivity"]
 - !private ["s23CustomStringConvertibleP", "httpBody"]
@@ -486,7 +483,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
 - !private ["s23CustomStringConvertibleP", "jsonObject"]
-- !private ["s23CustomStringConvertibleP", "kCLLocationAccuracyBest"]
+- ["s23CustomStringConvertibleP", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["s23CustomStringConvertibleP", "kf"]
 - ["s23CustomStringConvertibleP", "locationManager"]
 - ["s23CustomStringConvertibleP", "locationManagerDidPauseLocationUpdates"]
@@ -495,7 +492,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "locationServicesEnabled"]
 - !private ["s23CustomStringConvertibleP", "main"]
 - !private ["s23CustomStringConvertibleP", "makeToast"]
-- !private ["s23CustomStringConvertibleP", "makeToastActivity"]
 - !private ["s23CustomStringConvertibleP", "merchant_id"]
 - !private ["s23CustomStringConvertibleP", "messageFont"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
@@ -518,7 +514,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "shop_id"]
 - !private ["s23CustomStringConvertibleP", "showMapView"]
-- !private ["s23CustomStringConvertibleP", "showNetworkErrorAlert"]
 - !private ["s23CustomStringConvertibleP", "standard"]
 - !private ["s23CustomStringConvertibleP", "startUpdatingHeading"]
 - !private ["s23CustomStringConvertibleP", "startUpdatingLocation"]
@@ -558,7 +553,6 @@ depends-member:
 - !private ["Se", "hideToastActivity"]
 - ["Se", "init"]
 - !private ["Se", "makeToast"]
-- !private ["Se", "makeToastActivity"]
 - !private ["Se", "reloadData"]
 - !private ["Se", "row"]
 - !private ["Se", "subscript"]
@@ -581,7 +575,6 @@ depends-member:
 - !private ["SE", "hideToastActivity"]
 - ["SE", "init"]
 - !private ["SE", "makeToast"]
-- !private ["SE", "makeToastActivity"]
 - !private ["SE", "reloadData"]
 - !private ["SE", "row"]
 - !private ["SE", "subscript"]
@@ -598,7 +591,6 @@ depends-member:
 - !private ["SQ", "JSONSerialization"]
 - !private ["SQ", "NSURL"]
 - ["SQ", "NearMe"]
-- !private ["SQ", "Reachability"]
 - !private ["SQ", "State"]
 - ["SQ", "String"]
 - !private ["SQ", "StringToURL"]
@@ -612,9 +604,12 @@ depends-member:
 - !private ["SQ", "URLSession"]
 - !private ["SQ", "UserDefaults"]
 - ["SQ", ""]
+- ["SQ", "activityType"]
 - !private ["SQ", "addTarget"]
+- ["SQ", "allowsBackgroundLocationUpdates"]
 - !private ["SQ", "append"]
 - !private ["SQ", "async"]
+- ["SQ", "automotiveNavigation"]
 - !private ["SQ", "black"]
 - !private ["SQ", "bounds"]
 - !private ["SQ", "center"]
@@ -627,11 +622,11 @@ depends-member:
 - !private ["SQ", "data"]
 - !private ["SQ", "dataSource"]
 - !private ["SQ", "dataTask"]
-- !private ["SQ", "delegate"]
+- ["SQ", "delegate"]
 - !private ["SQ", "dequeueReusableCell"]
-- !private ["SQ", "desiredAccuracy"]
+- ["SQ", "desiredAccuracy"]
 - !private ["SQ", "detailTextLabel"]
-- !private ["SQ", "determineMyCurrentLocation"]
+- ["SQ", "distanceFilter"]
 - !private ["SQ", "frame"]
 - !private ["SQ", "height"]
 - !private ["SQ", "hideToastActivity"]
@@ -642,7 +637,7 @@ depends-member:
 - ["SQ", "init"]
 - !private ["SQ", "instantiateViewController"]
 - !private ["SQ", "jsonObject"]
-- !private ["SQ", "kCLLocationAccuracyBest"]
+- ["SQ", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["SQ", "kf"]
 - ["SQ", "locationManager"]
 - ["SQ", "locationManagerDidPauseLocationUpdates"]
@@ -651,7 +646,6 @@ depends-member:
 - !private ["SQ", "locationServicesEnabled"]
 - !private ["SQ", "main"]
 - !private ["SQ", "makeToast"]
-- !private ["SQ", "makeToastActivity"]
 - !private ["SQ", "merchant_id"]
 - !private ["SQ", "messageFont"]
 - !private ["SQ", "mutableContainers"]
@@ -675,7 +669,6 @@ depends-member:
 - !private ["SQ", "shared"]
 - !private ["SQ", "shop_id"]
 - !private ["SQ", "showMapView"]
-- !private ["SQ", "showNetworkErrorAlert"]
 - !private ["SQ", "standard"]
 - !private ["SQ", "startUpdatingHeading"]
 - !private ["SQ", "startUpdatingLocation"]
@@ -721,7 +714,6 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "delegate"]
 - !private ["s23ExpressibleByNilLiteralP", "hideToastActivity"]
 - !private ["s23ExpressibleByNilLiteralP", "makeToast"]
-- !private ["s23ExpressibleByNilLiteralP", "makeToastActivity"]
 - !private ["s23ExpressibleByNilLiteralP", "reloadData"]
 - !private ["s32ExpressibleByStringInterpolationP", "Encoding"]
 - !private ["s32ExpressibleByStringInterpolationP", "data"]
@@ -742,7 +734,6 @@ depends-member:
 - !private ["SH", "JSONSerialization"]
 - !private ["SH", "NSURL"]
 - ["SH", "NearMe"]
-- !private ["SH", "Reachability"]
 - !private ["SH", "State"]
 - ["SH", "String"]
 - !private ["SH", "StringToURL"]
@@ -756,9 +747,12 @@ depends-member:
 - !private ["SH", "URLSession"]
 - !private ["SH", "UserDefaults"]
 - ["SH", ""]
+- ["SH", "activityType"]
 - !private ["SH", "addTarget"]
+- ["SH", "allowsBackgroundLocationUpdates"]
 - !private ["SH", "append"]
 - !private ["SH", "async"]
+- ["SH", "automotiveNavigation"]
 - !private ["SH", "black"]
 - !private ["SH", "bounds"]
 - !private ["SH", "center"]
@@ -771,11 +765,11 @@ depends-member:
 - !private ["SH", "data"]
 - !private ["SH", "dataSource"]
 - !private ["SH", "dataTask"]
-- !private ["SH", "delegate"]
+- ["SH", "delegate"]
 - !private ["SH", "dequeueReusableCell"]
-- !private ["SH", "desiredAccuracy"]
+- ["SH", "desiredAccuracy"]
 - !private ["SH", "detailTextLabel"]
-- !private ["SH", "determineMyCurrentLocation"]
+- ["SH", "distanceFilter"]
 - !private ["SH", "frame"]
 - !private ["SH", "hideToastActivity"]
 - !private ["SH", "httpBody"]
@@ -785,7 +779,7 @@ depends-member:
 - ["SH", "init"]
 - !private ["SH", "instantiateViewController"]
 - !private ["SH", "jsonObject"]
-- !private ["SH", "kCLLocationAccuracyBest"]
+- ["SH", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["SH", "kf"]
 - ["SH", "locationManager"]
 - ["SH", "locationManagerDidPauseLocationUpdates"]
@@ -794,7 +788,6 @@ depends-member:
 - !private ["SH", "locationServicesEnabled"]
 - !private ["SH", "main"]
 - !private ["SH", "makeToast"]
-- !private ["SH", "makeToastActivity"]
 - !private ["SH", "merchant_id"]
 - !private ["SH", "messageFont"]
 - !private ["SH", "navigationController"]
@@ -817,7 +810,6 @@ depends-member:
 - !private ["SH", "shared"]
 - !private ["SH", "shop_id"]
 - !private ["SH", "showMapView"]
-- !private ["SH", "showNetworkErrorAlert"]
 - !private ["SH", "standard"]
 - !private ["SH", "startUpdatingHeading"]
 - !private ["SH", "startUpdatingLocation"]
@@ -841,17 +833,17 @@ depends-member:
 - !private ["SH", "white"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["So19NSJSONSerializationC", "jsonObject"]
-- !private ["9SaveUp_BD10KingfisherC", "setImage"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "ButtonType"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "Encoding"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "addTarget"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "data"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "frame"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "image"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "init"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "kf"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "resized"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "setImage"]
+- !private ["6SaveUp10KingfisherC", "setImage"]
+- !private ["6SaveUp20KingfisherCompatibleP", "ButtonType"]
+- !private ["6SaveUp20KingfisherCompatibleP", "Encoding"]
+- !private ["6SaveUp20KingfisherCompatibleP", "addTarget"]
+- !private ["6SaveUp20KingfisherCompatibleP", "data"]
+- !private ["6SaveUp20KingfisherCompatibleP", "frame"]
+- !private ["6SaveUp20KingfisherCompatibleP", "image"]
+- !private ["6SaveUp20KingfisherCompatibleP", "init"]
+- !private ["6SaveUp20KingfisherCompatibleP", "kf"]
+- !private ["6SaveUp20KingfisherCompatibleP", "resized"]
+- !private ["6SaveUp20KingfisherCompatibleP", "setImage"]
 - !private ["s25LosslessStringConvertibleP", "Encoding"]
 - !private ["s25LosslessStringConvertibleP", "data"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -880,7 +872,6 @@ depends-member:
 - !private ["So8NSCodingP", "JSONSerialization"]
 - !private ["So8NSCodingP", "NSURL"]
 - ["So8NSCodingP", "NearMe"]
-- !private ["So8NSCodingP", "Reachability"]
 - !private ["So8NSCodingP", "State"]
 - ["So8NSCodingP", "String"]
 - !private ["So8NSCodingP", "StringToURL"]
@@ -906,20 +897,18 @@ depends-member:
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "dequeueReusableCell"]
 - !private ["So8NSCodingP", "detailTextLabel"]
-- !private ["So8NSCodingP", "determineMyCurrentLocation"]
 - !private ["So8NSCodingP", "frame"]
 - !private ["So8NSCodingP", "hideToastActivity"]
 - !private ["So8NSCodingP", "image"]
 - !private ["So8NSCodingP", "imageView"]
 - !private ["So8NSCodingP", "init"]
-- !private ["So8NSCodingP", "kCLLocationAccuracyBest"]
+- ["So8NSCodingP", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["So8NSCodingP", "kf"]
 - ["So8NSCodingP", "locationManager"]
 - ["So8NSCodingP", "locationManagerDidPauseLocationUpdates"]
 - ["So8NSCodingP", "locationManagerDidResumeLocationUpdates"]
 - ["So8NSCodingP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["So8NSCodingP", "makeToast"]
-- !private ["So8NSCodingP", "makeToastActivity"]
 - !private ["So8NSCodingP", "messageFont"]
 - !private ["So8NSCodingP", "navigationController"]
 - !private ["So8NSCodingP", "navigationItem"]
@@ -935,7 +924,6 @@ depends-member:
 - !private ["So8NSCodingP", "setNeedsLayout"]
 - !private ["So8NSCodingP", "shop_id"]
 - !private ["So8NSCodingP", "showMapView"]
-- !private ["So8NSCodingP", "showNetworkErrorAlert"]
 - !private ["So8NSCodingP", "storyboard"]
 - !private ["So8NSCodingP", "subscript"]
 - !private ["So8NSCodingP", "tableView"]
@@ -964,7 +952,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "JSONSerialization"]
 - !private ["So26NSExtensionRequestHandlingP", "NSURL"]
 - ["So26NSExtensionRequestHandlingP", "NearMe"]
-- !private ["So26NSExtensionRequestHandlingP", "Reachability"]
 - ["So26NSExtensionRequestHandlingP", "String"]
 - !private ["So26NSExtensionRequestHandlingP", "StringToURL"]
 - !private ["So26NSExtensionRequestHandlingP", "ToastStyle"]
@@ -979,9 +966,8 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", ""]
 - !private ["So26NSExtensionRequestHandlingP", "currentLat"]
 - !private ["So26NSExtensionRequestHandlingP", "currentLong"]
-- !private ["So26NSExtensionRequestHandlingP", "determineMyCurrentLocation"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
-- !private ["So26NSExtensionRequestHandlingP", "kCLLocationAccuracyBest"]
+- ["So26NSExtensionRequestHandlingP", "kCLLocationAccuracyNearestTenMeters"]
 - ["So26NSExtensionRequestHandlingP", "locationManager"]
 - ["So26NSExtensionRequestHandlingP", "locationManagerDidPauseLocationUpdates"]
 - ["So26NSExtensionRequestHandlingP", "locationManagerDidResumeLocationUpdates"]
@@ -995,7 +981,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "pushViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "shop_id"]
 - !private ["So26NSExtensionRequestHandlingP", "showMapView"]
-- !private ["So26NSExtensionRequestHandlingP", "showNetworkErrorAlert"]
 - !private ["So26NSExtensionRequestHandlingP", "storyboard"]
 - !private ["So26NSExtensionRequestHandlingP", "tableView"]
 - !private ["So26NSExtensionRequestHandlingP", "title"]
@@ -1018,6 +1003,7 @@ depends-member:
 - !private ["So16NSMutableCopyingP", "data"]
 - !private ["So16NSMutableCopyingP", "object"]
 - !private ["So16NSMutableCopyingP", "subscript"]
+- ["So8NSObjectC", "$__lazy_storage_$_locationManager"]
 - !private ["So8NSObjectC", "Api_Base_URL"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "ButtonType"]
@@ -1035,7 +1021,6 @@ depends-member:
 - !private ["So8NSObjectC", "NSURL"]
 - ["So8NSObjectC", "NearMe"]
 - !private ["So8NSObjectC", "NearmeViewController"]
-- !private ["So8NSObjectC", "Reachability"]
 - !private ["So8NSObjectC", "State"]
 - !private ["So8NSObjectC", "StoreDetailsViewController"]
 - ["So8NSObjectC", "String"]
@@ -1052,7 +1037,9 @@ depends-member:
 - !private ["So8NSObjectC", "URLRequest"]
 - !private ["So8NSObjectC", "URLSession"]
 - !private ["So8NSObjectC", "UserDefaults"]
+- ["So8NSObjectC", "activityType"]
 - !private ["So8NSObjectC", "addTarget"]
+- ["So8NSObjectC", "allowsBackgroundLocationUpdates"]
 - !private ["So8NSObjectC", "async"]
 - !private ["So8NSObjectC", "black"]
 - !private ["So8NSObjectC", "bounds"]
@@ -1063,11 +1050,12 @@ depends-member:
 - !private ["So8NSObjectC", "data"]
 - !private ["So8NSObjectC", "dataSource"]
 - !private ["So8NSObjectC", "dataTask"]
-- !private ["So8NSObjectC", "delegate"]
+- ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "dequeueReusableCell"]
-- !private ["So8NSObjectC", "desiredAccuracy"]
+- ["So8NSObjectC", "desiredAccuracy"]
 - !private ["So8NSObjectC", "detailTextLabel"]
 - ["So8NSObjectC", "determineMyCurrentLocation"]
+- ["So8NSObjectC", "distanceFilter"]
 - !private ["So8NSObjectC", "frame"]
 - !private ["So8NSObjectC", "hideToastActivity"]
 - !private ["So8NSObjectC", "image"]
@@ -1075,7 +1063,7 @@ depends-member:
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "instantiateViewController"]
 - !private ["So8NSObjectC", "jsonObject"]
-- !private ["So8NSObjectC", "kCLLocationAccuracyBest"]
+- ["So8NSObjectC", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["So8NSObjectC", "kf"]
 - ["So8NSObjectC", "locationManager"]
 - ["So8NSObjectC", "locationManagerDidPauseLocationUpdates"]
@@ -1084,7 +1072,6 @@ depends-member:
 - !private ["So8NSObjectC", "locationServicesEnabled"]
 - !private ["So8NSObjectC", "main"]
 - !private ["So8NSObjectC", "makeToast"]
-- !private ["So8NSObjectC", "makeToastActivity"]
 - ["So8NSObjectC", "merchantArray"]
 - !private ["So8NSObjectC", "merchant_id"]
 - !private ["So8NSObjectC", "messageFont"]
@@ -1109,7 +1096,6 @@ depends-member:
 - !private ["So8NSObjectC", "shared"]
 - !private ["So8NSObjectC", "shop_id"]
 - ["So8NSObjectC", "showMapView"]
-- !private ["So8NSObjectC", "showNetworkErrorAlert"]
 - !private ["So8NSObjectC", "standard"]
 - !private ["So8NSObjectC", "startUpdatingHeading"]
 - !private ["So8NSObjectC", "startUpdatingLocation"]
@@ -1138,7 +1124,6 @@ depends-member:
 - !private ["So8NSObjectP", "JSONSerialization"]
 - !private ["So8NSObjectP", "NSURL"]
 - ["So8NSObjectP", "NearMe"]
-- !private ["So8NSObjectP", "Reachability"]
 - !private ["So8NSObjectP", "State"]
 - ["So8NSObjectP", "String"]
 - !private ["So8NSObjectP", "StringToURL"]
@@ -1152,7 +1137,9 @@ depends-member:
 - !private ["So8NSObjectP", "URLSession"]
 - !private ["So8NSObjectP", "UserDefaults"]
 - ["So8NSObjectP", ""]
+- ["So8NSObjectP", "activityType"]
 - !private ["So8NSObjectP", "addTarget"]
+- ["So8NSObjectP", "allowsBackgroundLocationUpdates"]
 - !private ["So8NSObjectP", "async"]
 - !private ["So8NSObjectP", "black"]
 - !private ["So8NSObjectP", "bounds"]
@@ -1163,11 +1150,11 @@ depends-member:
 - !private ["So8NSObjectP", "data"]
 - !private ["So8NSObjectP", "dataSource"]
 - !private ["So8NSObjectP", "dataTask"]
-- !private ["So8NSObjectP", "delegate"]
+- ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "dequeueReusableCell"]
-- !private ["So8NSObjectP", "desiredAccuracy"]
+- ["So8NSObjectP", "desiredAccuracy"]
 - !private ["So8NSObjectP", "detailTextLabel"]
-- !private ["So8NSObjectP", "determineMyCurrentLocation"]
+- ["So8NSObjectP", "distanceFilter"]
 - !private ["So8NSObjectP", "frame"]
 - !private ["So8NSObjectP", "hideToastActivity"]
 - !private ["So8NSObjectP", "image"]
@@ -1175,7 +1162,7 @@ depends-member:
 - ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "instantiateViewController"]
 - !private ["So8NSObjectP", "jsonObject"]
-- !private ["So8NSObjectP", "kCLLocationAccuracyBest"]
+- ["So8NSObjectP", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["So8NSObjectP", "kf"]
 - ["So8NSObjectP", "locationManager"]
 - ["So8NSObjectP", "locationManagerDidPauseLocationUpdates"]
@@ -1184,7 +1171,6 @@ depends-member:
 - !private ["So8NSObjectP", "locationServicesEnabled"]
 - !private ["So8NSObjectP", "main"]
 - !private ["So8NSObjectP", "makeToast"]
-- !private ["So8NSObjectP", "makeToastActivity"]
 - !private ["So8NSObjectP", "merchant_id"]
 - !private ["So8NSObjectP", "messageFont"]
 - !private ["So8NSObjectP", "navigationController"]
@@ -1206,7 +1192,6 @@ depends-member:
 - !private ["So8NSObjectP", "shared"]
 - !private ["So8NSObjectP", "shop_id"]
 - !private ["So8NSObjectP", "showMapView"]
-- !private ["So8NSObjectP", "showNetworkErrorAlert"]
 - !private ["So8NSObjectP", "standard"]
 - !private ["So8NSObjectP", "startUpdatingHeading"]
 - !private ["So8NSObjectP", "startUpdatingLocation"]
@@ -1237,70 +1222,69 @@ depends-member:
 - !private ["So8NSStringC", "data"]
 - !private ["So15NSTextAlignmentV", "center"]
 - !private ["So5NSURLC", "init"]
-- !private ["9SaveUp_BD6NearMeC", "init"]
-- !private ["9SaveUp_BD6NearMeC", "merchant_id"]
-- !private ["9SaveUp_BD6NearMeC", "product_count"]
-- !private ["9SaveUp_BD6NearMeC", "store_img"]
-- !private ["9SaveUp_BD6NearMeC", "store_name"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "Api_Base_URL"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "Bool"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "CGFloat"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "CGRect"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "CLLocation"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "CLLocationManager"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "DispatchQueue"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "IndexPath"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "Int"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "JSONSerialization"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "NSDictionary"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "NSInteger"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "NSURL"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "NearMe"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "NearmeViewController"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "Reachability"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "StoreDetailsViewController"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "String"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "StringToURL"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "ToastStyle"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "UIBarButtonItem"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "UIButton"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "UIColor"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "UIControl"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "UIImage"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "UITableView"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "UITableViewCell"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "URL"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "URLRequest"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "URLSession"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "UserDefaults"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "currentLat"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "currentLong"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "deinit"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "determineMyCurrentLocation"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "init"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "kCLLocationAccuracyBest"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "locationManager"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "locationManagerDidPauseLocationUpdates"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "locationManagerDidResumeLocationUpdates"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "locationManagerShouldDisplayHeadingCalibration"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "merchantArray"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "messageFont"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "messageToast"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "navigationController"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "navigationItem"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "nearbyApi"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "nearmeArray"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "numberOfSections"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "print"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "showMapView"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "showNetworkErrorAlert"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "storyboard"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "tableView"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "title"]
-- !private ["9SaveUp_BD29NearMeListTableViewControllerC", "view"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "viewDidDisappear"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "viewDidLoad"]
-- ["9SaveUp_BD29NearMeListTableViewControllerC", "viewWillAppear"]
+- !private ["6SaveUp6NearMeC", "init"]
+- !private ["6SaveUp6NearMeC", "merchant_id"]
+- !private ["6SaveUp6NearMeC", "product_count"]
+- !private ["6SaveUp6NearMeC", "store_img"]
+- !private ["6SaveUp6NearMeC", "store_name"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "$__lazy_storage_$_locationManager"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "Api_Base_URL"]
+- ["6SaveUp29NearMeListTableViewControllerC", "Bool"]
+- ["6SaveUp29NearMeListTableViewControllerC", "CGFloat"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "CGRect"]
+- ["6SaveUp29NearMeListTableViewControllerC", "CLLocation"]
+- ["6SaveUp29NearMeListTableViewControllerC", "CLLocationManager"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "DispatchQueue"]
+- ["6SaveUp29NearMeListTableViewControllerC", "IndexPath"]
+- ["6SaveUp29NearMeListTableViewControllerC", "Int"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "JSONSerialization"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "NSDictionary"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "NSInteger"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "NSURL"]
+- ["6SaveUp29NearMeListTableViewControllerC", "NearMe"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "NearmeViewController"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "StoreDetailsViewController"]
+- ["6SaveUp29NearMeListTableViewControllerC", "String"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "StringToURL"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "ToastStyle"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "UIBarButtonItem"]
+- ["6SaveUp29NearMeListTableViewControllerC", "UIButton"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "UIColor"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "UIControl"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "UIImage"]
+- ["6SaveUp29NearMeListTableViewControllerC", "UITableView"]
+- ["6SaveUp29NearMeListTableViewControllerC", "UITableViewCell"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "URL"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "URLRequest"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "URLSession"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "UserDefaults"]
+- ["6SaveUp29NearMeListTableViewControllerC", "currentLat"]
+- ["6SaveUp29NearMeListTableViewControllerC", "currentLong"]
+- ["6SaveUp29NearMeListTableViewControllerC", "deinit"]
+- ["6SaveUp29NearMeListTableViewControllerC", "determineMyCurrentLocation"]
+- ["6SaveUp29NearMeListTableViewControllerC", "init"]
+- ["6SaveUp29NearMeListTableViewControllerC", "kCLLocationAccuracyNearestTenMeters"]
+- ["6SaveUp29NearMeListTableViewControllerC", "locationManager"]
+- ["6SaveUp29NearMeListTableViewControllerC", "locationManagerDidPauseLocationUpdates"]
+- ["6SaveUp29NearMeListTableViewControllerC", "locationManagerDidResumeLocationUpdates"]
+- ["6SaveUp29NearMeListTableViewControllerC", "locationManagerShouldDisplayHeadingCalibration"]
+- ["6SaveUp29NearMeListTableViewControllerC", "merchantArray"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "messageFont"]
+- ["6SaveUp29NearMeListTableViewControllerC", "messageToast"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "navigationController"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "navigationItem"]
+- ["6SaveUp29NearMeListTableViewControllerC", "nearbyApi"]
+- ["6SaveUp29NearMeListTableViewControllerC", "nearmeArray"]
+- ["6SaveUp29NearMeListTableViewControllerC", "numberOfSections"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "print"]
+- ["6SaveUp29NearMeListTableViewControllerC", "showMapView"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "storyboard"]
+- ["6SaveUp29NearMeListTableViewControllerC", "tableView"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "title"]
+- !private ["6SaveUp29NearMeListTableViewControllerC", "view"]
+- ["6SaveUp29NearMeListTableViewControllerC", "viewDidDisappear"]
+- ["6SaveUp29NearMeListTableViewControllerC", "viewDidLoad"]
+- ["6SaveUp29NearMeListTableViewControllerC", "viewWillAppear"]
 - !private ["So9OS_objectC", "async"]
 - !private ["So9OS_objectC", "main"]
 - !private ["s9OptionSetP", "init"]
@@ -1310,10 +1294,9 @@ depends-member:
 - !private ["Sq", "delegate"]
 - !private ["Sq", "hideToastActivity"]
 - !private ["Sq", "makeToast"]
-- !private ["Sq", "makeToastActivity"]
 - !private ["Sq", "reloadData"]
-- !private ["9SaveUp_BD11PlaceholderP", "init"]
-- !private ["9SaveUp_BD11PlaceholderP", "resized"]
+- !private ["6SaveUp11PlaceholderP", "init"]
+- !private ["6SaveUp11PlaceholderP", "resized"]
 - !private ["So19NSProgressReportingP", "resume"]
 - !private ["Sk", "append"]
 - !private ["Sk", "count"]
@@ -1334,20 +1317,19 @@ depends-member:
 - !private ["Sm", "store_img"]
 - !private ["Sm", "store_name"]
 - !private ["Sm", "subscript"]
+- ["SY", "automotiveNavigation"]
 - !private ["SY", "center"]
 - !private ["SY", "custom"]
 - !private ["SY", "init"]
 - !private ["SY", "mutableContainers"]
 - !private ["SY", "touchUpInside"]
 - !private ["SY", "utf8"]
-- !private ["9SaveUp_BD12ReachabilityC", "init"]
-- !private ["9SaveUp_BD12ReachabilityC", "isReachable"]
 - !private ["So20NSJSONReadingOptionsV", "mutableContainers"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpBody"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
-- !private ["9SaveUp_BD14ReviewDelegateP", "shop_id"]
+- !private ["6SaveUp14ReviewDelegateP", "shop_id"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "main"]
 - !private ["ST", "Encoding"]
@@ -1366,7 +1348,7 @@ depends-member:
 - !private ["s10SetAlgebraP", "mutableContainers"]
 - !private ["s10SetAlgebraP", "touchUpInside"]
 - !private ["So14UIControlStateV", "init"]
-- !private ["9SaveUp_BD26StoreDetailsViewControllerC", "shop_id"]
+- !private ["6SaveUp26StoreDetailsViewControllerC", "shop_id"]
 - !private ["SS", "Encoding"]
 - !private ["SS", "data"]
 - !private ["SS", "init"]
@@ -1383,13 +1365,13 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "Encoding"]
 - !private ["s20TextOutputStreamableP", "data"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["9SaveUp_BD13ToastPositionO", "center"]
-- !private ["9SaveUp_BD13ToastPositionO", "top"]
-- !private ["9SaveUp_BD10ToastStyleV", "backgroundColor"]
-- !private ["9SaveUp_BD10ToastStyleV", "init"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageAlignment"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageColor"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageFont"]
+- !private ["6SaveUp13ToastPositionO", "center"]
+- !private ["6SaveUp13ToastPositionO", "top"]
+- !private ["6SaveUp10ToastStyleV", "backgroundColor"]
+- !private ["6SaveUp10ToastStyleV", "init"]
+- !private ["6SaveUp10ToastStyleV", "messageAlignment"]
+- !private ["6SaveUp10ToastStyleV", "messageColor"]
+- !private ["6SaveUp10ToastStyleV", "messageFont"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "ButtonType"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "frame"]
@@ -1414,7 +1396,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "kf"]
 - !private ["So29UIAccessibilityIdentificationP", "makeToast"]
-- !private ["So29UIAccessibilityIdentificationP", "makeToastActivity"]
 - !private ["So29UIAccessibilityIdentificationP", "reloadData"]
 - !private ["So29UIAccessibilityIdentificationP", "resized"]
 - !private ["So29UIAccessibilityIdentificationP", "setImage"]
@@ -1438,7 +1419,6 @@ depends-member:
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "kf"]
 - !private ["So12UIAppearanceP", "makeToast"]
-- !private ["So12UIAppearanceP", "makeToastActivity"]
 - !private ["So12UIAppearanceP", "reloadData"]
 - !private ["So12UIAppearanceP", "setImage"]
 - !private ["So12UIAppearanceP", "setNeedsLayout"]
@@ -1453,7 +1433,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "JSONSerialization"]
 - !private ["So21UIAppearanceContainerP", "NSURL"]
 - ["So21UIAppearanceContainerP", "NearMe"]
-- !private ["So21UIAppearanceContainerP", "Reachability"]
 - !private ["So21UIAppearanceContainerP", "State"]
 - ["So21UIAppearanceContainerP", "String"]
 - !private ["So21UIAppearanceContainerP", "StringToURL"]
@@ -1476,20 +1455,18 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "delegate"]
 - !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
 - !private ["So21UIAppearanceContainerP", "detailTextLabel"]
-- !private ["So21UIAppearanceContainerP", "determineMyCurrentLocation"]
 - !private ["So21UIAppearanceContainerP", "frame"]
 - !private ["So21UIAppearanceContainerP", "hideToastActivity"]
 - !private ["So21UIAppearanceContainerP", "image"]
 - !private ["So21UIAppearanceContainerP", "imageView"]
 - !private ["So21UIAppearanceContainerP", "init"]
-- !private ["So21UIAppearanceContainerP", "kCLLocationAccuracyBest"]
+- ["So21UIAppearanceContainerP", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["So21UIAppearanceContainerP", "kf"]
 - ["So21UIAppearanceContainerP", "locationManager"]
 - ["So21UIAppearanceContainerP", "locationManagerDidPauseLocationUpdates"]
 - ["So21UIAppearanceContainerP", "locationManagerDidResumeLocationUpdates"]
 - ["So21UIAppearanceContainerP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["So21UIAppearanceContainerP", "makeToast"]
-- !private ["So21UIAppearanceContainerP", "makeToastActivity"]
 - !private ["So21UIAppearanceContainerP", "messageFont"]
 - !private ["So21UIAppearanceContainerP", "navigationController"]
 - !private ["So21UIAppearanceContainerP", "navigationItem"]
@@ -1502,7 +1479,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "setNeedsLayout"]
 - !private ["So21UIAppearanceContainerP", "shop_id"]
 - !private ["So21UIAppearanceContainerP", "showMapView"]
-- !private ["So21UIAppearanceContainerP", "showNetworkErrorAlert"]
 - !private ["So21UIAppearanceContainerP", "storyboard"]
 - !private ["So21UIAppearanceContainerP", "tableView"]
 - !private ["So21UIAppearanceContainerP", "text"]
@@ -1529,7 +1505,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "JSONSerialization"]
 - !private ["So18UIContentContainerP", "NSURL"]
 - ["So18UIContentContainerP", "NearMe"]
-- !private ["So18UIContentContainerP", "Reachability"]
 - ["So18UIContentContainerP", "String"]
 - !private ["So18UIContentContainerP", "StringToURL"]
 - !private ["So18UIContentContainerP", "ToastStyle"]
@@ -1544,9 +1519,8 @@ depends-member:
 - ["So18UIContentContainerP", ""]
 - !private ["So18UIContentContainerP", "currentLat"]
 - !private ["So18UIContentContainerP", "currentLong"]
-- !private ["So18UIContentContainerP", "determineMyCurrentLocation"]
 - !private ["So18UIContentContainerP", "init"]
-- !private ["So18UIContentContainerP", "kCLLocationAccuracyBest"]
+- ["So18UIContentContainerP", "kCLLocationAccuracyNearestTenMeters"]
 - ["So18UIContentContainerP", "locationManager"]
 - ["So18UIContentContainerP", "locationManagerDidPauseLocationUpdates"]
 - ["So18UIContentContainerP", "locationManagerDidResumeLocationUpdates"]
@@ -1560,7 +1534,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "pushViewController"]
 - !private ["So18UIContentContainerP", "shop_id"]
 - !private ["So18UIContentContainerP", "showMapView"]
-- !private ["So18UIContentContainerP", "showNetworkErrorAlert"]
 - !private ["So18UIContentContainerP", "storyboard"]
 - !private ["So18UIContentContainerP", "tableView"]
 - !private ["So18UIContentContainerP", "title"]
@@ -1593,7 +1566,6 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "kf"]
 - !private ["So17UICoordinateSpaceP", "makeToast"]
-- !private ["So17UICoordinateSpaceP", "makeToastActivity"]
 - !private ["So17UICoordinateSpaceP", "reloadData"]
 - !private ["So17UICoordinateSpaceP", "setImage"]
 - !private ["So17UICoordinateSpaceP", "setNeedsLayout"]
@@ -1620,7 +1592,6 @@ depends-member:
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "kf"]
 - !private ["So13UIDynamicItemP", "makeToast"]
-- !private ["So13UIDynamicItemP", "makeToastActivity"]
 - !private ["So13UIDynamicItemP", "reloadData"]
 - !private ["So13UIDynamicItemP", "setImage"]
 - !private ["So13UIDynamicItemP", "setNeedsLayout"]
@@ -1635,7 +1606,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "JSONSerialization"]
 - !private ["So18UIFocusEnvironmentP", "NSURL"]
 - ["So18UIFocusEnvironmentP", "NearMe"]
-- !private ["So18UIFocusEnvironmentP", "Reachability"]
 - !private ["So18UIFocusEnvironmentP", "State"]
 - ["So18UIFocusEnvironmentP", "String"]
 - !private ["So18UIFocusEnvironmentP", "StringToURL"]
@@ -1658,20 +1628,18 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "delegate"]
 - !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UIFocusEnvironmentP", "detailTextLabel"]
-- !private ["So18UIFocusEnvironmentP", "determineMyCurrentLocation"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
 - !private ["So18UIFocusEnvironmentP", "hideToastActivity"]
 - !private ["So18UIFocusEnvironmentP", "image"]
 - !private ["So18UIFocusEnvironmentP", "imageView"]
 - !private ["So18UIFocusEnvironmentP", "init"]
-- !private ["So18UIFocusEnvironmentP", "kCLLocationAccuracyBest"]
+- ["So18UIFocusEnvironmentP", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["So18UIFocusEnvironmentP", "kf"]
 - ["So18UIFocusEnvironmentP", "locationManager"]
 - ["So18UIFocusEnvironmentP", "locationManagerDidPauseLocationUpdates"]
 - ["So18UIFocusEnvironmentP", "locationManagerDidResumeLocationUpdates"]
 - ["So18UIFocusEnvironmentP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["So18UIFocusEnvironmentP", "makeToast"]
-- !private ["So18UIFocusEnvironmentP", "makeToastActivity"]
 - !private ["So18UIFocusEnvironmentP", "messageFont"]
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
 - !private ["So18UIFocusEnvironmentP", "navigationItem"]
@@ -1684,7 +1652,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "setNeedsLayout"]
 - !private ["So18UIFocusEnvironmentP", "shop_id"]
 - !private ["So18UIFocusEnvironmentP", "showMapView"]
-- !private ["So18UIFocusEnvironmentP", "showNetworkErrorAlert"]
 - !private ["So18UIFocusEnvironmentP", "storyboard"]
 - !private ["So18UIFocusEnvironmentP", "tableView"]
 - !private ["So18UIFocusEnvironmentP", "text"]
@@ -1711,7 +1678,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "kf"]
 - !private ["So11UIFocusItemP", "makeToast"]
-- !private ["So11UIFocusItemP", "makeToastActivity"]
 - !private ["So11UIFocusItemP", "reloadData"]
 - !private ["So11UIFocusItemP", "setImage"]
 - !private ["So11UIFocusItemP", "setNeedsLayout"]
@@ -1734,7 +1700,6 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "kf"]
 - !private ["So20UIFocusItemContainerP", "makeToast"]
-- !private ["So20UIFocusItemContainerP", "makeToastActivity"]
 - !private ["So20UIFocusItemContainerP", "reloadData"]
 - !private ["So20UIFocusItemContainerP", "setImage"]
 - !private ["So20UIFocusItemContainerP", "setNeedsLayout"]
@@ -1774,7 +1739,6 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "init"]
 - !private ["So24UILargeContentViewerItemP", "kf"]
 - !private ["So24UILargeContentViewerItemP", "makeToast"]
-- !private ["So24UILargeContentViewerItemP", "makeToastActivity"]
 - !private ["So24UILargeContentViewerItemP", "reloadData"]
 - !private ["So24UILargeContentViewerItemP", "setImage"]
 - !private ["So24UILargeContentViewerItemP", "setNeedsLayout"]
@@ -1792,7 +1756,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "JSONSerialization"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSURL"]
 - ["So30UIPasteConfigurationSupportingP", "NearMe"]
-- !private ["So30UIPasteConfigurationSupportingP", "Reachability"]
 - !private ["So30UIPasteConfigurationSupportingP", "State"]
 - ["So30UIPasteConfigurationSupportingP", "String"]
 - !private ["So30UIPasteConfigurationSupportingP", "StringToURL"]
@@ -1815,20 +1778,18 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "delegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "detailTextLabel"]
-- !private ["So30UIPasteConfigurationSupportingP", "determineMyCurrentLocation"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
 - !private ["So30UIPasteConfigurationSupportingP", "hideToastActivity"]
 - !private ["So30UIPasteConfigurationSupportingP", "image"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageView"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
-- !private ["So30UIPasteConfigurationSupportingP", "kCLLocationAccuracyBest"]
+- ["So30UIPasteConfigurationSupportingP", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["So30UIPasteConfigurationSupportingP", "kf"]
 - ["So30UIPasteConfigurationSupportingP", "locationManager"]
 - ["So30UIPasteConfigurationSupportingP", "locationManagerDidPauseLocationUpdates"]
 - ["So30UIPasteConfigurationSupportingP", "locationManagerDidResumeLocationUpdates"]
 - ["So30UIPasteConfigurationSupportingP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["So30UIPasteConfigurationSupportingP", "makeToast"]
-- !private ["So30UIPasteConfigurationSupportingP", "makeToastActivity"]
 - !private ["So30UIPasteConfigurationSupportingP", "messageFont"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
@@ -1841,7 +1802,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "setNeedsLayout"]
 - !private ["So30UIPasteConfigurationSupportingP", "shop_id"]
 - !private ["So30UIPasteConfigurationSupportingP", "showMapView"]
-- !private ["So30UIPasteConfigurationSupportingP", "showNetworkErrorAlert"]
 - !private ["So30UIPasteConfigurationSupportingP", "storyboard"]
 - !private ["So30UIPasteConfigurationSupportingP", "tableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
@@ -1851,6 +1811,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidDisappear"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewDidLoad"]
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillAppear"]
+- ["So11UIResponderC", "$__lazy_storage_$_locationManager"]
 - !private ["So11UIResponderC", "Api_Base_URL"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "ButtonType"]
@@ -1868,7 +1829,6 @@ depends-member:
 - !private ["So11UIResponderC", "NSURL"]
 - ["So11UIResponderC", "NearMe"]
 - !private ["So11UIResponderC", "NearmeViewController"]
-- !private ["So11UIResponderC", "Reachability"]
 - !private ["So11UIResponderC", "State"]
 - !private ["So11UIResponderC", "StoreDetailsViewController"]
 - ["So11UIResponderC", "String"]
@@ -1900,14 +1860,13 @@ depends-member:
 - !private ["So11UIResponderC", "image"]
 - !private ["So11UIResponderC", "imageView"]
 - ["So11UIResponderC", "init"]
-- !private ["So11UIResponderC", "kCLLocationAccuracyBest"]
+- ["So11UIResponderC", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["So11UIResponderC", "kf"]
 - ["So11UIResponderC", "locationManager"]
 - ["So11UIResponderC", "locationManagerDidPauseLocationUpdates"]
 - ["So11UIResponderC", "locationManagerDidResumeLocationUpdates"]
 - ["So11UIResponderC", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["So11UIResponderC", "makeToast"]
-- !private ["So11UIResponderC", "makeToastActivity"]
 - ["So11UIResponderC", "merchantArray"]
 - !private ["So11UIResponderC", "messageFont"]
 - ["So11UIResponderC", "messageToast"]
@@ -1923,7 +1882,6 @@ depends-member:
 - !private ["So11UIResponderC", "setNeedsLayout"]
 - !private ["So11UIResponderC", "shop_id"]
 - ["So11UIResponderC", "showMapView"]
-- !private ["So11UIResponderC", "showNetworkErrorAlert"]
 - !private ["So11UIResponderC", "storyboard"]
 - ["So11UIResponderC", "tableView"]
 - !private ["So11UIResponderC", "text"]
@@ -1942,7 +1900,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "JSONSerialization"]
 - !private ["So30UIResponderStandardEditActionsP", "NSURL"]
 - ["So30UIResponderStandardEditActionsP", "NearMe"]
-- !private ["So30UIResponderStandardEditActionsP", "Reachability"]
 - !private ["So30UIResponderStandardEditActionsP", "State"]
 - ["So30UIResponderStandardEditActionsP", "String"]
 - !private ["So30UIResponderStandardEditActionsP", "StringToURL"]
@@ -1965,20 +1922,18 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "delegate"]
 - !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
 - !private ["So30UIResponderStandardEditActionsP", "detailTextLabel"]
-- !private ["So30UIResponderStandardEditActionsP", "determineMyCurrentLocation"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
 - !private ["So30UIResponderStandardEditActionsP", "hideToastActivity"]
 - !private ["So30UIResponderStandardEditActionsP", "image"]
 - !private ["So30UIResponderStandardEditActionsP", "imageView"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
-- !private ["So30UIResponderStandardEditActionsP", "kCLLocationAccuracyBest"]
+- ["So30UIResponderStandardEditActionsP", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["So30UIResponderStandardEditActionsP", "kf"]
 - ["So30UIResponderStandardEditActionsP", "locationManager"]
 - ["So30UIResponderStandardEditActionsP", "locationManagerDidPauseLocationUpdates"]
 - ["So30UIResponderStandardEditActionsP", "locationManagerDidResumeLocationUpdates"]
 - ["So30UIResponderStandardEditActionsP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["So30UIResponderStandardEditActionsP", "makeToast"]
-- !private ["So30UIResponderStandardEditActionsP", "makeToastActivity"]
 - !private ["So30UIResponderStandardEditActionsP", "messageFont"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
@@ -1991,7 +1946,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "setNeedsLayout"]
 - !private ["So30UIResponderStandardEditActionsP", "shop_id"]
 - !private ["So30UIResponderStandardEditActionsP", "showMapView"]
-- !private ["So30UIResponderStandardEditActionsP", "showNetworkErrorAlert"]
 - !private ["So30UIResponderStandardEditActionsP", "storyboard"]
 - !private ["So30UIResponderStandardEditActionsP", "tableView"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
@@ -2012,7 +1966,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "JSONSerialization"]
 - !private ["So20UIScrollViewDelegateP", "NSURL"]
 - ["So20UIScrollViewDelegateP", "NearMe"]
-- !private ["So20UIScrollViewDelegateP", "Reachability"]
 - ["So20UIScrollViewDelegateP", "String"]
 - !private ["So20UIScrollViewDelegateP", "StringToURL"]
 - !private ["So20UIScrollViewDelegateP", "ToastStyle"]
@@ -2027,9 +1980,8 @@ depends-member:
 - ["So20UIScrollViewDelegateP", ""]
 - !private ["So20UIScrollViewDelegateP", "currentLat"]
 - !private ["So20UIScrollViewDelegateP", "currentLong"]
-- !private ["So20UIScrollViewDelegateP", "determineMyCurrentLocation"]
 - !private ["So20UIScrollViewDelegateP", "init"]
-- !private ["So20UIScrollViewDelegateP", "kCLLocationAccuracyBest"]
+- ["So20UIScrollViewDelegateP", "kCLLocationAccuracyNearestTenMeters"]
 - ["So20UIScrollViewDelegateP", "locationManager"]
 - ["So20UIScrollViewDelegateP", "locationManagerDidPauseLocationUpdates"]
 - ["So20UIScrollViewDelegateP", "locationManagerDidResumeLocationUpdates"]
@@ -2042,7 +1994,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "print"]
 - !private ["So20UIScrollViewDelegateP", "shop_id"]
 - !private ["So20UIScrollViewDelegateP", "showMapView"]
-- !private ["So20UIScrollViewDelegateP", "showNetworkErrorAlert"]
 - !private ["So20UIScrollViewDelegateP", "storyboard"]
 - !private ["So20UIScrollViewDelegateP", "tableView"]
 - !private ["So20UIScrollViewDelegateP", "title"]
@@ -2066,7 +2017,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "JSONSerialization"]
 - !private ["So16UIStateRestoringP", "NSURL"]
 - ["So16UIStateRestoringP", "NearMe"]
-- !private ["So16UIStateRestoringP", "Reachability"]
 - ["So16UIStateRestoringP", "String"]
 - !private ["So16UIStateRestoringP", "StringToURL"]
 - !private ["So16UIStateRestoringP", "ToastStyle"]
@@ -2081,9 +2031,8 @@ depends-member:
 - ["So16UIStateRestoringP", ""]
 - !private ["So16UIStateRestoringP", "currentLat"]
 - !private ["So16UIStateRestoringP", "currentLong"]
-- !private ["So16UIStateRestoringP", "determineMyCurrentLocation"]
 - !private ["So16UIStateRestoringP", "init"]
-- !private ["So16UIStateRestoringP", "kCLLocationAccuracyBest"]
+- ["So16UIStateRestoringP", "kCLLocationAccuracyNearestTenMeters"]
 - ["So16UIStateRestoringP", "locationManager"]
 - ["So16UIStateRestoringP", "locationManagerDidPauseLocationUpdates"]
 - ["So16UIStateRestoringP", "locationManagerDidResumeLocationUpdates"]
@@ -2097,7 +2046,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "pushViewController"]
 - !private ["So16UIStateRestoringP", "shop_id"]
 - !private ["So16UIStateRestoringP", "showMapView"]
-- !private ["So16UIStateRestoringP", "showNetworkErrorAlert"]
 - !private ["So16UIStateRestoringP", "storyboard"]
 - !private ["So16UIStateRestoringP", "tableView"]
 - !private ["So16UIStateRestoringP", "title"]
@@ -2115,6 +2063,7 @@ depends-member:
 - !private ["So15UITableViewCellC", "imageView"]
 - !private ["So15UITableViewCellC", "setNeedsLayout"]
 - !private ["So15UITableViewCellC", "textLabel"]
+- ["So21UITableViewControllerC", "$__lazy_storage_$_locationManager"]
 - !private ["So21UITableViewControllerC", "Api_Base_URL"]
 - ["So21UITableViewControllerC", "Bool"]
 - ["So21UITableViewControllerC", "CGFloat"]
@@ -2130,7 +2079,6 @@ depends-member:
 - !private ["So21UITableViewControllerC", "NSURL"]
 - ["So21UITableViewControllerC", "NearMe"]
 - !private ["So21UITableViewControllerC", "NearmeViewController"]
-- !private ["So21UITableViewControllerC", "Reachability"]
 - !private ["So21UITableViewControllerC", "StoreDetailsViewController"]
 - ["So21UITableViewControllerC", "String"]
 - !private ["So21UITableViewControllerC", "StringToURL"]
@@ -2151,7 +2099,7 @@ depends-member:
 - ["So21UITableViewControllerC", "currentLong"]
 - ["So21UITableViewControllerC", "determineMyCurrentLocation"]
 - ["So21UITableViewControllerC", "init"]
-- !private ["So21UITableViewControllerC", "kCLLocationAccuracyBest"]
+- ["So21UITableViewControllerC", "kCLLocationAccuracyNearestTenMeters"]
 - ["So21UITableViewControllerC", "locationManager"]
 - ["So21UITableViewControllerC", "locationManagerDidPauseLocationUpdates"]
 - ["So21UITableViewControllerC", "locationManagerDidResumeLocationUpdates"]
@@ -2166,7 +2114,6 @@ depends-member:
 - ["So21UITableViewControllerC", "numberOfSections"]
 - !private ["So21UITableViewControllerC", "print"]
 - ["So21UITableViewControllerC", "showMapView"]
-- !private ["So21UITableViewControllerC", "showNetworkErrorAlert"]
 - !private ["So21UITableViewControllerC", "storyboard"]
 - ["So21UITableViewControllerC", "tableView"]
 - !private ["So21UITableViewControllerC", "title"]
@@ -2181,7 +2128,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "JSONSerialization"]
 - !private ["So21UITableViewDataSourceP", "NSURL"]
 - ["So21UITableViewDataSourceP", "NearMe"]
-- !private ["So21UITableViewDataSourceP", "Reachability"]
 - ["So21UITableViewDataSourceP", "String"]
 - !private ["So21UITableViewDataSourceP", "StringToURL"]
 - !private ["So21UITableViewDataSourceP", "ToastStyle"]
@@ -2196,9 +2142,8 @@ depends-member:
 - ["So21UITableViewDataSourceP", ""]
 - !private ["So21UITableViewDataSourceP", "currentLat"]
 - !private ["So21UITableViewDataSourceP", "currentLong"]
-- !private ["So21UITableViewDataSourceP", "determineMyCurrentLocation"]
 - !private ["So21UITableViewDataSourceP", "init"]
-- !private ["So21UITableViewDataSourceP", "kCLLocationAccuracyBest"]
+- ["So21UITableViewDataSourceP", "kCLLocationAccuracyNearestTenMeters"]
 - ["So21UITableViewDataSourceP", "locationManager"]
 - ["So21UITableViewDataSourceP", "locationManagerDidPauseLocationUpdates"]
 - ["So21UITableViewDataSourceP", "locationManagerDidResumeLocationUpdates"]
@@ -2211,7 +2156,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "print"]
 - !private ["So21UITableViewDataSourceP", "shop_id"]
 - !private ["So21UITableViewDataSourceP", "showMapView"]
-- !private ["So21UITableViewDataSourceP", "showNetworkErrorAlert"]
 - !private ["So21UITableViewDataSourceP", "storyboard"]
 - !private ["So21UITableViewDataSourceP", "tableView"]
 - !private ["So21UITableViewDataSourceP", "title"]
@@ -2226,7 +2170,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "JSONSerialization"]
 - !private ["So19UITableViewDelegateP", "NSURL"]
 - ["So19UITableViewDelegateP", "NearMe"]
-- !private ["So19UITableViewDelegateP", "Reachability"]
 - ["So19UITableViewDelegateP", "String"]
 - !private ["So19UITableViewDelegateP", "StringToURL"]
 - !private ["So19UITableViewDelegateP", "ToastStyle"]
@@ -2241,9 +2184,8 @@ depends-member:
 - ["So19UITableViewDelegateP", ""]
 - !private ["So19UITableViewDelegateP", "currentLat"]
 - !private ["So19UITableViewDelegateP", "currentLong"]
-- !private ["So19UITableViewDelegateP", "determineMyCurrentLocation"]
 - !private ["So19UITableViewDelegateP", "init"]
-- !private ["So19UITableViewDelegateP", "kCLLocationAccuracyBest"]
+- ["So19UITableViewDelegateP", "kCLLocationAccuracyNearestTenMeters"]
 - ["So19UITableViewDelegateP", "locationManager"]
 - ["So19UITableViewDelegateP", "locationManagerDidPauseLocationUpdates"]
 - ["So19UITableViewDelegateP", "locationManagerDidResumeLocationUpdates"]
@@ -2256,7 +2198,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "print"]
 - !private ["So19UITableViewDelegateP", "shop_id"]
 - !private ["So19UITableViewDelegateP", "showMapView"]
-- !private ["So19UITableViewDelegateP", "showNetworkErrorAlert"]
 - !private ["So19UITableViewDelegateP", "storyboard"]
 - !private ["So19UITableViewDelegateP", "tableView"]
 - !private ["So19UITableViewDelegateP", "title"]
@@ -2273,7 +2214,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "JSONSerialization"]
 - !private ["So18UITraitEnvironmentP", "NSURL"]
 - ["So18UITraitEnvironmentP", "NearMe"]
-- !private ["So18UITraitEnvironmentP", "Reachability"]
 - !private ["So18UITraitEnvironmentP", "State"]
 - ["So18UITraitEnvironmentP", "String"]
 - !private ["So18UITraitEnvironmentP", "StringToURL"]
@@ -2296,20 +2236,18 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "delegate"]
 - !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UITraitEnvironmentP", "detailTextLabel"]
-- !private ["So18UITraitEnvironmentP", "determineMyCurrentLocation"]
 - !private ["So18UITraitEnvironmentP", "frame"]
 - !private ["So18UITraitEnvironmentP", "hideToastActivity"]
 - !private ["So18UITraitEnvironmentP", "image"]
 - !private ["So18UITraitEnvironmentP", "imageView"]
 - !private ["So18UITraitEnvironmentP", "init"]
-- !private ["So18UITraitEnvironmentP", "kCLLocationAccuracyBest"]
+- ["So18UITraitEnvironmentP", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["So18UITraitEnvironmentP", "kf"]
 - ["So18UITraitEnvironmentP", "locationManager"]
 - ["So18UITraitEnvironmentP", "locationManagerDidPauseLocationUpdates"]
 - ["So18UITraitEnvironmentP", "locationManagerDidResumeLocationUpdates"]
 - ["So18UITraitEnvironmentP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["So18UITraitEnvironmentP", "makeToast"]
-- !private ["So18UITraitEnvironmentP", "makeToastActivity"]
 - !private ["So18UITraitEnvironmentP", "messageFont"]
 - !private ["So18UITraitEnvironmentP", "navigationController"]
 - !private ["So18UITraitEnvironmentP", "navigationItem"]
@@ -2322,7 +2260,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "setNeedsLayout"]
 - !private ["So18UITraitEnvironmentP", "shop_id"]
 - !private ["So18UITraitEnvironmentP", "showMapView"]
-- !private ["So18UITraitEnvironmentP", "showNetworkErrorAlert"]
 - !private ["So18UITraitEnvironmentP", "storyboard"]
 - !private ["So18UITraitEnvironmentP", "tableView"]
 - !private ["So18UITraitEnvironmentP", "text"]
@@ -2341,7 +2278,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "JSONSerialization"]
 - !private ["So23UIUserActivityRestoringP", "NSURL"]
 - ["So23UIUserActivityRestoringP", "NearMe"]
-- !private ["So23UIUserActivityRestoringP", "Reachability"]
 - !private ["So23UIUserActivityRestoringP", "State"]
 - ["So23UIUserActivityRestoringP", "String"]
 - !private ["So23UIUserActivityRestoringP", "StringToURL"]
@@ -2364,20 +2300,18 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "delegate"]
 - !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
 - !private ["So23UIUserActivityRestoringP", "detailTextLabel"]
-- !private ["So23UIUserActivityRestoringP", "determineMyCurrentLocation"]
 - !private ["So23UIUserActivityRestoringP", "frame"]
 - !private ["So23UIUserActivityRestoringP", "hideToastActivity"]
 - !private ["So23UIUserActivityRestoringP", "image"]
 - !private ["So23UIUserActivityRestoringP", "imageView"]
 - !private ["So23UIUserActivityRestoringP", "init"]
-- !private ["So23UIUserActivityRestoringP", "kCLLocationAccuracyBest"]
+- ["So23UIUserActivityRestoringP", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["So23UIUserActivityRestoringP", "kf"]
 - ["So23UIUserActivityRestoringP", "locationManager"]
 - ["So23UIUserActivityRestoringP", "locationManagerDidPauseLocationUpdates"]
 - ["So23UIUserActivityRestoringP", "locationManagerDidResumeLocationUpdates"]
 - ["So23UIUserActivityRestoringP", "locationManagerShouldDisplayHeadingCalibration"]
 - !private ["So23UIUserActivityRestoringP", "makeToast"]
-- !private ["So23UIUserActivityRestoringP", "makeToastActivity"]
 - !private ["So23UIUserActivityRestoringP", "messageFont"]
 - !private ["So23UIUserActivityRestoringP", "navigationController"]
 - !private ["So23UIUserActivityRestoringP", "navigationItem"]
@@ -2390,7 +2324,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "setNeedsLayout"]
 - !private ["So23UIUserActivityRestoringP", "shop_id"]
 - !private ["So23UIUserActivityRestoringP", "showMapView"]
-- !private ["So23UIUserActivityRestoringP", "showNetworkErrorAlert"]
 - !private ["So23UIUserActivityRestoringP", "storyboard"]
 - !private ["So23UIUserActivityRestoringP", "tableView"]
 - !private ["So23UIUserActivityRestoringP", "text"]
@@ -2417,12 +2350,12 @@ depends-member:
 - !private ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "kf"]
 - !private ["So6UIViewC", "makeToast"]
-- !private ["So6UIViewC", "makeToastActivity"]
 - !private ["So6UIViewC", "reloadData"]
 - !private ["So6UIViewC", "setImage"]
 - !private ["So6UIViewC", "setNeedsLayout"]
 - !private ["So6UIViewC", "text"]
 - !private ["So6UIViewC", "textLabel"]
+- ["So16UIViewControllerC", "$__lazy_storage_$_locationManager"]
 - !private ["So16UIViewControllerC", "Api_Base_URL"]
 - ["So16UIViewControllerC", "Bool"]
 - ["So16UIViewControllerC", "CGFloat"]
@@ -2438,7 +2371,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "NSURL"]
 - ["So16UIViewControllerC", "NearMe"]
 - !private ["So16UIViewControllerC", "NearmeViewController"]
-- !private ["So16UIViewControllerC", "Reachability"]
 - !private ["So16UIViewControllerC", "StoreDetailsViewController"]
 - ["So16UIViewControllerC", "String"]
 - !private ["So16UIViewControllerC", "StringToURL"]
@@ -2458,7 +2390,7 @@ depends-member:
 - ["So16UIViewControllerC", "currentLong"]
 - ["So16UIViewControllerC", "determineMyCurrentLocation"]
 - ["So16UIViewControllerC", "init"]
-- !private ["So16UIViewControllerC", "kCLLocationAccuracyBest"]
+- ["So16UIViewControllerC", "kCLLocationAccuracyNearestTenMeters"]
 - ["So16UIViewControllerC", "locationManager"]
 - ["So16UIViewControllerC", "locationManagerDidPauseLocationUpdates"]
 - ["So16UIViewControllerC", "locationManagerDidResumeLocationUpdates"]
@@ -2475,7 +2407,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "pushViewController"]
 - !private ["So16UIViewControllerC", "shop_id"]
 - ["So16UIViewControllerC", "showMapView"]
-- !private ["So16UIViewControllerC", "showNetworkErrorAlert"]
 - !private ["So16UIViewControllerC", "storyboard"]
 - ["So16UIViewControllerC", "tableView"]
 - !private ["So16UIViewControllerC", "title"]
@@ -2553,7 +2484,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "JSONSerialization"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSURL"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "NearMe"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "Reachability"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "State"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "StringToURL"]
@@ -2567,7 +2497,9 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "URLSession"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["10Foundation27_KeyValueCodingAndObservingP", "activityType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "addTarget"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "allowsBackgroundLocationUpdates"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "async"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
@@ -2578,11 +2510,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dataTask"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "desiredAccuracy"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "desiredAccuracy"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "detailTextLabel"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "determineMyCurrentLocation"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "distanceFilter"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hideToastActivity"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
@@ -2590,7 +2522,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "jsonObject"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "kCLLocationAccuracyBest"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "kf"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "locationManager"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "locationManagerDidPauseLocationUpdates"]
@@ -2599,7 +2531,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "locationServicesEnabled"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "main"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "makeToast"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "makeToastActivity"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "merchant_id"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "messageFont"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
@@ -2621,7 +2552,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shared"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "shop_id"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "showMapView"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "showNetworkErrorAlert"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "standard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "startUpdatingHeading"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "startUpdatingLocation"]
@@ -2650,7 +2580,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "JSONSerialization"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSURL"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NearMe"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Reachability"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "State"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "String"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "StringToURL"]
@@ -2664,7 +2593,9 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "URLSession"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UserDefaults"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "activityType"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "addTarget"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "allowsBackgroundLocationUpdates"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "async"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "black"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bounds"]
@@ -2675,11 +2606,11 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "data"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dataSource"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dataTask"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dequeueReusableCell"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "desiredAccuracy"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "desiredAccuracy"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "detailTextLabel"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "determineMyCurrentLocation"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "distanceFilter"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "frame"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "hideToastActivity"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "image"]
@@ -2687,7 +2618,7 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "instantiateViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "jsonObject"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "kCLLocationAccuracyBest"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "kCLLocationAccuracyNearestTenMeters"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "kf"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "locationManager"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "locationManagerDidPauseLocationUpdates"]
@@ -2696,7 +2627,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "locationServicesEnabled"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "main"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "makeToast"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "makeToastActivity"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "merchant_id"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "messageFont"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationController"]
@@ -2718,7 +2648,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shared"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "shop_id"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showMapView"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showNetworkErrorAlert"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "standard"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "startUpdatingHeading"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "startUpdatingLocation"]
@@ -2753,7 +2682,6 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "latitude"]
 - !private ["s21_ObjectiveCBridgeableP", "longitude"]
 - !private ["s21_ObjectiveCBridgeableP", "makeToast"]
-- !private ["s21_ObjectiveCBridgeableP", "makeToastActivity"]
 - !private ["s21_ObjectiveCBridgeableP", "reloadData"]
 - !private ["s21_ObjectiveCBridgeableP", "row"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
@@ -2776,7 +2704,6 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "kf"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "makeToast"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "makeToastActivity"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "reloadData"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setImage"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setNeedsLayout"]
@@ -2792,6 +2719,7 @@ depends-nominal:
 - !private "So15CALayerDelegateP"
 - !private "So7CGPointV"
 - !private "So6CGRectV"
+- "So14CLActivityTypeV"
 - !private "So10CLLocationC"
 - !private "So22CLLocationCoordinate2DV"
 - "So17CLLocationManagerC"
@@ -2823,8 +2751,8 @@ depends-nominal:
 - "SH"
 - !private "10Foundation9IndexPathV"
 - !private "So19NSJSONSerializationC"
-- !private "9SaveUp_BD10KingfisherC"
-- !private "9SaveUp_BD20KingfisherCompatibleP"
+- !private "6SaveUp10KingfisherC"
+- !private "6SaveUp20KingfisherCompatibleP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "SM"
@@ -2843,32 +2771,31 @@ depends-nominal:
 - !private "So8NSStringC"
 - !private "So15NSTextAlignmentV"
 - !private "So5NSURLC"
-- !private "9SaveUp_BD6NearMeC"
-- "9SaveUp_BD29NearMeListTableViewControllerC"
+- !private "6SaveUp6NearMeC"
+- "6SaveUp29NearMeListTableViewControllerC"
 - !private "So9OS_objectC"
 - !private "s9OptionSetP"
 - !private "Sq"
-- !private "9SaveUp_BD11PlaceholderP"
+- !private "6SaveUp11PlaceholderP"
 - !private "So19NSProgressReportingP"
 - "Sk"
 - "Sm"
-- !private "SY"
-- !private "9SaveUp_BD12ReachabilityC"
+- "SY"
 - !private "So20NSJSONReadingOptionsV"
 - !private "10Foundation20ReferenceConvertibleP"
-- !private "9SaveUp_BD14ReviewDelegateP"
+- !private "6SaveUp14ReviewDelegateP"
 - !private "7Combine9SchedulerP"
 - "ST"
 - !private "s10SetAlgebraP"
 - !private "So14UIControlStateV"
-- !private "9SaveUp_BD26StoreDetailsViewControllerC"
+- !private "6SaveUp26StoreDetailsViewControllerC"
 - !private "SS"
 - !private "s27StringInterpolationProtocolP"
 - !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "9SaveUp_BD13ToastPositionO"
-- !private "9SaveUp_BD10ToastStyleV"
+- !private "6SaveUp13ToastPositionO"
+- !private "6SaveUp10ToastStyleV"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
@@ -2976,6 +2903,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CATransform3D.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUUID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUUID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
@@ -2986,6 +2915,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Sparse/BLAS.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/alloca.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Alpha.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/LinearAlgebra.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
@@ -2994,6 +2927,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolMetadata.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/quota.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach-o/stab.h"
@@ -3169,6 +3103,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIFilterShape.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureScope.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFResponseType.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFButtonType.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/ctype.h"
@@ -3180,6 +3115,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/xlocale/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/runetype.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKitCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/semaphore.h"
@@ -3204,6 +3140,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/trace_base.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/readpassphrase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLResponse.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchResponse.h"
@@ -3217,9 +3154,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSCompoundPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSComparisonPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginFlowState.h"
@@ -3245,6 +3184,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/_types/_offsetof.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBag.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/i386/fp_reg.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FIRRemoteConfig.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/mig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLHeading.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemsConfigurationReading.h"
@@ -3309,6 +3250,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/shims/KeyPath.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/math.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/tgmath.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/kauth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/objc-api.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/port_obj.h"
@@ -3329,6 +3272,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_task.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecSharedCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDecimal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/i386/signal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/signal.h"
@@ -3344,6 +3290,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIKernel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/dyld_kernel.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES3/gl.h"
@@ -3445,6 +3392,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileVersion.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Conversion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneSession.h"
@@ -3477,6 +3425,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Quadrature/Integration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderItemDecoration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStateRestoration.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteConfiguration.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PayPalMobile/PayPalConfiguration.h"
@@ -3545,6 +3494,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProcessInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach_debug/ipc_info.h"
@@ -3588,6 +3539,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/workloop.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/grp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarButtonItemGroup.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/group.h"
@@ -3614,6 +3566,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/FileProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingCurveProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemProvider.h"
@@ -3724,6 +3685,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextDragPreviewRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKTileOverlayRenderer.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchCompleter.h"
@@ -3847,6 +3809,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFontMetrics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_statistics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetDiagnostics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPreferences.h"
@@ -3856,6 +3820,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/vImage_Utilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPathUtilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageProperties.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/times.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTDefines.h"
@@ -3911,6 +3878,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/secure/_strings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/paths.h"
@@ -3963,6 +3932,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityAdditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneDefinitions.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapSnapshotOptions.h"
@@ -3981,6 +3951,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPreviewParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDragPreviewParameters.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetworkErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManagerErrors.h"
@@ -4147,7 +4118,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/mach_init.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_inherit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLVisit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
@@ -4340,7 +4313,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/activity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProxy.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Modules/module.modulemap"
@@ -4362,4 +4341,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "bf8a0a2c93ac4ac855441fb687d7e6f0"
+interface-hash: "61e71bb05d9b7771ce554f34dcb99d2e"

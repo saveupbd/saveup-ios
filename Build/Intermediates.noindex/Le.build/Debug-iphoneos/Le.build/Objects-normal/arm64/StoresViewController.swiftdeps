@@ -2,9 +2,9 @@
 provides-top-level:
 - "StoresViewController"
 provides-nominal:
-- "9SaveUp_BD20StoresViewControllerC"
+- "6SaveUp20StoresViewControllerC"
 provides-member:
-- ["9SaveUp_BD20StoresViewControllerC", ""]
+- ["6SaveUp20StoresViewControllerC", ""]
 provides-dynamic-lookup:
 - "cancelFilterAction"
 - "didReceiveMemoryWarning"
@@ -341,10 +341,10 @@ depends-member:
 - !private ["10Foundation15ContiguousBytesP", "store_img"]
 - !private ["10Foundation15ContiguousBytesP", "store_name"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
-- !private ["9SaveUp_BD10CustomCellC", "productcountLabel"]
-- !private ["9SaveUp_BD10CustomCellC", "selectionStyle"]
-- !private ["9SaveUp_BD10CustomCellC", "storeImage"]
-- !private ["9SaveUp_BD10CustomCellC", "storenameLabel"]
+- !private ["6SaveUp10CustomCellC", "productcountLabel"]
+- !private ["6SaveUp10CustomCellC", "selectionStyle"]
+- !private ["6SaveUp10CustomCellC", "storeImage"]
+- !private ["6SaveUp10CustomCellC", "storenameLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "Api_Base_URL"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
 - !private ["s28CustomDebugStringConvertibleP", "DispatchQueue"]
@@ -1071,22 +1071,22 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "Encoding"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "data"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
-- !private ["9SaveUp_BD10FilterViewC", "backView"]
-- !private ["9SaveUp_BD10FilterViewC", "cancelButton"]
-- !private ["9SaveUp_BD10FilterViewC", "deinit"]
-- !private ["9SaveUp_BD10FilterViewC", "fiftyButton"]
-- !private ["9SaveUp_BD10FilterViewC", "fiveButton"]
-- !private ["9SaveUp_BD10FilterViewC", "init"]
-- !private ["9SaveUp_BD10FilterViewC", "isHidden"]
-- !private ["9SaveUp_BD10FilterViewC", "oneButton"]
-- !private ["9SaveUp_BD10FilterViewC", "outButton"]
-- !private ["9SaveUp_BD10FilterViewC", "overButton"]
-- !private ["9SaveUp_BD10FilterViewC", "resetButton"]
-- !private ["9SaveUp_BD10FilterViewC", "tenButton"]
-- !private ["9SaveUp_BD10FilterViewC", "twentyButton"]
-- !private ["9SaveUp_BD10FilterViewC", "twoButton"]
-- !private ["9SaveUp_BD10FilterViewC", "underButton"]
-- !private ["9SaveUp_BD10FilterViewC", "zeroButton"]
+- !private ["6SaveUp10FilterViewC", "backView"]
+- !private ["6SaveUp10FilterViewC", "cancelButton"]
+- !private ["6SaveUp10FilterViewC", "deinit"]
+- !private ["6SaveUp10FilterViewC", "fiftyButton"]
+- !private ["6SaveUp10FilterViewC", "fiveButton"]
+- !private ["6SaveUp10FilterViewC", "init"]
+- !private ["6SaveUp10FilterViewC", "isHidden"]
+- !private ["6SaveUp10FilterViewC", "oneButton"]
+- !private ["6SaveUp10FilterViewC", "outButton"]
+- !private ["6SaveUp10FilterViewC", "overButton"]
+- !private ["6SaveUp10FilterViewC", "resetButton"]
+- !private ["6SaveUp10FilterViewC", "tenButton"]
+- !private ["6SaveUp10FilterViewC", "twentyButton"]
+- !private ["6SaveUp10FilterViewC", "twoButton"]
+- !private ["6SaveUp10FilterViewC", "underButton"]
+- !private ["6SaveUp10FilterViewC", "zeroButton"]
 - !private ["SH", "Api_Base_URL"]
 - !private ["SH", "CGRect"]
 - !private ["SH", "DispatchQueue"]
@@ -1253,17 +1253,17 @@ depends-member:
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["So19NSJSONSerializationC", "jsonObject"]
 - !private ["So21NSAttributedStringKeya", "foregroundColor"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "Encoding"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "addTarget"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "data"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "height"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "image"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "init"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "keyWindow"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "setTitleColor"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "shared"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "width"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "yy_imageURL"]
+- !private ["6SaveUp20KingfisherCompatibleP", "Encoding"]
+- !private ["6SaveUp20KingfisherCompatibleP", "addTarget"]
+- !private ["6SaveUp20KingfisherCompatibleP", "data"]
+- !private ["6SaveUp20KingfisherCompatibleP", "height"]
+- !private ["6SaveUp20KingfisherCompatibleP", "image"]
+- !private ["6SaveUp20KingfisherCompatibleP", "init"]
+- !private ["6SaveUp20KingfisherCompatibleP", "keyWindow"]
+- !private ["6SaveUp20KingfisherCompatibleP", "setTitleColor"]
+- !private ["6SaveUp20KingfisherCompatibleP", "shared"]
+- !private ["6SaveUp20KingfisherCompatibleP", "width"]
+- !private ["6SaveUp20KingfisherCompatibleP", "yy_imageURL"]
 - !private ["s25LosslessStringConvertibleP", "Encoding"]
 - !private ["s25LosslessStringConvertibleP", "data"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -1906,7 +1906,7 @@ depends-member:
 - !private ["Sq", "underButton"]
 - !private ["Sq", "yy_imageURL"]
 - !private ["Sq", "zeroButton"]
-- !private ["9SaveUp_BD11PlaceholderP", "init"]
+- !private ["6SaveUp11PlaceholderP", "init"]
 - !private ["So19NSProgressReportingP", "resume"]
 - !private ["Sk", "append"]
 - !private ["Sk", "count"]
@@ -1937,15 +1937,15 @@ depends-member:
 - !private ["SY", "normal"]
 - !private ["SY", "touchUpInside"]
 - !private ["SY", "utf8"]
-- !private ["9SaveUp_BD12ReachabilityC", "init"]
-- !private ["9SaveUp_BD12ReachabilityC", "isReachable"]
+- !private ["6SaveUp12ReachabilityC", "init"]
+- !private ["6SaveUp12ReachabilityC", "isReachable"]
 - !private ["So20NSJSONReadingOptionsV", "mutableContainers"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpBody"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
-- !private ["9SaveUp_BD8ResourceP", "init"]
-- !private ["9SaveUp_BD14ReviewDelegateP", "shop_id"]
+- !private ["6SaveUp8ResourceP", "init"]
+- !private ["6SaveUp14ReviewDelegateP", "shop_id"]
 - !private ["So22SWRevealViewControllerC", "panGestureRecognizer"]
 - !private ["So22SWRevealViewControllerC", "revealToggle"]
 - !private ["So22SWRevealViewControllerC", "tapGestureRecognizer"]
@@ -1969,105 +1969,105 @@ depends-member:
 - !private ["s10SetAlgebraP", "normal"]
 - !private ["s10SetAlgebraP", "touchUpInside"]
 - !private ["So14UIControlStateV", "normal"]
-- !private ["9SaveUp_BD26StoreDetailsViewControllerC", "shop_id"]
-- !private ["9SaveUp_BD6StoresC", "init"]
-- !private ["9SaveUp_BD6StoresC", "product_count"]
-- !private ["9SaveUp_BD6StoresC", "store_id"]
-- !private ["9SaveUp_BD6StoresC", "store_img"]
-- !private ["9SaveUp_BD6StoresC", "store_name"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "Api_Base_URL"]
-- ["9SaveUp_BD20StoresViewControllerC", "Bool"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "CGRect"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "CustomCell"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "DispatchQueue"]
-- ["9SaveUp_BD20StoresViewControllerC", "FilterView"]
-- ["9SaveUp_BD20StoresViewControllerC", "IndexPath"]
-- ["9SaveUp_BD20StoresViewControllerC", "Int"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "JSONSerialization"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "NSAttributedString"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "NSDictionary"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "NSInteger"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "NSMutableAttributedString"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "NSRange"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "Reachability"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "SWRevealViewController"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "StoreDetailsViewController"]
-- ["9SaveUp_BD20StoresViewControllerC", "Stores"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "StoresViewController"]
-- ["9SaveUp_BD20StoresViewControllerC", "String"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "ToastStyle"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "UIApplication"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "UIBarButtonItem"]
-- ["9SaveUp_BD20StoresViewControllerC", "UIButton"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "UIColor"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "UIControl"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "UIImage"]
-- ["9SaveUp_BD20StoresViewControllerC", "UITableView"]
-- ["9SaveUp_BD20StoresViewControllerC", "UITableViewCell"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "URL"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "URLRequest"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "URLSession"]
-- ["9SaveUp_BD20StoresViewControllerC", "cancelFilterAction"]
-- ["9SaveUp_BD20StoresViewControllerC", "deinit"]
-- ["9SaveUp_BD20StoresViewControllerC", "didReceiveMemoryWarning"]
-- ["9SaveUp_BD20StoresViewControllerC", "eightAction"]
-- ["9SaveUp_BD20StoresViewControllerC", "fifthAction"]
-- ["9SaveUp_BD20StoresViewControllerC", "fiftyAction"]
-- ["9SaveUp_BD20StoresViewControllerC", "filterButton"]
-- ["9SaveUp_BD20StoresViewControllerC", "filterView"]
-- ["9SaveUp_BD20StoresViewControllerC", "fiveAction"]
-- ["9SaveUp_BD20StoresViewControllerC", "fourthAction"]
-- ["9SaveUp_BD20StoresViewControllerC", "indexPathForPreferredFocusedView"]
-- ["9SaveUp_BD20StoresViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
-- ["9SaveUp_BD20StoresViewControllerC", "init"]
-- ["9SaveUp_BD20StoresViewControllerC", "merchantFilterStoresApi"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "messageFont"]
-- ["9SaveUp_BD20StoresViewControllerC", "messageToast"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "navigationController"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "navigationItem"]
-- ["9SaveUp_BD20StoresViewControllerC", "numberOfSections"]
-- ["9SaveUp_BD20StoresViewControllerC", "numberOfSectionsInTableView"]
-- ["9SaveUp_BD20StoresViewControllerC", "oneAction"]
-- ["9SaveUp_BD20StoresViewControllerC", "outAction"]
-- ["9SaveUp_BD20StoresViewControllerC", "overAction"]
-- ["9SaveUp_BD20StoresViewControllerC", "page_no"]
-- ["9SaveUp_BD20StoresViewControllerC", "resetFilterAction"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "revealViewController"]
-- ["9SaveUp_BD20StoresViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
-- ["9SaveUp_BD20StoresViewControllerC", "scrollViewDidEndDecelerating"]
-- ["9SaveUp_BD20StoresViewControllerC", "scrollViewDidEndDragging"]
-- ["9SaveUp_BD20StoresViewControllerC", "scrollViewDidEndScrollingAnimation"]
-- ["9SaveUp_BD20StoresViewControllerC", "scrollViewDidEndZooming"]
-- ["9SaveUp_BD20StoresViewControllerC", "scrollViewDidScroll"]
-- ["9SaveUp_BD20StoresViewControllerC", "scrollViewDidScrollToTop"]
-- ["9SaveUp_BD20StoresViewControllerC", "scrollViewDidZoom"]
-- ["9SaveUp_BD20StoresViewControllerC", "scrollViewShouldScrollToTop"]
-- ["9SaveUp_BD20StoresViewControllerC", "scrollViewWillBeginDecelerating"]
-- ["9SaveUp_BD20StoresViewControllerC", "scrollViewWillBeginDragging"]
-- ["9SaveUp_BD20StoresViewControllerC", "scrollViewWillBeginZooming"]
-- ["9SaveUp_BD20StoresViewControllerC", "scrollViewWillEndDragging"]
-- ["9SaveUp_BD20StoresViewControllerC", "sectionIndexTitles"]
-- ["9SaveUp_BD20StoresViewControllerC", "sectionIndexTitlesForTableView"]
-- ["9SaveUp_BD20StoresViewControllerC", "seventhAction"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "showNetworkErrorAlert"]
-- ["9SaveUp_BD20StoresViewControllerC", "sixthAction"]
-- ["9SaveUp_BD20StoresViewControllerC", "storesApi"]
-- ["9SaveUp_BD20StoresViewControllerC", "storesApiforreset"]
-- ["9SaveUp_BD20StoresViewControllerC", "storesArray"]
-- ["9SaveUp_BD20StoresViewControllerC", "storesTable"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "storyboard"]
-- ["9SaveUp_BD20StoresViewControllerC", "tableView"]
-- ["9SaveUp_BD20StoresViewControllerC", "tableViewDidEndMultipleSelectionInteraction"]
-- ["9SaveUp_BD20StoresViewControllerC", "tenAction"]
-- ["9SaveUp_BD20StoresViewControllerC", "twentyAction"]
-- ["9SaveUp_BD20StoresViewControllerC", "twoAction"]
-- ["9SaveUp_BD20StoresViewControllerC", "underAction"]
-- !private ["9SaveUp_BD20StoresViewControllerC", "view"]
-- ["9SaveUp_BD20StoresViewControllerC", "viewDidLoad"]
-- ["9SaveUp_BD20StoresViewControllerC", "viewForZooming"]
-- ["9SaveUp_BD20StoresViewControllerC", "viewForZoomingInScrollView"]
-- ["9SaveUp_BD20StoresViewControllerC", "viewWillAppear"]
-- ["9SaveUp_BD20StoresViewControllerC", "zeroAction"]
+- !private ["6SaveUp26StoreDetailsViewControllerC", "shop_id"]
+- !private ["6SaveUp6StoresC", "init"]
+- !private ["6SaveUp6StoresC", "product_count"]
+- !private ["6SaveUp6StoresC", "store_id"]
+- !private ["6SaveUp6StoresC", "store_img"]
+- !private ["6SaveUp6StoresC", "store_name"]
+- !private ["6SaveUp20StoresViewControllerC", "Api_Base_URL"]
+- ["6SaveUp20StoresViewControllerC", "Bool"]
+- !private ["6SaveUp20StoresViewControllerC", "CGRect"]
+- !private ["6SaveUp20StoresViewControllerC", "CustomCell"]
+- !private ["6SaveUp20StoresViewControllerC", "DispatchQueue"]
+- ["6SaveUp20StoresViewControllerC", "FilterView"]
+- ["6SaveUp20StoresViewControllerC", "IndexPath"]
+- ["6SaveUp20StoresViewControllerC", "Int"]
+- !private ["6SaveUp20StoresViewControllerC", "JSONSerialization"]
+- !private ["6SaveUp20StoresViewControllerC", "NSAttributedString"]
+- !private ["6SaveUp20StoresViewControllerC", "NSDictionary"]
+- !private ["6SaveUp20StoresViewControllerC", "NSInteger"]
+- !private ["6SaveUp20StoresViewControllerC", "NSMutableAttributedString"]
+- !private ["6SaveUp20StoresViewControllerC", "NSRange"]
+- !private ["6SaveUp20StoresViewControllerC", "Reachability"]
+- !private ["6SaveUp20StoresViewControllerC", "SWRevealViewController"]
+- !private ["6SaveUp20StoresViewControllerC", "StoreDetailsViewController"]
+- ["6SaveUp20StoresViewControllerC", "Stores"]
+- !private ["6SaveUp20StoresViewControllerC", "StoresViewController"]
+- ["6SaveUp20StoresViewControllerC", "String"]
+- !private ["6SaveUp20StoresViewControllerC", "ToastStyle"]
+- !private ["6SaveUp20StoresViewControllerC", "UIApplication"]
+- !private ["6SaveUp20StoresViewControllerC", "UIBarButtonItem"]
+- ["6SaveUp20StoresViewControllerC", "UIButton"]
+- !private ["6SaveUp20StoresViewControllerC", "UIColor"]
+- !private ["6SaveUp20StoresViewControllerC", "UIControl"]
+- !private ["6SaveUp20StoresViewControllerC", "UIImage"]
+- ["6SaveUp20StoresViewControllerC", "UITableView"]
+- ["6SaveUp20StoresViewControllerC", "UITableViewCell"]
+- !private ["6SaveUp20StoresViewControllerC", "URL"]
+- !private ["6SaveUp20StoresViewControllerC", "URLRequest"]
+- !private ["6SaveUp20StoresViewControllerC", "URLSession"]
+- ["6SaveUp20StoresViewControllerC", "cancelFilterAction"]
+- ["6SaveUp20StoresViewControllerC", "deinit"]
+- ["6SaveUp20StoresViewControllerC", "didReceiveMemoryWarning"]
+- ["6SaveUp20StoresViewControllerC", "eightAction"]
+- ["6SaveUp20StoresViewControllerC", "fifthAction"]
+- ["6SaveUp20StoresViewControllerC", "fiftyAction"]
+- ["6SaveUp20StoresViewControllerC", "filterButton"]
+- ["6SaveUp20StoresViewControllerC", "filterView"]
+- ["6SaveUp20StoresViewControllerC", "fiveAction"]
+- ["6SaveUp20StoresViewControllerC", "fourthAction"]
+- ["6SaveUp20StoresViewControllerC", "indexPathForPreferredFocusedView"]
+- ["6SaveUp20StoresViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
+- ["6SaveUp20StoresViewControllerC", "init"]
+- ["6SaveUp20StoresViewControllerC", "merchantFilterStoresApi"]
+- !private ["6SaveUp20StoresViewControllerC", "messageFont"]
+- ["6SaveUp20StoresViewControllerC", "messageToast"]
+- !private ["6SaveUp20StoresViewControllerC", "navigationController"]
+- !private ["6SaveUp20StoresViewControllerC", "navigationItem"]
+- ["6SaveUp20StoresViewControllerC", "numberOfSections"]
+- ["6SaveUp20StoresViewControllerC", "numberOfSectionsInTableView"]
+- ["6SaveUp20StoresViewControllerC", "oneAction"]
+- ["6SaveUp20StoresViewControllerC", "outAction"]
+- ["6SaveUp20StoresViewControllerC", "overAction"]
+- ["6SaveUp20StoresViewControllerC", "page_no"]
+- ["6SaveUp20StoresViewControllerC", "resetFilterAction"]
+- !private ["6SaveUp20StoresViewControllerC", "revealViewController"]
+- ["6SaveUp20StoresViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
+- ["6SaveUp20StoresViewControllerC", "scrollViewDidEndDecelerating"]
+- ["6SaveUp20StoresViewControllerC", "scrollViewDidEndDragging"]
+- ["6SaveUp20StoresViewControllerC", "scrollViewDidEndScrollingAnimation"]
+- ["6SaveUp20StoresViewControllerC", "scrollViewDidEndZooming"]
+- ["6SaveUp20StoresViewControllerC", "scrollViewDidScroll"]
+- ["6SaveUp20StoresViewControllerC", "scrollViewDidScrollToTop"]
+- ["6SaveUp20StoresViewControllerC", "scrollViewDidZoom"]
+- ["6SaveUp20StoresViewControllerC", "scrollViewShouldScrollToTop"]
+- ["6SaveUp20StoresViewControllerC", "scrollViewWillBeginDecelerating"]
+- ["6SaveUp20StoresViewControllerC", "scrollViewWillBeginDragging"]
+- ["6SaveUp20StoresViewControllerC", "scrollViewWillBeginZooming"]
+- ["6SaveUp20StoresViewControllerC", "scrollViewWillEndDragging"]
+- ["6SaveUp20StoresViewControllerC", "sectionIndexTitles"]
+- ["6SaveUp20StoresViewControllerC", "sectionIndexTitlesForTableView"]
+- ["6SaveUp20StoresViewControllerC", "seventhAction"]
+- !private ["6SaveUp20StoresViewControllerC", "showNetworkErrorAlert"]
+- ["6SaveUp20StoresViewControllerC", "sixthAction"]
+- ["6SaveUp20StoresViewControllerC", "storesApi"]
+- ["6SaveUp20StoresViewControllerC", "storesApiforreset"]
+- ["6SaveUp20StoresViewControllerC", "storesArray"]
+- ["6SaveUp20StoresViewControllerC", "storesTable"]
+- !private ["6SaveUp20StoresViewControllerC", "storyboard"]
+- ["6SaveUp20StoresViewControllerC", "tableView"]
+- ["6SaveUp20StoresViewControllerC", "tableViewDidEndMultipleSelectionInteraction"]
+- ["6SaveUp20StoresViewControllerC", "tenAction"]
+- ["6SaveUp20StoresViewControllerC", "twentyAction"]
+- ["6SaveUp20StoresViewControllerC", "twoAction"]
+- ["6SaveUp20StoresViewControllerC", "underAction"]
+- !private ["6SaveUp20StoresViewControllerC", "view"]
+- ["6SaveUp20StoresViewControllerC", "viewDidLoad"]
+- ["6SaveUp20StoresViewControllerC", "viewForZooming"]
+- ["6SaveUp20StoresViewControllerC", "viewForZoomingInScrollView"]
+- ["6SaveUp20StoresViewControllerC", "viewWillAppear"]
+- ["6SaveUp20StoresViewControllerC", "zeroAction"]
 - !private ["SS", "Encoding"]
 - !private ["SS", "data"]
 - !private ["SS", "init"]
@@ -2085,14 +2085,14 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "Encoding"]
 - !private ["s20TextOutputStreamableP", "data"]
 - !private ["s20TextOutputStreamableP", "init"]
-- !private ["9SaveUp_BD13ToastPositionO", "bottom"]
-- !private ["9SaveUp_BD13ToastPositionO", "center"]
-- !private ["9SaveUp_BD13ToastPositionO", "top"]
-- !private ["9SaveUp_BD10ToastStyleV", "backgroundColor"]
-- !private ["9SaveUp_BD10ToastStyleV", "init"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageAlignment"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageColor"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageFont"]
+- !private ["6SaveUp13ToastPositionO", "bottom"]
+- !private ["6SaveUp13ToastPositionO", "center"]
+- !private ["6SaveUp13ToastPositionO", "top"]
+- !private ["6SaveUp10ToastStyleV", "backgroundColor"]
+- !private ["6SaveUp10ToastStyleV", "init"]
+- !private ["6SaveUp10ToastStyleV", "messageAlignment"]
+- !private ["6SaveUp10ToastStyleV", "messageColor"]
+- !private ["6SaveUp10ToastStyleV", "messageFont"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "setTitleColor"]
@@ -4345,7 +4345,7 @@ depends-nominal:
 - "Sl"
 - !private "SL"
 - "10Foundation15ContiguousBytesP"
-- !private "9SaveUp_BD10CustomCellC"
+- !private "6SaveUp10CustomCellC"
 - "s28CustomDebugStringConvertibleP"
 - "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
@@ -4365,12 +4365,12 @@ depends-nominal:
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "9SaveUp_BD10FilterViewC"
+- !private "6SaveUp10FilterViewC"
 - "SH"
 - !private "10Foundation9IndexPathV"
 - !private "So19NSJSONSerializationC"
 - !private "So21NSAttributedStringKeya"
-- !private "9SaveUp_BD20KingfisherCompatibleP"
+- !private "6SaveUp20KingfisherCompatibleP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "SM"
@@ -4393,33 +4393,33 @@ depends-nominal:
 - !private "So9OS_objectC"
 - !private "s9OptionSetP"
 - !private "Sq"
-- !private "9SaveUp_BD11PlaceholderP"
+- !private "6SaveUp11PlaceholderP"
 - !private "So19NSProgressReportingP"
 - "Sk"
 - "Sm"
 - !private "SY"
-- !private "9SaveUp_BD12ReachabilityC"
+- !private "6SaveUp12ReachabilityC"
 - !private "So20NSJSONReadingOptionsV"
 - !private "10Foundation20ReferenceConvertibleP"
-- !private "9SaveUp_BD8ResourceP"
-- !private "9SaveUp_BD14ReviewDelegateP"
+- !private "6SaveUp8ResourceP"
+- !private "6SaveUp14ReviewDelegateP"
 - !private "So22SWRevealViewControllerC"
 - !private "7Combine9SchedulerP"
 - !private "So29UITableViewCellSelectionStyleV"
 - "ST"
 - !private "s10SetAlgebraP"
 - !private "So14UIControlStateV"
-- !private "9SaveUp_BD26StoreDetailsViewControllerC"
-- !private "9SaveUp_BD6StoresC"
-- "9SaveUp_BD20StoresViewControllerC"
+- !private "6SaveUp26StoreDetailsViewControllerC"
+- !private "6SaveUp6StoresC"
+- "6SaveUp20StoresViewControllerC"
 - !private "SS"
 - !private "s27StringInterpolationProtocolP"
 - !private "Sy"
 - !private "So20UIBarButtonItemStyleV"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "9SaveUp_BD13ToastPositionO"
-- !private "9SaveUp_BD10ToastStyleV"
+- !private "6SaveUp13ToastPositionO"
+- !private "6SaveUp10ToastStyleV"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
@@ -4530,6 +4530,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CATransform3D.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUUID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUUID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
@@ -4540,6 +4542,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Sparse/BLAS.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/alloca.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Alpha.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/LinearAlgebra.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
@@ -4548,6 +4554,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolMetadata.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/quota.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach-o/stab.h"
@@ -4723,6 +4730,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIFilterShape.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureScope.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFResponseType.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFButtonType.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/ctype.h"
@@ -4734,6 +4742,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/xlocale/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/runetype.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKitCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/semaphore.h"
@@ -4758,6 +4767,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/trace_base.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/readpassphrase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLResponse.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchResponse.h"
@@ -4771,9 +4781,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSCompoundPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSComparisonPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginFlowState.h"
@@ -4798,6 +4810,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/net/if.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_offsetof.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBag.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FIRRemoteConfig.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLHeading.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemsConfigurationReading.h"
@@ -4863,6 +4877,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/shims/KeyPath.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/math.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/tgmath.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/kauth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/objc/objc-api.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/port_obj.h"
@@ -4883,6 +4899,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_task.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecSharedCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDecimal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/signal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/machine/signal.h"
@@ -4898,6 +4917,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIKernel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/dyld_kernel.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES3/gl.h"
@@ -4999,6 +5019,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileVersion.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Conversion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneSession.h"
@@ -5031,6 +5052,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Quadrature/Integration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderItemDecoration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStateRestoration.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteConfiguration.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PayPalMobile/PayPalConfiguration.h"
@@ -5099,6 +5121,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProcessInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach_debug/ipc_info.h"
@@ -5142,6 +5166,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/workloop.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/grp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarButtonItemGroup.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/group.h"
@@ -5168,6 +5193,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/FileProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingCurveProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemProvider.h"
@@ -5277,6 +5311,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextDragPreviewRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKTileOverlayRenderer.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchCompleter.h"
@@ -5400,6 +5435,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFontMetrics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_statistics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetDiagnostics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPreferences.h"
@@ -5409,6 +5446,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/vImage_Utilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPathUtilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageProperties.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/times.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTDefines.h"
@@ -5463,6 +5503,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/secure/_strings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/paths.h"
@@ -5515,6 +5557,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityAdditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneDefinitions.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapSnapshotOptions.h"
@@ -5533,6 +5576,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPreviewParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDragPreviewParameters.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetworkErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManagerErrors.h"
@@ -5699,7 +5743,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mach_init.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_inherit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLVisit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
@@ -5892,7 +5938,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/activity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProxy.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Modules/module.modulemap"

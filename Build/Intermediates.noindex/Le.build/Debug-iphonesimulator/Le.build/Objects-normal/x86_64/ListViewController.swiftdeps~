@@ -2,9 +2,9 @@
 provides-top-level:
 - "ListViewController"
 provides-nominal:
-- "9SaveUp_BD18ListViewControllerC"
+- "6SaveUp18ListViewControllerC"
 provides-member:
-- ["9SaveUp_BD18ListViewControllerC", ""]
+- ["6SaveUp18ListViewControllerC", ""]
 - ["So16UIViewControllerC", ""]
 - ["So16UIViewControllerC", "dismissKeyBoardTappedOutside"]
 - ["So16UIViewControllerC", "dismissKeyboard"]
@@ -344,7 +344,6 @@ depends-member:
 - !private ["s7CVarArgP", "mostButton"]
 - !private ["s7CVarArgP", "mycartApi"]
 - !private ["s7CVarArgP", "navigationController"]
-- !private ["s7CVarArgP", "navigationItem"]
 - !private ["s7CVarArgP", "newestButton"]
 - ["s7CVarArgP", "numberOfSections"]
 - ["s7CVarArgP", "numberOfSectionsInCollectionView"]
@@ -394,7 +393,6 @@ depends-member:
 - !private ["s7CVarArgP", "resetButton"]
 - !private ["s7CVarArgP", "resetFilterAction"]
 - !private ["s7CVarArgP", "resume"]
-- !private ["s7CVarArgP", "rightBarButtonItem"]
 - !private ["s7CVarArgP", "screen_value"]
 - ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s7CVarArgP", "scrollViewDidEndDecelerating"]
@@ -602,7 +600,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "mostButton"]
 - !private ["s28CustomDebugStringConvertibleP", "mycartApi"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
-- !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
 - !private ["s28CustomDebugStringConvertibleP", "newestButton"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSections"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSectionsInCollectionView"]
@@ -653,7 +650,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "resetButton"]
 - !private ["s28CustomDebugStringConvertibleP", "resetFilterAction"]
 - !private ["s28CustomDebugStringConvertibleP", "resume"]
-- !private ["s28CustomDebugStringConvertibleP", "rightBarButtonItem"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
 - !private ["s28CustomDebugStringConvertibleP", "screen_value"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
@@ -898,7 +894,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "mostButton"]
 - !private ["s23CustomStringConvertibleP", "mycartApi"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
-- !private ["s23CustomStringConvertibleP", "navigationItem"]
 - !private ["s23CustomStringConvertibleP", "newestButton"]
 - ["s23CustomStringConvertibleP", "numberOfSections"]
 - ["s23CustomStringConvertibleP", "numberOfSectionsInCollectionView"]
@@ -948,7 +943,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "resetButton"]
 - !private ["s23CustomStringConvertibleP", "resetFilterAction"]
 - !private ["s23CustomStringConvertibleP", "resume"]
-- !private ["s23CustomStringConvertibleP", "rightBarButtonItem"]
 - !private ["s23CustomStringConvertibleP", "row"]
 - !private ["s23CustomStringConvertibleP", "screen_value"]
 - ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
@@ -1263,7 +1257,6 @@ depends-member:
 - !private ["SQ", "mutableContainers"]
 - !private ["SQ", "mycartApi"]
 - !private ["SQ", "navigationController"]
-- !private ["SQ", "navigationItem"]
 - !private ["SQ", "newestButton"]
 - !private ["SQ", "normal"]
 - ["SQ", "numberOfSections"]
@@ -1316,7 +1309,6 @@ depends-member:
 - !private ["SQ", "resetFilterAction"]
 - !private ["SQ", "resume"]
 - !private ["SQ", "right"]
-- !private ["SQ", "rightBarButtonItem"]
 - !private ["SQ", "row"]
 - !private ["SQ", "screen_value"]
 - ["SQ", "scrollViewDidChangeAdjustedContentInset"]
@@ -1457,33 +1449,33 @@ depends-member:
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "data"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "strikeThrough"]
-- !private ["9SaveUp_BD25FLatestCollectionViewCellC", "backgroundColor"]
-- !private ["9SaveUp_BD25FLatestCollectionViewCellC", "cutOffPrice"]
-- !private ["9SaveUp_BD25FLatestCollectionViewCellC", "offPercentage"]
-- !private ["9SaveUp_BD25FLatestCollectionViewCellC", "originalPrice"]
-- !private ["9SaveUp_BD25FLatestCollectionViewCellC", "productCategory"]
-- !private ["9SaveUp_BD25FLatestCollectionViewCellC", "productImage"]
-- !private ["9SaveUp_BD25FLatestCollectionViewCellC", "productTitle"]
-- !private ["9SaveUp_BD34FProductDetailsTableViewControllerC", "category_name"]
-- !private ["9SaveUp_BD34FProductDetailsTableViewControllerC", "product_id"]
-- !private ["9SaveUp_BD10FilterViewC", "backView"]
-- !private ["9SaveUp_BD10FilterViewC", "cancelButton"]
-- !private ["9SaveUp_BD10FilterViewC", "deinit"]
-- !private ["9SaveUp_BD10FilterViewC", "fiftyButton"]
-- !private ["9SaveUp_BD10FilterViewC", "fiveButton"]
-- !private ["9SaveUp_BD10FilterViewC", "fourtyButton"]
-- !private ["9SaveUp_BD10FilterViewC", "init"]
-- !private ["9SaveUp_BD10FilterViewC", "isHidden"]
-- !private ["9SaveUp_BD10FilterViewC", "oneButton"]
-- !private ["9SaveUp_BD10FilterViewC", "outButton"]
-- !private ["9SaveUp_BD10FilterViewC", "overButton"]
-- !private ["9SaveUp_BD10FilterViewC", "resetButton"]
-- !private ["9SaveUp_BD10FilterViewC", "tenButton"]
-- !private ["9SaveUp_BD10FilterViewC", "thirtyButton"]
-- !private ["9SaveUp_BD10FilterViewC", "twentyButton"]
-- !private ["9SaveUp_BD10FilterViewC", "twoButton"]
-- !private ["9SaveUp_BD10FilterViewC", "underButton"]
-- !private ["9SaveUp_BD10FilterViewC", "zeroButton"]
+- !private ["6SaveUp25FLatestCollectionViewCellC", "backgroundColor"]
+- !private ["6SaveUp25FLatestCollectionViewCellC", "cutOffPrice"]
+- !private ["6SaveUp25FLatestCollectionViewCellC", "offPercentage"]
+- !private ["6SaveUp25FLatestCollectionViewCellC", "originalPrice"]
+- !private ["6SaveUp25FLatestCollectionViewCellC", "productCategory"]
+- !private ["6SaveUp25FLatestCollectionViewCellC", "productImage"]
+- !private ["6SaveUp25FLatestCollectionViewCellC", "productTitle"]
+- !private ["6SaveUp34FProductDetailsTableViewControllerC", "category_name"]
+- !private ["6SaveUp34FProductDetailsTableViewControllerC", "product_id"]
+- !private ["6SaveUp10FilterViewC", "backView"]
+- !private ["6SaveUp10FilterViewC", "cancelButton"]
+- !private ["6SaveUp10FilterViewC", "deinit"]
+- !private ["6SaveUp10FilterViewC", "fiftyButton"]
+- !private ["6SaveUp10FilterViewC", "fiveButton"]
+- !private ["6SaveUp10FilterViewC", "fourtyButton"]
+- !private ["6SaveUp10FilterViewC", "init"]
+- !private ["6SaveUp10FilterViewC", "isHidden"]
+- !private ["6SaveUp10FilterViewC", "oneButton"]
+- !private ["6SaveUp10FilterViewC", "outButton"]
+- !private ["6SaveUp10FilterViewC", "overButton"]
+- !private ["6SaveUp10FilterViewC", "resetButton"]
+- !private ["6SaveUp10FilterViewC", "tenButton"]
+- !private ["6SaveUp10FilterViewC", "thirtyButton"]
+- !private ["6SaveUp10FilterViewC", "twentyButton"]
+- !private ["6SaveUp10FilterViewC", "twoButton"]
+- !private ["6SaveUp10FilterViewC", "underButton"]
+- !private ["6SaveUp10FilterViewC", "zeroButton"]
 - !private ["SH", "Api_Base_URL"]
 - !private ["SH", "ButtonType"]
 - !private ["SH", "CGRect"]
@@ -1607,7 +1599,6 @@ depends-member:
 - !private ["SH", "mostButton"]
 - !private ["SH", "mycartApi"]
 - !private ["SH", "navigationController"]
-- !private ["SH", "navigationItem"]
 - !private ["SH", "newestButton"]
 - ["SH", "numberOfSections"]
 - ["SH", "numberOfSectionsInCollectionView"]
@@ -1657,7 +1648,6 @@ depends-member:
 - !private ["SH", "resetButton"]
 - !private ["SH", "resetFilterAction"]
 - !private ["SH", "resume"]
-- !private ["SH", "rightBarButtonItem"]
 - !private ["SH", "row"]
 - !private ["SH", "screen_value"]
 - ["SH", "scrollViewDidChangeAdjustedContentInset"]
@@ -1717,186 +1707,185 @@ depends-member:
 - !private ["SH", "yy_imageURL"]
 - !private ["SH", "zeroAction"]
 - !private ["SH", "zeroButton"]
-- !private ["9SaveUp_BD18HomeViewControllerC", "cartAction"]
+- !private ["6SaveUp18HomeViewControllerC", "cartAction"]
 - !private ["10Foundation9IndexPathV", "row"]
 - !private ["So19NSJSONSerializationC", "jsonObject"]
-- !private ["9SaveUp_BD10KingfisherC", "setImage"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "ButtonType"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "Encoding"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "addTarget"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "badgeString"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "badgeTextColor"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "count"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "data"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "frame"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "height"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "init"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "keyWindow"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "kf"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "setImage"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "setTitleColor"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "shared"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "strikeThrough"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "width"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "yy_imageURL"]
-- !private ["9SaveUp_BD18ListViewControllerC", "Api_Base_URL"]
-- ["9SaveUp_BD18ListViewControllerC", "Bool"]
-- !private ["9SaveUp_BD18ListViewControllerC", "CGFloat"]
-- !private ["9SaveUp_BD18ListViewControllerC", "CGRect"]
-- ["9SaveUp_BD18ListViewControllerC", "CGSize"]
-- !private ["9SaveUp_BD18ListViewControllerC", "DispatchQueue"]
-- !private ["9SaveUp_BD18ListViewControllerC", "FLatestCollectionViewCell"]
-- !private ["9SaveUp_BD18ListViewControllerC", "FProductDetailsTableViewController"]
-- ["9SaveUp_BD18ListViewControllerC", "FilterView"]
-- !private ["9SaveUp_BD18ListViewControllerC", "HomeViewController"]
-- ["9SaveUp_BD18ListViewControllerC", "IndexPath"]
-- ["9SaveUp_BD18ListViewControllerC", "Int"]
-- !private ["9SaveUp_BD18ListViewControllerC", "JSONSerialization"]
-- !private ["9SaveUp_BD18ListViewControllerC", "MIBadgeButton"]
-- ["9SaveUp_BD18ListViewControllerC", "MessageApi"]
-- !private ["9SaveUp_BD18ListViewControllerC", "MyCartViewController"]
-- !private ["9SaveUp_BD18ListViewControllerC", "NSDictionary"]
-- !private ["9SaveUp_BD18ListViewControllerC", "NSInteger"]
-- !private ["9SaveUp_BD18ListViewControllerC", "ProductViewController"]
-- ["9SaveUp_BD18ListViewControllerC", "Products"]
-- !private ["9SaveUp_BD18ListViewControllerC", "Reachability"]
-- ["9SaveUp_BD18ListViewControllerC", "SortView"]
-- ["9SaveUp_BD18ListViewControllerC", "String"]
-- !private ["9SaveUp_BD18ListViewControllerC", "StringToURL"]
-- !private ["9SaveUp_BD18ListViewControllerC", "ToastStyle"]
-- !private ["9SaveUp_BD18ListViewControllerC", "UIAlertAction"]
-- !private ["9SaveUp_BD18ListViewControllerC", "UIAlertController"]
-- !private ["9SaveUp_BD18ListViewControllerC", "UIApplication"]
-- !private ["9SaveUp_BD18ListViewControllerC", "UIBarButtonItem"]
-- !private ["9SaveUp_BD18ListViewControllerC", "UIBezierPath"]
-- ["9SaveUp_BD18ListViewControllerC", "UIButton"]
-- ["9SaveUp_BD18ListViewControllerC", "UICollectionView"]
-- ["9SaveUp_BD18ListViewControllerC", "UICollectionViewCell"]
-- !private ["9SaveUp_BD18ListViewControllerC", "UICollectionViewFlowLayout"]
-- ["9SaveUp_BD18ListViewControllerC", "UICollectionViewLayout"]
-- !private ["9SaveUp_BD18ListViewControllerC", "UIColor"]
-- !private ["9SaveUp_BD18ListViewControllerC", "UIControl"]
-- !private ["9SaveUp_BD18ListViewControllerC", "UIImage"]
-- !private ["9SaveUp_BD18ListViewControllerC", "URL"]
-- !private ["9SaveUp_BD18ListViewControllerC", "URLRequest"]
-- !private ["9SaveUp_BD18ListViewControllerC", "URLSession"]
-- ["9SaveUp_BD18ListViewControllerC", "UserDefaults"]
-- ["9SaveUp_BD18ListViewControllerC", "availability"]
-- ["9SaveUp_BD18ListViewControllerC", "backAction"]
-- ["9SaveUp_BD18ListViewControllerC", "btnFilterPressed"]
-- ["9SaveUp_BD18ListViewControllerC", "btnSortPressed"]
-- ["9SaveUp_BD18ListViewControllerC", "cancelAction"]
-- ["9SaveUp_BD18ListViewControllerC", "cancelFilterAction"]
-- ["9SaveUp_BD18ListViewControllerC", "cartAction"]
-- ["9SaveUp_BD18ListViewControllerC", "categoryIdForFilter"]
-- ["9SaveUp_BD18ListViewControllerC", "category_id"]
-- ["9SaveUp_BD18ListViewControllerC", "category_name"]
-- ["9SaveUp_BD18ListViewControllerC", "collectionView"]
-- ["9SaveUp_BD18ListViewControllerC", "collectionViewDidEndMultipleSelectionInteraction"]
-- ["9SaveUp_BD18ListViewControllerC", "deinit"]
-- ["9SaveUp_BD18ListViewControllerC", "discount"]
-- !private ["9SaveUp_BD18ListViewControllerC", "dismiss"]
-- ["9SaveUp_BD18ListViewControllerC", "featured"]
-- ["9SaveUp_BD18ListViewControllerC", "fiftyAction"]
-- ["9SaveUp_BD18ListViewControllerC", "filterView"]
-- ["9SaveUp_BD18ListViewControllerC", "fiveAction"]
-- ["9SaveUp_BD18ListViewControllerC", "fourtyAction"]
-- ["9SaveUp_BD18ListViewControllerC", "highAction"]
-- ["9SaveUp_BD18ListViewControllerC", "indexPathForPreferredFocusedView"]
-- ["9SaveUp_BD18ListViewControllerC", "indexPathForPreferredFocusedViewInCollectionView"]
-- ["9SaveUp_BD18ListViewControllerC", "indexTitles"]
-- ["9SaveUp_BD18ListViewControllerC", "indexTitlesForCollectionView"]
-- ["9SaveUp_BD18ListViewControllerC", "init"]
-- ["9SaveUp_BD18ListViewControllerC", "is_approved"]
-- ["9SaveUp_BD18ListViewControllerC", "is_published"]
-- ["9SaveUp_BD18ListViewControllerC", "listColeectionView"]
-- ["9SaveUp_BD18ListViewControllerC", "loadForHotDeals"]
-- ["9SaveUp_BD18ListViewControllerC", "loadForLatestDeals"]
-- ["9SaveUp_BD18ListViewControllerC", "loadForTopDeals"]
-- ["9SaveUp_BD18ListViewControllerC", "lowAction"]
-- ["9SaveUp_BD18ListViewControllerC", "main_category_id"]
-- !private ["9SaveUp_BD18ListViewControllerC", "messageFont"]
-- ["9SaveUp_BD18ListViewControllerC", "messageToast"]
-- ["9SaveUp_BD18ListViewControllerC", "mostAction"]
-- ["9SaveUp_BD18ListViewControllerC", "mycartApi"]
-- !private ["9SaveUp_BD18ListViewControllerC", "navigationController"]
-- !private ["9SaveUp_BD18ListViewControllerC", "navigationItem"]
-- ["9SaveUp_BD18ListViewControllerC", "newestAction"]
-- ["9SaveUp_BD18ListViewControllerC", "numberOfSections"]
-- ["9SaveUp_BD18ListViewControllerC", "numberOfSectionsInCollectionView"]
-- ["9SaveUp_BD18ListViewControllerC", "oneAction"]
-- ["9SaveUp_BD18ListViewControllerC", "outAction"]
-- ["9SaveUp_BD18ListViewControllerC", "outBool"]
-- ["9SaveUp_BD18ListViewControllerC", "overAction"]
-- ["9SaveUp_BD18ListViewControllerC", "page_no"]
-- !private ["9SaveUp_BD18ListViewControllerC", "present"]
-- ["9SaveUp_BD18ListViewControllerC", "price_max"]
-- ["9SaveUp_BD18ListViewControllerC", "price_min"]
-- !private ["9SaveUp_BD18ListViewControllerC", "print"]
-- ["9SaveUp_BD18ListViewControllerC", "productApi"]
-- ["9SaveUp_BD18ListViewControllerC", "productApiFilter"]
-- ["9SaveUp_BD18ListViewControllerC", "productApiFilterFive"]
-- ["9SaveUp_BD18ListViewControllerC", "productApiFilterFour"]
-- ["9SaveUp_BD18ListViewControllerC", "productApiFilterOne"]
-- ["9SaveUp_BD18ListViewControllerC", "productApiFilterOneForHotDeals"]
-- ["9SaveUp_BD18ListViewControllerC", "productApiFilterSeven"]
-- ["9SaveUp_BD18ListViewControllerC", "productApiFilterSix"]
-- ["9SaveUp_BD18ListViewControllerC", "productApiFilterThree"]
-- ["9SaveUp_BD18ListViewControllerC", "productApiFilterTwo"]
-- ["9SaveUp_BD18ListViewControllerC", "productApiForSearch"]
-- ["9SaveUp_BD18ListViewControllerC", "productApiThree"]
-- ["9SaveUp_BD18ListViewControllerC", "productApiTwo"]
-- ["9SaveUp_BD18ListViewControllerC", "productsArray"]
-- ["9SaveUp_BD18ListViewControllerC", "resetAction"]
-- ["9SaveUp_BD18ListViewControllerC", "resetFilterAction"]
-- ["9SaveUp_BD18ListViewControllerC", "screenString"]
-- ["9SaveUp_BD18ListViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
-- ["9SaveUp_BD18ListViewControllerC", "scrollViewDidEndDecelerating"]
-- ["9SaveUp_BD18ListViewControllerC", "scrollViewDidEndDragging"]
-- ["9SaveUp_BD18ListViewControllerC", "scrollViewDidEndScrollingAnimation"]
-- ["9SaveUp_BD18ListViewControllerC", "scrollViewDidEndZooming"]
-- ["9SaveUp_BD18ListViewControllerC", "scrollViewDidScroll"]
-- ["9SaveUp_BD18ListViewControllerC", "scrollViewDidScrollToTop"]
-- ["9SaveUp_BD18ListViewControllerC", "scrollViewDidZoom"]
-- ["9SaveUp_BD18ListViewControllerC", "scrollViewShouldScrollToTop"]
-- ["9SaveUp_BD18ListViewControllerC", "scrollViewWillBeginDecelerating"]
-- ["9SaveUp_BD18ListViewControllerC", "scrollViewWillBeginDragging"]
-- ["9SaveUp_BD18ListViewControllerC", "scrollViewWillBeginZooming"]
-- ["9SaveUp_BD18ListViewControllerC", "scrollViewWillEndDragging"]
-- ["9SaveUp_BD18ListViewControllerC", "sec_category_id"]
-- ["9SaveUp_BD18ListViewControllerC", "setShadowAndRoundedBorder"]
-- !private ["9SaveUp_BD18ListViewControllerC", "showNetworkErrorAlert"]
-- ["9SaveUp_BD18ListViewControllerC", "sortView"]
-- ["9SaveUp_BD18ListViewControllerC", "sort_order_by"]
-- !private ["9SaveUp_BD18ListViewControllerC", "storyboard"]
-- ["9SaveUp_BD18ListViewControllerC", "sub_category_id"]
-- ["9SaveUp_BD18ListViewControllerC", "sub_sec_category_id"]
-- ["9SaveUp_BD18ListViewControllerC", "tenAction"]
-- ["9SaveUp_BD18ListViewControllerC", "thirtyAction"]
-- ["9SaveUp_BD18ListViewControllerC", "three"]
-- ["9SaveUp_BD18ListViewControllerC", "titleString"]
-- ["9SaveUp_BD18ListViewControllerC", "twentyAction"]
-- ["9SaveUp_BD18ListViewControllerC", "twoAction"]
-- ["9SaveUp_BD18ListViewControllerC", "underAction"]
-- ["9SaveUp_BD18ListViewControllerC", "value_id"]
-- !private ["9SaveUp_BD18ListViewControllerC", "view"]
-- ["9SaveUp_BD18ListViewControllerC", "viewDidLoad"]
-- ["9SaveUp_BD18ListViewControllerC", "viewForZooming"]
-- ["9SaveUp_BD18ListViewControllerC", "viewForZoomingInScrollView"]
-- ["9SaveUp_BD18ListViewControllerC", "viewWillAppear"]
-- ["9SaveUp_BD18ListViewControllerC", "zeroAction"]
+- !private ["6SaveUp10KingfisherC", "setImage"]
+- !private ["6SaveUp20KingfisherCompatibleP", "ButtonType"]
+- !private ["6SaveUp20KingfisherCompatibleP", "Encoding"]
+- !private ["6SaveUp20KingfisherCompatibleP", "addTarget"]
+- !private ["6SaveUp20KingfisherCompatibleP", "badgeString"]
+- !private ["6SaveUp20KingfisherCompatibleP", "badgeTextColor"]
+- !private ["6SaveUp20KingfisherCompatibleP", "count"]
+- !private ["6SaveUp20KingfisherCompatibleP", "data"]
+- !private ["6SaveUp20KingfisherCompatibleP", "frame"]
+- !private ["6SaveUp20KingfisherCompatibleP", "height"]
+- !private ["6SaveUp20KingfisherCompatibleP", "init"]
+- !private ["6SaveUp20KingfisherCompatibleP", "keyWindow"]
+- !private ["6SaveUp20KingfisherCompatibleP", "kf"]
+- !private ["6SaveUp20KingfisherCompatibleP", "setImage"]
+- !private ["6SaveUp20KingfisherCompatibleP", "setTitleColor"]
+- !private ["6SaveUp20KingfisherCompatibleP", "shared"]
+- !private ["6SaveUp20KingfisherCompatibleP", "strikeThrough"]
+- !private ["6SaveUp20KingfisherCompatibleP", "width"]
+- !private ["6SaveUp20KingfisherCompatibleP", "yy_imageURL"]
+- !private ["6SaveUp18ListViewControllerC", "Api_Base_URL"]
+- ["6SaveUp18ListViewControllerC", "Bool"]
+- !private ["6SaveUp18ListViewControllerC", "CGFloat"]
+- !private ["6SaveUp18ListViewControllerC", "CGRect"]
+- ["6SaveUp18ListViewControllerC", "CGSize"]
+- !private ["6SaveUp18ListViewControllerC", "DispatchQueue"]
+- !private ["6SaveUp18ListViewControllerC", "FLatestCollectionViewCell"]
+- !private ["6SaveUp18ListViewControllerC", "FProductDetailsTableViewController"]
+- ["6SaveUp18ListViewControllerC", "FilterView"]
+- !private ["6SaveUp18ListViewControllerC", "HomeViewController"]
+- ["6SaveUp18ListViewControllerC", "IndexPath"]
+- ["6SaveUp18ListViewControllerC", "Int"]
+- !private ["6SaveUp18ListViewControllerC", "JSONSerialization"]
+- !private ["6SaveUp18ListViewControllerC", "MIBadgeButton"]
+- ["6SaveUp18ListViewControllerC", "MessageApi"]
+- !private ["6SaveUp18ListViewControllerC", "MyCartViewController"]
+- !private ["6SaveUp18ListViewControllerC", "NSDictionary"]
+- !private ["6SaveUp18ListViewControllerC", "NSInteger"]
+- !private ["6SaveUp18ListViewControllerC", "ProductViewController"]
+- ["6SaveUp18ListViewControllerC", "Products"]
+- !private ["6SaveUp18ListViewControllerC", "Reachability"]
+- ["6SaveUp18ListViewControllerC", "SortView"]
+- ["6SaveUp18ListViewControllerC", "String"]
+- !private ["6SaveUp18ListViewControllerC", "StringToURL"]
+- !private ["6SaveUp18ListViewControllerC", "ToastStyle"]
+- !private ["6SaveUp18ListViewControllerC", "UIAlertAction"]
+- !private ["6SaveUp18ListViewControllerC", "UIAlertController"]
+- !private ["6SaveUp18ListViewControllerC", "UIApplication"]
+- !private ["6SaveUp18ListViewControllerC", "UIBarButtonItem"]
+- !private ["6SaveUp18ListViewControllerC", "UIBezierPath"]
+- ["6SaveUp18ListViewControllerC", "UIButton"]
+- ["6SaveUp18ListViewControllerC", "UICollectionView"]
+- ["6SaveUp18ListViewControllerC", "UICollectionViewCell"]
+- !private ["6SaveUp18ListViewControllerC", "UICollectionViewFlowLayout"]
+- ["6SaveUp18ListViewControllerC", "UICollectionViewLayout"]
+- !private ["6SaveUp18ListViewControllerC", "UIColor"]
+- !private ["6SaveUp18ListViewControllerC", "UIControl"]
+- !private ["6SaveUp18ListViewControllerC", "UIImage"]
+- !private ["6SaveUp18ListViewControllerC", "URL"]
+- !private ["6SaveUp18ListViewControllerC", "URLRequest"]
+- !private ["6SaveUp18ListViewControllerC", "URLSession"]
+- ["6SaveUp18ListViewControllerC", "UserDefaults"]
+- ["6SaveUp18ListViewControllerC", "availability"]
+- ["6SaveUp18ListViewControllerC", "backAction"]
+- ["6SaveUp18ListViewControllerC", "btnFilterPressed"]
+- ["6SaveUp18ListViewControllerC", "btnSortPressed"]
+- ["6SaveUp18ListViewControllerC", "cancelAction"]
+- ["6SaveUp18ListViewControllerC", "cancelFilterAction"]
+- ["6SaveUp18ListViewControllerC", "cartAction"]
+- ["6SaveUp18ListViewControllerC", "categoryIdForFilter"]
+- ["6SaveUp18ListViewControllerC", "category_id"]
+- ["6SaveUp18ListViewControllerC", "category_name"]
+- ["6SaveUp18ListViewControllerC", "collectionView"]
+- ["6SaveUp18ListViewControllerC", "collectionViewDidEndMultipleSelectionInteraction"]
+- ["6SaveUp18ListViewControllerC", "deinit"]
+- ["6SaveUp18ListViewControllerC", "discount"]
+- !private ["6SaveUp18ListViewControllerC", "dismiss"]
+- ["6SaveUp18ListViewControllerC", "featured"]
+- ["6SaveUp18ListViewControllerC", "fiftyAction"]
+- ["6SaveUp18ListViewControllerC", "filterView"]
+- ["6SaveUp18ListViewControllerC", "fiveAction"]
+- ["6SaveUp18ListViewControllerC", "fourtyAction"]
+- ["6SaveUp18ListViewControllerC", "highAction"]
+- ["6SaveUp18ListViewControllerC", "indexPathForPreferredFocusedView"]
+- ["6SaveUp18ListViewControllerC", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["6SaveUp18ListViewControllerC", "indexTitles"]
+- ["6SaveUp18ListViewControllerC", "indexTitlesForCollectionView"]
+- ["6SaveUp18ListViewControllerC", "init"]
+- ["6SaveUp18ListViewControllerC", "is_approved"]
+- ["6SaveUp18ListViewControllerC", "is_published"]
+- ["6SaveUp18ListViewControllerC", "listColeectionView"]
+- ["6SaveUp18ListViewControllerC", "loadForHotDeals"]
+- ["6SaveUp18ListViewControllerC", "loadForLatestDeals"]
+- ["6SaveUp18ListViewControllerC", "loadForTopDeals"]
+- ["6SaveUp18ListViewControllerC", "lowAction"]
+- ["6SaveUp18ListViewControllerC", "main_category_id"]
+- !private ["6SaveUp18ListViewControllerC", "messageFont"]
+- ["6SaveUp18ListViewControllerC", "messageToast"]
+- ["6SaveUp18ListViewControllerC", "mostAction"]
+- ["6SaveUp18ListViewControllerC", "mycartApi"]
+- !private ["6SaveUp18ListViewControllerC", "navigationController"]
+- ["6SaveUp18ListViewControllerC", "newestAction"]
+- ["6SaveUp18ListViewControllerC", "numberOfSections"]
+- ["6SaveUp18ListViewControllerC", "numberOfSectionsInCollectionView"]
+- ["6SaveUp18ListViewControllerC", "oneAction"]
+- ["6SaveUp18ListViewControllerC", "outAction"]
+- ["6SaveUp18ListViewControllerC", "outBool"]
+- ["6SaveUp18ListViewControllerC", "overAction"]
+- ["6SaveUp18ListViewControllerC", "page_no"]
+- !private ["6SaveUp18ListViewControllerC", "present"]
+- ["6SaveUp18ListViewControllerC", "price_max"]
+- ["6SaveUp18ListViewControllerC", "price_min"]
+- !private ["6SaveUp18ListViewControllerC", "print"]
+- ["6SaveUp18ListViewControllerC", "productApi"]
+- ["6SaveUp18ListViewControllerC", "productApiFilter"]
+- ["6SaveUp18ListViewControllerC", "productApiFilterFive"]
+- ["6SaveUp18ListViewControllerC", "productApiFilterFour"]
+- ["6SaveUp18ListViewControllerC", "productApiFilterOne"]
+- ["6SaveUp18ListViewControllerC", "productApiFilterOneForHotDeals"]
+- ["6SaveUp18ListViewControllerC", "productApiFilterSeven"]
+- ["6SaveUp18ListViewControllerC", "productApiFilterSix"]
+- ["6SaveUp18ListViewControllerC", "productApiFilterThree"]
+- ["6SaveUp18ListViewControllerC", "productApiFilterTwo"]
+- ["6SaveUp18ListViewControllerC", "productApiForSearch"]
+- ["6SaveUp18ListViewControllerC", "productApiThree"]
+- ["6SaveUp18ListViewControllerC", "productApiTwo"]
+- ["6SaveUp18ListViewControllerC", "productsArray"]
+- ["6SaveUp18ListViewControllerC", "resetAction"]
+- ["6SaveUp18ListViewControllerC", "resetFilterAction"]
+- ["6SaveUp18ListViewControllerC", "screenString"]
+- ["6SaveUp18ListViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
+- ["6SaveUp18ListViewControllerC", "scrollViewDidEndDecelerating"]
+- ["6SaveUp18ListViewControllerC", "scrollViewDidEndDragging"]
+- ["6SaveUp18ListViewControllerC", "scrollViewDidEndScrollingAnimation"]
+- ["6SaveUp18ListViewControllerC", "scrollViewDidEndZooming"]
+- ["6SaveUp18ListViewControllerC", "scrollViewDidScroll"]
+- ["6SaveUp18ListViewControllerC", "scrollViewDidScrollToTop"]
+- ["6SaveUp18ListViewControllerC", "scrollViewDidZoom"]
+- ["6SaveUp18ListViewControllerC", "scrollViewShouldScrollToTop"]
+- ["6SaveUp18ListViewControllerC", "scrollViewWillBeginDecelerating"]
+- ["6SaveUp18ListViewControllerC", "scrollViewWillBeginDragging"]
+- ["6SaveUp18ListViewControllerC", "scrollViewWillBeginZooming"]
+- ["6SaveUp18ListViewControllerC", "scrollViewWillEndDragging"]
+- ["6SaveUp18ListViewControllerC", "sec_category_id"]
+- ["6SaveUp18ListViewControllerC", "setShadowAndRoundedBorder"]
+- !private ["6SaveUp18ListViewControllerC", "showNetworkErrorAlert"]
+- ["6SaveUp18ListViewControllerC", "sortView"]
+- ["6SaveUp18ListViewControllerC", "sort_order_by"]
+- !private ["6SaveUp18ListViewControllerC", "storyboard"]
+- ["6SaveUp18ListViewControllerC", "sub_category_id"]
+- ["6SaveUp18ListViewControllerC", "sub_sec_category_id"]
+- ["6SaveUp18ListViewControllerC", "tenAction"]
+- ["6SaveUp18ListViewControllerC", "thirtyAction"]
+- ["6SaveUp18ListViewControllerC", "three"]
+- ["6SaveUp18ListViewControllerC", "titleString"]
+- ["6SaveUp18ListViewControllerC", "twentyAction"]
+- ["6SaveUp18ListViewControllerC", "twoAction"]
+- ["6SaveUp18ListViewControllerC", "underAction"]
+- ["6SaveUp18ListViewControllerC", "value_id"]
+- !private ["6SaveUp18ListViewControllerC", "view"]
+- ["6SaveUp18ListViewControllerC", "viewDidLoad"]
+- ["6SaveUp18ListViewControllerC", "viewForZooming"]
+- ["6SaveUp18ListViewControllerC", "viewForZoomingInScrollView"]
+- ["6SaveUp18ListViewControllerC", "viewWillAppear"]
+- ["6SaveUp18ListViewControllerC", "zeroAction"]
 - !private ["s25LosslessStringConvertibleP", "Encoding"]
 - !private ["s25LosslessStringConvertibleP", "count"]
 - !private ["s25LosslessStringConvertibleP", "data"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "strikeThrough"]
-- !private ["9SaveUp_BD13MIBadgeButtonC", "addTarget"]
-- !private ["9SaveUp_BD13MIBadgeButtonC", "badgeString"]
-- !private ["9SaveUp_BD13MIBadgeButtonC", "badgeTextColor"]
-- !private ["9SaveUp_BD13MIBadgeButtonC", "deinit"]
-- !private ["9SaveUp_BD13MIBadgeButtonC", "frame"]
-- !private ["9SaveUp_BD13MIBadgeButtonC", "init"]
-- !private ["9SaveUp_BD13MIBadgeButtonC", "setImage"]
+- !private ["6SaveUp13MIBadgeButtonC", "addTarget"]
+- !private ["6SaveUp13MIBadgeButtonC", "badgeString"]
+- !private ["6SaveUp13MIBadgeButtonC", "badgeTextColor"]
+- !private ["6SaveUp13MIBadgeButtonC", "deinit"]
+- !private ["6SaveUp13MIBadgeButtonC", "frame"]
+- !private ["6SaveUp13MIBadgeButtonC", "init"]
+- !private ["6SaveUp13MIBadgeButtonC", "setImage"]
 - !private ["s10MirrorPathP", "Encoding"]
 - !private ["s10MirrorPathP", "count"]
 - !private ["s10MirrorPathP", "data"]
@@ -1918,7 +1907,7 @@ depends-member:
 - !private ["10Foundation19MutableDataProtocolP", "count"]
 - ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
-- !private ["9SaveUp_BD20MyCartViewControllerC", "screen_value"]
+- !private ["6SaveUp20MyCartViewControllerC", "screen_value"]
 - !private ["So8NSCodingP", "Api_Base_URL"]
 - !private ["So8NSCodingP", "ButtonType"]
 - !private ["So8NSCodingP", "CGRect"]
@@ -2022,7 +2011,6 @@ depends-member:
 - !private ["So8NSCodingP", "mostButton"]
 - !private ["So8NSCodingP", "mycartApi"]
 - !private ["So8NSCodingP", "navigationController"]
-- !private ["So8NSCodingP", "navigationItem"]
 - !private ["So8NSCodingP", "newestButton"]
 - ["So8NSCodingP", "numberOfSections"]
 - ["So8NSCodingP", "numberOfSectionsInCollectionView"]
@@ -2065,7 +2053,6 @@ depends-member:
 - !private ["So8NSCodingP", "resetAction"]
 - !private ["So8NSCodingP", "resetButton"]
 - !private ["So8NSCodingP", "resetFilterAction"]
-- !private ["So8NSCodingP", "rightBarButtonItem"]
 - !private ["So8NSCodingP", "screen_value"]
 - ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSCodingP", "scrollViewDidEndDecelerating"]
@@ -2194,7 +2181,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "modalPresentationStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "mycartApi"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
-- !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSections"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInCollectionView"]
 - !private ["So26NSExtensionRequestHandlingP", "oneAction"]
@@ -2418,7 +2404,6 @@ depends-member:
 - !private ["So8NSObjectC", "mostButton"]
 - ["So8NSObjectC", "mycartApi"]
 - !private ["So8NSObjectC", "navigationController"]
-- !private ["So8NSObjectC", "navigationItem"]
 - ["So8NSObjectC", "newestAction"]
 - !private ["So8NSObjectC", "newestButton"]
 - ["So8NSObjectC", "numberOfSections"]
@@ -2469,7 +2454,6 @@ depends-member:
 - !private ["So8NSObjectC", "resetButton"]
 - ["So8NSObjectC", "resetFilterAction"]
 - !private ["So8NSObjectC", "resume"]
-- !private ["So8NSObjectC", "rightBarButtonItem"]
 - ["So8NSObjectC", "screenString"]
 - !private ["So8NSObjectC", "screen_value"]
 - ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
@@ -2641,7 +2625,6 @@ depends-member:
 - !private ["So8NSObjectP", "mostButton"]
 - !private ["So8NSObjectP", "mycartApi"]
 - !private ["So8NSObjectP", "navigationController"]
-- !private ["So8NSObjectP", "navigationItem"]
 - !private ["So8NSObjectP", "newestButton"]
 - ["So8NSObjectP", "numberOfSections"]
 - ["So8NSObjectP", "numberOfSectionsInCollectionView"]
@@ -2691,7 +2674,6 @@ depends-member:
 - !private ["So8NSObjectP", "resetButton"]
 - !private ["So8NSObjectP", "resetFilterAction"]
 - !private ["So8NSObjectP", "resume"]
-- !private ["So8NSObjectP", "rightBarButtonItem"]
 - !private ["So8NSObjectP", "screen_value"]
 - ["So8NSObjectP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectP", "scrollViewDidEndDecelerating"]
@@ -2815,21 +2797,21 @@ depends-member:
 - !private ["Sq", "underButton"]
 - !private ["Sq", "yy_imageURL"]
 - !private ["Sq", "zeroButton"]
-- !private ["9SaveUp_BD11PlaceholderP", "init"]
-- !private ["9SaveUp_BD21ProductViewControllerC", "backAction"]
-- !private ["9SaveUp_BD21ProductViewControllerC", "cancelAction"]
-- !private ["9SaveUp_BD21ProductViewControllerC", "cartAction"]
-- !private ["9SaveUp_BD21ProductViewControllerC", "highAction"]
-- !private ["9SaveUp_BD21ProductViewControllerC", "lowAction"]
-- !private ["9SaveUp_BD21ProductViewControllerC", "resetAction"]
-- !private ["9SaveUp_BD8ProductsC", "init"]
-- !private ["9SaveUp_BD8ProductsC", "merchant_name"]
-- !private ["9SaveUp_BD8ProductsC", "product_discount_price"]
-- !private ["9SaveUp_BD8ProductsC", "product_id"]
-- !private ["9SaveUp_BD8ProductsC", "product_image"]
-- !private ["9SaveUp_BD8ProductsC", "product_percentage"]
-- !private ["9SaveUp_BD8ProductsC", "product_price"]
-- !private ["9SaveUp_BD8ProductsC", "product_title"]
+- !private ["6SaveUp11PlaceholderP", "init"]
+- !private ["6SaveUp21ProductViewControllerC", "backAction"]
+- !private ["6SaveUp21ProductViewControllerC", "cancelAction"]
+- !private ["6SaveUp21ProductViewControllerC", "cartAction"]
+- !private ["6SaveUp21ProductViewControllerC", "highAction"]
+- !private ["6SaveUp21ProductViewControllerC", "lowAction"]
+- !private ["6SaveUp21ProductViewControllerC", "resetAction"]
+- !private ["6SaveUp8ProductsC", "init"]
+- !private ["6SaveUp8ProductsC", "merchant_name"]
+- !private ["6SaveUp8ProductsC", "product_discount_price"]
+- !private ["6SaveUp8ProductsC", "product_id"]
+- !private ["6SaveUp8ProductsC", "product_image"]
+- !private ["6SaveUp8ProductsC", "product_percentage"]
+- !private ["6SaveUp8ProductsC", "product_price"]
+- !private ["6SaveUp8ProductsC", "product_title"]
 - !private ["So19NSProgressReportingP", "resume"]
 - !private ["Sk", "append"]
 - !private ["Sk", "count"]
@@ -2868,16 +2850,16 @@ depends-member:
 - !private ["SY", "normal"]
 - !private ["SY", "touchUpInside"]
 - !private ["SY", "utf8"]
-- !private ["9SaveUp_BD12ReachabilityC", "init"]
-- !private ["9SaveUp_BD12ReachabilityC", "isReachable"]
+- !private ["6SaveUp12ReachabilityC", "init"]
+- !private ["6SaveUp12ReachabilityC", "isReachable"]
 - !private ["So20NSJSONReadingOptionsV", "mutableContainers"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpBody"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "row"]
-- !private ["9SaveUp_BD29RelatedCollectionCellDelegateP", "category_name"]
-- !private ["9SaveUp_BD29RelatedCollectionCellDelegateP", "product_id"]
-- !private ["9SaveUp_BD8ResourceP", "init"]
+- !private ["6SaveUp29RelatedCollectionCellDelegateP", "category_name"]
+- !private ["6SaveUp29RelatedCollectionCellDelegateP", "product_id"]
+- !private ["6SaveUp8ResourceP", "init"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "main"]
 - !private ["ST", "Encoding"]
@@ -2900,16 +2882,16 @@ depends-member:
 - !private ["s10SetAlgebraP", "mutableContainers"]
 - !private ["s10SetAlgebraP", "normal"]
 - !private ["s10SetAlgebraP", "touchUpInside"]
-- !private ["9SaveUp_BD8SortViewC", "backView"]
-- !private ["9SaveUp_BD8SortViewC", "cancelButton"]
-- !private ["9SaveUp_BD8SortViewC", "deinit"]
-- !private ["9SaveUp_BD8SortViewC", "highButton"]
-- !private ["9SaveUp_BD8SortViewC", "init"]
-- !private ["9SaveUp_BD8SortViewC", "isHidden"]
-- !private ["9SaveUp_BD8SortViewC", "lowButton"]
-- !private ["9SaveUp_BD8SortViewC", "mostButton"]
-- !private ["9SaveUp_BD8SortViewC", "newestButton"]
-- !private ["9SaveUp_BD8SortViewC", "resetButton"]
+- !private ["6SaveUp8SortViewC", "backView"]
+- !private ["6SaveUp8SortViewC", "cancelButton"]
+- !private ["6SaveUp8SortViewC", "deinit"]
+- !private ["6SaveUp8SortViewC", "highButton"]
+- !private ["6SaveUp8SortViewC", "init"]
+- !private ["6SaveUp8SortViewC", "isHidden"]
+- !private ["6SaveUp8SortViewC", "lowButton"]
+- !private ["6SaveUp8SortViewC", "mostButton"]
+- !private ["6SaveUp8SortViewC", "newestButton"]
+- !private ["6SaveUp8SortViewC", "resetButton"]
 - !private ["So14UIControlStateV", "init"]
 - !private ["So14UIControlStateV", "normal"]
 - !private ["SS", "Encoding"]
@@ -2939,14 +2921,14 @@ depends-member:
 - !private ["s20TextOutputStreamableP", "data"]
 - !private ["s20TextOutputStreamableP", "init"]
 - !private ["s20TextOutputStreamableP", "strikeThrough"]
-- !private ["9SaveUp_BD13ToastPositionO", "bottom"]
-- !private ["9SaveUp_BD13ToastPositionO", "center"]
-- !private ["9SaveUp_BD13ToastPositionO", "top"]
-- !private ["9SaveUp_BD10ToastStyleV", "backgroundColor"]
-- !private ["9SaveUp_BD10ToastStyleV", "init"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageAlignment"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageColor"]
-- !private ["9SaveUp_BD10ToastStyleV", "messageFont"]
+- !private ["6SaveUp13ToastPositionO", "bottom"]
+- !private ["6SaveUp13ToastPositionO", "center"]
+- !private ["6SaveUp13ToastPositionO", "top"]
+- !private ["6SaveUp10ToastStyleV", "backgroundColor"]
+- !private ["6SaveUp10ToastStyleV", "init"]
+- !private ["6SaveUp10ToastStyleV", "messageAlignment"]
+- !private ["6SaveUp10ToastStyleV", "messageColor"]
+- !private ["6SaveUp10ToastStyleV", "messageFont"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "ButtonType"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "badgeString"]
@@ -3169,7 +3151,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "mostButton"]
 - !private ["So21UIAppearanceContainerP", "mycartApi"]
 - !private ["So21UIAppearanceContainerP", "navigationController"]
-- !private ["So21UIAppearanceContainerP", "navigationItem"]
 - !private ["So21UIAppearanceContainerP", "newestButton"]
 - ["So21UIAppearanceContainerP", "numberOfSections"]
 - ["So21UIAppearanceContainerP", "numberOfSectionsInCollectionView"]
@@ -3343,7 +3324,6 @@ depends-member:
 - !private ["So26UICollectionViewDataSourceP", "messageFont"]
 - !private ["So26UICollectionViewDataSourceP", "mycartApi"]
 - !private ["So26UICollectionViewDataSourceP", "navigationController"]
-- !private ["So26UICollectionViewDataSourceP", "navigationItem"]
 - ["So26UICollectionViewDataSourceP", "numberOfSections"]
 - ["So26UICollectionViewDataSourceP", "numberOfSectionsInCollectionView"]
 - !private ["So26UICollectionViewDataSourceP", "oneAction"]
@@ -3450,7 +3430,6 @@ depends-member:
 - !private ["So24UICollectionViewDelegateP", "messageFont"]
 - !private ["So24UICollectionViewDelegateP", "mycartApi"]
 - !private ["So24UICollectionViewDelegateP", "navigationController"]
-- !private ["So24UICollectionViewDelegateP", "navigationItem"]
 - ["So24UICollectionViewDelegateP", "numberOfSections"]
 - ["So24UICollectionViewDelegateP", "numberOfSectionsInCollectionView"]
 - !private ["So24UICollectionViewDelegateP", "oneAction"]
@@ -3557,7 +3536,6 @@ depends-member:
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "messageFont"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "mycartApi"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "navigationController"]
-- !private ["So34UICollectionViewDelegateFlowLayoutP", "navigationItem"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "numberOfSections"]
 - ["So34UICollectionViewDelegateFlowLayoutP", "numberOfSectionsInCollectionView"]
 - !private ["So34UICollectionViewDelegateFlowLayoutP", "oneAction"]
@@ -3684,7 +3662,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "modalPresentationStyle"]
 - !private ["So18UIContentContainerP", "mycartApi"]
 - !private ["So18UIContentContainerP", "navigationController"]
-- !private ["So18UIContentContainerP", "navigationItem"]
 - ["So18UIContentContainerP", "numberOfSections"]
 - ["So18UIContentContainerP", "numberOfSectionsInCollectionView"]
 - !private ["So18UIContentContainerP", "oneAction"]
@@ -3969,7 +3946,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "mostButton"]
 - !private ["So18UIFocusEnvironmentP", "mycartApi"]
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
-- !private ["So18UIFocusEnvironmentP", "navigationItem"]
 - !private ["So18UIFocusEnvironmentP", "newestButton"]
 - ["So18UIFocusEnvironmentP", "numberOfSections"]
 - ["So18UIFocusEnvironmentP", "numberOfSectionsInCollectionView"]
@@ -4234,7 +4210,6 @@ depends-member:
 - !private ["So24UIModalPresentationStyleV", "fullScreen"]
 - !private ["So22UINavigationControllerC", "popViewController"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
-- !private ["So16UINavigationItemC", "rightBarButtonItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "Api_Base_URL"]
 - !private ["So30UIPasteConfigurationSupportingP", "ButtonType"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
@@ -4329,7 +4304,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "mostButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "mycartApi"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
-- !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "newestButton"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSectionsInCollectionView"]
@@ -4536,7 +4510,6 @@ depends-member:
 - !private ["So11UIResponderC", "mostButton"]
 - ["So11UIResponderC", "mycartApi"]
 - !private ["So11UIResponderC", "navigationController"]
-- !private ["So11UIResponderC", "navigationItem"]
 - ["So11UIResponderC", "newestAction"]
 - !private ["So11UIResponderC", "newestButton"]
 - ["So11UIResponderC", "numberOfSections"]
@@ -4721,7 +4694,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "mostButton"]
 - !private ["So30UIResponderStandardEditActionsP", "mycartApi"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
-- !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
 - !private ["So30UIResponderStandardEditActionsP", "newestButton"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSections"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSectionsInCollectionView"]
@@ -4867,7 +4839,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "messageFont"]
 - !private ["So20UIScrollViewDelegateP", "mycartApi"]
 - !private ["So20UIScrollViewDelegateP", "navigationController"]
-- !private ["So20UIScrollViewDelegateP", "navigationItem"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
 - ["So20UIScrollViewDelegateP", "numberOfSectionsInCollectionView"]
 - !private ["So20UIScrollViewDelegateP", "oneAction"]
@@ -5003,7 +4974,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "modalPresentationStyle"]
 - !private ["So16UIStateRestoringP", "mycartApi"]
 - !private ["So16UIStateRestoringP", "navigationController"]
-- !private ["So16UIStateRestoringP", "navigationItem"]
 - ["So16UIStateRestoringP", "numberOfSections"]
 - ["So16UIStateRestoringP", "numberOfSectionsInCollectionView"]
 - !private ["So16UIStateRestoringP", "oneAction"]
@@ -5183,7 +5153,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "mostButton"]
 - !private ["So18UITraitEnvironmentP", "mycartApi"]
 - !private ["So18UITraitEnvironmentP", "navigationController"]
-- !private ["So18UITraitEnvironmentP", "navigationItem"]
 - !private ["So18UITraitEnvironmentP", "newestButton"]
 - ["So18UITraitEnvironmentP", "numberOfSections"]
 - ["So18UITraitEnvironmentP", "numberOfSectionsInCollectionView"]
@@ -5363,7 +5332,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "mostButton"]
 - !private ["So23UIUserActivityRestoringP", "mycartApi"]
 - !private ["So23UIUserActivityRestoringP", "navigationController"]
-- !private ["So23UIUserActivityRestoringP", "navigationItem"]
 - !private ["So23UIUserActivityRestoringP", "newestButton"]
 - ["So23UIUserActivityRestoringP", "numberOfSections"]
 - ["So23UIUserActivityRestoringP", "numberOfSectionsInCollectionView"]
@@ -5592,7 +5560,6 @@ depends-member:
 - ["So16UIViewControllerC", "mostAction"]
 - ["So16UIViewControllerC", "mycartApi"]
 - !private ["So16UIViewControllerC", "navigationController"]
-- !private ["So16UIViewControllerC", "navigationItem"]
 - ["So16UIViewControllerC", "newestAction"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInCollectionView"]
@@ -5859,7 +5826,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "mostButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "mycartApi"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "newestButton"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSectionsInCollectionView"]
@@ -5909,7 +5875,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resetButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resetFilterAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "rightBarButtonItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "screen_value"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDecelerating"]
@@ -6078,7 +6043,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "mostButton"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "mycartApi"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationController"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "newestButton"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "numberOfSections"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "numberOfSectionsInCollectionView"]
@@ -6128,7 +6092,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resetButton"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resetFilterAction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resume"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rightBarButtonItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "screen_value"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidEndDecelerating"]
@@ -6333,22 +6296,22 @@ depends-nominal:
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
-- !private "9SaveUp_BD25FLatestCollectionViewCellC"
-- !private "9SaveUp_BD34FProductDetailsTableViewControllerC"
-- !private "9SaveUp_BD10FilterViewC"
+- !private "6SaveUp25FLatestCollectionViewCellC"
+- !private "6SaveUp34FProductDetailsTableViewControllerC"
+- !private "6SaveUp10FilterViewC"
 - "SH"
-- !private "9SaveUp_BD18HomeViewControllerC"
+- !private "6SaveUp18HomeViewControllerC"
 - !private "10Foundation9IndexPathV"
 - !private "So19NSJSONSerializationC"
-- !private "9SaveUp_BD10KingfisherC"
-- !private "9SaveUp_BD20KingfisherCompatibleP"
-- "9SaveUp_BD18ListViewControllerC"
+- !private "6SaveUp10KingfisherC"
+- !private "6SaveUp20KingfisherCompatibleP"
+- "6SaveUp18ListViewControllerC"
 - !private "s25LosslessStringConvertibleP"
-- !private "9SaveUp_BD13MIBadgeButtonC"
+- !private "6SaveUp13MIBadgeButtonC"
 - !private "s10MirrorPathP"
 - "SM"
 - "10Foundation19MutableDataProtocolP"
-- !private "9SaveUp_BD20MyCartViewControllerC"
+- !private "6SaveUp20MyCartViewControllerC"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
 - !private "So12NSDictionaryC"
@@ -6365,22 +6328,22 @@ depends-nominal:
 - !private "So9OS_objectC"
 - !private "s9OptionSetP"
 - !private "Sq"
-- !private "9SaveUp_BD11PlaceholderP"
-- !private "9SaveUp_BD21ProductViewControllerC"
-- !private "9SaveUp_BD8ProductsC"
+- !private "6SaveUp11PlaceholderP"
+- !private "6SaveUp21ProductViewControllerC"
+- !private "6SaveUp8ProductsC"
 - !private "So19NSProgressReportingP"
 - "Sk"
 - "Sm"
 - !private "SY"
-- !private "9SaveUp_BD12ReachabilityC"
+- !private "6SaveUp12ReachabilityC"
 - !private "So20NSJSONReadingOptionsV"
 - !private "10Foundation20ReferenceConvertibleP"
-- !private "9SaveUp_BD29RelatedCollectionCellDelegateP"
-- !private "9SaveUp_BD8ResourceP"
+- !private "6SaveUp29RelatedCollectionCellDelegateP"
+- !private "6SaveUp8ResourceP"
 - !private "7Combine9SchedulerP"
 - "ST"
 - !private "s10SetAlgebraP"
-- !private "9SaveUp_BD8SortViewC"
+- !private "6SaveUp8SortViewC"
 - !private "So14UIControlStateV"
 - !private "SS"
 - !private "s27StringInterpolationProtocolP"
@@ -6389,8 +6352,8 @@ depends-nominal:
 - !private "So18UIAlertActionStyleV"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
-- !private "9SaveUp_BD13ToastPositionO"
-- !private "9SaveUp_BD10ToastStyleV"
+- !private "6SaveUp13ToastPositionO"
+- !private "6SaveUp10ToastStyleV"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So21UIActionSheetDelegateP"
@@ -6431,7 +6394,6 @@ depends-nominal:
 - !private "So24UILargeContentViewerItemP"
 - !private "So24UIModalPresentationStyleV"
 - !private "So22UINavigationControllerC"
-- !private "So16UINavigationItemC"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
@@ -6514,6 +6476,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CATransform3D.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUUID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUUID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
@@ -6524,6 +6488,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Sparse/BLAS.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/alloca.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Alpha.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/LinearAlgebra.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
@@ -6532,6 +6500,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolMetadata.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/quota.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach-o/stab.h"
@@ -6707,6 +6676,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIFilterShape.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureScope.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFResponseType.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFButtonType.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/ctype.h"
@@ -6718,6 +6688,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/xlocale/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/runetype.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKitCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/semaphore.h"
@@ -6742,6 +6713,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/trace_base.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/readpassphrase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLResponse.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchResponse.h"
@@ -6755,9 +6727,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSCompoundPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSComparisonPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginFlowState.h"
@@ -6783,6 +6757,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/_types/_offsetof.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBag.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/i386/fp_reg.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FIRRemoteConfig.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/mig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLHeading.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemsConfigurationReading.h"
@@ -6847,6 +6823,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/shims/KeyPath.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/math.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/tgmath.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/kauth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/objc-api.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/port_obj.h"
@@ -6867,6 +6845,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_task.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecSharedCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDecimal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/i386/signal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/signal.h"
@@ -6882,6 +6863,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIKernel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/dyld_kernel.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES3/gl.h"
@@ -6983,6 +6965,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileVersion.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Conversion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneSession.h"
@@ -7015,6 +6998,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Quadrature/Integration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderItemDecoration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStateRestoration.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteConfiguration.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PayPalMobile/PayPalConfiguration.h"
@@ -7083,6 +7067,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProcessInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach_debug/ipc_info.h"
@@ -7126,6 +7112,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/workloop.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/grp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarButtonItemGroup.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/group.h"
@@ -7152,6 +7139,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/FileProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingCurveProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemProvider.h"
@@ -7262,6 +7258,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextDragPreviewRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKTileOverlayRenderer.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchCompleter.h"
@@ -7385,6 +7382,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFontMetrics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_statistics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetDiagnostics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPreferences.h"
@@ -7394,6 +7393,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/vImage_Utilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPathUtilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageProperties.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/times.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTDefines.h"
@@ -7449,6 +7451,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/secure/_strings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/paths.h"
@@ -7501,6 +7505,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityAdditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneDefinitions.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapSnapshotOptions.h"
@@ -7519,6 +7524,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPreviewParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDragPreviewParameters.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetworkErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManagerErrors.h"
@@ -7685,7 +7691,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/mach_init.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/vm_inherit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLVisit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
@@ -7878,7 +7886,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/activity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProxy.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Modules/module.modulemap"

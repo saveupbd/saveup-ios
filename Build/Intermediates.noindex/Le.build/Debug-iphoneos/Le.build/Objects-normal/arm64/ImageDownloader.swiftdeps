@@ -10,31 +10,31 @@ provides-top-level:
 - "ImageDownloader"
 - "ImageDownloaderSessionHandler"
 provides-nominal:
-- "9SaveUp_BD25RetrieveImageDownloadTaskV"
-- "9SaveUp_BD15KingfisherErrorO"
-- "9SaveUp_BD23ImageDownloaderDelegateP"
-- "9SaveUp_BD34AuthenticationChallengeResponsableP"
-- "9SaveUp_BD15ImageDownloaderC"
-- "9SaveUp_BD15ImageDownloaderC0D9FetchLoadC"
-- "9SaveUp_BD29ImageDownloaderSessionHandlerC"
+- "6SaveUp25RetrieveImageDownloadTaskV"
+- "6SaveUp15KingfisherErrorO"
+- "6SaveUp23ImageDownloaderDelegateP"
+- "6SaveUp34AuthenticationChallengeResponsableP"
+- "6SaveUp15ImageDownloaderC"
+- "6SaveUp15ImageDownloaderC0C9FetchLoadC"
+- "6SaveUp29ImageDownloaderSessionHandlerC"
 provides-member:
-- ["9SaveUp_BD25RetrieveImageDownloadTaskV", ""]
-- ["9SaveUp_BD15KingfisherErrorO", ""]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", ""]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", ""]
-- ["9SaveUp_BD15ImageDownloaderC", ""]
-- ["9SaveUp_BD15ImageDownloaderC0D9FetchLoadC", ""]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", ""]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "imageDownloader"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "imageDownloader"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "imageDownloader"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "isValidStatusCode"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "imageDownloader"]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", "downloader"]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", "downloader"]
-- ["9SaveUp_BD15ImageDownloaderC", "setup"]
-- ["9SaveUp_BD15ImageDownloaderC", "cancel"]
-- ["9SaveUp_BD15ImageDownloaderC", "cancelAll"]
+- ["6SaveUp25RetrieveImageDownloadTaskV", ""]
+- ["6SaveUp15KingfisherErrorO", ""]
+- ["6SaveUp23ImageDownloaderDelegateP", ""]
+- ["6SaveUp34AuthenticationChallengeResponsableP", ""]
+- ["6SaveUp15ImageDownloaderC", ""]
+- ["6SaveUp15ImageDownloaderC0C9FetchLoadC", ""]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", ""]
+- ["6SaveUp23ImageDownloaderDelegateP", "imageDownloader"]
+- ["6SaveUp23ImageDownloaderDelegateP", "imageDownloader"]
+- ["6SaveUp23ImageDownloaderDelegateP", "imageDownloader"]
+- ["6SaveUp23ImageDownloaderDelegateP", "isValidStatusCode"]
+- ["6SaveUp23ImageDownloaderDelegateP", "imageDownloader"]
+- ["6SaveUp34AuthenticationChallengeResponsableP", "downloader"]
+- ["6SaveUp34AuthenticationChallengeResponsableP", "downloader"]
+- ["6SaveUp15ImageDownloaderC", "setup"]
+- ["6SaveUp15ImageDownloaderC", "cancel"]
+- ["6SaveUp15ImageDownloaderC", "cancelAll"]
 provides-dynamic-lookup:
 - "urlSession"
 depends-top-level:
@@ -128,31 +128,31 @@ depends-member:
 - !private ["So17OS_dispatch_queueC8DispatchE10AttributesV", "concurrent"]
 - !private ["So36NSURLSessionAuthChallengeDispositionV", "performDefaultHandling"]
 - !private ["So36NSURLSessionAuthChallengeDispositionV", "useCredential"]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "DispatchQueue"]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "HTTPURLResponse"]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", "ImageDownloader"]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "Int64"]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "KingfisherError"]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "KingfisherErrorDomain"]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "KingfisherErrorStatusCodeKey"]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "NSError"]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "NSLocalizedDescriptionKey"]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "NSURLAuthenticationMethodServerTrust"]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", "URLAuthenticationChallenge"]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", "URLCredential"]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", "URLSession"]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", "URLSessionDidFinishEventsForBackgroundURLSession"]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", "URLSessionTask"]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", "Void"]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", ""]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "callCompletionHandlerFailure"]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "cleanFetchLoad"]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "downloadHolder"]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", "downloader"]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "init"]
-- !private ["9SaveUp_BD34AuthenticationChallengeResponsableP", "processImage"]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", "urlSession"]
-- ["9SaveUp_BD34AuthenticationChallengeResponsableP", "urlSessionDidFinishEvents"]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "DispatchQueue"]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "HTTPURLResponse"]
+- ["6SaveUp34AuthenticationChallengeResponsableP", "ImageDownloader"]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "Int64"]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "KingfisherError"]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "KingfisherErrorDomain"]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "KingfisherErrorStatusCodeKey"]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "NSError"]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "NSLocalizedDescriptionKey"]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "NSURLAuthenticationMethodServerTrust"]
+- ["6SaveUp34AuthenticationChallengeResponsableP", "URLAuthenticationChallenge"]
+- ["6SaveUp34AuthenticationChallengeResponsableP", "URLCredential"]
+- ["6SaveUp34AuthenticationChallengeResponsableP", "URLSession"]
+- ["6SaveUp34AuthenticationChallengeResponsableP", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- ["6SaveUp34AuthenticationChallengeResponsableP", "URLSessionTask"]
+- ["6SaveUp34AuthenticationChallengeResponsableP", "Void"]
+- ["6SaveUp34AuthenticationChallengeResponsableP", ""]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "callCompletionHandlerFailure"]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "cleanFetchLoad"]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "downloadHolder"]
+- ["6SaveUp34AuthenticationChallengeResponsableP", "downloader"]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "init"]
+- !private ["6SaveUp34AuthenticationChallengeResponsableP", "processImage"]
+- ["6SaveUp34AuthenticationChallengeResponsableP", "urlSession"]
+- ["6SaveUp34AuthenticationChallengeResponsableP", "urlSessionDidFinishEvents"]
 - !private ["SK", "append"]
 - !private ["SK", "backgroundDecode"]
 - !private ["SK", "callbackDispatchQueue"]
@@ -630,170 +630,170 @@ depends-member:
 - ["SH", "urlSessionDidFinishEvents"]
 - !private ["SH", "useCredential"]
 - !private ["SH", "wait"]
-- !private ["9SaveUp_BD28ImageDownloadRequestModifierP", "modified"]
-- ["9SaveUp_BD15ImageDownloaderC", "AuthenticationChallengeResponsable"]
-- ["9SaveUp_BD15ImageDownloaderC", "Bool"]
-- ["9SaveUp_BD15ImageDownloaderC", "CallbackPair"]
-- ["9SaveUp_BD15ImageDownloaderC", "DispatchQueue"]
-- ["9SaveUp_BD15ImageDownloaderC", "DispatchSemaphore"]
-- ["9SaveUp_BD15ImageDownloaderC", "ImageDownloader"]
-- ["9SaveUp_BD15ImageDownloaderC", "ImageDownloaderCompletionHandler"]
-- ["9SaveUp_BD15ImageDownloaderC", "ImageDownloaderDelegate"]
-- ["9SaveUp_BD15ImageDownloaderC", "ImageDownloaderProgressBlock"]
-- ["9SaveUp_BD15ImageDownloaderC", "ImageDownloaderSessionHandler"]
-- ["9SaveUp_BD15ImageDownloaderC", "ImageFetchLoad"]
-- !private ["9SaveUp_BD15ImageDownloaderC", "KingfisherEmptyOptionsInfo"]
-- !private ["9SaveUp_BD15ImageDownloaderC", "KingfisherError"]
-- !private ["9SaveUp_BD15ImageDownloaderC", "KingfisherErrorDomain"]
-- ["9SaveUp_BD15ImageDownloaderC", "KingfisherOptionsInfo"]
-- !private ["9SaveUp_BD15ImageDownloaderC", "NSError"]
-- ["9SaveUp_BD15ImageDownloaderC", "NSMutableData"]
-- ["9SaveUp_BD15ImageDownloaderC", "RetrieveImageDownloadTask"]
-- ["9SaveUp_BD15ImageDownloaderC", "RetrieveImageTask"]
-- ["9SaveUp_BD15ImageDownloaderC", "Set"]
-- ["9SaveUp_BD15ImageDownloaderC", "String"]
-- ["9SaveUp_BD15ImageDownloaderC", "TimeInterval"]
-- ["9SaveUp_BD15ImageDownloaderC", "URL"]
-- !private ["9SaveUp_BD15ImageDownloaderC", "URLRequest"]
-- ["9SaveUp_BD15ImageDownloaderC", "URLSession"]
-- ["9SaveUp_BD15ImageDownloaderC", "URLSessionConfiguration"]
-- !private ["9SaveUp_BD15ImageDownloaderC", "URLSessionTask"]
-- ["9SaveUp_BD15ImageDownloaderC", "Void"]
-- ["9SaveUp_BD15ImageDownloaderC", "authenticationChallengeResponder"]
-- ["9SaveUp_BD15ImageDownloaderC", "barrierQueue"]
-- ["9SaveUp_BD15ImageDownloaderC", "cancel"]
-- ["9SaveUp_BD15ImageDownloaderC", "cancelAll"]
-- ["9SaveUp_BD15ImageDownloaderC", "cancelQueue"]
-- !private ["9SaveUp_BD15ImageDownloaderC", "cancelTaskImpl"]
-- ["9SaveUp_BD15ImageDownloaderC", "default"]
-- ["9SaveUp_BD15ImageDownloaderC", "deinit"]
-- ["9SaveUp_BD15ImageDownloaderC", "delegate"]
-- ["9SaveUp_BD15ImageDownloaderC", "downloadImage"]
-- ["9SaveUp_BD15ImageDownloaderC", "downloadTimeout"]
-- !private ["9SaveUp_BD15ImageDownloaderC", "fatalError"]
-- ["9SaveUp_BD15ImageDownloaderC", "fetchLoad"]
-- ["9SaveUp_BD15ImageDownloaderC", "fetchLoads"]
-- ["9SaveUp_BD15ImageDownloaderC", "imageDownloader"]
-- ["9SaveUp_BD15ImageDownloaderC", "init"]
-- ["9SaveUp_BD15ImageDownloaderC", "isValidStatusCode"]
-- ["9SaveUp_BD15ImageDownloaderC", "processQueue"]
-- ["9SaveUp_BD15ImageDownloaderC", "requestsUsePipelining"]
-- !private ["9SaveUp_BD15ImageDownloaderC", "session"]
-- ["9SaveUp_BD15ImageDownloaderC", "sessionConfiguration"]
-- !private ["9SaveUp_BD15ImageDownloaderC", "sessionHandler"]
-- ["9SaveUp_BD15ImageDownloaderC", "setup"]
-- ["9SaveUp_BD15ImageDownloaderC", "trustedHosts"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "Bool"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "CallbackPair"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "Data"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "DispatchQueue"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "DispatchSemaphore"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "Error"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "Image"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "ImageDownloader"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "ImageDownloaderSessionHandler"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "ImageFetchLoad"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "Int"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "KingfisherEmptyOptionsInfo"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "KingfisherError"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "KingfisherErrorDomain"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "KingfisherOptionsInfo"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "NSError"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "NSMutableData"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "RetrieveImageDownloadTask"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "URL"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "URLRequest"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "URLResponse"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "URLSession"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "URLSessionConfiguration"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "URLSessionTask"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", ""]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "authenticationChallengeResponder"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "barrierQueue"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "cancel"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "cancelQueue"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "cancelTaskImpl"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "delegate"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "downloadTimeout"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "fatalError"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "fetchLoad"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "fetchLoads"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "imageDownloader"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "init"]
-- ["9SaveUp_BD23ImageDownloaderDelegateP", "isValidStatusCode"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "processQueue"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "requestsUsePipelining"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "session"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "sessionConfiguration"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "sessionHandler"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "setup"]
-- !private ["9SaveUp_BD23ImageDownloaderDelegateP", "trustedHosts"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "Data"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "DispatchQueue"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "Error"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "HTTPURLResponse"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "Image"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "ImageDownloader"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "Int"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "Int64"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "KingfisherError"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "KingfisherErrorDomain"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "KingfisherErrorStatusCodeKey"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "NSError"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "NSLocalizedDescriptionKey"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "String"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "URL"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "URLAuthenticationChallenge"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "URLCredential"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "URLResponse"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "URLSession"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "URLSessionDataTask"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "URLSessionDidFinishEventsForBackgroundURLSession"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "URLSessionTask"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "Void"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "callCompletionHandlerFailure"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "cleanFetchLoad"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "deinit"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "downloadHolder"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "downloader"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "init"]
-- !private ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "processImage"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "urlSession"]
-- ["9SaveUp_BD29ImageDownloaderSessionHandlerC", "urlSessionDidFinishEvents"]
-- ["9SaveUp_BD15ImageDownloaderC0D9FetchLoadC", "CallbackPair"]
-- ["9SaveUp_BD15ImageDownloaderC0D9FetchLoadC", "DispatchSemaphore"]
-- ["9SaveUp_BD15ImageDownloaderC0D9FetchLoadC", "KingfisherOptionsInfo"]
-- ["9SaveUp_BD15ImageDownloaderC0D9FetchLoadC", "NSMutableData"]
-- ["9SaveUp_BD15ImageDownloaderC0D9FetchLoadC", "RetrieveImageDownloadTask"]
-- ["9SaveUp_BD15ImageDownloaderC0D9FetchLoadC", "cancelSemaphore"]
-- ["9SaveUp_BD15ImageDownloaderC0D9FetchLoadC", "contents"]
-- ["9SaveUp_BD15ImageDownloaderC0D9FetchLoadC", "downloadTask"]
-- ["9SaveUp_BD15ImageDownloaderC0D9FetchLoadC", "downloadTaskCount"]
-- ["9SaveUp_BD15ImageDownloaderC0D9FetchLoadC", "init"]
-- ["9SaveUp_BD15ImageDownloaderC0D9FetchLoadC", "responseData"]
-- !private ["9SaveUp_BD13ImageModifierP", "modify"]
-- !private ["9SaveUp_BD16ImageProcessItemO", "data"]
-- !private ["9SaveUp_BD14ImageProcessorP", "identifier"]
-- !private ["9SaveUp_BD14ImageProcessorP", "process"]
+- !private ["6SaveUp28ImageDownloadRequestModifierP", "modified"]
+- ["6SaveUp15ImageDownloaderC", "AuthenticationChallengeResponsable"]
+- ["6SaveUp15ImageDownloaderC", "Bool"]
+- ["6SaveUp15ImageDownloaderC", "CallbackPair"]
+- ["6SaveUp15ImageDownloaderC", "DispatchQueue"]
+- ["6SaveUp15ImageDownloaderC", "DispatchSemaphore"]
+- ["6SaveUp15ImageDownloaderC", "ImageDownloader"]
+- ["6SaveUp15ImageDownloaderC", "ImageDownloaderCompletionHandler"]
+- ["6SaveUp15ImageDownloaderC", "ImageDownloaderDelegate"]
+- ["6SaveUp15ImageDownloaderC", "ImageDownloaderProgressBlock"]
+- ["6SaveUp15ImageDownloaderC", "ImageDownloaderSessionHandler"]
+- ["6SaveUp15ImageDownloaderC", "ImageFetchLoad"]
+- !private ["6SaveUp15ImageDownloaderC", "KingfisherEmptyOptionsInfo"]
+- !private ["6SaveUp15ImageDownloaderC", "KingfisherError"]
+- !private ["6SaveUp15ImageDownloaderC", "KingfisherErrorDomain"]
+- ["6SaveUp15ImageDownloaderC", "KingfisherOptionsInfo"]
+- !private ["6SaveUp15ImageDownloaderC", "NSError"]
+- ["6SaveUp15ImageDownloaderC", "NSMutableData"]
+- ["6SaveUp15ImageDownloaderC", "RetrieveImageDownloadTask"]
+- ["6SaveUp15ImageDownloaderC", "RetrieveImageTask"]
+- ["6SaveUp15ImageDownloaderC", "Set"]
+- ["6SaveUp15ImageDownloaderC", "String"]
+- ["6SaveUp15ImageDownloaderC", "TimeInterval"]
+- ["6SaveUp15ImageDownloaderC", "URL"]
+- !private ["6SaveUp15ImageDownloaderC", "URLRequest"]
+- ["6SaveUp15ImageDownloaderC", "URLSession"]
+- ["6SaveUp15ImageDownloaderC", "URLSessionConfiguration"]
+- !private ["6SaveUp15ImageDownloaderC", "URLSessionTask"]
+- ["6SaveUp15ImageDownloaderC", "Void"]
+- ["6SaveUp15ImageDownloaderC", "authenticationChallengeResponder"]
+- ["6SaveUp15ImageDownloaderC", "barrierQueue"]
+- ["6SaveUp15ImageDownloaderC", "cancel"]
+- ["6SaveUp15ImageDownloaderC", "cancelAll"]
+- ["6SaveUp15ImageDownloaderC", "cancelQueue"]
+- !private ["6SaveUp15ImageDownloaderC", "cancelTaskImpl"]
+- ["6SaveUp15ImageDownloaderC", "default"]
+- ["6SaveUp15ImageDownloaderC", "deinit"]
+- ["6SaveUp15ImageDownloaderC", "delegate"]
+- ["6SaveUp15ImageDownloaderC", "downloadImage"]
+- ["6SaveUp15ImageDownloaderC", "downloadTimeout"]
+- !private ["6SaveUp15ImageDownloaderC", "fatalError"]
+- ["6SaveUp15ImageDownloaderC", "fetchLoad"]
+- ["6SaveUp15ImageDownloaderC", "fetchLoads"]
+- ["6SaveUp15ImageDownloaderC", "imageDownloader"]
+- ["6SaveUp15ImageDownloaderC", "init"]
+- ["6SaveUp15ImageDownloaderC", "isValidStatusCode"]
+- ["6SaveUp15ImageDownloaderC", "processQueue"]
+- ["6SaveUp15ImageDownloaderC", "requestsUsePipelining"]
+- !private ["6SaveUp15ImageDownloaderC", "session"]
+- ["6SaveUp15ImageDownloaderC", "sessionConfiguration"]
+- !private ["6SaveUp15ImageDownloaderC", "sessionHandler"]
+- ["6SaveUp15ImageDownloaderC", "setup"]
+- ["6SaveUp15ImageDownloaderC", "trustedHosts"]
+- ["6SaveUp23ImageDownloaderDelegateP", "Bool"]
+- ["6SaveUp23ImageDownloaderDelegateP", "CallbackPair"]
+- ["6SaveUp23ImageDownloaderDelegateP", "Data"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "DispatchQueue"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "DispatchSemaphore"]
+- ["6SaveUp23ImageDownloaderDelegateP", "Error"]
+- ["6SaveUp23ImageDownloaderDelegateP", "Image"]
+- ["6SaveUp23ImageDownloaderDelegateP", "ImageDownloader"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "ImageDownloaderSessionHandler"]
+- ["6SaveUp23ImageDownloaderDelegateP", "ImageFetchLoad"]
+- ["6SaveUp23ImageDownloaderDelegateP", "Int"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "KingfisherEmptyOptionsInfo"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "KingfisherError"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "KingfisherErrorDomain"]
+- ["6SaveUp23ImageDownloaderDelegateP", "KingfisherOptionsInfo"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "NSError"]
+- ["6SaveUp23ImageDownloaderDelegateP", "NSMutableData"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "RetrieveImageDownloadTask"]
+- ["6SaveUp23ImageDownloaderDelegateP", "URL"]
+- ["6SaveUp23ImageDownloaderDelegateP", "URLRequest"]
+- ["6SaveUp23ImageDownloaderDelegateP", "URLResponse"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "URLSession"]
+- ["6SaveUp23ImageDownloaderDelegateP", "URLSessionConfiguration"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "URLSessionTask"]
+- ["6SaveUp23ImageDownloaderDelegateP", ""]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "authenticationChallengeResponder"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "barrierQueue"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "cancel"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "cancelQueue"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "cancelTaskImpl"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "delegate"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "downloadTimeout"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "fatalError"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "fetchLoad"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "fetchLoads"]
+- ["6SaveUp23ImageDownloaderDelegateP", "imageDownloader"]
+- ["6SaveUp23ImageDownloaderDelegateP", "init"]
+- ["6SaveUp23ImageDownloaderDelegateP", "isValidStatusCode"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "processQueue"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "requestsUsePipelining"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "session"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "sessionConfiguration"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "sessionHandler"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "setup"]
+- !private ["6SaveUp23ImageDownloaderDelegateP", "trustedHosts"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "Data"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "DispatchQueue"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "Error"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "HTTPURLResponse"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "Image"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "ImageDownloader"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "Int"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "Int64"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "KingfisherError"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "KingfisherErrorDomain"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "KingfisherErrorStatusCodeKey"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "NSError"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "NSLocalizedDescriptionKey"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "String"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "URL"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "URLAuthenticationChallenge"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "URLCredential"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "URLResponse"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "URLSession"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "URLSessionDataTask"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "URLSessionDidFinishEventsForBackgroundURLSession"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "URLSessionTask"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "Void"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "callCompletionHandlerFailure"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "cleanFetchLoad"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "deinit"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "downloadHolder"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "downloader"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "init"]
+- !private ["6SaveUp29ImageDownloaderSessionHandlerC", "processImage"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "urlSession"]
+- ["6SaveUp29ImageDownloaderSessionHandlerC", "urlSessionDidFinishEvents"]
+- ["6SaveUp15ImageDownloaderC0C9FetchLoadC", "CallbackPair"]
+- ["6SaveUp15ImageDownloaderC0C9FetchLoadC", "DispatchSemaphore"]
+- ["6SaveUp15ImageDownloaderC0C9FetchLoadC", "KingfisherOptionsInfo"]
+- ["6SaveUp15ImageDownloaderC0C9FetchLoadC", "NSMutableData"]
+- ["6SaveUp15ImageDownloaderC0C9FetchLoadC", "RetrieveImageDownloadTask"]
+- ["6SaveUp15ImageDownloaderC0C9FetchLoadC", "cancelSemaphore"]
+- ["6SaveUp15ImageDownloaderC0C9FetchLoadC", "contents"]
+- ["6SaveUp15ImageDownloaderC0C9FetchLoadC", "downloadTask"]
+- ["6SaveUp15ImageDownloaderC0C9FetchLoadC", "downloadTaskCount"]
+- ["6SaveUp15ImageDownloaderC0C9FetchLoadC", "init"]
+- ["6SaveUp15ImageDownloaderC0C9FetchLoadC", "responseData"]
+- !private ["6SaveUp13ImageModifierP", "modify"]
+- !private ["6SaveUp16ImageProcessItemO", "data"]
+- !private ["6SaveUp14ImageProcessorP", "identifier"]
+- !private ["6SaveUp14ImageProcessorP", "process"]
 - !private ["s5Int64V", "init"]
-- !private ["9SaveUp_BD10KingfisherC", "decoded"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "isEmpty"]
-- !private ["9SaveUp_BD20KingfisherCompatibleP", "kf"]
-- ["9SaveUp_BD15KingfisherErrorO", "=="]
-- ["9SaveUp_BD15KingfisherErrorO", "RawValue"]
-- ["9SaveUp_BD15KingfisherErrorO", "_Default_RawValue"]
-- ["9SaveUp_BD15KingfisherErrorO", "_rawHashValue"]
-- ["9SaveUp_BD15KingfisherErrorO", "badData"]
-- ["9SaveUp_BD15KingfisherErrorO", "deinit"]
-- ["9SaveUp_BD15KingfisherErrorO", "downloadCancelledBeforeStarting"]
-- ["9SaveUp_BD15KingfisherErrorO", "hash"]
-- ["9SaveUp_BD15KingfisherErrorO", "hashValue"]
-- ["9SaveUp_BD15KingfisherErrorO", "init"]
-- ["9SaveUp_BD15KingfisherErrorO", "invalidStatusCode"]
-- ["9SaveUp_BD15KingfisherErrorO", "invalidURL"]
-- ["9SaveUp_BD15KingfisherErrorO", "notCached"]
-- ["9SaveUp_BD15KingfisherErrorO", "notModified"]
-- ["9SaveUp_BD15KingfisherErrorO", "rawValue"]
+- !private ["6SaveUp10KingfisherC", "decoded"]
+- !private ["6SaveUp20KingfisherCompatibleP", "isEmpty"]
+- !private ["6SaveUp20KingfisherCompatibleP", "kf"]
+- ["6SaveUp15KingfisherErrorO", "=="]
+- ["6SaveUp15KingfisherErrorO", "RawValue"]
+- ["6SaveUp15KingfisherErrorO", "_Default_RawValue"]
+- ["6SaveUp15KingfisherErrorO", "_rawHashValue"]
+- ["6SaveUp15KingfisherErrorO", "badData"]
+- ["6SaveUp15KingfisherErrorO", "deinit"]
+- ["6SaveUp15KingfisherErrorO", "downloadCancelledBeforeStarting"]
+- ["6SaveUp15KingfisherErrorO", "hash"]
+- ["6SaveUp15KingfisherErrorO", "hashValue"]
+- ["6SaveUp15KingfisherErrorO", "init"]
+- ["6SaveUp15KingfisherErrorO", "invalidStatusCode"]
+- ["6SaveUp15KingfisherErrorO", "invalidURL"]
+- ["6SaveUp15KingfisherErrorO", "notCached"]
+- ["6SaveUp15KingfisherErrorO", "notModified"]
+- ["6SaveUp15KingfisherErrorO", "rawValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "isEmpty"]
 - !private ["s10MirrorPathP", "isEmpty"]
@@ -989,7 +989,7 @@ depends-member:
 - !private ["s9OptionSetP", "barrier"]
 - !private ["s9OptionSetP", "concurrent"]
 - !private ["Sq", "main"]
-- !private ["9SaveUp_BD11PlaceholderP", "kf"]
+- !private ["6SaveUp11PlaceholderP", "kf"]
 - !private ["So19NSProgressReportingP", "cancel"]
 - !private ["So19NSProgressReportingP", "defaultPriority"]
 - !private ["So19NSProgressReportingP", "main"]
@@ -1043,21 +1043,21 @@ depends-member:
 - !private ["10Foundation20ReferenceConvertibleP", "httpShouldUsePipelining"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "url"]
-- !private ["9SaveUp_BD8ResourceP", "absoluteString"]
+- !private ["6SaveUp8ResourceP", "absoluteString"]
 - !private ["So31NSURLSessionResponseDispositionV", "allow"]
 - !private ["So31NSURLSessionResponseDispositionV", "cancel"]
-- ["9SaveUp_BD25RetrieveImageDownloadTaskV", "Float"]
-- ["9SaveUp_BD25RetrieveImageDownloadTaskV", "ImageDownloader"]
-- ["9SaveUp_BD25RetrieveImageDownloadTaskV", "URL"]
-- ["9SaveUp_BD25RetrieveImageDownloadTaskV", "URLSessionDataTask"]
-- ["9SaveUp_BD25RetrieveImageDownloadTaskV", "cancel"]
-- ["9SaveUp_BD25RetrieveImageDownloadTaskV", "init"]
-- ["9SaveUp_BD25RetrieveImageDownloadTaskV", "internalTask"]
-- ["9SaveUp_BD25RetrieveImageDownloadTaskV", "ownerDownloader"]
-- ["9SaveUp_BD25RetrieveImageDownloadTaskV", "priority"]
-- ["9SaveUp_BD25RetrieveImageDownloadTaskV", "url"]
-- !private ["9SaveUp_BD17RetrieveImageTaskC", "cancelledBeforeDownloadStarting"]
-- !private ["9SaveUp_BD17RetrieveImageTaskC", "downloadTask"]
+- ["6SaveUp25RetrieveImageDownloadTaskV", "Float"]
+- ["6SaveUp25RetrieveImageDownloadTaskV", "ImageDownloader"]
+- ["6SaveUp25RetrieveImageDownloadTaskV", "URL"]
+- ["6SaveUp25RetrieveImageDownloadTaskV", "URLSessionDataTask"]
+- ["6SaveUp25RetrieveImageDownloadTaskV", "cancel"]
+- ["6SaveUp25RetrieveImageDownloadTaskV", "init"]
+- ["6SaveUp25RetrieveImageDownloadTaskV", "internalTask"]
+- ["6SaveUp25RetrieveImageDownloadTaskV", "ownerDownloader"]
+- ["6SaveUp25RetrieveImageDownloadTaskV", "priority"]
+- ["6SaveUp25RetrieveImageDownloadTaskV", "url"]
+- !private ["6SaveUp17RetrieveImageTaskC", "cancelledBeforeDownloadStarting"]
+- !private ["6SaveUp17RetrieveImageTaskC", "downloadTask"]
 - !private ["s10SIMDScalarP", "init"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "init"]
@@ -1350,7 +1350,7 @@ depends-nominal:
 - "Sa"
 - !private "So17OS_dispatch_queueC8DispatchE10AttributesV"
 - !private "So36NSURLSessionAuthChallengeDispositionV"
-- "9SaveUp_BD34AuthenticationChallengeResponsableP"
+- "6SaveUp34AuthenticationChallengeResponsableP"
 - "SK"
 - !private "Sz"
 - "s7CVarArgP"
@@ -1384,18 +1384,18 @@ depends-nominal:
 - !private "s17FixedWidthIntegerP"
 - !private "So17NSHTTPURLResponseC"
 - "SH"
-- !private "9SaveUp_BD28ImageDownloadRequestModifierP"
-- "9SaveUp_BD15ImageDownloaderC"
-- "9SaveUp_BD23ImageDownloaderDelegateP"
-- "9SaveUp_BD29ImageDownloaderSessionHandlerC"
-- "9SaveUp_BD15ImageDownloaderC0D9FetchLoadC"
-- !private "9SaveUp_BD13ImageModifierP"
-- !private "9SaveUp_BD16ImageProcessItemO"
-- !private "9SaveUp_BD14ImageProcessorP"
+- !private "6SaveUp28ImageDownloadRequestModifierP"
+- "6SaveUp15ImageDownloaderC"
+- "6SaveUp23ImageDownloaderDelegateP"
+- "6SaveUp29ImageDownloaderSessionHandlerC"
+- "6SaveUp15ImageDownloaderC0C9FetchLoadC"
+- !private "6SaveUp13ImageModifierP"
+- !private "6SaveUp16ImageProcessItemO"
+- !private "6SaveUp14ImageProcessorP"
 - !private "s5Int64V"
-- !private "9SaveUp_BD10KingfisherC"
-- !private "9SaveUp_BD20KingfisherCompatibleP"
-- "9SaveUp_BD15KingfisherErrorO"
+- !private "6SaveUp10KingfisherC"
+- !private "6SaveUp20KingfisherCompatibleP"
+- "6SaveUp15KingfisherErrorO"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
 - "SM"
@@ -1417,7 +1417,7 @@ depends-nominal:
 - !private "So16NSOperationQueueC"
 - !private "s9OptionSetP"
 - !private "Sq"
-- !private "9SaveUp_BD11PlaceholderP"
+- !private "6SaveUp11PlaceholderP"
 - !private "So19NSProgressReportingP"
 - "Sk"
 - !private "Sn"
@@ -1425,10 +1425,10 @@ depends-nominal:
 - "Sm"
 - "SY"
 - !private "10Foundation20ReferenceConvertibleP"
-- !private "9SaveUp_BD8ResourceP"
+- !private "6SaveUp8ResourceP"
 - !private "So31NSURLSessionResponseDispositionV"
-- "9SaveUp_BD25RetrieveImageDownloadTaskV"
-- !private "9SaveUp_BD17RetrieveImageTaskC"
+- "6SaveUp25RetrieveImageDownloadTaskV"
+- !private "6SaveUp17RetrieveImageTaskC"
 - !private "s10SIMDScalarP"
 - !private "7Combine9SchedulerP"
 - "ST"
@@ -1517,6 +1517,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CATransform3D.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUUID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUUID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FIRInstanceID.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
@@ -1527,6 +1529,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Sparse/BLAS.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/alloca.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Alpha.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/LinearAlgebra.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
@@ -1535,6 +1541,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolMetadata.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/quota.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTextTab.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach-o/stab.h"
@@ -1710,6 +1717,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIFilterShape.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureScope.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFResponseType.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthAPNSTokenType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginType.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFButtonType.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/ctype.h"
@@ -1721,6 +1729,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/xlocale/__wctype.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/runetype.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKitCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/semaphore.h"
@@ -1745,6 +1754,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/trace_base.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/Firebase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/readpassphrase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLResponse.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchResponse.h"
@@ -1758,9 +1768,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSCompoundPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSComparisonPredicate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Headers/Accelerate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFLoginFlowState.h"
@@ -1785,6 +1797,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/net/if.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_offsetof.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFBag.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FIRRemoteConfig.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mig.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLHeading.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemsConfigurationReading.h"
@@ -1850,6 +1864,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/shims/KeyPath.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/math.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/tgmath.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuth.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/kauth.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/objc/objc-api.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/port_obj.h"
@@ -1870,6 +1886,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_task.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecSharedCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthCredential.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthCredential.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSDecimal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/signal.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/machine/signal.h"
@@ -1885,6 +1904,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILabel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIKernel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/dyld_kernel.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRLoggerLevel.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES1/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES2/gl.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/ES3/gl.h"
@@ -1986,6 +2006,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSFileProviderExtension.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileVersion.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuthVersion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/Conversion.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLSession.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneSession.h"
@@ -2018,6 +2039,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/Quadrature/Integration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderItemDecoration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStateRestoration.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageConfiguration.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPasteConfiguration.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PayPalMobile/PayPalConfiguration.h"
@@ -2086,6 +2108,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAdditionalUserInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProcessInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrintInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach_debug/ipc_info.h"
@@ -2129,6 +2153,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRunLoop.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/workloop.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIRApp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/grp.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarButtonItemGroup.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/group.h"
@@ -2155,6 +2180,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/FileProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingCurveProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIROAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGitHubAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFederatedAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGoogleAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRPhoneAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRFacebookAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIREmailAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRGameCenterAuthProvider.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRTwitterAuthProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSUserActivity+NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSItemProvider.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityItemProvider.h"
@@ -2264,6 +2298,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextDragPreviewRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKTileOverlayRenderer.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchCompleter.h"
@@ -2387,6 +2422,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFontMetrics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_statistics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetDiagnostics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FirebaseAnalytics.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSNetServices.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPreferences.h"
@@ -2396,6 +2433,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vImage.framework/Headers/vImage_Utilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPathUtilities.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageProperties.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRParameterNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIREventNames.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRUserPropertyNames.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/times.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLDefines.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTDefines.h"
@@ -2450,6 +2490,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/secure/_strings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIUserNotificationSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/paths.h"
@@ -2502,6 +2544,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityAdditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneActivationConditions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneDefinitions.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FIROptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISceneOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecProtocolOptions.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapSnapshotOptions.h"
@@ -2520,6 +2563,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITimingParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPreviewParameters.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDragPreviewParameters.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFNetworkErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationErrors.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManagerErrors.h"
@@ -2686,7 +2730,9 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mach_init.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/vm_inherit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLVisit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
@@ -2879,7 +2925,13 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserActivity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/activity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSProxy.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Firebase/CoreOnly/Sources/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Modules/module.modulemap"
