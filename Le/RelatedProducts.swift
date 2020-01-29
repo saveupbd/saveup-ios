@@ -30,16 +30,23 @@ class RelatedProducts: NSObject {
     var merchant_name:String!
     var product_discount_price:String!
     var product_percentage:String!
-    
+    var product_type:String!
+    var product_off:String!
     init(RelatedProducts: NSDictionary) {
         
         self.product_id = String(RelatedProducts["product_id"] as! NSInteger)
         self.product_title = RelatedProducts["product_title"] as? String
-        self.product_price = String(RelatedProducts["product_price"] as! Double)
+        
         self.product_image = RelatedProducts["product_image"] as? String
         self.currency_symbol = RelatedProducts["currency_symbol"] as? String
         self.merchant_name = RelatedProducts["merchant_name"] as? String
-        self.product_discount_price = RelatedProducts["product_discount_price"] as? String
-        self.product_percentage = RelatedProducts["product_percentage"] as? String
+        if self.product_type != "all_item"  {
+            self.product_price = String(RelatedProducts["product_price"] as! Double)
+            self.product_discount_price = RelatedProducts["product_discount_price"] as? String
+            self.product_percentage = RelatedProducts["product_percentage"] as? String
+        }else{
+            self.product_off = String(RelatedProducts["product_discount"] as! NSInteger)
+        }
+        
     }
 }

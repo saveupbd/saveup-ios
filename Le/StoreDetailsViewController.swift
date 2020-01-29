@@ -592,7 +592,12 @@ class StoreDetailsViewController: UIViewController, UITableViewDelegate, UITable
             cell.textLabel?.numberOfLines = 2
             cell.textLabel?.text = productsArray[indexPath.row].product_title
             cell.detailTextLabel!.numberOfLines = 0
-            cell.detailTextLabel!.text = "\(productsArray[indexPath.row].merchant_name!)\n\("৳" + productsArray[indexPath.row].product_discount_price!)\n\(productsArray[indexPath.row].product_percentage! + "% off")"
+            if productsArray[indexPath.row].product_type != "all_item"  {
+                cell.detailTextLabel!.text = "\(productsArray[indexPath.row].merchant_name!)\n\("৳" + productsArray[indexPath.row].product_discount_price!)\n\(productsArray[indexPath.row].product_percentage! + "% off")"
+            }else{
+                cell.detailTextLabel!.text = "\(productsArray[indexPath.row].merchant_name!)\n\(productsArray[indexPath.row].product_off! + "% off")"
+            }
+            
             cell.selectionStyle = UITableViewCell.SelectionStyle.none
             //cell.detailTextLabel?.text = productsArray[indexPath.row].merchant_name
             
