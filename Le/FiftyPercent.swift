@@ -19,6 +19,7 @@ class FiftyPercent: NSObject {
     var product_discount_price:String!
     var merchant_name:String!
     var product_type:String!
+    var product_off:String!
     
     init(FiftyPercent: NSDictionary) {
         
@@ -29,8 +30,9 @@ class FiftyPercent: NSObject {
         if self.product_type != "all_item"  {
             self.product_price = String(FiftyPercent["product_price"] as! Double)
             self.product_discount_price = String(FiftyPercent["product_discount_price"] as! NSInteger)
-        }else{
             self.product_percentage = String(FiftyPercent["product_percentage"] as! NSInteger)
+        }else{
+            self.product_off = String(FiftyPercent["product_discount"] as! NSInteger)
         }
         
         

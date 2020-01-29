@@ -19,6 +19,8 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
     var productpriceText = ""
     var productdiscountpriceText = ""
     var productpercentageText = ""
+    var productType = ""
+    var productOff = 0
     var footerImage : UIImageView?
     //@IBOutlet weak var relatedTable : UITableView!
     var addcartButton : UIButton?
@@ -732,13 +734,19 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             return tableCell
         case 1://name and price
             let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductNamePriceTableViewCell", for: indexPath) as! FDetailsProductNamePriceTableViewCell
-            tableCell.proNameLabel.text = self.producttitleText
-            tableCell.proNameLabel.numberOfLines = 4
-            tableCell.proLeftLabel.text = self.productdiscountpriceText
-            let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: self.productpriceText)
-            attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
-            tableCell.proMiddleLable.attributedText = attributeString
-            tableCell.proRightLabel.text = self.productpercentageText
+            if self.productType != "all_item"  {
+                tableCell.proNameLabel.text = self.producttitleText
+                tableCell.proNameLabel.numberOfLines = 4
+                tableCell.proLeftLabel.text = self.productdiscountpriceText
+                let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: self.productpriceText)
+                attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
+                tableCell.proMiddleLable.attributedText = attributeString
+                tableCell.proRightLabel.text = self.productpercentageText
+            }else{
+                tableCell.proMiddleLable.text = String(self.productOff) + "% Off"
+                tableCell.proMiddleLable.textColor = UIColor.black
+            }
+            
             tableCell.selectionStyle = .none
             return tableCell
         case 2://description
@@ -980,6 +988,10 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                             }
                             
                             self.producttitleText = parseJSON.value(forKeyPath: "product_details.product_title") as! String
+                            self.productType = parseJSON.value(forKeyPath: "product_details.product_type") as! String
+                            if self.productType == "all_item"{
+                                self.productOff = parseJSON.value(forKeyPath: "product_details.product_discount") as! NSInteger
+                            }
                             self.currencySymbol = (parseJSON.value(forKeyPath: "product_details.currency_symbol") as? String)!
                             self.productdiscountpriceText = String(format:"%@%d", (parseJSON.value(forKeyPath: "product_details.currency_symbol") as? String)!, (parseJSON.value(forKeyPath: "product_details.product_discount_price") as? NSInteger)!)
                             self.tax = String((parseJSON.value(forKeyPath: "product_details.product_including_tax") as? NSInteger)!)

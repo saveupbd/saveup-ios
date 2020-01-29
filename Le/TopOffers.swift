@@ -19,6 +19,7 @@ class TopOffers: NSObject {
     var currency_symbol:String!
     var merchant_name:String!
     var product_type:String!
+    var product_off:String!
     
     init(TopOffers: NSDictionary) {
         
@@ -32,8 +33,9 @@ class TopOffers: NSObject {
         if self.product_type != "all_item"  {
             self.product_price = String(TopOffers["product_price"] as! Double)
             self.product_discount_price = String(TopOffers["product_discount_price"] as! NSInteger)
-        }else{
             self.product_percentage = String(TopOffers["product_percentage"] as! NSInteger)
+        }else{
+            self.product_off = String(TopOffers["product_discount"] as! NSInteger)
         }
     
         self.product_image = TopOffers["product_image"] as? String

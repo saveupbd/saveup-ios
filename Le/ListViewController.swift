@@ -8,13 +8,15 @@
 
 import UIKit
 
-class ListViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class ListViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout ,FilterViewDelegate{
+    
+    
 
     @IBOutlet weak var listColeectionView: UICollectionView!
     
 //    var topOffersArray = [TopOffers]()//latest deals
 //    var fiftyPercentArray = [FiftyPercent]()//hot deals
-    
+    var filterCategory:FilterByCategoryViewController!
     var main_category_id: String!
     var category_id: String!
     var categoryIdForFilter: String!
@@ -50,7 +52,7 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
         super.viewDidLoad()
         self.listColeectionView.delegate = self
         self.listColeectionView.dataSource = self
-        
+        filterCategory?.filterDel = self
         let leftbutton   = UIButton(type: UIButton.ButtonType.custom) as UIButton
         leftbutton.frame = CGRect(x: 0, y: 0, width: 30, height: 44)
         leftbutton.setImage(UIImage(named: "back-icon"), for: UIControl.State())
@@ -71,26 +73,26 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
         sortView.cancelButton.addTarget(self, action: #selector(ProductViewController.cancelAction(_:)), for: UIControl.Event.touchUpInside)
         
         
-        filterView =  FilterView(frame: CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y, width: self.view.frame.size.width, height: self.view.frame.size.height))
-        self.view.addSubview(filterView)
-        filterView.isHidden = true
-        filterView.backView.layer.cornerRadius = 10
-        
-        filterView.underButton.addTarget(self, action: #selector(self.underAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.oneButton.addTarget(self, action: #selector(self.oneAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.twoButton.addTarget(self, action: #selector(self.twoAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.fiveButton.addTarget(self, action: #selector(self.fiveAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.overButton.addTarget(self, action: #selector(self.overAction(_:)), for: UIControl.Event.touchUpInside)
-        
-        filterView.zeroButton.addTarget(self, action: #selector(self.zeroAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.tenButton.addTarget(self, action: #selector(self.tenAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.twentyButton.addTarget(self, action: #selector(self.twentyAction(_:)), for: UIControl.Event.touchUpInside)
-        // filterView.thirtyButton.addTarget(self, action: #selector(ProductViewController.thirtyAction(_:)), for: UIControlEvents.touchUpInside)
-        //filterView.fourtyButton.addTarget(self, action: #selector(ProductViewController.fourtyAction(_:)), for: UIControlEvents.touchUpInside)
-        filterView.fiftyButton.addTarget(self, action: #selector(self.fiftyAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.outButton.addTarget(self, action: #selector(self.outAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.resetButton.addTarget(self, action: #selector(self.resetFilterAction(_:)), for: UIControl.Event.touchUpInside)
-        filterView.cancelButton.addTarget(self, action: #selector(self.cancelFilterAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView =  FilterView(frame: CGRect(x: self.view.frame.origin.x, y: self.view.frame.origin.y, width: self.view.frame.size.width, height: self.view.frame.size.height))
+//        self.view.addSubview(filterView)
+//        filterView.isHidden = true
+//        filterView.backView.layer.cornerRadius = 10
+//
+//        filterView.underButton.addTarget(self, action: #selector(self.underAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.oneButton.addTarget(self, action: #selector(self.oneAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.twoButton.addTarget(self, action: #selector(self.twoAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.fiveButton.addTarget(self, action: #selector(self.fiveAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.overButton.addTarget(self, action: #selector(self.overAction(_:)), for: UIControl.Event.touchUpInside)
+//
+//        filterView.zeroButton.addTarget(self, action: #selector(self.zeroAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.tenButton.addTarget(self, action: #selector(self.tenAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.twentyButton.addTarget(self, action: #selector(self.twentyAction(_:)), for: UIControl.Event.touchUpInside)
+//        // filterView.thirtyButton.addTarget(self, action: #selector(ProductViewController.thirtyAction(_:)), for: UIControlEvents.touchUpInside)
+//        //filterView.fourtyButton.addTarget(self, action: #selector(ProductViewController.fourtyAction(_:)), for: UIControlEvents.touchUpInside)
+//        filterView.fiftyButton.addTarget(self, action: #selector(self.fiftyAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.outButton.addTarget(self, action: #selector(self.outAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.resetButton.addTarget(self, action: #selector(self.resetFilterAction(_:)), for: UIControl.Event.touchUpInside)
+//        filterView.cancelButton.addTarget(self, action: #selector(self.cancelFilterAction(_:)), for: UIControl.Event.touchUpInside)
         
         let reachability = Reachability()!
         
@@ -257,6 +259,292 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
         task.resume()
     }
     
+    func didSelect(category: String) {
+        switch category {
+        case "Price High to Low":
+            self.sort_order_by = "high_low"
+            
+            self.page_no = 1
+            
+            self.productsArray = [Products]()
+            
+            let reachability = Reachability()!
+            
+            if reachability.isReachable {
+                
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+                
+                //            self.productApi()
+                //            self.productApiTwo()
+                //            self.productApiThree()
+                self.productApiFilter()
+                
+                //
+                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+                //                weakSelf?.productApiFilter()
+                //                weakSelf?.productApiFilter()
+                //            })
+            }
+            else {
+                
+                self.showNetworkErrorAlert()
+            }
+            return
+        case "Price Low to High":
+            self.sort_order_by = "low_high"
+            
+            self.page_no = 1
+            
+            self.productsArray = [Products]()
+            
+            let reachability = Reachability()!
+            
+            if reachability.isReachable {
+                
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+                
+                // self.productApi()
+                productApiFilter()
+                //            self.productApiTwo()
+                //            self.productApiThree()
+                
+                //
+                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+                //                weakSelf?.productApiFilter()
+                //              weakSelf?.productApiFilter()
+                ////                weakSelf?.productApiThree()
+                //            })
+            }
+            else {
+                
+                self.showNetworkErrorAlert()
+            }
+            return
+        case "Reset Sorting":
+            self.sort_order_by = ""
+            
+            self.page_no = 1
+            
+            self.productsArray = [Products]()
+            
+            let reachability = Reachability()!
+            
+            if reachability.isReachable {
+                
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+                
+                self.productApi()
+                self.productApiTwo()
+                self.productApiThree()
+                
+                //
+                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+                //                weakSelf?.productApi()
+                //                weakSelf?.productApiTwo()
+                //                weakSelf?.productApiThree()
+                //            })
+            }
+            else {
+                
+                self.showNetworkErrorAlert()
+            }
+            return
+        case "Food":
+            price_min = "1"
+            
+            price_max = "1000"
+            
+            self.page_no = 1
+            
+            self.value_id = 1
+            
+            self.productsArray = [Products]()
+            
+            let reachability = Reachability()!
+            
+            if reachability.isReachable {
+                
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+                
+                // productApiFilter()
+                
+                if UserDefaults.standard.bool(forKey: "forcategory") == true  {
+                    productApiFilterOneForHotDeals()
+                    print("i am HotButton")
+                    UserDefaults.standard.removeObject(forKey: "forcategory")
+                }else {
+                    productApiFilterOne()
+                }
+                
+                //productApiFilterOneForHotDeals()
+                
+                //
+                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+                //                weakSelf?.productApiFilter()
+                //            })
+            }
+            else {
+                
+                self.showNetworkErrorAlert()
+            }
+            return
+        case "Travel":
+            price_min = "5000"
+            
+            price_max = "10000"
+            
+            self.page_no = 1
+            
+            self.productsArray = [Products]()
+            
+            let reachability = Reachability()!
+            
+            if reachability.isReachable {
+                
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+                
+                //            self.productApi()
+                productApiFilterFour()
+                
+                //
+                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+                //                weakSelf?.productApi()
+                //            })
+            }
+            else {
+                
+                self.showNetworkErrorAlert()
+            }
+            return
+        case "Fitness":
+            self.discount = "2"
+            
+            self.page_no = 1
+            
+            self.productsArray = [Products]()
+            
+            let reachability = Reachability()!
+            
+            if reachability.isReachable {
+                
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+                
+                //            self.productApi()
+                productApiFilterSix()
+                
+                //
+                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+                //                weakSelf?.productApi()
+                //            })
+            }
+            else {
+                
+                self.showNetworkErrorAlert()
+            }
+            return
+        case "Beauty":
+            price_min = "1000"
+            
+            price_max = "2500"
+            
+            self.page_no = 1
+            
+            self.value_id = 2
+            
+            self.productsArray = [Products]()
+            
+            let reachability = Reachability()!
+            
+            if reachability.isReachable {
+                
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+                
+                //            self.productApi()
+                //            self.productApiTwo()
+                //            self.productApiThree()
+                
+                productApiFilterTwo()
+                
+                //
+                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+                //                weakSelf?.productApi()
+                //                weakSelf?.productApiTwo()
+                //                weakSelf?.productApiThree()
+                //            })
+            }
+            else {
+                
+                self.showNetworkErrorAlert()
+            }
+            return
+        case "Services":
+            self.discount = "3"
+            
+            self.page_no = 1
+            
+            self.productsArray = [Products]()
+            
+            let reachability = Reachability()!
+            
+            if reachability.isReachable {
+                
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+                
+                //            self.productApi()
+                productApiFilterSeven()
+                //
+                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+                //                weakSelf?.productApi()
+                //            })
+            }
+            else {
+                
+                self.showNetworkErrorAlert()
+            }
+        case "Reset":
+            self.price_min = ""
+            self.price_max = ""
+            self.discount = ""
+            self.availability = ""
+            self.value_id = nil
+            
+            self.page_no = 1
+            
+            self.productsArray = [Products]()
+            
+            let reachability = Reachability()!
+            
+            if reachability.isReachable {
+                
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+                
+                self.productApi()
+                
+                //
+                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+                //                weakSelf?.productApi()
+                //            })
+            }
+            else {
+                
+                self.showNetworkErrorAlert()
+            }
+        case "Cancel":
+            return
+        default:
+            return
+        }
+    }
+    
     func messageToast(messageStr:String) {
         
         var style = ToastStyle()
@@ -291,9 +579,17 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
         cell.backgroundColor = UIColor.white
         cell.productTitle.text = productsArray[indexPath.row].product_title
         cell.productCategory.text = productsArray[indexPath.row].merchant_name
-        cell.originalPrice.text = "৳" + productsArray[indexPath.row].product_discount_price
-        cell.cutOffPrice.attributedText = productsArray[indexPath.row].product_price.strikeThrough()
-        cell.offPercentage.text = productsArray[indexPath.row].product_percentage + "% off"
+        
+        if productsArray[indexPath.row].product_type != "all_item"  {
+            cell.originalPrice.text = "৳" + productsArray[indexPath.row].product_discount_price
+            cell.cutOffPrice.attributedText = productsArray[indexPath.row].product_price.strikeThrough()
+            cell.offPercentage.text = productsArray[indexPath.row].product_percentage + "% off"
+        }else{
+            
+            cell.cutOffPrice.text = String(productsArray[indexPath.row].product_off)  + "% off"
+        }
+        
+        
         cell.productImage.kf.setImage(with: (StringToURL(text: productsArray[indexPath.row].product_image)))
         cell.productImage.yy_imageURL = URL(string: productsArray[indexPath.row].product_image)
         return cell
@@ -333,13 +629,21 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
     }
     
     @IBAction func btnSortPressed(_ sender: UIButton) {
-        sortView.isHidden = false
-        UIApplication.shared.keyWindow?.addSubview(sortView)
+        let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "FilterByCategoryViewController") as! FilterByCategoryViewController
+        theViewController.filterDel = self
+        theViewController.filterContentArray = ["Price High to Low","Price Low to High","Reset Sorting","Cancel"]
+        theViewController.modalPresentationStyle = .fullScreen
+        theViewController.modalPresentationStyle = .overCurrentContext
+        self.present(theViewController, animated: true, completion: nil)
     }
     
     @IBAction func btnFilterPressed(_ sender: UIButton) {
-        filterView.isHidden = false
-        UIApplication.shared.keyWindow?.addSubview(filterView)
+        let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "FilterByCategoryViewController") as! FilterByCategoryViewController
+        theViewController.filterDel = self
+        theViewController.filterContentArray = ["Food","Travel","Fitness","Beauty","Services","Reset","Cancel"]
+        theViewController.modalPresentationStyle = .fullScreen
+        theViewController.modalPresentationStyle = .overCurrentContext
+        self.present(theViewController, animated: true, completion: nil)
     }
     
     func productApi() {

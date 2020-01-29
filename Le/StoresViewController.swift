@@ -446,6 +446,7 @@ class StoresViewController: UIViewController, UITableViewDelegate, UITableViewDa
 //        UIApplication.shared.keyWindow?.addSubview(filterView)
         let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "FilterByCategoryViewController") as! FilterByCategoryViewController
         theViewController.filterDel = self
+        theViewController.filterContentArray = ["Food","Travel","Fitness","Beauty","Services","Reset","Cancel"]
         theViewController.modalPresentationStyle = .fullScreen
         theViewController.modalPresentationStyle = .overCurrentContext
         self.present(theViewController, animated: true, completion: nil)

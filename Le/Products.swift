@@ -20,14 +20,20 @@ class Products: NSObject {
     var is_wishlist:Bool!
     //var category_id:String!
     var merchant_name:String!
-    
+    var product_type:String!
+    var product_off:String!
     init(Products: NSDictionary) {
         
         self.product_id = String(Products["product_id"] as! NSInteger)
         self.product_title = Products["product_title"] as? String
-        self.product_price = String(Products["product_price"] as! Double)
-        self.product_discount_price = String(Products["product_discount_price"] as! NSInteger)
-        self.product_percentage = String(Products["product_percentage"] as! NSInteger)
+        
+        if self.product_type != "all_item"  {
+            self.product_price = String(Products["product_price"] as! Double)
+            self.product_discount_price = String(Products["product_discount_price"] as! NSInteger)
+            self.product_percentage = String(Products["product_percentage"] as! NSInteger)
+        }else{
+            self.product_off = String(Products["product_discount"] as! NSInteger)
+        }
         self.product_image = Products["product_image"] as? String
         self.currency_symbol = Products["currency_symbol"] as? String
         self.is_wishlist = Products["is_wishlist"] as! Bool

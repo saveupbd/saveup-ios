@@ -196,37 +196,37 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         var tableCell = UITableViewCell()
         switch indexPath.section {
-        case 0:
+        case 0://Category
             if let cell = tableView.dequeueReusableCell(withIdentifier: "FCategoriesTableViewCell", for: indexPath) as? FCategoriesTableViewCell{
                 cell.catDel = self
                 cell.selectionStyle = .none
                 return cell
             }
             return tableCell
-        case 1:
+        case 1://Banner
             if let cell = tableView.dequeueReusableCell(withIdentifier: "FBannerTableViewCell", for: indexPath) as? FBannerTableViewCell{
                 cell.bannerDel = self
                 return cell
             }
             return tableCell
-        case 2:
+        case 2://Latest Deal Title
             tableCell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
             tableCell.textLabel?.text = "Latest Deals"
             tableCell.detailTextLabel?.text = "See All"
             return tableCell
-        case 3:
+        case 3://Latest Deals
             if let cell = tableView.dequeueReusableCell(withIdentifier: "FLatestTableViewCell", for: indexPath) as? FLatestTableViewCell{
                 cell.tag = indexPath.section
                 cell.collectionCellDelegate = self
                 return cell
             }
             return tableCell
-        case 4:
+        case 4://Hot Deals Title
             tableCell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
             tableCell.textLabel?.text = "Hot Deals"
             tableCell.detailTextLabel?.text = "See All"
             return tableCell
-        case 5:
+        case 5://Hot Deals
             tableCell = tableView.dequeueReusableCell(withIdentifier: "FHotDealsTableViewCell", for: indexPath) as! FHotDealsTableViewCell
             if fiftyPercentArray.count != 0 {
                 self.setShadowAndRoundedBorder(customCell: tableCell)
@@ -234,9 +234,9 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
                 tableCell.textLabel?.text = fiftyPercentArray[indexPath.row].product_title
                 tableCell.detailTextLabel!.numberOfLines = 0
                 if fiftyPercentArray[indexPath.row].product_type != "all_item"{
-                    tableCell.detailTextLabel!.text = "\(fiftyPercentArray[indexPath.row].merchant_name!)\n\("৳" + fiftyPercentArray[indexPath.row].product_discount_price!)"
+                    tableCell.detailTextLabel!.text = "\(fiftyPercentArray[indexPath.row].merchant_name!)\n\("৳" + fiftyPercentArray[indexPath.row].product_discount_price!)\n\(fiftyPercentArray[indexPath.row].product_percentage! + "% off")"
                 }else{
-                    tableCell.detailTextLabel!.text = "\(fiftyPercentArray[indexPath.row].merchant_name!)\n\(fiftyPercentArray[indexPath.row].product_percentage! + "% off")"
+                    tableCell.detailTextLabel!.text = "\(fiftyPercentArray[indexPath.row].merchant_name!)\n\(fiftyPercentArray[indexPath.row].product_off! + "% off")"
                 }
                 
                 tableCell.imageView?.kf.setImage(with: (StringToURL(text: fiftyPercentArray[indexPath.row].product_image)))
@@ -247,12 +247,12 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
             }
             
             return tableCell
-        case 6:
+        case 6://Top Picks Title
             tableCell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
             tableCell.textLabel?.text = "Top Picks"
             tableCell.detailTextLabel?.text = "See All"
             return tableCell
-        case 7:
+        case 7://Top Picks
             tableCell = tableView.dequeueReusableCell(withIdentifier: "FGiftDealsTableViewCell", for: indexPath) as! FGiftDealsTableViewCell
             if popularArray.count != 0 {
                 tableCell.textLabel?.numberOfLines = 2

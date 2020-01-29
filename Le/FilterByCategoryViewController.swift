@@ -20,11 +20,13 @@ class FilterByCategoryViewController: UIViewController,UITableViewDelegate,UITab
         super.viewDidLoad()
         filterTable.delegate = self
         filterTable.dataSource = self
+        self.filterTable.layer.borderColor = UIColor.black.cgColor
+        self.filterTable.layer.borderWidth = 1
+        self.filterTable.layer.cornerRadius = 8
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        filterContentArray = ["Food","Travel","Fitness","Beauty","Services","Reset","Cancel"]
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {

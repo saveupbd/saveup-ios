@@ -42,15 +42,13 @@ class FLatestTableViewCell: UITableViewCell,UICollectionViewDelegate, UICollecti
         cell.productTitle.text = topOffersArray[indexPath.row].product_title
         cell.productCategory.text = topOffersArray[indexPath.row].merchant_name
         
-
-        if topOffersArray[indexPath.row].product_discount_price != nil{
+        if topOffersArray[indexPath.row].product_type != "all_item"{
             cell.originalPrice.text = "৳" + topOffersArray[indexPath.row].product_discount_price
-        }
-        if topOffersArray[indexPath.row].product_price != nil{
             cell.cutOffPrice.attributedText = topOffersArray[indexPath.row].product_price.strikeThrough()
+            cell.offPercentage.text = topOffersArray[indexPath.row].product_percentage + "% off"
+        }else{
+            cell.cutOffPrice.text = topOffersArray[indexPath.row].product_off + "% off"
         }
-        
-        cell.offPercentage.text = topOffersArray[indexPath.row].product_percentage + "% off"
         cell.productImage.kf.setImage(with: (StringToURL(text: topOffersArray[indexPath.row].product_image)))
         cell.productImage.yy_imageURL = URL(string: topOffersArray[indexPath.row].product_image)
         return cell
