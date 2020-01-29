@@ -744,7 +744,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                 tableCell.proRightLabel.text = self.productpercentageText
             }else{
                 tableCell.proMiddleLable.text = String(self.productOff) + "% Off"
-                tableCell.proMiddleLable.textColor = UIColor.black
+                tableCell.proMiddleLable.textColor = UIColor(named: "appThemeColor")
             }
             
             tableCell.selectionStyle = .none

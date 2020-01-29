@@ -48,6 +48,7 @@ class FLatestTableViewCell: UITableViewCell,UICollectionViewDelegate, UICollecti
             cell.offPercentage.text = topOffersArray[indexPath.row].product_percentage + "% off"
         }else{
             cell.cutOffPrice.text = topOffersArray[indexPath.row].product_off + "% off"
+            cell.cutOffPrice.textColor = UIColor(named: "appThemeColor")
         }
         cell.productImage.kf.setImage(with: (StringToURL(text: topOffersArray[indexPath.row].product_image)))
         cell.productImage.yy_imageURL = URL(string: topOffersArray[indexPath.row].product_image)
