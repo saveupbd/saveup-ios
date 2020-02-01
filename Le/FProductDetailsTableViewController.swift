@@ -290,8 +290,22 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         request.httpMethod = "POST"
         
         var postString = ""
+        if self.otpCode == nil{
+            var style = ToastStyle()
+            style.messageFont = messageFont!
+            style.messageColor = UIColor.white
+            style.messageAlignment = .center
+            style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
+            
+            self.view.makeToast("Please insert right OTP Code.", duration: 3.0, position: .center, style: style)
+            return
+        }
+        
+        let storeId = UserDefaults.standard.object(forKey: "store_id") as! String
+        let finalStoreId = Int(storeId)
+        
         if let tempUserID = UserDefaults.standard.object(forKey: "UserID"){
-            postString = "otp_code=\(self.otpCode!)&user_id=\(tempUserID)&merchant_id=\(self.otpMerchantId!)"
+            postString = "otp_code=\(self.otpCode!)&user_id=\(tempUserID)&store_id=\(finalStoreId!)"
         }else{
             postString = "otp_code=\(self.otpCode!)&merchant_id=37"
         }
@@ -365,6 +379,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
     var otpMessage:String?
     var otpCode:NSInteger?
     var otpMerchantId:NSInteger?
+    var otpStoreId:NSInteger?
     var otpAmount:NSInteger?
     var otpTextField: UITextField?
     
@@ -377,8 +392,23 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         var postString = ""
         let merID = UserDefaults.standard.object(forKey: "merchant_id") as! String
         let finalMerchantId = Int(merID)
+        
+        let storeId = UserDefaults.standard.object(forKey: "store_id") as! String
+        let finalStoreId = Int(storeId)
+        
+        if self.otpAmount == nil{
+            var style = ToastStyle()
+            style.messageFont = messageFont!
+            style.messageColor = UIColor.white
+            style.messageAlignment = .center
+            style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
+            
+            self.view.makeToast("Please insert right amount.", duration: 3.0, position: .center, style: style)
+            return
+        }
+        
         if let tempUserID = UserDefaults.standard.object(forKey: "UserID"){
-            postString = "amount=\(self.otpAmount!)&user_id=\(tempUserID)&merchant_id=\(finalMerchantId!)&product_id=\(product_id!)"
+            postString = "amount=\(self.otpAmount!)&user_id=\(tempUserID)&store_id=\(finalStoreId!)&product_id=\(product_id!)"
         }else{
             postString = "product_id=\(product_id!)&amount=\(product_size_id!)&merchantId=\(product_color_id!)"
         }
@@ -409,6 +439,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                                 self.otpMessage = parseJSON.object(forKey: "message") as? String
                                 //self.otpCode = parseJSON.object(forKey: "code") as? NSInteger
                                 self.otpMerchantId = parseJSON.object(forKey: "merchant_id") as? NSInteger
+                                self.otpStoreId = parseJSON.object(forKey: "store_id") as? NSInteger
                                 let alert = UIAlertController(title: "OTP Code", message: self.otpMessage, preferredStyle: UIAlertController.Style.alert)
                                 
                                 alert.addTextField(configurationHandler: { (textField) in
@@ -1097,11 +1128,13 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                             
                             self.storeAddressText = parseJSON.value(forKeyPath: "product_details.store_details.store_name") as! String
                             
-                            let storeId = parseJSON.value(forKeyPath: "product_details.store_details.merchant_id") as? Int
-                            UserDefaults.standard.set("\(storeId!)", forKey: "merchant_id")
-                            print("here is the sore id \(storeId!)")
+                            let merchant_id = parseJSON.value(forKeyPath: "product_details.store_details.merchant_id") as? Int
+                            UserDefaults.standard.set("\(merchant_id!)", forKey: "merchant_id")
+                            print("here is the merchant_id \(merchant_id!)")
                             
-                            
+                            let store_id = parseJSON.value(forKeyPath: "product_details.store_details.store_id") as? Int
+                            UserDefaults.standard.set("\(store_id!)", forKey: "store_id")
+                            print("here is the store_id \(store_id!)")
                             
                             
                             if (parseJSON.value(forKeyPath: "product_details.store_details.merchant_img") as? String) != nil {

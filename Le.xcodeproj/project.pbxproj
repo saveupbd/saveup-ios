@@ -69,6 +69,8 @@
 		8D4E13972375ECA10072B53E /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E13962375ECA10072B53E /* BannerCollectionViewCell.swift */; };
 		8D6A8ABA238B0DB4000CC24E /* CategoryProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A8AB9238B0DB4000CC24E /* CategoryProductListViewController.swift */; };
 		8D6ADBF123B12F7E00AC3CB1 /* FDetailsRelatedArrayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6ADBF023B12F7E00AC3CB1 /* FDetailsRelatedArrayTableViewCell.swift */; };
+		8D714A8423E5DA8900128156 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D714A8323E5DA8900128156 /* RewardsViewController.swift */; };
+		8D714A8623E6068D00128156 /* LoyalityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D714A8523E6068D00128156 /* LoyalityModel.swift */; };
 		8D72AABC23DCC79E00E3EA8B /* FilterByCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72AABB23DCC79E00E3EA8B /* FilterByCategoryViewController.swift */; };
 		8DB2FF3723DB004D00A44F3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DB2FF3623DB004C00A44F3E /* GoogleService-Info.plist */; };
 		8DBAD36723ADFC3700E188E6 /* FDetailsImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAD36623ADFC3700E188E6 /* FDetailsImageTableViewCell.swift */; };
@@ -287,6 +289,8 @@
 		8D4FA86D237C6FF2000FD86D /* SSLCommerz-5.1.2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = "SSLCommerz-5.1.2.framework"; path = "../../../Downloads/SSL Commerz/SSLCommerz-5.1.2.framework"; sourceTree = "<group>"; };
 		8D6A8AB9238B0DB4000CC24E /* CategoryProductListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryProductListViewController.swift; sourceTree = "<group>"; };
 		8D6ADBF023B12F7E00AC3CB1 /* FDetailsRelatedArrayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDetailsRelatedArrayTableViewCell.swift; sourceTree = "<group>"; };
+		8D714A8323E5DA8900128156 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
+		8D714A8523E6068D00128156 /* LoyalityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyalityModel.swift; sourceTree = "<group>"; };
 		8D72AABB23DCC79E00E3EA8B /* FilterByCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterByCategoryViewController.swift; sourceTree = "<group>"; };
 		8DB2FF3623DB004C00A44F3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DBAD36623ADFC3700E188E6 /* FDetailsImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDetailsImageTableViewCell.swift; sourceTree = "<group>"; };
@@ -972,6 +976,8 @@
 				8D4760F623981F0E002FEC8E /* MyAccViewController.swift */,
 				8D4760F8239A707F002FEC8E /* FWishListTableViewController.swift */,
 				8D72AABB23DCC79E00E3EA8B /* FilterByCategoryViewController.swift */,
+				8D714A8323E5DA8900128156 /* RewardsViewController.swift */,
+				8D714A8523E6068D00128156 /* LoyalityModel.swift */,
 			);
 			path = Le;
 			sourceTree = "<group>";
@@ -1211,6 +1217,7 @@
 				BEFF05301E772BDC0057C89E /* CountryViewController.swift in Sources */,
 				BEE2D3021EBD0725007F7FFB /* NearMe.swift in Sources */,
 				8D4760F723981F0E002FEC8E /* MyAccViewController.swift in Sources */,
+				8D714A8423E5DA8900128156 /* RewardsViewController.swift in Sources */,
 				2014219F20D0F5A100FFB665 /* ImageProcessor.swift in Sources */,
 				8D4E1387237545050072B53E /* FCategoriesTableViewCell.swift in Sources */,
 				8D3F2AAC238710DA005F16F7 /* AppConfig.swift in Sources */,
@@ -1320,6 +1327,7 @@
 				BEEAC7F31EBB9A3400A181AA /* StoreDetailsViewController.swift in Sources */,
 				BEF87FCB1E7AFF2200FEF117 /* CategoryHome.swift in Sources */,
 				BEFF05271E770DDC0057C89E /* Reachability.swift in Sources */,
+				8D714A8623E6068D00128156 /* LoyalityModel.swift in Sources */,
 				BEBA974C1E81906F001E0AC8 /* YYImageCache.m in Sources */,
 				BE0C53F91EBA532B007BAE57 /* PaymentsViewController.swift in Sources */,
 				BEFF052A1E770FE00057C89E /* Toast.swift in Sources */,
@@ -1505,7 +1513,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Le/PayPalMobile",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.4;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lc++",
@@ -1551,7 +1559,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Le/PayPalMobile",
 				);
-				MARKETING_VERSION = 1.0.2;
+				MARKETING_VERSION = 1.0.4;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lc++",
