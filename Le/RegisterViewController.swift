@@ -8,15 +8,15 @@
 
 import UIKit
 import AccountKit
-class RegisterViewController: UIViewController, UIGestureRecognizerDelegate, CountryDelegate, CityDelegate {
+class RegisterViewController: UIViewController, UIGestureRecognizerDelegate, CountryDelegate, CityDelegate,UIPickerViewDelegate {
 var accountKit: AKFAccountKit!
     //@IBOutlet weak var registerScroll : UIScrollView!
     //@IBOutlet weak var bgImage : UIImageView!
     @IBOutlet weak var nameText : UITextField!
     @IBOutlet weak var emailText : UITextField!
     @IBOutlet weak var passwordText : UITextField!
-    @IBOutlet weak var countryText : UITextField!
-    @IBOutlet weak var cityText : UITextField!
+    //@IBOutlet weak var countryText : UITextField!
+    //@IBOutlet weak var cityText : UITextField!
     //@IBOutlet weak var countryButton : UIButton!
     //@IBOutlet weak var cityButton : UIButton!
     @IBOutlet weak var acceptButton : UIButton!
@@ -27,10 +27,15 @@ var accountKit: AKFAccountKit!
     var acceptBool = false
     var countryidString: String!
     var cityidString: String!
+    var birthDateString = ""
+    
+    @IBOutlet weak var birthDayPicker: UIDatePicker!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        self.birthDayPicker.addTarget(self, action: #selector(dateChanged(_:)), for: .valueChanged)
         self.setAwsomeBackgroundImage()
         self.navigationController?.isNavigationBarHidden = false
         self.navigationItem.title = "Register"
@@ -70,8 +75,8 @@ var accountKit: AKFAccountKit!
         emailText.attributedPlaceholder! = NSAttributedString(string: "Email", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :emailText.font!])
         passwordText.attributedPlaceholder! = NSAttributedString(string: "Password", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :passwordText.font!])
         confirmPassText.attributedPlaceholder! = NSAttributedString(string: "Confirm Password", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :confirmPassText.font!])
-        countryText.attributedPlaceholder! = NSAttributedString(string: "Country", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :countryText.font!])
-        cityText.attributedPlaceholder! = NSAttributedString(string: "City", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :cityText.font!])
+        //countryText.attributedPlaceholder! = NSAttributedString(string: "Country", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :countryText.font!])
+        //cityText.attributedPlaceholder! = NSAttributedString(string: "City", attributes:  [NSAttributedString.Key.foregroundColor: UIColor.gray, NSAttributedString.Key.font :cityText.font!])
         
         let scrollGesture: UITapGestureRecognizer = UITapGestureRecognizer.init(target: self, action: #selector(handleTap))
         scrollGesture.delegate = self
@@ -87,8 +92,8 @@ var accountKit: AKFAccountKit!
                 //if the user is logged with Phone
                 if account?.phoneNumber?.phoneNumber != nil {
                     let phone = account!.phoneNumber?.stringRepresentation()
-                    UserDefaults.standard.set("\(phone)", forKey: "phoneNumber")
-                    print("-----------------=============================\(phone)")
+                    UserDefaults.standard.set(phone, forKey: "phoneNumber")
+                    
                 }
             })
         }
@@ -97,6 +102,14 @@ var accountKit: AKFAccountKit!
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
+    }
+    
+    @objc func dateChanged(_ sender: UIDatePicker) {
+        let components = Calendar.current.dateComponents([.year, .month, .day], from: sender.date)
+        if let day = components.day, let month = components.month, let year = components.year {
+            print("\(day) \(month) \(year)")
+            birthDateString = "\(day)-\(month)-\(year)"
+        }
     }
     
     
@@ -147,32 +160,32 @@ var accountKit: AKFAccountKit!
     
     func updateCountry(countryName: String, countryId:String) {
         
-        countryText.text = countryName
+        //countryText.text = countryName
         countryidString = countryId
     }
     
     @IBAction func cityButton(sender:UIButton ) {
         //print("I am here")
-        if countryText.text?.count == 0 {
-            
-            messageToast(messageStr: Country_Message)
-        }
-        else {
-            
-            nameText.resignFirstResponder()
-            emailText.resignFirstResponder()
-            passwordText.resignFirstResponder()
-            confirmPassText.resignFirstResponder()
-            let objCity = self.storyboard?.instantiateViewController(withIdentifier: "CityViewController") as! CityViewController
-            objCity.countryId = Int(countryidString)!
-            objCity.cityDelegate = self
-            self.navigationController?.pushViewController(objCity, animated: true)
-        }
+//        if countryText.text?.count == 0 {
+//
+//            messageToast(messageStr: Country_Message)
+//        }
+//        else {
+//
+//            nameText.resignFirstResponder()
+//            emailText.resignFirstResponder()
+//            passwordText.resignFirstResponder()
+//            confirmPassText.resignFirstResponder()
+//            let objCity = self.storyboard?.instantiateViewController(withIdentifier: "CityViewController") as! CityViewController
+//            objCity.countryId = Int(countryidString)!
+//            objCity.cityDelegate = self
+//            self.navigationController?.pushViewController(objCity, animated: true)
+//        }
     }
     
     func updateCity(cityName: String, cityId:String) {
         
-        cityText.text = cityName
+        //cityText.text = cityName
         cityidString = cityId
     }
     
@@ -232,14 +245,14 @@ var accountKit: AKFAccountKit!
 //                messageToast(messageStr: Length_Message)
 //                passwordText.becomeFirstResponder()
 //            }
-            else if countryText.text?.count == 0 {
-                
-                messageToast(messageStr: Country_Message)
-            }
-            else if cityText.text?.count == 0 {
-                
-                messageToast(messageStr: City_Message)
-            }
+//            else if countryText.text?.count == 0 {
+//
+//                messageToast(messageStr: Country_Message)
+//            }
+//            else if cityText.text?.count == 0 {
+//
+//                messageToast(messageStr: City_Message)
+//            }
             else if acceptBool == false {
                 
                 messageToast(messageStr: Accept_Message)
@@ -268,7 +281,8 @@ var accountKit: AKFAccountKit!
         var request = URLRequest(url:myUrl!)
         request.httpMethod = "POST";
         
-        let postString = "name=\(nameText.text!)&email=\(emailText.text!)&password=\(passwordText.text!)&country_id=1&city_id=1&user_city_name=\(cityText.text!)&user_country_name=\(countryText.text!)&phone=\(UserDefaults.standard.string(forKey: "phoneNumber"))&lang=en"
+        let userPhoneNumber = UserDefaults.standard.string(forKey: "phoneNumber")
+        let postString = "name=\(nameText.text!)&email=\(emailText.text!)&password=\(passwordText.text!)&country_id=1&city_id=1&date_of_birth=\(birthDateString)&phone=\(userPhoneNumber!)&lang=en"
         print(postString)
         request.httpBody = postString.data(using: String.Encoding.utf8);
         
