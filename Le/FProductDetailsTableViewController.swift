@@ -765,9 +765,9 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             return tableCell
         case 1://name and price
             let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductNamePriceTableViewCell", for: indexPath) as! FDetailsProductNamePriceTableViewCell
+            tableCell.proNameLabel.text = self.producttitleText
+            tableCell.proNameLabel.numberOfLines = 4
             if self.productType != "all_item"  {
-                tableCell.proNameLabel.text = self.producttitleText
-                tableCell.proNameLabel.numberOfLines = 4
                 tableCell.proLeftLabel.text = self.productdiscountpriceText
                 let attributeString: NSMutableAttributedString =  NSMutableAttributedString(string: self.productpriceText)
                 attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
