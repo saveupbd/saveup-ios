@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,RelatedCollectionCellDelegate {
+class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,RelatedCollectionCellDelegate,DetailsImagesTableViewCellDelegate {
 
     @IBOutlet weak var btnWishList: UIButton!
     @IBOutlet weak var btnAddToCart: UIButton!
@@ -243,6 +243,9 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 9{
             return 410
+        }
+        if indexPath.row == 0{
+            return 310
         }
         return UITableView.automaticDimension
     }
@@ -753,15 +756,19 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
         case 0://image
-            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsImageTableViewCell", for: indexPath) as! FDetailsImageTableViewCell
-            if self.productimagesArray.count == 0 {
-                tableCell.proImageView.image = UIImage(named: "no-image-icon")
-            }
-            else {
-                tableCell.proImageView.kf.setImage(with: StringToURL(text: self.productimagesArray[0].images))
-                tableCell.proImageView.yy_imageURL = URL(string: self.productimagesArray[0].images)
-            }
-            tableCell.selectionStyle = .none
+//            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsImageTableViewCell", for: indexPath) as! FDetailsImageTableViewCell
+//            if self.productimagesArray.count == 0 {
+//                tableCell.proImageView.image = UIImage(named: "no-image-icon")
+//            }
+//            else {
+//                tableCell.proImageView.kf.setImage(with: StringToURL(text: self.productimagesArray[0].images))
+//                tableCell.proImageView.yy_imageURL = URL(string: self.productimagesArray[0].images)
+//            }
+//            tableCell.selectionStyle = .none
+//            return tableCell
+            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsImagesTableViewCell", for: indexPath) as! FDetailsImagesTableViewCell
+            tableCell.imagesDel = self
+            tableCell.productImagesArr = self.productimagesArray
             return tableCell
         case 1://name and price
             let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductNamePriceTableViewCell", for: indexPath) as! FDetailsProductNamePriceTableViewCell
@@ -1268,6 +1275,9 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             }
         })
         task.resume()
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("del fired")
     }
 }
 extension String{

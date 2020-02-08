@@ -205,6 +205,7 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
             return tableCell
         case 1://Banner
             if let cell = tableView.dequeueReusableCell(withIdentifier: "FBannerTableViewCell", for: indexPath) as? FBannerTableViewCell{
+                //cell.hitHomeBanner = true
                 cell.bannerDel = self
                 return cell
             }
