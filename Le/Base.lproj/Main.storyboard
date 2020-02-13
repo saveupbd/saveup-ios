@@ -305,7 +305,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="16D-hT-a87">
-                                <rect key="frame" x="23" y="532" width="329" height="35"/>
+                                <rect key="frame" x="23" y="514" width="329" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="0PC-DT-3LD"/>
                                 </constraints>
@@ -346,7 +346,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fgl-fZ-vi4">
-                                <rect key="frame" x="17" y="479" width="335" height="41"/>
+                                <rect key="frame" x="17" y="461" width="335" height="41"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="SkZ-Un-2AZ"/>
@@ -360,14 +360,14 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="teM-db-F3L">
-                                <rect key="frame" x="17" y="410" width="335" height="59"/>
+                                <rect key="frame" x="17" y="410" width="335" height="41"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Hc-wn-e05" customClass="FBSDKLoginButton">
-                                        <rect key="frame" x="0.0" y="0.0" width="165" height="59"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="165" height="41"/>
                                         <state key="normal" title="Facebook Login"/>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="62G-Xg-CqX">
-                                        <rect key="frame" x="170" y="0.0" width="165" height="59"/>
+                                        <rect key="frame" x="170" y="0.0" width="165" height="41"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <state key="normal" image="gSign">
@@ -378,6 +378,9 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="ILp-8J-vBE"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -860,7 +863,7 @@
                                 <rect key="frame" x="17" y="514.5" width="341" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfH-Kk-B5x">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="1.5" height="34"/>
                                         <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <state key="normal" image="untick-icon">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -871,7 +874,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b7n-wX-f5i">
-                                        <rect key="frame" x="50" y="0.0" width="291" height="34"/>
+                                        <rect key="frame" x="11.5" y="0.0" width="329.5" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="Accept terms and conditions">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -2448,10 +2451,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="92J-gI-d0K">
-                                <rect key="frame" x="5" y="5" width="365" height="24"/>
+                                <rect key="frame" x="5" y="5" width="365" height="22"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cff-fe-mPV">
-                                        <rect key="frame" x="0.0" y="0.0" width="182.5" height="24"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="182.5" height="22"/>
                                         <color key="backgroundColor" red="0.10980392160000001" green="0.63137254899999995" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="  Sort" image="sort-icon"/>
@@ -2460,7 +2463,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcT-R4-we6">
-                                        <rect key="frame" x="182.5" y="0.0" width="182.5" height="24"/>
+                                        <rect key="frame" x="182.5" y="0.0" width="182.5" height="22"/>
                                         <color key="backgroundColor" red="0.10980392160000001" green="0.63137254899999995" blue="0.87058823529999996" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                         <state key="normal" title="  Filter" image="filter-icon"/>
@@ -2471,7 +2474,7 @@
                                 </subviews>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="SPZ-tB-AJ7">
-                                <rect key="frame" x="0.0" y="39" width="375" height="623"/>
+                                <rect key="frame" x="0.0" y="37" width="375" height="625"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="23d-j5-oOo">
                                     <size key="itemSize" width="191" height="245"/>
@@ -4948,7 +4951,7 @@
                                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <userDefinedRuntimeAttributes>
                                                     <userDefinedRuntimeAttribute type="image" keyPath="emptyImage" value="view:ciZ-bh-2rg:value"/>
-                                                    <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="E0F6F01A-C5F1-4E70-B196-7088920B88DD"/>
+                                                    <userDefinedRuntimeAttribute type="image" keyPath="fullImage" value="0C4C6F93-D740-450F-8CE0-A25C61271362"/>
                                                     <userDefinedRuntimeAttribute type="number" keyPath="minRating">
                                                         <integer key="value" value="1"/>
                                                     </userDefinedRuntimeAttribute>
@@ -8805,7 +8808,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="E0F6F01A-C5F1-4E70-B196-7088920B88DD" width="24" height="24">
+        <image name="0C4C6F93-D740-450F-8CE0-A25C61271362" width="24" height="24">
             <mutableData key="keyedArchiveRepresentation">
 YnBsaXN0MDDUAQIDBAUGBwpYJHZlcnNpb25ZJGFyY2hpdmVyVCR0b3BYJG9iamVjdHMSAAGGoF8QD05T
 S2V5ZWRBcmNoaXZlctEICVRyb290gAGuCwwZGh8UJCgpMDM2PD9VJG51bGzWDQ4PEBESExQVFhcYVk5T
@@ -8907,7 +8910,7 @@ UxNVE1oTYhNlE2oTcgAAAAAAAAIBAAAAAAAAAEIAAAAAAAAAAAAAAAAAABN1A
         <image name="filter-icon" width="24" height="24"/>
         <image name="fitnessIc" width="132.5" height="132.5"/>
         <image name="foodIc" width="25" height="25"/>
-        <image name="gSign" width="347" height="59"/>
+        <image name="gSign" width="173.5" height="29.5"/>
         <image name="hepl-icon" width="32" height="32"/>
         <image name="home" width="36" height="36"/>
         <image name="location-icon" width="24" height="24"/>

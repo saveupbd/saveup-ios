@@ -787,44 +787,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             
             tableCell.selectionStyle = .none
             return tableCell
-        case 2://description
-            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductDescriptionTableViewCell", for: indexPath) as! FDetailsProductDescriptionTableViewCell
-            tableCell.proHeaderLabel.text = "Description"
-            tableCell.proDescriptionDetailsTextView.attributedText = descriptionText.htmlToAttributedString
-            tableCell.selectionStyle = .none
-            return tableCell
-        case 3://what is included
-            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductDescriptionTableViewCell", for: indexPath) as! FDetailsProductDescriptionTableViewCell
-            tableCell.proHeaderLabel.text = "What is included in the deal?"
-            tableCell.proDescriptionDetailsTextView.attributedText = dealIncludeText.htmlToAttributedString
-            tableCell.selectionStyle = .none
-            return tableCell
-        case 4://fineprint
-            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductDescriptionTableViewCell", for: indexPath) as! FDetailsProductDescriptionTableViewCell
-            tableCell.proHeaderLabel.text = "Fine print (Conditions)"
-            tableCell.proDescriptionDetailsTextView.attributedText = conditionsText.htmlToAttributedString
-            tableCell.selectionStyle = .none
-            return tableCell
-        case 5://redemption instruction
-            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductDescriptionTableViewCell", for: indexPath) as! FDetailsProductDescriptionTableViewCell
-            tableCell.proHeaderLabel.text = "Redemption Instruction"
-            tableCell.proDescriptionDetailsTextView.attributedText = redemptionText.htmlToAttributedString
-            tableCell.selectionStyle = .none
-            return tableCell
-        case 6://direction
-            let tableCell = tableView.dequeueReusableCell(withIdentifier: "singleTitleCell", for: indexPath)
-            tableCell.textLabel?.text = "Direction to the Merchant Store"
-            tableCell.imageView?.image = UIImage(named: "location-icon")
-            tableCell.selectionStyle = .none
-            return tableCell
-        case 7://redeem offer time
-            let tableCell = tableView.dequeueReusableCell(withIdentifier: "simpleCell", for: indexPath)
-            tableCell.textLabel?.numberOfLines = 2
-            tableCell.textLabel?.text = redeemOfferText
-            tableCell.imageView?.image = UIImage(named: "redeem")
-            tableCell.selectionStyle = .none
-            return tableCell
-        case 8://store details
+        case 2://store details
             let tableCell = tableView.dequeueReusableCell(withIdentifier: "ProStoreDetailsCell", for: indexPath)
             tableCell.textLabel?.text = self.storeNameText
             tableCell.detailTextLabel?.text = self.storeAddressText
@@ -832,6 +795,44 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             tableCell.imageView?.image = self.storeImage
             tableCell.selectionStyle = .none
             return tableCell
+        case 3://description
+            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductDescriptionTableViewCell", for: indexPath) as! FDetailsProductDescriptionTableViewCell
+            tableCell.proHeaderLabel.text = "Description"
+            tableCell.proDescriptionDetailsTextView.attributedText = descriptionText.htmlToAttributedString
+            tableCell.selectionStyle = .none
+            return tableCell
+        case 4://what is included
+            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductDescriptionTableViewCell", for: indexPath) as! FDetailsProductDescriptionTableViewCell
+            tableCell.proHeaderLabel.text = "What is included in the deal?"
+            tableCell.proDescriptionDetailsTextView.attributedText = dealIncludeText.htmlToAttributedString
+            tableCell.selectionStyle = .none
+            return tableCell
+        case 5://fineprint
+            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductDescriptionTableViewCell", for: indexPath) as! FDetailsProductDescriptionTableViewCell
+            tableCell.proHeaderLabel.text = "Fine print (Conditions)"
+            tableCell.proDescriptionDetailsTextView.attributedText = conditionsText.htmlToAttributedString
+            tableCell.selectionStyle = .none
+            return tableCell
+        case 6://redemption instruction
+            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductDescriptionTableViewCell", for: indexPath) as! FDetailsProductDescriptionTableViewCell
+            tableCell.proHeaderLabel.text = "Redemption Instruction"
+            tableCell.proDescriptionDetailsTextView.attributedText = redemptionText.htmlToAttributedString
+            tableCell.selectionStyle = .none
+            return tableCell
+        case 7://direction
+            let tableCell = tableView.dequeueReusableCell(withIdentifier: "singleTitleCell", for: indexPath)
+            tableCell.textLabel?.text = "Direction to the Merchant Store"
+            tableCell.imageView?.image = UIImage(named: "location-icon")
+            tableCell.selectionStyle = .none
+            return tableCell
+        case 8://redeem offer time
+            let tableCell = tableView.dequeueReusableCell(withIdentifier: "simpleCell", for: indexPath)
+            tableCell.textLabel?.numberOfLines = 2
+            tableCell.textLabel?.text = redeemOfferText
+            tableCell.imageView?.image = UIImage(named: "redeem")
+            tableCell.selectionStyle = .none
+            return tableCell
+        
         case 9://related
             let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsRelatedArrayTableViewCell", for: indexPath) as! FDetailsRelatedArrayTableViewCell
             tableCell.product_id = self.product_id
@@ -859,34 +860,35 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         case 1://name and price
             
             return
-        case 2://description
+        case 2://store details
+            let objStoreDetails = self.storyboard?.instantiateViewController(withIdentifier: "StoreDetailsViewController") as! StoreDetailsViewController
+            objStoreDetails.shop_id = UserDefaults.standard.value(forKey:"merchant_id") as? String
+            self.navigationController?.pushViewController(objStoreDetails, animated: true)
             
             return
-        case 3://what is included
+        case 3://description
             
             return
-        case 4://fineprint
+        case 4://what is included
             
             return
-        case 5://redemption instruction
+        case 5://fineprint
             
             return
-        case 6://direction
+        case 6://redemption instruction
+            
+            return
+        case 7://direction
             let storeLat = UserDefaults.standard.value(forKey: "latitude") as! Double
             let storeLong = UserDefaults.standard.value(forKey: "longitude") as! Double
             if let url = URL(string: "comgooglemaps://?saddr=&daddr=\(storeLat),\(storeLong)&directionsmode=driving") {
                 UIApplication.shared.open(url, options: [:])
             }
             return
-        case 7://redeem offer time
+        case 8://redeem offer time
             
             return
-        case 8://store details
-            let objStoreDetails = self.storyboard?.instantiateViewController(withIdentifier: "StoreDetailsViewController") as! StoreDetailsViewController
-            objStoreDetails.shop_id = UserDefaults.standard.value(forKey:"merchant_id") as? String
-            self.navigationController?.pushViewController(objStoreDetails, animated: true)
-            
-            return
+        
         case 9://related
             
             return
