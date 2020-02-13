@@ -33,11 +33,14 @@ class LoginViewController: UIViewController, LoginButtonDelegate, UIGestureRecog
     var emailString:String?
     var fbidString:String?
     var fbtokenString:String?
+    var googleIdToken:String?
+    var fbImgString:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         //init Account Kit
+        btnGoogleLogin.imageView?.contentMode = .scaleAspectFit
         self.setAwsomeBackgroundImage()
         self.dismissKeyBoardTappedOutside()
         if accountKit == nil {
@@ -363,12 +366,14 @@ class LoginViewController: UIViewController, LoginButtonDelegate, UIGestureRecog
         GraphRequest.init(graphPath: "me", parameters: ["fields":"first_name, last_name, email, picture.type(large)"]).start { (connection, result, error) -> Void in
             
             if (error == nil) {
-                
+                let strAuthenticationToken = AccessToken.current?.tokenString
+                UserDefaults.standard.set(strAuthenticationToken,
+                                      forKey: "AccessToken_Facebook")
                 print(result as! NSDictionary)
                 let json = result as! NSDictionary
                 self.fbidString = json.object(forKey: "id") as! String?
                 self.nameString = json.object(forKey: "first_name") as! String?
-                
+                self.fbImgString = ((json.object(forKey: "picture") as! NSDictionary).object(forKey: "data") as! NSDictionary).object(forKey: "url") as? String
                 if ((json.object(forKey: "email")) != nil) {
                     self.emailString = (json.object(forKey: "email") as? String)!
                 }
@@ -440,8 +445,13 @@ class LoginViewController: UIViewController, LoginButtonDelegate, UIGestureRecog
         let userToken = ""
         let deviceToken = ""
         let deviceType = "iOS"
-        //let uesrImage = Auth.auth().currentUser?.
-        let postString = "name=\(userName!)&email=\(userEmail!)&device_token=14t4ghyu676785t45g5&device_type=iOS&image=oooo&lang=en"
+        var userImageUrl = ""
+        if (GIDSignIn.sharedInstance().currentUser != nil) {
+            userImageUrl = GIDSignIn.sharedInstance().currentUser.profile.imageURL(withDimension: 400).absoluteString
+            
+        }
+    
+        let postString = "name=\(userName!)&email=\(userEmail!)&device_token=\(googleIdToken)&device_type=iOS&image=\(userImageUrl)&lang=en"
         print(postString)
         request.httpBody = postString.data(using: String.Encoding.utf8);
         
@@ -483,9 +493,11 @@ class LoginViewController: UIViewController, LoginButtonDelegate, UIGestureRecog
                                     UserDefaults.standard.synchronize()
                                     UserDefaults.standard.set("AppInside", forKey: "AppStatus")
                                     UserDefaults.standard.synchronize()
+                                    DispatchQueue.main.async {
                                     let objHome = self.storyboard?.instantiateViewController(withIdentifier: "RootTabBarController") as! RootTabBarController
                                     let appDelegate = UIApplication.shared.delegate as! AppDelegate
                                     appDelegate.window?.rootViewController = objHome
+                                    }
                                 }
                             }
                         }
@@ -518,7 +530,18 @@ class LoginViewController: UIViewController, LoginButtonDelegate, UIGestureRecog
         var request = URLRequest(url:myUrl!)
         request.httpMethod = "POST";
         
-        let postString = "name=\(nameString!)&email=\(emailString!)&facebook_id=\(fbidString!)&device_token=14t4ghyu676785t45g5&device_type=iOS&image=https://ibb.co/yWph8Hw&lang=en"
+        if UserDefaults.standard.value(forKey: "AccessToken_Facebook") != nil{
+            self.fbtokenString = UserDefaults.standard.value(forKey: "AccessToken_Facebook") as! String
+        }else{
+            self.fbtokenString = "testToken"
+        }
+        
+        if fbImgString == nil || fbImgString == ""{
+            fbImgString = "test"
+        }
+        
+        
+        let postString = "name=\(nameString!)&email=\(emailString!)&facebook_id=\(fbidString!)&device_token=\(fbtokenString!)&device_type=iOS&image=\(fbImgString!)&lang=en"
         print(postString)
         request.httpBody = postString.data(using: String.Encoding.utf8);
         
@@ -570,9 +593,11 @@ class LoginViewController: UIViewController, LoginButtonDelegate, UIGestureRecog
 //                                    self.navigationController?.pushViewController(objHome, animated: true)
                                     UserDefaults.standard.set("AppInside", forKey: "AppStatus")
                                     UserDefaults.standard.synchronize()
+                                    DispatchQueue.main.async {
                                     let objHome = self.storyboard?.instantiateViewController(withIdentifier: "RootTabBarController") as! RootTabBarController
                                     let appDelegate = UIApplication.shared.delegate as! AppDelegate
                                     appDelegate.window?.rootViewController = objHome
+                                    }
                                 }
                             }
                         }
@@ -614,23 +639,32 @@ class LoginViewController: UIViewController, LoginButtonDelegate, UIGestureRecog
         self.present(alertController, animated: true, completion: nil)
     }
     func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error?) {
-      if (error) != nil {
-          
-        self.showAlertViewController(titleText: "An error occured during Google Authentication", messageText: error!.localizedDescription, leftSideText: "OK", rightSideText: "")
-          return
-      }
-      
-      guard let authentication = user.authentication else { return }
-      let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
-                                                     accessToken: authentication.accessToken)
-      Auth.auth().signIn(with: credential) { (user, error) in
-          if (error) != nil {
-              
-              self.showAlertViewController(titleText: "Google Sign In failed", messageText: "Google Authentification Fail", leftSideText: "OK", rightSideText: "")
-          }else {
-            self.googleApi()
-          }
-      }
+        if (error) != nil {
+            
+            self.showAlertViewController(titleText: "An error occured during Google Authentication", messageText: error!.localizedDescription, leftSideText: "OK", rightSideText: "")
+            return
+        }
+        
+        guard let authentication = user.authentication else { return }
+        let credential = GoogleAuthProvider.credential(withIDToken: authentication.idToken,
+                                                       accessToken: authentication.accessToken)
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if (error) != nil {
+                
+                self.showAlertViewController(titleText: "Google Sign In failed", messageText: "Google Authentification Fail", leftSideText: "OK", rightSideText: "")
+            }else {
+                let currentUser = Auth.auth().currentUser
+                currentUser?.getIDTokenForcingRefresh(true) { idToken, error in
+                    if let error = error {
+                        // Handle error
+                        return;
+                    }
+                    self.googleIdToken = idToken
+                    self.googleApi()
+                }
+                
+            }
+        }
     }
 
     func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
