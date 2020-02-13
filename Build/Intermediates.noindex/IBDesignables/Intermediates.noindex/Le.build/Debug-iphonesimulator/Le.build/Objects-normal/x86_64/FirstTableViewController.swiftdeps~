@@ -113,8 +113,10 @@ depends-member:
 - !private ["10Accelerate0A6BufferP", "product_discount_price"]
 - !private ["10Accelerate0A6BufferP", "product_id"]
 - !private ["10Accelerate0A6BufferP", "product_image"]
+- !private ["10Accelerate0A6BufferP", "product_off"]
 - !private ["10Accelerate0A6BufferP", "product_percentage"]
 - !private ["10Accelerate0A6BufferP", "product_title"]
+- !private ["10Accelerate0A6BufferP", "product_type"]
 - !private ["10Accelerate0A6BufferP", "subscript"]
 - !private ["10Accelerate0A13MutableBufferP", "append"]
 - !private ["10Accelerate0A13MutableBufferP", "banner_id"]
@@ -124,8 +126,10 @@ depends-member:
 - !private ["10Accelerate0A13MutableBufferP", "product_discount_price"]
 - !private ["10Accelerate0A13MutableBufferP", "product_id"]
 - !private ["10Accelerate0A13MutableBufferP", "product_image"]
+- !private ["10Accelerate0A13MutableBufferP", "product_off"]
 - !private ["10Accelerate0A13MutableBufferP", "product_percentage"]
 - !private ["10Accelerate0A13MutableBufferP", "product_title"]
+- !private ["10Accelerate0A13MutableBufferP", "product_type"]
 - !private ["10Accelerate0A13MutableBufferP", "subscript"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
@@ -136,8 +140,10 @@ depends-member:
 - !private ["s10ArraySliceV", "product_discount_price"]
 - !private ["s10ArraySliceV", "product_id"]
 - !private ["s10ArraySliceV", "product_image"]
+- !private ["s10ArraySliceV", "product_off"]
 - !private ["s10ArraySliceV", "product_percentage"]
 - !private ["s10ArraySliceV", "product_title"]
+- !private ["s10ArraySliceV", "product_type"]
 - !private ["6SaveUp11BannersHomeC", "banner_id"]
 - !private ["6SaveUp11BannersHomeC", "init"]
 - !private ["6SaveUp21BannersSelectDelegateP", "Api_Base_URL"]
@@ -224,8 +230,10 @@ depends-member:
 - !private ["SK", "product_discount_price"]
 - !private ["SK", "product_id"]
 - !private ["SK", "product_image"]
+- !private ["SK", "product_off"]
 - !private ["SK", "product_percentage"]
 - !private ["SK", "product_title"]
+- !private ["SK", "product_type"]
 - !private ["SK", "row"]
 - !private ["SK", "section"]
 - !private ["SK", "subscript"]
@@ -419,8 +427,10 @@ depends-member:
 - !private ["s7CVarArgP", "product_discount_price"]
 - !private ["s7CVarArgP", "product_id"]
 - !private ["s7CVarArgP", "product_image"]
+- !private ["s7CVarArgP", "product_off"]
 - !private ["s7CVarArgP", "product_percentage"]
 - !private ["s7CVarArgP", "product_title"]
+- !private ["s7CVarArgP", "product_type"]
 - !private ["s7CVarArgP", "pushViewController"]
 - !private ["s7CVarArgP", "reachability"]
 - !private ["s7CVarArgP", "reloadData"]
@@ -570,8 +580,10 @@ depends-member:
 - !private ["Sl", "product_discount_price"]
 - !private ["Sl", "product_id"]
 - !private ["Sl", "product_image"]
+- !private ["Sl", "product_off"]
 - !private ["Sl", "product_percentage"]
 - !private ["Sl", "product_title"]
+- !private ["Sl", "product_type"]
 - !private ["Sl", "row"]
 - !private ["Sl", "section"]
 - !private ["Sl", "subscript"]
@@ -588,8 +600,10 @@ depends-member:
 - !private ["10Foundation15ContiguousBytesP", "product_discount_price"]
 - !private ["10Foundation15ContiguousBytesP", "product_id"]
 - !private ["10Foundation15ContiguousBytesP", "product_image"]
+- !private ["10Foundation15ContiguousBytesP", "product_off"]
 - !private ["10Foundation15ContiguousBytesP", "product_percentage"]
 - !private ["10Foundation15ContiguousBytesP", "product_title"]
+- !private ["10Foundation15ContiguousBytesP", "product_type"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "Api_Base_URL"]
 - ["s28CustomDebugStringConvertibleP", "BannersHome"]
@@ -717,8 +731,10 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "product_discount_price"]
 - !private ["s28CustomDebugStringConvertibleP", "product_id"]
 - !private ["s28CustomDebugStringConvertibleP", "product_image"]
+- !private ["s28CustomDebugStringConvertibleP", "product_off"]
 - !private ["s28CustomDebugStringConvertibleP", "product_percentage"]
 - !private ["s28CustomDebugStringConvertibleP", "product_title"]
+- !private ["s28CustomDebugStringConvertibleP", "product_type"]
 - !private ["s28CustomDebugStringConvertibleP", "pushViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "reachability"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
@@ -803,8 +819,10 @@ depends-member:
 - !private ["s17CustomReflectableP", "product_discount_price"]
 - !private ["s17CustomReflectableP", "product_id"]
 - !private ["s17CustomReflectableP", "product_image"]
+- !private ["s17CustomReflectableP", "product_off"]
 - !private ["s17CustomReflectableP", "product_percentage"]
 - !private ["s17CustomReflectableP", "product_title"]
+- !private ["s17CustomReflectableP", "product_type"]
 - !private ["s17CustomReflectableP", "reloadData"]
 - !private ["s17CustomReflectableP", "resignFirstResponder"]
 - !private ["s17CustomReflectableP", "row"]
@@ -942,8 +960,10 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "product_discount_price"]
 - !private ["s23CustomStringConvertibleP", "product_id"]
 - !private ["s23CustomStringConvertibleP", "product_image"]
+- !private ["s23CustomStringConvertibleP", "product_off"]
 - !private ["s23CustomStringConvertibleP", "product_percentage"]
 - !private ["s23CustomStringConvertibleP", "product_title"]
+- !private ["s23CustomStringConvertibleP", "product_type"]
 - !private ["s23CustomStringConvertibleP", "pushViewController"]
 - !private ["s23CustomStringConvertibleP", "rawValue"]
 - !private ["s23CustomStringConvertibleP", "reachability"]
@@ -1014,8 +1034,10 @@ depends-member:
 - !private ["10Foundation12DataProtocolP", "product_discount_price"]
 - !private ["10Foundation12DataProtocolP", "product_id"]
 - !private ["10Foundation12DataProtocolP", "product_image"]
+- !private ["10Foundation12DataProtocolP", "product_off"]
 - !private ["10Foundation12DataProtocolP", "product_percentage"]
 - !private ["10Foundation12DataProtocolP", "product_title"]
+- !private ["10Foundation12DataProtocolP", "product_type"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["6SaveUp9DealsHomeC", "init"]
 - !private ["Se", "Encoding"]
@@ -1045,6 +1067,8 @@ depends-member:
 - !private ["Se", "zero"]
 - !private ["s26DefaultStringInterpolationV", "appendInterpolation"]
 - !private ["s26DefaultStringInterpolationV", "appendLiteral"]
+- !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "category_name"]
+- !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "product_id"]
 - !private ["So18OS_dispatch_objectC", "async"]
 - !private ["So18OS_dispatch_objectC", "main"]
 - !private ["So17OS_dispatch_queueC", "async"]
@@ -1209,8 +1233,10 @@ depends-member:
 - !private ["SQ", "product_discount_price"]
 - !private ["SQ", "product_id"]
 - !private ["SQ", "product_image"]
+- !private ["SQ", "product_off"]
 - !private ["SQ", "product_percentage"]
 - !private ["SQ", "product_title"]
+- !private ["SQ", "product_type"]
 - !private ["SQ", "pushViewController"]
 - !private ["SQ", "rawValue"]
 - !private ["SQ", "reachability"]
@@ -1290,8 +1316,10 @@ depends-member:
 - !private ["s25ExpressibleByArrayLiteralP", "product_discount_price"]
 - !private ["s25ExpressibleByArrayLiteralP", "product_id"]
 - !private ["s25ExpressibleByArrayLiteralP", "product_image"]
+- !private ["s25ExpressibleByArrayLiteralP", "product_off"]
 - !private ["s25ExpressibleByArrayLiteralP", "product_percentage"]
 - !private ["s25ExpressibleByArrayLiteralP", "product_title"]
+- !private ["s25ExpressibleByArrayLiteralP", "product_type"]
 - !private ["s25ExpressibleByArrayLiteralP", "row"]
 - !private ["s25ExpressibleByArrayLiteralP", "section"]
 - !private ["s25ExpressibleByArrayLiteralP", "subscript"]
@@ -1332,8 +1360,22 @@ depends-member:
 - !private ["6SaveUp12FiftyPercentC", "product_discount_price"]
 - !private ["6SaveUp12FiftyPercentC", "product_id"]
 - !private ["6SaveUp12FiftyPercentC", "product_image"]
+- !private ["6SaveUp12FiftyPercentC", "product_off"]
 - !private ["6SaveUp12FiftyPercentC", "product_percentage"]
 - !private ["6SaveUp12FiftyPercentC", "product_title"]
+- !private ["6SaveUp12FiftyPercentC", "product_type"]
+- !private ["6SaveUp18FilterViewDelegateP", "category_name"]
+- !private ["6SaveUp18FilterViewDelegateP", "discount"]
+- !private ["6SaveUp18FilterViewDelegateP", "featured"]
+- !private ["6SaveUp18FilterViewDelegateP", "is_approved"]
+- !private ["6SaveUp18FilterViewDelegateP", "is_published"]
+- !private ["6SaveUp18FilterViewDelegateP", "main_category_id"]
+- !private ["6SaveUp18FilterViewDelegateP", "screenString"]
+- !private ["6SaveUp18FilterViewDelegateP", "sec_category_id"]
+- !private ["6SaveUp18FilterViewDelegateP", "sort_order_by"]
+- !private ["6SaveUp18FilterViewDelegateP", "sub_category_id"]
+- !private ["6SaveUp18FilterViewDelegateP", "sub_sec_category_id"]
+- !private ["6SaveUp18FilterViewDelegateP", "titleString"]
 - !private ["6SaveUp24FirstTableViewControllerC", "Api_Base_URL"]
 - ["6SaveUp24FirstTableViewControllerC", "BannersHome"]
 - ["6SaveUp24FirstTableViewControllerC", "Bool"]
@@ -1565,8 +1607,10 @@ depends-member:
 - !private ["SH", "product_discount_price"]
 - !private ["SH", "product_id"]
 - !private ["SH", "product_image"]
+- !private ["SH", "product_off"]
 - !private ["SH", "product_percentage"]
 - !private ["SH", "product_title"]
+- !private ["SH", "product_type"]
 - !private ["SH", "pushViewController"]
 - !private ["SH", "rawValue"]
 - !private ["SH", "reachability"]
@@ -1763,8 +1807,10 @@ depends-member:
 - !private ["SM", "product_discount_price"]
 - !private ["SM", "product_id"]
 - !private ["SM", "product_image"]
+- !private ["SM", "product_off"]
 - !private ["SM", "product_percentage"]
 - !private ["SM", "product_title"]
+- !private ["SM", "product_type"]
 - !private ["SM", "row"]
 - !private ["SM", "section"]
 - !private ["SM", "subscript"]
@@ -2222,8 +2268,10 @@ depends-member:
 - !private ["So8NSObjectC", "product_discount_price"]
 - !private ["So8NSObjectC", "product_id"]
 - !private ["So8NSObjectC", "product_image"]
+- !private ["So8NSObjectC", "product_off"]
 - !private ["So8NSObjectC", "product_percentage"]
 - !private ["So8NSObjectC", "product_title"]
+- !private ["So8NSObjectC", "product_type"]
 - !private ["So8NSObjectC", "pushViewController"]
 - ["So8NSObjectC", "reachability"]
 - !private ["So8NSObjectC", "reloadData"]
@@ -2405,8 +2453,10 @@ depends-member:
 - !private ["So8NSObjectP", "product_discount_price"]
 - !private ["So8NSObjectP", "product_id"]
 - !private ["So8NSObjectP", "product_image"]
+- !private ["So8NSObjectP", "product_off"]
 - !private ["So8NSObjectP", "product_percentage"]
 - !private ["So8NSObjectP", "product_title"]
+- !private ["So8NSObjectP", "product_type"]
 - !private ["So8NSObjectP", "pushViewController"]
 - !private ["So8NSObjectP", "reachability"]
 - !private ["So8NSObjectP", "reloadData"]
@@ -2535,8 +2585,10 @@ depends-member:
 - !private ["Sk", "product_discount_price"]
 - !private ["Sk", "product_id"]
 - !private ["Sk", "product_image"]
+- !private ["Sk", "product_off"]
 - !private ["Sk", "product_percentage"]
 - !private ["Sk", "product_title"]
+- !private ["Sk", "product_type"]
 - !private ["Sk", "row"]
 - !private ["Sk", "section"]
 - !private ["Sk", "subscript"]
@@ -2549,8 +2601,10 @@ depends-member:
 - !private ["Sm", "product_discount_price"]
 - !private ["Sm", "product_id"]
 - !private ["Sm", "product_image"]
+- !private ["Sm", "product_off"]
 - !private ["Sm", "product_percentage"]
 - !private ["Sm", "product_title"]
+- !private ["Sm", "product_type"]
 - !private ["Sm", "subscript"]
 - !private ["SY", "alert"]
 - !private ["SY", "cancel"]
@@ -2588,8 +2642,10 @@ depends-member:
 - !private ["ST", "product_discount_price"]
 - !private ["ST", "product_id"]
 - !private ["ST", "product_image"]
+- !private ["ST", "product_off"]
 - !private ["ST", "product_percentage"]
 - !private ["ST", "product_title"]
+- !private ["ST", "product_type"]
 - !private ["ST", "row"]
 - !private ["ST", "section"]
 - !private ["ST", "subscript"]
@@ -4995,8 +5051,10 @@ depends-member:
 - !private ["s14_ArrayProtocolP", "product_discount_price"]
 - !private ["s14_ArrayProtocolP", "product_id"]
 - !private ["s14_ArrayProtocolP", "product_image"]
+- !private ["s14_ArrayProtocolP", "product_off"]
 - !private ["s14_ArrayProtocolP", "product_percentage"]
 - !private ["s14_ArrayProtocolP", "product_title"]
+- !private ["s14_ArrayProtocolP", "product_type"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "Encoding"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "addingPercentEscapes"]
@@ -5016,8 +5074,10 @@ depends-member:
 - !private ["s24_DestructorSafeContainerP", "product_discount_price"]
 - !private ["s24_DestructorSafeContainerP", "product_id"]
 - !private ["s24_DestructorSafeContainerP", "product_image"]
+- !private ["s24_DestructorSafeContainerP", "product_off"]
 - !private ["s24_DestructorSafeContainerP", "product_percentage"]
 - !private ["s24_DestructorSafeContainerP", "product_title"]
+- !private ["s24_DestructorSafeContainerP", "product_type"]
 - !private ["s24_DestructorSafeContainerP", "subscript"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "Encoding"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
@@ -5170,8 +5230,10 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_discount_price"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_id"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "product_off"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_percentage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "product_type"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "pushViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reachability"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
@@ -5350,8 +5412,10 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_discount_price"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_id"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_image"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_off"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_percentage"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_title"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_type"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "pushViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reachability"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reloadData"]
@@ -5503,6 +5567,7 @@ depends-nominal:
 - !private "6SaveUp9DealsHomeC"
 - "Se"
 - !private "s26DefaultStringInterpolationV"
+- !private "6SaveUp34DetailsImagesTableViewCellDelegateP"
 - !private "So18OS_dispatch_objectC"
 - !private "So17OS_dispatch_queueC"
 - "SE"
@@ -5521,6 +5586,7 @@ depends-nominal:
 - !private "6SaveUp20FLatestTableViewCellC"
 - !private "6SaveUp34FProductDetailsTableViewControllerC"
 - !private "6SaveUp12FiftyPercentC"
+- !private "6SaveUp18FilterViewDelegateP"
 - "6SaveUp24FirstTableViewControllerC"
 - "SH"
 - !private "10Foundation9IndexPathV"
@@ -5720,6 +5786,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSData.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/data.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
@@ -6162,6 +6229,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/vBigNum.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/vm.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugIn.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/i386/boolean.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/machine/boolean.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/boolean.h"
@@ -6202,6 +6271,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUserNotification.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFHTTPAuthentication.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h"
@@ -6275,6 +6345,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKUserTrackingButton.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKCompassButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPattern.h"
@@ -6483,6 +6554,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKTileOverlayRenderer.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchCompleter.h"
@@ -6737,7 +6809,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/termios.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/pthread/qos.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/qos.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/ConditionalMacros.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/AssertMacros.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/AvailabilityMacros.h"
@@ -7116,6 +7187,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"

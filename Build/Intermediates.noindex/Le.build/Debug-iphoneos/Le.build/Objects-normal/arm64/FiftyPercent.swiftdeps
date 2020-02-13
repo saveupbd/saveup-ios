@@ -7,6 +7,7 @@ provides-member:
 - ["6SaveUp12FiftyPercentC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!="
 - "AssignmentPrecedence"
 - "CastingPrecedence"
 - !private "Double"
@@ -28,9 +29,11 @@ depends-member:
 - !private ["s7CVarArgP", "product_discount_price"]
 - !private ["s7CVarArgP", "product_id"]
 - !private ["s7CVarArgP", "product_image"]
+- !private ["s7CVarArgP", "product_off"]
 - !private ["s7CVarArgP", "product_percentage"]
 - !private ["s7CVarArgP", "product_price"]
 - !private ["s7CVarArgP", "product_title"]
+- !private ["s7CVarArgP", "product_type"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
@@ -42,9 +45,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "product_discount_price"]
 - !private ["s28CustomDebugStringConvertibleP", "product_id"]
 - !private ["s28CustomDebugStringConvertibleP", "product_image"]
+- !private ["s28CustomDebugStringConvertibleP", "product_off"]
 - !private ["s28CustomDebugStringConvertibleP", "product_percentage"]
 - !private ["s28CustomDebugStringConvertibleP", "product_price"]
 - !private ["s28CustomDebugStringConvertibleP", "product_title"]
+- !private ["s28CustomDebugStringConvertibleP", "product_type"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "subscript"]
@@ -56,9 +61,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "product_discount_price"]
 - !private ["s23CustomStringConvertibleP", "product_id"]
 - !private ["s23CustomStringConvertibleP", "product_image"]
+- !private ["s23CustomStringConvertibleP", "product_off"]
 - !private ["s23CustomStringConvertibleP", "product_percentage"]
 - !private ["s23CustomStringConvertibleP", "product_price"]
 - !private ["s23CustomStringConvertibleP", "product_title"]
+- !private ["s23CustomStringConvertibleP", "product_type"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["Se", "init"]
 - !private ["SE", "init"]
@@ -70,9 +77,11 @@ depends-member:
 - !private ["SQ", "product_discount_price"]
 - !private ["SQ", "product_id"]
 - !private ["SQ", "product_image"]
+- !private ["SQ", "product_off"]
 - !private ["SQ", "product_percentage"]
 - !private ["SQ", "product_price"]
 - !private ["SQ", "product_title"]
+- !private ["SQ", "product_type"]
 - !private ["SQ", "subscript"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -90,9 +99,11 @@ depends-member:
 - ["6SaveUp12FiftyPercentC", "product_discount_price"]
 - ["6SaveUp12FiftyPercentC", "product_id"]
 - ["6SaveUp12FiftyPercentC", "product_image"]
+- ["6SaveUp12FiftyPercentC", "product_off"]
 - ["6SaveUp12FiftyPercentC", "product_percentage"]
 - ["6SaveUp12FiftyPercentC", "product_price"]
 - ["6SaveUp12FiftyPercentC", "product_title"]
+- ["6SaveUp12FiftyPercentC", "product_type"]
 - !private ["SH", "String"]
 - ["SH", ""]
 - !private ["SH", "currency_symbol"]
@@ -101,9 +112,11 @@ depends-member:
 - !private ["SH", "product_discount_price"]
 - !private ["SH", "product_id"]
 - !private ["SH", "product_image"]
+- !private ["SH", "product_off"]
 - !private ["SH", "product_percentage"]
 - !private ["SH", "product_price"]
 - !private ["SH", "product_title"]
+- !private ["SH", "product_type"]
 - !private ["SH", "subscript"]
 - !private ["6SaveUp20KingfisherCompatibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -124,9 +137,11 @@ depends-member:
 - ["So8NSObjectC", "product_discount_price"]
 - ["So8NSObjectC", "product_id"]
 - ["So8NSObjectC", "product_image"]
+- ["So8NSObjectC", "product_off"]
 - ["So8NSObjectC", "product_percentage"]
 - ["So8NSObjectC", "product_price"]
 - ["So8NSObjectC", "product_title"]
+- ["So8NSObjectC", "product_type"]
 - !private ["So8NSObjectC", "subscript"]
 - !private ["So8NSObjectP", "String"]
 - ["So8NSObjectP", ""]
@@ -136,9 +151,11 @@ depends-member:
 - !private ["So8NSObjectP", "product_discount_price"]
 - !private ["So8NSObjectP", "product_id"]
 - !private ["So8NSObjectP", "product_image"]
+- !private ["So8NSObjectP", "product_off"]
 - !private ["So8NSObjectP", "product_percentage"]
 - !private ["So8NSObjectP", "product_price"]
 - !private ["So8NSObjectP", "product_title"]
+- !private ["So8NSObjectP", "product_type"]
 - !private ["So8NSObjectP", "subscript"]
 - !private ["So14NSSecureCodingP", "subscript"]
 - !private ["Sm", "init"]
@@ -162,9 +179,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_discount_price"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_id"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "product_off"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_percentage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_price"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "product_type"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "String"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
@@ -174,9 +193,11 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_discount_price"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_id"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_image"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_off"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_percentage"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_price"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_title"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_type"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
@@ -287,6 +308,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSData.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/data.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
@@ -729,6 +751,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/vBigNum.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/vm.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugIn.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/machine/boolean.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/boolean.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/arm/boolean.h"
@@ -769,6 +793,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUserNotification.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFHTTPAuthentication.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h"
@@ -842,6 +867,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKUserTrackingButton.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKCompassButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPattern.h"
@@ -1049,6 +1075,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKTileOverlayRenderer.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchCompleter.h"
@@ -1302,7 +1329,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/termios.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/pthread/qos.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/qos.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/ConditionalMacros.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/AssertMacros.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/AvailabilityMacros.h"
@@ -1681,6 +1707,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
@@ -1703,4 +1730,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5499c3a6d4da035d814bba6aa07ef7aa"
+interface-hash: "81868b7732caafd4304ff437f75dc8aa"

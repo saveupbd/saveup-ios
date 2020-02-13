@@ -10,6 +10,7 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
+import GoogleSignIn
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,8 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool{
+        
         FirebaseApp.configure()
-        FBSDKApplicationDelegate.sharedInstance().application (application, didFinishLaunchingWithOptions: launchOptions)
+        //FBSDKApplicationDelegate.sharedInstance().application (application, didFinishLaunchingWithOptions: launchOptions)
         let color1 = UIColor(red: 0.0/255.0, green:170.0/255.0, blue: 227.0/255.0, alpha: 1.0).cgColor
         let color2 = UIColor(red: 0.0/255.0, green: 170.0/255.0, blue: 227.0/255.0, alpha: 1.0).cgColor
         let color3 = UIColor(red: 0.0/255.0, green:170.0/255.0, blue: 227.0/255.0, alpha: 1.0).cgColor
@@ -46,11 +48,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //TODO: - Enter your credentials
         //PayPalMobile .initializeWithClientIds(forEnvironments: [PayPalEnvironmentProduction: "AaI8As1GGR1r4RS2cVpuxxJdRVYfCePtIFQ1dkuHVNPk7q1eK1isgUCyQQNW2TqIHQCMra2ZIdiXGRoU", PayPalEnvironmentSandbox: "AbP-HxFJayd5yMbUjITsRzIulV7IOZcypwGeDZ9WLeUw9Wihg-PRJlvFVhFyH7mJhXFMyzFEOJppnhtS"])
         UINavigationBar.appearance().tintColor = UIColor.white
-        return true
+        return ApplicationDelegate.shared.application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
+//    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+//        if url.scheme == "fb1653710131594960"{
+//            return (FBSDKApplicationDelegate.sharedInstance()?.application(app, open: url, options: options))!
+//        }else if url.scheme == "com.googleusercontent.apps.1021147211131-065qt91ch54642s5lhb9qhh0nfqm3akt"{
+//            return (GIDSignIn.sharedInstance()?.handle(url))!
+//        }
+//        return false
+//    }
+    
     func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool{
-        return FBSDKApplicationDelegate.sharedInstance().application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        
+        if url.scheme == "fb1653710131594960"{
+            return ApplicationDelegate.shared.application(application, open: url, sourceApplication: sourceApplication, annotation: annotation)
+        }else if url.scheme == "com.googleusercontent.apps.1021147211131-065qt91ch54642s5lhb9qhh0nfqm3akt"{
+            return (GIDSignIn.sharedInstance()?.handle(url))!
+        }
+        return false
         
     }
 
@@ -78,6 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(_ application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        AppEvents.activateApp()
     }
 
     func applicationWillTerminate(_ application: UIApplication) {

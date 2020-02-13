@@ -186,6 +186,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import CoreLocation;
 @import FBSDKLoginKit;
 @import Foundation;
+@import GoogleSignIn;
 @import MapKit;
 @import ObjectiveC;
 @import UIKit;
@@ -685,6 +686,33 @@ SWIFT_CLASS("_TtC6SaveUp26FDetailsImageTableViewCell")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC6SaveUp32FDetailsImagesCollectionViewCell")
+@interface FDetailsImagesCollectionViewCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified productImage;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6SaveUp27FDetailsImagesTableViewCell")
+@interface FDetailsImagesTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified imagesCollectionView;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (void)showScrollIndicatorsInContacts;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+@interface FDetailsImagesTableViewCell (SWIFT_EXTENSION(SaveUp)) <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+@end
+
 @class UITextView;
 
 SWIFT_CLASS("_TtC6SaveUp39FDetailsProductDescriptionTableViewCell")
@@ -1062,19 +1090,21 @@ SWIFT_CLASS("_TtC6SaveUp18ListViewController")
 
 @class FBSDKLoginButton;
 @class FBSDKLoginManagerLoginResult;
+@class GIDSignInButton;
+@class GIDSignIn;
+@class GIDGoogleUser;
 
 SWIFT_CLASS("_TtC6SaveUp19LoginViewController")
-@interface LoginViewController : UIViewController <AKFViewControllerDelegate, FBSDKLoginButtonDelegate, UIGestureRecognizerDelegate>
+@interface LoginViewController : UIViewController <AKFViewControllerDelegate, FBSDKLoginButtonDelegate, GIDSignInDelegate, UIGestureRecognizerDelegate>
 @property (nonatomic, weak) IBOutlet UIScrollView * _Null_unspecified loginScroll;
 @property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified bgImage;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailText;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordText;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified loginButton;
-@property (nonatomic, weak) IBOutlet FBSDKLoginButton * _Null_unspecified facebookButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified forgotButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified registerButton;
-@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnFbLogin;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnGoogleLogin;
+@property (nonatomic, weak) IBOutlet FBSDKLoginButton * _Null_unspecified facebookLoginButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnGuest;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
@@ -1084,13 +1114,22 @@ SWIFT_CLASS("_TtC6SaveUp19LoginViewController")
 - (IBAction)loginButtonWithSender:(UIButton * _Nonnull)sender;
 - (IBAction)forgotButtonWithSender:(UIButton * _Nonnull)sender;
 - (IBAction)registerButtonWithSender:(UIButton * _Nonnull)sender;
-- (void)loginButton:(FBSDKLoginButton * _Null_unspecified)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult * _Null_unspecified)result error:(NSError * _Null_unspecified)error;
-- (void)loginButtonDidLogOut:(FBSDKLoginButton * _Null_unspecified)loginButton;
-- (IBAction)btnGoogleLoginPressed:(UIButton * _Nonnull)sender;
+- (void)loginButton:(FBSDKLoginButton * _Nonnull)loginButton didCompleteWithResult:(FBSDKLoginManagerLoginResult * _Nullable)result error:(NSError * _Nullable)error;
+- (void)loginButtonDidLogOut:(FBSDKLoginButton * _Nonnull)loginButton;
+- (IBAction)btnGoogleLoginPressed:(GIDSignInButton * _Nonnull)sender;
 - (IBAction)btnFacebookLoginPressed:(UIButton * _Nonnull)sender;
 - (void)didReceiveMemoryWarning;
+- (void)signIn:(GIDSignIn * _Null_unspecified)signIn didSignInForUser:(GIDGoogleUser * _Null_unspecified)user withError:(NSError * _Nullable)error;
+- (void)signIn:(GIDSignIn * _Null_unspecified)signIn didDisconnectWithUser:(GIDGoogleUser * _Null_unspecified)user withError:(NSError * _Null_unspecified)error;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6SaveUp13LoyalityModel")
+@interface LoyalityModel : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 @class UIColor;
@@ -1709,20 +1748,21 @@ SWIFT_CLASS("_TtC6SaveUp8PymentVC")
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 @end
 
+@class UIDatePicker;
 
 SWIFT_CLASS("_TtC6SaveUp22RegisterViewController")
-@interface RegisterViewController : UIViewController <UIGestureRecognizerDelegate>
+@interface RegisterViewController : UIViewController <UIGestureRecognizerDelegate, UIPickerViewDelegate>
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified nameText;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified emailText;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified passwordText;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified countryText;
-@property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified cityText;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified acceptButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified termsButton;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified registerButton;
 @property (nonatomic, weak) IBOutlet UITextField * _Null_unspecified confirmPassText;
+@property (nonatomic, weak) IBOutlet UIDatePicker * _Null_unspecified birthDayPicker;
 - (void)viewDidLoad;
 - (void)touchesBegan:(NSSet<UITouch *> * _Nonnull)touches withEvent:(UIEvent * _Nullable)event;
+- (void)dateChanged:(UIDatePicker * _Nonnull)sender;
 - (void)handleTapWithSender:(UITapGestureRecognizer * _Nonnull)sender;
 - (void)backAction:(UIButton * _Null_unspecified)sender;
 - (IBAction)countryButtonWithSender:(UIButton * _Nonnull)sender;
@@ -1754,6 +1794,27 @@ SWIFT_CLASS("_TtC6SaveUp6Review")
 @interface Review : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC6SaveUp21RewardsViewController")
+@interface RewardsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified listTableView;
+@property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnRedeem;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified totelPoinLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified topLabel;
+@property (nonatomic, weak) IBOutlet UIView * _Null_unspecified pointView;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified totalSavedLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified listTableHeaderLabel;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (IBAction)btnRedeemPressed:(UIButton * _Nonnull)sender;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
@@ -2056,11 +2117,11 @@ SWIFT_CLASS("_TtC6SaveUp9TopOffers")
 
 
 
-
-
 @interface UIViewController (SWIFT_EXTENSION(SaveUp))
 - (void)dismissKeyboard;
 @end
+
+
 
 
 SWIFT_CLASS("_TtC6SaveUp14ViewController")

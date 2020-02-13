@@ -18,6 +18,8 @@ depends-top-level:
 - !private "/"
 - !private "=="
 - "AppDelegate"
+- !private "AppEvents"
+- !private "ApplicationDelegate"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
@@ -25,9 +27,9 @@ depends-top-level:
 - "CALayer"
 - !private "CGRect"
 - "CastingPrecedence"
-- !private "FBSDKApplicationDelegate"
 - !private "FirebaseApp"
 - !private "FloatLiteralType"
+- !private "GIDSignIn"
 - !private "IntegerLiteralType"
 - !private "NSAttributedString"
 - "String"
@@ -52,12 +54,14 @@ depends-top-level:
 - !private "titleFont"
 depends-member:
 - !private ["6SaveUp11AppDelegateC", "AppDelegate"]
+- !private ["6SaveUp11AppDelegateC", "AppEvents"]
+- !private ["6SaveUp11AppDelegateC", "ApplicationDelegate"]
 - ["6SaveUp11AppDelegateC", "Bool"]
 - !private ["6SaveUp11AppDelegateC", "CAGradientLayer"]
 - ["6SaveUp11AppDelegateC", "CALayer"]
 - !private ["6SaveUp11AppDelegateC", "CGRect"]
-- !private ["6SaveUp11AppDelegateC", "FBSDKApplicationDelegate"]
 - !private ["6SaveUp11AppDelegateC", "FirebaseApp"]
+- !private ["6SaveUp11AppDelegateC", "GIDSignIn"]
 - !private ["6SaveUp11AppDelegateC", "NSAttributedString"]
 - ["6SaveUp11AppDelegateC", "String"]
 - ["6SaveUp11AppDelegateC", "UIApplication"]
@@ -92,6 +96,9 @@ depends-member:
 - ["6SaveUp11AppDelegateC", "init"]
 - !private ["6SaveUp11AppDelegateC", "titleFont"]
 - ["6SaveUp11AppDelegateC", "window"]
+- !private ["So14FBSDKAppEventsC", "activateApp"]
+- !private ["So24FBSDKApplicationDelegateC", "application"]
+- !private ["So24FBSDKApplicationDelegateC", "shared"]
 - !private ["So15CAGradientLayerC", "colors"]
 - !private ["So15CAGradientLayerC", "frame"]
 - !private ["So15CAGradientLayerC", "init"]
@@ -111,10 +118,12 @@ depends-member:
 - !private ["So6CGRectV", "init"]
 - !private ["So6CGRectV", "size"]
 - !private ["So6CGSizeV", "height"]
+- !private ["s7CVarArgP", "AppEvents"]
+- !private ["s7CVarArgP", "ApplicationDelegate"]
 - !private ["s7CVarArgP", "CAGradientLayer"]
 - !private ["s7CVarArgP", "CGRect"]
-- !private ["s7CVarArgP", "FBSDKApplicationDelegate"]
 - !private ["s7CVarArgP", "FirebaseApp"]
+- !private ["s7CVarArgP", "GIDSignIn"]
 - !private ["s7CVarArgP", "Key"]
 - ["s7CVarArgP", "LaunchOptionsKey"]
 - !private ["s7CVarArgP", "NSAttributedString"]
@@ -130,6 +139,7 @@ depends-member:
 - !private ["s7CVarArgP", "UIStoryboard"]
 - !private ["s7CVarArgP", "UserDefaults"]
 - ["s7CVarArgP", ""]
+- !private ["s7CVarArgP", "activateApp"]
 - !private ["s7CVarArgP", "appearance"]
 - ["s7CVarArgP", "application"]
 - ["s7CVarArgP", "applicationDidBecomeActive"]
@@ -149,6 +159,7 @@ depends-member:
 - !private ["s7CVarArgP", "configure"]
 - !private ["s7CVarArgP", "delegate"]
 - !private ["s7CVarArgP", "frame"]
+- !private ["s7CVarArgP", "handle"]
 - !private ["s7CVarArgP", "image"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "instantiateViewController"]
@@ -166,10 +177,12 @@ depends-member:
 - !private ["s7CVarArgP", "titleTextAttributes"]
 - !private ["s7CVarArgP", "white"]
 - ["s7CVarArgP", "window"]
+- !private ["s28CustomDebugStringConvertibleP", "AppEvents"]
+- !private ["s28CustomDebugStringConvertibleP", "ApplicationDelegate"]
 - !private ["s28CustomDebugStringConvertibleP", "CAGradientLayer"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
-- !private ["s28CustomDebugStringConvertibleP", "FBSDKApplicationDelegate"]
 - !private ["s28CustomDebugStringConvertibleP", "FirebaseApp"]
+- !private ["s28CustomDebugStringConvertibleP", "GIDSignIn"]
 - !private ["s28CustomDebugStringConvertibleP", "Key"]
 - ["s28CustomDebugStringConvertibleP", "LaunchOptionsKey"]
 - !private ["s28CustomDebugStringConvertibleP", "NSAttributedString"]
@@ -185,6 +198,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UIStoryboard"]
 - !private ["s28CustomDebugStringConvertibleP", "UserDefaults"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "activateApp"]
 - !private ["s28CustomDebugStringConvertibleP", "appearance"]
 - ["s28CustomDebugStringConvertibleP", "application"]
 - ["s28CustomDebugStringConvertibleP", "applicationDidBecomeActive"]
@@ -204,6 +218,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "configure"]
 - !private ["s28CustomDebugStringConvertibleP", "delegate"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
+- !private ["s28CustomDebugStringConvertibleP", "handle"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "image"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -212,6 +227,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "navigationBar"]
 - !private ["s28CustomDebugStringConvertibleP", "render"]
 - !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
+- !private ["s28CustomDebugStringConvertibleP", "scheme"]
 - !private ["s28CustomDebugStringConvertibleP", "setBackgroundImage"]
 - !private ["s28CustomDebugStringConvertibleP", "shared"]
 - !private ["s28CustomDebugStringConvertibleP", "sharedInstance"]
@@ -223,14 +239,15 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "titleTextAttributes"]
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - ["s28CustomDebugStringConvertibleP", "window"]
-- !private ["s17CustomReflectableP", "application"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "size"]
+- !private ["s23CustomStringConvertibleP", "AppEvents"]
+- !private ["s23CustomStringConvertibleP", "ApplicationDelegate"]
 - !private ["s23CustomStringConvertibleP", "CAGradientLayer"]
 - !private ["s23CustomStringConvertibleP", "CGRect"]
-- !private ["s23CustomStringConvertibleP", "FBSDKApplicationDelegate"]
 - !private ["s23CustomStringConvertibleP", "FirebaseApp"]
+- !private ["s23CustomStringConvertibleP", "GIDSignIn"]
 - !private ["s23CustomStringConvertibleP", "Key"]
 - ["s23CustomStringConvertibleP", "LaunchOptionsKey"]
 - !private ["s23CustomStringConvertibleP", "NSAttributedString"]
@@ -246,6 +263,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UIStoryboard"]
 - !private ["s23CustomStringConvertibleP", "UserDefaults"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "activateApp"]
 - !private ["s23CustomStringConvertibleP", "appearance"]
 - ["s23CustomStringConvertibleP", "application"]
 - ["s23CustomStringConvertibleP", "applicationDidBecomeActive"]
@@ -265,6 +283,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "configure"]
 - !private ["s23CustomStringConvertibleP", "delegate"]
 - !private ["s23CustomStringConvertibleP", "frame"]
+- !private ["s23CustomStringConvertibleP", "handle"]
 - !private ["s23CustomStringConvertibleP", "image"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
@@ -272,6 +291,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "navigationBar"]
 - !private ["s23CustomStringConvertibleP", "render"]
 - !private ["s23CustomStringConvertibleP", "rootViewController"]
+- !private ["s23CustomStringConvertibleP", "scheme"]
 - !private ["s23CustomStringConvertibleP", "setBackgroundImage"]
 - !private ["s23CustomStringConvertibleP", "shared"]
 - !private ["s23CustomStringConvertibleP", "sharedInstance"]
@@ -282,18 +302,20 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "titleTextAttributes"]
 - !private ["s23CustomStringConvertibleP", "white"]
 - ["s23CustomStringConvertibleP", "window"]
-- !private ["Se", "application"]
 - !private ["Se", "height"]
 - !private ["Se", "init"]
+- !private ["Se", "scheme"]
 - !private ["Se", "size"]
-- !private ["SE", "application"]
 - !private ["SE", "height"]
 - !private ["SE", "init"]
+- !private ["SE", "scheme"]
 - !private ["SE", "size"]
+- !private ["SQ", "AppEvents"]
+- !private ["SQ", "ApplicationDelegate"]
 - !private ["SQ", "CAGradientLayer"]
 - !private ["SQ", "CGRect"]
-- !private ["SQ", "FBSDKApplicationDelegate"]
 - !private ["SQ", "FirebaseApp"]
+- !private ["SQ", "GIDSignIn"]
 - !private ["SQ", "Key"]
 - ["SQ", "LaunchOptionsKey"]
 - !private ["SQ", "NSAttributedString"]
@@ -309,6 +331,7 @@ depends-member:
 - !private ["SQ", "UIStoryboard"]
 - !private ["SQ", "UserDefaults"]
 - ["SQ", ""]
+- !private ["SQ", "activateApp"]
 - !private ["SQ", "appearance"]
 - ["SQ", "application"]
 - ["SQ", "applicationDidBecomeActive"]
@@ -331,6 +354,7 @@ depends-member:
 - !private ["SQ", "font"]
 - !private ["SQ", "foregroundColor"]
 - !private ["SQ", "frame"]
+- !private ["SQ", "handle"]
 - !private ["SQ", "height"]
 - !private ["SQ", "image"]
 - !private ["SQ", "init"]
@@ -339,6 +363,7 @@ depends-member:
 - !private ["SQ", "navigationBar"]
 - !private ["SQ", "render"]
 - !private ["SQ", "rootViewController"]
+- !private ["SQ", "scheme"]
 - !private ["SQ", "setBackgroundImage"]
 - !private ["SQ", "shared"]
 - !private ["SQ", "sharedInstance"]
@@ -350,14 +375,15 @@ depends-member:
 - !private ["SQ", "titleTextAttributes"]
 - !private ["SQ", "white"]
 - ["SQ", "window"]
-- !private ["s23ExpressibleByNilLiteralP", "application"]
-- !private ["So24FBSDKApplicationDelegateC", "application"]
-- !private ["So24FBSDKApplicationDelegateC", "sharedInstance"]
 - !private ["So6FIRAppC", "configure"]
+- !private ["So9GIDSignInC", "handle"]
+- !private ["So9GIDSignInC", "sharedInstance"]
+- !private ["SH", "AppEvents"]
+- !private ["SH", "ApplicationDelegate"]
 - !private ["SH", "CAGradientLayer"]
 - !private ["SH", "CGRect"]
-- !private ["SH", "FBSDKApplicationDelegate"]
 - !private ["SH", "FirebaseApp"]
+- !private ["SH", "GIDSignIn"]
 - !private ["SH", "Key"]
 - ["SH", "LaunchOptionsKey"]
 - !private ["SH", "NSAttributedString"]
@@ -373,6 +399,7 @@ depends-member:
 - !private ["SH", "UIStoryboard"]
 - !private ["SH", "UserDefaults"]
 - ["SH", ""]
+- !private ["SH", "activateApp"]
 - !private ["SH", "appearance"]
 - ["SH", "application"]
 - ["SH", "applicationDidBecomeActive"]
@@ -395,6 +422,7 @@ depends-member:
 - !private ["SH", "font"]
 - !private ["SH", "foregroundColor"]
 - !private ["SH", "frame"]
+- !private ["SH", "handle"]
 - !private ["SH", "image"]
 - !private ["SH", "init"]
 - !private ["SH", "instantiateViewController"]
@@ -402,6 +430,7 @@ depends-member:
 - !private ["SH", "navigationBar"]
 - !private ["SH", "render"]
 - !private ["SH", "rootViewController"]
+- !private ["SH", "scheme"]
 - !private ["SH", "setBackgroundImage"]
 - !private ["SH", "shared"]
 - !private ["SH", "sharedInstance"]
@@ -448,12 +477,14 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "white"]
 - !private ["So16NSMutableCopyingP", "Key"]
 - !private ["So8NSObjectC", "AppDelegate"]
+- !private ["So8NSObjectC", "AppEvents"]
+- !private ["So8NSObjectC", "ApplicationDelegate"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "CAGradientLayer"]
 - ["So8NSObjectC", "CALayer"]
 - !private ["So8NSObjectC", "CGRect"]
-- !private ["So8NSObjectC", "FBSDKApplicationDelegate"]
 - !private ["So8NSObjectC", "FirebaseApp"]
+- !private ["So8NSObjectC", "GIDSignIn"]
 - !private ["So8NSObjectC", "Key"]
 - ["So8NSObjectC", "LaunchOptionsKey"]
 - !private ["So8NSObjectC", "NSAttributedString"]
@@ -473,6 +504,7 @@ depends-member:
 - ["So8NSObjectC", "UIWindow"]
 - ["So8NSObjectC", "URL"]
 - !private ["So8NSObjectC", "UserDefaults"]
+- !private ["So8NSObjectC", "activateApp"]
 - !private ["So8NSObjectC", "appearance"]
 - ["So8NSObjectC", "application"]
 - ["So8NSObjectC", "applicationDidBecomeActive"]
@@ -492,6 +524,7 @@ depends-member:
 - !private ["So8NSObjectC", "configure"]
 - !private ["So8NSObjectC", "delegate"]
 - !private ["So8NSObjectC", "frame"]
+- !private ["So8NSObjectC", "handle"]
 - ["So8NSObjectC", "image"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "instantiateViewController"]
@@ -509,10 +542,12 @@ depends-member:
 - !private ["So8NSObjectC", "titleTextAttributes"]
 - !private ["So8NSObjectC", "white"]
 - ["So8NSObjectC", "window"]
+- !private ["So8NSObjectP", "AppEvents"]
+- !private ["So8NSObjectP", "ApplicationDelegate"]
 - !private ["So8NSObjectP", "CAGradientLayer"]
 - !private ["So8NSObjectP", "CGRect"]
-- !private ["So8NSObjectP", "FBSDKApplicationDelegate"]
 - !private ["So8NSObjectP", "FirebaseApp"]
+- !private ["So8NSObjectP", "GIDSignIn"]
 - !private ["So8NSObjectP", "Key"]
 - ["So8NSObjectP", "LaunchOptionsKey"]
 - !private ["So8NSObjectP", "NSAttributedString"]
@@ -528,6 +563,7 @@ depends-member:
 - !private ["So8NSObjectP", "UIStoryboard"]
 - !private ["So8NSObjectP", "UserDefaults"]
 - ["So8NSObjectP", ""]
+- !private ["So8NSObjectP", "activateApp"]
 - !private ["So8NSObjectP", "appearance"]
 - ["So8NSObjectP", "application"]
 - ["So8NSObjectP", "applicationDidBecomeActive"]
@@ -547,6 +583,7 @@ depends-member:
 - !private ["So8NSObjectP", "configure"]
 - !private ["So8NSObjectP", "delegate"]
 - !private ["So8NSObjectP", "frame"]
+- !private ["So8NSObjectP", "handle"]
 - !private ["So8NSObjectP", "image"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "instantiateViewController"]
@@ -571,10 +608,11 @@ depends-member:
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "render"]
 - !private ["So14NSSecureCodingP", "white"]
-- !private ["Sq", "application"]
 - !private ["SY", "default"]
 - !private ["SY", "font"]
 - !private ["SY", "foregroundColor"]
+- !private ["10Foundation20ReferenceConvertibleP", "scheme"]
+- !private ["6SaveUp8ResourceP", "scheme"]
 - !private ["So29UIAccessibilityIdentificationP", "appearance"]
 - !private ["So29UIAccessibilityIdentificationP", "rootViewController"]
 - !private ["So29UIAccessibilityIdentificationP", "setBackgroundImage"]
@@ -595,10 +633,12 @@ depends-member:
 - ["So13UIApplicationC", "LaunchOptionsKey"]
 - !private ["So13UIApplicationC", "delegate"]
 - !private ["So13UIApplicationC", "shared"]
+- !private ["So21UIApplicationDelegateP", "AppEvents"]
+- !private ["So21UIApplicationDelegateP", "ApplicationDelegate"]
 - !private ["So21UIApplicationDelegateP", "CAGradientLayer"]
 - !private ["So21UIApplicationDelegateP", "CGRect"]
-- !private ["So21UIApplicationDelegateP", "FBSDKApplicationDelegate"]
 - !private ["So21UIApplicationDelegateP", "FirebaseApp"]
+- !private ["So21UIApplicationDelegateP", "GIDSignIn"]
 - !private ["So21UIApplicationDelegateP", "NSAttributedString"]
 - !private ["So21UIApplicationDelegateP", "UIApplication"]
 - !private ["So21UIApplicationDelegateP", "UIColor"]
@@ -675,10 +715,12 @@ depends-member:
 - !private ["So15UINavigationBarC", "titleTextAttributes"]
 - !private ["So22UINavigationControllerC", "init"]
 - !private ["So22UINavigationControllerC", "navigationBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "AppEvents"]
+- !private ["So30UIPasteConfigurationSupportingP", "ApplicationDelegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "CAGradientLayer"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
-- !private ["So30UIPasteConfigurationSupportingP", "FBSDKApplicationDelegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "FirebaseApp"]
+- !private ["So30UIPasteConfigurationSupportingP", "GIDSignIn"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
 - !private ["So30UIPasteConfigurationSupportingP", "NSAttributedString"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
@@ -718,12 +760,14 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "titleTextAttributes"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - !private ["So11UIResponderC", "AppDelegate"]
+- !private ["So11UIResponderC", "AppEvents"]
+- !private ["So11UIResponderC", "ApplicationDelegate"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "CAGradientLayer"]
 - ["So11UIResponderC", "CALayer"]
 - !private ["So11UIResponderC", "CGRect"]
-- !private ["So11UIResponderC", "FBSDKApplicationDelegate"]
 - !private ["So11UIResponderC", "FirebaseApp"]
+- !private ["So11UIResponderC", "GIDSignIn"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
 - !private ["So11UIResponderC", "NSAttributedString"]
 - ["So11UIResponderC", "String"]
@@ -767,10 +811,12 @@ depends-member:
 - !private ["So11UIResponderC", "titleFont"]
 - !private ["So11UIResponderC", "titleTextAttributes"]
 - ["So11UIResponderC", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "AppEvents"]
+- !private ["So30UIResponderStandardEditActionsP", "ApplicationDelegate"]
 - !private ["So30UIResponderStandardEditActionsP", "CAGradientLayer"]
 - !private ["So30UIResponderStandardEditActionsP", "CGRect"]
-- !private ["So30UIResponderStandardEditActionsP", "FBSDKApplicationDelegate"]
 - !private ["So30UIResponderStandardEditActionsP", "FirebaseApp"]
+- !private ["So30UIResponderStandardEditActionsP", "GIDSignIn"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
 - !private ["So30UIResponderStandardEditActionsP", "NSAttributedString"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
@@ -824,10 +870,12 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "setBackgroundImage"]
 - !private ["So18UITraitEnvironmentP", "tintColor"]
 - !private ["So18UITraitEnvironmentP", "titleTextAttributes"]
+- !private ["So23UIUserActivityRestoringP", "AppEvents"]
+- !private ["So23UIUserActivityRestoringP", "ApplicationDelegate"]
 - !private ["So23UIUserActivityRestoringP", "CAGradientLayer"]
 - !private ["So23UIUserActivityRestoringP", "CGRect"]
-- !private ["So23UIUserActivityRestoringP", "FBSDKApplicationDelegate"]
 - !private ["So23UIUserActivityRestoringP", "FirebaseApp"]
+- !private ["So23UIUserActivityRestoringP", "GIDSignIn"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
 - !private ["So23UIUserActivityRestoringP", "NSAttributedString"]
 - !private ["So23UIUserActivityRestoringP", "UIApplication"]
@@ -874,20 +922,25 @@ depends-member:
 - !private ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "navigationBar"]
 - !private ["So8UIWindowC", "rootViewController"]
+- !private ["10Foundation3URLV", "scheme"]
 - !private ["So14NSUserDefaultsC", "standard"]
 - !private ["So14NSUserDefaultsC", "string"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "height"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "scheme"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "size"]
 - !private ["s26_ExpressibleByColorLiteralP", "cgColor"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "scheme"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "font"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "foregroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AppEvents"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ApplicationDelegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CAGradientLayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "FBSDKApplicationDelegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FirebaseApp"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "GIDSignIn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Key"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "LaunchOptionsKey"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NSAttributedString"]
@@ -903,6 +956,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIStoryboard"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UserDefaults"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "activateApp"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "appearance"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "application"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "applicationDidBecomeActive"]
@@ -922,6 +976,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "configure"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "handle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
@@ -939,10 +994,12 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleTextAttributes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AppEvents"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ApplicationDelegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CAGradientLayer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGRect"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "FBSDKApplicationDelegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "FirebaseApp"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "GIDSignIn"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Key"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "LaunchOptionsKey"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NSAttributedString"]
@@ -958,6 +1015,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIStoryboard"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UserDefaults"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "activateApp"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "appearance"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "application"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "applicationDidBecomeActive"]
@@ -977,6 +1035,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "configure"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "frame"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "handle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "image"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "instantiateViewController"]
@@ -994,11 +1053,11 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "titleTextAttributes"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "white"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "window"]
-- !private ["s21_ObjectiveCBridgeableP", "application"]
 - !private ["s21_ObjectiveCBridgeableP", "font"]
 - !private ["s21_ObjectiveCBridgeableP", "foregroundColor"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "scheme"]
 - !private ["s21_ObjectiveCBridgeableP", "size"]
 - !private ["s20_SwiftNewtypeWrapperP", "font"]
 - !private ["s20_SwiftNewtypeWrapperP", "foregroundColor"]
@@ -1009,6 +1068,8 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "titleTextAttributes"]
 depends-nominal:
 - "6SaveUp11AppDelegateC"
+- !private "So14FBSDKAppEventsC"
+- !private "So24FBSDKApplicationDelegateC"
 - !private "So15CAGradientLayerC"
 - !private "So7CALayerC"
 - !private "So15CALayerDelegateP"
@@ -1022,9 +1083,8 @@ depends-nominal:
 - !private "Se"
 - !private "SE"
 - "SQ"
-- !private "s23ExpressibleByNilLiteralP"
-- !private "So24FBSDKApplicationDelegateC"
 - !private "So6FIRAppC"
+- !private "So9GIDSignInC"
 - "SH"
 - !private "So21NSAttributedStringKeya"
 - "6SaveUp20KingfisherCompatibleP"
@@ -1038,8 +1098,9 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
-- !private "Sq"
 - !private "SY"
+- !private "10Foundation20ReferenceConvertibleP"
+- !private "6SaveUp8ResourceP"
 - !private "So29UIAccessibilityIdentificationP"
 - !private "So12UIAppearanceP"
 - !private "So21UIAppearanceContainerP"
@@ -1068,9 +1129,11 @@ depends-nominal:
 - !private "So6UIViewC"
 - !private "So16UIViewControllerC"
 - !private "So8UIWindowC"
+- !private "10Foundation3URLV"
 - !private "So14NSUserDefaultsC"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s26_ExpressibleByColorLiteralP"
+- !private "s34_ExpressibleByFileReferenceLiteralP"
 - !private "s35_HasCustomAnyHashableRepresentationP"
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
@@ -1099,18 +1162,15 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/ObjectiveC.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreImage.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/QuartzCore.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Accelerate.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Dispatch.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Metal.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Darwin.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreLocation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Foundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreFoundation.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/CoreGraphics.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/os.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Swift.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/UIKit.swiftmodule/x86_64.swiftmodule"
-- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/MapKit.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/SwiftOnoneSupport.swiftmodule/x86_64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/prebuilt-modules/Combine.swiftmodule/x86_64-apple-ios-simulator.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/_types/_timeval32.h"
@@ -1141,6 +1201,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSData.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDProfileData.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/data.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMetadata.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageMetadata.h"
@@ -1583,6 +1644,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/vBigNum.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/vm.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugIn.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignIn.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GoogleSignIn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/i386/boolean.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/machine/boolean.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/boolean.h"
@@ -1623,6 +1686,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalNotification.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFUserNotification.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIApplication.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDAuthentication.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CFNetwork.framework/Headers/CFHTTPAuthentication.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CoreLocation.h"
@@ -1696,6 +1760,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKUserTrackingButton.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKCompassButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPattern.h"
@@ -1904,6 +1969,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayRenderer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKTileOverlayRenderer.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUser.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDGoogleUser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXMLParser.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchCompleter.h"
@@ -2158,7 +2224,6 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/termios.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/pthread/qos.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/qos.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKMacros.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/ConditionalMacros.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/AssertMacros.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/AvailabilityMacros.h"
@@ -2537,6 +2602,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
@@ -2559,4 +2625,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "e843fec492b2e7ddb78ea8bcb38fa677"
+interface-hash: "a85060c9f901db41bae1056f284d00b3"

@@ -6,6 +6,7 @@
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/CountryViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/NearMe.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/MyAccViewController.swift
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/RewardsViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/Kingfisher/ImageProcessor.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/FCategoriesTableViewCell.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/AppConfig.swift
@@ -15,6 +16,7 @@
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/FilterByCategoryViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/MyOrdersViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/MIBadgeButton.swift
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/FDetailsImagesCollectionViewCell.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/orderProductList.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/FWishListTableViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/CategoryProductListViewController.swift
@@ -66,6 +68,7 @@
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/SubCategoryTableViewCell.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/Colors.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/Sizes.swift
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/FDetailsImagesTableViewCell.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/AdCell.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/FLatestTableViewCell.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/DealsCell.swift
@@ -98,6 +101,7 @@
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/StoreDetailsViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/CategoryHome.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/Reachability.swift
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/LoyalityModel.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PaymentsViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/Toast.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/RelatedProducts.swift

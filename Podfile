@@ -12,4 +12,5 @@ target 'Le' do
     pod 'Firebase'
     pod 'Firebase/Core'
     pod 'Firebase/RemoteConfig'
+    pod 'GoogleSignIn'
 end

@@ -1,6 +1,6 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "178b93e7dd863046b7b145159777e28a"
-build_time: [1579866420, 536868000]
+build_time: [1581608023, 220595000]
 inputs:
   "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/AFError.swift": [1579864280, 979359135]
   "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Alamofire/Source/Alamofire.swift": [1579864280, 992893059]
