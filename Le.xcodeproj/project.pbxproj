@@ -78,6 +78,8 @@
 		8D714A8623E6068D00128156 /* LoyalityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D714A8523E6068D00128156 /* LoyalityModel.swift */; };
 		8D72AABC23DCC79E00E3EA8B /* FilterByCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72AABB23DCC79E00E3EA8B /* FilterByCategoryViewController.swift */; };
 		8DB2FF3723DB004D00A44F3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DB2FF3623DB004C00A44F3E /* GoogleService-Info.plist */; };
+		8DB4625523F7D6B80062AC19 /* FTopPicksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB4625423F7D6B80062AC19 /* FTopPicksTableViewCell.swift */; };
+		8DB4625723F7D6D00062AC19 /* FTopPicksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB4625623F7D6D00062AC19 /* FTopPicksCollectionViewCell.swift */; };
 		8DBAD36723ADFC3700E188E6 /* FDetailsImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAD36623ADFC3700E188E6 /* FDetailsImageTableViewCell.swift */; };
 		8DBAD36923ADFC5100E188E6 /* FDetailsProductNamePriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAD36823ADFC5100E188E6 /* FDetailsProductNamePriceTableViewCell.swift */; };
 		8DBAD36B23ADFC6A00E188E6 /* FDetailsProductDescriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBAD36A23ADFC6A00E188E6 /* FDetailsProductDescriptionTableViewCell.swift */; };
@@ -303,6 +305,8 @@
 		8D714A8523E6068D00128156 /* LoyalityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyalityModel.swift; sourceTree = "<group>"; };
 		8D72AABB23DCC79E00E3EA8B /* FilterByCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterByCategoryViewController.swift; sourceTree = "<group>"; };
 		8DB2FF3623DB004C00A44F3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8DB4625423F7D6B80062AC19 /* FTopPicksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTopPicksTableViewCell.swift; sourceTree = "<group>"; };
+		8DB4625623F7D6D00062AC19 /* FTopPicksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTopPicksCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DBAD36623ADFC3700E188E6 /* FDetailsImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDetailsImageTableViewCell.swift; sourceTree = "<group>"; };
 		8DBAD36823ADFC5100E188E6 /* FDetailsProductNamePriceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDetailsProductNamePriceTableViewCell.swift; sourceTree = "<group>"; };
 		8DBAD36A23ADFC6A00E188E6 /* FDetailsProductDescriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDetailsProductDescriptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -560,6 +564,8 @@
 				8D4E13922375EC4D0072B53E /* SJCenterFlowLayout.swift */,
 				8D4E13932375EC500072B53E /* ZoomAndSnapFlowLayout.swift */,
 				8D4E13962375ECA10072B53E /* BannerCollectionViewCell.swift */,
+				8DB4625423F7D6B80062AC19 /* FTopPicksTableViewCell.swift */,
+				8DB4625623F7D6D00062AC19 /* FTopPicksCollectionViewCell.swift */,
 			);
 			name = Firstpage;
 			sourceTree = "<group>";
@@ -1298,6 +1304,7 @@
 				8D21EA8B236D527B00B1D0A9 /* MoreImageTableViewCell.swift in Sources */,
 				BED8B78A1ED012D700099114 /* DetailsViewController.swift in Sources */,
 				BE0CDAF41E785EDF003D0A9C /* Country.swift in Sources */,
+				8DB4625723F7D6D00062AC19 /* FTopPicksCollectionViewCell.swift in Sources */,
 				8D4E1385237544CC0072B53E /* FirstTableViewController.swift in Sources */,
 				BED675AF1EB25154005F3D00 /* EditViewController.swift in Sources */,
 				CE5C0BF2225BA54300F89CA6 /* SliderCell.swift in Sources */,
@@ -1361,6 +1368,7 @@
 				201421A720D0F5A100FFB665 /* String+MD5.swift in Sources */,
 				BEF87FD71E7B046B00FEF117 /* Popular.swift in Sources */,
 				BEDBB5901E9BFDC50044D9E6 /* SecondayCategory.swift in Sources */,
+				8DB4625523F7D6B80062AC19 /* FTopPicksTableViewCell.swift in Sources */,
 				BEEAC7F31EBB9A3400A181AA /* StoreDetailsViewController.swift in Sources */,
 				BEF87FCB1E7AFF2200FEF117 /* CategoryHome.swift in Sources */,
 				BEFF05271E770DDC0057C89E /* Reachability.swift in Sources */,
@@ -1550,7 +1558,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Le/PayPalMobile",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lc++",
@@ -1596,7 +1604,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Le/PayPalMobile",
 				);
-				MARKETING_VERSION = 1.0.4;
+				MARKETING_VERSION = 1.0.5;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lc++",

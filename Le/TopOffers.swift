@@ -23,14 +23,11 @@ class TopOffers: NSObject {
     
     init(TopOffers: NSDictionary) {
         
-        /*product_type all_items hobe tokhon product discount percentage show koraben tokhon ar price dekhaben na only discount
-         */
-        
         self.product_id = String(TopOffers["product_id"] as! NSInteger)
         self.product_title = TopOffers["product_title"] as? String
         self.product_type = TopOffers["product_type"] as? String
         
-        if self.product_type != "all_item"  {
+        if self.product_type != "all_item"{
             self.product_price = String(TopOffers["product_price"] as! Double)
             self.product_discount_price = String(TopOffers["product_discount_price"] as! NSInteger)
             self.product_percentage = String(TopOffers["product_percentage"] as! NSInteger)
