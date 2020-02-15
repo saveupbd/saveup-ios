@@ -194,6 +194,13 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         super.viewDidLoad()
         self.productTableView.delegate = self
         self.productTableView.dataSource = self
+        
+        let cartButton  = MIBadgeButton()
+        cartButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+        cartButton.setImage(UIImage(named: "share"), for: UIControl.State())
+        cartButton.addTarget(self, action: #selector(self.cartAction(_:)), for: UIControl.Event.touchUpInside)
+        let rightButton = UIBarButtonItem(customView: cartButton)
+        self.navigationItem.rightBarButtonItems = [rightButton]
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -218,25 +225,44 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         }
     }
     @objc func cartAction(_ sender: UIButton!) {
-        if (UserDefaults.standard.object(forKey: "UserID") != nil){
-            let objMyCart = self.storyboard?.instantiateViewController(withIdentifier: "MyCartViewController") as! MyCartViewController
-            objMyCart.screen_value = ""
-            self.navigationController?.pushViewController(objMyCart, animated: true)
-        }else{
-            let alert = UIAlertController(title: "Error", message: "You need to login to access this feature", preferredStyle: UIAlertController.Style.alert)
-            alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.cancel, handler:{ (ACTION :UIAlertAction!)in
-                self.dismiss(animated: true, completion: nil)
-                
-            }))
-            alert.addAction(UIAlertAction(title: "Log In", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in
-                self.dismiss(animated: true, completion: nil)
-                let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "LoginViewController")
-                theViewController.modalPresentationStyle = .fullScreen
-                self.present(theViewController, animated: true, completion: nil)
-            }))
-            self.present(alert, animated: true, completion: nil)
-            return
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        let textToShare = "Check out this awsome deal from SaveUp"
+        
+        if let myWebsite = URL(string: "http://itunes.apple.com/app/idXXXXXXXXX") {//Enter link to your app here
+            let objectsToShare = [textToShare, myWebsite, image ?? #imageLiteral(resourceName: "app-logo")] as [Any]
+            let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
+            
+            //Excluded Activities
+            activityVC.excludedActivityTypes = [UIActivity.ActivityType.airDrop, UIActivity.ActivityType.addToReadingList]
+            //
+            
+            activityVC.popoverPresentationController?.sourceView = sender
+            self.present(activityVC, animated: true, completion: nil)
         }
+        
+//        if (UserDefaults.standard.object(forKey: "UserID") != nil){
+//            let objMyCart = self.storyboard?.instantiateViewController(withIdentifier: "MyCartViewController") as! MyCartViewController
+//            objMyCart.screen_value = ""
+//            self.navigationController?.pushViewController(objMyCart, animated: true)
+//        }else{
+//            let alert = UIAlertController(title: "Error", message: "You need to login to access this feature", preferredStyle: UIAlertController.Style.alert)
+//            alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.cancel, handler:{ (ACTION :UIAlertAction!)in
+//                self.dismiss(animated: true, completion: nil)
+//
+//            }))
+//            alert.addAction(UIAlertAction(title: "Log In", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in
+//                self.dismiss(animated: true, completion: nil)
+//                let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "LoginViewController")
+//                theViewController.modalPresentationStyle = .fullScreen
+//                self.present(theViewController, animated: true, completion: nil)
+//            }))
+//            self.present(alert, animated: true, completion: nil)
+//            return
+//        }
         
     }
     
@@ -795,34 +821,34 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             tableCell.imageView?.image = self.storeImage
             tableCell.selectionStyle = .none
             return tableCell
-        case 3://description
+        case 3://direction
+            let tableCell = tableView.dequeueReusableCell(withIdentifier: "singleTitleCell", for: indexPath)
+            tableCell.textLabel?.text = "Direction to the Merchant Store"
+            tableCell.imageView?.image = UIImage(named: "location-icon")
+            tableCell.selectionStyle = .none
+            return tableCell
+        case 4://description
             let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductDescriptionTableViewCell", for: indexPath) as! FDetailsProductDescriptionTableViewCell
             tableCell.proHeaderLabel.text = "Description"
             tableCell.proDescriptionDetailsTextView.attributedText = descriptionText.htmlToAttributedString
             tableCell.selectionStyle = .none
             return tableCell
-        case 4://what is included
+        case 5://what is included
             let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductDescriptionTableViewCell", for: indexPath) as! FDetailsProductDescriptionTableViewCell
             tableCell.proHeaderLabel.text = "What is included in the deal?"
             tableCell.proDescriptionDetailsTextView.attributedText = dealIncludeText.htmlToAttributedString
             tableCell.selectionStyle = .none
             return tableCell
-        case 5://fineprint
+        case 6://fineprint
             let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductDescriptionTableViewCell", for: indexPath) as! FDetailsProductDescriptionTableViewCell
             tableCell.proHeaderLabel.text = "Fine print (Conditions)"
             tableCell.proDescriptionDetailsTextView.attributedText = conditionsText.htmlToAttributedString
             tableCell.selectionStyle = .none
             return tableCell
-        case 6://redemption instruction
+        case 7://redemption instruction
             let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsProductDescriptionTableViewCell", for: indexPath) as! FDetailsProductDescriptionTableViewCell
             tableCell.proHeaderLabel.text = "Redemption Instruction"
             tableCell.proDescriptionDetailsTextView.attributedText = redemptionText.htmlToAttributedString
-            tableCell.selectionStyle = .none
-            return tableCell
-        case 7://direction
-            let tableCell = tableView.dequeueReusableCell(withIdentifier: "singleTitleCell", for: indexPath)
-            tableCell.textLabel?.text = "Direction to the Merchant Store"
-            tableCell.imageView?.image = UIImage(named: "location-icon")
             tableCell.selectionStyle = .none
             return tableCell
         case 8://redeem offer time
@@ -866,24 +892,24 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             self.navigationController?.pushViewController(objStoreDetails, animated: true)
             
             return
-        case 3://description
-            
-            return
-        case 4://what is included
-            
-            return
-        case 5://fineprint
-            
-            return
-        case 6://redemption instruction
-            
-            return
-        case 7://direction
+        case 3://direction
             let storeLat = UserDefaults.standard.value(forKey: "latitude") as! Double
             let storeLong = UserDefaults.standard.value(forKey: "longitude") as! Double
             if let url = URL(string: "comgooglemaps://?saddr=&daddr=\(storeLat),\(storeLong)&directionsmode=driving") {
                 UIApplication.shared.open(url, options: [:])
             }
+            return
+        case 4://description
+            
+            return
+        case 5://what is included
+            
+            return
+        case 6://fineprint
+            
+            return
+        case 7://redemption instruction
+            
             return
         case 8://redeem offer time
             
@@ -944,15 +970,15 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                                 print("I am giving you the cart amount -- \(cartNumber ??  0 )")
                                 let cartValue = "\(cartNumber ?? 0 )"
                                 
-                                let cartButton  = MIBadgeButton()
-                                cartButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
-                                cartButton.setImage(UIImage(named: "cart-icon"), for: UIControl.State())
-                                cartButton.addTarget(self, action: #selector(self.cartAction(_:)), for: UIControl.Event.touchUpInside)
-                                
-                                cartButton.badgeString = "\(cartValue)"
-                                cartButton.badgeTextColor = UIColor.white
-                                let rightButton = UIBarButtonItem(customView: cartButton)
-                                //self.navigationItem.rightBarButtonItems = [rightButton]
+//                                let cartButton  = MIBadgeButton()
+//                                cartButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+//                                cartButton.setImage(UIImage(named: "cart-icon"), for: UIControl.State())
+//                                cartButton.addTarget(self, action: #selector(self.cartAction(_:)), for: UIControl.Event.touchUpInside)
+//
+//                                cartButton.badgeString = "\(cartValue)"
+//                                cartButton.badgeTextColor = UIColor.white
+//                                let rightButton = UIBarButtonItem(customView: cartButton)
+//                                self.navigationItem.rightBarButtonItems = [rightButton]
                                 
                                 
                                 

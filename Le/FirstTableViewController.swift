@@ -8,7 +8,9 @@
 
 import UIKit
 
-class FirstTableViewController: UITableViewController,LatestCollectionCellDelegate,CategorySelectDelegate,BannersSelectDelegate,UISearchBarDelegate {
+class FirstTableViewController: UITableViewController,LatestCollectionCellDelegate,CategorySelectDelegate,BannersSelectDelegate,UISearchBarDelegate,TopPicksCollectionViewDelegate {
+    
+    
     var categoryHomeArray = [CategoryHome]()//food travel
     var bannersArray = [BannersHome]()//banner images
     var topOffersArray = [TopOffers]()//latest deals
@@ -161,11 +163,11 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
         case 6://Gift Items Title
             return 1
         case 7://Gift Items Content
-            if popularArray.count != 0 {
-                return popularArray.count
-            }else{
+//            if popularArray.count != 0 {
+//                return popularArray.count
+//            }else{
                 return 1
-            }
+            //}
         default:
             return 0
         }
@@ -254,19 +256,25 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
             tableCell.detailTextLabel?.text = "See All"
             return tableCell
         case 7://Top Picks
-            tableCell = tableView.dequeueReusableCell(withIdentifier: "FGiftDealsTableViewCell", for: indexPath) as! FGiftDealsTableViewCell
-            if popularArray.count != 0 {
-                tableCell.textLabel?.numberOfLines = 2
-                tableCell.textLabel?.text = popularArray[indexPath.row].product_title
-                tableCell.detailTextLabel!.numberOfLines = 0
-                tableCell.detailTextLabel!.text = "\(popularArray[indexPath.row].merchant_name!)\n\("৳" + popularArray[indexPath.row].product_discount_price!)\n\(popularArray[indexPath.row].product_percentage! + "% off")"
-                tableCell.imageView?.kf.setImage(with: (StringToURL(text: popularArray[indexPath.row].product_image)))
-                tableCell.imageView?.image = tableCell.imageView?.image?.resized(toWidth:tableCell.contentView.bounds.width/3, height: tableCell.contentView.bounds.height - 2.0)
-            }else{
-                tableCell.textLabel?.text = "No items available currently"
-                tableCell.textLabel?.textAlignment = .center
+//            tableCell = tableView.dequeueReusableCell(withIdentifier: "FGiftDealsTableViewCell", for: indexPath) as! FGiftDealsTableViewCell
+//            if popularArray.count != 0 {
+//                tableCell.textLabel?.numberOfLines = 2
+//                tableCell.textLabel?.text = popularArray[indexPath.row].product_title
+//                tableCell.detailTextLabel!.numberOfLines = 0
+//                tableCell.detailTextLabel!.text = "\(popularArray[indexPath.row].merchant_name!)\n\("৳" + popularArray[indexPath.row].product_discount_price!)\n\(popularArray[indexPath.row].product_percentage! + "% off")"
+//                tableCell.imageView?.kf.setImage(with: (StringToURL(text: popularArray[indexPath.row].product_image)))
+//                tableCell.imageView?.image = tableCell.imageView?.image?.resized(toWidth:tableCell.contentView.bounds.width/3, height: tableCell.contentView.bounds.height - 2.0)
+//            }else{
+//                tableCell.textLabel?.text = "No items available currently"
+//                tableCell.textLabel?.textAlignment = .center
+//            }
+//
+//            return tableCell
+            if let cell = tableView.dequeueReusableCell(withIdentifier: "FTopPicksTableViewCell", for: indexPath) as? FTopPicksTableViewCell{
+                cell.tag = indexPath.section
+                cell.topPicksDelegate = self
+                return cell
             }
-            
             return tableCell
         default:
             return tableCell
@@ -281,7 +289,7 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
             return 300
         case 2,4,6:
             return 25
-        case 3:
+        case 3,7:
             return 625
         default:
             return 100
@@ -359,6 +367,14 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
         UserDefaults.standard.set(topOffersArray[indexPath.row].product_id, forKey: "temp_pro_id")
         objProductDetails.category_name = "Latest Product"
         objProductDetails.product_id = topOffersArray[indexPath.row].product_id
+        self.navigationController?.pushViewController(objProductDetails, animated: true)
+    }
+    
+    func topCollectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath, selectedSection: Int) {
+        let objProductDetails = self.storyboard?.instantiateViewController(withIdentifier: "FProductDetailsTableViewController") as! FProductDetailsTableViewController
+        UserDefaults.standard.set(popularArray[indexPath.row].product_id, forKey: "temp_pro_id")
+        objProductDetails.category_name = "Top Picks"
+        objProductDetails.product_id = popularArray[indexPath.row].product_id
         self.navigationController?.pushViewController(objProductDetails, animated: true)
     }
     

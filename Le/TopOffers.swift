@@ -28,8 +28,19 @@ class TopOffers: NSObject {
         self.product_type = TopOffers["product_type"] as? String
         
         if self.product_type != "all_item"{
-            self.product_price = String(TopOffers["product_price"] as! Double)
-            self.product_discount_price = String(TopOffers["product_discount_price"] as! NSInteger)
+            if !(TopOffers["product_price"] is NSNull){
+                self.product_price = String(TopOffers["product_price"] as! Double)
+            }else{
+                self.product_price = "-"
+            }
+            
+            if !(TopOffers["product_discount_price"] is NSNull){
+                self.product_discount_price = String(TopOffers["product_discount_price"] as! NSInteger)
+            }else{
+                self.product_discount_price = "-"
+            }
+            
+            
             self.product_percentage = String(TopOffers["product_percentage"] as! NSInteger)
         }else{
             self.product_off = String(TopOffers["product_discount"] as! NSInteger)
