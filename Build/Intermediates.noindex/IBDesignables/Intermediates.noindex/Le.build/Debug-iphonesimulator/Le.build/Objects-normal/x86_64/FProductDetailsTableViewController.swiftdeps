@@ -60,7 +60,6 @@ depends-top-level:
 - "IntegerLiteralType"
 - !private "JSONSerialization"
 - !private "MIBadgeButton"
-- !private "MyCartViewController"
 - "NSAttributedString"
 - !private "NSDictionary"
 - "NSInteger"
@@ -78,6 +77,8 @@ depends-top-level:
 - "StringLiteralType"
 - !private "StringToURL"
 - !private "ToastStyle"
+- !private "UIActivity"
+- !private "UIActivityViewController"
 - !private "UIAlertAction"
 - !private "UIAlertController"
 - !private "UIApplication"
@@ -86,6 +87,10 @@ depends-top-level:
 - "UICollectionView"
 - !private "UIColor"
 - !private "UIControl"
+- !private "UIGraphicsBeginImageContext"
+- !private "UIGraphicsEndImageContext"
+- !private "UIGraphicsGetCurrentContext"
+- !private "UIGraphicsGetImageFromCurrentImageContext"
 - "UIImage"
 - "UIImageView"
 - "UILabel"
@@ -102,6 +107,7 @@ depends-top-level:
 - !private "URLSession"
 - "UnicodeScalarType"
 - !private "UserDefaults"
+- !private "_ImageLiteralType"
 - !private "messageFont"
 - !private "print"
 - "storeDetails"
@@ -119,6 +125,8 @@ depends-member:
 - ["10Accelerate0A13MutableBufferP", "init"]
 - !private ["10Accelerate0A13MutableBufferP", "product_id"]
 - !private ["10Accelerate0A13MutableBufferP", "subscript"]
+- !private ["So14UIActivityTypea", "addToReadingList"]
+- !private ["So14UIActivityTypea", "airDrop"]
 - ["s18AdditiveArithmeticP", "init"]
 - !private ["Sa", "append"]
 - !private ["Sa", "count"]
@@ -146,6 +154,7 @@ depends-member:
 - !private ["So7CALayerC", "borderWidth"]
 - !private ["So7CALayerC", "cornerRadius"]
 - !private ["So7CALayerC", "masksToBounds"]
+- !private ["So7CALayerC", "render"]
 - !private ["So7CALayerC", "shadowColor"]
 - !private ["So7CALayerC", "shadowOffset"]
 - !private ["So7CALayerC", "shadowOpacity"]
@@ -157,7 +166,6 @@ depends-member:
 - !private ["So15CALayerDelegateP", "attributedText"]
 - !private ["So15CALayerDelegateP", "automaticDimension"]
 - ["So15CALayerDelegateP", "backgroundColor"]
-- !private ["So15CALayerDelegateP", "badgeString"]
 - !private ["So15CALayerDelegateP", "badgeTextColor"]
 - !private ["So15CALayerDelegateP", "bottomAnchor"]
 - !private ["So15CALayerDelegateP", "bounds"]
@@ -209,6 +217,7 @@ depends-member:
 - !private ["So13CAMediaTimingP", "borderWidth"]
 - !private ["So13CAMediaTimingP", "cornerRadius"]
 - !private ["So13CAMediaTimingP", "masksToBounds"]
+- !private ["So13CAMediaTimingP", "render"]
 - !private ["So13CAMediaTimingP", "shadowColor"]
 - !private ["So13CAMediaTimingP", "shadowOffset"]
 - !private ["So13CAMediaTimingP", "shadowOpacity"]
@@ -222,6 +231,7 @@ depends-member:
 - !private ["So6CGSizeV", "height"]
 - ["So6CGSizeV", "init"]
 - !private ["So6CGSizeV", "width"]
+- !private ["s7CVarArgP", "ActivityType"]
 - !private ["s7CVarArgP", "AddtoWishlish"]
 - !private ["s7CVarArgP", "Amount"]
 - !private ["s7CVarArgP", "Api_Base_URL"]
@@ -255,6 +265,8 @@ depends-member:
 - !private ["s7CVarArgP", "StringToURL"]
 - !private ["s7CVarArgP", "Style"]
 - !private ["s7CVarArgP", "ToastStyle"]
+- !private ["s7CVarArgP", "UIActivity"]
+- !private ["s7CVarArgP", "UIActivityViewController"]
 - !private ["s7CVarArgP", "UIAlertAction"]
 - !private ["s7CVarArgP", "UIAlertController"]
 - !private ["s7CVarArgP", "UIApplication"]
@@ -262,6 +274,10 @@ depends-member:
 - ["s7CVarArgP", "UIButton"]
 - !private ["s7CVarArgP", "UIColor"]
 - !private ["s7CVarArgP", "UIControl"]
+- !private ["s7CVarArgP", "UIGraphicsBeginImageContext"]
+- !private ["s7CVarArgP", "UIGraphicsEndImageContext"]
+- !private ["s7CVarArgP", "UIGraphicsGetCurrentContext"]
+- !private ["s7CVarArgP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["s7CVarArgP", "UIImage"]
 - !private ["s7CVarArgP", "UIScreen"]
 - !private ["s7CVarArgP", "UITableView"]
@@ -284,7 +300,6 @@ depends-member:
 - !private ["s7CVarArgP", "attributedText"]
 - !private ["s7CVarArgP", "automaticDimension"]
 - ["s7CVarArgP", "backgroundColor"]
-- !private ["s7CVarArgP", "badgeString"]
 - !private ["s7CVarArgP", "badgeTextColor"]
 - !private ["s7CVarArgP", "black"]
 - ["s7CVarArgP", "blue"]
@@ -321,6 +336,7 @@ depends-member:
 - !private ["s7CVarArgP", "directionLabel"]
 - !private ["s7CVarArgP", "dismiss"]
 - !private ["s7CVarArgP", "doThisWhenButtonIsTapped"]
+- !private ["s7CVarArgP", "excludedActivityTypes"]
 - !private ["s7CVarArgP", "faButton"]
 - ["s7CVarArgP", "fabTapped"]
 - !private ["s7CVarArgP", "first"]
@@ -356,6 +372,7 @@ depends-member:
 - !private ["s7CVarArgP", "modalPresentationStyle"]
 - !private ["s7CVarArgP", "mycartApi"]
 - !private ["s7CVarArgP", "navigationController"]
+- !private ["s7CVarArgP", "navigationItem"]
 - !private ["s7CVarArgP", "numberOfLines"]
 - ["s7CVarArgP", "numberOfSections"]
 - ["s7CVarArgP", "numberOfSectionsInTableView"]
@@ -368,6 +385,7 @@ depends-member:
 - !private ["s7CVarArgP", "otpStoreId"]
 - !private ["s7CVarArgP", "payNowPressed"]
 - !private ["s7CVarArgP", "placeholder"]
+- !private ["s7CVarArgP", "popoverPresentationController"]
 - !private ["s7CVarArgP", "present"]
 - !private ["s7CVarArgP", "print"]
 - !private ["s7CVarArgP", "proDescriptionDetailsTextView"]
@@ -398,9 +416,10 @@ depends-member:
 - !private ["s7CVarArgP", "relatedCollectionCellDelegate"]
 - !private ["s7CVarArgP", "reloadData"]
 - !private ["s7CVarArgP", "removeFromSuperview"]
+- !private ["s7CVarArgP", "render"]
 - !private ["s7CVarArgP", "resume"]
+- !private ["s7CVarArgP", "rightBarButtonItems"]
 - !private ["s7CVarArgP", "safeAreaInsets"]
-- !private ["s7CVarArgP", "screen_value"]
 - ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s7CVarArgP", "scrollViewDidEndDecelerating"]
 - ["s7CVarArgP", "scrollViewDidEndDragging"]
@@ -429,6 +448,7 @@ depends-member:
 - !private ["s7CVarArgP", "showNetworkErrorAlert"]
 - !private ["s7CVarArgP", "sizeArray"]
 - !private ["s7CVarArgP", "size_status"]
+- !private ["s7CVarArgP", "sourceView"]
 - !private ["s7CVarArgP", "spec_string"]
 - !private ["s7CVarArgP", "specificationLabel"]
 - !private ["s7CVarArgP", "specificationView"]
@@ -499,6 +519,7 @@ depends-member:
 - ["10Foundation15ContiguousBytesP", "init"]
 - !private ["10Foundation15ContiguousBytesP", "product_id"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "ActivityType"]
 - !private ["s28CustomDebugStringConvertibleP", "AddtoWishlish"]
 - !private ["s28CustomDebugStringConvertibleP", "Amount"]
 - !private ["s28CustomDebugStringConvertibleP", "Api_Base_URL"]
@@ -532,6 +553,8 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "StringToURL"]
 - !private ["s28CustomDebugStringConvertibleP", "Style"]
 - !private ["s28CustomDebugStringConvertibleP", "ToastStyle"]
+- !private ["s28CustomDebugStringConvertibleP", "UIActivity"]
+- !private ["s28CustomDebugStringConvertibleP", "UIActivityViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertAction"]
 - !private ["s28CustomDebugStringConvertibleP", "UIAlertController"]
 - !private ["s28CustomDebugStringConvertibleP", "UIApplication"]
@@ -539,6 +562,10 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "UIButton"]
 - !private ["s28CustomDebugStringConvertibleP", "UIColor"]
 - !private ["s28CustomDebugStringConvertibleP", "UIControl"]
+- !private ["s28CustomDebugStringConvertibleP", "UIGraphicsBeginImageContext"]
+- !private ["s28CustomDebugStringConvertibleP", "UIGraphicsEndImageContext"]
+- !private ["s28CustomDebugStringConvertibleP", "UIGraphicsGetCurrentContext"]
+- !private ["s28CustomDebugStringConvertibleP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["s28CustomDebugStringConvertibleP", "UIImage"]
 - !private ["s28CustomDebugStringConvertibleP", "UIScreen"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableView"]
@@ -561,7 +588,6 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "attributedText"]
 - !private ["s28CustomDebugStringConvertibleP", "automaticDimension"]
 - ["s28CustomDebugStringConvertibleP", "backgroundColor"]
-- !private ["s28CustomDebugStringConvertibleP", "badgeString"]
 - !private ["s28CustomDebugStringConvertibleP", "badgeTextColor"]
 - !private ["s28CustomDebugStringConvertibleP", "black"]
 - ["s28CustomDebugStringConvertibleP", "blue"]
@@ -601,6 +627,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "directionLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "dismiss"]
 - !private ["s28CustomDebugStringConvertibleP", "doThisWhenButtonIsTapped"]
+- !private ["s28CustomDebugStringConvertibleP", "excludedActivityTypes"]
 - !private ["s28CustomDebugStringConvertibleP", "faButton"]
 - ["s28CustomDebugStringConvertibleP", "fabTapped"]
 - !private ["s28CustomDebugStringConvertibleP", "first"]
@@ -639,6 +666,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "modalPresentationStyle"]
 - !private ["s28CustomDebugStringConvertibleP", "mycartApi"]
 - !private ["s28CustomDebugStringConvertibleP", "navigationController"]
+- !private ["s28CustomDebugStringConvertibleP", "navigationItem"]
 - !private ["s28CustomDebugStringConvertibleP", "numberOfLines"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSections"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSectionsInTableView"]
@@ -652,6 +680,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "otpStoreId"]
 - !private ["s28CustomDebugStringConvertibleP", "payNowPressed"]
 - !private ["s28CustomDebugStringConvertibleP", "placeholder"]
+- !private ["s28CustomDebugStringConvertibleP", "popoverPresentationController"]
 - !private ["s28CustomDebugStringConvertibleP", "present"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
 - !private ["s28CustomDebugStringConvertibleP", "proDescriptionDetailsTextView"]
@@ -682,10 +711,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "relatedCollectionCellDelegate"]
 - !private ["s28CustomDebugStringConvertibleP", "reloadData"]
 - !private ["s28CustomDebugStringConvertibleP", "removeFromSuperview"]
+- !private ["s28CustomDebugStringConvertibleP", "render"]
 - !private ["s28CustomDebugStringConvertibleP", "resume"]
+- !private ["s28CustomDebugStringConvertibleP", "rightBarButtonItems"]
 - !private ["s28CustomDebugStringConvertibleP", "row"]
 - !private ["s28CustomDebugStringConvertibleP", "safeAreaInsets"]
-- !private ["s28CustomDebugStringConvertibleP", "screen_value"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDecelerating"]
 - ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDragging"]
@@ -715,6 +745,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "size"]
 - !private ["s28CustomDebugStringConvertibleP", "sizeArray"]
 - !private ["s28CustomDebugStringConvertibleP", "size_status"]
+- !private ["s28CustomDebugStringConvertibleP", "sourceView"]
 - !private ["s28CustomDebugStringConvertibleP", "spec_string"]
 - !private ["s28CustomDebugStringConvertibleP", "specificationLabel"]
 - !private ["s28CustomDebugStringConvertibleP", "specificationView"]
@@ -771,12 +802,14 @@ depends-member:
 - !private ["s17CustomReflectableP", "date"]
 - !private ["s17CustomReflectableP", "delegate"]
 - !private ["s17CustomReflectableP", "first"]
+- !private ["s17CustomReflectableP", "frame"]
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "hideToastActivity"]
 - !private ["s17CustomReflectableP", "htmlToAttributedString"]
 - !private ["s17CustomReflectableP", "httpBody"]
 - !private ["s17CustomReflectableP", "httpMethod"]
 - ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "layer"]
 - !private ["s17CustomReflectableP", "makeToast"]
 - !private ["s17CustomReflectableP", "makeToastActivity"]
 - !private ["s17CustomReflectableP", "numberOfLines"]
@@ -795,6 +828,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "value"]
 - !private ["s17CustomReflectableP", "width"]
 - ["s17CustomReflectableP", "zero"]
+- !private ["s23CustomStringConvertibleP", "ActivityType"]
 - !private ["s23CustomStringConvertibleP", "AddtoWishlish"]
 - !private ["s23CustomStringConvertibleP", "Amount"]
 - !private ["s23CustomStringConvertibleP", "Api_Base_URL"]
@@ -828,6 +862,8 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "StringToURL"]
 - !private ["s23CustomStringConvertibleP", "Style"]
 - !private ["s23CustomStringConvertibleP", "ToastStyle"]
+- !private ["s23CustomStringConvertibleP", "UIActivity"]
+- !private ["s23CustomStringConvertibleP", "UIActivityViewController"]
 - !private ["s23CustomStringConvertibleP", "UIAlertAction"]
 - !private ["s23CustomStringConvertibleP", "UIAlertController"]
 - !private ["s23CustomStringConvertibleP", "UIApplication"]
@@ -835,6 +871,10 @@ depends-member:
 - ["s23CustomStringConvertibleP", "UIButton"]
 - !private ["s23CustomStringConvertibleP", "UIColor"]
 - !private ["s23CustomStringConvertibleP", "UIControl"]
+- !private ["s23CustomStringConvertibleP", "UIGraphicsBeginImageContext"]
+- !private ["s23CustomStringConvertibleP", "UIGraphicsEndImageContext"]
+- !private ["s23CustomStringConvertibleP", "UIGraphicsGetCurrentContext"]
+- !private ["s23CustomStringConvertibleP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["s23CustomStringConvertibleP", "UIImage"]
 - !private ["s23CustomStringConvertibleP", "UIScreen"]
 - !private ["s23CustomStringConvertibleP", "UITableView"]
@@ -859,7 +899,6 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "attributedText"]
 - !private ["s23CustomStringConvertibleP", "automaticDimension"]
 - ["s23CustomStringConvertibleP", "backgroundColor"]
-- !private ["s23CustomStringConvertibleP", "badgeString"]
 - !private ["s23CustomStringConvertibleP", "badgeTextColor"]
 - !private ["s23CustomStringConvertibleP", "black"]
 - ["s23CustomStringConvertibleP", "blue"]
@@ -898,6 +937,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "directionLabel"]
 - !private ["s23CustomStringConvertibleP", "dismiss"]
 - !private ["s23CustomStringConvertibleP", "doThisWhenButtonIsTapped"]
+- !private ["s23CustomStringConvertibleP", "excludedActivityTypes"]
 - !private ["s23CustomStringConvertibleP", "faButton"]
 - ["s23CustomStringConvertibleP", "fabTapped"]
 - !private ["s23CustomStringConvertibleP", "first"]
@@ -935,6 +975,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "modalPresentationStyle"]
 - !private ["s23CustomStringConvertibleP", "mycartApi"]
 - !private ["s23CustomStringConvertibleP", "navigationController"]
+- !private ["s23CustomStringConvertibleP", "navigationItem"]
 - !private ["s23CustomStringConvertibleP", "numberOfLines"]
 - ["s23CustomStringConvertibleP", "numberOfSections"]
 - ["s23CustomStringConvertibleP", "numberOfSectionsInTableView"]
@@ -947,6 +988,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "otpStoreId"]
 - !private ["s23CustomStringConvertibleP", "payNowPressed"]
 - !private ["s23CustomStringConvertibleP", "placeholder"]
+- !private ["s23CustomStringConvertibleP", "popoverPresentationController"]
 - !private ["s23CustomStringConvertibleP", "present"]
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "proDescriptionDetailsTextView"]
@@ -978,10 +1020,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "relatedCollectionCellDelegate"]
 - !private ["s23CustomStringConvertibleP", "reloadData"]
 - !private ["s23CustomStringConvertibleP", "removeFromSuperview"]
+- !private ["s23CustomStringConvertibleP", "render"]
 - !private ["s23CustomStringConvertibleP", "resume"]
+- !private ["s23CustomStringConvertibleP", "rightBarButtonItems"]
 - !private ["s23CustomStringConvertibleP", "row"]
 - !private ["s23CustomStringConvertibleP", "safeAreaInsets"]
-- !private ["s23CustomStringConvertibleP", "screen_value"]
 - ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
 - ["s23CustomStringConvertibleP", "scrollViewDidEndDecelerating"]
 - ["s23CustomStringConvertibleP", "scrollViewDidEndDragging"]
@@ -1010,6 +1053,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "showNetworkErrorAlert"]
 - !private ["s23CustomStringConvertibleP", "sizeArray"]
 - !private ["s23CustomStringConvertibleP", "size_status"]
+- !private ["s23CustomStringConvertibleP", "sourceView"]
 - !private ["s23CustomStringConvertibleP", "spec_string"]
 - !private ["s23CustomStringConvertibleP", "specificationLabel"]
 - !private ["s23CustomStringConvertibleP", "specificationView"]
@@ -1077,10 +1121,12 @@ depends-member:
 - !private ["Se", "date"]
 - !private ["Se", "delegate"]
 - !private ["Se", "first"]
+- !private ["Se", "frame"]
 - !private ["Se", "height"]
 - !private ["Se", "hideToastActivity"]
 - !private ["Se", "htmlToAttributedString"]
 - ["Se", "init"]
+- !private ["Se", "layer"]
 - !private ["Se", "makeToast"]
 - !private ["Se", "makeToastActivity"]
 - !private ["Se", "numberOfLines"]
@@ -1125,6 +1171,8 @@ depends-member:
 - ["6SaveUp34DetailsImagesTableViewCellDelegateP", "String"]
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "StringToURL"]
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "ToastStyle"]
+- !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIActivity"]
+- !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIActivityViewController"]
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIAlertAction"]
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIAlertController"]
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIApplication"]
@@ -1132,6 +1180,10 @@ depends-member:
 - ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIButton"]
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIColor"]
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIControl"]
+- !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIGraphicsBeginImageContext"]
+- !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIGraphicsEndImageContext"]
+- !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIGraphicsGetCurrentContext"]
+- !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIImage"]
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UIScreen"]
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "UITableView"]
@@ -1168,6 +1220,7 @@ depends-member:
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "messageFont"]
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "mycartApi"]
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "navigationController"]
+- !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "navigationItem"]
 - ["6SaveUp34DetailsImagesTableViewCellDelegateP", "numberOfSections"]
 - ["6SaveUp34DetailsImagesTableViewCellDelegateP", "numberOfSectionsInTableView"]
 - !private ["6SaveUp34DetailsImagesTableViewCellDelegateP", "otpAmount"]
@@ -1257,10 +1310,12 @@ depends-member:
 - !private ["SE", "date"]
 - !private ["SE", "delegate"]
 - !private ["SE", "first"]
+- !private ["SE", "frame"]
 - !private ["SE", "height"]
 - !private ["SE", "hideToastActivity"]
 - !private ["SE", "htmlToAttributedString"]
 - ["SE", "init"]
+- !private ["SE", "layer"]
 - !private ["SE", "makeToast"]
 - !private ["SE", "makeToastActivity"]
 - !private ["SE", "numberOfLines"]
@@ -1278,6 +1333,7 @@ depends-member:
 - ["SE", "zero"]
 - !private ["SS10FoundationE8EncodingV", "rawValue"]
 - !private ["SS10FoundationE8EncodingV", "utf8"]
+- !private ["SQ", "ActivityType"]
 - !private ["SQ", "AddtoWishlish"]
 - !private ["SQ", "Amount"]
 - !private ["SQ", "Api_Base_URL"]
@@ -1311,6 +1367,8 @@ depends-member:
 - !private ["SQ", "StringToURL"]
 - !private ["SQ", "Style"]
 - !private ["SQ", "ToastStyle"]
+- !private ["SQ", "UIActivity"]
+- !private ["SQ", "UIActivityViewController"]
 - !private ["SQ", "UIAlertAction"]
 - !private ["SQ", "UIAlertController"]
 - !private ["SQ", "UIApplication"]
@@ -1318,6 +1376,10 @@ depends-member:
 - ["SQ", "UIButton"]
 - !private ["SQ", "UIColor"]
 - !private ["SQ", "UIControl"]
+- !private ["SQ", "UIGraphicsBeginImageContext"]
+- !private ["SQ", "UIGraphicsEndImageContext"]
+- !private ["SQ", "UIGraphicsGetCurrentContext"]
+- !private ["SQ", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["SQ", "UIImage"]
 - !private ["SQ", "UIScreen"]
 - !private ["SQ", "UITableView"]
@@ -1334,14 +1396,15 @@ depends-member:
 - !private ["SQ", "addSubview"]
 - ["SQ", "addTarget"]
 - !private ["SQ", "addTextField"]
+- !private ["SQ", "addToReadingList"]
 - !private ["SQ", "addcartButton"]
+- !private ["SQ", "airDrop"]
 - !private ["SQ", "alert"]
 - !private ["SQ", "append"]
 - !private ["SQ", "async"]
 - !private ["SQ", "attributedText"]
 - !private ["SQ", "automaticDimension"]
 - ["SQ", "backgroundColor"]
-- !private ["SQ", "badgeString"]
 - !private ["SQ", "badgeTextColor"]
 - !private ["SQ", "black"]
 - ["SQ", "blue"]
@@ -1389,6 +1452,7 @@ depends-member:
 - !private ["SQ", "dismiss"]
 - !private ["SQ", "doThisWhenButtonIsTapped"]
 - !private ["SQ", "documentType"]
+- !private ["SQ", "excludedActivityTypes"]
 - !private ["SQ", "faButton"]
 - ["SQ", "fabTapped"]
 - !private ["SQ", "first"]
@@ -1430,6 +1494,7 @@ depends-member:
 - !private ["SQ", "mutableContainers"]
 - !private ["SQ", "mycartApi"]
 - !private ["SQ", "navigationController"]
+- !private ["SQ", "navigationItem"]
 - !private ["SQ", "none"]
 - !private ["SQ", "normal"]
 - !private ["SQ", "numberOfLines"]
@@ -1446,6 +1511,7 @@ depends-member:
 - !private ["SQ", "otpStoreId"]
 - !private ["SQ", "payNowPressed"]
 - !private ["SQ", "placeholder"]
+- !private ["SQ", "popoverPresentationController"]
 - !private ["SQ", "present"]
 - !private ["SQ", "print"]
 - !private ["SQ", "proDescriptionDetailsTextView"]
@@ -1477,10 +1543,11 @@ depends-member:
 - !private ["SQ", "relatedCollectionCellDelegate"]
 - !private ["SQ", "reloadData"]
 - !private ["SQ", "removeFromSuperview"]
+- !private ["SQ", "render"]
 - !private ["SQ", "resume"]
+- !private ["SQ", "rightBarButtonItems"]
 - !private ["SQ", "row"]
 - !private ["SQ", "safeAreaInsets"]
-- !private ["SQ", "screen_value"]
 - ["SQ", "scrollViewDidChangeAdjustedContentInset"]
 - ["SQ", "scrollViewDidEndDecelerating"]
 - ["SQ", "scrollViewDidEndDragging"]
@@ -1510,6 +1577,7 @@ depends-member:
 - !private ["SQ", "size"]
 - !private ["SQ", "sizeArray"]
 - !private ["SQ", "size_status"]
+- !private ["SQ", "sourceView"]
 - !private ["SQ", "spec_string"]
 - !private ["SQ", "specificationLabel"]
 - !private ["SQ", "specificationView"]
@@ -1586,7 +1654,9 @@ depends-member:
 - !private ["s23ExpressibleByNilLiteralP", "bounds"]
 - !private ["s23ExpressibleByNilLiteralP", "dataSource"]
 - !private ["s23ExpressibleByNilLiteralP", "delegate"]
+- !private ["s23ExpressibleByNilLiteralP", "frame"]
 - !private ["s23ExpressibleByNilLiteralP", "hideToastActivity"]
+- !private ["s23ExpressibleByNilLiteralP", "layer"]
 - !private ["s23ExpressibleByNilLiteralP", "makeToast"]
 - !private ["s23ExpressibleByNilLiteralP", "makeToastActivity"]
 - !private ["s23ExpressibleByNilLiteralP", "numberOfLines"]
@@ -1659,7 +1729,6 @@ depends-member:
 - !private ["6SaveUp34FProductDetailsTableViewControllerC", "JSONSerialization"]
 - ["6SaveUp34FProductDetailsTableViewControllerC", "LatLongArray"]
 - !private ["6SaveUp34FProductDetailsTableViewControllerC", "MIBadgeButton"]
-- !private ["6SaveUp34FProductDetailsTableViewControllerC", "MyCartViewController"]
 - !private ["6SaveUp34FProductDetailsTableViewControllerC", "NSAttributedString"]
 - !private ["6SaveUp34FProductDetailsTableViewControllerC", "NSDictionary"]
 - ["6SaveUp34FProductDetailsTableViewControllerC", "NSInteger"]
@@ -1675,6 +1744,8 @@ depends-member:
 - ["6SaveUp34FProductDetailsTableViewControllerC", "String"]
 - !private ["6SaveUp34FProductDetailsTableViewControllerC", "StringToURL"]
 - !private ["6SaveUp34FProductDetailsTableViewControllerC", "ToastStyle"]
+- !private ["6SaveUp34FProductDetailsTableViewControllerC", "UIActivity"]
+- !private ["6SaveUp34FProductDetailsTableViewControllerC", "UIActivityViewController"]
 - !private ["6SaveUp34FProductDetailsTableViewControllerC", "UIAlertAction"]
 - !private ["6SaveUp34FProductDetailsTableViewControllerC", "UIAlertController"]
 - !private ["6SaveUp34FProductDetailsTableViewControllerC", "UIApplication"]
@@ -1683,6 +1754,10 @@ depends-member:
 - ["6SaveUp34FProductDetailsTableViewControllerC", "UICollectionView"]
 - !private ["6SaveUp34FProductDetailsTableViewControllerC", "UIColor"]
 - !private ["6SaveUp34FProductDetailsTableViewControllerC", "UIControl"]
+- !private ["6SaveUp34FProductDetailsTableViewControllerC", "UIGraphicsBeginImageContext"]
+- !private ["6SaveUp34FProductDetailsTableViewControllerC", "UIGraphicsEndImageContext"]
+- !private ["6SaveUp34FProductDetailsTableViewControllerC", "UIGraphicsGetCurrentContext"]
+- !private ["6SaveUp34FProductDetailsTableViewControllerC", "UIGraphicsGetImageFromCurrentImageContext"]
 - ["6SaveUp34FProductDetailsTableViewControllerC", "UIImage"]
 - ["6SaveUp34FProductDetailsTableViewControllerC", "UIImageView"]
 - ["6SaveUp34FProductDetailsTableViewControllerC", "UILabel"]
@@ -1749,6 +1824,7 @@ depends-member:
 - !private ["6SaveUp34FProductDetailsTableViewControllerC", "messageFont"]
 - ["6SaveUp34FProductDetailsTableViewControllerC", "mycartApi"]
 - !private ["6SaveUp34FProductDetailsTableViewControllerC", "navigationController"]
+- !private ["6SaveUp34FProductDetailsTableViewControllerC", "navigationItem"]
 - ["6SaveUp34FProductDetailsTableViewControllerC", "numberOfSections"]
 - ["6SaveUp34FProductDetailsTableViewControllerC", "numberOfSectionsInTableView"]
 - ["6SaveUp34FProductDetailsTableViewControllerC", "otpAmount"]
@@ -1840,6 +1916,7 @@ depends-member:
 - !private ["So11NSFormatterC", "dateFormat"]
 - !private ["So11NSFormatterC", "init"]
 - !private ["So11NSFormatterC", "string"]
+- !private ["SH", "ActivityType"]
 - !private ["SH", "AddtoWishlish"]
 - !private ["SH", "Amount"]
 - !private ["SH", "Api_Base_URL"]
@@ -1873,6 +1950,8 @@ depends-member:
 - !private ["SH", "StringToURL"]
 - !private ["SH", "Style"]
 - !private ["SH", "ToastStyle"]
+- !private ["SH", "UIActivity"]
+- !private ["SH", "UIActivityViewController"]
 - !private ["SH", "UIAlertAction"]
 - !private ["SH", "UIAlertController"]
 - !private ["SH", "UIApplication"]
@@ -1880,6 +1959,10 @@ depends-member:
 - ["SH", "UIButton"]
 - !private ["SH", "UIColor"]
 - !private ["SH", "UIControl"]
+- !private ["SH", "UIGraphicsBeginImageContext"]
+- !private ["SH", "UIGraphicsEndImageContext"]
+- !private ["SH", "UIGraphicsGetCurrentContext"]
+- !private ["SH", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["SH", "UIImage"]
 - !private ["SH", "UIScreen"]
 - !private ["SH", "UITableView"]
@@ -1896,14 +1979,15 @@ depends-member:
 - !private ["SH", "addSubview"]
 - ["SH", "addTarget"]
 - !private ["SH", "addTextField"]
+- !private ["SH", "addToReadingList"]
 - !private ["SH", "addcartButton"]
+- !private ["SH", "airDrop"]
 - !private ["SH", "alert"]
 - !private ["SH", "append"]
 - !private ["SH", "async"]
 - !private ["SH", "attributedText"]
 - !private ["SH", "automaticDimension"]
 - ["SH", "backgroundColor"]
-- !private ["SH", "badgeString"]
 - !private ["SH", "badgeTextColor"]
 - !private ["SH", "black"]
 - ["SH", "blue"]
@@ -1950,6 +2034,7 @@ depends-member:
 - !private ["SH", "dismiss"]
 - !private ["SH", "doThisWhenButtonIsTapped"]
 - !private ["SH", "documentType"]
+- !private ["SH", "excludedActivityTypes"]
 - !private ["SH", "faButton"]
 - ["SH", "fabTapped"]
 - !private ["SH", "first"]
@@ -1989,6 +2074,7 @@ depends-member:
 - !private ["SH", "modalPresentationStyle"]
 - !private ["SH", "mycartApi"]
 - !private ["SH", "navigationController"]
+- !private ["SH", "navigationItem"]
 - !private ["SH", "none"]
 - !private ["SH", "numberOfLines"]
 - ["SH", "numberOfSections"]
@@ -2004,6 +2090,7 @@ depends-member:
 - !private ["SH", "otpStoreId"]
 - !private ["SH", "payNowPressed"]
 - !private ["SH", "placeholder"]
+- !private ["SH", "popoverPresentationController"]
 - !private ["SH", "present"]
 - !private ["SH", "print"]
 - !private ["SH", "proDescriptionDetailsTextView"]
@@ -2035,10 +2122,11 @@ depends-member:
 - !private ["SH", "relatedCollectionCellDelegate"]
 - !private ["SH", "reloadData"]
 - !private ["SH", "removeFromSuperview"]
+- !private ["SH", "render"]
 - !private ["SH", "resume"]
+- !private ["SH", "rightBarButtonItems"]
 - !private ["SH", "row"]
 - !private ["SH", "safeAreaInsets"]
-- !private ["SH", "screen_value"]
 - ["SH", "scrollViewDidChangeAdjustedContentInset"]
 - ["SH", "scrollViewDidEndDecelerating"]
 - ["SH", "scrollViewDidEndDragging"]
@@ -2067,6 +2155,7 @@ depends-member:
 - !private ["SH", "showNetworkErrorAlert"]
 - !private ["SH", "sizeArray"]
 - !private ["SH", "size_status"]
+- !private ["SH", "sourceView"]
 - !private ["SH", "spec_string"]
 - !private ["SH", "specificationLabel"]
 - !private ["SH", "specificationView"]
@@ -2117,7 +2206,6 @@ depends-member:
 - !private ["6SaveUp20KingfisherCompatibleP", "String"]
 - ["6SaveUp20KingfisherCompatibleP", "addTarget"]
 - ["6SaveUp20KingfisherCompatibleP", "backgroundColor"]
-- !private ["6SaveUp20KingfisherCompatibleP", "badgeString"]
 - !private ["6SaveUp20KingfisherCompatibleP", "badgeTextColor"]
 - !private ["6SaveUp20KingfisherCompatibleP", "bottomAnchor"]
 - !private ["6SaveUp20KingfisherCompatibleP", "boundingRect"]
@@ -2151,7 +2239,6 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "htmlToAttributedString"]
 - ["s25LosslessStringConvertibleP", "init"]
 - !private ["6SaveUp13MIBadgeButtonC", "addTarget"]
-- !private ["6SaveUp13MIBadgeButtonC", "badgeString"]
 - !private ["6SaveUp13MIBadgeButtonC", "badgeTextColor"]
 - !private ["6SaveUp13MIBadgeButtonC", "deinit"]
 - !private ["6SaveUp13MIBadgeButtonC", "frame"]
@@ -2176,7 +2263,6 @@ depends-member:
 - !private ["10Foundation19MutableDataProtocolP", "first"]
 - ["10Foundation19MutableDataProtocolP", "init"]
 - !private ["10Foundation19MutableDataProtocolP", "subscript"]
-- !private ["6SaveUp20MyCartViewControllerC", "screen_value"]
 - !private ["So18NSAttributedStringC", "DocumentType"]
 - !private ["So18NSAttributedStringC", "Key"]
 - !private ["So18NSAttributedStringC", "addAttribute"]
@@ -2215,6 +2301,8 @@ depends-member:
 - !private ["So8NSCodingP", "StringToURL"]
 - !private ["So8NSCodingP", "Style"]
 - !private ["So8NSCodingP", "ToastStyle"]
+- !private ["So8NSCodingP", "UIActivity"]
+- !private ["So8NSCodingP", "UIActivityViewController"]
 - !private ["So8NSCodingP", "UIAlertAction"]
 - !private ["So8NSCodingP", "UIAlertController"]
 - !private ["So8NSCodingP", "UIApplication"]
@@ -2222,6 +2310,10 @@ depends-member:
 - ["So8NSCodingP", "UIButton"]
 - !private ["So8NSCodingP", "UIColor"]
 - !private ["So8NSCodingP", "UIControl"]
+- !private ["So8NSCodingP", "UIGraphicsBeginImageContext"]
+- !private ["So8NSCodingP", "UIGraphicsEndImageContext"]
+- !private ["So8NSCodingP", "UIGraphicsGetCurrentContext"]
+- !private ["So8NSCodingP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So8NSCodingP", "UIImage"]
 - !private ["So8NSCodingP", "UIScreen"]
 - !private ["So8NSCodingP", "UITableView"]
@@ -2241,7 +2333,6 @@ depends-member:
 - !private ["So8NSCodingP", "attributedText"]
 - !private ["So8NSCodingP", "automaticDimension"]
 - ["So8NSCodingP", "backgroundColor"]
-- !private ["So8NSCodingP", "badgeString"]
 - !private ["So8NSCodingP", "badgeTextColor"]
 - !private ["So8NSCodingP", "black"]
 - ["So8NSCodingP", "blue"]
@@ -2275,6 +2366,7 @@ depends-member:
 - !private ["So8NSCodingP", "directionLabel"]
 - !private ["So8NSCodingP", "dismiss"]
 - !private ["So8NSCodingP", "doThisWhenButtonIsTapped"]
+- !private ["So8NSCodingP", "excludedActivityTypes"]
 - !private ["So8NSCodingP", "faButton"]
 - ["So8NSCodingP", "fabTapped"]
 - !private ["So8NSCodingP", "floatingButton"]
@@ -2303,6 +2395,7 @@ depends-member:
 - !private ["So8NSCodingP", "modalPresentationStyle"]
 - !private ["So8NSCodingP", "mycartApi"]
 - !private ["So8NSCodingP", "navigationController"]
+- !private ["So8NSCodingP", "navigationItem"]
 - !private ["So8NSCodingP", "numberOfLines"]
 - ["So8NSCodingP", "numberOfSections"]
 - ["So8NSCodingP", "numberOfSectionsInTableView"]
@@ -2314,6 +2407,7 @@ depends-member:
 - !private ["So8NSCodingP", "otpStoreId"]
 - !private ["So8NSCodingP", "payNowPressed"]
 - !private ["So8NSCodingP", "placeholder"]
+- !private ["So8NSCodingP", "popoverPresentationController"]
 - !private ["So8NSCodingP", "present"]
 - !private ["So8NSCodingP", "print"]
 - !private ["So8NSCodingP", "proDescriptionDetailsTextView"]
@@ -2344,8 +2438,9 @@ depends-member:
 - !private ["So8NSCodingP", "relatedCollectionCellDelegate"]
 - !private ["So8NSCodingP", "reloadData"]
 - !private ["So8NSCodingP", "removeFromSuperview"]
+- !private ["So8NSCodingP", "render"]
+- !private ["So8NSCodingP", "rightBarButtonItems"]
 - !private ["So8NSCodingP", "safeAreaInsets"]
-- !private ["So8NSCodingP", "screen_value"]
 - ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSCodingP", "scrollViewDidEndDecelerating"]
 - ["So8NSCodingP", "scrollViewDidEndDragging"]
@@ -2458,6 +2553,8 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "StringToURL"]
 - !private ["So26NSExtensionRequestHandlingP", "Style"]
 - !private ["So26NSExtensionRequestHandlingP", "ToastStyle"]
+- !private ["So26NSExtensionRequestHandlingP", "UIActivity"]
+- !private ["So26NSExtensionRequestHandlingP", "UIActivityViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertAction"]
 - !private ["So26NSExtensionRequestHandlingP", "UIAlertController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
@@ -2465,6 +2562,10 @@ depends-member:
 - ["So26NSExtensionRequestHandlingP", "UIButton"]
 - !private ["So26NSExtensionRequestHandlingP", "UIColor"]
 - !private ["So26NSExtensionRequestHandlingP", "UIControl"]
+- !private ["So26NSExtensionRequestHandlingP", "UIGraphicsBeginImageContext"]
+- !private ["So26NSExtensionRequestHandlingP", "UIGraphicsEndImageContext"]
+- !private ["So26NSExtensionRequestHandlingP", "UIGraphicsGetCurrentContext"]
+- !private ["So26NSExtensionRequestHandlingP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So26NSExtensionRequestHandlingP", "UIImage"]
 - !private ["So26NSExtensionRequestHandlingP", "UIScreen"]
 - !private ["So26NSExtensionRequestHandlingP", "UITableView"]
@@ -2494,6 +2595,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "directionLabel"]
 - !private ["So26NSExtensionRequestHandlingP", "dismiss"]
 - !private ["So26NSExtensionRequestHandlingP", "doThisWhenButtonIsTapped"]
+- !private ["So26NSExtensionRequestHandlingP", "excludedActivityTypes"]
 - !private ["So26NSExtensionRequestHandlingP", "faButton"]
 - ["So26NSExtensionRequestHandlingP", "fabTapped"]
 - !private ["So26NSExtensionRequestHandlingP", "floatingButton"]
@@ -2505,6 +2607,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "modalPresentationStyle"]
 - !private ["So26NSExtensionRequestHandlingP", "mycartApi"]
 - !private ["So26NSExtensionRequestHandlingP", "navigationController"]
+- !private ["So26NSExtensionRequestHandlingP", "navigationItem"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSections"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInTableView"]
 - !private ["So26NSExtensionRequestHandlingP", "otpAmount"]
@@ -2513,6 +2616,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "otpMessage"]
 - !private ["So26NSExtensionRequestHandlingP", "otpStoreId"]
 - !private ["So26NSExtensionRequestHandlingP", "payNowPressed"]
+- !private ["So26NSExtensionRequestHandlingP", "popoverPresentationController"]
 - !private ["So26NSExtensionRequestHandlingP", "present"]
 - !private ["So26NSExtensionRequestHandlingP", "print"]
 - !private ["So26NSExtensionRequestHandlingP", "productDetailsApi"]
@@ -2533,7 +2637,6 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "redeemOfferText"]
 - !private ["So26NSExtensionRequestHandlingP", "redemptionText"]
 - !private ["So26NSExtensionRequestHandlingP", "relatedArray"]
-- !private ["So26NSExtensionRequestHandlingP", "screen_value"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDecelerating"]
 - ["So26NSExtensionRequestHandlingP", "scrollViewDidEndDragging"]
@@ -2630,6 +2733,7 @@ depends-member:
 - !private ["So16NSMutableCopyingP", "subscript"]
 - !private ["So16NSMutableCopyingP", "value"]
 - ["So8NSObjectC", "$__lazy_storage_$_faButton"]
+- !private ["So8NSObjectC", "ActivityType"]
 - ["So8NSObjectC", "AddtoWishlish"]
 - ["So8NSObjectC", "Amount"]
 - !private ["So8NSObjectC", "Api_Base_URL"]
@@ -2660,7 +2764,6 @@ depends-member:
 - !private ["So8NSObjectC", "Key"]
 - ["So8NSObjectC", "LatLongArray"]
 - !private ["So8NSObjectC", "MIBadgeButton"]
-- !private ["So8NSObjectC", "MyCartViewController"]
 - !private ["So8NSObjectC", "NSAttributedString"]
 - !private ["So8NSObjectC", "NSDictionary"]
 - ["So8NSObjectC", "NSInteger"]
@@ -2678,6 +2781,8 @@ depends-member:
 - !private ["So8NSObjectC", "StringToURL"]
 - !private ["So8NSObjectC", "Style"]
 - !private ["So8NSObjectC", "ToastStyle"]
+- !private ["So8NSObjectC", "UIActivity"]
+- !private ["So8NSObjectC", "UIActivityViewController"]
 - !private ["So8NSObjectC", "UIAlertAction"]
 - !private ["So8NSObjectC", "UIAlertController"]
 - !private ["So8NSObjectC", "UIApplication"]
@@ -2686,6 +2791,10 @@ depends-member:
 - ["So8NSObjectC", "UICollectionView"]
 - !private ["So8NSObjectC", "UIColor"]
 - !private ["So8NSObjectC", "UIControl"]
+- !private ["So8NSObjectC", "UIGraphicsBeginImageContext"]
+- !private ["So8NSObjectC", "UIGraphicsEndImageContext"]
+- !private ["So8NSObjectC", "UIGraphicsGetCurrentContext"]
+- !private ["So8NSObjectC", "UIGraphicsGetImageFromCurrentImageContext"]
 - ["So8NSObjectC", "UIImage"]
 - ["So8NSObjectC", "UIImageView"]
 - ["So8NSObjectC", "UILabel"]
@@ -2715,7 +2824,6 @@ depends-member:
 - !private ["So8NSObjectC", "attributedText"]
 - !private ["So8NSObjectC", "automaticDimension"]
 - ["So8NSObjectC", "backgroundColor"]
-- !private ["So8NSObjectC", "badgeString"]
 - !private ["So8NSObjectC", "badgeTextColor"]
 - !private ["So8NSObjectC", "black"]
 - ["So8NSObjectC", "blue"]
@@ -2767,6 +2875,7 @@ depends-member:
 - ["So8NSObjectC", "directionView"]
 - !private ["So8NSObjectC", "dismiss"]
 - ["So8NSObjectC", "doThisWhenButtonIsTapped"]
+- !private ["So8NSObjectC", "excludedActivityTypes"]
 - ["So8NSObjectC", "faButton"]
 - ["So8NSObjectC", "fabTapped"]
 - ["So8NSObjectC", "floatingButton"]
@@ -2805,6 +2914,7 @@ depends-member:
 - !private ["So8NSObjectC", "modalPresentationStyle"]
 - ["So8NSObjectC", "mycartApi"]
 - !private ["So8NSObjectC", "navigationController"]
+- !private ["So8NSObjectC", "navigationItem"]
 - !private ["So8NSObjectC", "numberOfLines"]
 - ["So8NSObjectC", "numberOfSections"]
 - ["So8NSObjectC", "numberOfSectionsInTableView"]
@@ -2818,6 +2928,7 @@ depends-member:
 - ["So8NSObjectC", "otpTextField"]
 - ["So8NSObjectC", "payNowPressed"]
 - !private ["So8NSObjectC", "placeholder"]
+- !private ["So8NSObjectC", "popoverPresentationController"]
 - !private ["So8NSObjectC", "present"]
 - !private ["So8NSObjectC", "print"]
 - !private ["So8NSObjectC", "proDescriptionDetailsTextView"]
@@ -2852,14 +2963,15 @@ depends-member:
 - !private ["So8NSObjectC", "relatedCollectionCellDelegate"]
 - !private ["So8NSObjectC", "reloadData"]
 - !private ["So8NSObjectC", "removeFromSuperview"]
+- !private ["So8NSObjectC", "render"]
 - !private ["So8NSObjectC", "resume"]
 - ["So8NSObjectC", "reviewArray"]
 - ["So8NSObjectC", "reviewButton"]
 - ["So8NSObjectC", "reviewTable"]
 - ["So8NSObjectC", "reviewView"]
+- !private ["So8NSObjectC", "rightBarButtonItems"]
 - !private ["So8NSObjectC", "safeAreaInsets"]
 - ["So8NSObjectC", "scaleKeyPath"]
-- !private ["So8NSObjectC", "screen_value"]
 - ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectC", "scrollViewDidEndDecelerating"]
 - ["So8NSObjectC", "scrollViewDidEndDragging"]
@@ -2893,6 +3005,7 @@ depends-member:
 - ["So8NSObjectC", "sizeTable"]
 - !private ["So8NSObjectC", "size_status"]
 - ["So8NSObjectC", "soldoutLabel"]
+- !private ["So8NSObjectC", "sourceView"]
 - ["So8NSObjectC", "spec_string"]
 - ["So8NSObjectC", "specificationLabel"]
 - ["So8NSObjectC", "specificationView"]
@@ -2933,6 +3046,7 @@ depends-member:
 - !private ["So8NSObjectC", "white"]
 - !private ["So8NSObjectC", "widthAnchor"]
 - !private ["So8NSObjectC", "yy_imageURL"]
+- !private ["So8NSObjectP", "ActivityType"]
 - !private ["So8NSObjectP", "AddtoWishlish"]
 - !private ["So8NSObjectP", "Amount"]
 - !private ["So8NSObjectP", "Api_Base_URL"]
@@ -2965,6 +3079,8 @@ depends-member:
 - !private ["So8NSObjectP", "StringToURL"]
 - !private ["So8NSObjectP", "Style"]
 - !private ["So8NSObjectP", "ToastStyle"]
+- !private ["So8NSObjectP", "UIActivity"]
+- !private ["So8NSObjectP", "UIActivityViewController"]
 - !private ["So8NSObjectP", "UIAlertAction"]
 - !private ["So8NSObjectP", "UIAlertController"]
 - !private ["So8NSObjectP", "UIApplication"]
@@ -2972,6 +3088,10 @@ depends-member:
 - ["So8NSObjectP", "UIButton"]
 - !private ["So8NSObjectP", "UIColor"]
 - !private ["So8NSObjectP", "UIControl"]
+- !private ["So8NSObjectP", "UIGraphicsBeginImageContext"]
+- !private ["So8NSObjectP", "UIGraphicsEndImageContext"]
+- !private ["So8NSObjectP", "UIGraphicsGetCurrentContext"]
+- !private ["So8NSObjectP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So8NSObjectP", "UIImage"]
 - !private ["So8NSObjectP", "UIScreen"]
 - !private ["So8NSObjectP", "UITableView"]
@@ -2993,7 +3113,6 @@ depends-member:
 - !private ["So8NSObjectP", "attributedText"]
 - !private ["So8NSObjectP", "automaticDimension"]
 - ["So8NSObjectP", "backgroundColor"]
-- !private ["So8NSObjectP", "badgeString"]
 - !private ["So8NSObjectP", "badgeTextColor"]
 - !private ["So8NSObjectP", "black"]
 - ["So8NSObjectP", "blue"]
@@ -3029,6 +3148,7 @@ depends-member:
 - !private ["So8NSObjectP", "directionLabel"]
 - !private ["So8NSObjectP", "dismiss"]
 - !private ["So8NSObjectP", "doThisWhenButtonIsTapped"]
+- !private ["So8NSObjectP", "excludedActivityTypes"]
 - !private ["So8NSObjectP", "faButton"]
 - ["So8NSObjectP", "fabTapped"]
 - !private ["So8NSObjectP", "floatingButton"]
@@ -3063,6 +3183,7 @@ depends-member:
 - !private ["So8NSObjectP", "modalPresentationStyle"]
 - !private ["So8NSObjectP", "mycartApi"]
 - !private ["So8NSObjectP", "navigationController"]
+- !private ["So8NSObjectP", "navigationItem"]
 - !private ["So8NSObjectP", "numberOfLines"]
 - ["So8NSObjectP", "numberOfSections"]
 - ["So8NSObjectP", "numberOfSectionsInTableView"]
@@ -3075,6 +3196,7 @@ depends-member:
 - !private ["So8NSObjectP", "otpStoreId"]
 - !private ["So8NSObjectP", "payNowPressed"]
 - !private ["So8NSObjectP", "placeholder"]
+- !private ["So8NSObjectP", "popoverPresentationController"]
 - !private ["So8NSObjectP", "present"]
 - !private ["So8NSObjectP", "print"]
 - !private ["So8NSObjectP", "proDescriptionDetailsTextView"]
@@ -3105,9 +3227,10 @@ depends-member:
 - !private ["So8NSObjectP", "relatedCollectionCellDelegate"]
 - !private ["So8NSObjectP", "reloadData"]
 - !private ["So8NSObjectP", "removeFromSuperview"]
+- !private ["So8NSObjectP", "render"]
 - !private ["So8NSObjectP", "resume"]
+- !private ["So8NSObjectP", "rightBarButtonItems"]
 - !private ["So8NSObjectP", "safeAreaInsets"]
-- !private ["So8NSObjectP", "screen_value"]
 - ["So8NSObjectP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So8NSObjectP", "scrollViewDidEndDecelerating"]
 - ["So8NSObjectP", "scrollViewDidEndDragging"]
@@ -3136,6 +3259,7 @@ depends-member:
 - !private ["So8NSObjectP", "showNetworkErrorAlert"]
 - !private ["So8NSObjectP", "sizeArray"]
 - !private ["So8NSObjectP", "size_status"]
+- !private ["So8NSObjectP", "sourceView"]
 - !private ["So8NSObjectP", "spec_string"]
 - !private ["So8NSObjectP", "specificationLabel"]
 - !private ["So8NSObjectP", "specificationView"]
@@ -3190,6 +3314,7 @@ depends-member:
 - !private ["So14NSSecureCodingP", "lightGray"]
 - !private ["So14NSSecureCodingP", "masksToBounds"]
 - !private ["So14NSSecureCodingP", "object"]
+- !private ["So14NSSecureCodingP", "render"]
 - !private ["So14NSSecureCodingP", "shadowColor"]
 - !private ["So14NSSecureCodingP", "shadowOffset"]
 - !private ["So14NSSecureCodingP", "shadowOpacity"]
@@ -3219,7 +3344,9 @@ depends-member:
 - !private ["Sq", "bounds"]
 - !private ["Sq", "dataSource"]
 - !private ["Sq", "delegate"]
+- !private ["Sq", "frame"]
 - !private ["Sq", "hideToastActivity"]
+- !private ["Sq", "layer"]
 - !private ["Sq", "makeToast"]
 - !private ["Sq", "makeToastActivity"]
 - !private ["Sq", "numberOfLines"]
@@ -3253,6 +3380,8 @@ depends-member:
 - ["Sm", "init"]
 - !private ["Sm", "product_id"]
 - !private ["Sm", "subscript"]
+- !private ["SY", "addToReadingList"]
+- !private ["SY", "airDrop"]
 - !private ["SY", "alert"]
 - !private ["SY", "cancel"]
 - !private ["SY", "center"]
@@ -3312,6 +3441,8 @@ depends-member:
 - ["6SaveUp29RelatedCollectionCellDelegateP", "String"]
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "StringToURL"]
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "ToastStyle"]
+- !private ["6SaveUp29RelatedCollectionCellDelegateP", "UIActivity"]
+- !private ["6SaveUp29RelatedCollectionCellDelegateP", "UIActivityViewController"]
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "UIAlertAction"]
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "UIAlertController"]
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "UIApplication"]
@@ -3319,6 +3450,10 @@ depends-member:
 - ["6SaveUp29RelatedCollectionCellDelegateP", "UIButton"]
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "UIColor"]
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "UIControl"]
+- !private ["6SaveUp29RelatedCollectionCellDelegateP", "UIGraphicsBeginImageContext"]
+- !private ["6SaveUp29RelatedCollectionCellDelegateP", "UIGraphicsEndImageContext"]
+- !private ["6SaveUp29RelatedCollectionCellDelegateP", "UIGraphicsGetCurrentContext"]
+- !private ["6SaveUp29RelatedCollectionCellDelegateP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "UIImage"]
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "UIScreen"]
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "UITableView"]
@@ -3355,6 +3490,7 @@ depends-member:
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "messageFont"]
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "mycartApi"]
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "navigationController"]
+- !private ["6SaveUp29RelatedCollectionCellDelegateP", "navigationItem"]
 - ["6SaveUp29RelatedCollectionCellDelegateP", "numberOfSections"]
 - ["6SaveUp29RelatedCollectionCellDelegateP", "numberOfSectionsInTableView"]
 - !private ["6SaveUp29RelatedCollectionCellDelegateP", "otpAmount"]
@@ -3501,7 +3637,6 @@ depends-member:
 - !private ["6SaveUp10ToastStyleV", "messageFont"]
 - ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "addTarget"]
 - ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "backgroundColor"]
-- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "badgeString"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "badgeTextColor"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "bottomAnchor"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "frame"]
@@ -3526,7 +3661,6 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "attributedText"]
 - !private ["So29UIAccessibilityIdentificationP", "automaticDimension"]
 - ["So29UIAccessibilityIdentificationP", "backgroundColor"]
-- !private ["So29UIAccessibilityIdentificationP", "badgeString"]
 - !private ["So29UIAccessibilityIdentificationP", "badgeTextColor"]
 - !private ["So29UIAccessibilityIdentificationP", "bottomAnchor"]
 - !private ["So29UIAccessibilityIdentificationP", "bounds"]
@@ -3574,6 +3708,10 @@ depends-member:
 - ["So29UIAccessibilityIdentificationP", "translatesAutoresizingMaskIntoConstraints"]
 - !private ["So29UIAccessibilityIdentificationP", "widthAnchor"]
 - !private ["So29UIAccessibilityIdentificationP", "yy_imageURL"]
+- !private ["So10UIActivityC", "ActivityType"]
+- !private ["So24UIActivityViewControllerC", "excludedActivityTypes"]
+- !private ["So24UIActivityViewControllerC", "init"]
+- !private ["So24UIActivityViewControllerC", "popoverPresentationController"]
 - !private ["So13UIAlertActionC", "Style"]
 - !private ["So13UIAlertActionC", "init"]
 - !private ["So17UIAlertControllerC", "Style"]
@@ -3588,7 +3726,6 @@ depends-member:
 - !private ["So12UIAppearanceP", "attributedText"]
 - !private ["So12UIAppearanceP", "automaticDimension"]
 - ["So12UIAppearanceP", "backgroundColor"]
-- !private ["So12UIAppearanceP", "badgeString"]
 - !private ["So12UIAppearanceP", "badgeTextColor"]
 - !private ["So12UIAppearanceP", "bottomAnchor"]
 - !private ["So12UIAppearanceP", "bounds"]
@@ -3666,6 +3803,8 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "StringToURL"]
 - !private ["So21UIAppearanceContainerP", "Style"]
 - !private ["So21UIAppearanceContainerP", "ToastStyle"]
+- !private ["So21UIAppearanceContainerP", "UIActivity"]
+- !private ["So21UIAppearanceContainerP", "UIActivityViewController"]
 - !private ["So21UIAppearanceContainerP", "UIAlertAction"]
 - !private ["So21UIAppearanceContainerP", "UIAlertController"]
 - !private ["So21UIAppearanceContainerP", "UIApplication"]
@@ -3673,6 +3812,10 @@ depends-member:
 - ["So21UIAppearanceContainerP", "UIButton"]
 - !private ["So21UIAppearanceContainerP", "UIColor"]
 - !private ["So21UIAppearanceContainerP", "UIControl"]
+- !private ["So21UIAppearanceContainerP", "UIGraphicsBeginImageContext"]
+- !private ["So21UIAppearanceContainerP", "UIGraphicsEndImageContext"]
+- !private ["So21UIAppearanceContainerP", "UIGraphicsGetCurrentContext"]
+- !private ["So21UIAppearanceContainerP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So21UIAppearanceContainerP", "UIImage"]
 - !private ["So21UIAppearanceContainerP", "UIScreen"]
 - !private ["So21UIAppearanceContainerP", "UITableView"]
@@ -3691,7 +3834,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "attributedText"]
 - !private ["So21UIAppearanceContainerP", "automaticDimension"]
 - ["So21UIAppearanceContainerP", "backgroundColor"]
-- !private ["So21UIAppearanceContainerP", "badgeString"]
 - !private ["So21UIAppearanceContainerP", "badgeTextColor"]
 - !private ["So21UIAppearanceContainerP", "bottomAnchor"]
 - !private ["So21UIAppearanceContainerP", "bounds"]
@@ -3715,6 +3857,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "directionLabel"]
 - !private ["So21UIAppearanceContainerP", "dismiss"]
 - !private ["So21UIAppearanceContainerP", "doThisWhenButtonIsTapped"]
+- !private ["So21UIAppearanceContainerP", "excludedActivityTypes"]
 - !private ["So21UIAppearanceContainerP", "faButton"]
 - ["So21UIAppearanceContainerP", "fabTapped"]
 - !private ["So21UIAppearanceContainerP", "floatingButton"]
@@ -3739,6 +3882,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "modalPresentationStyle"]
 - !private ["So21UIAppearanceContainerP", "mycartApi"]
 - !private ["So21UIAppearanceContainerP", "navigationController"]
+- !private ["So21UIAppearanceContainerP", "navigationItem"]
 - !private ["So21UIAppearanceContainerP", "numberOfLines"]
 - ["So21UIAppearanceContainerP", "numberOfSections"]
 - ["So21UIAppearanceContainerP", "numberOfSectionsInTableView"]
@@ -3749,6 +3893,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "otpStoreId"]
 - !private ["So21UIAppearanceContainerP", "payNowPressed"]
 - !private ["So21UIAppearanceContainerP", "placeholder"]
+- !private ["So21UIAppearanceContainerP", "popoverPresentationController"]
 - !private ["So21UIAppearanceContainerP", "present"]
 - !private ["So21UIAppearanceContainerP", "print"]
 - !private ["So21UIAppearanceContainerP", "proDescriptionDetailsTextView"]
@@ -3780,7 +3925,6 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "reloadData"]
 - !private ["So21UIAppearanceContainerP", "removeFromSuperview"]
 - !private ["So21UIAppearanceContainerP", "safeAreaInsets"]
-- !private ["So21UIAppearanceContainerP", "screen_value"]
 - ["So21UIAppearanceContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So21UIAppearanceContainerP", "scrollViewDidEndDecelerating"]
 - ["So21UIAppearanceContainerP", "scrollViewDidEndDragging"]
@@ -3805,6 +3949,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "shop_id"]
 - !private ["So21UIAppearanceContainerP", "showNetworkErrorAlert"]
 - !private ["So21UIAppearanceContainerP", "sizeArray"]
+- !private ["So21UIAppearanceContainerP", "sourceView"]
 - !private ["So21UIAppearanceContainerP", "spec_string"]
 - !private ["So21UIAppearanceContainerP", "specificationLabel"]
 - !private ["So21UIAppearanceContainerP", "specificationView"]
@@ -3843,7 +3988,6 @@ depends-member:
 - !private ["So9UIBarItemC", "init"]
 - ["So8UIButtonC", "addTarget"]
 - ["So8UIButtonC", "backgroundColor"]
-- !private ["So8UIButtonC", "badgeString"]
 - !private ["So8UIButtonC", "badgeTextColor"]
 - !private ["So8UIButtonC", "bottomAnchor"]
 - !private ["So8UIButtonC", "frame"]
@@ -3907,6 +4051,8 @@ depends-member:
 - !private ["So18UIContentContainerP", "StringToURL"]
 - !private ["So18UIContentContainerP", "Style"]
 - !private ["So18UIContentContainerP", "ToastStyle"]
+- !private ["So18UIContentContainerP", "UIActivity"]
+- !private ["So18UIContentContainerP", "UIActivityViewController"]
 - !private ["So18UIContentContainerP", "UIAlertAction"]
 - !private ["So18UIContentContainerP", "UIAlertController"]
 - !private ["So18UIContentContainerP", "UIApplication"]
@@ -3914,6 +4060,10 @@ depends-member:
 - ["So18UIContentContainerP", "UIButton"]
 - !private ["So18UIContentContainerP", "UIColor"]
 - !private ["So18UIContentContainerP", "UIControl"]
+- !private ["So18UIContentContainerP", "UIGraphicsBeginImageContext"]
+- !private ["So18UIContentContainerP", "UIGraphicsEndImageContext"]
+- !private ["So18UIContentContainerP", "UIGraphicsGetCurrentContext"]
+- !private ["So18UIContentContainerP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So18UIContentContainerP", "UIImage"]
 - !private ["So18UIContentContainerP", "UIScreen"]
 - !private ["So18UIContentContainerP", "UITableView"]
@@ -3943,6 +4093,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "directionLabel"]
 - !private ["So18UIContentContainerP", "dismiss"]
 - !private ["So18UIContentContainerP", "doThisWhenButtonIsTapped"]
+- !private ["So18UIContentContainerP", "excludedActivityTypes"]
 - !private ["So18UIContentContainerP", "faButton"]
 - ["So18UIContentContainerP", "fabTapped"]
 - !private ["So18UIContentContainerP", "floatingButton"]
@@ -3954,6 +4105,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "modalPresentationStyle"]
 - !private ["So18UIContentContainerP", "mycartApi"]
 - !private ["So18UIContentContainerP", "navigationController"]
+- !private ["So18UIContentContainerP", "navigationItem"]
 - ["So18UIContentContainerP", "numberOfSections"]
 - ["So18UIContentContainerP", "numberOfSectionsInTableView"]
 - !private ["So18UIContentContainerP", "otpAmount"]
@@ -3962,6 +4114,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "otpMessage"]
 - !private ["So18UIContentContainerP", "otpStoreId"]
 - !private ["So18UIContentContainerP", "payNowPressed"]
+- !private ["So18UIContentContainerP", "popoverPresentationController"]
 - !private ["So18UIContentContainerP", "present"]
 - !private ["So18UIContentContainerP", "print"]
 - !private ["So18UIContentContainerP", "productDetailsApi"]
@@ -3982,7 +4135,6 @@ depends-member:
 - !private ["So18UIContentContainerP", "redeemOfferText"]
 - !private ["So18UIContentContainerP", "redemptionText"]
 - !private ["So18UIContentContainerP", "relatedArray"]
-- !private ["So18UIContentContainerP", "screen_value"]
 - ["So18UIContentContainerP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIContentContainerP", "scrollViewDidEndDecelerating"]
 - ["So18UIContentContainerP", "scrollViewDidEndDragging"]
@@ -4004,6 +4156,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "shop_id"]
 - !private ["So18UIContentContainerP", "showNetworkErrorAlert"]
 - !private ["So18UIContentContainerP", "sizeArray"]
+- !private ["So18UIContentContainerP", "sourceView"]
 - !private ["So18UIContentContainerP", "spec_string"]
 - !private ["So18UIContentContainerP", "specificationLabel"]
 - !private ["So18UIContentContainerP", "specificationView"]
@@ -4039,7 +4192,6 @@ depends-member:
 - !private ["So9UIControlC", "State"]
 - ["So9UIControlC", "addTarget"]
 - ["So9UIControlC", "backgroundColor"]
-- !private ["So9UIControlC", "badgeString"]
 - !private ["So9UIControlC", "badgeTextColor"]
 - !private ["So9UIControlC", "bottomAnchor"]
 - !private ["So9UIControlC", "frame"]
@@ -4065,7 +4217,6 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "attributedText"]
 - !private ["So17UICoordinateSpaceP", "automaticDimension"]
 - ["So17UICoordinateSpaceP", "backgroundColor"]
-- !private ["So17UICoordinateSpaceP", "badgeString"]
 - !private ["So17UICoordinateSpaceP", "badgeTextColor"]
 - !private ["So17UICoordinateSpaceP", "bottomAnchor"]
 - !private ["So17UICoordinateSpaceP", "bounds"]
@@ -4125,7 +4276,6 @@ depends-member:
 - !private ["So13UIDynamicItemP", "attributedText"]
 - !private ["So13UIDynamicItemP", "automaticDimension"]
 - ["So13UIDynamicItemP", "backgroundColor"]
-- !private ["So13UIDynamicItemP", "badgeString"]
 - !private ["So13UIDynamicItemP", "badgeTextColor"]
 - !private ["So13UIDynamicItemP", "bottomAnchor"]
 - !private ["So13UIDynamicItemP", "bounds"]
@@ -4204,6 +4354,8 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "StringToURL"]
 - !private ["So18UIFocusEnvironmentP", "Style"]
 - !private ["So18UIFocusEnvironmentP", "ToastStyle"]
+- !private ["So18UIFocusEnvironmentP", "UIActivity"]
+- !private ["So18UIFocusEnvironmentP", "UIActivityViewController"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertAction"]
 - !private ["So18UIFocusEnvironmentP", "UIAlertController"]
 - !private ["So18UIFocusEnvironmentP", "UIApplication"]
@@ -4211,6 +4363,10 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "UIButton"]
 - !private ["So18UIFocusEnvironmentP", "UIColor"]
 - !private ["So18UIFocusEnvironmentP", "UIControl"]
+- !private ["So18UIFocusEnvironmentP", "UIGraphicsBeginImageContext"]
+- !private ["So18UIFocusEnvironmentP", "UIGraphicsEndImageContext"]
+- !private ["So18UIFocusEnvironmentP", "UIGraphicsGetCurrentContext"]
+- !private ["So18UIFocusEnvironmentP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So18UIFocusEnvironmentP", "UIImage"]
 - !private ["So18UIFocusEnvironmentP", "UIScreen"]
 - !private ["So18UIFocusEnvironmentP", "UITableView"]
@@ -4229,7 +4385,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "attributedText"]
 - !private ["So18UIFocusEnvironmentP", "automaticDimension"]
 - ["So18UIFocusEnvironmentP", "backgroundColor"]
-- !private ["So18UIFocusEnvironmentP", "badgeString"]
 - !private ["So18UIFocusEnvironmentP", "badgeTextColor"]
 - !private ["So18UIFocusEnvironmentP", "bottomAnchor"]
 - !private ["So18UIFocusEnvironmentP", "bounds"]
@@ -4253,6 +4408,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "directionLabel"]
 - !private ["So18UIFocusEnvironmentP", "dismiss"]
 - !private ["So18UIFocusEnvironmentP", "doThisWhenButtonIsTapped"]
+- !private ["So18UIFocusEnvironmentP", "excludedActivityTypes"]
 - !private ["So18UIFocusEnvironmentP", "faButton"]
 - ["So18UIFocusEnvironmentP", "fabTapped"]
 - !private ["So18UIFocusEnvironmentP", "floatingButton"]
@@ -4277,6 +4433,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "modalPresentationStyle"]
 - !private ["So18UIFocusEnvironmentP", "mycartApi"]
 - !private ["So18UIFocusEnvironmentP", "navigationController"]
+- !private ["So18UIFocusEnvironmentP", "navigationItem"]
 - !private ["So18UIFocusEnvironmentP", "numberOfLines"]
 - ["So18UIFocusEnvironmentP", "numberOfSections"]
 - ["So18UIFocusEnvironmentP", "numberOfSectionsInTableView"]
@@ -4287,6 +4444,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "otpStoreId"]
 - !private ["So18UIFocusEnvironmentP", "payNowPressed"]
 - !private ["So18UIFocusEnvironmentP", "placeholder"]
+- !private ["So18UIFocusEnvironmentP", "popoverPresentationController"]
 - !private ["So18UIFocusEnvironmentP", "present"]
 - !private ["So18UIFocusEnvironmentP", "print"]
 - !private ["So18UIFocusEnvironmentP", "proDescriptionDetailsTextView"]
@@ -4318,7 +4476,6 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "reloadData"]
 - !private ["So18UIFocusEnvironmentP", "removeFromSuperview"]
 - !private ["So18UIFocusEnvironmentP", "safeAreaInsets"]
-- !private ["So18UIFocusEnvironmentP", "screen_value"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidEndDecelerating"]
 - ["So18UIFocusEnvironmentP", "scrollViewDidEndDragging"]
@@ -4343,6 +4500,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "shop_id"]
 - !private ["So18UIFocusEnvironmentP", "showNetworkErrorAlert"]
 - !private ["So18UIFocusEnvironmentP", "sizeArray"]
+- !private ["So18UIFocusEnvironmentP", "sourceView"]
 - !private ["So18UIFocusEnvironmentP", "spec_string"]
 - !private ["So18UIFocusEnvironmentP", "specificationLabel"]
 - !private ["So18UIFocusEnvironmentP", "specificationView"]
@@ -4381,7 +4539,6 @@ depends-member:
 - !private ["So11UIFocusItemP", "attributedText"]
 - !private ["So11UIFocusItemP", "automaticDimension"]
 - ["So11UIFocusItemP", "backgroundColor"]
-- !private ["So11UIFocusItemP", "badgeString"]
 - !private ["So11UIFocusItemP", "badgeTextColor"]
 - !private ["So11UIFocusItemP", "bottomAnchor"]
 - !private ["So11UIFocusItemP", "bounds"]
@@ -4436,7 +4593,6 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "attributedText"]
 - !private ["So20UIFocusItemContainerP", "automaticDimension"]
 - ["So20UIFocusItemContainerP", "backgroundColor"]
-- !private ["So20UIFocusItemContainerP", "badgeString"]
 - !private ["So20UIFocusItemContainerP", "badgeTextColor"]
 - !private ["So20UIFocusItemContainerP", "bottomAnchor"]
 - !private ["So20UIFocusItemContainerP", "bounds"]
@@ -4531,7 +4687,6 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "attributedText"]
 - !private ["So24UILargeContentViewerItemP", "automaticDimension"]
 - ["So24UILargeContentViewerItemP", "backgroundColor"]
-- !private ["So24UILargeContentViewerItemP", "badgeString"]
 - !private ["So24UILargeContentViewerItemP", "badgeTextColor"]
 - !private ["So24UILargeContentViewerItemP", "bottomAnchor"]
 - !private ["So24UILargeContentViewerItemP", "bounds"]
@@ -4581,6 +4736,7 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "yy_imageURL"]
 - !private ["So24UIModalPresentationStyleV", "fullScreen"]
 - !private ["So22UINavigationControllerC", "pushViewController"]
+- !private ["So16UINavigationItemC", "rightBarButtonItems"]
 - !private ["So30UIPasteConfigurationSupportingP", "AddtoWishlish"]
 - !private ["So30UIPasteConfigurationSupportingP", "Amount"]
 - !private ["So30UIPasteConfigurationSupportingP", "Api_Base_URL"]
@@ -4611,6 +4767,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "StringToURL"]
 - !private ["So30UIPasteConfigurationSupportingP", "Style"]
 - !private ["So30UIPasteConfigurationSupportingP", "ToastStyle"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIActivity"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIActivityViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertAction"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIAlertController"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIApplication"]
@@ -4618,6 +4776,10 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "UIButton"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIControl"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIGraphicsBeginImageContext"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIGraphicsEndImageContext"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIGraphicsGetCurrentContext"]
+- !private ["So30UIPasteConfigurationSupportingP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIImage"]
 - !private ["So30UIPasteConfigurationSupportingP", "UIScreen"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITableView"]
@@ -4636,7 +4798,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "attributedText"]
 - !private ["So30UIPasteConfigurationSupportingP", "automaticDimension"]
 - ["So30UIPasteConfigurationSupportingP", "backgroundColor"]
-- !private ["So30UIPasteConfigurationSupportingP", "badgeString"]
 - !private ["So30UIPasteConfigurationSupportingP", "badgeTextColor"]
 - !private ["So30UIPasteConfigurationSupportingP", "bottomAnchor"]
 - !private ["So30UIPasteConfigurationSupportingP", "bounds"]
@@ -4660,6 +4821,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "directionLabel"]
 - !private ["So30UIPasteConfigurationSupportingP", "dismiss"]
 - !private ["So30UIPasteConfigurationSupportingP", "doThisWhenButtonIsTapped"]
+- !private ["So30UIPasteConfigurationSupportingP", "excludedActivityTypes"]
 - !private ["So30UIPasteConfigurationSupportingP", "faButton"]
 - ["So30UIPasteConfigurationSupportingP", "fabTapped"]
 - !private ["So30UIPasteConfigurationSupportingP", "floatingButton"]
@@ -4685,6 +4847,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "modalPresentationStyle"]
 - !private ["So30UIPasteConfigurationSupportingP", "mycartApi"]
 - !private ["So30UIPasteConfigurationSupportingP", "navigationController"]
+- !private ["So30UIPasteConfigurationSupportingP", "navigationItem"]
 - !private ["So30UIPasteConfigurationSupportingP", "numberOfLines"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSectionsInTableView"]
@@ -4696,6 +4859,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "otpStoreId"]
 - !private ["So30UIPasteConfigurationSupportingP", "payNowPressed"]
 - !private ["So30UIPasteConfigurationSupportingP", "placeholder"]
+- !private ["So30UIPasteConfigurationSupportingP", "popoverPresentationController"]
 - !private ["So30UIPasteConfigurationSupportingP", "present"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
 - !private ["So30UIPasteConfigurationSupportingP", "proDescriptionDetailsTextView"]
@@ -4727,7 +4891,6 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "reloadData"]
 - !private ["So30UIPasteConfigurationSupportingP", "removeFromSuperview"]
 - !private ["So30UIPasteConfigurationSupportingP", "safeAreaInsets"]
-- !private ["So30UIPasteConfigurationSupportingP", "screen_value"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDecelerating"]
 - ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDragging"]
@@ -4784,6 +4947,8 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "viewWillDisappear"]
 - !private ["So30UIPasteConfigurationSupportingP", "widthAnchor"]
 - !private ["So30UIPasteConfigurationSupportingP", "yy_imageURL"]
+- !private ["So31UIPopoverPresentationControllerC", "sourceView"]
+- !private ["So24UIPresentationControllerC", "sourceView"]
 - ["So11UIResponderC", "$__lazy_storage_$_faButton"]
 - ["So11UIResponderC", "AddtoWishlish"]
 - ["So11UIResponderC", "Amount"]
@@ -4813,7 +4978,6 @@ depends-member:
 - !private ["So11UIResponderC", "JSONSerialization"]
 - ["So11UIResponderC", "LatLongArray"]
 - !private ["So11UIResponderC", "MIBadgeButton"]
-- !private ["So11UIResponderC", "MyCartViewController"]
 - !private ["So11UIResponderC", "NSAttributedString"]
 - !private ["So11UIResponderC", "NSDictionary"]
 - ["So11UIResponderC", "NSInteger"]
@@ -4831,6 +4995,8 @@ depends-member:
 - !private ["So11UIResponderC", "StringToURL"]
 - !private ["So11UIResponderC", "Style"]
 - !private ["So11UIResponderC", "ToastStyle"]
+- !private ["So11UIResponderC", "UIActivity"]
+- !private ["So11UIResponderC", "UIActivityViewController"]
 - !private ["So11UIResponderC", "UIAlertAction"]
 - !private ["So11UIResponderC", "UIAlertController"]
 - !private ["So11UIResponderC", "UIApplication"]
@@ -4839,6 +5005,10 @@ depends-member:
 - ["So11UIResponderC", "UICollectionView"]
 - !private ["So11UIResponderC", "UIColor"]
 - !private ["So11UIResponderC", "UIControl"]
+- !private ["So11UIResponderC", "UIGraphicsBeginImageContext"]
+- !private ["So11UIResponderC", "UIGraphicsEndImageContext"]
+- !private ["So11UIResponderC", "UIGraphicsGetCurrentContext"]
+- !private ["So11UIResponderC", "UIGraphicsGetImageFromCurrentImageContext"]
 - ["So11UIResponderC", "UIImage"]
 - ["So11UIResponderC", "UIImageView"]
 - ["So11UIResponderC", "UILabel"]
@@ -4865,7 +5035,6 @@ depends-member:
 - !private ["So11UIResponderC", "attributedText"]
 - !private ["So11UIResponderC", "automaticDimension"]
 - ["So11UIResponderC", "backgroundColor"]
-- !private ["So11UIResponderC", "badgeString"]
 - !private ["So11UIResponderC", "badgeTextColor"]
 - !private ["So11UIResponderC", "bottomAnchor"]
 - !private ["So11UIResponderC", "bounds"]
@@ -4905,6 +5074,7 @@ depends-member:
 - ["So11UIResponderC", "directionView"]
 - !private ["So11UIResponderC", "dismiss"]
 - ["So11UIResponderC", "doThisWhenButtonIsTapped"]
+- !private ["So11UIResponderC", "excludedActivityTypes"]
 - ["So11UIResponderC", "faButton"]
 - ["So11UIResponderC", "fabTapped"]
 - ["So11UIResponderC", "floatingButton"]
@@ -4934,6 +5104,7 @@ depends-member:
 - !private ["So11UIResponderC", "modalPresentationStyle"]
 - ["So11UIResponderC", "mycartApi"]
 - !private ["So11UIResponderC", "navigationController"]
+- !private ["So11UIResponderC", "navigationItem"]
 - !private ["So11UIResponderC", "numberOfLines"]
 - ["So11UIResponderC", "numberOfSections"]
 - ["So11UIResponderC", "numberOfSectionsInTableView"]
@@ -4946,6 +5117,7 @@ depends-member:
 - ["So11UIResponderC", "otpTextField"]
 - ["So11UIResponderC", "payNowPressed"]
 - !private ["So11UIResponderC", "placeholder"]
+- !private ["So11UIResponderC", "popoverPresentationController"]
 - !private ["So11UIResponderC", "present"]
 - !private ["So11UIResponderC", "print"]
 - !private ["So11UIResponderC", "proDescriptionDetailsTextView"]
@@ -4986,7 +5158,6 @@ depends-member:
 - ["So11UIResponderC", "reviewView"]
 - !private ["So11UIResponderC", "safeAreaInsets"]
 - ["So11UIResponderC", "scaleKeyPath"]
-- !private ["So11UIResponderC", "screen_value"]
 - ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So11UIResponderC", "scrollViewDidEndDecelerating"]
 - ["So11UIResponderC", "scrollViewDidEndDragging"]
@@ -5081,6 +5252,8 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "StringToURL"]
 - !private ["So30UIResponderStandardEditActionsP", "Style"]
 - !private ["So30UIResponderStandardEditActionsP", "ToastStyle"]
+- !private ["So30UIResponderStandardEditActionsP", "UIActivity"]
+- !private ["So30UIResponderStandardEditActionsP", "UIActivityViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertAction"]
 - !private ["So30UIResponderStandardEditActionsP", "UIAlertController"]
 - !private ["So30UIResponderStandardEditActionsP", "UIApplication"]
@@ -5088,6 +5261,10 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "UIButton"]
 - !private ["So30UIResponderStandardEditActionsP", "UIColor"]
 - !private ["So30UIResponderStandardEditActionsP", "UIControl"]
+- !private ["So30UIResponderStandardEditActionsP", "UIGraphicsBeginImageContext"]
+- !private ["So30UIResponderStandardEditActionsP", "UIGraphicsEndImageContext"]
+- !private ["So30UIResponderStandardEditActionsP", "UIGraphicsGetCurrentContext"]
+- !private ["So30UIResponderStandardEditActionsP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So30UIResponderStandardEditActionsP", "UIImage"]
 - !private ["So30UIResponderStandardEditActionsP", "UIScreen"]
 - !private ["So30UIResponderStandardEditActionsP", "UITableView"]
@@ -5106,7 +5283,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "attributedText"]
 - !private ["So30UIResponderStandardEditActionsP", "automaticDimension"]
 - ["So30UIResponderStandardEditActionsP", "backgroundColor"]
-- !private ["So30UIResponderStandardEditActionsP", "badgeString"]
 - !private ["So30UIResponderStandardEditActionsP", "badgeTextColor"]
 - !private ["So30UIResponderStandardEditActionsP", "bottomAnchor"]
 - !private ["So30UIResponderStandardEditActionsP", "bounds"]
@@ -5130,6 +5306,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "directionLabel"]
 - !private ["So30UIResponderStandardEditActionsP", "dismiss"]
 - !private ["So30UIResponderStandardEditActionsP", "doThisWhenButtonIsTapped"]
+- !private ["So30UIResponderStandardEditActionsP", "excludedActivityTypes"]
 - !private ["So30UIResponderStandardEditActionsP", "faButton"]
 - ["So30UIResponderStandardEditActionsP", "fabTapped"]
 - !private ["So30UIResponderStandardEditActionsP", "floatingButton"]
@@ -5155,6 +5332,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "modalPresentationStyle"]
 - !private ["So30UIResponderStandardEditActionsP", "mycartApi"]
 - !private ["So30UIResponderStandardEditActionsP", "navigationController"]
+- !private ["So30UIResponderStandardEditActionsP", "navigationItem"]
 - !private ["So30UIResponderStandardEditActionsP", "numberOfLines"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSections"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSectionsInTableView"]
@@ -5166,6 +5344,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "otpStoreId"]
 - !private ["So30UIResponderStandardEditActionsP", "payNowPressed"]
 - !private ["So30UIResponderStandardEditActionsP", "placeholder"]
+- !private ["So30UIResponderStandardEditActionsP", "popoverPresentationController"]
 - !private ["So30UIResponderStandardEditActionsP", "present"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
 - !private ["So30UIResponderStandardEditActionsP", "proDescriptionDetailsTextView"]
@@ -5197,7 +5376,6 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "reloadData"]
 - !private ["So30UIResponderStandardEditActionsP", "removeFromSuperview"]
 - !private ["So30UIResponderStandardEditActionsP", "safeAreaInsets"]
-- !private ["So30UIResponderStandardEditActionsP", "screen_value"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDecelerating"]
 - ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDragging"]
@@ -5289,6 +5467,8 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "String"]
 - !private ["So20UIScrollViewDelegateP", "StringToURL"]
 - !private ["So20UIScrollViewDelegateP", "ToastStyle"]
+- !private ["So20UIScrollViewDelegateP", "UIActivity"]
+- !private ["So20UIScrollViewDelegateP", "UIActivityViewController"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertAction"]
 - !private ["So20UIScrollViewDelegateP", "UIAlertController"]
 - !private ["So20UIScrollViewDelegateP", "UIApplication"]
@@ -5296,6 +5476,10 @@ depends-member:
 - ["So20UIScrollViewDelegateP", "UIButton"]
 - !private ["So20UIScrollViewDelegateP", "UIColor"]
 - !private ["So20UIScrollViewDelegateP", "UIControl"]
+- !private ["So20UIScrollViewDelegateP", "UIGraphicsBeginImageContext"]
+- !private ["So20UIScrollViewDelegateP", "UIGraphicsEndImageContext"]
+- !private ["So20UIScrollViewDelegateP", "UIGraphicsGetCurrentContext"]
+- !private ["So20UIScrollViewDelegateP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So20UIScrollViewDelegateP", "UIImage"]
 - !private ["So20UIScrollViewDelegateP", "UIScreen"]
 - !private ["So20UIScrollViewDelegateP", "UITableView"]
@@ -5333,6 +5517,7 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "messageFont"]
 - !private ["So20UIScrollViewDelegateP", "mycartApi"]
 - !private ["So20UIScrollViewDelegateP", "navigationController"]
+- !private ["So20UIScrollViewDelegateP", "navigationItem"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
 - ["So20UIScrollViewDelegateP", "numberOfSectionsInTableView"]
 - !private ["So20UIScrollViewDelegateP", "otpAmount"]
@@ -5362,7 +5547,6 @@ depends-member:
 - !private ["So20UIScrollViewDelegateP", "redemptionText"]
 - !private ["So20UIScrollViewDelegateP", "relatedArray"]
 - !private ["So20UIScrollViewDelegateP", "relatedCollectionCellDelegate"]
-- !private ["So20UIScrollViewDelegateP", "screen_value"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDecelerating"]
 - ["So20UIScrollViewDelegateP", "scrollViewDidEndDragging"]
@@ -5408,7 +5592,6 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "addTextField"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "automaticDimension"]
 - ["So35UISpringLoadedInteractionSupportingP", "backgroundColor"]
-- !private ["So35UISpringLoadedInteractionSupportingP", "badgeString"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "badgeTextColor"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "bottomAnchor"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "dataSource"]
@@ -5456,6 +5639,8 @@ depends-member:
 - !private ["So16UIStateRestoringP", "StringToURL"]
 - !private ["So16UIStateRestoringP", "Style"]
 - !private ["So16UIStateRestoringP", "ToastStyle"]
+- !private ["So16UIStateRestoringP", "UIActivity"]
+- !private ["So16UIStateRestoringP", "UIActivityViewController"]
 - !private ["So16UIStateRestoringP", "UIAlertAction"]
 - !private ["So16UIStateRestoringP", "UIAlertController"]
 - !private ["So16UIStateRestoringP", "UIApplication"]
@@ -5463,6 +5648,10 @@ depends-member:
 - ["So16UIStateRestoringP", "UIButton"]
 - !private ["So16UIStateRestoringP", "UIColor"]
 - !private ["So16UIStateRestoringP", "UIControl"]
+- !private ["So16UIStateRestoringP", "UIGraphicsBeginImageContext"]
+- !private ["So16UIStateRestoringP", "UIGraphicsEndImageContext"]
+- !private ["So16UIStateRestoringP", "UIGraphicsGetCurrentContext"]
+- !private ["So16UIStateRestoringP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So16UIStateRestoringP", "UIImage"]
 - !private ["So16UIStateRestoringP", "UIScreen"]
 - !private ["So16UIStateRestoringP", "UITableView"]
@@ -5492,6 +5681,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "directionLabel"]
 - !private ["So16UIStateRestoringP", "dismiss"]
 - !private ["So16UIStateRestoringP", "doThisWhenButtonIsTapped"]
+- !private ["So16UIStateRestoringP", "excludedActivityTypes"]
 - !private ["So16UIStateRestoringP", "faButton"]
 - ["So16UIStateRestoringP", "fabTapped"]
 - !private ["So16UIStateRestoringP", "floatingButton"]
@@ -5503,6 +5693,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "modalPresentationStyle"]
 - !private ["So16UIStateRestoringP", "mycartApi"]
 - !private ["So16UIStateRestoringP", "navigationController"]
+- !private ["So16UIStateRestoringP", "navigationItem"]
 - ["So16UIStateRestoringP", "numberOfSections"]
 - ["So16UIStateRestoringP", "numberOfSectionsInTableView"]
 - !private ["So16UIStateRestoringP", "otpAmount"]
@@ -5511,6 +5702,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "otpMessage"]
 - !private ["So16UIStateRestoringP", "otpStoreId"]
 - !private ["So16UIStateRestoringP", "payNowPressed"]
+- !private ["So16UIStateRestoringP", "popoverPresentationController"]
 - !private ["So16UIStateRestoringP", "present"]
 - !private ["So16UIStateRestoringP", "print"]
 - !private ["So16UIStateRestoringP", "productDetailsApi"]
@@ -5531,7 +5723,6 @@ depends-member:
 - !private ["So16UIStateRestoringP", "redeemOfferText"]
 - !private ["So16UIStateRestoringP", "redemptionText"]
 - !private ["So16UIStateRestoringP", "relatedArray"]
-- !private ["So16UIStateRestoringP", "screen_value"]
 - ["So16UIStateRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDecelerating"]
 - ["So16UIStateRestoringP", "scrollViewDidEndDragging"]
@@ -5623,6 +5814,8 @@ depends-member:
 - ["So21UITableViewDataSourceP", "String"]
 - !private ["So21UITableViewDataSourceP", "StringToURL"]
 - !private ["So21UITableViewDataSourceP", "ToastStyle"]
+- !private ["So21UITableViewDataSourceP", "UIActivity"]
+- !private ["So21UITableViewDataSourceP", "UIActivityViewController"]
 - !private ["So21UITableViewDataSourceP", "UIAlertAction"]
 - !private ["So21UITableViewDataSourceP", "UIAlertController"]
 - !private ["So21UITableViewDataSourceP", "UIApplication"]
@@ -5630,6 +5823,10 @@ depends-member:
 - ["So21UITableViewDataSourceP", "UIButton"]
 - !private ["So21UITableViewDataSourceP", "UIColor"]
 - !private ["So21UITableViewDataSourceP", "UIControl"]
+- !private ["So21UITableViewDataSourceP", "UIGraphicsBeginImageContext"]
+- !private ["So21UITableViewDataSourceP", "UIGraphicsEndImageContext"]
+- !private ["So21UITableViewDataSourceP", "UIGraphicsGetCurrentContext"]
+- !private ["So21UITableViewDataSourceP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So21UITableViewDataSourceP", "UIImage"]
 - !private ["So21UITableViewDataSourceP", "UIScreen"]
 - !private ["So21UITableViewDataSourceP", "UITableView"]
@@ -5666,6 +5863,7 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "messageFont"]
 - !private ["So21UITableViewDataSourceP", "mycartApi"]
 - !private ["So21UITableViewDataSourceP", "navigationController"]
+- !private ["So21UITableViewDataSourceP", "navigationItem"]
 - ["So21UITableViewDataSourceP", "numberOfSections"]
 - ["So21UITableViewDataSourceP", "numberOfSectionsInTableView"]
 - !private ["So21UITableViewDataSourceP", "otpAmount"]
@@ -5693,7 +5891,6 @@ depends-member:
 - !private ["So21UITableViewDataSourceP", "redeemOfferText"]
 - !private ["So21UITableViewDataSourceP", "redemptionText"]
 - !private ["So21UITableViewDataSourceP", "relatedArray"]
-- !private ["So21UITableViewDataSourceP", "screen_value"]
 - ["So21UITableViewDataSourceP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So21UITableViewDataSourceP", "scrollViewDidEndDecelerating"]
 - ["So21UITableViewDataSourceP", "scrollViewDidEndDragging"]
@@ -5759,6 +5956,8 @@ depends-member:
 - ["So19UITableViewDelegateP", "String"]
 - !private ["So19UITableViewDelegateP", "StringToURL"]
 - !private ["So19UITableViewDelegateP", "ToastStyle"]
+- !private ["So19UITableViewDelegateP", "UIActivity"]
+- !private ["So19UITableViewDelegateP", "UIActivityViewController"]
 - !private ["So19UITableViewDelegateP", "UIAlertAction"]
 - !private ["So19UITableViewDelegateP", "UIAlertController"]
 - !private ["So19UITableViewDelegateP", "UIApplication"]
@@ -5766,6 +5965,10 @@ depends-member:
 - ["So19UITableViewDelegateP", "UIButton"]
 - !private ["So19UITableViewDelegateP", "UIColor"]
 - !private ["So19UITableViewDelegateP", "UIControl"]
+- !private ["So19UITableViewDelegateP", "UIGraphicsBeginImageContext"]
+- !private ["So19UITableViewDelegateP", "UIGraphicsEndImageContext"]
+- !private ["So19UITableViewDelegateP", "UIGraphicsGetCurrentContext"]
+- !private ["So19UITableViewDelegateP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So19UITableViewDelegateP", "UIImage"]
 - !private ["So19UITableViewDelegateP", "UIScreen"]
 - !private ["So19UITableViewDelegateP", "UITableView"]
@@ -5802,6 +6005,7 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "messageFont"]
 - !private ["So19UITableViewDelegateP", "mycartApi"]
 - !private ["So19UITableViewDelegateP", "navigationController"]
+- !private ["So19UITableViewDelegateP", "navigationItem"]
 - ["So19UITableViewDelegateP", "numberOfSections"]
 - ["So19UITableViewDelegateP", "numberOfSectionsInTableView"]
 - !private ["So19UITableViewDelegateP", "otpAmount"]
@@ -5829,7 +6033,6 @@ depends-member:
 - !private ["So19UITableViewDelegateP", "redeemOfferText"]
 - !private ["So19UITableViewDelegateP", "redemptionText"]
 - !private ["So19UITableViewDelegateP", "relatedArray"]
-- !private ["So19UITableViewDelegateP", "screen_value"]
 - ["So19UITableViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So19UITableViewDelegateP", "scrollViewDidEndDecelerating"]
 - ["So19UITableViewDelegateP", "scrollViewDidEndDragging"]
@@ -5883,7 +6086,6 @@ depends-member:
 - !private ["So11UITextFieldC", "placeholder"]
 - !private ["So11UITextFieldC", "text"]
 - !private ["So11UITextFieldC", "textContentType"]
-- !private ["So19UITextFieldDelegateP", "screen_value"]
 - !private ["So11UITextInputP", "attributedText"]
 - !private ["So11UITextInputP", "keyboardType"]
 - !private ["So11UITextInputP", "placeholder"]
@@ -5930,6 +6132,8 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "StringToURL"]
 - !private ["So18UITraitEnvironmentP", "Style"]
 - !private ["So18UITraitEnvironmentP", "ToastStyle"]
+- !private ["So18UITraitEnvironmentP", "UIActivity"]
+- !private ["So18UITraitEnvironmentP", "UIActivityViewController"]
 - !private ["So18UITraitEnvironmentP", "UIAlertAction"]
 - !private ["So18UITraitEnvironmentP", "UIAlertController"]
 - !private ["So18UITraitEnvironmentP", "UIApplication"]
@@ -5937,6 +6141,10 @@ depends-member:
 - ["So18UITraitEnvironmentP", "UIButton"]
 - !private ["So18UITraitEnvironmentP", "UIColor"]
 - !private ["So18UITraitEnvironmentP", "UIControl"]
+- !private ["So18UITraitEnvironmentP", "UIGraphicsBeginImageContext"]
+- !private ["So18UITraitEnvironmentP", "UIGraphicsEndImageContext"]
+- !private ["So18UITraitEnvironmentP", "UIGraphicsGetCurrentContext"]
+- !private ["So18UITraitEnvironmentP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So18UITraitEnvironmentP", "UIImage"]
 - !private ["So18UITraitEnvironmentP", "UIScreen"]
 - !private ["So18UITraitEnvironmentP", "UITableView"]
@@ -5955,7 +6163,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "attributedText"]
 - !private ["So18UITraitEnvironmentP", "automaticDimension"]
 - ["So18UITraitEnvironmentP", "backgroundColor"]
-- !private ["So18UITraitEnvironmentP", "badgeString"]
 - !private ["So18UITraitEnvironmentP", "badgeTextColor"]
 - !private ["So18UITraitEnvironmentP", "bottomAnchor"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
@@ -5979,6 +6186,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "directionLabel"]
 - !private ["So18UITraitEnvironmentP", "dismiss"]
 - !private ["So18UITraitEnvironmentP", "doThisWhenButtonIsTapped"]
+- !private ["So18UITraitEnvironmentP", "excludedActivityTypes"]
 - !private ["So18UITraitEnvironmentP", "faButton"]
 - ["So18UITraitEnvironmentP", "fabTapped"]
 - !private ["So18UITraitEnvironmentP", "floatingButton"]
@@ -6004,6 +6212,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "modalPresentationStyle"]
 - !private ["So18UITraitEnvironmentP", "mycartApi"]
 - !private ["So18UITraitEnvironmentP", "navigationController"]
+- !private ["So18UITraitEnvironmentP", "navigationItem"]
 - !private ["So18UITraitEnvironmentP", "numberOfLines"]
 - ["So18UITraitEnvironmentP", "numberOfSections"]
 - ["So18UITraitEnvironmentP", "numberOfSectionsInTableView"]
@@ -6014,6 +6223,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "otpStoreId"]
 - !private ["So18UITraitEnvironmentP", "payNowPressed"]
 - !private ["So18UITraitEnvironmentP", "placeholder"]
+- !private ["So18UITraitEnvironmentP", "popoverPresentationController"]
 - !private ["So18UITraitEnvironmentP", "present"]
 - !private ["So18UITraitEnvironmentP", "print"]
 - !private ["So18UITraitEnvironmentP", "proDescriptionDetailsTextView"]
@@ -6045,7 +6255,6 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "reloadData"]
 - !private ["So18UITraitEnvironmentP", "removeFromSuperview"]
 - !private ["So18UITraitEnvironmentP", "safeAreaInsets"]
-- !private ["So18UITraitEnvironmentP", "screen_value"]
 - ["So18UITraitEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So18UITraitEnvironmentP", "scrollViewDidEndDecelerating"]
 - ["So18UITraitEnvironmentP", "scrollViewDidEndDragging"]
@@ -6070,6 +6279,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "shop_id"]
 - !private ["So18UITraitEnvironmentP", "showNetworkErrorAlert"]
 - !private ["So18UITraitEnvironmentP", "sizeArray"]
+- !private ["So18UITraitEnvironmentP", "sourceView"]
 - !private ["So18UITraitEnvironmentP", "spec_string"]
 - !private ["So18UITraitEnvironmentP", "specificationLabel"]
 - !private ["So18UITraitEnvironmentP", "specificationView"]
@@ -6131,6 +6341,8 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "StringToURL"]
 - !private ["So23UIUserActivityRestoringP", "Style"]
 - !private ["So23UIUserActivityRestoringP", "ToastStyle"]
+- !private ["So23UIUserActivityRestoringP", "UIActivity"]
+- !private ["So23UIUserActivityRestoringP", "UIActivityViewController"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertAction"]
 - !private ["So23UIUserActivityRestoringP", "UIAlertController"]
 - !private ["So23UIUserActivityRestoringP", "UIApplication"]
@@ -6138,6 +6350,10 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "UIButton"]
 - !private ["So23UIUserActivityRestoringP", "UIColor"]
 - !private ["So23UIUserActivityRestoringP", "UIControl"]
+- !private ["So23UIUserActivityRestoringP", "UIGraphicsBeginImageContext"]
+- !private ["So23UIUserActivityRestoringP", "UIGraphicsEndImageContext"]
+- !private ["So23UIUserActivityRestoringP", "UIGraphicsGetCurrentContext"]
+- !private ["So23UIUserActivityRestoringP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["So23UIUserActivityRestoringP", "UIImage"]
 - !private ["So23UIUserActivityRestoringP", "UIScreen"]
 - !private ["So23UIUserActivityRestoringP", "UITableView"]
@@ -6156,7 +6372,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "attributedText"]
 - !private ["So23UIUserActivityRestoringP", "automaticDimension"]
 - ["So23UIUserActivityRestoringP", "backgroundColor"]
-- !private ["So23UIUserActivityRestoringP", "badgeString"]
 - !private ["So23UIUserActivityRestoringP", "badgeTextColor"]
 - !private ["So23UIUserActivityRestoringP", "bottomAnchor"]
 - !private ["So23UIUserActivityRestoringP", "bounds"]
@@ -6180,6 +6395,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "directionLabel"]
 - !private ["So23UIUserActivityRestoringP", "dismiss"]
 - !private ["So23UIUserActivityRestoringP", "doThisWhenButtonIsTapped"]
+- !private ["So23UIUserActivityRestoringP", "excludedActivityTypes"]
 - !private ["So23UIUserActivityRestoringP", "faButton"]
 - ["So23UIUserActivityRestoringP", "fabTapped"]
 - !private ["So23UIUserActivityRestoringP", "floatingButton"]
@@ -6205,6 +6421,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "modalPresentationStyle"]
 - !private ["So23UIUserActivityRestoringP", "mycartApi"]
 - !private ["So23UIUserActivityRestoringP", "navigationController"]
+- !private ["So23UIUserActivityRestoringP", "navigationItem"]
 - !private ["So23UIUserActivityRestoringP", "numberOfLines"]
 - ["So23UIUserActivityRestoringP", "numberOfSections"]
 - ["So23UIUserActivityRestoringP", "numberOfSectionsInTableView"]
@@ -6216,6 +6433,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "otpStoreId"]
 - !private ["So23UIUserActivityRestoringP", "payNowPressed"]
 - !private ["So23UIUserActivityRestoringP", "placeholder"]
+- !private ["So23UIUserActivityRestoringP", "popoverPresentationController"]
 - !private ["So23UIUserActivityRestoringP", "present"]
 - !private ["So23UIUserActivityRestoringP", "print"]
 - !private ["So23UIUserActivityRestoringP", "proDescriptionDetailsTextView"]
@@ -6247,7 +6465,6 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "reloadData"]
 - !private ["So23UIUserActivityRestoringP", "removeFromSuperview"]
 - !private ["So23UIUserActivityRestoringP", "safeAreaInsets"]
-- !private ["So23UIUserActivityRestoringP", "screen_value"]
 - ["So23UIUserActivityRestoringP", "scrollViewDidChangeAdjustedContentInset"]
 - ["So23UIUserActivityRestoringP", "scrollViewDidEndDecelerating"]
 - ["So23UIUserActivityRestoringP", "scrollViewDidEndDragging"]
@@ -6311,7 +6528,6 @@ depends-member:
 - !private ["So6UIViewC", "attributedText"]
 - !private ["So6UIViewC", "automaticDimension"]
 - ["So6UIViewC", "backgroundColor"]
-- !private ["So6UIViewC", "badgeString"]
 - !private ["So6UIViewC", "badgeTextColor"]
 - !private ["So6UIViewC", "bottomAnchor"]
 - !private ["So6UIViewC", "bounds"]
@@ -6387,7 +6603,6 @@ depends-member:
 - !private ["So16UIViewControllerC", "JSONSerialization"]
 - ["So16UIViewControllerC", "LatLongArray"]
 - !private ["So16UIViewControllerC", "MIBadgeButton"]
-- !private ["So16UIViewControllerC", "MyCartViewController"]
 - !private ["So16UIViewControllerC", "NSAttributedString"]
 - !private ["So16UIViewControllerC", "NSDictionary"]
 - ["So16UIViewControllerC", "NSInteger"]
@@ -6404,6 +6619,8 @@ depends-member:
 - !private ["So16UIViewControllerC", "StringToURL"]
 - !private ["So16UIViewControllerC", "Style"]
 - !private ["So16UIViewControllerC", "ToastStyle"]
+- !private ["So16UIViewControllerC", "UIActivity"]
+- !private ["So16UIViewControllerC", "UIActivityViewController"]
 - !private ["So16UIViewControllerC", "UIAlertAction"]
 - !private ["So16UIViewControllerC", "UIAlertController"]
 - !private ["So16UIViewControllerC", "UIApplication"]
@@ -6412,6 +6629,10 @@ depends-member:
 - ["So16UIViewControllerC", "UICollectionView"]
 - !private ["So16UIViewControllerC", "UIColor"]
 - !private ["So16UIViewControllerC", "UIControl"]
+- !private ["So16UIViewControllerC", "UIGraphicsBeginImageContext"]
+- !private ["So16UIViewControllerC", "UIGraphicsEndImageContext"]
+- !private ["So16UIViewControllerC", "UIGraphicsGetCurrentContext"]
+- !private ["So16UIViewControllerC", "UIGraphicsGetImageFromCurrentImageContext"]
 - ["So16UIViewControllerC", "UIImage"]
 - ["So16UIViewControllerC", "UIImageView"]
 - ["So16UIViewControllerC", "UILabel"]
@@ -6466,6 +6687,7 @@ depends-member:
 - ["So16UIViewControllerC", "directionView"]
 - !private ["So16UIViewControllerC", "dismiss"]
 - ["So16UIViewControllerC", "doThisWhenButtonIsTapped"]
+- !private ["So16UIViewControllerC", "excludedActivityTypes"]
 - ["So16UIViewControllerC", "faButton"]
 - ["So16UIViewControllerC", "fabTapped"]
 - ["So16UIViewControllerC", "floatingButton"]
@@ -6481,6 +6703,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "modalPresentationStyle"]
 - ["So16UIViewControllerC", "mycartApi"]
 - !private ["So16UIViewControllerC", "navigationController"]
+- !private ["So16UIViewControllerC", "navigationItem"]
 - ["So16UIViewControllerC", "numberOfSections"]
 - ["So16UIViewControllerC", "numberOfSectionsInTableView"]
 - ["So16UIViewControllerC", "otpAmount"]
@@ -6490,6 +6713,7 @@ depends-member:
 - ["So16UIViewControllerC", "otpStoreId"]
 - ["So16UIViewControllerC", "otpTextField"]
 - ["So16UIViewControllerC", "payNowPressed"]
+- !private ["So16UIViewControllerC", "popoverPresentationController"]
 - !private ["So16UIViewControllerC", "present"]
 - !private ["So16UIViewControllerC", "print"]
 - ["So16UIViewControllerC", "productDetailsApi"]
@@ -6519,7 +6743,6 @@ depends-member:
 - ["So16UIViewControllerC", "reviewTable"]
 - ["So16UIViewControllerC", "reviewView"]
 - ["So16UIViewControllerC", "scaleKeyPath"]
-- !private ["So16UIViewControllerC", "screen_value"]
 - ["So16UIViewControllerC", "scrollViewDidChangeAdjustedContentInset"]
 - ["So16UIViewControllerC", "scrollViewDidEndDecelerating"]
 - ["So16UIViewControllerC", "scrollViewDidEndDragging"]
@@ -6655,6 +6878,8 @@ depends-member:
 - !private ["s19_HasContiguousBytesP", "htmlToAttributedString"]
 - ["s19_HasContiguousBytesP", "init"]
 - !private ["s19_HasContiguousBytesP", "subscript"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "addToReadingList"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "airDrop"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "append"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "boundingRect"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "characterEncoding"]
@@ -6671,6 +6896,7 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "strikethroughStyle"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "value"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ActivityType"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AddtoWishlish"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Amount"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Api_Base_URL"]
@@ -6703,6 +6929,8 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "StringToURL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Style"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "ToastStyle"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIActivity"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIActivityViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertAction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIAlertController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
@@ -6710,6 +6938,10 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIButton"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIControl"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsBeginImageContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsEndImageContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsGetCurrentContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIImage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIScreen"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableView"]
@@ -6731,7 +6963,6 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "attributedText"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "automaticDimension"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "backgroundColor"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "badgeString"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "badgeTextColor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "black"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "blue"]
@@ -6767,6 +6998,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "directionLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "dismiss"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "doThisWhenButtonIsTapped"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "excludedActivityTypes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "faButton"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "fabTapped"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "floatingButton"]
@@ -6801,6 +7033,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "modalPresentationStyle"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "mycartApi"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationController"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "navigationItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "numberOfLines"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSectionsInTableView"]
@@ -6813,6 +7046,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "otpStoreId"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "payNowPressed"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "placeholder"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "popoverPresentationController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "proDescriptionDetailsTextView"]
@@ -6843,9 +7077,10 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "relatedCollectionCellDelegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "reloadData"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "removeFromSuperview"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "render"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "rightBarButtonItems"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "safeAreaInsets"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "screen_value"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDecelerating"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDragging"]
@@ -6874,6 +7109,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "showNetworkErrorAlert"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "sizeArray"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "size_status"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "sourceView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "spec_string"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "specificationLabel"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "specificationView"]
@@ -6911,6 +7147,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "widthAnchor"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "yy_imageURL"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ActivityType"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AddtoWishlish"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Amount"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Api_Base_URL"]
@@ -6943,6 +7180,8 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "StringToURL"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Style"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ToastStyle"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIActivity"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIActivityViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIAlertAction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIAlertController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIApplication"]
@@ -6950,6 +7189,10 @@ depends-member:
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIButton"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIControl"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIGraphicsBeginImageContext"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIGraphicsEndImageContext"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIGraphicsGetCurrentContext"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIGraphicsGetImageFromCurrentImageContext"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIImage"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIScreen"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UITableView"]
@@ -6971,7 +7214,6 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "attributedText"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "automaticDimension"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "backgroundColor"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "badgeString"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "badgeTextColor"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "black"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "blue"]
@@ -7007,6 +7249,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "directionLabel"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dismiss"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "doThisWhenButtonIsTapped"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "excludedActivityTypes"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "faButton"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "fabTapped"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "floatingButton"]
@@ -7041,6 +7284,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "modalPresentationStyle"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "mycartApi"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationController"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "navigationItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "numberOfLines"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "numberOfSections"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "numberOfSectionsInTableView"]
@@ -7053,6 +7297,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "otpStoreId"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "payNowPressed"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "placeholder"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "popoverPresentationController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "present"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "proDescriptionDetailsTextView"]
@@ -7083,9 +7328,10 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "relatedCollectionCellDelegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "reloadData"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "removeFromSuperview"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "render"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resume"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rightBarButtonItems"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "safeAreaInsets"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "screen_value"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidChangeAdjustedContentInset"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidEndDecelerating"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidEndDragging"]
@@ -7114,6 +7360,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "showNetworkErrorAlert"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sizeArray"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "size_status"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "sourceView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "spec_string"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "specificationLabel"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "specificationView"]
@@ -7154,6 +7401,8 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "Encoding"]
 - !private ["s21_ObjectiveCBridgeableP", "NSAttributedString"]
 - !private ["s21_ObjectiveCBridgeableP", "String"]
+- !private ["s21_ObjectiveCBridgeableP", "addToReadingList"]
+- !private ["s21_ObjectiveCBridgeableP", "airDrop"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "attributedText"]
 - ["s21_ObjectiveCBridgeableP", "blue"]
@@ -7172,6 +7421,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "documentType"]
 - !private ["s21_ObjectiveCBridgeableP", "first"]
 - !private ["s21_ObjectiveCBridgeableP", "font"]
+- !private ["s21_ObjectiveCBridgeableP", "frame"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - !private ["s21_ObjectiveCBridgeableP", "hideToastActivity"]
 - !private ["s21_ObjectiveCBridgeableP", "html"]
@@ -7179,6 +7429,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "httpBody"]
 - !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
 - ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "layer"]
 - !private ["s21_ObjectiveCBridgeableP", "makeToast"]
 - !private ["s21_ObjectiveCBridgeableP", "makeToastActivity"]
 - !private ["s21_ObjectiveCBridgeableP", "numberOfLines"]
@@ -7195,6 +7446,8 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "trailingAnchor"]
 - !private ["s21_ObjectiveCBridgeableP", "width"]
 - ["s21_ObjectiveCBridgeableP", "zero"]
+- !private ["s20_SwiftNewtypeWrapperP", "addToReadingList"]
+- !private ["s20_SwiftNewtypeWrapperP", "airDrop"]
 - !private ["s20_SwiftNewtypeWrapperP", "characterEncoding"]
 - !private ["s20_SwiftNewtypeWrapperP", "documentType"]
 - !private ["s20_SwiftNewtypeWrapperP", "font"]
@@ -7208,7 +7461,6 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "attributedText"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "automaticDimension"]
 - ["s38__DefaultCustomPlaygroundQuickLookableP", "backgroundColor"]
-- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "badgeString"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "badgeTextColor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "bottomAnchor"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "bounds"]
@@ -7259,6 +7511,7 @@ depends-member:
 depends-nominal:
 - "10Accelerate0A6BufferP"
 - "10Accelerate0A13MutableBufferP"
+- !private "So14UIActivityTypea"
 - "s18AdditiveArithmeticP"
 - "Sa"
 - !private "s10ArraySliceV"
@@ -7328,7 +7581,6 @@ depends-nominal:
 - "s10MirrorPathP"
 - "SM"
 - "10Foundation19MutableDataProtocolP"
-- !private "6SaveUp20MyCartViewControllerC"
 - !private "So18NSAttributedStringC"
 - "So8NSCodingP"
 - "So9NSCopyingP"
@@ -7389,6 +7641,8 @@ depends-nominal:
 - !private "6SaveUp10ToastStyleV"
 - "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
+- !private "So10UIActivityC"
+- !private "So24UIActivityViewControllerC"
 - !private "So13UIAlertActionC"
 - !private "So17UIAlertControllerC"
 - "So12UIAppearanceP"
@@ -7422,7 +7676,10 @@ depends-nominal:
 - "So24UILargeContentViewerItemP"
 - !private "So24UIModalPresentationStyleV"
 - !private "So22UINavigationControllerC"
+- !private "So16UINavigationItemC"
 - "So30UIPasteConfigurationSupportingP"
+- !private "So31UIPopoverPresentationControllerC"
+- !private "So24UIPresentationControllerC"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
 - !private "So8UIScreenC"
@@ -7439,7 +7696,6 @@ depends-nominal:
 - !private "So15UITextDraggableP"
 - !private "So15UITextDroppableP"
 - !private "So11UITextFieldC"
-- !private "So19UITextFieldDelegateP"
 - !private "So11UITextInputP"
 - !private "So17UITextInputTraitsP"
 - !private "So34UITextPasteConfigurationSupportingP"
@@ -7522,7 +7778,7 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugInCOM.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h"
@@ -7534,6 +7790,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig-umbrella.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/LinearAlgebra.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
@@ -7684,7 +7942,7 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PayPalMobile/PayPalMobile.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/file.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/clonefile.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/copyfile.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSParagraphStyle.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTParagraphStyle.h"
@@ -7752,6 +8010,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CVBase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecBase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/IOSurface.framework/Headers/IOSurfaceBase.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKDeviceViewControllerBase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/base.h"
@@ -7772,7 +8031,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
@@ -7837,12 +8096,12 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISpringLoadedInteractionSupporting.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityContentSizeCategoryImageAdjusting.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIContentSizeCategoryAdjusting.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSKeyValueObserving.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStringDrawing.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSStringDrawing.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/os/log.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/syslog.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/syslog.h"
@@ -7879,7 +8138,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/Block.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/dispatch/block.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/clock.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CADisplayLink.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKPlacemark.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLPlacemark.h"
@@ -7994,7 +8253,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIScreen.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/libgen.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFAccessToken.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/netinet/in.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderDomain.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLErrorDomain.h"
@@ -8032,7 +8291,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKFoundation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalizedIndexedCollation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CAAnimation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h"
@@ -8080,7 +8339,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontCollection.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXPCConnection.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLConnection.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGFunction.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CAValueFunction.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CAMediaTimingFunction.h"
@@ -8095,10 +8354,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarCommon.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/secure/_common.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKDeviceButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKUserTrackingButton.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKCompassButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPattern.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CVReturn.h"
@@ -8111,7 +8371,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/spawn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/spawn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CoreVideo.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
@@ -8229,14 +8489,14 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/YYWebImage/YYWebImageManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureManager.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSkinManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUndoManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStatusBarManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderManager.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/DocumentManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSLayoutManager.h"
@@ -8255,7 +8515,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITabBarController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImagePickerController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrinterPickerController.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPopoverController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIVideoEditorController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAlertController.h"
@@ -8340,8 +8600,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTypesetter.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapSnapshotter.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSKeyedArchiver.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILargeContentViewer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CALayer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGLayer.h"
@@ -8391,7 +8651,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/error.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/mach_error.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProcessor.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/processor.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageAccumulator.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDynamicAnimator.h"
@@ -8498,7 +8758,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/strings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/secure/_strings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSettings.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
@@ -8597,11 +8857,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sysexits.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserDefaults.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/ttydefaults.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPersonNameComponents.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/bsm/audit_uevents.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/appleapiopts.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/thread_special_ports.h"
@@ -8714,7 +8974,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/ShareSheet.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActionSheet.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/shims/Target.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFSocket.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/socket.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/arpa/inet.h"
@@ -8726,8 +8986,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageAsset.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/_types/_fd_isset.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AccountKit.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFAccountKit.h"
@@ -8741,14 +9001,14 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGradient.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIMenuElement.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityElement.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMeasurement.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationAttachment.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSTextAttachment.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h"
@@ -8762,7 +9022,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIEvent.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLEvent.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPressesEvent.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/event.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFocusMovementHint.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/sys/_types/_u_int.h"
@@ -8796,7 +9056,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecImportExport.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLRequest.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchRequest.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationRequest.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderRequest.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKDirectionsRequest.h"
@@ -8845,7 +9105,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKCircleView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKPolylineView.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayPathView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStackView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIScrollView.h"
@@ -8855,10 +9115,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMarkerAnnotationView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UICollectionView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapView.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPickerView.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewHeaderFooterView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityIndicatorView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIProgressView.h"
@@ -8922,8 +9182,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/shims/Visibility.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibility.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationLegacySwiftCompatibility.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFFileSecurity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/mach/host_security.h"
@@ -8941,8 +9201,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Products/Debug-iphonesimulator/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"

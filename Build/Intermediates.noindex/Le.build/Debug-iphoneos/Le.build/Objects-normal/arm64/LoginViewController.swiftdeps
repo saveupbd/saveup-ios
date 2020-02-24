@@ -39,6 +39,7 @@ depends-top-level:
 - !private "AKFSkinType"
 - "AKFViewController"
 - "AKFViewControllerDelegate"
+- !private "AccessToken"
 - !private "Api_Base_URL"
 - !private "AppConfig"
 - !private "AppDelegate"
@@ -103,6 +104,7 @@ depends-top-level:
 - !private "Void"
 - !private "messageFont"
 - !private "print"
+- !private "||"
 depends-member:
 - !private ["So13AKFAccountKitC", "currentAccessToken"]
 - !private ["So13AKFAccountKitC", "init"]
@@ -128,6 +130,7 @@ depends-member:
 - !private ["So25AKFViewControllerDelegateP", "AKFBackgroundTint"]
 - !private ["So25AKFViewControllerDelegateP", "AKFSkinManager"]
 - !private ["So25AKFViewControllerDelegateP", "AKFSkinType"]
+- !private ["So25AKFViewControllerDelegateP", "AccessToken"]
 - !private ["So25AKFViewControllerDelegateP", "Api_Base_URL"]
 - !private ["So25AKFViewControllerDelegateP", "AppConfig"]
 - !private ["So25AKFViewControllerDelegateP", "Auth"]
@@ -162,6 +165,7 @@ depends-member:
 - ["So25AKFViewControllerDelegateP", ""]
 - !private ["So25AKFViewControllerDelegateP", "accountKit"]
 - !private ["So25AKFViewControllerDelegateP", "animateViewMoving"]
+- !private ["So25AKFViewControllerDelegateP", "btnGoogleLogin"]
 - !private ["So25AKFViewControllerDelegateP", "btnGuest"]
 - !private ["So25AKFViewControllerDelegateP", "configureFacebook"]
 - !private ["So25AKFViewControllerDelegateP", "configureGoogleSignInButton"]
@@ -170,10 +174,13 @@ depends-member:
 - !private ["So25AKFViewControllerDelegateP", "emailText"]
 - !private ["So25AKFViewControllerDelegateP", "facebookApi"]
 - !private ["So25AKFViewControllerDelegateP", "facebookLoginButton"]
+- !private ["So25AKFViewControllerDelegateP", "fbImgString"]
 - !private ["So25AKFViewControllerDelegateP", "fbidString"]
+- !private ["So25AKFViewControllerDelegateP", "fbtokenString"]
 - ["So25AKFViewControllerDelegateP", "gestureRecognizer"]
 - ["So25AKFViewControllerDelegateP", "gestureRecognizerShouldBegin"]
 - !private ["So25AKFViewControllerDelegateP", "googleApi"]
+- !private ["So25AKFViewControllerDelegateP", "googleIdToken"]
 - !private ["So25AKFViewControllerDelegateP", "isValidEmail"]
 - !private ["So25AKFViewControllerDelegateP", "loginApi"]
 - ["So25AKFViewControllerDelegateP", "loginButton"]
@@ -199,6 +206,8 @@ depends-member:
 - !private ["10Accelerate0A6BufferP", "subscript"]
 - !private ["10Accelerate0A13MutableBufferP", "count"]
 - !private ["10Accelerate0A13MutableBufferP", "subscript"]
+- !private ["So16FBSDKAccessTokenC", "current"]
+- !private ["So16FBSDKAccessTokenC", "tokenString"]
 - !private ["6SaveUp9AppConfigC", "UserdefaultKeys"]
 - !private ["6SaveUp11AppDelegateC", "deinit"]
 - !private ["6SaveUp11AppDelegateC", "window"]
@@ -225,6 +234,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "frame"]
 - !private ["So15CALayerDelegateP", "hideToastActivity"]
 - !private ["So15CALayerDelegateP", "image"]
+- !private ["So15CALayerDelegateP", "imageView"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "insertSubview"]
 - !private ["So15CALayerDelegateP", "isEnabled"]
@@ -242,6 +252,7 @@ depends-member:
 - !private ["s7CVarArgP", "AKFBackgroundTint"]
 - !private ["s7CVarArgP", "AKFSkinManager"]
 - !private ["s7CVarArgP", "AKFSkinType"]
+- !private ["s7CVarArgP", "AccessToken"]
 - !private ["s7CVarArgP", "Api_Base_URL"]
 - !private ["s7CVarArgP", "AppConfig"]
 - !private ["s7CVarArgP", "Auth"]
@@ -294,6 +305,7 @@ depends-member:
 - !private ["s7CVarArgP", "becomeFirstResponder"]
 - !private ["s7CVarArgP", "beginAnimations"]
 - !private ["s7CVarArgP", "bounds"]
+- !private ["s7CVarArgP", "btnGoogleLogin"]
 - !private ["s7CVarArgP", "btnGuest"]
 - !private ["s7CVarArgP", "clientID"]
 - !private ["s7CVarArgP", "commitAnimations"]
@@ -302,6 +314,7 @@ depends-member:
 - !private ["s7CVarArgP", "contentMode"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "credential"]
+- !private ["s7CVarArgP", "current"]
 - !private ["s7CVarArgP", "currentAccessToken"]
 - !private ["s7CVarArgP", "currentUser"]
 - !private ["s7CVarArgP", "data"]
@@ -316,16 +329,22 @@ depends-member:
 - !private ["s7CVarArgP", "evaluate"]
 - !private ["s7CVarArgP", "facebookApi"]
 - !private ["s7CVarArgP", "facebookLoginButton"]
+- !private ["s7CVarArgP", "fbImgString"]
 - !private ["s7CVarArgP", "fbidString"]
+- !private ["s7CVarArgP", "fbtokenString"]
 - !private ["s7CVarArgP", "font"]
 - !private ["s7CVarArgP", "frame"]
 - ["s7CVarArgP", "gestureRecognizer"]
 - ["s7CVarArgP", "gestureRecognizerShouldBegin"]
+- !private ["s7CVarArgP", "getIDTokenForcingRefresh"]
 - !private ["s7CVarArgP", "googleApi"]
+- !private ["s7CVarArgP", "googleIdToken"]
 - !private ["s7CVarArgP", "gray"]
 - !private ["s7CVarArgP", "hideToastActivity"]
 - !private ["s7CVarArgP", "idToken"]
 - !private ["s7CVarArgP", "image"]
+- !private ["s7CVarArgP", "imageURL"]
+- !private ["s7CVarArgP", "imageView"]
 - !private ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "insertSubview"]
 - !private ["s7CVarArgP", "instantiateViewController"]
@@ -353,6 +372,7 @@ depends-member:
 - !private ["s7CVarArgP", "present"]
 - !private ["s7CVarArgP", "presentingViewController"]
 - !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "profile"]
 - !private ["s7CVarArgP", "resignFirstResponder"]
 - !private ["s7CVarArgP", "resume"]
 - !private ["s7CVarArgP", "rootViewController"]
@@ -372,6 +392,7 @@ depends-member:
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "synchronize"]
 - !private ["s7CVarArgP", "text"]
+- !private ["s7CVarArgP", "tokenString"]
 - !private ["s7CVarArgP", "value"]
 - !private ["s7CVarArgP", "view"]
 - ["s7CVarArgP", "viewController"]
@@ -394,10 +415,13 @@ depends-member:
 - !private ["So17UIViewContentModeV", "scaleAspectFill"]
 - !private ["10Foundation15ContiguousBytesP", "count"]
 - !private ["10Foundation15ContiguousBytesP", "subscript"]
+- !private ["So12FBSDKCopyingP", "current"]
+- !private ["So12FBSDKCopyingP", "tokenString"]
 - !private ["s28CustomDebugStringConvertibleP", "AKFAccountKit"]
 - !private ["s28CustomDebugStringConvertibleP", "AKFBackgroundTint"]
 - !private ["s28CustomDebugStringConvertibleP", "AKFSkinManager"]
 - !private ["s28CustomDebugStringConvertibleP", "AKFSkinType"]
+- !private ["s28CustomDebugStringConvertibleP", "AccessToken"]
 - !private ["s28CustomDebugStringConvertibleP", "Api_Base_URL"]
 - !private ["s28CustomDebugStringConvertibleP", "AppConfig"]
 - !private ["s28CustomDebugStringConvertibleP", "Auth"]
@@ -436,6 +460,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "UserdefaultKeys"]
 - !private ["s28CustomDebugStringConvertibleP", "Valid_Email_Message"]
 - ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "absoluteString"]
 - !private ["s28CustomDebugStringConvertibleP", "accessToken"]
 - !private ["s28CustomDebugStringConvertibleP", "accountKit"]
 - !private ["s28CustomDebugStringConvertibleP", "addAction"]
@@ -450,6 +475,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "becomeFirstResponder"]
 - !private ["s28CustomDebugStringConvertibleP", "beginAnimations"]
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
+- !private ["s28CustomDebugStringConvertibleP", "btnGoogleLogin"]
 - !private ["s28CustomDebugStringConvertibleP", "btnGuest"]
 - !private ["s28CustomDebugStringConvertibleP", "center"]
 - !private ["s28CustomDebugStringConvertibleP", "clientID"]
@@ -459,6 +485,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "contentMode"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "credential"]
+- !private ["s28CustomDebugStringConvertibleP", "current"]
 - !private ["s28CustomDebugStringConvertibleP", "currentAccessToken"]
 - !private ["s28CustomDebugStringConvertibleP", "currentUser"]
 - !private ["s28CustomDebugStringConvertibleP", "data"]
@@ -473,18 +500,24 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "evaluate"]
 - !private ["s28CustomDebugStringConvertibleP", "facebookApi"]
 - !private ["s28CustomDebugStringConvertibleP", "facebookLoginButton"]
+- !private ["s28CustomDebugStringConvertibleP", "fbImgString"]
 - !private ["s28CustomDebugStringConvertibleP", "fbidString"]
+- !private ["s28CustomDebugStringConvertibleP", "fbtokenString"]
 - !private ["s28CustomDebugStringConvertibleP", "font"]
 - !private ["s28CustomDebugStringConvertibleP", "frame"]
 - ["s28CustomDebugStringConvertibleP", "gestureRecognizer"]
 - ["s28CustomDebugStringConvertibleP", "gestureRecognizerShouldBegin"]
+- !private ["s28CustomDebugStringConvertibleP", "getIDTokenForcingRefresh"]
 - !private ["s28CustomDebugStringConvertibleP", "googleApi"]
+- !private ["s28CustomDebugStringConvertibleP", "googleIdToken"]
 - !private ["s28CustomDebugStringConvertibleP", "gray"]
 - !private ["s28CustomDebugStringConvertibleP", "hideToastActivity"]
 - !private ["s28CustomDebugStringConvertibleP", "httpBody"]
 - !private ["s28CustomDebugStringConvertibleP", "httpMethod"]
 - !private ["s28CustomDebugStringConvertibleP", "idToken"]
 - !private ["s28CustomDebugStringConvertibleP", "image"]
+- !private ["s28CustomDebugStringConvertibleP", "imageURL"]
+- !private ["s28CustomDebugStringConvertibleP", "imageView"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "insertSubview"]
 - !private ["s28CustomDebugStringConvertibleP", "instantiateViewController"]
@@ -513,6 +546,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "present"]
 - !private ["s28CustomDebugStringConvertibleP", "presentingViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "profile"]
 - !private ["s28CustomDebugStringConvertibleP", "resignFirstResponder"]
 - !private ["s28CustomDebugStringConvertibleP", "resume"]
 - !private ["s28CustomDebugStringConvertibleP", "rootViewController"]
@@ -532,6 +566,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "synchronize"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
+- !private ["s28CustomDebugStringConvertibleP", "tokenString"]
 - !private ["s28CustomDebugStringConvertibleP", "uuidString"]
 - !private ["s28CustomDebugStringConvertibleP", "value"]
 - !private ["s28CustomDebugStringConvertibleP", "view"]
@@ -544,6 +579,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "white"]
 - !private ["s28CustomDebugStringConvertibleP", "window"]
 - !private ["s17CustomReflectableP", "Encoding"]
+- !private ["s17CustomReflectableP", "absoluteString"]
 - !private ["s17CustomReflectableP", "alpha"]
 - !private ["s17CustomReflectableP", "attributedPlaceholder"]
 - !private ["s17CustomReflectableP", "authentication"]
@@ -552,6 +588,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "clientID"]
 - !private ["s17CustomReflectableP", "count"]
 - !private ["s17CustomReflectableP", "currentAccessToken"]
+- !private ["s17CustomReflectableP", "currentUser"]
 - !private ["s17CustomReflectableP", "data"]
 - !private ["s17CustomReflectableP", "delegate"]
 - !private ["s17CustomReflectableP", "font"]
@@ -559,6 +596,8 @@ depends-member:
 - !private ["s17CustomReflectableP", "hideToastActivity"]
 - !private ["s17CustomReflectableP", "httpBody"]
 - !private ["s17CustomReflectableP", "httpMethod"]
+- !private ["s17CustomReflectableP", "imageURL"]
+- !private ["s17CustomReflectableP", "imageView"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "insertSubview"]
 - !private ["s17CustomReflectableP", "isEnabled"]
@@ -567,6 +606,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "object"]
 - !private ["s17CustomReflectableP", "offsetBy"]
 - !private ["s17CustomReflectableP", "permissions"]
+- !private ["s17CustomReflectableP", "profile"]
 - !private ["s17CustomReflectableP", "resignFirstResponder"]
 - !private ["s17CustomReflectableP", "signIn"]
 - !private ["s17CustomReflectableP", "subscript"]
@@ -578,6 +618,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "AKFBackgroundTint"]
 - !private ["s23CustomStringConvertibleP", "AKFSkinManager"]
 - !private ["s23CustomStringConvertibleP", "AKFSkinType"]
+- !private ["s23CustomStringConvertibleP", "AccessToken"]
 - !private ["s23CustomStringConvertibleP", "Api_Base_URL"]
 - !private ["s23CustomStringConvertibleP", "AppConfig"]
 - !private ["s23CustomStringConvertibleP", "Auth"]
@@ -616,6 +657,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "UserdefaultKeys"]
 - !private ["s23CustomStringConvertibleP", "Valid_Email_Message"]
 - ["s23CustomStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "absoluteString"]
 - !private ["s23CustomStringConvertibleP", "accessToken"]
 - !private ["s23CustomStringConvertibleP", "accountKit"]
 - !private ["s23CustomStringConvertibleP", "addAction"]
@@ -632,6 +674,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "becomeFirstResponder"]
 - !private ["s23CustomStringConvertibleP", "beginAnimations"]
 - !private ["s23CustomStringConvertibleP", "bounds"]
+- !private ["s23CustomStringConvertibleP", "btnGoogleLogin"]
 - !private ["s23CustomStringConvertibleP", "btnGuest"]
 - !private ["s23CustomStringConvertibleP", "clientID"]
 - !private ["s23CustomStringConvertibleP", "commitAnimations"]
@@ -640,6 +683,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "contentMode"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "credential"]
+- !private ["s23CustomStringConvertibleP", "current"]
 - !private ["s23CustomStringConvertibleP", "currentAccessToken"]
 - !private ["s23CustomStringConvertibleP", "currentUser"]
 - !private ["s23CustomStringConvertibleP", "data"]
@@ -654,18 +698,24 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "evaluate"]
 - !private ["s23CustomStringConvertibleP", "facebookApi"]
 - !private ["s23CustomStringConvertibleP", "facebookLoginButton"]
+- !private ["s23CustomStringConvertibleP", "fbImgString"]
 - !private ["s23CustomStringConvertibleP", "fbidString"]
+- !private ["s23CustomStringConvertibleP", "fbtokenString"]
 - !private ["s23CustomStringConvertibleP", "font"]
 - !private ["s23CustomStringConvertibleP", "frame"]
 - ["s23CustomStringConvertibleP", "gestureRecognizer"]
 - ["s23CustomStringConvertibleP", "gestureRecognizerShouldBegin"]
+- !private ["s23CustomStringConvertibleP", "getIDTokenForcingRefresh"]
 - !private ["s23CustomStringConvertibleP", "googleApi"]
+- !private ["s23CustomStringConvertibleP", "googleIdToken"]
 - !private ["s23CustomStringConvertibleP", "gray"]
 - !private ["s23CustomStringConvertibleP", "hideToastActivity"]
 - !private ["s23CustomStringConvertibleP", "httpBody"]
 - !private ["s23CustomStringConvertibleP", "httpMethod"]
 - !private ["s23CustomStringConvertibleP", "idToken"]
 - !private ["s23CustomStringConvertibleP", "image"]
+- !private ["s23CustomStringConvertibleP", "imageURL"]
+- !private ["s23CustomStringConvertibleP", "imageView"]
 - !private ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "insertSubview"]
 - !private ["s23CustomStringConvertibleP", "instantiateViewController"]
@@ -693,6 +743,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "present"]
 - !private ["s23CustomStringConvertibleP", "presentingViewController"]
 - !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "profile"]
 - !private ["s23CustomStringConvertibleP", "resignFirstResponder"]
 - !private ["s23CustomStringConvertibleP", "resume"]
 - !private ["s23CustomStringConvertibleP", "rootViewController"]
@@ -712,6 +763,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "synchronize"]
 - !private ["s23CustomStringConvertibleP", "text"]
+- !private ["s23CustomStringConvertibleP", "tokenString"]
 - !private ["s23CustomStringConvertibleP", "utf8"]
 - !private ["s23CustomStringConvertibleP", "uuidString"]
 - !private ["s23CustomStringConvertibleP", "value"]
@@ -727,6 +779,7 @@ depends-member:
 - !private ["10Foundation12DataProtocolP", "count"]
 - !private ["10Foundation12DataProtocolP", "subscript"]
 - !private ["Se", "Encoding"]
+- !private ["Se", "absoluteString"]
 - !private ["Se", "alpha"]
 - !private ["Se", "attributedPlaceholder"]
 - !private ["Se", "authentication"]
@@ -735,11 +788,14 @@ depends-member:
 - !private ["Se", "clientID"]
 - !private ["Se", "count"]
 - !private ["Se", "currentAccessToken"]
+- !private ["Se", "currentUser"]
 - !private ["Se", "data"]
 - !private ["Se", "delegate"]
 - !private ["Se", "font"]
 - !private ["Se", "frame"]
 - !private ["Se", "hideToastActivity"]
+- !private ["Se", "imageURL"]
+- !private ["Se", "imageView"]
 - !private ["Se", "init"]
 - !private ["Se", "insertSubview"]
 - !private ["Se", "isEnabled"]
@@ -747,6 +803,7 @@ depends-member:
 - !private ["Se", "makeToastActivity"]
 - !private ["Se", "offsetBy"]
 - !private ["Se", "permissions"]
+- !private ["Se", "profile"]
 - !private ["Se", "resignFirstResponder"]
 - !private ["Se", "signIn"]
 - !private ["Se", "subscript"]
@@ -760,6 +817,7 @@ depends-member:
 - !private ["So17OS_dispatch_queueC", "async"]
 - !private ["So17OS_dispatch_queueC", "main"]
 - !private ["SE", "Encoding"]
+- !private ["SE", "absoluteString"]
 - !private ["SE", "alpha"]
 - !private ["SE", "attributedPlaceholder"]
 - !private ["SE", "authentication"]
@@ -768,11 +826,14 @@ depends-member:
 - !private ["SE", "clientID"]
 - !private ["SE", "count"]
 - !private ["SE", "currentAccessToken"]
+- !private ["SE", "currentUser"]
 - !private ["SE", "data"]
 - !private ["SE", "delegate"]
 - !private ["SE", "font"]
 - !private ["SE", "frame"]
 - !private ["SE", "hideToastActivity"]
+- !private ["SE", "imageURL"]
+- !private ["SE", "imageView"]
 - !private ["SE", "init"]
 - !private ["SE", "insertSubview"]
 - !private ["SE", "isEnabled"]
@@ -780,6 +841,7 @@ depends-member:
 - !private ["SE", "makeToastActivity"]
 - !private ["SE", "offsetBy"]
 - !private ["SE", "permissions"]
+- !private ["SE", "profile"]
 - !private ["SE", "resignFirstResponder"]
 - !private ["SE", "signIn"]
 - !private ["SE", "subscript"]
@@ -791,6 +853,7 @@ depends-member:
 - !private ["SQ", "AKFBackgroundTint"]
 - !private ["SQ", "AKFSkinManager"]
 - !private ["SQ", "AKFSkinType"]
+- !private ["SQ", "AccessToken"]
 - !private ["SQ", "Api_Base_URL"]
 - !private ["SQ", "AppConfig"]
 - !private ["SQ", "Auth"]
@@ -829,6 +892,7 @@ depends-member:
 - !private ["SQ", "UserdefaultKeys"]
 - !private ["SQ", "Valid_Email_Message"]
 - ["SQ", ""]
+- !private ["SQ", "absoluteString"]
 - !private ["SQ", "accessToken"]
 - !private ["SQ", "accountKit"]
 - !private ["SQ", "addAction"]
@@ -845,6 +909,7 @@ depends-member:
 - !private ["SQ", "beginAnimations"]
 - !private ["SQ", "black"]
 - !private ["SQ", "bounds"]
+- !private ["SQ", "btnGoogleLogin"]
 - !private ["SQ", "btnGuest"]
 - !private ["SQ", "center"]
 - !private ["SQ", "clientID"]
@@ -854,6 +919,7 @@ depends-member:
 - !private ["SQ", "contentMode"]
 - !private ["SQ", "count"]
 - !private ["SQ", "credential"]
+- !private ["SQ", "current"]
 - !private ["SQ", "currentAccessToken"]
 - !private ["SQ", "currentUser"]
 - !private ["SQ", "data"]
@@ -869,20 +935,26 @@ depends-member:
 - !private ["SQ", "evaluate"]
 - !private ["SQ", "facebookApi"]
 - !private ["SQ", "facebookLoginButton"]
+- !private ["SQ", "fbImgString"]
 - !private ["SQ", "fbidString"]
+- !private ["SQ", "fbtokenString"]
 - !private ["SQ", "font"]
 - !private ["SQ", "foregroundColor"]
 - !private ["SQ", "frame"]
 - !private ["SQ", "fullScreen"]
 - ["SQ", "gestureRecognizer"]
 - ["SQ", "gestureRecognizerShouldBegin"]
+- !private ["SQ", "getIDTokenForcingRefresh"]
 - !private ["SQ", "googleApi"]
+- !private ["SQ", "googleIdToken"]
 - !private ["SQ", "gray"]
 - !private ["SQ", "hideToastActivity"]
 - !private ["SQ", "httpBody"]
 - !private ["SQ", "httpMethod"]
 - !private ["SQ", "idToken"]
 - !private ["SQ", "image"]
+- !private ["SQ", "imageURL"]
+- !private ["SQ", "imageView"]
 - !private ["SQ", "init"]
 - !private ["SQ", "insertSubview"]
 - !private ["SQ", "instantiateViewController"]
@@ -912,6 +984,7 @@ depends-member:
 - !private ["SQ", "present"]
 - !private ["SQ", "presentingViewController"]
 - !private ["SQ", "print"]
+- !private ["SQ", "profile"]
 - !private ["SQ", "resignFirstResponder"]
 - !private ["SQ", "resume"]
 - !private ["SQ", "rootViewController"]
@@ -932,6 +1005,7 @@ depends-member:
 - !private ["SQ", "subscript"]
 - !private ["SQ", "synchronize"]
 - !private ["SQ", "text"]
+- !private ["SQ", "tokenString"]
 - !private ["SQ", "translucent"]
 - !private ["SQ", "utf8"]
 - !private ["SQ", "uuidString"]
@@ -956,21 +1030,26 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "count"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "data"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s23ExpressibleByNilLiteralP", "absoluteString"]
 - !private ["s23ExpressibleByNilLiteralP", "alpha"]
 - !private ["s23ExpressibleByNilLiteralP", "attributedPlaceholder"]
 - !private ["s23ExpressibleByNilLiteralP", "authentication"]
 - !private ["s23ExpressibleByNilLiteralP", "becomeFirstResponder"]
 - !private ["s23ExpressibleByNilLiteralP", "clientID"]
 - !private ["s23ExpressibleByNilLiteralP", "currentAccessToken"]
+- !private ["s23ExpressibleByNilLiteralP", "currentUser"]
 - !private ["s23ExpressibleByNilLiteralP", "delegate"]
 - !private ["s23ExpressibleByNilLiteralP", "font"]
 - !private ["s23ExpressibleByNilLiteralP", "frame"]
 - !private ["s23ExpressibleByNilLiteralP", "hideToastActivity"]
+- !private ["s23ExpressibleByNilLiteralP", "imageURL"]
+- !private ["s23ExpressibleByNilLiteralP", "imageView"]
 - !private ["s23ExpressibleByNilLiteralP", "insertSubview"]
 - !private ["s23ExpressibleByNilLiteralP", "isEnabled"]
 - !private ["s23ExpressibleByNilLiteralP", "makeToast"]
 - !private ["s23ExpressibleByNilLiteralP", "makeToastActivity"]
 - !private ["s23ExpressibleByNilLiteralP", "permissions"]
+- !private ["s23ExpressibleByNilLiteralP", "profile"]
 - !private ["s23ExpressibleByNilLiteralP", "resignFirstResponder"]
 - !private ["s23ExpressibleByNilLiteralP", "signIn"]
 - !private ["s23ExpressibleByNilLiteralP", "text"]
@@ -997,7 +1076,10 @@ depends-member:
 - !private ["So17GIDAuthenticationC", "accessToken"]
 - !private ["So17GIDAuthenticationC", "idToken"]
 - !private ["So13GIDGoogleUserC", "authentication"]
+- !private ["So13GIDGoogleUserC", "profile"]
+- !private ["So14GIDProfileDataC", "imageURL"]
 - !private ["So9GIDSignInC", "clientID"]
+- !private ["So9GIDSignInC", "currentUser"]
 - !private ["So9GIDSignInC", "delegate"]
 - !private ["So9GIDSignInC", "presentingViewController"]
 - !private ["So9GIDSignInC", "sharedInstance"]
@@ -1006,6 +1088,7 @@ depends-member:
 - !private ["So17GIDSignInDelegateP", "AKFBackgroundTint"]
 - !private ["So17GIDSignInDelegateP", "AKFSkinManager"]
 - !private ["So17GIDSignInDelegateP", "AKFSkinType"]
+- !private ["So17GIDSignInDelegateP", "AccessToken"]
 - !private ["So17GIDSignInDelegateP", "Api_Base_URL"]
 - !private ["So17GIDSignInDelegateP", "AppConfig"]
 - !private ["So17GIDSignInDelegateP", "Auth"]
@@ -1040,6 +1123,7 @@ depends-member:
 - ["So17GIDSignInDelegateP", ""]
 - !private ["So17GIDSignInDelegateP", "accountKit"]
 - !private ["So17GIDSignInDelegateP", "animateViewMoving"]
+- !private ["So17GIDSignInDelegateP", "btnGoogleLogin"]
 - !private ["So17GIDSignInDelegateP", "btnGuest"]
 - !private ["So17GIDSignInDelegateP", "configureFacebook"]
 - !private ["So17GIDSignInDelegateP", "configureGoogleSignInButton"]
@@ -1048,10 +1132,13 @@ depends-member:
 - !private ["So17GIDSignInDelegateP", "emailText"]
 - !private ["So17GIDSignInDelegateP", "facebookApi"]
 - !private ["So17GIDSignInDelegateP", "facebookLoginButton"]
+- !private ["So17GIDSignInDelegateP", "fbImgString"]
 - !private ["So17GIDSignInDelegateP", "fbidString"]
+- !private ["So17GIDSignInDelegateP", "fbtokenString"]
 - ["So17GIDSignInDelegateP", "gestureRecognizer"]
 - ["So17GIDSignInDelegateP", "gestureRecognizerShouldBegin"]
 - !private ["So17GIDSignInDelegateP", "googleApi"]
+- !private ["So17GIDSignInDelegateP", "googleIdToken"]
 - !private ["So17GIDSignInDelegateP", "isValidEmail"]
 - !private ["So17GIDSignInDelegateP", "loginApi"]
 - ["So17GIDSignInDelegateP", "loginButton"]
@@ -1080,6 +1167,7 @@ depends-member:
 - !private ["SH", "AKFBackgroundTint"]
 - !private ["SH", "AKFSkinManager"]
 - !private ["SH", "AKFSkinType"]
+- !private ["SH", "AccessToken"]
 - !private ["SH", "Api_Base_URL"]
 - !private ["SH", "AppConfig"]
 - !private ["SH", "Auth"]
@@ -1118,6 +1206,7 @@ depends-member:
 - !private ["SH", "UserdefaultKeys"]
 - !private ["SH", "Valid_Email_Message"]
 - ["SH", ""]
+- !private ["SH", "absoluteString"]
 - !private ["SH", "accessToken"]
 - !private ["SH", "accountKit"]
 - !private ["SH", "addAction"]
@@ -1134,6 +1223,7 @@ depends-member:
 - !private ["SH", "beginAnimations"]
 - !private ["SH", "black"]
 - !private ["SH", "bounds"]
+- !private ["SH", "btnGoogleLogin"]
 - !private ["SH", "btnGuest"]
 - !private ["SH", "center"]
 - !private ["SH", "clientID"]
@@ -1143,6 +1233,7 @@ depends-member:
 - !private ["SH", "contentMode"]
 - !private ["SH", "count"]
 - !private ["SH", "credential"]
+- !private ["SH", "current"]
 - !private ["SH", "currentAccessToken"]
 - !private ["SH", "currentUser"]
 - !private ["SH", "data"]
@@ -1158,20 +1249,26 @@ depends-member:
 - !private ["SH", "evaluate"]
 - !private ["SH", "facebookApi"]
 - !private ["SH", "facebookLoginButton"]
+- !private ["SH", "fbImgString"]
 - !private ["SH", "fbidString"]
+- !private ["SH", "fbtokenString"]
 - !private ["SH", "font"]
 - !private ["SH", "foregroundColor"]
 - !private ["SH", "frame"]
 - !private ["SH", "fullScreen"]
 - ["SH", "gestureRecognizer"]
 - ["SH", "gestureRecognizerShouldBegin"]
+- !private ["SH", "getIDTokenForcingRefresh"]
 - !private ["SH", "googleApi"]
+- !private ["SH", "googleIdToken"]
 - !private ["SH", "gray"]
 - !private ["SH", "hideToastActivity"]
 - !private ["SH", "httpBody"]
 - !private ["SH", "httpMethod"]
 - !private ["SH", "idToken"]
 - !private ["SH", "image"]
+- !private ["SH", "imageURL"]
+- !private ["SH", "imageView"]
 - !private ["SH", "init"]
 - !private ["SH", "insertSubview"]
 - !private ["SH", "instantiateViewController"]
@@ -1199,6 +1296,7 @@ depends-member:
 - !private ["SH", "present"]
 - !private ["SH", "presentingViewController"]
 - !private ["SH", "print"]
+- !private ["SH", "profile"]
 - !private ["SH", "resignFirstResponder"]
 - !private ["SH", "resume"]
 - !private ["SH", "rootViewController"]
@@ -1219,6 +1317,7 @@ depends-member:
 - !private ["SH", "subscript"]
 - !private ["SH", "synchronize"]
 - !private ["SH", "text"]
+- !private ["SH", "tokenString"]
 - !private ["SH", "translucent"]
 - !private ["SH", "utf8"]
 - !private ["SH", "uuidString"]
@@ -1242,6 +1341,7 @@ depends-member:
 - !private ["6SaveUp20KingfisherCompatibleP", "data"]
 - !private ["6SaveUp20KingfisherCompatibleP", "delegate"]
 - !private ["6SaveUp20KingfisherCompatibleP", "image"]
+- !private ["6SaveUp20KingfisherCompatibleP", "imageView"]
 - !private ["6SaveUp20KingfisherCompatibleP", "init"]
 - !private ["6SaveUp20KingfisherCompatibleP", "isEnabled"]
 - !private ["6SaveUp20KingfisherCompatibleP", "permissions"]
@@ -1250,6 +1350,7 @@ depends-member:
 - !private ["So24FBSDKLoginButtonDelegateP", "AKFBackgroundTint"]
 - !private ["So24FBSDKLoginButtonDelegateP", "AKFSkinManager"]
 - !private ["So24FBSDKLoginButtonDelegateP", "AKFSkinType"]
+- !private ["So24FBSDKLoginButtonDelegateP", "AccessToken"]
 - !private ["So24FBSDKLoginButtonDelegateP", "Api_Base_URL"]
 - !private ["So24FBSDKLoginButtonDelegateP", "AppConfig"]
 - !private ["So24FBSDKLoginButtonDelegateP", "Auth"]
@@ -1284,6 +1385,7 @@ depends-member:
 - ["So24FBSDKLoginButtonDelegateP", ""]
 - !private ["So24FBSDKLoginButtonDelegateP", "accountKit"]
 - !private ["So24FBSDKLoginButtonDelegateP", "animateViewMoving"]
+- !private ["So24FBSDKLoginButtonDelegateP", "btnGoogleLogin"]
 - !private ["So24FBSDKLoginButtonDelegateP", "btnGuest"]
 - !private ["So24FBSDKLoginButtonDelegateP", "configureFacebook"]
 - !private ["So24FBSDKLoginButtonDelegateP", "configureGoogleSignInButton"]
@@ -1292,10 +1394,13 @@ depends-member:
 - !private ["So24FBSDKLoginButtonDelegateP", "emailText"]
 - !private ["So24FBSDKLoginButtonDelegateP", "facebookApi"]
 - !private ["So24FBSDKLoginButtonDelegateP", "facebookLoginButton"]
+- !private ["So24FBSDKLoginButtonDelegateP", "fbImgString"]
 - !private ["So24FBSDKLoginButtonDelegateP", "fbidString"]
+- !private ["So24FBSDKLoginButtonDelegateP", "fbtokenString"]
 - ["So24FBSDKLoginButtonDelegateP", "gestureRecognizer"]
 - ["So24FBSDKLoginButtonDelegateP", "gestureRecognizerShouldBegin"]
 - !private ["So24FBSDKLoginButtonDelegateP", "googleApi"]
+- !private ["So24FBSDKLoginButtonDelegateP", "googleIdToken"]
 - !private ["So24FBSDKLoginButtonDelegateP", "isValidEmail"]
 - !private ["So24FBSDKLoginButtonDelegateP", "loginApi"]
 - ["So24FBSDKLoginButtonDelegateP", "loginButton"]
@@ -1324,6 +1429,7 @@ depends-member:
 - !private ["6SaveUp19LoginViewControllerC", "AKFSkinManager"]
 - !private ["6SaveUp19LoginViewControllerC", "AKFSkinType"]
 - ["6SaveUp19LoginViewControllerC", "AKFViewController"]
+- !private ["6SaveUp19LoginViewControllerC", "AccessToken"]
 - !private ["6SaveUp19LoginViewControllerC", "Api_Base_URL"]
 - !private ["6SaveUp19LoginViewControllerC", "AppConfig"]
 - !private ["6SaveUp19LoginViewControllerC", "AppDelegate"]
@@ -1392,12 +1498,14 @@ depends-member:
 - ["6SaveUp19LoginViewControllerC", "emailText"]
 - ["6SaveUp19LoginViewControllerC", "facebookApi"]
 - ["6SaveUp19LoginViewControllerC", "facebookLoginButton"]
+- ["6SaveUp19LoginViewControllerC", "fbImgString"]
 - ["6SaveUp19LoginViewControllerC", "fbidString"]
 - ["6SaveUp19LoginViewControllerC", "fbtokenString"]
 - ["6SaveUp19LoginViewControllerC", "forgotButton"]
 - ["6SaveUp19LoginViewControllerC", "gestureRecognizer"]
 - ["6SaveUp19LoginViewControllerC", "gestureRecognizerShouldBegin"]
 - ["6SaveUp19LoginViewControllerC", "googleApi"]
+- ["6SaveUp19LoginViewControllerC", "googleIdToken"]
 - ["6SaveUp19LoginViewControllerC", "handleTap"]
 - ["6SaveUp19LoginViewControllerC", "init"]
 - ["6SaveUp19LoginViewControllerC", "isValidEmail"]
@@ -1448,6 +1556,7 @@ depends-member:
 - !private ["So8NSCodingP", "AKFBackgroundTint"]
 - !private ["So8NSCodingP", "AKFSkinManager"]
 - !private ["So8NSCodingP", "AKFSkinType"]
+- !private ["So8NSCodingP", "AccessToken"]
 - !private ["So8NSCodingP", "Api_Base_URL"]
 - !private ["So8NSCodingP", "AppConfig"]
 - !private ["So8NSCodingP", "Auth"]
@@ -1494,12 +1603,14 @@ depends-member:
 - !private ["So8NSCodingP", "authentication"]
 - !private ["So8NSCodingP", "becomeFirstResponder"]
 - !private ["So8NSCodingP", "beginAnimations"]
+- !private ["So8NSCodingP", "btnGoogleLogin"]
 - !private ["So8NSCodingP", "btnGuest"]
 - !private ["So8NSCodingP", "commitAnimations"]
 - !private ["So8NSCodingP", "configureFacebook"]
 - !private ["So8NSCodingP", "configureGoogleSignInButton"]
 - !private ["So8NSCodingP", "contentMode"]
 - !private ["So8NSCodingP", "count"]
+- !private ["So8NSCodingP", "current"]
 - !private ["So8NSCodingP", "data"]
 - !private ["So8NSCodingP", "delegate"]
 - !private ["So8NSCodingP", "didReceiveMemoryWarning"]
@@ -1509,16 +1620,21 @@ depends-member:
 - !private ["So8NSCodingP", "evaluate"]
 - !private ["So8NSCodingP", "facebookApi"]
 - !private ["So8NSCodingP", "facebookLoginButton"]
+- !private ["So8NSCodingP", "fbImgString"]
 - !private ["So8NSCodingP", "fbidString"]
+- !private ["So8NSCodingP", "fbtokenString"]
 - !private ["So8NSCodingP", "font"]
 - !private ["So8NSCodingP", "frame"]
 - ["So8NSCodingP", "gestureRecognizer"]
 - ["So8NSCodingP", "gestureRecognizerShouldBegin"]
 - !private ["So8NSCodingP", "googleApi"]
+- !private ["So8NSCodingP", "googleIdToken"]
 - !private ["So8NSCodingP", "gray"]
 - !private ["So8NSCodingP", "hideToastActivity"]
 - !private ["So8NSCodingP", "idToken"]
 - !private ["So8NSCodingP", "image"]
+- !private ["So8NSCodingP", "imageURL"]
+- !private ["So8NSCodingP", "imageView"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "insertSubview"]
 - !private ["So8NSCodingP", "isEnabled"]
@@ -1540,6 +1656,7 @@ depends-member:
 - !private ["So8NSCodingP", "permissions"]
 - !private ["So8NSCodingP", "present"]
 - !private ["So8NSCodingP", "print"]
+- !private ["So8NSCodingP", "profile"]
 - !private ["So8NSCodingP", "resignFirstResponder"]
 - !private ["So8NSCodingP", "rootViewController"]
 - !private ["So8NSCodingP", "setAnimationBeginsFromCurrentState"]
@@ -1552,6 +1669,7 @@ depends-member:
 - !private ["So8NSCodingP", "storyboard"]
 - !private ["So8NSCodingP", "subscript"]
 - !private ["So8NSCodingP", "text"]
+- !private ["So8NSCodingP", "tokenString"]
 - !private ["So8NSCodingP", "value"]
 - !private ["So8NSCodingP", "view"]
 - ["So8NSCodingP", "viewController"]
@@ -1563,13 +1681,16 @@ depends-member:
 - !private ["So9NSCopyingP", "Key"]
 - !private ["So9NSCopyingP", "clientID"]
 - !private ["So9NSCopyingP", "count"]
+- !private ["So9NSCopyingP", "current"]
 - !private ["So9NSCopyingP", "data"]
 - !private ["So9NSCopyingP", "evaluate"]
 - !private ["So9NSCopyingP", "gray"]
+- !private ["So9NSCopyingP", "imageURL"]
 - !private ["So9NSCopyingP", "init"]
 - !private ["So9NSCopyingP", "object"]
 - !private ["So9NSCopyingP", "resume"]
 - !private ["So9NSCopyingP", "subscript"]
+- !private ["So9NSCopyingP", "tokenString"]
 - !private ["So9NSCopyingP", "value"]
 - !private ["So9NSCopyingP", "white"]
 - !private ["So12NSDictionaryC", "object"]
@@ -1579,6 +1700,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "AKFBackgroundTint"]
 - !private ["So26NSExtensionRequestHandlingP", "AKFSkinManager"]
 - !private ["So26NSExtensionRequestHandlingP", "AKFSkinType"]
+- !private ["So26NSExtensionRequestHandlingP", "AccessToken"]
 - !private ["So26NSExtensionRequestHandlingP", "Api_Base_URL"]
 - !private ["So26NSExtensionRequestHandlingP", "AppConfig"]
 - !private ["So26NSExtensionRequestHandlingP", "Auth"]
@@ -1616,6 +1738,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "accountKit"]
 - !private ["So26NSExtensionRequestHandlingP", "addAction"]
 - !private ["So26NSExtensionRequestHandlingP", "animateViewMoving"]
+- !private ["So26NSExtensionRequestHandlingP", "btnGoogleLogin"]
 - !private ["So26NSExtensionRequestHandlingP", "btnGuest"]
 - !private ["So26NSExtensionRequestHandlingP", "configureFacebook"]
 - !private ["So26NSExtensionRequestHandlingP", "configureGoogleSignInButton"]
@@ -1625,10 +1748,13 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "emailText"]
 - !private ["So26NSExtensionRequestHandlingP", "facebookApi"]
 - !private ["So26NSExtensionRequestHandlingP", "facebookLoginButton"]
+- !private ["So26NSExtensionRequestHandlingP", "fbImgString"]
 - !private ["So26NSExtensionRequestHandlingP", "fbidString"]
+- !private ["So26NSExtensionRequestHandlingP", "fbtokenString"]
 - ["So26NSExtensionRequestHandlingP", "gestureRecognizer"]
 - ["So26NSExtensionRequestHandlingP", "gestureRecognizerShouldBegin"]
 - !private ["So26NSExtensionRequestHandlingP", "googleApi"]
+- !private ["So26NSExtensionRequestHandlingP", "googleIdToken"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
 - !private ["So26NSExtensionRequestHandlingP", "isNavigationBarHidden"]
 - !private ["So26NSExtensionRequestHandlingP", "isValidEmail"]
@@ -1683,6 +1809,7 @@ depends-member:
 - !private ["So8NSObjectC", "AKFSkinManager"]
 - !private ["So8NSObjectC", "AKFSkinType"]
 - ["So8NSObjectC", "AKFViewController"]
+- !private ["So8NSObjectC", "AccessToken"]
 - !private ["So8NSObjectC", "Api_Base_URL"]
 - !private ["So8NSObjectC", "AppConfig"]
 - !private ["So8NSObjectC", "AppDelegate"]
@@ -1765,6 +1892,7 @@ depends-member:
 - !private ["So8NSObjectC", "contentMode"]
 - !private ["So8NSObjectC", "count"]
 - !private ["So8NSObjectC", "credential"]
+- !private ["So8NSObjectC", "current"]
 - !private ["So8NSObjectC", "currentAccessToken"]
 - !private ["So8NSObjectC", "currentUser"]
 - !private ["So8NSObjectC", "data"]
@@ -1779,6 +1907,7 @@ depends-member:
 - !private ["So8NSObjectC", "evaluate"]
 - ["So8NSObjectC", "facebookApi"]
 - ["So8NSObjectC", "facebookLoginButton"]
+- ["So8NSObjectC", "fbImgString"]
 - ["So8NSObjectC", "fbidString"]
 - ["So8NSObjectC", "fbtokenString"]
 - !private ["So8NSObjectC", "font"]
@@ -1786,12 +1915,16 @@ depends-member:
 - !private ["So8NSObjectC", "frame"]
 - ["So8NSObjectC", "gestureRecognizer"]
 - ["So8NSObjectC", "gestureRecognizerShouldBegin"]
+- !private ["So8NSObjectC", "getIDTokenForcingRefresh"]
 - ["So8NSObjectC", "googleApi"]
+- ["So8NSObjectC", "googleIdToken"]
 - !private ["So8NSObjectC", "gray"]
 - ["So8NSObjectC", "handleTap"]
 - !private ["So8NSObjectC", "hideToastActivity"]
 - !private ["So8NSObjectC", "idToken"]
 - !private ["So8NSObjectC", "image"]
+- !private ["So8NSObjectC", "imageURL"]
+- !private ["So8NSObjectC", "imageView"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "insertSubview"]
 - !private ["So8NSObjectC", "instantiateViewController"]
@@ -1820,6 +1953,7 @@ depends-member:
 - !private ["So8NSObjectC", "present"]
 - !private ["So8NSObjectC", "presentingViewController"]
 - !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "profile"]
 - ["So8NSObjectC", "registerButton"]
 - !private ["So8NSObjectC", "resignFirstResponder"]
 - !private ["So8NSObjectC", "resume"]
@@ -1844,6 +1978,7 @@ depends-member:
 - ["So8NSObjectC", "textFieldDidBeginEditing"]
 - ["So8NSObjectC", "textFieldDidEndEditing"]
 - ["So8NSObjectC", "textFieldShouldReturn"]
+- !private ["So8NSObjectC", "tokenString"]
 - !private ["So8NSObjectC", "value"]
 - !private ["So8NSObjectC", "view"]
 - ["So8NSObjectC", "viewController"]
@@ -1858,6 +1993,7 @@ depends-member:
 - !private ["So8NSObjectP", "AKFBackgroundTint"]
 - !private ["So8NSObjectP", "AKFSkinManager"]
 - !private ["So8NSObjectP", "AKFSkinType"]
+- !private ["So8NSObjectP", "AccessToken"]
 - !private ["So8NSObjectP", "Api_Base_URL"]
 - !private ["So8NSObjectP", "AppConfig"]
 - !private ["So8NSObjectP", "Auth"]
@@ -1909,6 +2045,7 @@ depends-member:
 - !private ["So8NSObjectP", "becomeFirstResponder"]
 - !private ["So8NSObjectP", "beginAnimations"]
 - !private ["So8NSObjectP", "bounds"]
+- !private ["So8NSObjectP", "btnGoogleLogin"]
 - !private ["So8NSObjectP", "btnGuest"]
 - !private ["So8NSObjectP", "clientID"]
 - !private ["So8NSObjectP", "commitAnimations"]
@@ -1917,6 +2054,7 @@ depends-member:
 - !private ["So8NSObjectP", "contentMode"]
 - !private ["So8NSObjectP", "count"]
 - !private ["So8NSObjectP", "credential"]
+- !private ["So8NSObjectP", "current"]
 - !private ["So8NSObjectP", "currentAccessToken"]
 - !private ["So8NSObjectP", "currentUser"]
 - !private ["So8NSObjectP", "data"]
@@ -1933,16 +2071,22 @@ depends-member:
 - !private ["So8NSObjectP", "evaluate"]
 - !private ["So8NSObjectP", "facebookApi"]
 - !private ["So8NSObjectP", "facebookLoginButton"]
+- !private ["So8NSObjectP", "fbImgString"]
 - !private ["So8NSObjectP", "fbidString"]
+- !private ["So8NSObjectP", "fbtokenString"]
 - !private ["So8NSObjectP", "font"]
 - !private ["So8NSObjectP", "frame"]
 - ["So8NSObjectP", "gestureRecognizer"]
 - ["So8NSObjectP", "gestureRecognizerShouldBegin"]
+- !private ["So8NSObjectP", "getIDTokenForcingRefresh"]
 - !private ["So8NSObjectP", "googleApi"]
+- !private ["So8NSObjectP", "googleIdToken"]
 - !private ["So8NSObjectP", "gray"]
 - !private ["So8NSObjectP", "hideToastActivity"]
 - !private ["So8NSObjectP", "idToken"]
 - !private ["So8NSObjectP", "image"]
+- !private ["So8NSObjectP", "imageURL"]
+- !private ["So8NSObjectP", "imageView"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "insertSubview"]
 - !private ["So8NSObjectP", "instantiateViewController"]
@@ -1970,6 +2114,7 @@ depends-member:
 - !private ["So8NSObjectP", "present"]
 - !private ["So8NSObjectP", "presentingViewController"]
 - !private ["So8NSObjectP", "print"]
+- !private ["So8NSObjectP", "profile"]
 - !private ["So8NSObjectP", "resignFirstResponder"]
 - !private ["So8NSObjectP", "resume"]
 - !private ["So8NSObjectP", "rootViewController"]
@@ -1989,6 +2134,7 @@ depends-member:
 - !private ["So8NSObjectP", "subscript"]
 - !private ["So8NSObjectP", "synchronize"]
 - !private ["So8NSObjectP", "text"]
+- !private ["So8NSObjectP", "tokenString"]
 - !private ["So8NSObjectP", "uiManager"]
 - !private ["So8NSObjectP", "value"]
 - !private ["So8NSObjectP", "view"]
@@ -2006,13 +2152,17 @@ depends-member:
 - !private ["So14NSSecureCodingP", "accessToken"]
 - !private ["So14NSSecureCodingP", "authentication"]
 - !private ["So14NSSecureCodingP", "count"]
+- !private ["So14NSSecureCodingP", "current"]
 - !private ["So14NSSecureCodingP", "data"]
 - !private ["So14NSSecureCodingP", "evaluate"]
 - !private ["So14NSSecureCodingP", "gray"]
 - !private ["So14NSSecureCodingP", "idToken"]
+- !private ["So14NSSecureCodingP", "imageURL"]
 - !private ["So14NSSecureCodingP", "init"]
 - !private ["So14NSSecureCodingP", "object"]
+- !private ["So14NSSecureCodingP", "profile"]
 - !private ["So14NSSecureCodingP", "subscript"]
+- !private ["So14NSSecureCodingP", "tokenString"]
 - !private ["So14NSSecureCodingP", "value"]
 - !private ["So14NSSecureCodingP", "white"]
 - !private ["So8NSStringC", "count"]
@@ -2021,21 +2171,26 @@ depends-member:
 - !private ["So9OS_objectC", "async"]
 - !private ["So9OS_objectC", "main"]
 - !private ["s9OptionSetP", "mutableContainers"]
+- !private ["Sq", "absoluteString"]
 - !private ["Sq", "alpha"]
 - !private ["Sq", "attributedPlaceholder"]
 - !private ["Sq", "authentication"]
 - !private ["Sq", "becomeFirstResponder"]
 - !private ["Sq", "clientID"]
 - !private ["Sq", "currentAccessToken"]
+- !private ["Sq", "currentUser"]
 - !private ["Sq", "delegate"]
 - !private ["Sq", "font"]
 - !private ["Sq", "frame"]
 - !private ["Sq", "hideToastActivity"]
+- !private ["Sq", "imageURL"]
+- !private ["Sq", "imageView"]
 - !private ["Sq", "insertSubview"]
 - !private ["Sq", "isEnabled"]
 - !private ["Sq", "makeToast"]
 - !private ["Sq", "makeToastActivity"]
 - !private ["Sq", "permissions"]
+- !private ["Sq", "profile"]
 - !private ["Sq", "resignFirstResponder"]
 - !private ["Sq", "signIn"]
 - !private ["Sq", "text"]
@@ -2064,10 +2219,12 @@ depends-member:
 - !private ["6SaveUp12ReachabilityC", "init"]
 - !private ["6SaveUp12ReachabilityC", "isReachable"]
 - !private ["So20NSJSONReadingOptionsV", "mutableContainers"]
+- !private ["10Foundation20ReferenceConvertibleP", "absoluteString"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpBody"]
 - !private ["10Foundation20ReferenceConvertibleP", "httpMethod"]
 - !private ["10Foundation20ReferenceConvertibleP", "init"]
 - !private ["10Foundation20ReferenceConvertibleP", "uuidString"]
+- !private ["6SaveUp8ResourceP", "absoluteString"]
 - !private ["6SaveUp8ResourceP", "init"]
 - !private ["7Combine9SchedulerP", "async"]
 - !private ["7Combine9SchedulerP", "main"]
@@ -2111,6 +2268,7 @@ depends-member:
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "contentMode"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "delegate"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "image"]
+- !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "imageView"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "init"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "isEnabled"]
 - !private ["So48UIAccessibilityContentSizeCategoryImageAdjustingP", "permissions"]
@@ -2127,6 +2285,7 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "frame"]
 - !private ["So29UIAccessibilityIdentificationP", "hideToastActivity"]
 - !private ["So29UIAccessibilityIdentificationP", "image"]
+- !private ["So29UIAccessibilityIdentificationP", "imageView"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "insertSubview"]
 - !private ["So29UIAccessibilityIdentificationP", "isEnabled"]
@@ -2154,6 +2313,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "frame"]
 - !private ["So12UIAppearanceP", "hideToastActivity"]
 - !private ["So12UIAppearanceP", "image"]
+- !private ["So12UIAppearanceP", "imageView"]
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "insertSubview"]
 - !private ["So12UIAppearanceP", "isEnabled"]
@@ -2169,6 +2329,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "AKFBackgroundTint"]
 - !private ["So21UIAppearanceContainerP", "AKFSkinManager"]
 - !private ["So21UIAppearanceContainerP", "AKFSkinType"]
+- !private ["So21UIAppearanceContainerP", "AccessToken"]
 - !private ["So21UIAppearanceContainerP", "Api_Base_URL"]
 - !private ["So21UIAppearanceContainerP", "AppConfig"]
 - !private ["So21UIAppearanceContainerP", "Auth"]
@@ -2212,6 +2373,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "attributedPlaceholder"]
 - !private ["So21UIAppearanceContainerP", "becomeFirstResponder"]
 - !private ["So21UIAppearanceContainerP", "beginAnimations"]
+- !private ["So21UIAppearanceContainerP", "btnGoogleLogin"]
 - !private ["So21UIAppearanceContainerP", "btnGuest"]
 - !private ["So21UIAppearanceContainerP", "commitAnimations"]
 - !private ["So21UIAppearanceContainerP", "configureFacebook"]
@@ -2224,14 +2386,18 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "emailText"]
 - !private ["So21UIAppearanceContainerP", "facebookApi"]
 - !private ["So21UIAppearanceContainerP", "facebookLoginButton"]
+- !private ["So21UIAppearanceContainerP", "fbImgString"]
 - !private ["So21UIAppearanceContainerP", "fbidString"]
+- !private ["So21UIAppearanceContainerP", "fbtokenString"]
 - !private ["So21UIAppearanceContainerP", "font"]
 - !private ["So21UIAppearanceContainerP", "frame"]
 - ["So21UIAppearanceContainerP", "gestureRecognizer"]
 - ["So21UIAppearanceContainerP", "gestureRecognizerShouldBegin"]
 - !private ["So21UIAppearanceContainerP", "googleApi"]
+- !private ["So21UIAppearanceContainerP", "googleIdToken"]
 - !private ["So21UIAppearanceContainerP", "hideToastActivity"]
 - !private ["So21UIAppearanceContainerP", "image"]
+- !private ["So21UIAppearanceContainerP", "imageView"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "insertSubview"]
 - !private ["So21UIAppearanceContainerP", "isEnabled"]
@@ -2274,6 +2440,7 @@ depends-member:
 - !private ["So21UIApplicationDelegateP", "window"]
 - !private ["So8UIButtonC", "alpha"]
 - !private ["So8UIButtonC", "delegate"]
+- !private ["So8UIButtonC", "imageView"]
 - !private ["So8UIButtonC", "isEnabled"]
 - !private ["So8UIButtonC", "permissions"]
 - !private ["So7UIColorC", "gray"]
@@ -2283,6 +2450,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "AKFBackgroundTint"]
 - !private ["So18UIContentContainerP", "AKFSkinManager"]
 - !private ["So18UIContentContainerP", "AKFSkinType"]
+- !private ["So18UIContentContainerP", "AccessToken"]
 - !private ["So18UIContentContainerP", "Api_Base_URL"]
 - !private ["So18UIContentContainerP", "AppConfig"]
 - !private ["So18UIContentContainerP", "Auth"]
@@ -2320,6 +2488,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "accountKit"]
 - !private ["So18UIContentContainerP", "addAction"]
 - !private ["So18UIContentContainerP", "animateViewMoving"]
+- !private ["So18UIContentContainerP", "btnGoogleLogin"]
 - !private ["So18UIContentContainerP", "btnGuest"]
 - !private ["So18UIContentContainerP", "configureFacebook"]
 - !private ["So18UIContentContainerP", "configureGoogleSignInButton"]
@@ -2329,10 +2498,13 @@ depends-member:
 - !private ["So18UIContentContainerP", "emailText"]
 - !private ["So18UIContentContainerP", "facebookApi"]
 - !private ["So18UIContentContainerP", "facebookLoginButton"]
+- !private ["So18UIContentContainerP", "fbImgString"]
 - !private ["So18UIContentContainerP", "fbidString"]
+- !private ["So18UIContentContainerP", "fbtokenString"]
 - ["So18UIContentContainerP", "gestureRecognizer"]
 - ["So18UIContentContainerP", "gestureRecognizerShouldBegin"]
 - !private ["So18UIContentContainerP", "googleApi"]
+- !private ["So18UIContentContainerP", "googleIdToken"]
 - !private ["So18UIContentContainerP", "init"]
 - !private ["So18UIContentContainerP", "isNavigationBarHidden"]
 - !private ["So18UIContentContainerP", "isValidEmail"]
@@ -2370,6 +2542,7 @@ depends-member:
 - !private ["So9UIControlC", "becomeFirstResponder"]
 - !private ["So9UIControlC", "delegate"]
 - !private ["So9UIControlC", "font"]
+- !private ["So9UIControlC", "imageView"]
 - !private ["So9UIControlC", "isEnabled"]
 - !private ["So9UIControlC", "permissions"]
 - !private ["So9UIControlC", "resignFirstResponder"]
@@ -2387,6 +2560,7 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "frame"]
 - !private ["So17UICoordinateSpaceP", "hideToastActivity"]
 - !private ["So17UICoordinateSpaceP", "image"]
+- !private ["So17UICoordinateSpaceP", "imageView"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "insertSubview"]
 - !private ["So17UICoordinateSpaceP", "isEnabled"]
@@ -2411,6 +2585,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "frame"]
 - !private ["So13UIDynamicItemP", "hideToastActivity"]
 - !private ["So13UIDynamicItemP", "image"]
+- !private ["So13UIDynamicItemP", "imageView"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "insertSubview"]
 - !private ["So13UIDynamicItemP", "isEnabled"]
@@ -2426,6 +2601,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "AKFBackgroundTint"]
 - !private ["So18UIFocusEnvironmentP", "AKFSkinManager"]
 - !private ["So18UIFocusEnvironmentP", "AKFSkinType"]
+- !private ["So18UIFocusEnvironmentP", "AccessToken"]
 - !private ["So18UIFocusEnvironmentP", "Api_Base_URL"]
 - !private ["So18UIFocusEnvironmentP", "AppConfig"]
 - !private ["So18UIFocusEnvironmentP", "Auth"]
@@ -2469,6 +2645,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "attributedPlaceholder"]
 - !private ["So18UIFocusEnvironmentP", "becomeFirstResponder"]
 - !private ["So18UIFocusEnvironmentP", "beginAnimations"]
+- !private ["So18UIFocusEnvironmentP", "btnGoogleLogin"]
 - !private ["So18UIFocusEnvironmentP", "btnGuest"]
 - !private ["So18UIFocusEnvironmentP", "commitAnimations"]
 - !private ["So18UIFocusEnvironmentP", "configureFacebook"]
@@ -2481,14 +2658,18 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "emailText"]
 - !private ["So18UIFocusEnvironmentP", "facebookApi"]
 - !private ["So18UIFocusEnvironmentP", "facebookLoginButton"]
+- !private ["So18UIFocusEnvironmentP", "fbImgString"]
 - !private ["So18UIFocusEnvironmentP", "fbidString"]
+- !private ["So18UIFocusEnvironmentP", "fbtokenString"]
 - !private ["So18UIFocusEnvironmentP", "font"]
 - !private ["So18UIFocusEnvironmentP", "frame"]
 - ["So18UIFocusEnvironmentP", "gestureRecognizer"]
 - ["So18UIFocusEnvironmentP", "gestureRecognizerShouldBegin"]
 - !private ["So18UIFocusEnvironmentP", "googleApi"]
+- !private ["So18UIFocusEnvironmentP", "googleIdToken"]
 - !private ["So18UIFocusEnvironmentP", "hideToastActivity"]
 - !private ["So18UIFocusEnvironmentP", "image"]
+- !private ["So18UIFocusEnvironmentP", "imageView"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "insertSubview"]
 - !private ["So18UIFocusEnvironmentP", "isEnabled"]
@@ -2539,6 +2720,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "frame"]
 - !private ["So11UIFocusItemP", "hideToastActivity"]
 - !private ["So11UIFocusItemP", "image"]
+- !private ["So11UIFocusItemP", "imageView"]
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "insertSubview"]
 - !private ["So11UIFocusItemP", "isEnabled"]
@@ -2563,6 +2745,7 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "frame"]
 - !private ["So20UIFocusItemContainerP", "hideToastActivity"]
 - !private ["So20UIFocusItemContainerP", "image"]
+- !private ["So20UIFocusItemContainerP", "imageView"]
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "insertSubview"]
 - !private ["So20UIFocusItemContainerP", "isEnabled"]
@@ -2578,6 +2761,7 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "AKFBackgroundTint"]
 - !private ["So27UIGestureRecognizerDelegateP", "AKFSkinManager"]
 - !private ["So27UIGestureRecognizerDelegateP", "AKFSkinType"]
+- !private ["So27UIGestureRecognizerDelegateP", "AccessToken"]
 - !private ["So27UIGestureRecognizerDelegateP", "Api_Base_URL"]
 - !private ["So27UIGestureRecognizerDelegateP", "AppConfig"]
 - !private ["So27UIGestureRecognizerDelegateP", "Auth"]
@@ -2612,6 +2796,7 @@ depends-member:
 - ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "accountKit"]
 - !private ["So27UIGestureRecognizerDelegateP", "animateViewMoving"]
+- !private ["So27UIGestureRecognizerDelegateP", "btnGoogleLogin"]
 - !private ["So27UIGestureRecognizerDelegateP", "btnGuest"]
 - !private ["So27UIGestureRecognizerDelegateP", "configureFacebook"]
 - !private ["So27UIGestureRecognizerDelegateP", "configureGoogleSignInButton"]
@@ -2620,10 +2805,13 @@ depends-member:
 - !private ["So27UIGestureRecognizerDelegateP", "emailText"]
 - !private ["So27UIGestureRecognizerDelegateP", "facebookApi"]
 - !private ["So27UIGestureRecognizerDelegateP", "facebookLoginButton"]
+- !private ["So27UIGestureRecognizerDelegateP", "fbImgString"]
 - !private ["So27UIGestureRecognizerDelegateP", "fbidString"]
+- !private ["So27UIGestureRecognizerDelegateP", "fbtokenString"]
 - ["So27UIGestureRecognizerDelegateP", "gestureRecognizer"]
 - ["So27UIGestureRecognizerDelegateP", "gestureRecognizerShouldBegin"]
 - !private ["So27UIGestureRecognizerDelegateP", "googleApi"]
+- !private ["So27UIGestureRecognizerDelegateP", "googleIdToken"]
 - !private ["So27UIGestureRecognizerDelegateP", "isValidEmail"]
 - !private ["So27UIGestureRecognizerDelegateP", "loginApi"]
 - ["So27UIGestureRecognizerDelegateP", "loginButton"]
@@ -2668,6 +2856,7 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "frame"]
 - !private ["So24UILargeContentViewerItemP", "hideToastActivity"]
 - !private ["So24UILargeContentViewerItemP", "image"]
+- !private ["So24UILargeContentViewerItemP", "imageView"]
 - !private ["So24UILargeContentViewerItemP", "init"]
 - !private ["So24UILargeContentViewerItemP", "insertSubview"]
 - !private ["So24UILargeContentViewerItemP", "isEnabled"]
@@ -2685,6 +2874,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "AKFBackgroundTint"]
 - !private ["So30UIPasteConfigurationSupportingP", "AKFSkinManager"]
 - !private ["So30UIPasteConfigurationSupportingP", "AKFSkinType"]
+- !private ["So30UIPasteConfigurationSupportingP", "AccessToken"]
 - !private ["So30UIPasteConfigurationSupportingP", "Api_Base_URL"]
 - !private ["So30UIPasteConfigurationSupportingP", "AppConfig"]
 - !private ["So30UIPasteConfigurationSupportingP", "Auth"]
@@ -2728,6 +2918,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "attributedPlaceholder"]
 - !private ["So30UIPasteConfigurationSupportingP", "becomeFirstResponder"]
 - !private ["So30UIPasteConfigurationSupportingP", "beginAnimations"]
+- !private ["So30UIPasteConfigurationSupportingP", "btnGoogleLogin"]
 - !private ["So30UIPasteConfigurationSupportingP", "btnGuest"]
 - !private ["So30UIPasteConfigurationSupportingP", "commitAnimations"]
 - !private ["So30UIPasteConfigurationSupportingP", "configureFacebook"]
@@ -2740,14 +2931,18 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "emailText"]
 - !private ["So30UIPasteConfigurationSupportingP", "facebookApi"]
 - !private ["So30UIPasteConfigurationSupportingP", "facebookLoginButton"]
+- !private ["So30UIPasteConfigurationSupportingP", "fbImgString"]
 - !private ["So30UIPasteConfigurationSupportingP", "fbidString"]
+- !private ["So30UIPasteConfigurationSupportingP", "fbtokenString"]
 - !private ["So30UIPasteConfigurationSupportingP", "font"]
 - !private ["So30UIPasteConfigurationSupportingP", "frame"]
 - ["So30UIPasteConfigurationSupportingP", "gestureRecognizer"]
 - ["So30UIPasteConfigurationSupportingP", "gestureRecognizerShouldBegin"]
 - !private ["So30UIPasteConfigurationSupportingP", "googleApi"]
+- !private ["So30UIPasteConfigurationSupportingP", "googleIdToken"]
 - !private ["So30UIPasteConfigurationSupportingP", "hideToastActivity"]
 - !private ["So30UIPasteConfigurationSupportingP", "image"]
+- !private ["So30UIPasteConfigurationSupportingP", "imageView"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "insertSubview"]
 - !private ["So30UIPasteConfigurationSupportingP", "isEnabled"]
@@ -2792,6 +2987,7 @@ depends-member:
 - !private ["So11UIResponderC", "AKFSkinManager"]
 - !private ["So11UIResponderC", "AKFSkinType"]
 - ["So11UIResponderC", "AKFViewController"]
+- !private ["So11UIResponderC", "AccessToken"]
 - !private ["So11UIResponderC", "Api_Base_URL"]
 - !private ["So11UIResponderC", "AppConfig"]
 - !private ["So11UIResponderC", "AppDelegate"]
@@ -2870,6 +3066,7 @@ depends-member:
 - ["So11UIResponderC", "emailText"]
 - ["So11UIResponderC", "facebookApi"]
 - ["So11UIResponderC", "facebookLoginButton"]
+- ["So11UIResponderC", "fbImgString"]
 - ["So11UIResponderC", "fbidString"]
 - ["So11UIResponderC", "fbtokenString"]
 - !private ["So11UIResponderC", "font"]
@@ -2878,9 +3075,11 @@ depends-member:
 - ["So11UIResponderC", "gestureRecognizer"]
 - ["So11UIResponderC", "gestureRecognizerShouldBegin"]
 - ["So11UIResponderC", "googleApi"]
+- ["So11UIResponderC", "googleIdToken"]
 - ["So11UIResponderC", "handleTap"]
 - !private ["So11UIResponderC", "hideToastActivity"]
 - !private ["So11UIResponderC", "image"]
+- !private ["So11UIResponderC", "imageView"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "insertSubview"]
 - !private ["So11UIResponderC", "isEnabled"]
@@ -2930,6 +3129,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "AKFBackgroundTint"]
 - !private ["So30UIResponderStandardEditActionsP", "AKFSkinManager"]
 - !private ["So30UIResponderStandardEditActionsP", "AKFSkinType"]
+- !private ["So30UIResponderStandardEditActionsP", "AccessToken"]
 - !private ["So30UIResponderStandardEditActionsP", "Api_Base_URL"]
 - !private ["So30UIResponderStandardEditActionsP", "AppConfig"]
 - !private ["So30UIResponderStandardEditActionsP", "Auth"]
@@ -2973,6 +3173,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "attributedPlaceholder"]
 - !private ["So30UIResponderStandardEditActionsP", "becomeFirstResponder"]
 - !private ["So30UIResponderStandardEditActionsP", "beginAnimations"]
+- !private ["So30UIResponderStandardEditActionsP", "btnGoogleLogin"]
 - !private ["So30UIResponderStandardEditActionsP", "btnGuest"]
 - !private ["So30UIResponderStandardEditActionsP", "commitAnimations"]
 - !private ["So30UIResponderStandardEditActionsP", "configureFacebook"]
@@ -2985,14 +3186,18 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "emailText"]
 - !private ["So30UIResponderStandardEditActionsP", "facebookApi"]
 - !private ["So30UIResponderStandardEditActionsP", "facebookLoginButton"]
+- !private ["So30UIResponderStandardEditActionsP", "fbImgString"]
 - !private ["So30UIResponderStandardEditActionsP", "fbidString"]
+- !private ["So30UIResponderStandardEditActionsP", "fbtokenString"]
 - !private ["So30UIResponderStandardEditActionsP", "font"]
 - !private ["So30UIResponderStandardEditActionsP", "frame"]
 - ["So30UIResponderStandardEditActionsP", "gestureRecognizer"]
 - ["So30UIResponderStandardEditActionsP", "gestureRecognizerShouldBegin"]
 - !private ["So30UIResponderStandardEditActionsP", "googleApi"]
+- !private ["So30UIResponderStandardEditActionsP", "googleIdToken"]
 - !private ["So30UIResponderStandardEditActionsP", "hideToastActivity"]
 - !private ["So30UIResponderStandardEditActionsP", "image"]
+- !private ["So30UIResponderStandardEditActionsP", "imageView"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "insertSubview"]
 - !private ["So30UIResponderStandardEditActionsP", "isEnabled"]
@@ -3037,6 +3242,7 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "addAction"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "alpha"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "imageView"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "isEnabled"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "permissions"]
@@ -3044,6 +3250,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "AKFBackgroundTint"]
 - !private ["So16UIStateRestoringP", "AKFSkinManager"]
 - !private ["So16UIStateRestoringP", "AKFSkinType"]
+- !private ["So16UIStateRestoringP", "AccessToken"]
 - !private ["So16UIStateRestoringP", "Api_Base_URL"]
 - !private ["So16UIStateRestoringP", "AppConfig"]
 - !private ["So16UIStateRestoringP", "Auth"]
@@ -3081,6 +3288,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "accountKit"]
 - !private ["So16UIStateRestoringP", "addAction"]
 - !private ["So16UIStateRestoringP", "animateViewMoving"]
+- !private ["So16UIStateRestoringP", "btnGoogleLogin"]
 - !private ["So16UIStateRestoringP", "btnGuest"]
 - !private ["So16UIStateRestoringP", "configureFacebook"]
 - !private ["So16UIStateRestoringP", "configureGoogleSignInButton"]
@@ -3090,10 +3298,13 @@ depends-member:
 - !private ["So16UIStateRestoringP", "emailText"]
 - !private ["So16UIStateRestoringP", "facebookApi"]
 - !private ["So16UIStateRestoringP", "facebookLoginButton"]
+- !private ["So16UIStateRestoringP", "fbImgString"]
 - !private ["So16UIStateRestoringP", "fbidString"]
+- !private ["So16UIStateRestoringP", "fbtokenString"]
 - ["So16UIStateRestoringP", "gestureRecognizer"]
 - ["So16UIStateRestoringP", "gestureRecognizerShouldBegin"]
 - !private ["So16UIStateRestoringP", "googleApi"]
+- !private ["So16UIStateRestoringP", "googleIdToken"]
 - !private ["So16UIStateRestoringP", "init"]
 - !private ["So16UIStateRestoringP", "isNavigationBarHidden"]
 - !private ["So16UIStateRestoringP", "isValidEmail"]
@@ -3157,6 +3368,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "AKFBackgroundTint"]
 - !private ["So18UITraitEnvironmentP", "AKFSkinManager"]
 - !private ["So18UITraitEnvironmentP", "AKFSkinType"]
+- !private ["So18UITraitEnvironmentP", "AccessToken"]
 - !private ["So18UITraitEnvironmentP", "Api_Base_URL"]
 - !private ["So18UITraitEnvironmentP", "AppConfig"]
 - !private ["So18UITraitEnvironmentP", "Auth"]
@@ -3201,6 +3413,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "becomeFirstResponder"]
 - !private ["So18UITraitEnvironmentP", "beginAnimations"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
+- !private ["So18UITraitEnvironmentP", "btnGoogleLogin"]
 - !private ["So18UITraitEnvironmentP", "btnGuest"]
 - !private ["So18UITraitEnvironmentP", "commitAnimations"]
 - !private ["So18UITraitEnvironmentP", "configureFacebook"]
@@ -3213,14 +3426,18 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "emailText"]
 - !private ["So18UITraitEnvironmentP", "facebookApi"]
 - !private ["So18UITraitEnvironmentP", "facebookLoginButton"]
+- !private ["So18UITraitEnvironmentP", "fbImgString"]
 - !private ["So18UITraitEnvironmentP", "fbidString"]
+- !private ["So18UITraitEnvironmentP", "fbtokenString"]
 - !private ["So18UITraitEnvironmentP", "font"]
 - !private ["So18UITraitEnvironmentP", "frame"]
 - ["So18UITraitEnvironmentP", "gestureRecognizer"]
 - ["So18UITraitEnvironmentP", "gestureRecognizerShouldBegin"]
 - !private ["So18UITraitEnvironmentP", "googleApi"]
+- !private ["So18UITraitEnvironmentP", "googleIdToken"]
 - !private ["So18UITraitEnvironmentP", "hideToastActivity"]
 - !private ["So18UITraitEnvironmentP", "image"]
+- !private ["So18UITraitEnvironmentP", "imageView"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "insertSubview"]
 - !private ["So18UITraitEnvironmentP", "isEnabled"]
@@ -3263,6 +3480,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "AKFBackgroundTint"]
 - !private ["So23UIUserActivityRestoringP", "AKFSkinManager"]
 - !private ["So23UIUserActivityRestoringP", "AKFSkinType"]
+- !private ["So23UIUserActivityRestoringP", "AccessToken"]
 - !private ["So23UIUserActivityRestoringP", "Api_Base_URL"]
 - !private ["So23UIUserActivityRestoringP", "AppConfig"]
 - !private ["So23UIUserActivityRestoringP", "Auth"]
@@ -3306,6 +3524,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "attributedPlaceholder"]
 - !private ["So23UIUserActivityRestoringP", "becomeFirstResponder"]
 - !private ["So23UIUserActivityRestoringP", "beginAnimations"]
+- !private ["So23UIUserActivityRestoringP", "btnGoogleLogin"]
 - !private ["So23UIUserActivityRestoringP", "btnGuest"]
 - !private ["So23UIUserActivityRestoringP", "commitAnimations"]
 - !private ["So23UIUserActivityRestoringP", "configureFacebook"]
@@ -3318,14 +3537,18 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "emailText"]
 - !private ["So23UIUserActivityRestoringP", "facebookApi"]
 - !private ["So23UIUserActivityRestoringP", "facebookLoginButton"]
+- !private ["So23UIUserActivityRestoringP", "fbImgString"]
 - !private ["So23UIUserActivityRestoringP", "fbidString"]
+- !private ["So23UIUserActivityRestoringP", "fbtokenString"]
 - !private ["So23UIUserActivityRestoringP", "font"]
 - !private ["So23UIUserActivityRestoringP", "frame"]
 - ["So23UIUserActivityRestoringP", "gestureRecognizer"]
 - ["So23UIUserActivityRestoringP", "gestureRecognizerShouldBegin"]
 - !private ["So23UIUserActivityRestoringP", "googleApi"]
+- !private ["So23UIUserActivityRestoringP", "googleIdToken"]
 - !private ["So23UIUserActivityRestoringP", "hideToastActivity"]
 - !private ["So23UIUserActivityRestoringP", "image"]
+- !private ["So23UIUserActivityRestoringP", "imageView"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "insertSubview"]
 - !private ["So23UIUserActivityRestoringP", "isEnabled"]
@@ -3378,6 +3601,7 @@ depends-member:
 - !private ["So6UIViewC", "frame"]
 - !private ["So6UIViewC", "hideToastActivity"]
 - !private ["So6UIViewC", "image"]
+- !private ["So6UIViewC", "imageView"]
 - !private ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "insertSubview"]
 - !private ["So6UIViewC", "isEnabled"]
@@ -3394,6 +3618,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "AKFSkinManager"]
 - !private ["So16UIViewControllerC", "AKFSkinType"]
 - ["So16UIViewControllerC", "AKFViewController"]
+- !private ["So16UIViewControllerC", "AccessToken"]
 - !private ["So16UIViewControllerC", "Api_Base_URL"]
 - !private ["So16UIViewControllerC", "AppConfig"]
 - !private ["So16UIViewControllerC", "AppDelegate"]
@@ -3464,12 +3689,14 @@ depends-member:
 - ["So16UIViewControllerC", "emailText"]
 - ["So16UIViewControllerC", "facebookApi"]
 - ["So16UIViewControllerC", "facebookLoginButton"]
+- ["So16UIViewControllerC", "fbImgString"]
 - ["So16UIViewControllerC", "fbidString"]
 - ["So16UIViewControllerC", "fbtokenString"]
 - ["So16UIViewControllerC", "forgotButton"]
 - ["So16UIViewControllerC", "gestureRecognizer"]
 - ["So16UIViewControllerC", "gestureRecognizerShouldBegin"]
 - ["So16UIViewControllerC", "googleApi"]
+- ["So16UIViewControllerC", "googleIdToken"]
 - ["So16UIViewControllerC", "handleTap"]
 - ["So16UIViewControllerC", "init"]
 - !private ["So16UIViewControllerC", "isNavigationBarHidden"]
@@ -3505,6 +3732,7 @@ depends-member:
 - ["So16UIViewControllerC", "viewWillAppear"]
 - ["So16UIViewControllerC", "viewWillDisappear"]
 - !private ["So8UIWindowC", "rootViewController"]
+- !private ["10Foundation3URLV", "absoluteString"]
 - !private ["10Foundation3URLV", "init"]
 - !private ["10Foundation10URLRequestV", "httpBody"]
 - !private ["10Foundation10URLRequestV", "httpMethod"]
@@ -3517,15 +3745,19 @@ depends-member:
 - !private ["10Foundation4UUIDV", "uuidString"]
 - !private ["So7FIRUserC", "displayName"]
 - !private ["So7FIRUserC", "email"]
+- !private ["So7FIRUserC", "getIDTokenForcingRefresh"]
 - !private ["So14NSUserDefaultsC", "set"]
 - !private ["So14NSUserDefaultsC", "standard"]
 - !private ["So14NSUserDefaultsC", "synchronize"]
+- !private ["So14NSUserDefaultsC", "value"]
 - !private ["So11FIRUserInfoP", "displayName"]
 - !private ["So11FIRUserInfoP", "email"]
+- !private ["So11FIRUserInfoP", "getIDTokenForcingRefresh"]
 - !private ["6SaveUp9AppConfigC15UserdefaultKeysV", "GUEST_MODE"]
 - !private ["s14_ArrayProtocolP", "count"]
 - !private ["s14_ArrayProtocolP", "subscript"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "Encoding"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "absoluteString"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "center"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "count"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "data"]
@@ -3548,6 +3780,7 @@ depends-member:
 - !private ["s26_ExpressibleByColorLiteralP", "gray"]
 - !private ["s26_ExpressibleByColorLiteralP", "init"]
 - !private ["s26_ExpressibleByColorLiteralP", "white"]
+- !private ["s34_ExpressibleByFileReferenceLiteralP", "absoluteString"]
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "init"]
 - !private ["s26_ExpressibleByImageLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "Encoding"]
@@ -3566,6 +3799,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AKFBackgroundTint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AKFSkinManager"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AKFSkinType"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AccessToken"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Api_Base_URL"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "AppConfig"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Auth"]
@@ -3617,6 +3851,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "becomeFirstResponder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "beginAnimations"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "btnGoogleLogin"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "btnGuest"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "clientID"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "commitAnimations"]
@@ -3625,6 +3860,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "contentMode"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "count"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "credential"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "current"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentAccessToken"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentUser"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "data"]
@@ -3639,16 +3875,22 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "evaluate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "facebookApi"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "facebookLoginButton"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fbImgString"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "fbidString"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "fbtokenString"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "font"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "frame"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "gestureRecognizer"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "gestureRecognizerShouldBegin"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "getIDTokenForcingRefresh"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "googleApi"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "googleIdToken"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "gray"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hideToastActivity"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "idToken"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imageURL"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "imageView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "insertSubview"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "instantiateViewController"]
@@ -3676,6 +3918,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "present"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "presentingViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "profile"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resignFirstResponder"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "resume"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "rootViewController"]
@@ -3695,6 +3938,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "synchronize"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "tokenString"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "value"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "view"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "viewController"]
@@ -3709,6 +3953,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AKFBackgroundTint"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AKFSkinManager"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AKFSkinType"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AccessToken"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Api_Base_URL"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AppConfig"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Auth"]
@@ -3760,6 +4005,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "becomeFirstResponder"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "beginAnimations"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bounds"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "btnGoogleLogin"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "btnGuest"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "clientID"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "commitAnimations"]
@@ -3768,6 +4014,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "contentMode"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "count"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "credential"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "current"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentAccessToken"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentUser"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "data"]
@@ -3782,16 +4029,22 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "evaluate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "facebookApi"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "facebookLoginButton"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "fbImgString"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "fbidString"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "fbtokenString"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "font"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "frame"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "gestureRecognizer"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "gestureRecognizerShouldBegin"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "getIDTokenForcingRefresh"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "googleApi"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "googleIdToken"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "gray"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "hideToastActivity"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "idToken"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "image"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "imageURL"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "imageView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "insertSubview"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "instantiateViewController"]
@@ -3819,6 +4072,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "present"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "presentingViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "profile"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resignFirstResponder"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "resume"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "rootViewController"]
@@ -3838,6 +4092,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "subscript"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "synchronize"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "text"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tokenString"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "value"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "view"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewController"]
@@ -3849,6 +4104,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "white"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "window"]
 - !private ["s21_ObjectiveCBridgeableP", "Encoding"]
+- !private ["s21_ObjectiveCBridgeableP", "absoluteString"]
 - !private ["s21_ObjectiveCBridgeableP", "alpha"]
 - !private ["s21_ObjectiveCBridgeableP", "attributedPlaceholder"]
 - !private ["s21_ObjectiveCBridgeableP", "authentication"]
@@ -3857,6 +4113,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "clientID"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
 - !private ["s21_ObjectiveCBridgeableP", "currentAccessToken"]
+- !private ["s21_ObjectiveCBridgeableP", "currentUser"]
 - !private ["s21_ObjectiveCBridgeableP", "data"]
 - !private ["s21_ObjectiveCBridgeableP", "delegate"]
 - !private ["s21_ObjectiveCBridgeableP", "font"]
@@ -3865,6 +4122,8 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "hideToastActivity"]
 - !private ["s21_ObjectiveCBridgeableP", "httpBody"]
 - !private ["s21_ObjectiveCBridgeableP", "httpMethod"]
+- !private ["s21_ObjectiveCBridgeableP", "imageURL"]
+- !private ["s21_ObjectiveCBridgeableP", "imageView"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 - !private ["s21_ObjectiveCBridgeableP", "insertSubview"]
 - !private ["s21_ObjectiveCBridgeableP", "isEnabled"]
@@ -3872,6 +4131,7 @@ depends-member:
 - !private ["s21_ObjectiveCBridgeableP", "makeToastActivity"]
 - !private ["s21_ObjectiveCBridgeableP", "offsetBy"]
 - !private ["s21_ObjectiveCBridgeableP", "permissions"]
+- !private ["s21_ObjectiveCBridgeableP", "profile"]
 - !private ["s21_ObjectiveCBridgeableP", "resignFirstResponder"]
 - !private ["s21_ObjectiveCBridgeableP", "signIn"]
 - !private ["s21_ObjectiveCBridgeableP", "subscript"]
@@ -3893,6 +4153,7 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "frame"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "hideToastActivity"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "image"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "imageView"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "insertSubview"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "isEnabled"]
@@ -3917,6 +4178,7 @@ depends-nominal:
 - "So25AKFViewControllerDelegateP"
 - !private "10Accelerate0A6BufferP"
 - !private "10Accelerate0A13MutableBufferP"
+- !private "So16FBSDKAccessTokenC"
 - !private "6SaveUp9AppConfigC"
 - !private "6SaveUp11AppDelegateC"
 - !private "Sa"
@@ -3930,6 +4192,7 @@ depends-nominal:
 - !private "SL"
 - !private "So17UIViewContentModeV"
 - !private "10Foundation15ContiguousBytesP"
+- !private "So12FBSDKCopyingP"
 - "s28CustomDebugStringConvertibleP"
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
@@ -3955,6 +4218,7 @@ depends-nominal:
 - !private "So10FIROptionsC"
 - !private "So17GIDAuthenticationC"
 - !private "So13GIDGoogleUserC"
+- !private "So14GIDProfileDataC"
 - !private "So9GIDSignInC"
 - "So17GIDSignInDelegateP"
 - !private "So21FIRGoogleAuthProviderC"
@@ -4127,7 +4391,7 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugInCOM.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h"
@@ -4139,6 +4403,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig-umbrella.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/LinearAlgebra.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
@@ -4289,7 +4555,7 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PayPalMobile/PayPalMobile.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/file.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/clonefile.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/copyfile.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSParagraphStyle.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTParagraphStyle.h"
@@ -4357,6 +4623,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CVBase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecBase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/IOSurface.framework/Headers/IOSurfaceBase.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKDeviceViewControllerBase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/base.h"
@@ -4377,7 +4644,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
@@ -4441,12 +4708,12 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISpringLoadedInteractionSupporting.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityContentSizeCategoryImageAdjusting.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIContentSizeCategoryAdjusting.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSKeyValueObserving.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStringDrawing.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSStringDrawing.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/log.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/syslog.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/syslog.h"
@@ -4484,7 +4751,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/Block.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/block.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/clock.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CADisplayLink.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKPlacemark.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLPlacemark.h"
@@ -4599,7 +4866,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIScreen.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/libgen.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFAccessToken.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/netinet/in.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderDomain.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLErrorDomain.h"
@@ -4637,7 +4904,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKFoundation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalizedIndexedCollation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CAAnimation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h"
@@ -4685,7 +4952,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontCollection.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXPCConnection.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLConnection.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGFunction.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CAValueFunction.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CAMediaTimingFunction.h"
@@ -4700,10 +4967,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarCommon.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/secure/_common.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKDeviceButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKUserTrackingButton.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKCompassButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPattern.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CVReturn.h"
@@ -4716,7 +4984,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/spawn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/spawn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CoreVideo.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
@@ -4833,14 +5101,14 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/YYWebImage/YYWebImageManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureManager.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSkinManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUndoManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStatusBarManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderManager.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/DocumentManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSLayoutManager.h"
@@ -4859,7 +5127,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITabBarController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImagePickerController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrinterPickerController.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPopoverController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIVideoEditorController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAlertController.h"
@@ -4944,8 +5212,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTypesetter.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapSnapshotter.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSKeyedArchiver.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILargeContentViewer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CALayer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGLayer.h"
@@ -4995,7 +5263,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/error.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mach_error.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProcessor.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/processor.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageAccumulator.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDynamicAnimator.h"
@@ -5101,7 +5369,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/strings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/secure/_strings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSettings.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
@@ -5200,11 +5468,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sysexits.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserDefaults.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/ttydefaults.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPersonNameComponents.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/bsm/audit_uevents.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/appleapiopts.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/thread_special_ports.h"
@@ -5317,7 +5585,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/ShareSheet.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActionSheet.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/shims/Target.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFSocket.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/socket.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/arpa/inet.h"
@@ -5329,8 +5597,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageAsset.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_fd_isset.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AccountKit.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFAccountKit.h"
@@ -5344,14 +5612,14 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGradient.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIMenuElement.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityElement.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMeasurement.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationAttachment.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSTextAttachment.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h"
@@ -5365,7 +5633,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIEvent.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLEvent.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPressesEvent.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/event.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFocusMovementHint.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_u_int.h"
@@ -5399,7 +5667,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecImportExport.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLRequest.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchRequest.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationRequest.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderRequest.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKDirectionsRequest.h"
@@ -5448,7 +5716,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKCircleView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKPolylineView.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayPathView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStackView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIScrollView.h"
@@ -5458,10 +5726,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMarkerAnnotationView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UICollectionView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapView.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPickerView.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewHeaderFooterView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityIndicatorView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIProgressView.h"
@@ -5525,8 +5793,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/shims/Visibility.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibility.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationLegacySwiftCompatibility.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFFileSecurity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/host_security.h"
@@ -5544,8 +5812,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
@@ -5565,4 +5833,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "7e3c182274b875791c0d7cb44c07465a"
+interface-hash: "892ca8c43672cb5742ec945334324414"

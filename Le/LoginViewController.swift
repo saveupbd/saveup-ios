@@ -40,7 +40,7 @@ class LoginViewController: UIViewController, LoginButtonDelegate, UIGestureRecog
         super.viewDidLoad()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         //init Account Kit
-        btnGoogleLogin.imageView?.contentMode = .scaleAspectFit
+        btnGoogleLogin.imageView?.contentMode = .scaleAspectFill
         self.setAwsomeBackgroundImage()
         self.dismissKeyBoardTappedOutside()
         if accountKit == nil {

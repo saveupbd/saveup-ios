@@ -64,12 +64,6 @@
 		8D4E13942375EC500072B53E /* SJCenterFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E13922375EC4D0072B53E /* SJCenterFlowLayout.swift */; };
 		8D4E13952375EC500072B53E /* ZoomAndSnapFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E13932375EC500072B53E /* ZoomAndSnapFlowLayout.swift */; };
 		8D4E13972375ECA10072B53E /* BannerCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D4E13962375ECA10072B53E /* BannerCollectionViewCell.swift */; };
-		8D6A48A023F5A652003B26E0 /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4C4CB4225B1ADD002DE4C1 /* FBSDKShareKit.framework */; };
-		8D6A48A123F5A652003B26E0 /* FBSDKShareKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4C4CB4225B1ADD002DE4C1 /* FBSDKShareKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8D6A48A223F5A652003B26E0 /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4C4CB8225B1ADF002DE4C1 /* FBSDKLoginKit.framework */; };
-		8D6A48A323F5A652003B26E0 /* FBSDKLoginKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4C4CB8225B1ADF002DE4C1 /* FBSDKLoginKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8D6A48A423F5A652003B26E0 /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4C4CB7225B1ADF002DE4C1 /* FBSDKCoreKit.framework */; };
-		8D6A48A523F5A652003B26E0 /* FBSDKCoreKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4C4CB7225B1ADF002DE4C1 /* FBSDKCoreKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8D6A8ABA238B0DB4000CC24E /* CategoryProductListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6A8AB9238B0DB4000CC24E /* CategoryProductListViewController.swift */; };
 		8D6ADBF123B12F7E00AC3CB1 /* FDetailsRelatedArrayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6ADBF023B12F7E00AC3CB1 /* FDetailsRelatedArrayTableViewCell.swift */; };
 		8D6B391423EF1C760078C119 /* FDetailsImagesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6B391323EF1C760078C119 /* FDetailsImagesTableViewCell.swift */; };
@@ -216,15 +210,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		8D1F06E0237835790019BD67 /* Embed Frameworks */ = {
+		8D70570E23FD3CAB003B8C3B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 12;
+			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8D6A48A323F5A652003B26E0 /* FBSDKLoginKit.framework in Embed Frameworks */,
-				8D6A48A523F5A652003B26E0 /* FBSDKCoreKit.framework in Embed Frameworks */,
-				8D6A48A123F5A652003B26E0 /* FBSDKShareKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,11 +259,8 @@
 		2FD3DCA9224C98E2009C8BF3 /* orderProductList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderProductList.swift; sourceTree = "<group>"; };
 		2FF69C1C2237AC94009A8577 /* HelpVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpVc.swift; sourceTree = "<group>"; };
 		2FF69C1E2237C595009A8577 /* PymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PymentVC.swift; sourceTree = "<group>"; };
-		3B4C4CB4225B1ADD002DE4C1 /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKShareKit.framework; sourceTree = "<group>"; };
 		3B4C4CB5225B1ADD002DE4C1 /* AccountKitStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AccountKitStrings.bundle; sourceTree = "<group>"; };
 		3B4C4CB6225B1ADE002DE4C1 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
-		3B4C4CB7225B1ADF002DE4C1 /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
-		3B4C4CB8225B1ADF002DE4C1 /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		7FA25A77EFF903ADC57D0F00 /* Pods-Le.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Le.debug.xcconfig"; path = "Target Support Files/Pods-Le/Pods-Le.debug.xcconfig"; sourceTree = "<group>"; };
 		834CA0046748FE65EDF75C9F /* Pods_Le.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Le.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D21EA88236D509900B1D0A9 /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
@@ -483,7 +471,6 @@
 				BED0FE671EBF90C000143877 /* SafariServices.framework in Frameworks */,
 				BED0FE651EBF90B900143877 /* SystemConfiguration.framework in Frameworks */,
 				BEBA975C1E819448001E0AC8 /* MobileCoreServices.framework in Frameworks */,
-				8D6A48A423F5A652003B26E0 /* FBSDKCoreKit.framework in Frameworks */,
 				BED0FE631EBF90A800143877 /* MessageUI.framework in Frameworks */,
 				BED0FE611EBF909900143877 /* CoreMedia.framework in Frameworks */,
 				BED0FE5F1EBF909000143877 /* CoreLocation.framework in Frameworks */,
@@ -492,9 +479,7 @@
 				BEBA975A1E819441001E0AC8 /* Accelerate.framework in Frameworks */,
 				BEBA97601E81945E001E0AC8 /* libz.tbd in Frameworks */,
 				BED0FE591EBF8FC200143877 /* libPayPalMobile.a in Frameworks */,
-				8D6A48A223F5A652003B26E0 /* FBSDKLoginKit.framework in Frameworks */,
 				BEBA975E1E819455001E0AC8 /* libsqlite3.tbd in Frameworks */,
-				8D6A48A023F5A652003B26E0 /* FBSDKShareKit.framework in Frameworks */,
 				BEBA97581E819436001E0AC8 /* ImageIO.framework in Frameworks */,
 				BEBA97561E819429001E0AC8 /* AssetsLibrary.framework in Frameworks */,
 				BEBA97541E819423001E0AC8 /* QuartzCore.framework in Frameworks */,
@@ -895,9 +880,6 @@
 				8D4FA86D237C6FF2000FD86D /* SSLCommerz-5.1.2.framework */,
 				3B4C4CB6225B1ADE002DE4C1 /* AccountKit.framework */,
 				3B4C4CB5225B1ADD002DE4C1 /* AccountKitStrings.bundle */,
-				3B4C4CB7225B1ADF002DE4C1 /* FBSDKCoreKit.framework */,
-				3B4C4CB8225B1ADF002DE4C1 /* FBSDKLoginKit.framework */,
-				3B4C4CB4225B1ADD002DE4C1 /* FBSDKShareKit.framework */,
 				BED0FE661EBF90C000143877 /* SafariServices.framework */,
 				BED0FE641EBF90B900143877 /* SystemConfiguration.framework */,
 				BED0FE621EBF90A700143877 /* MessageUI.framework */,
@@ -1078,9 +1060,9 @@
 				BEFE57A01E688D8200DC6A55 /* Sources */,
 				BEFE57A11E688D8200DC6A55 /* Frameworks */,
 				BEFE57A21E688D8200DC6A55 /* Resources */,
-				8D1F06E0237835790019BD67 /* Embed Frameworks */,
 				994B0DB4562CC2E13755FF8A /* [CP] Embed Pods Frameworks */,
 				5CCCBBF04FA65E2F97A68A49 /* [CP] Copy Pods Resources */,
+				8D70570E23FD3CAB003B8C3B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1196,6 +1178,9 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Le/Pods-Le-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
@@ -1208,6 +1193,9 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
@@ -1558,7 +1546,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Le/PayPalMobile",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.4.2;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lc++",
@@ -1604,7 +1592,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Le/PayPalMobile",
 				);
-				MARKETING_VERSION = 1.0.5;
+				MARKETING_VERSION = 1.4.2;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lc++",

@@ -18,6 +18,8 @@ depends-top-level:
 - !private "/"
 - !private "=="
 - "AppDelegate"
+- !private "AppEvents"
+- !private "ApplicationDelegate"
 - "AssignmentPrecedence"
 - "Bool"
 - !private "BooleanLiteralType"
@@ -25,8 +27,6 @@ depends-top-level:
 - "CALayer"
 - !private "CGRect"
 - "CastingPrecedence"
-- !private "FBSDKAppEvents"
-- !private "FBSDKApplicationDelegate"
 - !private "FirebaseApp"
 - !private "FloatLiteralType"
 - !private "GIDSignIn"
@@ -54,12 +54,12 @@ depends-top-level:
 - !private "titleFont"
 depends-member:
 - !private ["6SaveUp11AppDelegateC", "AppDelegate"]
+- !private ["6SaveUp11AppDelegateC", "AppEvents"]
+- !private ["6SaveUp11AppDelegateC", "ApplicationDelegate"]
 - ["6SaveUp11AppDelegateC", "Bool"]
 - !private ["6SaveUp11AppDelegateC", "CAGradientLayer"]
 - ["6SaveUp11AppDelegateC", "CALayer"]
 - !private ["6SaveUp11AppDelegateC", "CGRect"]
-- !private ["6SaveUp11AppDelegateC", "FBSDKAppEvents"]
-- !private ["6SaveUp11AppDelegateC", "FBSDKApplicationDelegate"]
 - !private ["6SaveUp11AppDelegateC", "FirebaseApp"]
 - !private ["6SaveUp11AppDelegateC", "GIDSignIn"]
 - !private ["6SaveUp11AppDelegateC", "NSAttributedString"]
@@ -97,7 +97,8 @@ depends-member:
 - !private ["6SaveUp11AppDelegateC", "titleFont"]
 - ["6SaveUp11AppDelegateC", "window"]
 - !private ["So14FBSDKAppEventsC", "activateApp"]
-- !private ["So24FBSDKApplicationDelegateC", "sharedInstance"]
+- !private ["So24FBSDKApplicationDelegateC", "application"]
+- !private ["So24FBSDKApplicationDelegateC", "shared"]
 - !private ["So15CAGradientLayerC", "colors"]
 - !private ["So15CAGradientLayerC", "frame"]
 - !private ["So15CAGradientLayerC", "init"]
@@ -117,10 +118,10 @@ depends-member:
 - !private ["So6CGRectV", "init"]
 - !private ["So6CGRectV", "size"]
 - !private ["So6CGSizeV", "height"]
+- !private ["s7CVarArgP", "AppEvents"]
+- !private ["s7CVarArgP", "ApplicationDelegate"]
 - !private ["s7CVarArgP", "CAGradientLayer"]
 - !private ["s7CVarArgP", "CGRect"]
-- !private ["s7CVarArgP", "FBSDKAppEvents"]
-- !private ["s7CVarArgP", "FBSDKApplicationDelegate"]
 - !private ["s7CVarArgP", "FirebaseApp"]
 - !private ["s7CVarArgP", "GIDSignIn"]
 - !private ["s7CVarArgP", "Key"]
@@ -176,10 +177,10 @@ depends-member:
 - !private ["s7CVarArgP", "titleTextAttributes"]
 - !private ["s7CVarArgP", "white"]
 - ["s7CVarArgP", "window"]
+- !private ["s28CustomDebugStringConvertibleP", "AppEvents"]
+- !private ["s28CustomDebugStringConvertibleP", "ApplicationDelegate"]
 - !private ["s28CustomDebugStringConvertibleP", "CAGradientLayer"]
 - !private ["s28CustomDebugStringConvertibleP", "CGRect"]
-- !private ["s28CustomDebugStringConvertibleP", "FBSDKAppEvents"]
-- !private ["s28CustomDebugStringConvertibleP", "FBSDKApplicationDelegate"]
 - !private ["s28CustomDebugStringConvertibleP", "FirebaseApp"]
 - !private ["s28CustomDebugStringConvertibleP", "GIDSignIn"]
 - !private ["s28CustomDebugStringConvertibleP", "Key"]
@@ -241,10 +242,10 @@ depends-member:
 - !private ["s17CustomReflectableP", "height"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "size"]
+- !private ["s23CustomStringConvertibleP", "AppEvents"]
+- !private ["s23CustomStringConvertibleP", "ApplicationDelegate"]
 - !private ["s23CustomStringConvertibleP", "CAGradientLayer"]
 - !private ["s23CustomStringConvertibleP", "CGRect"]
-- !private ["s23CustomStringConvertibleP", "FBSDKAppEvents"]
-- !private ["s23CustomStringConvertibleP", "FBSDKApplicationDelegate"]
 - !private ["s23CustomStringConvertibleP", "FirebaseApp"]
 - !private ["s23CustomStringConvertibleP", "GIDSignIn"]
 - !private ["s23CustomStringConvertibleP", "Key"]
@@ -309,10 +310,10 @@ depends-member:
 - !private ["SE", "init"]
 - !private ["SE", "scheme"]
 - !private ["SE", "size"]
+- !private ["SQ", "AppEvents"]
+- !private ["SQ", "ApplicationDelegate"]
 - !private ["SQ", "CAGradientLayer"]
 - !private ["SQ", "CGRect"]
-- !private ["SQ", "FBSDKAppEvents"]
-- !private ["SQ", "FBSDKApplicationDelegate"]
 - !private ["SQ", "FirebaseApp"]
 - !private ["SQ", "GIDSignIn"]
 - !private ["SQ", "Key"]
@@ -377,10 +378,10 @@ depends-member:
 - !private ["So6FIRAppC", "configure"]
 - !private ["So9GIDSignInC", "handle"]
 - !private ["So9GIDSignInC", "sharedInstance"]
+- !private ["SH", "AppEvents"]
+- !private ["SH", "ApplicationDelegate"]
 - !private ["SH", "CAGradientLayer"]
 - !private ["SH", "CGRect"]
-- !private ["SH", "FBSDKAppEvents"]
-- !private ["SH", "FBSDKApplicationDelegate"]
 - !private ["SH", "FirebaseApp"]
 - !private ["SH", "GIDSignIn"]
 - !private ["SH", "Key"]
@@ -476,12 +477,12 @@ depends-member:
 - !private ["So21NSItemProviderWritingP", "white"]
 - !private ["So16NSMutableCopyingP", "Key"]
 - !private ["So8NSObjectC", "AppDelegate"]
+- !private ["So8NSObjectC", "AppEvents"]
+- !private ["So8NSObjectC", "ApplicationDelegate"]
 - ["So8NSObjectC", "Bool"]
 - !private ["So8NSObjectC", "CAGradientLayer"]
 - ["So8NSObjectC", "CALayer"]
 - !private ["So8NSObjectC", "CGRect"]
-- !private ["So8NSObjectC", "FBSDKAppEvents"]
-- !private ["So8NSObjectC", "FBSDKApplicationDelegate"]
 - !private ["So8NSObjectC", "FirebaseApp"]
 - !private ["So8NSObjectC", "GIDSignIn"]
 - !private ["So8NSObjectC", "Key"]
@@ -541,10 +542,10 @@ depends-member:
 - !private ["So8NSObjectC", "titleTextAttributes"]
 - !private ["So8NSObjectC", "white"]
 - ["So8NSObjectC", "window"]
+- !private ["So8NSObjectP", "AppEvents"]
+- !private ["So8NSObjectP", "ApplicationDelegate"]
 - !private ["So8NSObjectP", "CAGradientLayer"]
 - !private ["So8NSObjectP", "CGRect"]
-- !private ["So8NSObjectP", "FBSDKAppEvents"]
-- !private ["So8NSObjectP", "FBSDKApplicationDelegate"]
 - !private ["So8NSObjectP", "FirebaseApp"]
 - !private ["So8NSObjectP", "GIDSignIn"]
 - !private ["So8NSObjectP", "Key"]
@@ -632,10 +633,10 @@ depends-member:
 - ["So13UIApplicationC", "LaunchOptionsKey"]
 - !private ["So13UIApplicationC", "delegate"]
 - !private ["So13UIApplicationC", "shared"]
+- !private ["So21UIApplicationDelegateP", "AppEvents"]
+- !private ["So21UIApplicationDelegateP", "ApplicationDelegate"]
 - !private ["So21UIApplicationDelegateP", "CAGradientLayer"]
 - !private ["So21UIApplicationDelegateP", "CGRect"]
-- !private ["So21UIApplicationDelegateP", "FBSDKAppEvents"]
-- !private ["So21UIApplicationDelegateP", "FBSDKApplicationDelegate"]
 - !private ["So21UIApplicationDelegateP", "FirebaseApp"]
 - !private ["So21UIApplicationDelegateP", "GIDSignIn"]
 - !private ["So21UIApplicationDelegateP", "NSAttributedString"]
@@ -714,10 +715,10 @@ depends-member:
 - !private ["So15UINavigationBarC", "titleTextAttributes"]
 - !private ["So22UINavigationControllerC", "init"]
 - !private ["So22UINavigationControllerC", "navigationBar"]
+- !private ["So30UIPasteConfigurationSupportingP", "AppEvents"]
+- !private ["So30UIPasteConfigurationSupportingP", "ApplicationDelegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "CAGradientLayer"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGRect"]
-- !private ["So30UIPasteConfigurationSupportingP", "FBSDKAppEvents"]
-- !private ["So30UIPasteConfigurationSupportingP", "FBSDKApplicationDelegate"]
 - !private ["So30UIPasteConfigurationSupportingP", "FirebaseApp"]
 - !private ["So30UIPasteConfigurationSupportingP", "GIDSignIn"]
 - ["So30UIPasteConfigurationSupportingP", "LaunchOptionsKey"]
@@ -759,12 +760,12 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "titleTextAttributes"]
 - ["So30UIPasteConfigurationSupportingP", "window"]
 - !private ["So11UIResponderC", "AppDelegate"]
+- !private ["So11UIResponderC", "AppEvents"]
+- !private ["So11UIResponderC", "ApplicationDelegate"]
 - ["So11UIResponderC", "Bool"]
 - !private ["So11UIResponderC", "CAGradientLayer"]
 - ["So11UIResponderC", "CALayer"]
 - !private ["So11UIResponderC", "CGRect"]
-- !private ["So11UIResponderC", "FBSDKAppEvents"]
-- !private ["So11UIResponderC", "FBSDKApplicationDelegate"]
 - !private ["So11UIResponderC", "FirebaseApp"]
 - !private ["So11UIResponderC", "GIDSignIn"]
 - ["So11UIResponderC", "LaunchOptionsKey"]
@@ -810,10 +811,10 @@ depends-member:
 - !private ["So11UIResponderC", "titleFont"]
 - !private ["So11UIResponderC", "titleTextAttributes"]
 - ["So11UIResponderC", "window"]
+- !private ["So30UIResponderStandardEditActionsP", "AppEvents"]
+- !private ["So30UIResponderStandardEditActionsP", "ApplicationDelegate"]
 - !private ["So30UIResponderStandardEditActionsP", "CAGradientLayer"]
 - !private ["So30UIResponderStandardEditActionsP", "CGRect"]
-- !private ["So30UIResponderStandardEditActionsP", "FBSDKAppEvents"]
-- !private ["So30UIResponderStandardEditActionsP", "FBSDKApplicationDelegate"]
 - !private ["So30UIResponderStandardEditActionsP", "FirebaseApp"]
 - !private ["So30UIResponderStandardEditActionsP", "GIDSignIn"]
 - ["So30UIResponderStandardEditActionsP", "LaunchOptionsKey"]
@@ -869,10 +870,10 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "setBackgroundImage"]
 - !private ["So18UITraitEnvironmentP", "tintColor"]
 - !private ["So18UITraitEnvironmentP", "titleTextAttributes"]
+- !private ["So23UIUserActivityRestoringP", "AppEvents"]
+- !private ["So23UIUserActivityRestoringP", "ApplicationDelegate"]
 - !private ["So23UIUserActivityRestoringP", "CAGradientLayer"]
 - !private ["So23UIUserActivityRestoringP", "CGRect"]
-- !private ["So23UIUserActivityRestoringP", "FBSDKAppEvents"]
-- !private ["So23UIUserActivityRestoringP", "FBSDKApplicationDelegate"]
 - !private ["So23UIUserActivityRestoringP", "FirebaseApp"]
 - !private ["So23UIUserActivityRestoringP", "GIDSignIn"]
 - ["So23UIUserActivityRestoringP", "LaunchOptionsKey"]
@@ -934,10 +935,10 @@ depends-member:
 - !private ["s34_ExpressibleByFileReferenceLiteralP", "scheme"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "font"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "foregroundColor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AppEvents"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "ApplicationDelegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CAGradientLayer"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGRect"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "FBSDKAppEvents"]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "FBSDKApplicationDelegate"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "FirebaseApp"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "GIDSignIn"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Key"]
@@ -993,10 +994,10 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleTextAttributes"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "white"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "window"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "AppEvents"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ApplicationDelegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CAGradientLayer"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGRect"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "FBSDKAppEvents"]
-- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "FBSDKApplicationDelegate"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "FirebaseApp"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "GIDSignIn"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Key"]
@@ -1161,15 +1162,18 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Accelerate.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreLocation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/os.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/MapKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_timeval32.h"

@@ -1,0 +1,55 @@
+dependencies: \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GTMAppAuth/Source/GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.m \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GTMAppAuth.build/module.modulemap \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Target\ Support\ Files/GTMAppAuth/GTMAppAuth-prefix.pch \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GTMAppAuth/Source/GTMOAuth2KeychainCompatibility/GTMOAuth2KeychainCompatibility.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GTMAppAuth/Source/GTMAppAuthFetcherAuthorization.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/GTMSessionFetcher.build/module.modulemap \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GTMSessionFetcher/Source/GTMReadMonitorInputStream.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GTMSessionFetcher/Source/GTMMIMEDocument.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GTMSessionFetcher/Source/GTMGatherInputStream.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GTMSessionFetcher/Source/GTMSessionUploadFetcher.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GTMSessionFetcher/Source/GTMSessionFetcherService.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GTMSessionFetcher/Source/GTMSessionFetcherLogging.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GTMSessionFetcher/Source/GTMSessionFetcher.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Target\ Support\ Files/GTMSessionFetcher/GTMSessionFetcher-umbrella.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/AppAuth.build/module.modulemap \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/iOS/OIDExternalUserAgentCatalyst.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/iOS/OIDExternalUserAgentIOSCustomBrowser.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/iOS/OIDExternalUserAgentIOS.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/iOS/OIDAuthorizationService+IOS.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/iOS/OIDAuthState+IOS.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/AppAuth.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDURLQueryComponent.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDFieldMapping.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDDefines.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDClientMetadataParameters.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDEndSessionResponse.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDEndSessionRequest.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDURLSessionProvider.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDTokenUtilities.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDTokenResponse.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDTokenRequest.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDServiceDiscovery.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDServiceConfiguration.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDScopeUtilities.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDRegistrationResponse.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDRegistrationRequest.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDIDToken.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDGrantTypes.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDExternalUserAgentSession.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDExternalUserAgent.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDErrorUtilities.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDError.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDAuthorizationService.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDAuthorizationResponse.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDScopes.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDResponseTypes.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDExternalUserAgentRequest.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDAuthorizationRequest.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDAuthStateErrorDelegate.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDAuthStateChangeDelegate.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDAuthState.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/AppAuthCore.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Target\ Support\ Files/AppAuth/AppAuth-umbrella.h \
+  /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GTMAppAuth/Source/GTMKeychain.h

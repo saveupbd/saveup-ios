@@ -77,9 +77,19 @@ class FDetailsRelatedArrayTableViewCell: UITableViewCell,UICollectionViewDelegat
         //cell.productTitle.numberOfLines = 5
         cell.productTitle.text = relatedArray[indexPath.row].product_title!
         //cell.productTitle.text = relatedArray[indexPath.row].product_title
-        //cell.productCategory.numberOfLines = 2
+        cell.productCategory.numberOfLines = 2
         cell.productCategory.text = relatedArray[indexPath.row].merchant_name!
-        cell.cutOffPrice.text = "৳" + relatedArray[indexPath.row].product_price!
+//        cell.cutOffPrice.text = "৳" + relatedArray[indexPath.row].product_price!
+        
+        if relatedArray[indexPath.row].product_type != "all_item"{
+            cell.originalPrice.text = "৳" + relatedArray[indexPath.row].product_discount_price
+            cell.cutOffPrice.attributedText = relatedArray[indexPath.row].product_price.strikeThrough()
+            cell.offPercentage.text = relatedArray[indexPath.row].product_percentage + "% off"
+        }else{
+            cell.cutOffPrice.text = relatedArray[indexPath.row].product_off + "% off"
+            cell.cutOffPrice.textColor = UIColor(named: "appThemeColor")
+        }
+        
         return cell
     }
     

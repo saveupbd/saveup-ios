@@ -1,0 +1,1163 @@
+BCSymbolMap Version: 2.0
+-[FBSDKAppGroupContent hash]
+-[FBSDKAppGroupContent isEqual:]
+-[FBSDKAppGroupContent isEqualToAppGroupContent:]
++[FBSDKAppGroupContent supportsSecureCoding]
+-[FBSDKAppGroupContent initWithCoder:]
+-[FBSDKAppGroupContent encodeWithCoder:]
+-[FBSDKAppGroupContent copyWithZone:]
+-[FBSDKAppGroupContent groupDescription]
+-[FBSDKAppGroupContent setGroupDescription:]
+-[FBSDKAppGroupContent name]
+-[FBSDKAppGroupContent setName:]
+-[FBSDKAppGroupContent privacy]
+-[FBSDKAppGroupContent setPrivacy:]
+-[FBSDKAppGroupContent .cxx_destruct]
+__OBJC_PROTOCOL_$_NSCopying
+__OBJC_LABEL_PROTOCOL_$_NSCopying
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_PROTOCOL_$_FBSDKCopying
+__OBJC_LABEL_PROTOCOL_$_FBSDKCopying
+__OBJC_PROTOCOL_$_NSCoding
+__OBJC_LABEL_PROTOCOL_$_NSCoding
+__OBJC_PROTOCOL_$_NSSecureCoding
+__OBJC_LABEL_PROTOCOL_$_NSSecureCoding
+_OBJC_IVAR_$_FBSDKAppGroupContent._groupDescription
+_OBJC_IVAR_$_FBSDKAppGroupContent._name
+_OBJC_IVAR_$_FBSDKAppGroupContent._privacy
+Apple clang version 11.0.0 (clang-1100.0.33.12)
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppGroupContent.m
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppGroupContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppGroupContent.h
+NSStringFromFBSDKAppGroupPrivacy
+-[FBSDKAppInviteContent previewImageURL]
+-[FBSDKAppInviteContent setPreviewImageURL:]
+-[FBSDKAppInviteContent validateWithOptions:error:]
+-[FBSDKAppInviteContent _validatePromoCodeWithError:]
+-[FBSDKAppInviteContent hash]
+-[FBSDKAppInviteContent isEqual:]
+-[FBSDKAppInviteContent isEqualToAppInviteContent:]
++[FBSDKAppInviteContent supportsSecureCoding]
+-[FBSDKAppInviteContent initWithCoder:]
+-[FBSDKAppInviteContent encodeWithCoder:]
+-[FBSDKAppInviteContent copyWithZone:]
+-[FBSDKAppInviteContent appInvitePreviewImageURL]
+-[FBSDKAppInviteContent setAppInvitePreviewImageURL:]
+-[FBSDKAppInviteContent appLinkURL]
+-[FBSDKAppInviteContent setAppLinkURL:]
+-[FBSDKAppInviteContent promotionCode]
+-[FBSDKAppInviteContent setPromotionCode:]
+-[FBSDKAppInviteContent promotionText]
+-[FBSDKAppInviteContent setPromotionText:]
+-[FBSDKAppInviteContent destination]
+-[FBSDKAppInviteContent setDestination:]
+-[FBSDKAppInviteContent .cxx_destruct]
+__OBJC_PROTOCOL_$_FBSDKSharingValidation
+__OBJC_LABEL_PROTOCOL_$_FBSDKSharingValidation
+_OBJC_IVAR_$_FBSDKAppInviteContent._appInvitePreviewImageURL
+_OBJC_IVAR_$_FBSDKAppInviteContent._appLinkURL
+_OBJC_IVAR_$_FBSDKAppInviteContent._promotionCode
+_OBJC_IVAR_$_FBSDKAppInviteContent._promotionText
+_OBJC_IVAR_$_FBSDKAppInviteContent._destination
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppInviteContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppInviteContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKAppInviteContent.h
+-[FBSDKCameraEffectArguments init]
+-[FBSDKCameraEffectArguments setString:forKey:]
+-[FBSDKCameraEffectArguments stringForKey:]
+-[FBSDKCameraEffectArguments setArray:forKey:]
+-[FBSDKCameraEffectArguments arrayForKey:]
+-[FBSDKCameraEffectArguments allArguments]
+-[FBSDKCameraEffectArguments hash]
+-[FBSDKCameraEffectArguments isEqual:]
+-[FBSDKCameraEffectArguments isEqualToCameraEffectArguments:]
++[FBSDKCameraEffectArguments supportsSecureCoding]
+-[FBSDKCameraEffectArguments initWithCoder:]
+-[FBSDKCameraEffectArguments encodeWithCoder:]
+-[FBSDKCameraEffectArguments copyWithZone:]
+-[FBSDKCameraEffectArguments _setValue:forKey:]
+-[FBSDKCameraEffectArguments _valueForKey:]
+-[FBSDKCameraEffectArguments _valueOfClass:forKey:]
++[FBSDKCameraEffectArguments assertKey:]
++[FBSDKCameraEffectArguments assertValue:]
+-[FBSDKCameraEffectArguments .cxx_destruct]
+_OBJC_IVAR_$_FBSDKCameraEffectArguments._arguments
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKCameraEffectArguments.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKCameraEffectArguments.m
+-[FBSDKCameraEffectTextures init]
+-[FBSDKCameraEffectTextures setImage:forKey:]
+-[FBSDKCameraEffectTextures imageForKey:]
+-[FBSDKCameraEffectTextures allTextures]
+-[FBSDKCameraEffectTextures hash]
+-[FBSDKCameraEffectTextures isEqual:]
+-[FBSDKCameraEffectTextures isEqualToCameraEffectTextures:]
++[FBSDKCameraEffectTextures supportsSecureCoding]
+-[FBSDKCameraEffectTextures initWithCoder:]
+-[FBSDKCameraEffectTextures encodeWithCoder:]
+-[FBSDKCameraEffectTextures copyWithZone:]
+-[FBSDKCameraEffectTextures _setValue:forKey:]
+-[FBSDKCameraEffectTextures _valueForKey:]
+-[FBSDKCameraEffectTextures _valueOfClass:forKey:]
+-[FBSDKCameraEffectTextures .cxx_destruct]
+_OBJC_IVAR_$_FBSDKCameraEffectTextures._textures
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKCameraEffectTextures.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKCameraEffectTextures.m
+-[FBSDKCheckmarkIcon pathWithSize:]
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKCheckmarkIcon.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKCheckmarkIcon.m
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKDeviceShareButton.m
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKDeviceShareViewController.m
+-[FBSDKGameRequestContent setRecipients:]
+-[FBSDKGameRequestContent setRecipientSuggestions:]
+-[FBSDKGameRequestContent suggestions]
+-[FBSDKGameRequestContent setSuggestions:]
+-[FBSDKGameRequestContent to]
+-[FBSDKGameRequestContent setTo:]
+-[FBSDKGameRequestContent validateWithOptions:error:]
+-[FBSDKGameRequestContent hash]
+-[FBSDKGameRequestContent isEqual:]
+-[FBSDKGameRequestContent isEqualToGameRequestContent:]
++[FBSDKGameRequestContent supportsSecureCoding]
+-[FBSDKGameRequestContent initWithCoder:]
+-[FBSDKGameRequestContent encodeWithCoder:]
+-[FBSDKGameRequestContent copyWithZone:]
+-[FBSDKGameRequestContent actionType]
+-[FBSDKGameRequestContent setActionType:]
+-[FBSDKGameRequestContent data]
+-[FBSDKGameRequestContent setData:]
+-[FBSDKGameRequestContent filters]
+-[FBSDKGameRequestContent setFilters:]
+-[FBSDKGameRequestContent message]
+-[FBSDKGameRequestContent setMessage:]
+-[FBSDKGameRequestContent objectID]
+-[FBSDKGameRequestContent setObjectID:]
+-[FBSDKGameRequestContent recipients]
+-[FBSDKGameRequestContent recipientSuggestions]
+-[FBSDKGameRequestContent title]
+-[FBSDKGameRequestContent setTitle:]
+-[FBSDKGameRequestContent .cxx_destruct]
+_OBJC_IVAR_$_FBSDKGameRequestContent._actionType
+_OBJC_IVAR_$_FBSDKGameRequestContent._data
+_OBJC_IVAR_$_FBSDKGameRequestContent._filters
+_OBJC_IVAR_$_FBSDKGameRequestContent._message
+_OBJC_IVAR_$_FBSDKGameRequestContent._objectID
+_OBJC_IVAR_$_FBSDKGameRequestContent._recipients
+_OBJC_IVAR_$_FBSDKGameRequestContent._recipientSuggestions
+_OBJC_IVAR_$_FBSDKGameRequestContent._title
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestContent.h
++[FBSDKGameRequestDialog initialize]
++[FBSDKGameRequestDialog dialogWithContent:delegate:]
++[FBSDKGameRequestDialog showWithContent:delegate:]
+-[FBSDKGameRequestDialog init]
+-[FBSDKGameRequestDialog dealloc]
+-[FBSDKGameRequestDialog canShow]
+-[FBSDKGameRequestDialog show]
+-[FBSDKGameRequestDialog validateWithError:]
+-[FBSDKGameRequestDialog webDialog:didCompleteWithResults:]
+-[FBSDKGameRequestDialog webDialog:didFailWithError:]
+-[FBSDKGameRequestDialog webDialogDidCancel:]
+-[FBSDKGameRequestDialog _cleanUp]
+-[FBSDKGameRequestDialog _handleCompletionWithDialogResults:error:]
+-[FBSDKGameRequestDialog _actionTypeNameForActionType:]
+-[FBSDKGameRequestDialog _filtersNameForFilters:]
+-[FBSDKGameRequestDialog delegate]
+-[FBSDKGameRequestDialog setDelegate:]
+-[FBSDKGameRequestDialog content]
+-[FBSDKGameRequestDialog setContent:]
+-[FBSDKGameRequestDialog isFrictionlessRequestsEnabled]
+-[FBSDKGameRequestDialog setFrictionlessRequestsEnabled:]
+-[FBSDKGameRequestDialog .cxx_destruct]
+__recipientCache
+__OBJC_PROTOCOL_$_FBSDKWebDialogDelegate
+__OBJC_LABEL_PROTOCOL_$_FBSDKWebDialogDelegate
+_OBJC_IVAR_$_FBSDKGameRequestDialog._dialogIsFrictionless
+_OBJC_IVAR_$_FBSDKGameRequestDialog._webDialog
+_OBJC_IVAR_$_FBSDKGameRequestDialog._frictionlessRequestsEnabled
+_OBJC_IVAR_$_FBSDKGameRequestDialog._delegate
+_OBJC_IVAR_$_FBSDKGameRequestDialog._content
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestDialog.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestDialog.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKGameRequestDialog.h
+-[FBSDKGameRequestFrictionlessRecipientCache init]
+-[FBSDKGameRequestFrictionlessRecipientCache dealloc]
+-[FBSDKGameRequestFrictionlessRecipientCache recipientsAreFrictionless:]
+-[FBSDKGameRequestFrictionlessRecipientCache updateWithResults:]
+-[FBSDKGameRequestFrictionlessRecipientCache _accessTokenDidChangeNotification:]
+-[FBSDKGameRequestFrictionlessRecipientCache _updateCache]
+___58-[FBSDKGameRequestFrictionlessRecipientCache _updateCache]_block_invoke
+___copy_helper_block_e8_32s
+___destroy_helper_block_e8_32s
+-[FBSDKGameRequestFrictionlessRecipientCache .cxx_destruct]
+___block_descriptor_40_e8_32s_e52_v32?0"FBSDKGraphRequestConnection"816"NSError"24l
+_OBJC_IVAR_$_FBSDKGameRequestFrictionlessRecipientCache._recipientIDs
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKGameRequestFrictionlessRecipientCache.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKGameRequestFrictionlessRecipientCache.m
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32s
+__58-[FBSDKGameRequestFrictionlessRecipientCache _updateCache]_block_invoke
++[FBSDKHashtag hashtagWithString:]
+-[FBSDKHashtag description]
+-[FBSDKHashtag isValid]
+-[FBSDKHashtag hash]
+-[FBSDKHashtag isEqual:]
+-[FBSDKHashtag isEqualToHashtag:]
++[FBSDKHashtag supportsSecureCoding]
+-[FBSDKHashtag initWithCoder:]
+-[FBSDKHashtag encodeWithCoder:]
+-[FBSDKHashtag copyWithZone:]
+-[FBSDKHashtag stringRepresentation]
+-[FBSDKHashtag setStringRepresentation:]
+-[FBSDKHashtag .cxx_destruct]
+___HashtagRegularExpression_block_invoke
+_OBJC_IVAR_$_FBSDKHashtag._stringRepresentation
+_HashtagRegularExpression.hashtagRegularExpression
+_HashtagRegularExpression.onceToken
+___block_descriptor_32_e5_v8?0l
+___block_literal_global
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKHashtag.m
+__HashtagRegularExpression_block_invoke
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKHashtag.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKHashtag.h
+HashtagRegularExpression
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/once.h
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
++[FBSDKLikeActionController isDisabled]
++[FBSDKLikeActionController initialize]
++[FBSDKLikeActionController _accessTokenDidChangeNotification:]
++[FBSDKLikeActionController _applicationWillResignActiveNotification:]
++[FBSDKLikeActionController _cacheFileURL]
++[FBSDKLikeActionController likeActionControllerForObjectID:objectType:]
+-[FBSDKLikeActionController initWithObjectID:objectType:accessToken:]
+-[FBSDKLikeActionController init]
++[FBSDKLikeActionController supportsSecureCoding]
+-[FBSDKLikeActionController initWithCoder:]
+-[FBSDKLikeActionController encodeWithCoder:]
+-[FBSDKLikeActionController likeCountString]
+-[FBSDKLikeActionController socialSentence]
+-[FBSDKLikeActionController refresh]
+-[FBSDKLikeActionController beginContentAccess]
+-[FBSDKLikeActionController endContentAccess]
+-[FBSDKLikeActionController discardContentIfPossible]
+-[FBSDKLikeActionController isContentDiscarded]
+-[FBSDKLikeActionController likeDialog:didCompleteWithResults:]
+-[FBSDKLikeActionController likeDialog:didFailWithError:]
+_FBSDKLikeActionControllerLogError
+-[FBSDKLikeActionController _configure]
+-[FBSDKLikeActionController _ensureVerifiedObjectID:]
+___53-[FBSDKLikeActionController _ensureVerifiedObjectID:]_block_invoke
+___53-[FBSDKLikeActionController _ensureVerifiedObjectID:]_block_invoke.160
+___copy_helper_block_e8_32s40b
+___destroy_helper_block_e8_32s40s
+-[FBSDKLikeActionController _presentLikeDialogWithUpdateBlock:analyticsParameters:fromViewController:]
+-[FBSDKLikeActionController _publishIfNeededWithUpdateBlock:analyticsParameters:fromViewController:]
+-[FBSDKLikeActionController _publishLikeWithUpdateBlock:analyticsParameters:fromViewController:]
+___96-[FBSDKLikeActionController _publishLikeWithUpdateBlock:analyticsParameters:fromViewController:]_block_invoke
+___96-[FBSDKLikeActionController _publishLikeWithUpdateBlock:analyticsParameters:fromViewController:]_block_invoke_2
+___copy_helper_block_e8_32s40s48b56s
+___destroy_helper_block_e8_32s40s48s56s
+-[FBSDKLikeActionController _publishUnlikeWithUpdateBlock:analyticsParameters:fromViewController:]
+___98-[FBSDKLikeActionController _publishUnlikeWithUpdateBlock:analyticsParameters:fromViewController:]_block_invoke
+-[FBSDKLikeActionController _refreshWithMode:]
+___46-[FBSDKLikeActionController _refreshWithMode:]_block_invoke
+___46-[FBSDKLikeActionController _refreshWithMode:]_block_invoke_2
+-[FBSDKLikeActionController _setExecuting:forKey:]
+___50-[FBSDKLikeActionController _setExecuting:forKey:]_block_invoke
+-[FBSDKLikeActionController _updateWithObjectIsLiked:likeCountStringWithLike:likeCountStringWithoutLike:socialSentenceWithLike:socialSentenceWithoutLike:unlikeToken:animated:deferred:]
+___184-[FBSDKLikeActionController _updateWithObjectIsLiked:likeCountStringWithLike:likeCountStringWithoutLike:socialSentenceWithLike:socialSentenceWithoutLike:unlikeToken:animated:deferred:]_block_invoke
+___184-[FBSDKLikeActionController _updateWithObjectIsLiked:likeCountStringWithLike:likeCountStringWithoutLike:socialSentenceWithLike:socialSentenceWithoutLike:unlikeToken:animated:deferred:]_block_invoke_2
+___copy_helper_block_e8_32s40s48s56s64s72s
+___destroy_helper_block_e8_32s40s48s56s64s72s
+-[FBSDKLikeActionController _useOGLike]
+-[FBSDKLikeActionController lastUpdateTime]
+-[FBSDKLikeActionController objectID]
+-[FBSDKLikeActionController objectType]
+-[FBSDKLikeActionController objectIsLiked]
+-[FBSDKLikeActionController .cxx_destruct]
+___FBSDKLikeActionControllerAddGetObjectIDWithObjectURLRequest_block_invoke
+___copy_helper_block_e8_32b
+___FBSDKLikeActionControllerAddGetObjectIDRequest_block_invoke
+___FBSDKLikeActionControllerAddPublishLikeRequest_block_invoke
+___copy_helper_block_e8_32s40s48b
+___destroy_helper_block_e8_32s40s48s
+___FBSDKLikeActionControllerAddPublishUnlikeRequest_block_invoke
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___FBSDKLikeActionControllerAddRefreshRequests_block_invoke
+___copy_helper_block_e8_32b40r48r56r64r72r80r
+___destroy_helper_block_e8_32s40r48r56r64r72r80r
+___FBSDKLikeActionControllerAddRefreshRequests_block_invoke.406
+___copy_helper_block_e8_32r40r
+___destroy_helper_block_e8_32r40r
+___FBSDKLikeActionControllerAddRefreshRequests_block_invoke.408
+___copy_helper_block_e8_32b40r48r56r64r
+___destroy_helper_block_e8_32s40r48r56r64r
+___FBSDKLikeActionControllerAddGetOGObjectLikeRequest_block_invoke
+___FBSDKLikeActionControllerAddGetEngagementRequest_block_invoke
+__cache
+___block_descriptor_40_e8_32s_e24_v24?0B8"NSString"12B20l
+___block_descriptor_48_e8_32s40bs_e24_v24?0B8"NSString"12B20l
+___block_descriptor_64_e8_32s40s48bs56s_e21_v20?0B8"NSString"12l
+___block_descriptor_64_e8_32s40s48bs56s_e18_v16?0"NSString"8l
+___block_descriptor_64_e8_32s40s48bs56s_e8_v12?0B8l
+___block_descriptor_40_e8_32s_e79_v64?0q8"NSString"16"NSString"24"NSString"32"NSString"40"NSString"48B56B60l
+___block_descriptor_40_e8_32s_e18_v16?0"NSString"8l
+__setExecuting:forKey:._executing
+__setExecuting:forKey:.onceToken
+___block_descriptor_41_e8_32s_e5_v8?0l
+___block_descriptor_83_e8_32s40s48s56s64s72s_e5_v8?0l
+__OBJC_PROTOCOL_$_FBSDKLikeDialogDelegate
+__OBJC_LABEL_PROTOCOL_$_FBSDKLikeDialogDelegate
+__OBJC_PROTOCOL_$_NSDiscardableContent
+__OBJC_LABEL_PROTOCOL_$_NSDiscardableContent
+_OBJC_IVAR_$_FBSDKLikeActionController._accessToken
+_OBJC_IVAR_$_FBSDKLikeActionController._contentAccessCount
+_OBJC_IVAR_$_FBSDKLikeActionController._contentDiscarded
+_OBJC_IVAR_$_FBSDKLikeActionController._dialogToAnalyticsParametersMap
+_OBJC_IVAR_$_FBSDKLikeActionController._dialogToUpdateBlockMap
+_OBJC_IVAR_$_FBSDKLikeActionController._likeCountStringWithLike
+_OBJC_IVAR_$_FBSDKLikeActionController._likeCountStringWithoutLike
+_OBJC_IVAR_$_FBSDKLikeActionController._objectIsLikedIsPending
+_OBJC_IVAR_$_FBSDKLikeActionController._objectIsLikedOnServer
+_OBJC_IVAR_$_FBSDKLikeActionController._objectIsPage
+_OBJC_IVAR_$_FBSDKLikeActionController._refreshState
+_OBJC_IVAR_$_FBSDKLikeActionController._socialSentenceWithLike
+_OBJC_IVAR_$_FBSDKLikeActionController._socialSentenceWithoutLike
+_OBJC_IVAR_$_FBSDKLikeActionController._unlikeToken
+_OBJC_IVAR_$_FBSDKLikeActionController._verifiedObjectID
+_OBJC_IVAR_$_FBSDKLikeActionController._objectIsLiked
+_OBJC_IVAR_$_FBSDKLikeActionController._lastUpdateTime
+_OBJC_IVAR_$_FBSDKLikeActionController._objectID
+_OBJC_IVAR_$_FBSDKLikeActionController._objectType
+___block_descriptor_40_e8_32bs_e52_v32?0"FBSDKGraphRequestConnection"816"NSError"24l
+___block_descriptor_64_e8_32s40s48bs_e52_v32?0"FBSDKGraphRequestConnection"816"NSError"24l
+___block_descriptor_88_e8_32bs40r48r56r64r72r80r_e5_v8?0l
+___block_descriptor_48_e8_32r40r_e24_v28?0B8q12"NSString"20l
+___block_descriptor_72_e8_32bs40r48r56r64r_e60_v44?0B8"NSString"12"NSString"20"NSString"28"NSString"36l
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeActionController.m
+__FBSDKLikeActionControllerAddGetEngagementRequest_block_invoke
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeActionController.m
+__FBSDKLikeActionControllerAddGetOGObjectLikeRequest_block_invoke
+__destroy_helper_block_e8_32s40r48r56r64r
+__copy_helper_block_e8_32b40r48r56r64r
+__FBSDKLikeActionControllerAddRefreshRequests_block_invoke.408
+__destroy_helper_block_e8_32r40r
+__copy_helper_block_e8_32r40r
+__FBSDKLikeActionControllerAddRefreshRequests_block_invoke.406
+__destroy_helper_block_e8_32s40r48r56r64r72r80r
+__copy_helper_block_e8_32b40r48r56r64r72r80r
+__FBSDKLikeActionControllerAddRefreshRequests_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+__FBSDKLikeActionControllerAddPublishUnlikeRequest_block_invoke
+__destroy_helper_block_e8_32s40s48s
+__copy_helper_block_e8_32s40s48b
+__FBSDKLikeActionControllerAddPublishLikeRequest_block_invoke
+__FBSDKLikeActionControllerAddGetObjectIDRequest_block_invoke
+__copy_helper_block_e8_32b
+__FBSDKLikeActionControllerAddGetObjectIDWithObjectURLRequest_block_invoke
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeActionController.h
+__destroy_helper_block_e8_32s40s48s56s64s72s
+__copy_helper_block_e8_32s40s48s56s64s72s
+__184-[FBSDKLikeActionController _updateWithObjectIsLiked:likeCountStringWithLike:likeCountStringWithoutLike:socialSentenceWithLike:socialSentenceWithoutLike:unlikeToken:animated:deferred:]_block_invoke_2
+__184-[FBSDKLikeActionController _updateWithObjectIsLiked:likeCountStringWithLike:likeCountStringWithoutLike:socialSentenceWithLike:socialSentenceWithoutLike:unlikeToken:animated:deferred:]_block_invoke
+__50-[FBSDKLikeActionController _setExecuting:forKey:]_block_invoke
+__46-[FBSDKLikeActionController _refreshWithMode:]_block_invoke_2
+__46-[FBSDKLikeActionController _refreshWithMode:]_block_invoke
+FBSDKLikeActionControllerAddRefreshRequests
+FBSDKLikeActionControllerAddGetEngagementRequest
+FBSDKLikeActionControllerAddGetOGObjectLikeRequest
+__98-[FBSDKLikeActionController _publishUnlikeWithUpdateBlock:analyticsParameters:fromViewController:]_block_invoke
+FBSDKLikeActionControllerAddPublishUnlikeRequest
+__destroy_helper_block_e8_32s40s48s56s
+__copy_helper_block_e8_32s40s48b56s
+__96-[FBSDKLikeActionController _publishLikeWithUpdateBlock:analyticsParameters:fromViewController:]_block_invoke_2
+__96-[FBSDKLikeActionController _publishLikeWithUpdateBlock:analyticsParameters:fromViewController:]_block_invoke
+FBSDKLikeActionControllerAddPublishLikeRequest
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40b
+__53-[FBSDKLikeActionController _ensureVerifiedObjectID:]_block_invoke.160
+__53-[FBSDKLikeActionController _ensureVerifiedObjectID:]_block_invoke
+FBSDKLikeActionControllerAddGetObjectIDRequest
+FBSDKLikeActionControllerAddGetObjectIDWithObjectURLRequest
+FBSDKLikeActionControllerLogError
+-[FBSDKLikeActionControllerCache initWithAccessTokenString:]
++[FBSDKLikeActionControllerCache supportsSecureCoding]
+-[FBSDKLikeActionControllerCache initWithCoder:]
+-[FBSDKLikeActionControllerCache encodeWithCoder:]
+-[FBSDKLikeActionControllerCache objectForKeyedSubscript:]
+-[FBSDKLikeActionControllerCache resetForAccessTokenString:]
+-[FBSDKLikeActionControllerCache setObject:forKeyedSubscript:]
+-[FBSDKLikeActionControllerCache _prune]
+___40-[FBSDKLikeActionControllerCache _prune]_block_invoke
+-[FBSDKLikeActionControllerCache accessTokenString]
+-[FBSDKLikeActionControllerCache .cxx_destruct]
+___block_descriptor_40_e8_32s_e52_v32?0"NSString"8"FBSDKLikeActionController"16^B24l
+_OBJC_IVAR_$_FBSDKLikeActionControllerCache._accessTokenString
+_OBJC_IVAR_$_FBSDKLikeActionControllerCache._items
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeActionControllerCache.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeActionControllerCache.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeActionControllerCache.h
+__40-[FBSDKLikeActionControllerCache _prune]_block_invoke
+-[FBSDKLikeBoxBorderView initWithFrame:]
+-[FBSDKLikeBoxBorderView initWithCoder:]
+-[FBSDKLikeBoxBorderView setBackgroundColor:]
+-[FBSDKLikeBoxBorderView setBorderCornerRadius:]
+-[FBSDKLikeBoxBorderView setBorderWidth:]
+-[FBSDKLikeBoxBorderView setCaretPosition:]
+-[FBSDKLikeBoxBorderView contentInsets]
+-[FBSDKLikeBoxBorderView setContentView:]
+-[FBSDKLikeBoxBorderView setFillColor:]
+-[FBSDKLikeBoxBorderView setForegroundColor:]
+-[FBSDKLikeBoxBorderView intrinsicContentSize]
+-[FBSDKLikeBoxBorderView layoutSubviews]
+-[FBSDKLikeBoxBorderView sizeThatFits:]
+-[FBSDKLikeBoxBorderView drawRect:]
+-[FBSDKLikeBoxBorderView _borderInsets]
+-[FBSDKLikeBoxBorderView _initializeContent]
+-[FBSDKLikeBoxBorderView borderCornerRadius]
+-[FBSDKLikeBoxBorderView borderWidth]
+-[FBSDKLikeBoxBorderView caretPosition]
+-[FBSDKLikeBoxBorderView contentView]
+-[FBSDKLikeBoxBorderView fillColor]
+-[FBSDKLikeBoxBorderView foregroundColor]
+-[FBSDKLikeBoxBorderView .cxx_destruct]
+_OBJC_IVAR_$_FBSDKLikeBoxBorderView._borderCornerRadius
+_OBJC_IVAR_$_FBSDKLikeBoxBorderView._borderWidth
+_OBJC_IVAR_$_FBSDKLikeBoxBorderView._caretPosition
+_OBJC_IVAR_$_FBSDKLikeBoxBorderView._contentView
+_OBJC_IVAR_$_FBSDKLikeBoxBorderView._fillColor
+_OBJC_IVAR_$_FBSDKLikeBoxBorderView._foregroundColor
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeBoxBorderView.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeBoxBorderView.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeBoxBorderView.h
+FBSDKPointsForScreenPixels
+FBSDKCoreKit/FBSDKCoreKit/FBSDKCoreKit/Internal/UI/FBSDKUIUtility.h
+UIEdgeInsetsInsetRect
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIGeometry.h
+FBSDKEdgeInsetsOutsetSize
+FBSDKEdgeInsetsInsetSize
+-[FBSDKLikeBoxView initWithFrame:]
+-[FBSDKLikeBoxView initWithCoder:]
+-[FBSDKLikeBoxView setCaretPosition:]
+-[FBSDKLikeBoxView text]
+-[FBSDKLikeBoxView setText:]
+-[FBSDKLikeBoxView intrinsicContentSize]
+-[FBSDKLikeBoxView layoutSubviews]
+-[FBSDKLikeBoxView sizeThatFits:]
+-[FBSDKLikeBoxView _initializeContent]
+-[FBSDKLikeBoxView caretPosition]
+-[FBSDKLikeBoxView .cxx_destruct]
+_OBJC_IVAR_$_FBSDKLikeBoxView._caretPosition
+_OBJC_IVAR_$_FBSDKLikeBoxView._borderView
+_OBJC_IVAR_$_FBSDKLikeBoxView._likeCountLabel
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeBoxView.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeBoxView.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeBoxView.h
++[FBSDKLikeDialog initialize]
++[FBSDKLikeDialog likeWithObjectID:objectType:delegate:]
+-[FBSDKLikeDialog canLike]
+-[FBSDKLikeDialog like]
+___23-[FBSDKLikeDialog like]_block_invoke
+___23-[FBSDKLikeDialog like]_block_invoke.61
+-[FBSDKLikeDialog validateWithError:]
+-[FBSDKLikeDialog _canLikeNative]
+-[FBSDKLikeDialog _handleCompletionWithDialogResults:error:]
+-[FBSDKLikeDialog delegate]
+-[FBSDKLikeDialog setDelegate:]
+-[FBSDKLikeDialog objectID]
+-[FBSDKLikeDialog setObjectID:]
+-[FBSDKLikeDialog objectType]
+-[FBSDKLikeDialog setObjectType:]
+-[FBSDKLikeDialog shouldFailOnDataError]
+-[FBSDKLikeDialog setShouldFailOnDataError:]
+-[FBSDKLikeDialog fromViewController]
+-[FBSDKLikeDialog setFromViewController:]
+-[FBSDKLikeDialog .cxx_destruct]
+___block_descriptor_40_e8_32s_e32_v16?0"FBSDKBridgeAPIResponse"8l
+___block_descriptor_57_e8_32s40s48bs_e32_v16?0"FBSDKBridgeAPIResponse"8l
+_OBJC_IVAR_$_FBSDKLikeDialog._shouldFailOnDataError
+_OBJC_IVAR_$_FBSDKLikeDialog._delegate
+_OBJC_IVAR_$_FBSDKLikeDialog._objectID
+_OBJC_IVAR_$_FBSDKLikeDialog._objectType
+_OBJC_IVAR_$_FBSDKLikeDialog._fromViewController
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeDialog.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeDialog.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKLikeDialog.h
+__23-[FBSDKLikeDialog like]_block_invoke.61
+__23-[FBSDKLikeDialog like]_block_invoke
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKLikeObjectType.m
+NSStringFromFBSDKLikeObjectType
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKLikeObjectType.m
++[FBSDKMessageDialog initialize]
++[FBSDKMessageDialog dialogWithContent:delegate:]
++[FBSDKMessageDialog showWithContent:delegate:]
+-[FBSDKMessageDialog canShow]
+-[FBSDKMessageDialog show]
+___26-[FBSDKMessageDialog show]_block_invoke
+-[FBSDKMessageDialog validateWithError:]
+-[FBSDKMessageDialog _canShowNative]
+-[FBSDKMessageDialog _handleCompletionWithDialogResults:response:]
+-[FBSDKMessageDialog _invokeDelegateDidCancel]
+-[FBSDKMessageDialog _invokeDelegateDidCompleteWithResults:]
+-[FBSDKMessageDialog _invokeDelegateDidFailWithError:]
+-[FBSDKMessageDialog _logDialogShow]
+-[FBSDKMessageDialog delegate]
+-[FBSDKMessageDialog setDelegate:]
+-[FBSDKMessageDialog shareContent]
+-[FBSDKMessageDialog setShareContent:]
+-[FBSDKMessageDialog shouldFailOnDataError]
+-[FBSDKMessageDialog setShouldFailOnDataError:]
+-[FBSDKMessageDialog .cxx_destruct]
+__OBJC_PROTOCOL_$_FBSDKSharing
+__OBJC_LABEL_PROTOCOL_$_FBSDKSharing
+__OBJC_PROTOCOL_$_FBSDKSharingDialog
+__OBJC_LABEL_PROTOCOL_$_FBSDKSharingDialog
+_OBJC_IVAR_$_FBSDKMessageDialog._shouldFailOnDataError
+_OBJC_IVAR_$_FBSDKMessageDialog._delegate
+_OBJC_IVAR_$_FBSDKMessageDialog._shareContent
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKMessageDialog.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKMessageDialog.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharing.h
+__26-[FBSDKMessageDialog show]_block_invoke
+-[FBSDKMessengerIcon pathWithSize:]
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKMessengerIcon.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKMessengerIcon.m
+-[FBSDKSendButton shareContent]
+-[FBSDKSendButton setShareContent:]
+-[FBSDKSendButton analyticsParameters]
+-[FBSDKSendButton impressionTrackingEventName]
+-[FBSDKSendButton impressionTrackingIdentifier]
+-[FBSDKSendButton configureButton]
+-[FBSDKSendButton isImplicitlyDisabled]
+-[FBSDKSendButton _share:]
+-[FBSDKSendButton .cxx_destruct]
+_OBJC_IVAR_$_FBSDKSendButton._dialog
+__OBJC_PROTOCOL_$_FBSDKButtonImpressionTracking
+__OBJC_LABEL_PROTOCOL_$_FBSDKButtonImpressionTracking
+__OBJC_PROTOCOL_$_FBSDKSharingButton
+__OBJC_LABEL_PROTOCOL_$_FBSDKSharingButton
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSendButton.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSendButton.m
+-[FBSDKShareButton shareContent]
+-[FBSDKShareButton setShareContent:]
+-[FBSDKShareButton analyticsParameters]
+-[FBSDKShareButton impressionTrackingEventName]
+-[FBSDKShareButton impressionTrackingIdentifier]
+-[FBSDKShareButton configureButton]
+-[FBSDKShareButton isImplicitlyDisabled]
+-[FBSDKShareButton _share:]
+-[FBSDKShareButton .cxx_destruct]
+_OBJC_IVAR_$_FBSDKShareButton._dialog
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareButton.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareButton.m
+-[FBSDKShareCameraEffectContent init]
+-[FBSDKShareCameraEffectContent addParameters:bridgeOptions:]
+___61-[FBSDKShareCameraEffectContent addParameters:bridgeOptions:]_block_invoke
+-[FBSDKShareCameraEffectContent schemeForMode:]
+-[FBSDKShareCameraEffectContent validateWithOptions:error:]
+-[FBSDKShareCameraEffectContent hash]
+-[FBSDKShareCameraEffectContent isEqual:]
+-[FBSDKShareCameraEffectContent isEqualToShareCameraEffectContent:]
++[FBSDKShareCameraEffectContent supportsSecureCoding]
+-[FBSDKShareCameraEffectContent initWithCoder:]
+-[FBSDKShareCameraEffectContent encodeWithCoder:]
+-[FBSDKShareCameraEffectContent copyWithZone:]
+-[FBSDKShareCameraEffectContent effectID]
+-[FBSDKShareCameraEffectContent setEffectID:]
+-[FBSDKShareCameraEffectContent effectArguments]
+-[FBSDKShareCameraEffectContent setEffectArguments:]
+-[FBSDKShareCameraEffectContent effectTextures]
+-[FBSDKShareCameraEffectContent setEffectTextures:]
+-[FBSDKShareCameraEffectContent contentURL]
+-[FBSDKShareCameraEffectContent setContentURL:]
+-[FBSDKShareCameraEffectContent hashtag]
+-[FBSDKShareCameraEffectContent setHashtag:]
+-[FBSDKShareCameraEffectContent peopleIDs]
+-[FBSDKShareCameraEffectContent setPeopleIDs:]
+-[FBSDKShareCameraEffectContent placeID]
+-[FBSDKShareCameraEffectContent setPlaceID:]
+-[FBSDKShareCameraEffectContent ref]
+-[FBSDKShareCameraEffectContent setRef:]
+-[FBSDKShareCameraEffectContent pageID]
+-[FBSDKShareCameraEffectContent setPageID:]
+-[FBSDKShareCameraEffectContent shareUUID]
+-[FBSDKShareCameraEffectContent .cxx_destruct]
+___block_descriptor_40_e8_32s_e34_v32?0"NSString"8"UIImage"16^B24l
+__OBJC_PROTOCOL_$_FBSDKSharingContent
+__OBJC_LABEL_PROTOCOL_$_FBSDKSharingContent
+__OBJC_PROTOCOL_$_FBSDKSharingScheme
+__OBJC_LABEL_PROTOCOL_$_FBSDKSharingScheme
+_OBJC_IVAR_$_FBSDKShareCameraEffectContent._effectID
+_OBJC_IVAR_$_FBSDKShareCameraEffectContent._effectArguments
+_OBJC_IVAR_$_FBSDKShareCameraEffectContent._effectTextures
+_OBJC_IVAR_$_FBSDKShareCameraEffectContent._contentURL
+_OBJC_IVAR_$_FBSDKShareCameraEffectContent._hashtag
+_OBJC_IVAR_$_FBSDKShareCameraEffectContent._peopleIDs
+_OBJC_IVAR_$_FBSDKShareCameraEffectContent._placeID
+_OBJC_IVAR_$_FBSDKShareCameraEffectContent._ref
+_OBJC_IVAR_$_FBSDKShareCameraEffectContent._pageID
+_OBJC_IVAR_$_FBSDKShareCameraEffectContent._shareUUID
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareCameraEffectContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareCameraEffectContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharingContent.h
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareCameraEffectContent.h
+__61-[FBSDKShareCameraEffectContent addParameters:bridgeOptions:]_block_invoke
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareConstants.m
++[FBSDKShareDialog initialize]
++[FBSDKShareDialog dialogWithViewController:withContent:delegate:]
++[FBSDKShareDialog showFromViewController:withContent:delegate:]
+-[FBSDKShareDialog dealloc]
+-[FBSDKShareDialog canShow]
+-[FBSDKShareDialog show]
+-[FBSDKShareDialog validateWithError:]
+-[FBSDKShareDialog webDialog:didCompleteWithResults:]
+-[FBSDKShareDialog webDialog:didFailWithError:]
+-[FBSDKShareDialog webDialogDidCancel:]
+-[FBSDKShareDialog _isDefaultToShareSheet]
+-[FBSDKShareDialog _showAutomatic:]
+-[FBSDKShareDialog _loadNativeMethodName:methodVersion:]
+-[FBSDKShareDialog _canShowNative]
+-[FBSDKShareDialog _canShowShareSheet]
+-[FBSDKShareDialog _canAttributeThroughShareSheet]
+-[FBSDKShareDialog _canUseFBShareSheet]
+-[FBSDKShareDialog _canUseQuoteInShareSheet]
+-[FBSDKShareDialog _canUseMMPInShareSheet]
+-[FBSDKShareDialog _supportsShareSheetMinimumVersion:]
+-[FBSDKShareDialog _cleanUpWebDialog]
+-[FBSDKShareDialog _contentImages]
+-[FBSDKShareDialog _contentVideoURL:]
+-[FBSDKShareDialog _contentVideoURLs]
+-[FBSDKShareDialog _contentURLs]
+-[FBSDKShareDialog _handleWebResponseParameters:error:cancelled:]
+-[FBSDKShareDialog _photoContentHasAtLeastOneImage:]
+-[FBSDKShareDialog _showBrowser:]
+___33-[FBSDKShareDialog _showBrowser:]_block_invoke
+___33-[FBSDKShareDialog _showBrowser:]_block_invoke_2
+___33-[FBSDKShareDialog _showBrowser:]_block_invoke.245
+-[FBSDKShareDialog _showFeedBrowser:]
+___37-[FBSDKShareDialog _showFeedBrowser:]_block_invoke
+-[FBSDKShareDialog _showFeedWeb:]
+-[FBSDKShareDialog _showNativeWithCanShowError:validationError:]
+___64-[FBSDKShareDialog _showNativeWithCanShowError:validationError:]_block_invoke
+-[FBSDKShareDialog _showShareSheetWithCanShowError:validationError:]
+___68-[FBSDKShareDialog _showShareSheetWithCanShowError:validationError:]_block_invoke
+___68-[FBSDKShareDialog _showShareSheetWithCanShowError:validationError:]_block_invoke_2
+-[FBSDKShareDialog _showWeb:]
+-[FBSDKShareDialog _useNativeDialog]
+-[FBSDKShareDialog _useSafariViewController]
+-[FBSDKShareDialog _validateWithError:]
+-[FBSDKShareDialog _validateFullyCompatibleWithError:]
+-[FBSDKShareDialog _validateShareContentForBrowserWithOptions:error:]
+-[FBSDKShareDialog _validateShareContentForFeed:]
+-[FBSDKShareDialog _validateShareContentForNative:]
+-[FBSDKShareDialog _validateShareContentForShareSheet:]
+-[FBSDKShareDialog _validateShareMediaContentAvailability:error:]
+-[FBSDKShareDialog _invokeDelegateDidCancel]
+-[FBSDKShareDialog _invokeDelegateDidCompleteWithResults:]
+-[FBSDKShareDialog _invokeDelegateDidFailWithError:]
+-[FBSDKShareDialog _logDialogShow]
+-[FBSDKShareDialog _calculateInitialText]
+-[FBSDKShareDialog delegate]
+-[FBSDKShareDialog setDelegate:]
+-[FBSDKShareDialog shareContent]
+-[FBSDKShareDialog setShareContent:]
+-[FBSDKShareDialog shouldFailOnDataError]
+-[FBSDKShareDialog setShouldFailOnDataError:]
+-[FBSDKShareDialog fromViewController]
+-[FBSDKShareDialog setFromViewController:]
+-[FBSDKShareDialog mode]
+-[FBSDKShareDialog setMode:]
+-[FBSDKShareDialog .cxx_destruct]
+___FBSDKShareDialogValidateAPISchemeRegisteredForCanOpenUrl_block_invoke
+___FBSDKShareDialogValidateShareExtensionSchemeRegisteredForCanOpenUrl_block_invoke
+___block_descriptor_40_e8_32s_e38_v28?0B8"NSString"12"NSDictionary"20l
+___block_descriptor_40_e8_32s_e5_v8?0l
+___block_descriptor_40_e8_32s_e8_v16?0q8l
+_OBJC_IVAR_$_FBSDKShareDialog._webDialog
+_OBJC_IVAR_$_FBSDKShareDialog._temporaryFiles
+_OBJC_IVAR_$_FBSDKShareDialog._shouldFailOnDataError
+_OBJC_IVAR_$_FBSDKShareDialog._delegate
+_OBJC_IVAR_$_FBSDKShareDialog._shareContent
+_OBJC_IVAR_$_FBSDKShareDialog._fromViewController
+_OBJC_IVAR_$_FBSDKShareDialog._mode
+_FBSDKShareDialogValidateAPISchemeRegisteredForCanOpenUrl.onceToken
+_FBSDKShareDialogValidateShareExtensionSchemeRegisteredForCanOpenUrl.onceToken
+___block_literal_global.495
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareDialog.m
+__FBSDKShareDialogValidateShareExtensionSchemeRegisteredForCanOpenUrl_block_invoke
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareDialog.m
+__FBSDKShareDialogValidateAPISchemeRegisteredForCanOpenUrl_block_invoke
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareDialog.h
+__68-[FBSDKShareDialog _showShareSheetWithCanShowError:validationError:]_block_invoke_2
+__68-[FBSDKShareDialog _showShareSheetWithCanShowError:validationError:]_block_invoke
+__64-[FBSDKShareDialog _showNativeWithCanShowError:validationError:]_block_invoke
+__37-[FBSDKShareDialog _showFeedBrowser:]_block_invoke
+__33-[FBSDKShareDialog _showBrowser:]_block_invoke.245
+__33-[FBSDKShareDialog _showBrowser:]_block_invoke_2
+__33-[FBSDKShareDialog _showBrowser:]_block_invoke
+FBSDKShareDialogValidateAPISchemeRegisteredForCanOpenUrl
+FBSDKShareDialogValidateShareExtensionSchemeRegisteredForCanOpenUrl
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareDialogMode.m
+NSStringFromFBSDKShareDialogMode
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareDialogMode.m
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareExtension.m
+FBSDKShareExtensionInitialText
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareExtension.m
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Target Support Files/FBSDKShareKit/FBSDKShareKit-dummy.m
+-[FBSDKShareLinkContent init]
+-[FBSDKShareLinkContent setPeopleIDs:]
+-[FBSDKShareLinkContent addParameters:bridgeOptions:]
+-[FBSDKShareLinkContent validateWithOptions:error:]
+-[FBSDKShareLinkContent hash]
+-[FBSDKShareLinkContent isEqual:]
+-[FBSDKShareLinkContent isEqualToShareLinkContent:]
++[FBSDKShareLinkContent supportsSecureCoding]
+-[FBSDKShareLinkContent initWithCoder:]
+-[FBSDKShareLinkContent encodeWithCoder:]
+-[FBSDKShareLinkContent copyWithZone:]
+-[FBSDKShareLinkContent contentURL]
+-[FBSDKShareLinkContent setContentURL:]
+-[FBSDKShareLinkContent hashtag]
+-[FBSDKShareLinkContent setHashtag:]
+-[FBSDKShareLinkContent peopleIDs]
+-[FBSDKShareLinkContent placeID]
+-[FBSDKShareLinkContent setPlaceID:]
+-[FBSDKShareLinkContent ref]
+-[FBSDKShareLinkContent setRef:]
+-[FBSDKShareLinkContent pageID]
+-[FBSDKShareLinkContent setPageID:]
+-[FBSDKShareLinkContent quote]
+-[FBSDKShareLinkContent setQuote:]
+-[FBSDKShareLinkContent shareUUID]
+-[FBSDKShareLinkContent .cxx_destruct]
+_OBJC_IVAR_$_FBSDKShareLinkContent._contentURL
+_OBJC_IVAR_$_FBSDKShareLinkContent._hashtag
+_OBJC_IVAR_$_FBSDKShareLinkContent._peopleIDs
+_OBJC_IVAR_$_FBSDKShareLinkContent._placeID
+_OBJC_IVAR_$_FBSDKShareLinkContent._ref
+_OBJC_IVAR_$_FBSDKShareLinkContent._pageID
+_OBJC_IVAR_$_FBSDKShareLinkContent._quote
+_OBJC_IVAR_$_FBSDKShareLinkContent._shareUUID
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareLinkContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareLinkContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareLinkContent.h
+-[FBSDKShareMediaContent init]
+-[FBSDKShareMediaContent setPeopleIDs:]
+-[FBSDKShareMediaContent setMedia:]
+-[FBSDKShareMediaContent addParameters:bridgeOptions:]
+-[FBSDKShareMediaContent validateWithOptions:error:]
+-[FBSDKShareMediaContent hash]
+-[FBSDKShareMediaContent isEqual:]
+-[FBSDKShareMediaContent isEqualToShareMediaContent:]
++[FBSDKShareMediaContent supportsSecureCoding]
+-[FBSDKShareMediaContent initWithCoder:]
+-[FBSDKShareMediaContent encodeWithCoder:]
+-[FBSDKShareMediaContent copyWithZone:]
+-[FBSDKShareMediaContent contentURL]
+-[FBSDKShareMediaContent setContentURL:]
+-[FBSDKShareMediaContent hashtag]
+-[FBSDKShareMediaContent setHashtag:]
+-[FBSDKShareMediaContent peopleIDs]
+-[FBSDKShareMediaContent placeID]
+-[FBSDKShareMediaContent setPlaceID:]
+-[FBSDKShareMediaContent ref]
+-[FBSDKShareMediaContent setRef:]
+-[FBSDKShareMediaContent pageID]
+-[FBSDKShareMediaContent setPageID:]
+-[FBSDKShareMediaContent shareUUID]
+-[FBSDKShareMediaContent media]
+-[FBSDKShareMediaContent .cxx_destruct]
+_OBJC_IVAR_$_FBSDKShareMediaContent._contentURL
+_OBJC_IVAR_$_FBSDKShareMediaContent._hashtag
+_OBJC_IVAR_$_FBSDKShareMediaContent._peopleIDs
+_OBJC_IVAR_$_FBSDKShareMediaContent._placeID
+_OBJC_IVAR_$_FBSDKShareMediaContent._ref
+_OBJC_IVAR_$_FBSDKShareMediaContent._pageID
+_OBJC_IVAR_$_FBSDKShareMediaContent._shareUUID
+_OBJC_IVAR_$_FBSDKShareMediaContent._media
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMediaContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMediaContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareMediaContent.h
++[FBSDKSharePhoto photoWithImage:userGenerated:]
++[FBSDKSharePhoto photoWithImageURL:userGenerated:]
++[FBSDKSharePhoto photoWithPhotoAsset:userGenerated:]
+-[FBSDKSharePhoto setImage:]
+-[FBSDKSharePhoto setImageURL:]
+-[FBSDKSharePhoto setPhotoAsset:]
+-[FBSDKSharePhoto hash]
+-[FBSDKSharePhoto isEqual:]
+-[FBSDKSharePhoto isEqualToSharePhoto:]
+-[FBSDKSharePhoto validateWithOptions:error:]
++[FBSDKSharePhoto supportsSecureCoding]
+-[FBSDKSharePhoto initWithCoder:]
+-[FBSDKSharePhoto encodeWithCoder:]
+-[FBSDKSharePhoto copyWithZone:]
+-[FBSDKSharePhoto image]
+-[FBSDKSharePhoto imageURL]
+-[FBSDKSharePhoto photoAsset]
+-[FBSDKSharePhoto isUserGenerated]
+-[FBSDKSharePhoto setUserGenerated:]
+-[FBSDKSharePhoto caption]
+-[FBSDKSharePhoto setCaption:]
+-[FBSDKSharePhoto .cxx_destruct]
+__OBJC_PROTOCOL_$_FBSDKShareMedia
+__OBJC_LABEL_PROTOCOL_$_FBSDKShareMedia
+_OBJC_IVAR_$_FBSDKSharePhoto._userGenerated
+_OBJC_IVAR_$_FBSDKSharePhoto._image
+_OBJC_IVAR_$_FBSDKSharePhoto._imageURL
+_OBJC_IVAR_$_FBSDKSharePhoto._photoAsset
+_OBJC_IVAR_$_FBSDKSharePhoto._caption
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharePhoto.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharePhoto.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharePhoto.h
+-[FBSDKSharePhotoContent init]
+-[FBSDKSharePhotoContent setPeopleIDs:]
+-[FBSDKSharePhotoContent setPhotos:]
+-[FBSDKSharePhotoContent addParameters:bridgeOptions:]
+___54-[FBSDKSharePhotoContent addParameters:bridgeOptions:]_block_invoke
+-[FBSDKSharePhotoContent validateWithOptions:error:]
+-[FBSDKSharePhotoContent hash]
+-[FBSDKSharePhotoContent isEqual:]
+-[FBSDKSharePhotoContent isEqualToSharePhotoContent:]
++[FBSDKSharePhotoContent supportsSecureCoding]
+-[FBSDKSharePhotoContent initWithCoder:]
+-[FBSDKSharePhotoContent encodeWithCoder:]
+-[FBSDKSharePhotoContent copyWithZone:]
+-[FBSDKSharePhotoContent contentURL]
+-[FBSDKSharePhotoContent setContentURL:]
+-[FBSDKSharePhotoContent hashtag]
+-[FBSDKSharePhotoContent setHashtag:]
+-[FBSDKSharePhotoContent peopleIDs]
+-[FBSDKSharePhotoContent placeID]
+-[FBSDKSharePhotoContent setPlaceID:]
+-[FBSDKSharePhotoContent ref]
+-[FBSDKSharePhotoContent setRef:]
+-[FBSDKSharePhotoContent pageID]
+-[FBSDKSharePhotoContent setPageID:]
+-[FBSDKSharePhotoContent shareUUID]
+-[FBSDKSharePhotoContent photos]
+-[FBSDKSharePhotoContent .cxx_destruct]
+___block_descriptor_40_e8_32s_e34_v24?0"UIImage"8"NSDictionary"16l
+_OBJC_IVAR_$_FBSDKSharePhotoContent._contentURL
+_OBJC_IVAR_$_FBSDKSharePhotoContent._hashtag
+_OBJC_IVAR_$_FBSDKSharePhotoContent._peopleIDs
+_OBJC_IVAR_$_FBSDKSharePhotoContent._placeID
+_OBJC_IVAR_$_FBSDKSharePhotoContent._ref
+_OBJC_IVAR_$_FBSDKSharePhotoContent._pageID
+_OBJC_IVAR_$_FBSDKSharePhotoContent._shareUUID
+_OBJC_IVAR_$_FBSDKSharePhotoContent._photos
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharePhotoContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharePhotoContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKSharePhotoContent.h
+__54-[FBSDKSharePhotoContent addParameters:bridgeOptions:]_block_invoke
++[FBSDKShareUtility assertCollection:ofClassStrings:name:]
++[FBSDKShareUtility assertCollection:ofClass:name:]
++[FBSDKShareUtility buildWebShareContent:methodName:parameters:error:]
++[FBSDKShareUtility buildWebShareTags:]
++[FBSDKShareUtility buildAsyncWebPhotoContent:completionHandler:]
+___65+[FBSDKShareUtility buildAsyncWebPhotoContent:completionHandler:]_block_invoke
++[FBSDKShareUtility feedShareDictionaryForContent:]
++[FBSDKShareUtility hashtagStringFromHashtag:]
++[FBSDKShareUtility imageWithCircleColor:canvasSize:circleSize:]
++[FBSDKShareUtility parametersForShareContent:bridgeOptions:shouldFailOnDataError:]
++[FBSDKShareUtility testShareContent:containsMedia:containsPhotos:containsVideos:]
++[FBSDKShareUtility validateAssetLibraryURLsWithShareMediaContent:name:error:]
++[FBSDKShareUtility validateShareContent:bridgeOptions:error:]
++[FBSDKShareUtility shareMediaContentContainsPhotosAndVideos:]
++[FBSDKShareUtility _convertObject:]
++[FBSDKShareUtility convertPhoto:]
++[FBSDKShareUtility _stageImagesForPhotoContent:withCompletionHandler:]
+___71+[FBSDKShareUtility _stageImagesForPhotoContent:withCompletionHandler:]_block_invoke
+___copy_helper_block_e8_32s40r
+___destroy_helper_block_e8_32s40r
+___71+[FBSDKShareUtility _stageImagesForPhotoContent:withCompletionHandler:]_block_invoke.187
+___copy_helper_block_e8_32b40r
++[FBSDKShareUtility _testObject:containsMedia:containsPhotos:containsVideos:]
++[FBSDKShareUtility validateArray:minCount:maxCount:name:error:]
++[FBSDKShareUtility _validateFileURL:name:error:]
++[FBSDKShareUtility validateNetworkURL:name:error:]
++[FBSDKShareUtility validateRequiredValue:name:error:]
++[FBSDKShareUtility validateArgumentWithName:value:isIn:error:]
++[FBSDKShareUtility _validateAssetLibraryVideoURL:name:error:]
+___block_descriptor_48_e8_32s40bs_e17_v16?0"NSArray"8l
+___block_descriptor_48_e8_32s40r_e52_v32?0"FBSDKGraphRequestConnection"816"NSError"24l
+___block_descriptor_48_e8_32bs40r_e5_v8?0l
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareUtility.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKShareUtility.m
+__copy_helper_block_e8_32b40r
+__71+[FBSDKShareUtility _stageImagesForPhotoContent:withCompletionHandler:]_block_invoke.187
+__destroy_helper_block_e8_32s40r
+__copy_helper_block_e8_32s40r
+__71+[FBSDKShareUtility _stageImagesForPhotoContent:withCompletionHandler:]_block_invoke
+__65+[FBSDKShareUtility buildAsyncWebPhotoContent:completionHandler:]_block_invoke
++[FBSDKShareVideo videoWithData:]
++[FBSDKShareVideo videoWithData:previewPhoto:]
++[FBSDKShareVideo videoWithVideoAsset:]
++[FBSDKShareVideo videoWithVideoAsset:previewPhoto:]
++[FBSDKShareVideo videoWithVideoURL:]
++[FBSDKShareVideo videoWithVideoURL:previewPhoto:]
+-[FBSDKShareVideo setData:]
+-[FBSDKShareVideo setVideoAsset:]
+-[FBSDKShareVideo setVideoURL:]
+-[FBSDKShareVideo hash]
+-[FBSDKShareVideo isEqual:]
+-[FBSDKShareVideo isEqualToShareVideo:]
+-[FBSDKShareVideo _validateData:withOptions:error:]
+-[FBSDKShareVideo _validateVideoAsset:withOptions:error:]
+-[FBSDKShareVideo _validateVideoURL:withOptions:error:]
+-[FBSDKShareVideo validateWithOptions:error:]
++[FBSDKShareVideo supportsSecureCoding]
+-[FBSDKShareVideo initWithCoder:]
+-[FBSDKShareVideo encodeWithCoder:]
+-[FBSDKShareVideo copyWithZone:]
+-[FBSDKShareVideo data]
+-[FBSDKShareVideo videoAsset]
+-[FBSDKShareVideo videoURL]
+-[FBSDKShareVideo previewPhoto]
+-[FBSDKShareVideo setPreviewPhoto:]
+-[FBSDKShareVideo .cxx_destruct]
+-[PHAsset(FBSDKShareVideo) videoURL]
+___36-[PHAsset(FBSDKShareVideo) videoURL]_block_invoke
+___copy_helper_block_e8_32s40s48r
+___destroy_helper_block_e8_32s40s48r
+_OBJC_IVAR_$_FBSDKShareVideo._data
+_OBJC_IVAR_$_FBSDKShareVideo._videoAsset
+_OBJC_IVAR_$_FBSDKShareVideo._videoURL
+_OBJC_IVAR_$_FBSDKShareVideo._previewPhoto
+___block_descriptor_56_e8_32s40s48r_e49_v32?0"AVAsset"8"AVAudioMix"16"NSDictionary"24l
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareVideo.m
+__destroy_helper_block_e8_32s40s48r
+__copy_helper_block_e8_32s40s48r
+__36-[PHAsset(FBSDKShareVideo) videoURL]_block_invoke
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareVideo.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareVideo.h
+-[FBSDKShareVideoContent init]
+-[FBSDKShareVideoContent setPeopleIDs:]
+-[FBSDKShareVideoContent addParameters:bridgeOptions:]
+-[FBSDKShareVideoContent validateWithOptions:error:]
+-[FBSDKShareVideoContent hash]
+-[FBSDKShareVideoContent isEqual:]
+-[FBSDKShareVideoContent isEqualToShareVideoContent:]
++[FBSDKShareVideoContent supportsSecureCoding]
+-[FBSDKShareVideoContent initWithCoder:]
+-[FBSDKShareVideoContent encodeWithCoder:]
+-[FBSDKShareVideoContent copyWithZone:]
+-[FBSDKShareVideoContent contentURL]
+-[FBSDKShareVideoContent setContentURL:]
+-[FBSDKShareVideoContent hashtag]
+-[FBSDKShareVideoContent setHashtag:]
+-[FBSDKShareVideoContent peopleIDs]
+-[FBSDKShareVideoContent placeID]
+-[FBSDKShareVideoContent setPlaceID:]
+-[FBSDKShareVideoContent ref]
+-[FBSDKShareVideoContent setRef:]
+-[FBSDKShareVideoContent pageID]
+-[FBSDKShareVideoContent setPageID:]
+-[FBSDKShareVideoContent shareUUID]
+-[FBSDKShareVideoContent video]
+-[FBSDKShareVideoContent setVideo:]
+-[FBSDKShareVideoContent .cxx_destruct]
+_OBJC_IVAR_$_FBSDKShareVideoContent._contentURL
+_OBJC_IVAR_$_FBSDKShareVideoContent._hashtag
+_OBJC_IVAR_$_FBSDKShareVideoContent._peopleIDs
+_OBJC_IVAR_$_FBSDKShareVideoContent._placeID
+_OBJC_IVAR_$_FBSDKShareVideoContent._ref
+_OBJC_IVAR_$_FBSDKShareVideoContent._pageID
+_OBJC_IVAR_$_FBSDKShareVideoContent._shareUUID
+_OBJC_IVAR_$_FBSDKShareVideoContent._video
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareVideoContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareVideoContent.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/FBSDKShareVideoContent.h
+-[FBSDKVideoUploader initWithVideoName:videoSize:parameters:delegate:]
+-[FBSDKVideoUploader start]
+-[FBSDKVideoUploader _postStartRequest]
+___39-[FBSDKVideoUploader _postStartRequest]_block_invoke
+-[FBSDKVideoUploader _startTransferRequestWithOffsetDictionary:]
+___64-[FBSDKVideoUploader _startTransferRequestWithOffsetDictionary:]_block_invoke
+___64-[FBSDKVideoUploader _startTransferRequestWithOffsetDictionary:]_block_invoke_2
+___64-[FBSDKVideoUploader _startTransferRequestWithOffsetDictionary:]_block_invoke_3
+___copy_helper_block_e8_32s40s48s
+___copy_helper_block_e8_32s40s
+-[FBSDKVideoUploader _postFinishRequest]
+___40-[FBSDKVideoUploader _postFinishRequest]_block_invoke
+-[FBSDKVideoUploader _extractOffsetsFromResultDictionary:]
+-[FBSDKVideoUploader numberFormatter]
+-[FBSDKVideoUploader _graphPathWithSuffix:]
+-[FBSDKVideoUploader video]
+-[FBSDKVideoUploader parameters]
+-[FBSDKVideoUploader setParameters:]
+-[FBSDKVideoUploader graphNode]
+-[FBSDKVideoUploader setGraphNode:]
+-[FBSDKVideoUploader delegate]
+-[FBSDKVideoUploader setDelegate:]
+-[FBSDKVideoUploader .cxx_destruct]
+___block_descriptor_56_e8_32s40s48s_e5_v8?0l
+___block_descriptor_64_e8_32s40s_e5_v8?0l
+_OBJC_IVAR_$_FBSDKVideoUploader._videoID
+_OBJC_IVAR_$_FBSDKVideoUploader._uploadSessionID
+_OBJC_IVAR_$_FBSDKVideoUploader._numberFormatter
+_OBJC_IVAR_$_FBSDKVideoUploader._graphPath
+_OBJC_IVAR_$_FBSDKVideoUploader._videoName
+_OBJC_IVAR_$_FBSDKVideoUploader._videoSize
+_OBJC_IVAR_$_FBSDKVideoUploader._video
+_OBJC_IVAR_$_FBSDKVideoUploader._parameters
+_OBJC_IVAR_$_FBSDKVideoUploader._graphNode
+_OBJC_IVAR_$_FBSDKVideoUploader._delegate
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKVideoUploader.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKVideoUploader.m
+FBSDKShareKit/FBSDKShareKit/FBSDKShareKit/Internal/FBSDKVideoUploader.h
+__40-[FBSDKVideoUploader _postFinishRequest]_block_invoke
+__copy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40s48s
+__64-[FBSDKVideoUploader _startTransferRequestWithOffsetDictionary:]_block_invoke_3
+__64-[FBSDKVideoUploader _startTransferRequestWithOffsetDictionary:]_block_invoke_2
+__64-[FBSDKVideoUploader _startTransferRequestWithOffsetDictionary:]_block_invoke
+__39-[FBSDKVideoUploader _postStartRequest]_block_invoke
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/ArchiveIntermediates/Le/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/FBSDKShareKit.build/DerivedSources/FBSDKShareKit_vers.c
+__ZL15__ARCLite__loadv
+__ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+__ZL22add_image_hook_swiftV1PK11mach_headerl
+__ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+__ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
+__ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
+__ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
+__ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
+__ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
+__ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
+__ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
+__ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
+__ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
+__ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
+__ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
+__ZL32__arclite_object_getIndexedIvarsP11objc_object
+__ZL23__arclite_objc_getClassPKc
+__ZL27__arclite_objc_getMetaClassPKc
+__ZL31__arclite_objc_getRequiredClassPKc
+__ZL26__arclite_objc_lookUpClassPKc
+__ZL26__arclite_objc_getProtocolPKc
+__ZL23__arclite_class_getNameP10objc_class
+__ZL26__arclite_protocol_getNameP8Protocol
+__ZL37__arclite_objc_copyClassNamesForImagePKcPj
+__ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
+__ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
+__ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
+__ZL14initialize_impP11objc_objectP13objc_selector
+__ZL18allocateMaybeSwiftP18glue_swift_class_tm
+__ZL22copySwiftV1MangledNamePKcb
+__ZL13demangledNamePKcb
+__ZL16scanMangledFieldRPKcS0_S1_Ri
+__ZL30arclite_uninitialized_functionv
+__ZL12cxxConstructP11objc_object
+__ZL20fixStringForCoreDataP11objc_object
+_OBJC_METACLASS_$___ARCLite__
+__ZL24OBJC_CLASS_$___ARCLite__
+__ZL31OBJC_METACLASS_RO_$___ARCLite__
+__non_lazy_classes
+__ZL27OBJC_CLASS_RO_$___ARCLite__
+__ZL11_class_name
+__ZL32OBJC_$_CLASS_METHODS___ARCLite__
+__ZL17_load_method_name
+__ZL17_load_method_type
+__OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+__OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+__ZL30NSUndoManagerProxy_targetClass
+__ZL29original_NSManagedObject_init
+__ZL40original_NSManagedObject_allocWithEntity
+__ZL35original_NSManagedObject_allocBatch
+__ZL25NSMutableDictionary_class
+__ZL22NSConstantString_class
+__ZL14NSString_class
+__ZL36original_NSKKMS_fastIndexForKnownKey
+__ZL27original_NSKKMS_indexForKey
+__ZL28original_NSKKsD_objectForKey
+__ZL34original_NSKKsD_removeObjectForKey
+__ZL32original_NSKKsD_setObject_forKey
+__ZL40original_NSKKsD_addEntriesFromDictionary
+__ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZL31original_objc_allocateClassPair
+__ZL31original_object_getIndexedIvars
+__ZL22original_objc_getClass
+__ZL26original_objc_getMetaClass
+__ZL30original_objc_getRequiredClass
+__ZL25original_objc_lookUpClass
+__ZL25original_objc_getProtocol
+__ZL22original_class_getName
+__ZL25original_protocol_getName
+__ZL36original_objc_copyClassNamesForImage
+__ZL12demangleLock
+__ZL9Demangled
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ --target=arm64-apple-ios4.3 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources-normal/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -mlinker-version=520
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76
+fixStringForCoreData
+source/arclite.mm
+cxxConstruct
+arclite_uninitialized_function
+scanMangledField
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.Internal.sdk/usr/include/_ctype.h
+__isctype
+demangledName
+copySwiftV1DemangledName
+copySwiftV1MangledName
+allocateMaybeSwift
+word_align
+isSwift
+initialize_imp
+transcribeProperties
+property_list_nth
+transcribeProtocols
+transcribeMethods
+data
+method_list_nth
+__arclite_objc_copyClassNamesForImage
+__arclite_protocol_getName
+__arclite_class_getName
+__arclite_objc_getProtocol
+__arclite_objc_lookUpClass
+__arclite_objc_getRequiredClass
+__arclite_objc_getMetaClass
+__arclite_objc_getClass
+__arclite_object_getIndexedIvars
+__arclite_objc_allocateClassPair
+metaclass
+__arclite_objc_readClassPair
+transcribeIvars
+ivar_list_nth
+max
+alignment
+ro
+fastFlags
+__arclite_NSKKsD_addEntriesFromDictionary
+__arclite_NSKKsD_setObject_forKey
+__arclite_NSKKsD_removeObjectForKey
+__arclite_NSKKsD_objectForKey
+__arclite_NSKKMS_indexForKey
+__arclite_NSKKMS_fastIndexForKnownKey
+__arclite_NSManagedObject_allocBatch
+__arclite_NSManagedObject_allocWithEntity
+__arclite_NSManagedObject_init
+__arclite_NSUndoManagerProxy_isKindOfClass
+add_image_hook_swiftV1
+patch_lazy_pointers
+patch_t<const char **(const char *, unsigned int *)>
+patch_t<const char *(Protocol *)>
+patch_t<const char *(Class)>
+patch_t<Protocol *(const char *)>
+patch_t<Class (const char *)>
+patch_t<void *(id)>
+patch_t<Class (Class, const char *, unsigned long)>
+patch_t<Class (Class, const objc_image_info *)>
+__arclite_NSMutableDictionary__setObject_forKeyedSubscript
+__ARCLite__load
+install_swiftV1
+replaceMethod
+install_dict_nil_value
+addOrReplaceMethod
+keyedGetter

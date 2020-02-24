@@ -40,10 +40,30 @@ class RelatedProducts: NSObject {
         self.product_image = RelatedProducts["product_image"] as? String
         self.currency_symbol = RelatedProducts["currency_symbol"] as? String
         self.merchant_name = RelatedProducts["merchant_name"] as? String
-        if self.product_type != "all_item"  {
-            self.product_price = String(RelatedProducts["product_price"] as! Double)
-            self.product_discount_price = RelatedProducts["product_discount_price"] as? String
-            self.product_percentage = RelatedProducts["product_percentage"] as? String
+        self.product_type = RelatedProducts["product_type"] as? String
+//        if self.product_type != "all_item"  {
+//            self.product_price = String(RelatedProducts["product_price"] as! Double)
+//            self.product_discount_price = RelatedProducts["product_discount_price"] as? String
+//            self.product_percentage = RelatedProducts["product_percentage"] as? String
+//        }else{
+//            self.product_off = String(RelatedProducts["product_discount"] as! NSInteger)
+//        }
+        
+        if self.product_type != "all_item"{
+            if !(RelatedProducts["product_price"] is NSNull){
+                self.product_price = String(RelatedProducts["product_price"] as! Double)
+            }else{
+                self.product_price = "-"
+            }
+            
+            if !(RelatedProducts["product_discount_price"] is NSNull){
+                self.product_discount_price = String(RelatedProducts["product_discount_price"] as! NSInteger)
+            }else{
+                self.product_discount_price = "-"
+            }
+            
+            
+            self.product_percentage = String(RelatedProducts["product_percentage"] as! NSInteger)
         }else{
             self.product_off = String(RelatedProducts["product_discount"] as! NSInteger)
         }

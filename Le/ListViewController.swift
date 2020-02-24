@@ -580,14 +580,24 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
         cell.productTitle.text = productsArray[indexPath.row].product_title
         cell.productCategory.text = productsArray[indexPath.row].merchant_name
         
-        if productsArray[indexPath.row].product_type != "all_item"  {
+        
+        if productsArray[indexPath.row].product_type != "all_item"{
             cell.originalPrice.text = "৳" + productsArray[indexPath.row].product_discount_price
             cell.cutOffPrice.attributedText = productsArray[indexPath.row].product_price.strikeThrough()
             cell.offPercentage.text = productsArray[indexPath.row].product_percentage + "% off"
         }else{
-            
-            cell.cutOffPrice.text = String(productsArray[indexPath.row].product_off)  + "% off"
+            cell.cutOffPrice.text = productsArray[indexPath.row].product_off + "% off"
+            cell.cutOffPrice.textColor = UIColor(named: "appThemeColor")
         }
+        
+//        if productsArray[indexPath.row].product_type != "all_item"  {
+//            cell.originalPrice.text = "৳" + productsArray[indexPath.row].product_discount_price
+//            cell.cutOffPrice.attributedText = productsArray[indexPath.row].product_price.strikeThrough()
+//            cell.offPercentage.text = productsArray[indexPath.row].product_percentage + "% off"
+//        }else{
+//
+//            cell.cutOffPrice.text = String(productsArray[indexPath.row].product_off)  + "% off"
+//        }
         
         
         cell.productImage.kf.setImage(with: (StringToURL(text: productsArray[indexPath.row].product_image)))

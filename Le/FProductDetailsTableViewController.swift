@@ -267,7 +267,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if indexPath.row == 9{
+        if indexPath.row == 8{
             return 410
         }
         if indexPath.row == 0{
@@ -769,7 +769,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return 9
     }
     
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -851,15 +851,15 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             tableCell.proDescriptionDetailsTextView.attributedText = redemptionText.htmlToAttributedString
             tableCell.selectionStyle = .none
             return tableCell
-        case 8://redeem offer time
-            let tableCell = tableView.dequeueReusableCell(withIdentifier: "simpleCell", for: indexPath)
-            tableCell.textLabel?.numberOfLines = 2
-            tableCell.textLabel?.text = redeemOfferText
-            tableCell.imageView?.image = UIImage(named: "redeem")
-            tableCell.selectionStyle = .none
-            return tableCell
+//        case 8://redeem offer time
+//            let tableCell = tableView.dequeueReusableCell(withIdentifier: "simpleCell", for: indexPath)
+//            tableCell.textLabel?.numberOfLines = 2
+//            tableCell.textLabel?.text = redeemOfferText
+//            tableCell.imageView?.image = UIImage(named: "redeem")
+//            tableCell.selectionStyle = .none
+//            return tableCell
         
-        case 9://related
+        case 8://related
             let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsRelatedArrayTableViewCell", for: indexPath) as! FDetailsRelatedArrayTableViewCell
             tableCell.product_id = self.product_id
             tableCell.relatedCollectionCellDelegate = self

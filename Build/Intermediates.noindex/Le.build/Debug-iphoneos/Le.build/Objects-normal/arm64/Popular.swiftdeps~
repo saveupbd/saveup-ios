@@ -7,8 +7,10 @@ provides-member:
 - ["6SaveUp7PopularC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!="
 - "AssignmentPrecedence"
 - "CastingPrecedence"
+- !private "Double"
 - !private "FloatLiteralType"
 - !private "IntegerLiteralType"
 - "NSDictionary"
@@ -27,9 +29,11 @@ depends-member:
 - !private ["s7CVarArgP", "product_discount_price"]
 - !private ["s7CVarArgP", "product_id"]
 - !private ["s7CVarArgP", "product_image"]
+- !private ["s7CVarArgP", "product_off"]
 - !private ["s7CVarArgP", "product_percentage"]
 - !private ["s7CVarArgP", "product_price"]
 - !private ["s7CVarArgP", "product_title"]
+- !private ["s7CVarArgP", "product_type"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
@@ -41,9 +45,11 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "product_discount_price"]
 - !private ["s28CustomDebugStringConvertibleP", "product_id"]
 - !private ["s28CustomDebugStringConvertibleP", "product_image"]
+- !private ["s28CustomDebugStringConvertibleP", "product_off"]
 - !private ["s28CustomDebugStringConvertibleP", "product_percentage"]
 - !private ["s28CustomDebugStringConvertibleP", "product_price"]
 - !private ["s28CustomDebugStringConvertibleP", "product_title"]
+- !private ["s28CustomDebugStringConvertibleP", "product_type"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "subscript"]
@@ -55,9 +61,11 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "product_discount_price"]
 - !private ["s23CustomStringConvertibleP", "product_id"]
 - !private ["s23CustomStringConvertibleP", "product_image"]
+- !private ["s23CustomStringConvertibleP", "product_off"]
 - !private ["s23CustomStringConvertibleP", "product_percentage"]
 - !private ["s23CustomStringConvertibleP", "product_price"]
 - !private ["s23CustomStringConvertibleP", "product_title"]
+- !private ["s23CustomStringConvertibleP", "product_type"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["Se", "init"]
 - !private ["SE", "init"]
@@ -69,9 +77,11 @@ depends-member:
 - !private ["SQ", "product_discount_price"]
 - !private ["SQ", "product_id"]
 - !private ["SQ", "product_image"]
+- !private ["SQ", "product_off"]
 - !private ["SQ", "product_percentage"]
 - !private ["SQ", "product_price"]
 - !private ["SQ", "product_title"]
+- !private ["SQ", "product_type"]
 - !private ["SQ", "subscript"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
@@ -86,9 +96,11 @@ depends-member:
 - !private ["SH", "product_discount_price"]
 - !private ["SH", "product_id"]
 - !private ["SH", "product_image"]
+- !private ["SH", "product_off"]
 - !private ["SH", "product_percentage"]
 - !private ["SH", "product_price"]
 - !private ["SH", "product_title"]
+- !private ["SH", "product_type"]
 - !private ["SH", "subscript"]
 - !private ["6SaveUp20KingfisherCompatibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
@@ -98,6 +110,7 @@ depends-member:
 - !private ["So12NSDictionaryC", "subscript"]
 - !private ["So17NSFastEnumerationP", "subscript"]
 - !private ["So16NSMutableCopyingP", "subscript"]
+- !private ["So8NSObjectC", "Double"]
 - ["So8NSObjectC", "NSDictionary"]
 - !private ["So8NSObjectC", "NSInteger"]
 - ["So8NSObjectC", "String"]
@@ -108,9 +121,11 @@ depends-member:
 - ["So8NSObjectC", "product_discount_price"]
 - ["So8NSObjectC", "product_id"]
 - ["So8NSObjectC", "product_image"]
+- ["So8NSObjectC", "product_off"]
 - ["So8NSObjectC", "product_percentage"]
 - ["So8NSObjectC", "product_price"]
 - ["So8NSObjectC", "product_title"]
+- ["So8NSObjectC", "product_type"]
 - !private ["So8NSObjectC", "subscript"]
 - !private ["So8NSObjectP", "String"]
 - ["So8NSObjectP", ""]
@@ -120,23 +135,29 @@ depends-member:
 - !private ["So8NSObjectP", "product_discount_price"]
 - !private ["So8NSObjectP", "product_id"]
 - !private ["So8NSObjectP", "product_image"]
+- !private ["So8NSObjectP", "product_off"]
 - !private ["So8NSObjectP", "product_percentage"]
 - !private ["So8NSObjectP", "product_price"]
 - !private ["So8NSObjectP", "product_title"]
+- !private ["So8NSObjectP", "product_type"]
 - !private ["So8NSObjectP", "subscript"]
 - !private ["So14NSSecureCodingP", "subscript"]
+- !private ["6SaveUp7PopularC", "Double"]
 - ["6SaveUp7PopularC", "NSDictionary"]
 - !private ["6SaveUp7PopularC", "NSInteger"]
 - ["6SaveUp7PopularC", "String"]
 - ["6SaveUp7PopularC", "currency_symbol"]
+- ["6SaveUp7PopularC", "deinit"]
 - ["6SaveUp7PopularC", "init"]
 - ["6SaveUp7PopularC", "merchant_name"]
 - ["6SaveUp7PopularC", "product_discount_price"]
 - ["6SaveUp7PopularC", "product_id"]
 - ["6SaveUp7PopularC", "product_image"]
+- ["6SaveUp7PopularC", "product_off"]
 - ["6SaveUp7PopularC", "product_percentage"]
 - ["6SaveUp7PopularC", "product_price"]
 - ["6SaveUp7PopularC", "product_title"]
+- ["6SaveUp7PopularC", "product_type"]
 - !private ["Sm", "init"]
 - !private ["ST", "init"]
 - !private ["ST", "subscript"]
@@ -158,9 +179,11 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_discount_price"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_id"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_image"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "product_off"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_percentage"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_price"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "product_title"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "product_type"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "String"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", ""]
@@ -170,9 +193,11 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_discount_price"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_id"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_image"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_off"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_percentage"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_price"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_title"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "product_type"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "subscript"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
 depends-nominal:
@@ -241,15 +266,18 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/ObjectiveC.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreImage.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/QuartzCore.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Accelerate.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Dispatch.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Metal.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Darwin.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreLocation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Foundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreFoundation.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/CoreGraphics.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/os.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Swift.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/UIKit.swiftmodule/arm64.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/MapKit.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/SwiftOnoneSupport.swiftmodule/arm64.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphoneos/prebuilt-modules/Combine.swiftmodule/arm64-apple-ios.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_timeval32.h"
@@ -1702,4 +1730,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "c33664b1c54bc312ffe6852da8f7fa81"
+interface-hash: "136a54e33b18177d3bf1d19d2d1addf2"

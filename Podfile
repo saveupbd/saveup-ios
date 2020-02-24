@@ -13,4 +13,7 @@ target 'Le' do
     pod 'Firebase/Core'
     pod 'Firebase/RemoteConfig'
     pod 'GoogleSignIn'
+    pod 'FBSDKCoreKit'
+    pod 'FBSDKLoginKit'
+    pod 'FBSDKShareKit'
 end

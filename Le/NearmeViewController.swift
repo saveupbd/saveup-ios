@@ -150,17 +150,20 @@ class NearmeViewController: UIViewController, MKMapViewDelegate, CLLocationManag
                                         print(item)
                                     }
                                     
-                                    for location in self.nearmeArray {
-                                        let merchant_id = location.merchant_id
+                                    for item2 in self.nearmeArray {
+                                        let merchant_id = item2.merchant_id
                                         print(merchant_id!)
                                         let annotation = MKPointAnnotation()
-                                        annotation.title = location.store_name
-                                        annotation.subtitle = "Deals - " + location.product_count!
-                                        _  = location.merchant_id
+                                        annotation.title = item2.store_name
+                                        annotation.subtitle = "Deals - " + item2.product_count!
+                                        _  = item2.merchant_id
                                         
-                                        UserDefaults.standard.set("\(location.merchant_id!)", forKey: "merchant_id")
-                                        annotation.coordinate = CLLocationCoordinate2D(latitude: Double(location.store_latitude)!, longitude: Double(location.store_longitude)!)
-                                        self.mapView.addAnnotation(annotation)
+                                        UserDefaults.standard.set("\(item2.merchant_id!)", forKey: "merchant_id")
+                                        if item2.store_longitude != nil || item2.store_longitude != nil{
+                                            annotation.coordinate = CLLocationCoordinate2D(latitude: Double(item2.store_latitude)!, longitude: Double(item2.store_longitude)!)
+                                            self.mapView.addAnnotation(annotation)
+                                        }
+                                        
                                     }
                                 }
                                 self.view.hideToastActivity()

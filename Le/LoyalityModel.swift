@@ -33,7 +33,7 @@ class LoyalityModel: NSObject {
             self.order_id = String(LoyalityModel["order_id"] as! NSInteger)
         }
         if LoyalityModel["order_total"] != nil{
-            self.order_total = String(LoyalityModel["order_total"] as! Double)
+            self.order_total = String((LoyalityModel["order_total"] as! Double).rounded(.up).removeZerosFromEnd())
         }
         if LoyalityModel["user_payable_amount"] != nil{
             self.user_payable_amount = String(LoyalityModel["user_payable_amount"] as! NSInteger)

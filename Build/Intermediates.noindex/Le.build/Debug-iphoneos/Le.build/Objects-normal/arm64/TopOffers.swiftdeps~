@@ -7,6 +7,7 @@ provides-member:
 - ["6SaveUp9TopOffersC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "!"
 - !private "!="
 - "AssignmentPrecedence"
 - "CastingPrecedence"
@@ -15,10 +16,12 @@ depends-top-level:
 - !private "IntegerLiteralType"
 - "NSDictionary"
 - !private "NSInteger"
+- !private "NSNull"
 - "NSObject"
 - "String"
 - !private "StringLiteralType"
 - "TopOffers"
+- !private "UnicodeScalarType"
 depends-member:
 - !private ["SK", "init"]
 - !private ["s7CVarArgP", "String"]
@@ -113,6 +116,7 @@ depends-member:
 - !private ["So8NSObjectC", "Double"]
 - ["So8NSObjectC", "NSDictionary"]
 - !private ["So8NSObjectC", "NSInteger"]
+- !private ["So8NSObjectC", "NSNull"]
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", ""]
 - ["So8NSObjectC", "currency_symbol"]
@@ -152,6 +156,7 @@ depends-member:
 - !private ["6SaveUp9TopOffersC", "Double"]
 - ["6SaveUp9TopOffersC", "NSDictionary"]
 - !private ["6SaveUp9TopOffersC", "NSInteger"]
+- !private ["6SaveUp9TopOffersC", "NSNull"]
 - ["6SaveUp9TopOffersC", "String"]
 - ["6SaveUp9TopOffersC", "currency_symbol"]
 - ["6SaveUp9TopOffersC", "deinit"]

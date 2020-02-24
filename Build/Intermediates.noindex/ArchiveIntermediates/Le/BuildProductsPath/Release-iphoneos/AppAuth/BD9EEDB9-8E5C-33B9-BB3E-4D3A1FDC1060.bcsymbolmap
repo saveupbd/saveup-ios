@@ -1,0 +1,883 @@
+BCSymbolMap Version: 2.0
+Apple clang version 11.0.0 (clang-1100.0.33.12)
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/Target Support Files/AppAuth/AppAuth-dummy.m
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods
+-[OIDAuthorizationRequest init]
++[OIDAuthorizationRequest isSupportedResponseType:]
+-[OIDAuthorizationRequest initWithConfiguration:clientId:clientSecret:scope:redirectURL:responseType:state:nonce:codeVerifier:codeChallenge:codeChallengeMethod:additionalParameters:]
+-[OIDAuthorizationRequest initWithConfiguration:clientId:clientSecret:scopes:redirectURL:responseType:additionalParameters:]
+-[OIDAuthorizationRequest initWithConfiguration:clientId:scopes:redirectURL:responseType:additionalParameters:]
+-[OIDAuthorizationRequest copyWithZone:]
++[OIDAuthorizationRequest supportsSecureCoding]
+-[OIDAuthorizationRequest initWithCoder:]
+-[OIDAuthorizationRequest encodeWithCoder:]
+-[OIDAuthorizationRequest description]
++[OIDAuthorizationRequest generateCodeVerifier]
++[OIDAuthorizationRequest generateState]
++[OIDAuthorizationRequest codeChallengeS256ForVerifier:]
+-[OIDAuthorizationRequest authorizationRequestURL]
+-[OIDAuthorizationRequest externalUserAgentRequestURL]
+-[OIDAuthorizationRequest redirectScheme]
+-[OIDAuthorizationRequest configuration]
+-[OIDAuthorizationRequest responseType]
+-[OIDAuthorizationRequest clientID]
+-[OIDAuthorizationRequest clientSecret]
+-[OIDAuthorizationRequest scope]
+-[OIDAuthorizationRequest redirectURL]
+-[OIDAuthorizationRequest state]
+-[OIDAuthorizationRequest nonce]
+-[OIDAuthorizationRequest codeVerifier]
+-[OIDAuthorizationRequest codeChallenge]
+-[OIDAuthorizationRequest codeChallengeMethod]
+-[OIDAuthorizationRequest additionalParameters]
+-[OIDAuthorizationRequest .cxx_destruct]
+__OBJC_PROTOCOL_$_NSCopying
+__OBJC_LABEL_PROTOCOL_$_NSCopying
+__OBJC_PROTOCOL_$_NSCoding
+__OBJC_LABEL_PROTOCOL_$_NSCoding
+__OBJC_PROTOCOL_$_NSSecureCoding
+__OBJC_LABEL_PROTOCOL_$_NSSecureCoding
+__OBJC_PROTOCOL_$_OIDExternalUserAgentRequest
+__OBJC_LABEL_PROTOCOL_$_OIDExternalUserAgentRequest
+_OBJC_IVAR_$_OIDAuthorizationRequest._configuration
+_OBJC_IVAR_$_OIDAuthorizationRequest._responseType
+_OBJC_IVAR_$_OIDAuthorizationRequest._clientID
+_OBJC_IVAR_$_OIDAuthorizationRequest._clientSecret
+_OBJC_IVAR_$_OIDAuthorizationRequest._scope
+_OBJC_IVAR_$_OIDAuthorizationRequest._redirectURL
+_OBJC_IVAR_$_OIDAuthorizationRequest._state
+_OBJC_IVAR_$_OIDAuthorizationRequest._nonce
+_OBJC_IVAR_$_OIDAuthorizationRequest._codeVerifier
+_OBJC_IVAR_$_OIDAuthorizationRequest._codeChallenge
+_OBJC_IVAR_$_OIDAuthorizationRequest._codeChallengeMethod
+_OBJC_IVAR_$_OIDAuthorizationRequest._additionalParameters
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDAuthorizationRequest.m
+AppAuth/Source/OIDAuthorizationRequest.m
+AppAuth/Source/OIDAuthorizationRequest.h
++[OIDAuthorizationResponse fieldMap]
+___36+[OIDAuthorizationResponse fieldMap]_block_invoke
+___36+[OIDAuthorizationResponse fieldMap]_block_invoke_2
+-[OIDAuthorizationResponse init]
+-[OIDAuthorizationResponse initWithRequest:parameters:]
+-[OIDAuthorizationResponse copyWithZone:]
++[OIDAuthorizationResponse supportsSecureCoding]
+-[OIDAuthorizationResponse initWithCoder:]
+-[OIDAuthorizationResponse encodeWithCoder:]
+-[OIDAuthorizationResponse description]
+-[OIDAuthorizationResponse tokenExchangeRequest]
+-[OIDAuthorizationResponse tokenExchangeRequestWithAdditionalParameters:]
+-[OIDAuthorizationResponse request]
+-[OIDAuthorizationResponse authorizationCode]
+-[OIDAuthorizationResponse state]
+-[OIDAuthorizationResponse accessToken]
+-[OIDAuthorizationResponse accessTokenExpirationDate]
+-[OIDAuthorizationResponse tokenType]
+-[OIDAuthorizationResponse idToken]
+-[OIDAuthorizationResponse scope]
+-[OIDAuthorizationResponse additionalParameters]
+-[OIDAuthorizationResponse .cxx_destruct]
+_fieldMap.fieldMap
+_fieldMap.onceToken
+___block_descriptor_32_e5_v8?0l
+___block_literal_global
+___block_descriptor_32_e18_16?0"NSObject"8l
+___block_literal_global.38
+_OBJC_IVAR_$_OIDAuthorizationResponse._request
+_OBJC_IVAR_$_OIDAuthorizationResponse._authorizationCode
+_OBJC_IVAR_$_OIDAuthorizationResponse._state
+_OBJC_IVAR_$_OIDAuthorizationResponse._accessToken
+_OBJC_IVAR_$_OIDAuthorizationResponse._accessTokenExpirationDate
+_OBJC_IVAR_$_OIDAuthorizationResponse._tokenType
+_OBJC_IVAR_$_OIDAuthorizationResponse._idToken
+_OBJC_IVAR_$_OIDAuthorizationResponse._scope
+_OBJC_IVAR_$_OIDAuthorizationResponse._additionalParameters
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDAuthorizationResponse.m
+AppAuth/Source/OIDAuthorizationResponse.m
+AppAuth/Source/OIDAuthorizationResponse.h
+__36+[OIDAuthorizationResponse fieldMap]_block_invoke_2
+__36+[OIDAuthorizationResponse fieldMap]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/once.h
++[OIDAuthorizationService(IOS) presentAuthorizationRequest:presentingViewController:callback:]
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/iOS/OIDAuthorizationService+IOS.m
+AppAuth/Source/iOS/OIDAuthorizationService+IOS.m
+-[OIDAuthorizationSession initWithRequest:]
+-[OIDAuthorizationSession presentAuthorizationWithExternalUserAgent:callback:]
+-[OIDAuthorizationSession cancel]
+-[OIDAuthorizationSession cancelWithCompletion:]
+___48-[OIDAuthorizationSession cancelWithCompletion:]_block_invoke
+___copy_helper_block_e8_32s40b
+___destroy_helper_block_e8_32s40s
++[OIDAuthorizationSession URL:matchesRedirectionURL:]
+-[OIDAuthorizationSession shouldHandleURL:]
+-[OIDAuthorizationSession resumeExternalUserAgentFlowWithURL:]
+___62-[OIDAuthorizationSession resumeExternalUserAgentFlowWithURL:]_block_invoke
+___copy_helper_block_e8_32s40s48s
+___destroy_helper_block_e8_32s40s48s
+-[OIDAuthorizationSession failExternalUserAgentFlowWithError:]
+-[OIDAuthorizationSession didFinishWithResponse:error:]
+-[OIDAuthorizationSession .cxx_destruct]
+-[OIDEndSessionImplementation initWithRequest:]
+-[OIDEndSessionImplementation presentAuthorizationWithExternalUserAgent:callback:]
+-[OIDEndSessionImplementation cancel]
+-[OIDEndSessionImplementation cancelWithCompletion:]
+___52-[OIDEndSessionImplementation cancelWithCompletion:]_block_invoke
+-[OIDEndSessionImplementation shouldHandleURL:]
+-[OIDEndSessionImplementation resumeExternalUserAgentFlowWithURL:]
+___66-[OIDEndSessionImplementation resumeExternalUserAgentFlowWithURL:]_block_invoke
+-[OIDEndSessionImplementation failExternalUserAgentFlowWithError:]
+-[OIDEndSessionImplementation didFinishWithResponse:error:]
+-[OIDEndSessionImplementation .cxx_destruct]
++[OIDAuthorizationService discoverServiceConfigurationForIssuer:completion:]
++[OIDAuthorizationService discoverServiceConfigurationForDiscoveryURL:completion:]
+___82+[OIDAuthorizationService discoverServiceConfigurationForDiscoveryURL:completion:]_block_invoke
+___82+[OIDAuthorizationService discoverServiceConfigurationForDiscoveryURL:completion:]_block_invoke_2
+___copy_helper_block_e8_32b40s
+___82+[OIDAuthorizationService discoverServiceConfigurationForDiscoveryURL:completion:]_block_invoke.163
+___82+[OIDAuthorizationService discoverServiceConfigurationForDiscoveryURL:completion:]_block_invoke_2.169
+___82+[OIDAuthorizationService discoverServiceConfigurationForDiscoveryURL:completion:]_block_invoke_3
++[OIDAuthorizationService presentAuthorizationRequest:externalUserAgent:callback:]
++[OIDAuthorizationService presentEndSessionRequest:externalUserAgent:callback:]
++[OIDAuthorizationService performTokenRequest:callback:]
++[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]
+___86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke
+___86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_2
+___86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_3
+___86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_4
+___86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_5
+___86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_6
+___86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_7
+___86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_8
+___86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_9
+___86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_10
+___86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_11
+___86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_12
+___86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_13
+___copy_helper_block_e8_32s40b48s56s
+___destroy_helper_block_e8_32s40s48s56s
++[OIDAuthorizationService performRegistrationRequest:completion:]
+___65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke
+___65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_2
+___65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_3
+___65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_4
+___65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_5
+___65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_6
+___65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_7
+___65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_8
+___copy_helper_block_e8_32s40b48s
+-[OIDAuthorizationService configuration]
+-[OIDAuthorizationService .cxx_destruct]
+___block_descriptor_48_e8_32s40bs_e5_v8?0l
+___block_descriptor_56_e8_32s40s48s_e5_v8?0l
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_PROTOCOL_$_OIDExternalUserAgentSession
+__OBJC_LABEL_PROTOCOL_$_OIDExternalUserAgentSession
+_OBJC_IVAR_$_OIDAuthorizationSession._request
+_OBJC_IVAR_$_OIDAuthorizationSession._externalUserAgent
+_OBJC_IVAR_$_OIDAuthorizationSession._pendingauthorizationFlowCallback
+___block_descriptor_48_e8_32bs40s_e5_v8?0l
+___block_descriptor_48_e8_32s40bs_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
+___block_descriptor_64_e8_32s40bs48s56s_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
+___block_descriptor_56_e8_32s40bs48s_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
+_OBJC_IVAR_$_OIDAuthorizationService._configuration
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDAuthorizationService.m
+AppAuth/Source/OIDAuthorizationService.m
+AppAuth/Source/OIDAuthorizationService.h
+__copy_helper_block_e8_32s40b48s
+__65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_8
+__65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_7
+__65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_6
+__65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_5
+__65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_4
+__65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_3
+__65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke_2
+__65+[OIDAuthorizationService performRegistrationRequest:completion:]_block_invoke
+__destroy_helper_block_e8_32s40s48s56s
+__copy_helper_block_e8_32s40b48s56s
+__86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_13
+__86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_12
+__86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_11
+__86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_10
+__86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_9
+__86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_8
+__86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_7
+__86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_6
+__86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_5
+__86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_4
+__86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_3
+__86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke_2
+__86+[OIDAuthorizationService performTokenRequest:originalAuthorizationResponse:callback:]_block_invoke
+__82+[OIDAuthorizationService discoverServiceConfigurationForDiscoveryURL:completion:]_block_invoke_3
+__82+[OIDAuthorizationService discoverServiceConfigurationForDiscoveryURL:completion:]_block_invoke_2.169
+__82+[OIDAuthorizationService discoverServiceConfigurationForDiscoveryURL:completion:]_block_invoke.163
+__copy_helper_block_e8_32b40s
+__82+[OIDAuthorizationService discoverServiceConfigurationForDiscoveryURL:completion:]_block_invoke_2
+__82+[OIDAuthorizationService discoverServiceConfigurationForDiscoveryURL:completion:]_block_invoke
+__66-[OIDEndSessionImplementation resumeExternalUserAgentFlowWithURL:]_block_invoke
+__52-[OIDEndSessionImplementation cancelWithCompletion:]_block_invoke
+__destroy_helper_block_e8_32s40s48s
+__copy_helper_block_e8_32s40s48s
+__62-[OIDAuthorizationSession resumeExternalUserAgentFlowWithURL:]_block_invoke
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40b
+__48-[OIDAuthorizationSession cancelWithCompletion:]_block_invoke
++[OIDAuthState(IOS) authStateByPresentingAuthorizationRequest:presentingViewController:callback:]
++[OIDAuthState(IOS) authStateByPresentingAuthorizationRequest:callback:]
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/iOS/OIDAuthState+IOS.m
+AppAuth/Source/iOS/OIDAuthState+IOS.m
+-[OIDAuthStatePendingAction initWithAction:andDispatchQueue:]
+-[OIDAuthStatePendingAction action]
+-[OIDAuthStatePendingAction dispatchQueue]
+-[OIDAuthStatePendingAction .cxx_destruct]
++[OIDAuthState authStateByPresentingAuthorizationRequest:externalUserAgent:callback:]
+___85+[OIDAuthState authStateByPresentingAuthorizationRequest:externalUserAgent:callback:]_block_invoke
+___85+[OIDAuthState authStateByPresentingAuthorizationRequest:externalUserAgent:callback:]_block_invoke_2
+-[OIDAuthState init]
+-[OIDAuthState initWithAuthorizationResponse:]
+-[OIDAuthState initWithAuthorizationResponse:tokenResponse:]
+-[OIDAuthState initWithRegistrationResponse:]
+-[OIDAuthState initWithAuthorizationResponse:tokenResponse:registrationResponse:]
+-[OIDAuthState description]
++[OIDAuthState supportsSecureCoding]
+-[OIDAuthState initWithCoder:]
+-[OIDAuthState encodeWithCoder:]
+-[OIDAuthState accessToken]
+-[OIDAuthState tokenType]
+-[OIDAuthState accessTokenExpirationDate]
+-[OIDAuthState idToken]
+-[OIDAuthState isAuthorized]
+-[OIDAuthState updateWithRegistrationResponse:]
+-[OIDAuthState updateWithAuthorizationResponse:error:]
+-[OIDAuthState updateWithTokenResponse:error:]
+-[OIDAuthState updateWithAuthorizationError:]
+-[OIDAuthState tokenRefreshRequest]
+-[OIDAuthState tokenRefreshRequestWithAdditionalParameters:]
+-[OIDAuthState didChangeState]
+-[OIDAuthState setNeedsTokenRefresh]
+-[OIDAuthState performActionWithFreshTokens:]
+-[OIDAuthState performActionWithFreshTokens:additionalRefreshParameters:]
+-[OIDAuthState performActionWithFreshTokens:additionalRefreshParameters:dispatchQueue:]
+___87-[OIDAuthState performActionWithFreshTokens:additionalRefreshParameters:dispatchQueue:]_block_invoke
+___87-[OIDAuthState performActionWithFreshTokens:additionalRefreshParameters:dispatchQueue:]_block_invoke.146
+___87-[OIDAuthState performActionWithFreshTokens:additionalRefreshParameters:dispatchQueue:]_block_invoke_2
+___87-[OIDAuthState performActionWithFreshTokens:additionalRefreshParameters:dispatchQueue:]_block_invoke_3
+___copy_helper_block_e8_32s
+___destroy_helper_block_e8_32s
+-[OIDAuthState isTokenFresh]
+-[OIDAuthState refreshToken]
+-[OIDAuthState scope]
+-[OIDAuthState lastAuthorizationResponse]
+-[OIDAuthState lastTokenResponse]
+-[OIDAuthState lastRegistrationResponse]
+-[OIDAuthState authorizationError]
+-[OIDAuthState stateChangeDelegate]
+-[OIDAuthState setStateChangeDelegate:]
+-[OIDAuthState errorDelegate]
+-[OIDAuthState setErrorDelegate:]
+-[OIDAuthState .cxx_destruct]
+_OBJC_IVAR_$_OIDAuthStatePendingAction._action
+_OBJC_IVAR_$_OIDAuthStatePendingAction._dispatchQueue
+___block_descriptor_48_e8_32s40bs_e38_v24?0"OIDTokenResponse"8"NSError"16l
+___block_descriptor_48_e8_32s40bs_e46_v24?0"OIDAuthorizationResponse"8"NSError"16l
+___block_descriptor_40_e8_32s_e38_v24?0"OIDTokenResponse"8"NSError"16l
+_OBJC_IVAR_$_OIDAuthState._pendingActions
+_OBJC_IVAR_$_OIDAuthState._pendingActionsSyncObject
+_OBJC_IVAR_$_OIDAuthState._needsTokenRefresh
+_OBJC_IVAR_$_OIDAuthState._refreshToken
+_OBJC_IVAR_$_OIDAuthState._scope
+_OBJC_IVAR_$_OIDAuthState._lastAuthorizationResponse
+_OBJC_IVAR_$_OIDAuthState._lastTokenResponse
+_OBJC_IVAR_$_OIDAuthState._lastRegistrationResponse
+_OBJC_IVAR_$_OIDAuthState._authorizationError
+_OBJC_IVAR_$_OIDAuthState._stateChangeDelegate
+_OBJC_IVAR_$_OIDAuthState._errorDelegate
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDAuthState.m
+AppAuth/Source/OIDAuthState.m
+AppAuth/Source/OIDAuthState.h
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32s
+__87-[OIDAuthState performActionWithFreshTokens:additionalRefreshParameters:dispatchQueue:]_block_invoke_3
+__87-[OIDAuthState performActionWithFreshTokens:additionalRefreshParameters:dispatchQueue:]_block_invoke_2
+__87-[OIDAuthState performActionWithFreshTokens:additionalRefreshParameters:dispatchQueue:]_block_invoke.146
+__87-[OIDAuthState performActionWithFreshTokens:additionalRefreshParameters:dispatchQueue:]_block_invoke
+__85+[OIDAuthState authStateByPresentingAuthorizationRequest:externalUserAgent:callback:]_block_invoke_2
+__85+[OIDAuthState authStateByPresentingAuthorizationRequest:externalUserAgent:callback:]_block_invoke
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDClientMetadataParameters.m
+-[OIDEndSessionRequest init]
+-[OIDEndSessionRequest initWithConfiguration:idTokenHint:postLogoutRedirectURL:state:additionalParameters:]
+-[OIDEndSessionRequest initWithConfiguration:idTokenHint:postLogoutRedirectURL:additionalParameters:]
+-[OIDEndSessionRequest copyWithZone:]
++[OIDEndSessionRequest supportsSecureCoding]
+-[OIDEndSessionRequest initWithCoder:]
+-[OIDEndSessionRequest encodeWithCoder:]
+-[OIDEndSessionRequest description]
++[OIDEndSessionRequest generateState]
+-[OIDEndSessionRequest externalUserAgentRequestURL]
+-[OIDEndSessionRequest redirectScheme]
+-[OIDEndSessionRequest endSessionRequestURL]
+-[OIDEndSessionRequest configuration]
+-[OIDEndSessionRequest postLogoutRedirectURL]
+-[OIDEndSessionRequest idTokenHint]
+-[OIDEndSessionRequest state]
+-[OIDEndSessionRequest additionalParameters]
+-[OIDEndSessionRequest .cxx_destruct]
+_OBJC_IVAR_$_OIDEndSessionRequest._configuration
+_OBJC_IVAR_$_OIDEndSessionRequest._postLogoutRedirectURL
+_OBJC_IVAR_$_OIDEndSessionRequest._idTokenHint
+_OBJC_IVAR_$_OIDEndSessionRequest._state
+_OBJC_IVAR_$_OIDEndSessionRequest._additionalParameters
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDEndSessionRequest.m
+AppAuth/Source/OIDEndSessionRequest.m
+AppAuth/Source/OIDEndSessionRequest.h
+-[OIDEndSessionResponse init]
+-[OIDEndSessionResponse initWithRequest:parameters:]
++[OIDEndSessionResponse fieldMap]
+___33+[OIDEndSessionResponse fieldMap]_block_invoke
+-[OIDEndSessionResponse copyWithZone:]
++[OIDEndSessionResponse supportsSecureCoding]
+-[OIDEndSessionResponse initWithCoder:]
+-[OIDEndSessionResponse encodeWithCoder:]
+-[OIDEndSessionResponse description]
+-[OIDEndSessionResponse request]
+-[OIDEndSessionResponse state]
+-[OIDEndSessionResponse additionalParameters]
+-[OIDEndSessionResponse .cxx_destruct]
+_OBJC_IVAR_$_OIDEndSessionResponse._request
+_OBJC_IVAR_$_OIDEndSessionResponse._state
+_OBJC_IVAR_$_OIDEndSessionResponse._additionalParameters
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDEndSessionResponse.m
+AppAuth/Source/OIDEndSessionResponse.m
+AppAuth/Source/OIDEndSessionResponse.h
+__33+[OIDEndSessionResponse fieldMap]_block_invoke
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDError.m
++[OIDErrorUtilities errorWithCode:underlyingError:description:]
++[OIDErrorUtilities isOAuthErrorDomain:]
++[OIDErrorUtilities resourceServerAuthorizationErrorWithCode:errorResponse:underlyingError:]
++[OIDErrorUtilities OAuthErrorWithDomain:OAuthResponse:underlyingError:]
++[OIDErrorUtilities HTTPErrorWithHTTPResponse:data:]
++[OIDErrorUtilities OAuthErrorCodeFromString:]
++[OIDErrorUtilities raiseException:]
++[OIDErrorUtilities raiseException:message:]
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDErrorUtilities.m
+AppAuth/Source/OIDErrorUtilities.m
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/iOS/OIDExternalUserAgentCatalyst.m
+-[OIDExternalUserAgentIOS init]
+-[OIDExternalUserAgentIOS initWithPresentingViewController:]
+-[OIDExternalUserAgentIOS presentExternalUserAgentRequest:session:]
+___67-[OIDExternalUserAgentIOS presentExternalUserAgentRequest:session:]_block_invoke
+___copy_helper_block_e8_32w
+___destroy_helper_block_e8_32w
+___67-[OIDExternalUserAgentIOS presentExternalUserAgentRequest:session:]_block_invoke.21
+-[OIDExternalUserAgentIOS dismissExternalUserAgentAnimated:completion:]
+-[OIDExternalUserAgentIOS cleanUp]
+-[OIDExternalUserAgentIOS safariViewControllerDidFinish:]
+-[OIDExternalUserAgentIOS presentationAnchorForWebAuthenticationSession:]
+-[OIDExternalUserAgentIOS .cxx_destruct]
+___clang_at_available_requires_core_foundation_framework
+___clang_at_available_requires_core_foundation_framework.cold.1
+___block_descriptor_40_e8_32w_e27_v24?0"NSURL"8"NSError"16l
+__OBJC_PROTOCOL_$_SFSafariViewControllerDelegate
+__OBJC_LABEL_PROTOCOL_$_SFSafariViewControllerDelegate
+__OBJC_PROTOCOL_$_ASWebAuthenticationPresentationContextProviding
+__OBJC_LABEL_PROTOCOL_$_ASWebAuthenticationPresentationContextProviding
+__OBJC_PROTOCOL_$_OIDExternalUserAgent
+__OBJC_LABEL_PROTOCOL_$_OIDExternalUserAgent
+_OBJC_IVAR_$_OIDExternalUserAgentIOS._presentingViewController
+_OBJC_IVAR_$_OIDExternalUserAgentIOS._externalUserAgentFlowInProgress
+_OBJC_IVAR_$_OIDExternalUserAgentIOS._session
+_OBJC_IVAR_$_OIDExternalUserAgentIOS._safariVC
+_OBJC_IVAR_$_OIDExternalUserAgentIOS._authenticationVC
+_OBJC_IVAR_$_OIDExternalUserAgentIOS._webAuthenticationVC
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/iOS/OIDExternalUserAgentIOS.m
+AppAuth/Source/iOS/OIDExternalUserAgentIOS.m
+__67-[OIDExternalUserAgentIOS presentExternalUserAgentRequest:session:]_block_invoke.21
+__destroy_helper_block_e8_32w
+__copy_helper_block_e8_32w
+__67-[OIDExternalUserAgentIOS presentExternalUserAgentRequest:session:]_block_invoke
++[OIDExternalUserAgentIOSCustomBrowser CustomBrowserChrome]
++[OIDExternalUserAgentIOSCustomBrowser CustomBrowserFirefox]
++[OIDExternalUserAgentIOSCustomBrowser CustomBrowserOpera]
++[OIDExternalUserAgentIOSCustomBrowser CustomBrowserSafari]
+___59+[OIDExternalUserAgentIOSCustomBrowser CustomBrowserSafari]_block_invoke
++[OIDExternalUserAgentIOSCustomBrowser URLTransformationSchemeSubstitutionHTTPS:HTTP:]
+___86+[OIDExternalUserAgentIOSCustomBrowser URLTransformationSchemeSubstitutionHTTPS:HTTP:]_block_invoke
+___copy_helper_block_e8_32s40s
++[OIDExternalUserAgentIOSCustomBrowser URLTransformationSchemeConcatPrefix:]
+___76+[OIDExternalUserAgentIOSCustomBrowser URLTransformationSchemeConcatPrefix:]_block_invoke
+-[OIDExternalUserAgentIOSCustomBrowser initWithURLTransformation:]
+-[OIDExternalUserAgentIOSCustomBrowser initWithURLTransformation:canOpenURLScheme:appStoreURL:]
+-[OIDExternalUserAgentIOSCustomBrowser presentExternalUserAgentRequest:session:]
+-[OIDExternalUserAgentIOSCustomBrowser dismissExternalUserAgentAnimated:completion:]
+-[OIDExternalUserAgentIOSCustomBrowser URLTransformation]
+-[OIDExternalUserAgentIOSCustomBrowser canOpenURLScheme]
+-[OIDExternalUserAgentIOSCustomBrowser appStoreURL]
+-[OIDExternalUserAgentIOSCustomBrowser .cxx_destruct]
+___block_descriptor_32_e22_"NSURL"16?0"NSURL"8l
+___block_descriptor_48_e8_32s40s_e22_"NSURL"16?0"NSURL"8l
+___block_descriptor_40_e8_32s_e22_"NSURL"16?0"NSURL"8l
+_OBJC_IVAR_$_OIDExternalUserAgentIOSCustomBrowser._URLTransformation
+_OBJC_IVAR_$_OIDExternalUserAgentIOSCustomBrowser._canOpenURLScheme
+_OBJC_IVAR_$_OIDExternalUserAgentIOSCustomBrowser._appStoreURL
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/iOS/OIDExternalUserAgentIOSCustomBrowser.m
+AppAuth/Source/iOS/OIDExternalUserAgentIOSCustomBrowser.m
+AppAuth/Source/iOS/OIDExternalUserAgentIOSCustomBrowser.h
+__76+[OIDExternalUserAgentIOSCustomBrowser URLTransformationSchemeConcatPrefix:]_block_invoke
+__copy_helper_block_e8_32s40s
+__86+[OIDExternalUserAgentIOSCustomBrowser URLTransformationSchemeSubstitutionHTTPS:HTTP:]_block_invoke
+__59+[OIDExternalUserAgentIOSCustomBrowser CustomBrowserSafari]_block_invoke
+-[OIDFieldMapping init]
+-[OIDFieldMapping initWithName:type:]
+-[OIDFieldMapping initWithName:type:conversion:]
++[OIDFieldMapping remainingParametersWithMap:parameters:instance:]
++[OIDFieldMapping encodeWithCoder:map:instance:]
++[OIDFieldMapping decodeWithCoder:map:instance:]
++[OIDFieldMapping JSONTypes]
++[OIDFieldMapping URLConversion]
+___32+[OIDFieldMapping URLConversion]_block_invoke
++[OIDFieldMapping dateSinceNowConversion]
+___41+[OIDFieldMapping dateSinceNowConversion]_block_invoke
++[OIDFieldMapping dateEpochConversion]
+___38+[OIDFieldMapping dateEpochConversion]_block_invoke
+-[OIDFieldMapping name]
+-[OIDFieldMapping expectedType]
+-[OIDFieldMapping conversion]
+-[OIDFieldMapping .cxx_destruct]
+___block_literal_global.51
+___block_literal_global.57
+_OBJC_IVAR_$_OIDFieldMapping._name
+_OBJC_IVAR_$_OIDFieldMapping._expectedType
+_OBJC_IVAR_$_OIDFieldMapping._conversion
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDFieldMapping.m
+AppAuth/Source/OIDFieldMapping.m
+AppAuth/Source/OIDFieldMapping.h
+__38+[OIDFieldMapping dateEpochConversion]_block_invoke
+__41+[OIDFieldMapping dateSinceNowConversion]_block_invoke
+__32+[OIDFieldMapping URLConversion]_block_invoke
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDGrantTypes.m
+-[OIDIDToken initWithIDTokenString:]
++[OIDIDToken fieldMap]
+___22+[OIDIDToken fieldMap]_block_invoke
+___22+[OIDIDToken fieldMap]_block_invoke_2
+___22+[OIDIDToken fieldMap]_block_invoke_3
+___22+[OIDIDToken fieldMap]_block_invoke_4
++[OIDIDToken parseJWTSection:]
++[OIDIDToken base64urlNoPaddingDecode:]
+-[OIDIDToken header]
+-[OIDIDToken claims]
+-[OIDIDToken issuer]
+-[OIDIDToken subject]
+-[OIDIDToken audience]
+-[OIDIDToken expiresAt]
+-[OIDIDToken issuedAt]
+-[OIDIDToken nonce]
+-[OIDIDToken .cxx_destruct]
+___block_literal_global.49
+___block_literal_global.65
+_OBJC_IVAR_$_OIDIDToken._header
+_OBJC_IVAR_$_OIDIDToken._claims
+_OBJC_IVAR_$_OIDIDToken._issuer
+_OBJC_IVAR_$_OIDIDToken._subject
+_OBJC_IVAR_$_OIDIDToken._audience
+_OBJC_IVAR_$_OIDIDToken._expiresAt
+_OBJC_IVAR_$_OIDIDToken._issuedAt
+_OBJC_IVAR_$_OIDIDToken._nonce
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDIDToken.m
+AppAuth/Source/OIDIDToken.m
+AppAuth/Source/OIDIDToken.h
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
+__22+[OIDIDToken fieldMap]_block_invoke_4
+__22+[OIDIDToken fieldMap]_block_invoke_3
+__22+[OIDIDToken fieldMap]_block_invoke_2
+__22+[OIDIDToken fieldMap]_block_invoke
+-[OIDRegistrationRequest init]
+-[OIDRegistrationRequest initWithConfiguration:redirectURIs:responseTypes:grantTypes:subjectType:tokenEndpointAuthMethod:additionalParameters:]
+-[OIDRegistrationRequest initWithConfiguration:redirectURIs:responseTypes:grantTypes:subjectType:tokenEndpointAuthMethod:initialAccessToken:additionalParameters:]
+-[OIDRegistrationRequest copyWithZone:]
++[OIDRegistrationRequest supportsSecureCoding]
+-[OIDRegistrationRequest initWithCoder:]
+-[OIDRegistrationRequest encodeWithCoder:]
+-[OIDRegistrationRequest description]
+-[OIDRegistrationRequest URLRequest]
+-[OIDRegistrationRequest JSONString]
+-[OIDRegistrationRequest configuration]
+-[OIDRegistrationRequest initialAccessToken]
+-[OIDRegistrationRequest applicationType]
+-[OIDRegistrationRequest redirectURIs]
+-[OIDRegistrationRequest responseTypes]
+-[OIDRegistrationRequest grantTypes]
+-[OIDRegistrationRequest subjectType]
+-[OIDRegistrationRequest tokenEndpointAuthenticationMethod]
+-[OIDRegistrationRequest additionalParameters]
+-[OIDRegistrationRequest .cxx_destruct]
+_OBJC_IVAR_$_OIDRegistrationRequest._configuration
+_OBJC_IVAR_$_OIDRegistrationRequest._initialAccessToken
+_OBJC_IVAR_$_OIDRegistrationRequest._applicationType
+_OBJC_IVAR_$_OIDRegistrationRequest._redirectURIs
+_OBJC_IVAR_$_OIDRegistrationRequest._responseTypes
+_OBJC_IVAR_$_OIDRegistrationRequest._grantTypes
+_OBJC_IVAR_$_OIDRegistrationRequest._subjectType
+_OBJC_IVAR_$_OIDRegistrationRequest._tokenEndpointAuthenticationMethod
+_OBJC_IVAR_$_OIDRegistrationRequest._additionalParameters
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDRegistrationRequest.m
+AppAuth/Source/OIDRegistrationRequest.m
+AppAuth/Source/OIDRegistrationRequest.h
++[OIDRegistrationResponse fieldMap]
+___35+[OIDRegistrationResponse fieldMap]_block_invoke
+-[OIDRegistrationResponse init]
+-[OIDRegistrationResponse initWithRequest:parameters:]
+-[OIDRegistrationResponse copyWithZone:]
++[OIDRegistrationResponse supportsSecureCoding]
+-[OIDRegistrationResponse initWithCoder:]
+-[OIDRegistrationResponse encodeWithCoder:]
+-[OIDRegistrationResponse description]
+-[OIDRegistrationResponse request]
+-[OIDRegistrationResponse clientID]
+-[OIDRegistrationResponse clientIDIssuedAt]
+-[OIDRegistrationResponse clientSecret]
+-[OIDRegistrationResponse clientSecretExpiresAt]
+-[OIDRegistrationResponse registrationAccessToken]
+-[OIDRegistrationResponse registrationClientURI]
+-[OIDRegistrationResponse tokenEndpointAuthenticationMethod]
+-[OIDRegistrationResponse additionalParameters]
+-[OIDRegistrationResponse .cxx_destruct]
+_OBJC_IVAR_$_OIDRegistrationResponse._request
+_OBJC_IVAR_$_OIDRegistrationResponse._clientID
+_OBJC_IVAR_$_OIDRegistrationResponse._clientIDIssuedAt
+_OBJC_IVAR_$_OIDRegistrationResponse._clientSecret
+_OBJC_IVAR_$_OIDRegistrationResponse._clientSecretExpiresAt
+_OBJC_IVAR_$_OIDRegistrationResponse._registrationAccessToken
+_OBJC_IVAR_$_OIDRegistrationResponse._registrationClientURI
+_OBJC_IVAR_$_OIDRegistrationResponse._tokenEndpointAuthenticationMethod
+_OBJC_IVAR_$_OIDRegistrationResponse._additionalParameters
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDRegistrationResponse.m
+AppAuth/Source/OIDRegistrationResponse.m
+AppAuth/Source/OIDRegistrationResponse.h
+__35+[OIDRegistrationResponse fieldMap]_block_invoke
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDResponseTypes.m
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDScopes.m
++[OIDScopeUtilities disallowedScopeCharacters]
+___46+[OIDScopeUtilities disallowedScopeCharacters]_block_invoke
++[OIDScopeUtilities scopesWithArray:]
++[OIDScopeUtilities scopesArrayWithString:]
+_disallowedScopeCharacters.disallowedCharacters
+_disallowedScopeCharacters.onceToken
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDScopeUtilities.m
+AppAuth/Source/OIDScopeUtilities.m
+__46+[OIDScopeUtilities disallowedScopeCharacters]_block_invoke
+-[OIDServiceConfiguration init]
+-[OIDServiceConfiguration initWithAuthorizationEndpoint:tokenEndpoint:issuer:registrationEndpoint:endSessionEndpoint:discoveryDocument:]
+-[OIDServiceConfiguration initWithAuthorizationEndpoint:tokenEndpoint:]
+-[OIDServiceConfiguration initWithAuthorizationEndpoint:tokenEndpoint:registrationEndpoint:]
+-[OIDServiceConfiguration initWithAuthorizationEndpoint:tokenEndpoint:issuer:]
+-[OIDServiceConfiguration initWithAuthorizationEndpoint:tokenEndpoint:issuer:registrationEndpoint:]
+-[OIDServiceConfiguration initWithAuthorizationEndpoint:tokenEndpoint:issuer:registrationEndpoint:endSessionEndpoint:]
+-[OIDServiceConfiguration initWithDiscoveryDocument:]
+-[OIDServiceConfiguration copyWithZone:]
++[OIDServiceConfiguration supportsSecureCoding]
+-[OIDServiceConfiguration initWithCoder:]
+-[OIDServiceConfiguration encodeWithCoder:]
+-[OIDServiceConfiguration description]
+-[OIDServiceConfiguration authorizationEndpoint]
+-[OIDServiceConfiguration tokenEndpoint]
+-[OIDServiceConfiguration issuer]
+-[OIDServiceConfiguration registrationEndpoint]
+-[OIDServiceConfiguration endSessionEndpoint]
+-[OIDServiceConfiguration discoveryDocument]
+-[OIDServiceConfiguration .cxx_destruct]
+_OBJC_IVAR_$_OIDServiceConfiguration._authorizationEndpoint
+_OBJC_IVAR_$_OIDServiceConfiguration._tokenEndpoint
+_OBJC_IVAR_$_OIDServiceConfiguration._issuer
+_OBJC_IVAR_$_OIDServiceConfiguration._registrationEndpoint
+_OBJC_IVAR_$_OIDServiceConfiguration._endSessionEndpoint
+_OBJC_IVAR_$_OIDServiceConfiguration._discoveryDocument
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDServiceConfiguration.m
+AppAuth/Source/OIDServiceConfiguration.m
+AppAuth/Source/OIDServiceConfiguration.h
+-[OIDServiceDiscovery init]
+-[OIDServiceDiscovery initWithJSON:error:]
+-[OIDServiceDiscovery initWithJSONData:error:]
+-[OIDServiceDiscovery initWithDictionary:error:]
++[OIDServiceDiscovery dictionaryHasRequiredFields:error:]
+-[OIDServiceDiscovery copyWithZone:]
++[OIDServiceDiscovery supportsSecureCoding]
+-[OIDServiceDiscovery initWithCoder:]
+-[OIDServiceDiscovery encodeWithCoder:]
+-[OIDServiceDiscovery discoveryDictionary]
+-[OIDServiceDiscovery issuer]
+-[OIDServiceDiscovery authorizationEndpoint]
+-[OIDServiceDiscovery tokenEndpoint]
+-[OIDServiceDiscovery userinfoEndpoint]
+-[OIDServiceDiscovery jwksURL]
+-[OIDServiceDiscovery registrationEndpoint]
+-[OIDServiceDiscovery endSessionEndpoint]
+-[OIDServiceDiscovery scopesSupported]
+-[OIDServiceDiscovery responseTypesSupported]
+-[OIDServiceDiscovery responseModesSupported]
+-[OIDServiceDiscovery grantTypesSupported]
+-[OIDServiceDiscovery acrValuesSupported]
+-[OIDServiceDiscovery subjectTypesSupported]
+-[OIDServiceDiscovery IDTokenSigningAlgorithmValuesSupported]
+-[OIDServiceDiscovery IDTokenEncryptionAlgorithmValuesSupported]
+-[OIDServiceDiscovery IDTokenEncryptionEncodingValuesSupported]
+-[OIDServiceDiscovery userinfoSigningAlgorithmValuesSupported]
+-[OIDServiceDiscovery userinfoEncryptionAlgorithmValuesSupported]
+-[OIDServiceDiscovery userinfoEncryptionEncodingValuesSupported]
+-[OIDServiceDiscovery requestObjectSigningAlgorithmValuesSupported]
+-[OIDServiceDiscovery requestObjectEncryptionAlgorithmValuesSupported]
+-[OIDServiceDiscovery requestObjectEncryptionEncodingValuesSupported]
+-[OIDServiceDiscovery tokenEndpointAuthMethodsSupported]
+-[OIDServiceDiscovery tokenEndpointAuthSigningAlgorithmValuesSupported]
+-[OIDServiceDiscovery displayValuesSupported]
+-[OIDServiceDiscovery claimTypesSupported]
+-[OIDServiceDiscovery claimsSupported]
+-[OIDServiceDiscovery serviceDocumentation]
+-[OIDServiceDiscovery claimsLocalesSupported]
+-[OIDServiceDiscovery UILocalesSupported]
+-[OIDServiceDiscovery claimsParameterSupported]
+-[OIDServiceDiscovery requestParameterSupported]
+-[OIDServiceDiscovery requestURIParameterSupported]
+-[OIDServiceDiscovery requireRequestURIRegistration]
+-[OIDServiceDiscovery OPPolicyURI]
+-[OIDServiceDiscovery OPTosURI]
+-[OIDServiceDiscovery .cxx_destruct]
+_OBJC_IVAR_$_OIDServiceDiscovery._discoveryDictionary
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDServiceDiscovery.m
+AppAuth/Source/OIDServiceDiscovery.m
+-[OIDTokenRequest init]
+-[OIDTokenRequest initWithConfiguration:grantType:authorizationCode:redirectURL:clientID:clientSecret:scopes:refreshToken:codeVerifier:additionalParameters:]
+-[OIDTokenRequest initWithConfiguration:grantType:authorizationCode:redirectURL:clientID:clientSecret:scope:refreshToken:codeVerifier:additionalParameters:]
+-[OIDTokenRequest copyWithZone:]
++[OIDTokenRequest supportsSecureCoding]
+-[OIDTokenRequest initWithCoder:]
+-[OIDTokenRequest encodeWithCoder:]
+-[OIDTokenRequest description]
+-[OIDTokenRequest tokenRequestURL]
+-[OIDTokenRequest tokenRequestBody]
+-[OIDTokenRequest URLRequest]
+-[OIDTokenRequest configuration]
+-[OIDTokenRequest grantType]
+-[OIDTokenRequest authorizationCode]
+-[OIDTokenRequest redirectURL]
+-[OIDTokenRequest clientID]
+-[OIDTokenRequest clientSecret]
+-[OIDTokenRequest scope]
+-[OIDTokenRequest refreshToken]
+-[OIDTokenRequest codeVerifier]
+-[OIDTokenRequest additionalParameters]
+-[OIDTokenRequest .cxx_destruct]
+_OBJC_IVAR_$_OIDTokenRequest._configuration
+_OBJC_IVAR_$_OIDTokenRequest._grantType
+_OBJC_IVAR_$_OIDTokenRequest._authorizationCode
+_OBJC_IVAR_$_OIDTokenRequest._redirectURL
+_OBJC_IVAR_$_OIDTokenRequest._clientID
+_OBJC_IVAR_$_OIDTokenRequest._clientSecret
+_OBJC_IVAR_$_OIDTokenRequest._scope
+_OBJC_IVAR_$_OIDTokenRequest._refreshToken
+_OBJC_IVAR_$_OIDTokenRequest._codeVerifier
+_OBJC_IVAR_$_OIDTokenRequest._additionalParameters
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDTokenRequest.m
+AppAuth/Source/OIDTokenRequest.m
+AppAuth/Source/OIDTokenRequest.h
++[OIDTokenResponse fieldMap]
+___28+[OIDTokenResponse fieldMap]_block_invoke
+-[OIDTokenResponse init]
+-[OIDTokenResponse initWithRequest:parameters:]
+-[OIDTokenResponse copyWithZone:]
++[OIDTokenResponse supportsSecureCoding]
+-[OIDTokenResponse initWithCoder:]
+-[OIDTokenResponse encodeWithCoder:]
+-[OIDTokenResponse description]
+-[OIDTokenResponse request]
+-[OIDTokenResponse accessToken]
+-[OIDTokenResponse accessTokenExpirationDate]
+-[OIDTokenResponse tokenType]
+-[OIDTokenResponse idToken]
+-[OIDTokenResponse refreshToken]
+-[OIDTokenResponse scope]
+-[OIDTokenResponse additionalParameters]
+-[OIDTokenResponse .cxx_destruct]
+_OBJC_IVAR_$_OIDTokenResponse._request
+_OBJC_IVAR_$_OIDTokenResponse._accessToken
+_OBJC_IVAR_$_OIDTokenResponse._accessTokenExpirationDate
+_OBJC_IVAR_$_OIDTokenResponse._tokenType
+_OBJC_IVAR_$_OIDTokenResponse._idToken
+_OBJC_IVAR_$_OIDTokenResponse._refreshToken
+_OBJC_IVAR_$_OIDTokenResponse._scope
+_OBJC_IVAR_$_OIDTokenResponse._additionalParameters
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDTokenResponse.m
+AppAuth/Source/OIDTokenResponse.m
+AppAuth/Source/OIDTokenResponse.h
+__28+[OIDTokenResponse fieldMap]_block_invoke
++[OIDTokenUtilities encodeBase64urlNoPadding:]
++[OIDTokenUtilities randomURLSafeStringWithSize:]
++[OIDTokenUtilities sha256:]
++[OIDTokenUtilities redact:]
++[OIDTokenUtilities formUrlEncode:]
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDTokenUtilities.m
+AppAuth/Source/OIDTokenUtilities.m
+-[OIDURLQueryComponent init]
+-[OIDURLQueryComponent initWithURL:]
+-[OIDURLQueryComponent parameters]
+-[OIDURLQueryComponent dictionaryValue]
+-[OIDURLQueryComponent valuesForParameter:]
+-[OIDURLQueryComponent addParameter:value:]
+-[OIDURLQueryComponent addParameters:]
+-[OIDURLQueryComponent queryItems]
++[OIDURLQueryComponent URLParamValueAllowedCharacters]
+-[OIDURLQueryComponent percentEncodedQueryString]
+-[OIDURLQueryComponent URLEncodedParameters]
+-[OIDURLQueryComponent URLByReplacingQueryInURL:]
+-[OIDURLQueryComponent description]
+-[OIDURLQueryComponent .cxx_destruct]
+_OBJC_IVAR_$_OIDURLQueryComponent._parameters
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDURLQueryComponent.m
+AppAuth/Source/OIDURLQueryComponent.m
++[OIDURLSessionProvider session]
++[OIDURLSessionProvider setSession:]
+_gURLSession
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/AppAuth/Source/OIDURLSessionProvider.m
+AppAuth/Source/OIDURLSessionProvider.m
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/ArchiveIntermediates/Le/IntermediateBuildFilesPath/Pods.build/Release-iphoneos/AppAuth.build/DerivedSources/AppAuth_vers.c
+__ZL15__ARCLite__loadv
+__ZL58__arclite_NSMutableDictionary__setObject_forKeyedSubscriptP19NSMutableDictionaryP13objc_selectorP11objc_objectS4_
+__ZL22add_image_hook_swiftV1PK11mach_headerl
+__ZL42__arclite_NSUndoManagerProxy_isKindOfClassP11objc_objectP13objc_selectorP10objc_class
+__ZL30__arclite_NSManagedObject_initP11objc_objectP13objc_selector
+__ZL41__arclite_NSManagedObject_allocWithEntityP11objc_objectP13objc_selectorS0_
+__ZL36__arclite_NSManagedObject_allocBatchP11objc_objectP13objc_selectorPS0_S0_j
+__ZL37__arclite_NSKKMS_fastIndexForKnownKeyP11objc_objectP13objc_selectorS0_
+__ZL28__arclite_NSKKMS_indexForKeyP11objc_objectP13objc_selectorS0_
+__ZL29__arclite_NSKKsD_objectForKeyP11objc_objectP13objc_selectorS0_
+__ZL35__arclite_NSKKsD_removeObjectForKeyP11objc_objectP13objc_selectorS0_
+__ZL33__arclite_NSKKsD_setObject_forKeyP11objc_objectP13objc_selectorS0_S0_
+__ZL41__arclite_NSKKsD_addEntriesFromDictionaryP11objc_objectP13objc_selectorP12NSDictionary
+__ZL28__arclite_objc_readClassPairP10objc_classPK15objc_image_info
+__ZL32__arclite_objc_allocateClassPairP10objc_classPKcm
+__ZL32__arclite_object_getIndexedIvarsP11objc_object
+__ZL23__arclite_objc_getClassPKc
+__ZL27__arclite_objc_getMetaClassPKc
+__ZL31__arclite_objc_getRequiredClassPKc
+__ZL26__arclite_objc_lookUpClassPKc
+__ZL26__arclite_objc_getProtocolPKc
+__ZL23__arclite_class_getNameP10objc_class
+__ZL26__arclite_protocol_getNameP8Protocol
+__ZL37__arclite_objc_copyClassNamesForImagePKcPj
+__ZL17transcribeMethodsP10objc_classP15glue_class_ro_t
+__ZL19transcribeProtocolsP10objc_classP15glue_class_ro_t
+__ZL20transcribePropertiesP10objc_classP15glue_class_ro_t
+__ZL14initialize_impP11objc_objectP13objc_selector
+__ZL18allocateMaybeSwiftP18glue_swift_class_tm
+__ZL22copySwiftV1MangledNamePKcb
+__ZL13demangledNamePKcb
+__ZL16scanMangledFieldRPKcS0_S1_Ri
+__ZL30arclite_uninitialized_functionv
+__ZL12cxxConstructP11objc_object
+__ZL20fixStringForCoreDataP11objc_object
+_OBJC_METACLASS_$___ARCLite__
+__ZL24OBJC_CLASS_$___ARCLite__
+__ZL31OBJC_METACLASS_RO_$___ARCLite__
+__non_lazy_classes
+__ZL27OBJC_CLASS_RO_$___ARCLite__
+__ZL11_class_name
+__ZL32OBJC_$_CLASS_METHODS___ARCLite__
+__ZL17_load_method_name
+__ZL17_load_method_type
+__OBJC_PROTOCOL_$___ARCLiteKeyedSubscripting__
+__OBJC_LABEL_PROTOCOL_$___ARCLiteKeyedSubscripting__
+l_OBJC_PROTOCOL_REFERENCE_$___ARCLiteKeyedSubscripting__
+__ZL30NSUndoManagerProxy_targetClass
+__ZL29original_NSManagedObject_init
+__ZL40original_NSManagedObject_allocWithEntity
+__ZL35original_NSManagedObject_allocBatch
+__ZL25NSMutableDictionary_class
+__ZL22NSConstantString_class
+__ZL14NSString_class
+__ZL36original_NSKKMS_fastIndexForKnownKey
+__ZL27original_NSKKMS_indexForKey
+__ZL28original_NSKKsD_objectForKey
+__ZL34original_NSKKsD_removeObjectForKey
+__ZL32original_NSKKsD_setObject_forKey
+__ZL40original_NSKKsD_addEntriesFromDictionary
+__ZZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZGVZL22add_image_hook_swiftV1PK11mach_headerlE7patches
+__ZL31original_objc_allocateClassPair
+__ZL31original_object_getIndexedIvars
+__ZL22original_objc_getClass
+__ZL26original_objc_getMetaClass
+__ZL30original_objc_getRequiredClass
+__ZL25original_objc_lookUpClass
+__ZL25original_objc_getProtocol
+__ZL22original_class_getName
+__ZL25original_protocol_getName
+__ZL36original_objc_copyClassNamesForImage
+__ZL12demangleLock
+__ZL9Demangled
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c++ --target=arm64-apple-ios4.3 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c++11 -Wno-trigraphs -fno-exceptions -fno-rtti -fno-sanitize=vptr -mpascal-strings -Os -Wno-missing-field-initializers -Wmissing-prototypes -Wno-implicit-atomic-properties -Wno-objc-interface-ivars -Wno-arc-repeated-use-of-weak -Wno-non-virtual-dtor -Wno-overloaded-virtual -Wno-exit-time-destructors -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-float-conversion -Wno-non-literal-null-conversion -Wno-objc-literal-conversion -Wshorten-64-to-32 -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -Wno-c++11-extensions -D NDEBUG=1 -D OBJC_OLD_DISPATCH_PROTOTYPES=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.Internal.sdk -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -Winvalid-offsetof -g -fno-threadsafe-statics -Wno-sign-conversion -Wno-infinite-recursion -Wno-move -Wno-comma -Wno-block-capture-autoreleasing -Wno-strict-prototypes -Wno-range-loop-analysis -Wno-semicolon-before-method-body -fembed-bitcode=all -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-generated-files.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-own-target-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-all-target-headers.hmap -iquote /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/arclite_iphoneos-project-headers.hmap -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts/include -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources-normal/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources/arm64 -I /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/DerivedSources -F/Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/Symbols/BuiltProducts -iframework /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.Internal.sdk/System/Library/PrivateFrameworks -Wall -Wextra -Wno-gcc-compat -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -Wno-error=incomplete-umbrella -Wno-error=invalid-ios-deployment-target -Wno-error=deprecated-declarations -Wno-error=documentation -MMD -MT dependencies -MF /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.d --serialize-diagnostics /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.dia -c /Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm -o /Library/Caches/com.apple.xbs/Binaries/arclite_iOS/install/TempContent/Objects/arclite.build/arclite_iOS.build/Objects-normal/arm64/arclite.o -Wno-framework-include-private-from-public -Wno-atimport-in-framework-header -Wno-extra-semi-stmt -Wno-quoted-include-in-framework-header -mlinker-version=520
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76/source/arclite.mm
+/Library/Caches/com.apple.xbs/Sources/arclite_iOS/arclite-76
+fixStringForCoreData
+source/arclite.mm
+cxxConstruct
+arclite_uninitialized_function
+scanMangledField
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.0.Internal.sdk/usr/include/_ctype.h
+__isctype
+demangledName
+copySwiftV1DemangledName
+copySwiftV1MangledName
+allocateMaybeSwift
+word_align
+isSwift
+initialize_imp
+transcribeProperties
+property_list_nth
+transcribeProtocols
+transcribeMethods
+data
+method_list_nth
+__arclite_objc_copyClassNamesForImage
+__arclite_protocol_getName
+__arclite_class_getName
+__arclite_objc_getProtocol
+__arclite_objc_lookUpClass
+__arclite_objc_getRequiredClass
+__arclite_objc_getMetaClass
+__arclite_objc_getClass
+__arclite_object_getIndexedIvars
+__arclite_objc_allocateClassPair
+metaclass
+__arclite_objc_readClassPair
+transcribeIvars
+ivar_list_nth
+max
+alignment
+ro
+fastFlags
+__arclite_NSKKsD_addEntriesFromDictionary
+__arclite_NSKKsD_setObject_forKey
+__arclite_NSKKsD_removeObjectForKey
+__arclite_NSKKsD_objectForKey
+__arclite_NSKKMS_indexForKey
+__arclite_NSKKMS_fastIndexForKnownKey
+__arclite_NSManagedObject_allocBatch
+__arclite_NSManagedObject_allocWithEntity
+__arclite_NSManagedObject_init
+__arclite_NSUndoManagerProxy_isKindOfClass
+add_image_hook_swiftV1
+patch_lazy_pointers
+patch_t<const char **(const char *, unsigned int *)>
+patch_t<const char *(Protocol *)>
+patch_t<const char *(Class)>
+patch_t<Protocol *(const char *)>
+patch_t<Class (const char *)>
+patch_t<void *(id)>
+patch_t<Class (Class, const char *, unsigned long)>
+patch_t<Class (Class, const objc_image_info *)>
+__arclite_NSMutableDictionary__setObject_forKeyedSubscript
+__ARCLite__load
+install_swiftV1
+replaceMethod
+install_dict_nil_value
+addOrReplaceMethod
+keyedGetter
