@@ -289,8 +289,12 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
             return 300
         case 2,4,6:
             return 25
-        case 3,7:
-            return 625
+        case 5:
+            return CGFloat(self.fiftyPercentArray.count * 25)
+        case 3:
+            return CGFloat(self.topOffersArray.count * 104)
+        case 7:
+            return CGFloat(self.popularArray.count * 104)
         default:
             return 100
         }

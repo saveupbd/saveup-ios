@@ -40,7 +40,7 @@ class LoginViewController: UIViewController, LoginButtonDelegate, UIGestureRecog
         super.viewDidLoad()
         GIDSignIn.sharedInstance().clientID = FirebaseApp.app()?.options.clientID
         //init Account Kit
-        btnGoogleLogin.imageView?.contentMode = .scaleAspectFill
+        btnGoogleLogin.imageView?.contentMode = .scaleToFill
         self.setAwsomeBackgroundImage()
         self.dismissKeyBoardTappedOutside()
         if accountKit == nil {
@@ -372,7 +372,15 @@ class LoginViewController: UIViewController, LoginButtonDelegate, UIGestureRecog
                 print(result as! NSDictionary)
                 let json = result as! NSDictionary
                 self.fbidString = json.object(forKey: "id") as! String?
-                self.nameString = json.object(forKey: "first_name") as! String?
+                if let fName = json.object(forKey: "first_name"){
+                    self.nameString = fName as? String
+                }
+                
+                if self.nameString == nil || self.nameString == ""{
+                    self.nameString = json.object(forKey: "last_name") as? String
+                }
+                
+                
                 self.fbImgString = ((json.object(forKey: "picture") as! NSDictionary).object(forKey: "data") as! NSDictionary).object(forKey: "url") as? String
                 if ((json.object(forKey: "email")) != nil) {
                     self.emailString = (json.object(forKey: "email") as? String)!
@@ -440,7 +448,16 @@ class LoginViewController: UIViewController, LoginButtonDelegate, UIGestureRecog
          strMap.put("device_type", "android");
          
          */
-        let userName = Auth.auth().currentUser?.displayName
+        var userName = Auth.auth().currentUser?.displayName
+        var finalFirstName = ""
+        var finalLastName = ""
+        if (userName != nil || userName != ""){
+            let fullNameArr = userName?.components(separatedBy: " ")
+            finalFirstName = fullNameArr?[0] ?? ""
+            finalLastName = fullNameArr?[1] ?? ""
+        }
+        
+        
         let userEmail = Auth.auth().currentUser?.email
         let userToken = ""
         let deviceToken = ""
@@ -451,7 +468,7 @@ class LoginViewController: UIViewController, LoginButtonDelegate, UIGestureRecog
             
         }
     
-        let postString = "name=\(userName!)&email=\(userEmail!)&device_token=\(googleIdToken)&device_type=iOS&image=\(userImageUrl)&lang=en"
+        let postString = "name=\(finalFirstName)&email=\(userEmail!)&device_token=\(googleIdToken!)&device_type=iOS&image=\(userImageUrl)&lang=en"
         print(postString)
         request.httpBody = postString.data(using: String.Encoding.utf8);
         

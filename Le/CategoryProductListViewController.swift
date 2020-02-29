@@ -52,6 +52,7 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
         let LeftButton = UIBarButtonItem(customView: leftbutton)
         //self.navigationItem.leftBarButtonItem = LeftButton
         upperSegment.isHidden = true
+        //setScrollSegment()
         let reachability = Reachability()!
         
         if reachability.isReachable {
@@ -67,6 +68,38 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
             showNetworkErrorAlert()
         }
     }
+    
+    func setScrollSegment() {
+//        upperSegment.items = ["Weekly", "Fornightly", "Monthly"]
+//        upperSegment.borderColor = .clear
+//        upperSegment.selectedLabelColor = .white
+//        upperSegment.unselectedLabelColor = .red
+//        upperSegment.backgroundColor = .lightGray
+//        upperSegment.thumbColor = .black
+//        upperSegment.selectedIndex = 1
+        //upperSegment.addTarget(self, action: #selector(segmentValueChanged(_:)), for: .valueChanged)
+//        self.upperSegment.segmentStyle = .textOnly
+//        upperSegment.insertSegment(withTitle: "Segment 1", image: nil, at: 0)
+//        upperSegment.insertSegment(withTitle: "Segment 2", image: nil, at: 1)
+//        upperSegment.insertSegment(withTitle: "Segment 3", image: nil, at: 2)
+//        upperSegment.insertSegment(withTitle: "Segment 4", image: nil, at: 3)
+//        upperSegment.insertSegment(withTitle: "Segment 5", image: nil, at: 4)
+//        upperSegment.insertSegment(withTitle: "Segment 6", image: nil, at: 5)
+//
+//        upperSegment.underlineSelected = true
+//
+//        upperSegment.addTarget(self, action: #selector(upperSegmentPressed), for: .valueChanged)
+//
+//        // change some colors
+//        upperSegment.segmentContentColor = UIColor.white
+//        upperSegment.selectedSegmentContentColor = UIColor.yellow
+//        upperSegment.backgroundColor = UIColor.black
+//
+//        // Turn off all segments been fixed/equal width.
+//        // The width of each segment would be based on the text length and font size.
+//        upperSegment.fixedSegmentWidth = false
+    }
+    
     @IBAction func upperSegmentPressed(_ sender: UISegmentedControl) {
         
         if sender.selectedSegmentIndex == 0 {
@@ -299,12 +332,17 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
                                         self.topOffersArray.append(TopOffers(TopOffers: item))
                                     }
                                 }
-                                if self.submoduleArray.count == 2{
-                                    self.upperSegment.removeSegment(at: 2, animated: true)
-                                }
+//                                if self.submoduleArray.count == 2{
+//                                    self.upperSegment.removeSegment(at: 2, animated: true)
+//                                }
+                                self.upperSegment.removeAllSegments()
+                                
                                 for index in 0..<self.submoduleArray.count {
-                                    self.upperSegment.setTitle(self.submoduleArray[index].sec_category_name, forSegmentAt: index)
+                                    
+                                    print("cameg\(index)");
+                                    self.upperSegment.insertSegment(withTitle: self.submoduleArray[index].sec_category_name, at: index, animated: false)
                                 }
+                                
                                 
                                 
                                 self.catCollectionView.reloadData()
