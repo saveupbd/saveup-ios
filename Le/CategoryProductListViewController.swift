@@ -13,6 +13,7 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
     @IBOutlet weak var catCollectionView: UICollectionView!
     @IBOutlet weak var upperSegment: UISegmentedControl!
     
+    @IBOutlet weak var subCatCollectionView: UICollectionView!
     var topOffersArray = [TopOffers]()
     var popularArray = [Popular]()
     var secondaryArray = [SecondayCategory]()
@@ -36,6 +37,11 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
         super.viewDidLoad()
         self.catCollectionView.delegate = self
         self.catCollectionView.dataSource = self
+        
+        self.subCatCollectionView.delegate = self
+        self.subCatCollectionView.dataSource = self
+        
+        
         //upperSegment.apportionsSegmentWidthsByContent = true
         print(parent_category_id!)
         print(parent_category_name!)
@@ -51,7 +57,7 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
         
         let LeftButton = UIBarButtonItem(customView: leftbutton)
         //self.navigationItem.leftBarButtonItem = LeftButton
-        upperSegment.isHidden = true
+        //upperSegment.isHidden = true
         //setScrollSegment()
         let reachability = Reachability()!
         
@@ -61,7 +67,7 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
             self.view.makeToastActivity(.center)
             
             subcategoryApi()
-            upperSegment.isHidden = false
+            //upperSegment.isHidden = false
             print()
         }
         else {
@@ -146,27 +152,42 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return topOffersArray.count
+        if collectionView == self.catCollectionView{
+            return topOffersArray.count
+        }else{
+            return submoduleArray.count
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FLatestCollectionViewCell", for: indexPath) as! FLatestCollectionViewCell
-        self.setShadowAndRoundedBorder(customCell: cell)
-        cell.backgroundColor = UIColor.white
-        cell.productTitle.text = topOffersArray[indexPath.row].product_title
-        cell.productCategory.text = topOffersArray[indexPath.row].merchant_name
         
-        if topOffersArray[indexPath.row].product_type != "all_item"  {
-            cell.originalPrice.text = "৳" + topOffersArray[indexPath.row].product_discount_price
-            cell.cutOffPrice.attributedText = topOffersArray[indexPath.row].product_price.strikeThrough()
-            cell.offPercentage.text = topOffersArray[indexPath.row].product_percentage + "% off"
+        if collectionView == self.catCollectionView{
+
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "FLatestCollectionViewCell", for: indexPath) as! FLatestCollectionViewCell
+            self.setShadowAndRoundedBorder(customCell: cell)
+            cell.backgroundColor = UIColor.white
+            cell.productTitle.text = topOffersArray[indexPath.row].product_title
+            cell.productCategory.text = topOffersArray[indexPath.row].merchant_name
+            
+            if topOffersArray[indexPath.row].product_type != "all_item"  {
+                cell.originalPrice.text = "৳" + topOffersArray[indexPath.row].product_discount_price
+                cell.cutOffPrice.attributedText = topOffersArray[indexPath.row].product_price.strikeThrough()
+                cell.offPercentage.text = topOffersArray[indexPath.row].product_percentage + "% off"
+            }else{
+                cell.cutOffPrice.text = topOffersArray[indexPath.row].product_off + "% off"
+                cell.cutOffPrice.textColor = UIColor(named: "appThemeColor")
+            }
+            cell.productImage.kf.setImage(with: (StringToURL(text: topOffersArray[indexPath.row].product_image)))
+            cell.productImage.yy_imageURL = URL(string: topOffersArray[indexPath.row].product_image)
+            return cell
         }else{
-            cell.cutOffPrice.text = topOffersArray[indexPath.row].product_off + "% off"
-            cell.cutOffPrice.textColor = UIColor(named: "appThemeColor")
+
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SubCatCollectionViewCell", for: indexPath) as! SubCatCollectionViewCell
+            self.setShadowAndRoundedBorder(customCell: cell)
+            cell.subCatLabel.text = submoduleArray[indexPath.row].sec_category_name
+            return cell
         }
-        cell.productImage.kf.setImage(with: (StringToURL(text: topOffersArray[indexPath.row].product_image)))
-        cell.productImage.yy_imageURL = URL(string: topOffersArray[indexPath.row].product_image)
-        return cell
+        
     }
     
     func setShadowAndRoundedBorder(customCell:UICollectionViewCell){
@@ -185,20 +206,59 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let objProductDetails = self.storyboard?.instantiateViewController(withIdentifier: "FProductDetailsTableViewController") as! FProductDetailsTableViewController
-        objProductDetails.category_name = "Latest Product"
-        objProductDetails.product_id = topOffersArray[indexPath.row].product_id
-        UserDefaults.standard.set(topOffersArray[indexPath.row].product_id, forKey: "temp_pro_id")
+        if collectionView == self.catCollectionView{
+            let objProductDetails = self.storyboard?.instantiateViewController(withIdentifier: "FProductDetailsTableViewController") as! FProductDetailsTableViewController
+            objProductDetails.category_name = "Latest Product"
+            objProductDetails.product_id = topOffersArray[indexPath.row].product_id
+            UserDefaults.standard.set(topOffersArray[indexPath.row].product_id, forKey: "temp_pro_id")
 
-        self.navigationController?.pushViewController(objProductDetails, animated: true)
+            self.navigationController?.pushViewController(objProductDetails, animated: true)
+            return
+        }else{
+            if indexPath.row == 0 {
+                sec_category_id = parent_category_id
+            }else{
+                sec_category_id = submoduleArray[indexPath.row].sec_category_id
+            }
+            
+            
+            
+            topOffersArray = [TopOffers]()
+            popularArray = [Popular]()
+            secondaryArray = [SecondayCategory]()
+            //  submoduleArray = [SubModule]()
+            bannersArray = [BannersHome]()
+            adimagesArray = [AdImages]()
+            
+            let reachability = Reachability()!
+            
+            if reachability.isReachable {
+                
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+                
+                subcategoryApi()
+                //   subcategoryApiOne()
+            }
+            else {
+                
+                showNetworkErrorAlert()
+            }
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let flowayout = collectionViewLayout as? UICollectionViewFlowLayout
-        let space: CGFloat = (flowayout?.minimumInteritemSpacing ?? 0.0) + (flowayout?.sectionInset.left ?? 0.0) + (flowayout?.sectionInset.right ?? 0.0)
-        let widthSet:CGFloat = (catCollectionView.frame.size.width - space) / 2.0
-        let heightSet:CGFloat = 195
-        return CGSize(width: widthSet, height: heightSet)
+        if collectionView == self.catCollectionView{
+            let flowayout = collectionViewLayout as? UICollectionViewFlowLayout
+            let space: CGFloat = (flowayout?.minimumInteritemSpacing ?? 0.0) + (flowayout?.sectionInset.left ?? 0.0) + (flowayout?.sectionInset.right ?? 0.0)
+            let widthSet:CGFloat = (catCollectionView.frame.size.width - space) / 2.0
+            let heightSet:CGFloat = 195
+            return CGSize(width: widthSet, height: heightSet)
+        }else{
+            return CGSize(width: collectionView.frame.width/3, height: collectionView.frame.height)
+        }
+        
+        
     }
     
     func subcategoryApi() {
@@ -313,7 +373,7 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
                                 }
                                 
                                 //self.subTable.reloadData()
-                                //self.secondaryTable.reloadData()
+                                self.subCatCollectionView.reloadData()
                                 self.catCollectionView.reloadData()
                             }
                             
@@ -335,13 +395,13 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
 //                                if self.submoduleArray.count == 2{
 //                                    self.upperSegment.removeSegment(at: 2, animated: true)
 //                                }
-                                self.upperSegment.removeAllSegments()
+                                /*self.upperSegment.removeAllSegments()
                                 
                                 for index in 0..<self.submoduleArray.count {
                                     
                                     print("cameg\(index)");
                                     self.upperSegment.insertSegment(withTitle: self.submoduleArray[index].sec_category_name, at: index, animated: false)
-                                }
+                                }*/
                                 
                                 
                                 

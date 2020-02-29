@@ -14,12 +14,16 @@ protocol CategorySelectDelegate {
     func btnServicePressed(_ sender: UIButton)
     func btnBeautyPressed(_ sender: UIButton)
     func btnFitnessPressed(_ sender: UIButton)
+    func catgoryCollectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath)
 }
 
-class FCategoriesTableViewCell: UITableViewCell {
+class FCategoriesTableViewCell: UITableViewCell,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
     
     var categoryHomeArray = [CategoryHome]()
     var catDel:CategorySelectDelegate?
+    
+    @IBOutlet weak var categoryCollectionView: UICollectionView!
+    
     @IBOutlet weak var btnService: UIButton!
     @IBOutlet weak var btnBeauty: UIButton!
     @IBOutlet weak var btnFitness: UIButton!
@@ -27,6 +31,15 @@ class FCategoriesTableViewCell: UITableViewCell {
     @IBOutlet weak var btnFood: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
+        self.categoryCollectionView.delegate = self
+        self.categoryCollectionView.dataSource = self
+        
+//        let layout = UICollectionViewFlowLayout()
+//        layout.scrollDirection = .horizontal
+//
+//
+//        self.categoryCollectionView.collectionViewLayout = layout
+        //self.categoryCollectionView.collectionViewLayout = ZoomAndSnapFlowLayout()
         self.hitCategoryAPI()
 //        setShadowAndRoundedBorder(buttonToChange: btnFood)
 //        setShadowAndRoundedBorder(buttonToChange: btnBeauty)
@@ -50,6 +63,23 @@ class FCategoriesTableViewCell: UITableViewCell {
         //btnService.setImage(UIImage(named: "serviceIc"), for: .normal)
         //btnService.centerImageAndButton(0.0, imageOnTop: true)
         
+    }
+    
+    
+    
+    func setShadowAndRoundedBorder(customCell:UICollectionViewCell){
+        customCell.layer.cornerRadius = 5
+        customCell.layer.borderWidth = 0.9
+        
+        customCell.layer.borderColor = UIColor.init(named: "appThemeColor")?.cgColor
+        customCell.layer.masksToBounds = true
+        
+//        customCell.layer.shadowColor = UIColor.black.cgColor
+//        customCell.layer.shadowOffset = CGSize(width: 0, height: 1.5)
+//        customCell.layer.shadowRadius = 3
+//        customCell.layer.shadowOpacity = 0.3
+//        customCell.layer.masksToBounds = false
+//        customCell.layer.shadowPath = UIBezierPath(roundedRect:customCell.bounds, cornerRadius:customCell.contentView.layer.cornerRadius).cgPath
     }
     
     func StringToURL(text: String) -> URL{
@@ -98,6 +128,41 @@ class FCategoriesTableViewCell: UITableViewCell {
         //buttonToChange.layer.masksToBounds = false
         //buttonToChange.layer.shadowPath = UIBezierPath(roundedRect:buttonToChange.bounds, cornerRadius:buttonToChange.layer.cornerRadius).cgPath
     }
+    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return categoryHomeArray.count
+    }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CategoryCollectionViewCell", for: indexPath) as! CategoryCollectionViewCell
+        if let url = URL(string: categoryHomeArray[indexPath.item].category_image) {
+            cell.cellImgView.kf.setImage(with: url, placeholder: nil)
+//            cell.cellImgView.yy_imageURL = url
+//            cell.cellImgView.image = cell.cellImgView.image?.resized(toWidth:cell.contentView.bounds.width/3, height: cell.contentView.bounds.height - 2.0)
+        }
+        if let name = categoryHomeArray[indexPath.item].category_name {
+            cell.cellLabel.text = name
+        }
+        self.setShadowAndRoundedBorder(customCell: cell)
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        catDel?.catgoryCollectionView(collectionView, didSelectItemAt: indexPath)
+    }
+    
+    
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width/4, height: collectionView.frame.height)
+    }
+    
     func hitCategoryAPI() {
         let reposURL = NSURL(string: String(format:"%@api/home_page", Api_Base_URL))
         
@@ -115,6 +180,7 @@ class FCategoriesTableViewCell: UITableViewCell {
                         for item in reposArray {
                             categoryHomeArray.append(CategoryHome(CategoryHome: item))
                         }
+                        self.categoryCollectionView.reloadData()
                     }
                 }
             }

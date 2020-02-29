@@ -9,8 +9,7 @@
 import UIKit
 
 class FirstTableViewController: UITableViewController,LatestCollectionCellDelegate,CategorySelectDelegate,BannersSelectDelegate,UISearchBarDelegate,TopPicksCollectionViewDelegate {
-    
-    
+
     var categoryHomeArray = [CategoryHome]()//food travel
     var bannersArray = [BannersHome]()//banner images
     var topOffersArray = [TopOffers]()//latest deals
@@ -284,7 +283,7 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.section {
         case 0:
-            return 125
+            return 100
         case 1:
             return 300
         case 2,4,6:
@@ -468,6 +467,16 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
                 self.view.hideToastActivity()
             }
         }
+    }
+    
+    func catgoryCollectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let objSub = self.storyboard?.instantiateViewController(withIdentifier: "CategoryProductListViewController") as! CategoryProductListViewController
+        objSub.parent_category_id = categoryHomeArray[indexPath.row].category_id
+        objSub.parent_category_name = categoryHomeArray[indexPath.row].category_name
+        
+        let reposArray = categoryHomeArray[indexPath.row].sub_category_list
+        objSub.sec_category_id = categoryHomeArray[indexPath.row].category_id
+        self.navigationController?.pushViewController(objSub, animated: true)
     }
     
     func btnFoodPressed(_ sender: UIButton) {

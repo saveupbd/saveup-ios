@@ -73,6 +73,8 @@
 		8D714A8423E5DA8900128156 /* RewardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D714A8323E5DA8900128156 /* RewardsViewController.swift */; };
 		8D714A8623E6068D00128156 /* LoyalityModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D714A8523E6068D00128156 /* LoyalityModel.swift */; };
 		8D72AABC23DCC79E00E3EA8B /* FilterByCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D72AABB23DCC79E00E3EA8B /* FilterByCategoryViewController.swift */; };
+		8D739A68240A69C100B1F74E /* SubCatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D739A67240A69C100B1F74E /* SubCatCollectionViewCell.swift */; };
+		8D8164CF240A398F00AE405B /* CategoryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8164CE240A398F00AE405B /* CategoryCollectionViewCell.swift */; };
 		8DB2FF3723DB004D00A44F3E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8DB2FF3623DB004C00A44F3E /* GoogleService-Info.plist */; };
 		8DB4625523F7D6B80062AC19 /* FTopPicksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB4625423F7D6B80062AC19 /* FTopPicksTableViewCell.swift */; };
 		8DB4625723F7D6D00062AC19 /* FTopPicksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB4625623F7D6D00062AC19 /* FTopPicksCollectionViewCell.swift */; };
@@ -296,6 +298,8 @@
 		8D714A8323E5DA8900128156 /* RewardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardsViewController.swift; sourceTree = "<group>"; };
 		8D714A8523E6068D00128156 /* LoyalityModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoyalityModel.swift; sourceTree = "<group>"; };
 		8D72AABB23DCC79E00E3EA8B /* FilterByCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterByCategoryViewController.swift; sourceTree = "<group>"; };
+		8D739A67240A69C100B1F74E /* SubCatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubCatCollectionViewCell.swift; sourceTree = "<group>"; };
+		8D8164CE240A398F00AE405B /* CategoryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCell.swift; sourceTree = "<group>"; };
 		8DB2FF3623DB004C00A44F3E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8DB4625423F7D6B80062AC19 /* FTopPicksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTopPicksTableViewCell.swift; sourceTree = "<group>"; };
 		8DB4625623F7D6D00062AC19 /* FTopPicksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FTopPicksCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -555,6 +559,7 @@
 				8D4E13962375ECA10072B53E /* BannerCollectionViewCell.swift */,
 				8DB4625423F7D6B80062AC19 /* FTopPicksTableViewCell.swift */,
 				8DB4625623F7D6D00062AC19 /* FTopPicksCollectionViewCell.swift */,
+				8D8164CE240A398F00AE405B /* CategoryCollectionViewCell.swift */,
 			);
 			name = Firstpage;
 			sourceTree = "<group>";
@@ -984,6 +989,7 @@
 				8D6B391523EF1CAD0078C119 /* FDetailsImagesCollectionViewCell.swift */,
 				8D70BEAA240433920061EC91 /* ScrollableSegmentedControl.swift */,
 				8D70BEAD240441780061EC91 /* HBSegmentedControl.swift */,
+				8D739A67240A69C100B1F74E /* SubCatCollectionViewCell.swift */,
 			);
 			path = Le;
 			sourceTree = "<group>";
@@ -1266,6 +1272,7 @@
 				BEBC68A51ECB6217009C0E18 /* MIBadgeButton.swift in Sources */,
 				BEBA974B1E81906F001E0AC8 /* YYSpriteSheetImage.m in Sources */,
 				BEBA97421E81906F001E0AC8 /* CALayer+YYWebImage.m in Sources */,
+				8D8164CF240A398F00AE405B /* CategoryCollectionViewCell.swift in Sources */,
 				BE6E5CCA1E99562C008ACA92 /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				8D6B391623EF1CAD0078C119 /* FDetailsImagesCollectionViewCell.swift in Sources */,
 				2FD3DCAA224C98E2009C8BF3 /* orderProductList.swift in Sources */,
@@ -1373,6 +1380,7 @@
 				BEFF052A1E770FE00057C89E /* Toast.swift in Sources */,
 				BEFC319F1E9A1A930037B926 /* RelatedProducts.swift in Sources */,
 				BE0CDAF91E786618003D0A9C /* CityViewController.swift in Sources */,
+				8D739A68240A69C100B1F74E /* SubCatCollectionViewCell.swift in Sources */,
 				BEBBF1DB1EB101E3008A4D7F /* MyAccountViewController.swift in Sources */,
 				2FF69C1D2237AC94009A8577 /* HelpVc.swift in Sources */,
 				BEFF05321E772DF40057C89E /* TermsViewController.swift in Sources */,
