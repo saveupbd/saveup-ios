@@ -213,7 +213,7 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
             return tableCell
         case 2://Latest Deal Title
             tableCell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
-            tableCell.textLabel?.text = "Latest Deals"
+            tableCell.textLabel?.text = "Latest Deals".uppercased()
             tableCell.detailTextLabel?.text = "See All"
             return tableCell
         case 3://Latest Deals
@@ -225,7 +225,7 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
             return tableCell
         case 4://Hot Deals Title
             tableCell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
-            tableCell.textLabel?.text = "Hot Deals"
+            tableCell.textLabel?.text = "Hot Deals".uppercased()
             tableCell.detailTextLabel?.text = "See All"
             return tableCell
         case 5://Hot Deals
@@ -251,7 +251,7 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
             return tableCell
         case 6://Top Picks Title
             tableCell = tableView.dequeueReusableCell(withIdentifier: "titleCell", for: indexPath)
-            tableCell.textLabel?.text = "Top Picks"
+            tableCell.textLabel?.text = "Top Picks".uppercased()
             tableCell.detailTextLabel?.text = "See All"
             return tableCell
         case 7://Top Picks
@@ -398,6 +398,17 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
                         for item in reposArray {
                             categoryHomeArray.append(CategoryHome(CategoryHome: item))
                         }
+                        var catNameArr = [String]()
+                        var catIdArr = [String]()
+                        for item in categoryHomeArray{
+                            if item.category_name != ""{
+                                catNameArr.append(item.category_name)
+                                catIdArr.append(item.category_id)
+                            }
+                        }
+                        let defaults = UserDefaults.standard
+                        defaults.set(catNameArr, forKey: "categoryNameArray")
+                        defaults.set(catIdArr, forKey: "categoryIdArray")
                     }
                 }
                 
@@ -617,6 +628,15 @@ extension UIImage {
 extension UIViewController{
     func showNetworkErrorAlert() {
         let alert = UIAlertController(title: "Internet isn't reachable.", message: "Please make sure you are connected to WiFi/Cellular data.",preferredStyle: .alert)
+        
+        alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: { _ in
+            //Cancel Action
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func showErrorAlert() {
+        let alert = UIAlertController(title: "Error", message: "Something went wrong! Please try again.",preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Dismiss", style: .default, handler: { _ in
             //Cancel Action

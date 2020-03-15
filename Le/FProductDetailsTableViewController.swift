@@ -365,9 +365,9 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                             //         {"status":200,"message":"OTP Code Successfully Verified. Your payable amount TK 46","loyality_point":465,"total_loyality_point":1843}
                             
                             let mess = parseJSON.object(forKey: "message") as? String
-                            let point = parseJSON.object(forKey: "loyality_point") as? NSInteger
+                            let point = parseJSON.object(forKey: "loyality_point") as? String
                             UserDefaults.standard.set(point, forKey: "loyality_point")
-                            let total_point = parseJSON.object(forKey: "total_loyality_point") as? NSInteger
+                            let total_point = parseJSON.object(forKey: "total_loyality_point") as? String
                             UserDefaults.standard.set(total_point, forKey: "total_loyality_point")
                             let pointmessage = "You have got \(point!) points. Your total loyality point is \(total_point!)."
                             
@@ -514,6 +514,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                 catch {
                     
                     //print(error)
+                    self.showErrorAlert()
                     self.view.hideToastActivity()
                 }
             }

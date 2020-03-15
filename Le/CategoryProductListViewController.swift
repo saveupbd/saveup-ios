@@ -46,6 +46,7 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
         print(parent_category_id!)
         print(parent_category_name!)
         sec_category_id = parent_category_id
+        subCatCollectionView.allowsMultipleSelection = true
         // Do any additional setup after loading the view.
         self.navigationController?.isNavigationBarHidden = false
         
@@ -74,6 +75,14 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
             showNetworkErrorAlert()
         }
     }
+    
+//    func collectionView(_ collectionView: UICollectionView, shouldSelectItemAt indexPath: IndexPath) -> Bool {
+//        if collectionView == self.subCatCollectionView{
+//            return (collectionView.indexPathsForSelectedItems?.count ?? 0) < 2
+//        }
+//        return false
+//
+//    }
     
     func setScrollSegment() {
 //        upperSegment.items = ["Weekly", "Fornightly", "Monthly"]
@@ -183,8 +192,17 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
         }else{
 
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SubCatCollectionViewCell", for: indexPath) as! SubCatCollectionViewCell
-            self.setShadowAndRoundedBorder(customCell: cell)
+            //self.setShadowAndRoundedBorder(customCell: cell)
             cell.subCatLabel.text = submoduleArray[indexPath.row].sec_category_name
+            if indexPath == subCatSelectedIndexPath{
+                cell.contentView.backgroundColor = UIColor.white
+                cell.subCatLabel.textColor = UIColor.black
+                //cell.layer.borderWidth = 0.9
+            }else{
+                cell.contentView.backgroundColor = UIColor.init(named: "appThemeColor")
+                cell.subCatLabel.textColor = UIColor.white
+                //cell.layer.borderWidth = 0.0
+            }
             return cell
         }
         
@@ -205,6 +223,12 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
         customCell.layer.shadowPath = UIBezierPath(roundedRect:customCell.bounds, cornerRadius:customCell.contentView.layer.cornerRadius).cgPath
     }
     
+    var subCatSelectedIndexPath: IndexPath?{
+        didSet{
+            subCatCollectionView.reloadData()
+        }
+    }
+    
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if collectionView == self.catCollectionView{
             let objProductDetails = self.storyboard?.instantiateViewController(withIdentifier: "FProductDetailsTableViewController") as! FProductDetailsTableViewController
@@ -215,6 +239,7 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
             self.navigationController?.pushViewController(objProductDetails, animated: true)
             return
         }else{
+            subCatSelectedIndexPath = indexPath
             if indexPath.row == 0 {
                 sec_category_id = parent_category_id
             }else{

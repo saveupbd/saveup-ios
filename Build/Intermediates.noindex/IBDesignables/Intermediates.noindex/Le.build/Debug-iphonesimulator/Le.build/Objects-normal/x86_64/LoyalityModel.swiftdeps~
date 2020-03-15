@@ -20,7 +20,11 @@ depends-top-level:
 - "String"
 - !private "StringLiteralType"
 depends-member:
+- !private ["s18AdditiveArithmeticP", "removeZerosFromEnd"]
+- !private ["s18AdditiveArithmeticP", "rounded"]
 - !private ["SK", "init"]
+- !private ["SB", "removeZerosFromEnd"]
+- !private ["SB", "rounded"]
 - !private ["s7CVarArgP", "String"]
 - ["s7CVarArgP", ""]
 - !private ["s7CVarArgP", "init"]
@@ -28,11 +32,15 @@ depends-member:
 - !private ["s7CVarArgP", "order_id"]
 - !private ["s7CVarArgP", "order_total"]
 - !private ["s7CVarArgP", "payment_status"]
+- !private ["s7CVarArgP", "removeZerosFromEnd"]
+- !private ["s7CVarArgP", "rounded"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "user_payable_amount"]
 - !private ["s7CVarArgP", "user_savings"]
 - !private ["Sl", "init"]
 - !private ["SL", "init"]
+- !private ["SL", "removeZerosFromEnd"]
+- !private ["SL", "rounded"]
 - !private ["s28CustomDebugStringConvertibleP", "String"]
 - ["s28CustomDebugStringConvertibleP", ""]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
@@ -40,10 +48,14 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "order_id"]
 - !private ["s28CustomDebugStringConvertibleP", "order_total"]
 - !private ["s28CustomDebugStringConvertibleP", "payment_status"]
+- !private ["s28CustomDebugStringConvertibleP", "removeZerosFromEnd"]
+- !private ["s28CustomDebugStringConvertibleP", "rounded"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "user_payable_amount"]
 - !private ["s28CustomDebugStringConvertibleP", "user_savings"]
 - !private ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "removeZerosFromEnd"]
+- !private ["s17CustomReflectableP", "rounded"]
 - !private ["s17CustomReflectableP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "String"]
 - ["s23CustomStringConvertibleP", ""]
@@ -52,11 +64,19 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "order_id"]
 - !private ["s23CustomStringConvertibleP", "order_total"]
 - !private ["s23CustomStringConvertibleP", "payment_status"]
+- !private ["s23CustomStringConvertibleP", "removeZerosFromEnd"]
+- !private ["s23CustomStringConvertibleP", "rounded"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
 - !private ["s23CustomStringConvertibleP", "user_payable_amount"]
 - !private ["s23CustomStringConvertibleP", "user_savings"]
 - !private ["Se", "init"]
+- !private ["Se", "removeZerosFromEnd"]
+- !private ["Se", "rounded"]
+- !private ["Sd", "removeZerosFromEnd"]
+- !private ["Sd", "rounded"]
 - !private ["SE", "init"]
+- !private ["SE", "removeZerosFromEnd"]
+- !private ["SE", "rounded"]
 - !private ["SQ", "String"]
 - ["SQ", ""]
 - !private ["SQ", "init"]
@@ -64,14 +84,24 @@ depends-member:
 - !private ["SQ", "order_id"]
 - !private ["SQ", "order_total"]
 - !private ["SQ", "payment_status"]
+- !private ["SQ", "removeZerosFromEnd"]
+- !private ["SQ", "rounded"]
 - !private ["SQ", "subscript"]
+- !private ["SQ", "up"]
 - !private ["SQ", "user_payable_amount"]
 - !private ["SQ", "user_savings"]
 - !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s25ExpressibleByFloatLiteralP", "removeZerosFromEnd"]
+- !private ["s25ExpressibleByFloatLiteralP", "rounded"]
+- !private ["s27ExpressibleByIntegerLiteralP", "removeZerosFromEnd"]
+- !private ["s27ExpressibleByIntegerLiteralP", "rounded"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["SF", "removeZerosFromEnd"]
+- !private ["SF", "rounded"]
+- !private ["s25FloatingPointRoundingRuleO", "up"]
 - !private ["SH", "String"]
 - ["SH", ""]
 - !private ["SH", "init"]
@@ -79,11 +109,16 @@ depends-member:
 - !private ["SH", "order_id"]
 - !private ["SH", "order_total"]
 - !private ["SH", "payment_status"]
+- !private ["SH", "removeZerosFromEnd"]
+- !private ["SH", "rounded"]
 - !private ["SH", "subscript"]
+- !private ["SH", "up"]
 - !private ["SH", "user_payable_amount"]
 - !private ["SH", "user_savings"]
 - !private ["6SaveUp20KingfisherCompatibleP", "init"]
 - !private ["s25LosslessStringConvertibleP", "init"]
+- !private ["s25LosslessStringConvertibleP", "removeZerosFromEnd"]
+- !private ["s25LosslessStringConvertibleP", "rounded"]
 - !private ["6SaveUp13LoyalityModelC", "Double"]
 - ["6SaveUp13LoyalityModelC", "NSDictionary"]
 - !private ["6SaveUp13LoyalityModelC", "NSInteger"]
@@ -128,18 +163,40 @@ depends-member:
 - !private ["So8NSObjectP", "user_payable_amount"]
 - !private ["So8NSObjectP", "user_savings"]
 - !private ["So14NSSecureCodingP", "subscript"]
+- !private ["Sj", "removeZerosFromEnd"]
+- !private ["Sj", "rounded"]
 - !private ["Sm", "init"]
+- !private ["s10SIMDScalarP", "removeZerosFromEnd"]
+- !private ["s10SIMDScalarP", "rounded"]
 - !private ["ST", "init"]
 - !private ["ST", "subscript"]
+- !private ["s13SignedNumericP", "removeZerosFromEnd"]
+- !private ["s13SignedNumericP", "rounded"]
+- !private ["Sx", "removeZerosFromEnd"]
+- !private ["Sx", "rounded"]
 - !private ["SS", "init"]
 - !private ["Sy", "init"]
 - !private ["s16TextOutputStreamP", "init"]
 - !private ["s20TextOutputStreamableP", "init"]
+- !private ["s20TextOutputStreamableP", "removeZerosFromEnd"]
+- !private ["s20TextOutputStreamableP", "rounded"]
+- !private ["s15_CVarArgAlignedP", "removeZerosFromEnd"]
+- !private ["s15_CVarArgAlignedP", "rounded"]
+- !private ["s22_CVarArgPassedAsDoubleP", "removeZerosFromEnd"]
+- !private ["s22_CVarArgPassedAsDoubleP", "rounded"]
 - !private ["s30_CustomPlaygroundQuickLookableP", "init"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "removeZerosFromEnd"]
+- !private ["s30_CustomPlaygroundQuickLookableP", "rounded"]
 - !private ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "removeZerosFromEnd"]
+- !private ["s33_ExpressibleByBuiltinFloatLiteralP", "rounded"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "removeZerosFromEnd"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "rounded"]
 - !private ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
 - !private ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
 - !private ["s19_HasContiguousBytesP", "init"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "removeZerosFromEnd"]
+- !private ["s35_HasCustomAnyHashableRepresentationP", "rounded"]
 - !private ["s35_HasCustomAnyHashableRepresentationP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
@@ -162,8 +219,20 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "user_payable_amount"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "user_savings"]
 - !private ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "removeZerosFromEnd"]
+- !private ["s21_ObjectiveCBridgeableP", "rounded"]
+- !private ["10Accelerate34vDSP_FloatingPointBiquadFilterableP", "removeZerosFromEnd"]
+- !private ["10Accelerate34vDSP_FloatingPointBiquadFilterableP", "rounded"]
+- !private ["10Accelerate29vDSP_FloatingPointConvertableP", "removeZerosFromEnd"]
+- !private ["10Accelerate29vDSP_FloatingPointConvertableP", "rounded"]
+- !private ["10Accelerate46vDSP_FloatingPointDiscreteFourierTransformableP", "removeZerosFromEnd"]
+- !private ["10Accelerate46vDSP_FloatingPointDiscreteFourierTransformableP", "rounded"]
+- !private ["10Accelerate29vDSP_FloatingPointGeneratableP", "removeZerosFromEnd"]
+- !private ["10Accelerate29vDSP_FloatingPointGeneratableP", "rounded"]
 depends-nominal:
+- !private "s18AdditiveArithmeticP"
 - !private "SK"
+- !private "SB"
 - "s7CVarArgP"
 - !private "Sl"
 - !private "SL"
@@ -171,13 +240,18 @@ depends-nominal:
 - !private "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
 - !private "Se"
+- !private "Sd"
 - !private "SE"
 - "SQ"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s25ExpressibleByFloatLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
+- !private "SF"
+- !private "s25FloatingPointRoundingRuleO"
 - "SH"
 - !private "6SaveUp20KingfisherCompatibleP"
 - !private "s25LosslessStringConvertibleP"
@@ -191,14 +265,22 @@ depends-nominal:
 - "So8NSObjectC"
 - "So8NSObjectP"
 - !private "So14NSSecureCodingP"
+- !private "Sj"
 - !private "Sm"
+- !private "s10SIMDScalarP"
 - !private "ST"
+- !private "s13SignedNumericP"
+- !private "Sx"
 - !private "SS"
 - !private "Sy"
 - !private "s16TextOutputStreamP"
 - !private "s20TextOutputStreamableP"
+- !private "s15_CVarArgAlignedP"
+- !private "s22_CVarArgPassedAsDoubleP"
 - !private "s30_CustomPlaygroundQuickLookableP"
 - !private "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- !private "s33_ExpressibleByBuiltinFloatLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
 - !private "s34_ExpressibleByBuiltinStringLiteralP"
 - !private "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
 - !private "s19_HasContiguousBytesP"
@@ -206,6 +288,10 @@ depends-nominal:
 - "10Foundation27_KeyValueCodingAndObservingP"
 - "10Foundation37_KeyValueCodingAndObservingPublishingP"
 - !private "s21_ObjectiveCBridgeableP"
+- !private "10Accelerate34vDSP_FloatingPointBiquadFilterableP"
+- !private "10Accelerate29vDSP_FloatingPointConvertableP"
+- !private "10Accelerate46vDSP_FloatingPointDiscreteFourierTransformableP"
+- !private "10Accelerate29vDSP_FloatingPointGeneratableP"
 depends-dynamic-lookup:
 depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator13.2.sdk/usr/lib/swift/ObjectiveC.swiftmodule/x86_64.swiftinterface"

@@ -16,7 +16,7 @@ class MoreTableViewController: UITableViewController {
         let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String
         let buildString = "Version: \(appVersion ?? ""); Build: \(build ?? "")"
         
-        moreOptions = ["My Account","Help","Log Out",buildString]
+        moreOptions = ["My Account", "How to use", "Help","Log Out",buildString]
         tableView.tableFooterView = UIView()
         self.title = "More Options"
         
@@ -73,17 +73,21 @@ class MoreTableViewController: UITableViewController {
         if let tempUserID = UserDefaults.standard.object(forKey: "UserID"){
             if indexPath.section == 0{
                 return
-            }else{
+            }else{//["My Account", "How to use", "Help","Log Out",buildString]
                 switch indexPath.row {
                 case 0:
                     let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "MyAccViewController")
                     self.navigationController!.pushViewController(theViewController, animated: true)
                     return
                 case 1:
-                    let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "HelpVc")
+                    let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "HowToUseViewController")
                     self.navigationController!.pushViewController(theViewController, animated: true)
                     return
                 case 2:
+                    let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "HelpVc")
+                    self.navigationController!.pushViewController(theViewController, animated: true)
+                    return
+                case 3:
                     let alert = UIAlertController(title: "Log Out", message: "Are you sure to Log Out from app?", preferredStyle: UIAlertController.Style.alert)
                     alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in
                         let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "LoginViewController")

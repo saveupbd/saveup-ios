@@ -259,7 +259,7 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
         task.resume()
     }
     
-    func didSelect(category: String) {
+    func didSelect(category: String, id: String) {
         switch category {
         case "Price High to Low":
             self.sort_order_by = "high_low"
@@ -352,163 +352,163 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
                 self.showNetworkErrorAlert()
             }
             return
-        case "Food":
-            price_min = "1"
-            
-            price_max = "1000"
-            
-            self.page_no = 1
-            
-            self.value_id = 1
-            
-            self.productsArray = [Products]()
-            
-            let reachability = Reachability()!
-            
-            if reachability.isReachable {
-                
-                self.view.hideToastActivity()
-                self.view.makeToastActivity(.center)
-                
-                // productApiFilter()
-                
-                if UserDefaults.standard.bool(forKey: "forcategory") == true  {
-                    productApiFilterOneForHotDeals()
-                    print("i am HotButton")
-                    UserDefaults.standard.removeObject(forKey: "forcategory")
-                }else {
-                    productApiFilterOne()
-                }
-                
-                //productApiFilterOneForHotDeals()
-                
-                //
-                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
-                //                weakSelf?.productApiFilter()
-                //            })
-            }
-            else {
-                
-                self.showNetworkErrorAlert()
-            }
-            return
-        case "Travel":
-            price_min = "5000"
-            
-            price_max = "10000"
-            
-            self.page_no = 1
-            
-            self.productsArray = [Products]()
-            
-            let reachability = Reachability()!
-            
-            if reachability.isReachable {
-                
-                self.view.hideToastActivity()
-                self.view.makeToastActivity(.center)
-                
-                //            self.productApi()
-                productApiFilterFour()
-                
-                //
-                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
-                //                weakSelf?.productApi()
-                //            })
-            }
-            else {
-                
-                self.showNetworkErrorAlert()
-            }
-            return
-        case "Fitness":
-            self.discount = "2"
-            
-            self.page_no = 1
-            
-            self.productsArray = [Products]()
-            
-            let reachability = Reachability()!
-            
-            if reachability.isReachable {
-                
-                self.view.hideToastActivity()
-                self.view.makeToastActivity(.center)
-                
-                //            self.productApi()
-                productApiFilterSix()
-                
-                //
-                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
-                //                weakSelf?.productApi()
-                //            })
-            }
-            else {
-                
-                self.showNetworkErrorAlert()
-            }
-            return
-        case "Beauty":
-            price_min = "1000"
-            
-            price_max = "2500"
-            
-            self.page_no = 1
-            
-            self.value_id = 2
-            
-            self.productsArray = [Products]()
-            
-            let reachability = Reachability()!
-            
-            if reachability.isReachable {
-                
-                self.view.hideToastActivity()
-                self.view.makeToastActivity(.center)
-                
-                //            self.productApi()
-                //            self.productApiTwo()
-                //            self.productApiThree()
-                
-                productApiFilterTwo()
-                
-                //
-                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
-                //                weakSelf?.productApi()
-                //                weakSelf?.productApiTwo()
-                //                weakSelf?.productApiThree()
-                //            })
-            }
-            else {
-                
-                self.showNetworkErrorAlert()
-            }
-            return
-        case "Services":
-            self.discount = "3"
-            
-            self.page_no = 1
-            
-            self.productsArray = [Products]()
-            
-            let reachability = Reachability()!
-            
-            if reachability.isReachable {
-                
-                self.view.hideToastActivity()
-                self.view.makeToastActivity(.center)
-                
-                //            self.productApi()
-                productApiFilterSeven()
-                //
-                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
-                //                weakSelf?.productApi()
-                //            })
-            }
-            else {
-                
-                self.showNetworkErrorAlert()
-            }
+//        case "Food":
+//            price_min = "1"
+//
+//            price_max = "1000"
+//
+//            self.page_no = 1
+//
+//            self.value_id = 1
+//
+//            self.productsArray = [Products]()
+//
+//            let reachability = Reachability()!
+//
+//            if reachability.isReachable {
+//
+//                self.view.hideToastActivity()
+//                self.view.makeToastActivity(.center)
+//
+//                // productApiFilter()
+//
+//                if UserDefaults.standard.bool(forKey: "forcategory") == true  {
+//                    productApiFilterOneForHotDeals()
+//                    print("i am HotButton")
+//                    UserDefaults.standard.removeObject(forKey: "forcategory")
+//                }else {
+//                    productApiFilterOne()
+//                }
+//
+//                //productApiFilterOneForHotDeals()
+//
+//                //
+//                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+//                //                weakSelf?.productApiFilter()
+//                //            })
+//            }
+//            else {
+//
+//                self.showNetworkErrorAlert()
+//            }
+//            return
+//        case "Travel":
+//            price_min = "5000"
+//
+//            price_max = "10000"
+//
+//            self.page_no = 1
+//
+//            self.productsArray = [Products]()
+//
+//            let reachability = Reachability()!
+//
+//            if reachability.isReachable {
+//
+//                self.view.hideToastActivity()
+//                self.view.makeToastActivity(.center)
+//
+//                //            self.productApi()
+//                productApiFilterFour()
+//
+//                //
+//                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+//                //                weakSelf?.productApi()
+//                //            })
+//            }
+//            else {
+//
+//                self.showNetworkErrorAlert()
+//            }
+//            return
+//        case "Fitness":
+//            self.discount = "2"
+//
+//            self.page_no = 1
+//
+//            self.productsArray = [Products]()
+//
+//            let reachability = Reachability()!
+//
+//            if reachability.isReachable {
+//
+//                self.view.hideToastActivity()
+//                self.view.makeToastActivity(.center)
+//
+//                //            self.productApi()
+//                productApiFilterSix()
+//
+//                //
+//                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+//                //                weakSelf?.productApi()
+//                //            })
+//            }
+//            else {
+//
+//                self.showNetworkErrorAlert()
+//            }
+//            return
+//        case "Beauty":
+//            price_min = "1000"
+//
+//            price_max = "2500"
+//
+//            self.page_no = 1
+//
+//            self.value_id = 2
+//
+//            self.productsArray = [Products]()
+//
+//            let reachability = Reachability()!
+//
+//            if reachability.isReachable {
+//
+//                self.view.hideToastActivity()
+//                self.view.makeToastActivity(.center)
+//
+//                //            self.productApi()
+//                //            self.productApiTwo()
+//                //            self.productApiThree()
+//
+//                productApiFilterTwo()
+//
+//                //
+//                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+//                //                weakSelf?.productApi()
+//                //                weakSelf?.productApiTwo()
+//                //                weakSelf?.productApiThree()
+//                //            })
+//            }
+//            else {
+//
+//                self.showNetworkErrorAlert()
+//            }
+//            return
+//        case "Services":
+//            self.discount = "3"
+//
+//            self.page_no = 1
+//
+//            self.productsArray = [Products]()
+//
+//            let reachability = Reachability()!
+//
+//            if reachability.isReachable {
+//
+//                self.view.hideToastActivity()
+//                self.view.makeToastActivity(.center)
+//
+//                //            self.productApi()
+//                productApiFilterSeven()
+//                //
+//                //            self.self.listColeectionView.addInfiniteScrolling(actionHandler: {() -> Void in
+//                //                weakSelf?.productApi()
+//                //            })
+//            }
+//            else {
+//
+//                self.showNetworkErrorAlert()
+//            }
         case "Reset":
             self.price_min = ""
             self.price_max = ""
@@ -541,6 +541,13 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
         case "Cancel":
             return
         default:
+            let reachability = Reachability()!
+            if reachability.isReachable {
+                self.filterByCategoryId(id: id)
+            }else{
+                self.showNetworkErrorAlert()
+            }
+            
             return
         }
     }
@@ -650,7 +657,16 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
     @IBAction func btnFilterPressed(_ sender: UIButton) {
         let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "FilterByCategoryViewController") as! FilterByCategoryViewController
         theViewController.filterDel = self
-        theViewController.filterContentArray = ["Food","Travel","Fitness","Beauty","Services","Reset","Cancel"]
+        let defaults = UserDefaults.standard
+        var myarray = defaults.stringArray(forKey: "categoryNameArray") ?? [String]()
+        myarray.append("Reset")
+        myarray.append("Cancel")
+        myarray = myarray.filter({ $0 != ""})
+        theViewController.filterContentArray = myarray
+        var idarray = defaults.stringArray(forKey: "categoryIdArray") ?? [String]()
+        idarray.append("99990")
+        idarray.append("99991")
+        theViewController.filterIdArray = idarray
         theViewController.modalPresentationStyle = .fullScreen
         theViewController.modalPresentationStyle = .overCurrentContext
         self.present(theViewController, animated: true, completion: nil)
@@ -1395,6 +1411,90 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
             
             self.showNetworkErrorAlert()
         }
+    }
+    
+    
+    func filterByCategoryId(id:String) {
+        let myUrl = URL(string: String(format:"%@api/filter", Api_Base_URL));
+        print(myUrl!)
+        
+        var request = URLRequest(url:myUrl!)
+        request.httpMethod = "POST";
+        
+        // print("discount---->",discount)
+        UserDefaults.standard.set("value", forKey: "id")
+        let postString = "is_approved=1&is_published=1&category_id=\(id)"//&featured=1
+        print(postString)
+        request.httpBody = postString.data(using: String.Encoding.utf8);
+        
+        let task = URLSession.shared.dataTask(with: request, completionHandler: {
+            data, response, error in
+            
+            //Got response from server
+            DispatchQueue.main.async {
+                
+                if (error != nil) {
+                    
+                    self.view.hideToastActivity()
+                    return
+                }
+                do {
+                    let json =  try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
+                    print("Here\(json!)")
+                    
+                    self.view.hideToastActivity()
+                    
+                    if let parseJSON = json {
+                        
+                        if parseJSON.object(forKey: "status") as! NSInteger == 200 {
+                            
+                            if let reposArray = parseJSON["product_list"] as? [NSDictionary] {
+                                // 5
+                                //print(reposArray)
+                                if reposArray.count == 0 {
+                                    
+                                    if self.productsArray.count == 0 {
+                                        
+                                        var style = ToastStyle()
+                                        style.messageFont = messageFont!
+                                        style.messageColor = UIColor.white
+                                        style.messageAlignment = .center
+                                        style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
+                                        
+                                        self.view.makeToast("No Products Available!", duration: 3.0, position: .center, style: style)
+                                    }
+                                    else {
+                                        
+                                        var style = ToastStyle()
+                                        style.messageFont = messageFont!
+                                        style.messageColor = UIColor.white
+                                        style.messageAlignment = .center
+                                        style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
+                                        
+                                        self.view.makeToast("No More Products Available!", duration: 3.0, position: .bottom, style: style)
+                                    }
+                                }
+                                else {
+                                    self.productsArray.removeAll()
+                                    for item in reposArray {
+                                        self.productsArray.append(Products(Products: item))
+                                    }
+                                }
+                                DispatchQueue.main.async {
+                                    self.listColeectionView.reloadData()
+                                }
+                            }
+                        }
+                        
+                    }
+                }
+                catch {
+                    //print(error)
+                    self.view.hideToastActivity()
+                }
+            }
+        })
+        task.resume()
     }
     
     //start
@@ -2432,7 +2532,7 @@ class ListViewController: UIViewController,UICollectionViewDelegate,UICollection
                             }
                         }
                         
-                        self.self.listColeectionView.reloadData()
+                        self.listColeectionView.reloadData()
                     }
                 }
                 catch {

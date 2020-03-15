@@ -169,6 +169,7 @@ class NearMeListTableViewController: UITableViewController,CLLocationManagerDele
                                     self.navigationController?.view.makeToast("No Stores Available!", duration: 5.0, position: .center, style: style)
                                 }
                                 else {
+                                    self.nearmeArray.removeAll()
                                     for item in reposArray {
                                         self.nearmeArray.append(NearMe(NearMe: item))
                                         print(self.nearmeArray)

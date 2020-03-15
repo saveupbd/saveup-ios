@@ -1,0 +1,21 @@
+version: "Apple Swift version 5.1.3 (swiftlang-1100.0.282.1 clang-1100.0.33.15)"
+options: "d4def1a51a7900145ae6c32dd5973d8f"
+build_time: [1584118599, 852969000]
+inputs:
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/AFError.swift": !dirty [1579864280, 979359150]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/Alamofire.swift": !dirty [1579864280, 992893100]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/DispatchQueue+Alamofire.swift": !dirty [1579864280, 977327824]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/MultipartFormData.swift": !dirty [1579864280, 974219680]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/NetworkReachabilityManager.swift": !dirty [1579864280, 974777102]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/Notifications.swift": !dirty [1579864280, 980439663]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/ParameterEncoding.swift": !dirty [1579864280, 978751063]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/Request.swift": !dirty [1579864280, 994889379]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/Response.swift": !dirty [1579864280, 985775828]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/ResponseSerialization.swift": !dirty [1579864280, 996266961]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/Result.swift": !dirty [1579864280, 978066206]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/ServerTrustPolicy.swift": !dirty [1579864280, 996758580]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/SessionDelegate.swift": !dirty [1579864280, 997435927]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/SessionManager.swift": !dirty [1579864280, 995698333]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/TaskDelegate.swift": !dirty [1579864280, 973467588]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/Timeline.swift": !dirty [1579864280, 975228786]
+  "/Users/Seraje/Desktop/SaveUp_Old/Pods/Alamofire/Source/Validation.swift": !dirty [1579864280, 979850888]

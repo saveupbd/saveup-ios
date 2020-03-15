@@ -9,13 +9,14 @@
 import UIKit
 
 protocol FilterViewDelegate {
-    func didSelect(category:String)
+    func didSelect(category:String,id:String)
 }
 class FilterByCategoryViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
 
     @IBOutlet weak var filterTable: UITableView!
     var filterDel:FilterViewDelegate?
     var filterContentArray:[String]?
+    var filterIdArray = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         filterTable.delegate = self
@@ -58,7 +59,8 @@ class FilterByCategoryViewController: UIViewController,UITableViewDelegate,UITab
         self.dismiss(animated: true) {
             let indexPath = tableView.indexPathForSelectedRow!
             let currentCell = tableView.cellForRow(at: indexPath)
-            self.filterDel?.didSelect(category: (currentCell?.textLabel!.text)!)
+            //if currentCell?.textLabel!.text == "Cancel"
+            self.filterDel?.didSelect(category: (currentCell?.textLabel!.text)!, id: self.filterIdArray[indexPath.row])
         }
     }
 

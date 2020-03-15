@@ -24,7 +24,7 @@ class MyAccViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         self.profileOptionsTableView.tableFooterView = UIView()
-        profileOptionsArray = ["My Transactions and points"/*,"My Cart"*/,"My Wishlist","Change Password"]
+        profileOptionsArray = ["My Transactions"/*,"My Cart"*/,"My Wishlist","Change Password"]
         profileOptionsSubArray = ["View transactions and loyality points",/*"Show all cart items",*/"View all Wishlist items",""]
         self.profileOptionsTableView.delegate = self
         self.profileOptionsTableView.dataSource = self
@@ -162,8 +162,8 @@ class MyAccViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0://voucher
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "RewardsViewController" ) as! RewardsViewController
-            vc.cameFromMyAcc = true
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "TransactionsViewController" ) as! TransactionsViewController
+            //vc.cameFromMyAcc = true
             self.navigationController?.pushViewController(vc, animated: true)
             return
 //        case 1://cart

@@ -1,5 +1,6 @@
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/FilterView.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/Kingfisher/Filter.swift
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/TransactionsViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/ViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/AppDelegate.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/FHotDealsTableViewCell.swift
@@ -12,10 +13,13 @@
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/AppConfig.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/Kingfisher/ImageDownloader.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/Kingfisher/Image.swift
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/ScrollableSegmentedControl.swift
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/TransactionTableViewCell.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/MyWishlist.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/FilterByCategoryViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/MyOrdersViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/MIBadgeButton.swift
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/CategoryCollectionViewCell.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/FDetailsImagesCollectionViewCell.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/orderProductList.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/FWishListTableViewController.swift
@@ -108,6 +112,7 @@
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/Toast.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/RelatedProducts.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/CityViewController.swift
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/SubCatCollectionViewCell.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/MyAccountViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/HelpVc.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/TermsViewController.swift
@@ -124,6 +129,7 @@
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/NearmeViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/MyCart.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/City.swift
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/HBSegmentedControl.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/FDetailsRelatedArrayTableViewCell.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PasswordViewController.swift
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/SubModule.swift

@@ -22,6 +22,14 @@ class RewardsViewController: UIViewController,UITableViewDelegate,UITableViewDat
     var transactionsArray = [LoyalityModel]()
     var cameFromMyAcc = false
     var offersArray:[String]?
+    
+    struct RedeemInstructionModel {
+        var title: String
+        var subtitle: String
+    }
+    
+    var instructionModel = [RedeemInstructionModel]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         listTableView.delegate = self
@@ -41,7 +49,11 @@ class RewardsViewController: UIViewController,UITableViewDelegate,UITableViewDat
         super.viewWillAppear(animated)
         if !cameFromMyAcc {
             offersArray = ["50 BDT Phone Recharge","100 BDT Phone Recharge","100 BDT bKash"]
-            listTableHeaderLabel.text = "Loyality Offers"
+            
+            instructionModel = [RedeemInstructionModel(title: "SaveUp Rewards", subtitle: "SaveUp brings you a lot more than just a saving platform. SaveUp Rewards are a way of payback to all the loyal customers. With SaveUp Rewards, you can enjoy added benefits on the amount you have already spent on the SaveUp platform. New rewards are added time to time, so be sure to keep an eye out !"),
+                                RedeemInstructionModel(title: "How does it work?", subtitle: "SaveUp reward system is very easy and simple. With every BDT 100 spent on the SaveUp platform, you get 1 Loyalty point. Once you reach the minimum redemption limit, you can exchange them for various rewards. Happy Saving!")]
+            
+            listTableHeaderLabel.text = ""
         }else{
             listTableHeaderLabel.text = "History"
         }
@@ -65,14 +77,14 @@ class RewardsViewController: UIViewController,UITableViewDelegate,UITableViewDat
         ofView.layer.borderWidth = 0.9
         
         ofView.layer.borderColor = UIColor.init(named: "appThemeColor")?.cgColor
-        ofView.layer.masksToBounds = true
-        
-        ofView.layer.shadowColor = UIColor.black.cgColor
-        ofView.layer.shadowOffset = CGSize(width: 0, height: 1.5)
-        ofView.layer.shadowRadius = 3
-        ofView.layer.shadowOpacity = 0.9
-        ofView.layer.masksToBounds = false
-        ofView.layer.shadowPath = UIBezierPath(roundedRect:ofView.bounds, cornerRadius:ofView.layer.cornerRadius).cgPath
+//        ofView.layer.masksToBounds = true
+//        
+//        ofView.layer.shadowColor = UIColor.black.cgColor
+//        ofView.layer.shadowOffset = CGSize(width: 0, height: 1.5)
+//        ofView.layer.shadowRadius = 3
+//        ofView.layer.shadowOpacity = 0.9
+//        ofView.layer.masksToBounds = false
+//        ofView.layer.shadowPath = UIBezierPath(roundedRect:ofView.bounds, cornerRadius:ofView.layer.cornerRadius).cgPath
     }
     
     @IBAction func btnRedeemPressed(_ sender: UIButton) {
@@ -86,7 +98,7 @@ class RewardsViewController: UIViewController,UITableViewDelegate,UITableViewDat
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if !cameFromMyAcc{
-            return offersArray!.count
+            return instructionModel.count
         }
         return transactionsArray.count
     }
@@ -94,13 +106,18 @@ class RewardsViewController: UIViewController,UITableViewDelegate,UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "rewardCell", for: indexPath)
         if !cameFromMyAcc{
-            cell.textLabel?.text = offersArray?[indexPath.row]
-            cell.detailTextLabel?.text = ""
+            cell.textLabel?.text = instructionModel[indexPath.row].title
+            cell.detailTextLabel?.numberOfLines = 15
+            cell.detailTextLabel?.text = instructionModel[indexPath.row].subtitle
         }else{
             cell.textLabel?.text = transactionsArray[indexPath.row].merchant_name
             cell.detailTextLabel?.text = transactionsArray[indexPath.row].order_total! + " BDT"
         }
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 180
     }
     
     func hitLoyalityApi() {
@@ -167,10 +184,10 @@ class RewardsViewController: UIViewController,UITableViewDelegate,UITableViewDat
                             }
                         }
                         
-                        self.totelPoinLabel.text = String(parseJSON["total_loyality_point"] as! NSInteger)
-                        let tempSave = parseJSON["total_savings"] as! Double
-                        self.totalSavedLabel.text = "You've saved total \(String(tempSave.truncate(places: 2))) BDT!"
-                        self.totalLoyality = String(parseJSON["total_loyality_point"] as! NSInteger)
+                        self.totelPoinLabel.text = String(parseJSON["total_loyality_point"] as! String)
+                        let tempSave = parseJSON["total_savings"] as! String
+                        self.totalSavedLabel.text = "You've saved total \(tempSave) BDT!"
+                        self.totalLoyality = String(parseJSON["total_loyality_point"] as! String)
                     }
                     self.listTableView.reloadData()
                 }

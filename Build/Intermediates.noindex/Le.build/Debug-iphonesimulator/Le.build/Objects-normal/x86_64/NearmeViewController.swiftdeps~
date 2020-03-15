@@ -71,6 +71,7 @@ depends-top-level:
 - !private "kCLLocationAccuracyBest"
 - !private "messageFont"
 - !private "print"
+- !private "||"
 depends-member:
 - !private ["10Accelerate0A6BufferP", "append"]
 - !private ["10Accelerate0A6BufferP", "count"]

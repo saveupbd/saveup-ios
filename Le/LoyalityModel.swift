@@ -33,17 +33,17 @@ class LoyalityModel: NSObject {
             self.order_id = String(LoyalityModel["order_id"] as! NSInteger)
         }
         if LoyalityModel["order_total"] != nil{
-            self.order_total = String((LoyalityModel["order_total"] as! Double).rounded(.up).removeZerosFromEnd())
+            self.order_total = String(LoyalityModel["order_total"] as! String)
         }
         if LoyalityModel["user_payable_amount"] != nil{
             self.user_payable_amount = String(LoyalityModel["user_payable_amount"] as! String)
         }
         if LoyalityModel["user_savings"] != nil{
-            self.user_savings = String(LoyalityModel["user_savings"] as! Double)
+            self.user_savings = String(LoyalityModel["user_savings"] as! String)
         }
-//        if LoyalityModel["dagte"] != nil{
-//            self.order_id = String(LoyalityModel["dagte"])
-//        }
+        if LoyalityModel["dagte"] != nil{
+            self.date = LoyalityModel["dagte"] as? String
+        }
         if LoyalityModel["merchant_name"] != nil{
             self.merchant_name = LoyalityModel["merchant_name"] as? String
         }

@@ -115,88 +115,88 @@ class StoresViewController: UIViewController, UITableViewDelegate, UITableViewDa
             self.self.showNetworkErrorAlert()
         }
     }
-    func didSelect(category: String) {
+    func didSelect(category: String, id: String) {
         switch category {
-        case "Food":
-            let reachability = Reachability()!
-            if reachability.isReachable {
-                self.view.hideToastActivity()
-                self.view.makeToastActivity(.center)
-                merchantFilterStoresApi()
-            }
-            else {
-                self.showNetworkErrorAlert()
-            }
-            return
-        case "Travel":
-            self.page_no = 1
-
-            
-
-             let reachability = Reachability()!
-
-             if reachability.isReachable {
-
-                 self.view.hideToastActivity()
-                 self.view.makeToastActivity(.center)
-
-                 //            self.productApi()
-               fourthAction()
-             }
-             else {
-
-                 self.self.showNetworkErrorAlert()
-             }
-            return
-        case "Fitness":
-            let reachability = Reachability()!
-
-            if reachability.isReachable {
-
-                self.view.hideToastActivity()
-                self.view.makeToastActivity(.center)
-
-                //            self.productApi()
-               seventhAction()
-
-            }
-            else {
-
-                self.self.showNetworkErrorAlert()
-            }
-            return
-        case "Beauty":
-            let reachability = Reachability()!
-
-            if reachability.isReachable {
-
-                self.view.hideToastActivity()
-                self.view.makeToastActivity(.center)
-
-
-                oneAction()
-
-            }
-            else {
-
-                self.showNetworkErrorAlert()
-            }
-            return
-        case "Services":
-            let reachability = Reachability()!
-
-            if reachability.isReachable {
-
-                self.view.hideToastActivity()
-                self.view.makeToastActivity(.center)
-
-                eightAction()
-            }
-            else {
-
-                self.showNetworkErrorAlert()
-            }
-            return
+//        case "Food":
+//            let reachability = Reachability()!
+//            if reachability.isReachable {
+//                self.view.hideToastActivity()
+//                self.view.makeToastActivity(.center)
+//                merchantFilterStoresApi()
+//            }
+//            else {
+//                self.showNetworkErrorAlert()
+//            }
+//            return
+//        case "Travel":
+//            self.page_no = 1
+//
+//
+//
+//             let reachability = Reachability()!
+//
+//             if reachability.isReachable {
+//
+//                 self.view.hideToastActivity()
+//                 self.view.makeToastActivity(.center)
+//
+//                 //            self.productApi()
+//               fourthAction()
+//             }
+//             else {
+//
+//                 self.self.showNetworkErrorAlert()
+//             }
+//            return
+//        case "Fitness":
+//            let reachability = Reachability()!
+//
+//            if reachability.isReachable {
+//
+//                self.view.hideToastActivity()
+//                self.view.makeToastActivity(.center)
+//
+//                //            self.productApi()
+//               seventhAction()
+//
+//            }
+//            else {
+//
+//                self.self.showNetworkErrorAlert()
+//            }
+//            return
+//        case "Beauty":
+//            let reachability = Reachability()!
+//
+//            if reachability.isReachable {
+//
+//                self.view.hideToastActivity()
+//                self.view.makeToastActivity(.center)
+//
+//
+//                oneAction()
+//
+//            }
+//            else {
+//
+//                self.showNetworkErrorAlert()
+//            }
+//            return
+//        case "Services":
+//            let reachability = Reachability()!
+//
+//            if reachability.isReachable {
+//
+//                self.view.hideToastActivity()
+//                self.view.makeToastActivity(.center)
+//
+//                eightAction()
+//            }
+//            else {
+//
+//                self.showNetworkErrorAlert()
+//            }
+//            return
         case "Reset":
             let reachability = Reachability()!
             
@@ -213,6 +213,20 @@ class StoresViewController: UIViewController, UITableViewDelegate, UITableViewDa
         case "Cancel":
             return
         default:
+            let reachability = Reachability()!
+            
+            if reachability.isReachable {
+                
+                self.view.hideToastActivity()
+                self.view.makeToastActivity(.center)
+                
+                merchantFilterByid(id: id)
+            }
+            else {
+                
+                self.showNetworkErrorAlert()
+            }
+            
             return
         }
     }
@@ -446,7 +460,16 @@ class StoresViewController: UIViewController, UITableViewDelegate, UITableViewDa
 //        UIApplication.shared.keyWindow?.addSubview(filterView)
         let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "FilterByCategoryViewController") as! FilterByCategoryViewController
         theViewController.filterDel = self
-        theViewController.filterContentArray = ["Food","Travel","Fitness","Beauty","Services","Reset","Cancel"]
+        let defaults = UserDefaults.standard
+        var myarray = defaults.stringArray(forKey: "categoryNameArray") ?? [String]()
+        myarray.append("Reset")
+        myarray.append("Cancel")
+        myarray = myarray.filter({ $0 != ""})
+        theViewController.filterContentArray = myarray
+        var idarray = defaults.stringArray(forKey: "categoryIdArray") ?? [String]()
+        idarray.append("99990")
+        idarray.append("99991")
+        theViewController.filterIdArray = idarray
         theViewController.modalPresentationStyle = .fullScreen
         theViewController.modalPresentationStyle = .overCurrentContext
         self.present(theViewController, animated: true, completion: nil)
@@ -745,6 +768,118 @@ class StoresViewController: UIViewController, UITableViewDelegate, UITableViewDa
             self.self.showNetworkErrorAlert()
         }
     }
+    
+    func merchantFilterByid(id:String) {
+        storesArray.removeAll()
+        let myUrl = URL(string: String(format:"%@api/categoy_merchant", Api_Base_URL));
+        //print(myUrl!)
+        
+        var request = URLRequest(url:myUrl!)
+        request.httpMethod = "POST";
+        
+            let postString = "category_id=\(id)&lang=en"
+            //print(postString)
+        request.httpBody = postString.data(using: String.Encoding.utf8);
+        
+        let task = URLSession.shared.dataTask(with: request, completionHandler: {
+            data, response, error in
+            
+            //Got response from server
+            DispatchQueue.main.async {
+                
+                if (error != nil) {
+                    
+                    self.view.hideToastActivity()
+                    return
+                }
+                do {
+                    let json =  try JSONSerialization.jsonObject(with: data!, options: .mutableContainers) as? NSDictionary
+                    print("Here\(json!)")
+                    
+                    self.view.hideToastActivity()
+                    
+                    if let parseJSON = json {
+                        
+                        if parseJSON.object(forKey: "status") as! NSInteger == 200 {
+                            
+                            if let reposArray = parseJSON["store_details"] as? [NSDictionary] {
+                                // 5
+                                //print(reposArray)
+                                if reposArray.count == 0 {
+                                    
+                                    if self.storesArray.count == 0 {
+                                        
+                                        var style = ToastStyle()
+                                        style.messageFont = messageFont!
+                                        style.messageColor = UIColor.white
+                                        style.messageAlignment = .center
+                                        style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
+                                        
+                                        self.view.makeToast("No Merchants Available!", duration: 3.0, position: .center, style: style)
+                                    }
+                                    else {
+                                        
+                                        var style = ToastStyle()
+                                        style.messageFont = messageFont!
+                                        style.messageColor = UIColor.white
+                                        style.messageAlignment = .center
+                                        style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
+                                        
+                                        self.view.makeToast("No More Merchants Available!", duration: 3.0, position: .bottom, style: style)
+                                    }
+                                }
+                                else {
+                                    
+                                    self.page_no = self.page_no + 1
+                                    self.storesArray.removeAll()
+                                    for item in reposArray {
+                                        self.storesArray.append(Stores(Stores: item))
+                                    }
+                                    DispatchQueue.main.async {
+                                        self.storesTable.reloadData()
+                                    }
+                                    
+                                }
+                            }
+                        }
+                        else {
+                            
+                            if self.storesArray.count == 0 {
+                                
+                                var style = ToastStyle()
+                                style.messageFont = messageFont!
+                                style.messageColor = UIColor.white
+                                style.messageAlignment = .center
+                                style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
+                                
+                                self.view.makeToast("No Merchants Available!", duration: 3.0, position: .center, style: style)
+                            }
+                            else {
+                                
+                                var style = ToastStyle()
+                                style.messageFont = messageFont!
+                                style.messageColor = UIColor.white
+                                style.messageAlignment = .center
+                                style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
+                                self.view.makeToast("No More Merchants Available!", duration: 3.0, position: .bottom, style: style)
+                            }
+                        }
+                        
+                        //self.storesTable.reloadData()
+                        //                        self.storesTable.infiniteScrollingView.stopAnimating()
+                    }
+                }
+                catch {
+                    
+                    //print(error)
+                    self.showErrorAlert()
+                    self.view.hideToastActivity()
+                }
+            }
+        })
+        task.resume()
+    }
+    
     
     func merchantFilterStoresApi() {
         storesArray.removeAll()

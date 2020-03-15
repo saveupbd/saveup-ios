@@ -22,6 +22,8 @@ provides-dynamic-lookup:
 - "btnServicePressed"
 - "btnTravel"
 - "btnTravelPressed"
+- "categoryCollectionView"
+- "collectionView"
 - "setSelected"
 depends-top-level:
 - !private "*"
@@ -39,6 +41,8 @@ depends-top-level:
 - !private "Data"
 - "FCategoriesTableViewCell"
 - !private "FloatLiteralType"
+- "IndexPath"
+- "Int"
 - !private "IntegerLiteralType"
 - !private "JSONSerialization"
 - !private "NSAttributedString"
@@ -50,6 +54,10 @@ depends-top-level:
 - !private "StringLiteralType"
 - "TernaryPrecedence"
 - "UIButton"
+- "UICollectionView"
+- "UICollectionViewCell"
+- "UICollectionViewDataSource"
+- "UICollectionViewDelegate"
 - !private "UIEdgeInsets"
 - "UITableViewCell"
 - "URL"
@@ -83,18 +91,45 @@ depends-member:
 - !private ["So15CALayerDelegateP", "awakeFromNib"]
 - !private ["So15CALayerDelegateP", "bounds"]
 - !private ["So15CALayerDelegateP", "catDel"]
+- !private ["So15CALayerDelegateP", "categoryCollectionView"]
 - !private ["So15CALayerDelegateP", "categoryHomeArray"]
+- ["So15CALayerDelegateP", "collectionView"]
+- ["So15CALayerDelegateP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So15CALayerDelegateP", "currentImage"]
+- !private ["So15CALayerDelegateP", "dataSource"]
+- !private ["So15CALayerDelegateP", "delegate"]
+- !private ["So15CALayerDelegateP", "dequeueReusableCell"]
 - !private ["So15CALayerDelegateP", "font"]
 - !private ["So15CALayerDelegateP", "hitCategoryAPI"]
 - !private ["So15CALayerDelegateP", "imageEdgeInsets"]
+- ["So15CALayerDelegateP", "indexPathForPreferredFocusedView"]
+- ["So15CALayerDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So15CALayerDelegateP", "indexTitles"]
+- ["So15CALayerDelegateP", "indexTitlesForCollectionView"]
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "layer"]
+- ["So15CALayerDelegateP", "numberOfSections"]
+- ["So15CALayerDelegateP", "numberOfSectionsInCollectionView"]
 - !private ["So15CALayerDelegateP", "print"]
+- ["So15CALayerDelegateP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So15CALayerDelegateP", "scrollViewDidEndDecelerating"]
+- ["So15CALayerDelegateP", "scrollViewDidEndDragging"]
+- ["So15CALayerDelegateP", "scrollViewDidEndScrollingAnimation"]
+- ["So15CALayerDelegateP", "scrollViewDidEndZooming"]
+- ["So15CALayerDelegateP", "scrollViewDidScroll"]
+- ["So15CALayerDelegateP", "scrollViewDidScrollToTop"]
+- ["So15CALayerDelegateP", "scrollViewDidZoom"]
+- ["So15CALayerDelegateP", "scrollViewShouldScrollToTop"]
+- ["So15CALayerDelegateP", "scrollViewWillBeginDecelerating"]
+- ["So15CALayerDelegateP", "scrollViewWillBeginDragging"]
+- ["So15CALayerDelegateP", "scrollViewWillBeginZooming"]
+- ["So15CALayerDelegateP", "scrollViewWillEndDragging"]
 - !private ["So15CALayerDelegateP", "setSelected"]
 - !private ["So15CALayerDelegateP", "text"]
 - !private ["So15CALayerDelegateP", "titleEdgeInsets"]
 - !private ["So15CALayerDelegateP", "titleLabel"]
+- ["So15CALayerDelegateP", "viewForZooming"]
+- ["So15CALayerDelegateP", "viewForZoomingInScrollView"]
 - !private ["So13CAMediaTimingP", "cornerRadius"]
 - !private ["So6CGRectV", "width"]
 - !private ["So6CGSizeV", "height"]
@@ -116,30 +151,60 @@ depends-member:
 - !private ["s7CVarArgP", "awakeFromNib"]
 - !private ["s7CVarArgP", "bounds"]
 - !private ["s7CVarArgP", "catDel"]
+- !private ["s7CVarArgP", "categoryCollectionView"]
 - !private ["s7CVarArgP", "categoryHomeArray"]
+- ["s7CVarArgP", "collectionView"]
+- ["s7CVarArgP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["s7CVarArgP", "cornerRadius"]
 - !private ["s7CVarArgP", "count"]
 - !private ["s7CVarArgP", "currentImage"]
+- !private ["s7CVarArgP", "dataSource"]
+- !private ["s7CVarArgP", "delegate"]
+- !private ["s7CVarArgP", "dequeueReusableCell"]
 - !private ["s7CVarArgP", "font"]
 - !private ["s7CVarArgP", "hitCategoryAPI"]
 - !private ["s7CVarArgP", "imageEdgeInsets"]
+- ["s7CVarArgP", "indexPathForPreferredFocusedView"]
+- ["s7CVarArgP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["s7CVarArgP", "indexTitles"]
+- ["s7CVarArgP", "indexTitlesForCollectionView"]
 - ["s7CVarArgP", "init"]
 - !private ["s7CVarArgP", "jsonObject"]
 - !private ["s7CVarArgP", "layer"]
+- ["s7CVarArgP", "numberOfSections"]
+- ["s7CVarArgP", "numberOfSectionsInCollectionView"]
 - !private ["s7CVarArgP", "print"]
+- ["s7CVarArgP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s7CVarArgP", "scrollViewDidEndDecelerating"]
+- ["s7CVarArgP", "scrollViewDidEndDragging"]
+- ["s7CVarArgP", "scrollViewDidEndScrollingAnimation"]
+- ["s7CVarArgP", "scrollViewDidEndZooming"]
+- ["s7CVarArgP", "scrollViewDidScroll"]
+- ["s7CVarArgP", "scrollViewDidScrollToTop"]
+- ["s7CVarArgP", "scrollViewDidZoom"]
+- ["s7CVarArgP", "scrollViewShouldScrollToTop"]
+- ["s7CVarArgP", "scrollViewWillBeginDecelerating"]
+- ["s7CVarArgP", "scrollViewWillBeginDragging"]
+- ["s7CVarArgP", "scrollViewWillBeginZooming"]
+- ["s7CVarArgP", "scrollViewWillEndDragging"]
 - !private ["s7CVarArgP", "setSelected"]
 - !private ["s7CVarArgP", "size"]
 - !private ["s7CVarArgP", "subscript"]
 - !private ["s7CVarArgP", "text"]
 - !private ["s7CVarArgP", "titleEdgeInsets"]
 - !private ["s7CVarArgP", "titleLabel"]
+- ["s7CVarArgP", "viewForZooming"]
+- ["s7CVarArgP", "viewForZoomingInScrollView"]
 - !private ["6SaveUp12CategoryHomeC", "init"]
+- ["6SaveUp22CategorySelectDelegateP", "IndexPath"]
 - ["6SaveUp22CategorySelectDelegateP", "UIButton"]
+- ["6SaveUp22CategorySelectDelegateP", "UICollectionView"]
 - ["6SaveUp22CategorySelectDelegateP", "btnBeautyPressed"]
 - ["6SaveUp22CategorySelectDelegateP", "btnFitnessPressed"]
 - ["6SaveUp22CategorySelectDelegateP", "btnFoodPressed"]
 - ["6SaveUp22CategorySelectDelegateP", "btnServicePressed"]
 - ["6SaveUp22CategorySelectDelegateP", "btnTravelPressed"]
+- ["6SaveUp22CategorySelectDelegateP", "collectionView"]
 - !private ["Sl", "Encoding"]
 - !private ["Sl", "append"]
 - !private ["Sl", "count"]
@@ -168,28 +233,57 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "awakeFromNib"]
 - !private ["s28CustomDebugStringConvertibleP", "bounds"]
 - !private ["s28CustomDebugStringConvertibleP", "catDel"]
+- !private ["s28CustomDebugStringConvertibleP", "categoryCollectionView"]
 - !private ["s28CustomDebugStringConvertibleP", "categoryHomeArray"]
+- ["s28CustomDebugStringConvertibleP", "collectionView"]
+- ["s28CustomDebugStringConvertibleP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["s28CustomDebugStringConvertibleP", "cornerRadius"]
 - !private ["s28CustomDebugStringConvertibleP", "count"]
 - !private ["s28CustomDebugStringConvertibleP", "currentImage"]
+- !private ["s28CustomDebugStringConvertibleP", "dataSource"]
+- !private ["s28CustomDebugStringConvertibleP", "delegate"]
+- !private ["s28CustomDebugStringConvertibleP", "dequeueReusableCell"]
 - !private ["s28CustomDebugStringConvertibleP", "font"]
 - !private ["s28CustomDebugStringConvertibleP", "height"]
 - !private ["s28CustomDebugStringConvertibleP", "hitCategoryAPI"]
 - !private ["s28CustomDebugStringConvertibleP", "imageEdgeInsets"]
+- ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedView"]
+- ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["s28CustomDebugStringConvertibleP", "indexTitles"]
+- ["s28CustomDebugStringConvertibleP", "indexTitlesForCollectionView"]
 - ["s28CustomDebugStringConvertibleP", "init"]
 - !private ["s28CustomDebugStringConvertibleP", "jsonObject"]
 - !private ["s28CustomDebugStringConvertibleP", "layer"]
+- ["s28CustomDebugStringConvertibleP", "numberOfSections"]
+- ["s28CustomDebugStringConvertibleP", "numberOfSectionsInCollectionView"]
 - !private ["s28CustomDebugStringConvertibleP", "print"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDecelerating"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidEndDragging"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidEndScrollingAnimation"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidEndZooming"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidScroll"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidScrollToTop"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewDidZoom"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewShouldScrollToTop"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewWillBeginDecelerating"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewWillBeginDragging"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewWillBeginZooming"]
+- ["s28CustomDebugStringConvertibleP", "scrollViewWillEndDragging"]
 - !private ["s28CustomDebugStringConvertibleP", "setSelected"]
 - !private ["s28CustomDebugStringConvertibleP", "size"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
 - !private ["s28CustomDebugStringConvertibleP", "titleEdgeInsets"]
 - !private ["s28CustomDebugStringConvertibleP", "titleLabel"]
+- ["s28CustomDebugStringConvertibleP", "viewForZooming"]
+- ["s28CustomDebugStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["s28CustomDebugStringConvertibleP", "width"]
 - !private ["s17CustomReflectableP", "Encoding"]
 - !private ["s17CustomReflectableP", "append"]
 - !private ["s17CustomReflectableP", "count"]
+- !private ["s17CustomReflectableP", "dataSource"]
+- !private ["s17CustomReflectableP", "delegate"]
 - !private ["s17CustomReflectableP", "height"]
 - ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "size"]
@@ -212,18 +306,43 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "awakeFromNib"]
 - !private ["s23CustomStringConvertibleP", "bounds"]
 - !private ["s23CustomStringConvertibleP", "catDel"]
+- !private ["s23CustomStringConvertibleP", "categoryCollectionView"]
 - !private ["s23CustomStringConvertibleP", "categoryHomeArray"]
+- ["s23CustomStringConvertibleP", "collectionView"]
+- ["s23CustomStringConvertibleP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["s23CustomStringConvertibleP", "cornerRadius"]
 - !private ["s23CustomStringConvertibleP", "count"]
 - !private ["s23CustomStringConvertibleP", "currentImage"]
+- !private ["s23CustomStringConvertibleP", "dataSource"]
+- !private ["s23CustomStringConvertibleP", "delegate"]
+- !private ["s23CustomStringConvertibleP", "dequeueReusableCell"]
 - !private ["s23CustomStringConvertibleP", "font"]
 - !private ["s23CustomStringConvertibleP", "hitCategoryAPI"]
 - !private ["s23CustomStringConvertibleP", "imageEdgeInsets"]
+- ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedView"]
+- ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["s23CustomStringConvertibleP", "indexTitles"]
+- ["s23CustomStringConvertibleP", "indexTitlesForCollectionView"]
 - ["s23CustomStringConvertibleP", "init"]
 - !private ["s23CustomStringConvertibleP", "jsonObject"]
 - !private ["s23CustomStringConvertibleP", "layer"]
+- ["s23CustomStringConvertibleP", "numberOfSections"]
+- ["s23CustomStringConvertibleP", "numberOfSectionsInCollectionView"]
 - !private ["s23CustomStringConvertibleP", "print"]
 - !private ["s23CustomStringConvertibleP", "rawValue"]
+- ["s23CustomStringConvertibleP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s23CustomStringConvertibleP", "scrollViewDidEndDecelerating"]
+- ["s23CustomStringConvertibleP", "scrollViewDidEndDragging"]
+- ["s23CustomStringConvertibleP", "scrollViewDidEndScrollingAnimation"]
+- ["s23CustomStringConvertibleP", "scrollViewDidEndZooming"]
+- ["s23CustomStringConvertibleP", "scrollViewDidScroll"]
+- ["s23CustomStringConvertibleP", "scrollViewDidScrollToTop"]
+- ["s23CustomStringConvertibleP", "scrollViewDidZoom"]
+- ["s23CustomStringConvertibleP", "scrollViewShouldScrollToTop"]
+- ["s23CustomStringConvertibleP", "scrollViewWillBeginDecelerating"]
+- ["s23CustomStringConvertibleP", "scrollViewWillBeginDragging"]
+- ["s23CustomStringConvertibleP", "scrollViewWillBeginZooming"]
+- ["s23CustomStringConvertibleP", "scrollViewWillEndDragging"]
 - !private ["s23CustomStringConvertibleP", "setSelected"]
 - !private ["s23CustomStringConvertibleP", "size"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
@@ -231,12 +350,16 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "titleEdgeInsets"]
 - !private ["s23CustomStringConvertibleP", "titleLabel"]
 - !private ["s23CustomStringConvertibleP", "utf8"]
+- ["s23CustomStringConvertibleP", "viewForZooming"]
+- ["s23CustomStringConvertibleP", "viewForZoomingInScrollView"]
 - !private ["10Foundation12DataProtocolP", "append"]
 - !private ["10Foundation12DataProtocolP", "count"]
 - ["10Foundation12DataProtocolP", "init"]
 - !private ["Se", "Encoding"]
 - !private ["Se", "append"]
 - !private ["Se", "count"]
+- !private ["Se", "dataSource"]
+- !private ["Se", "delegate"]
 - !private ["Se", "height"]
 - ["Se", "init"]
 - !private ["Se", "size"]
@@ -244,6 +367,8 @@ depends-member:
 - !private ["SE", "Encoding"]
 - !private ["SE", "append"]
 - !private ["SE", "count"]
+- !private ["SE", "dataSource"]
+- !private ["SE", "delegate"]
 - !private ["SE", "height"]
 - ["SE", "init"]
 - !private ["SE", "size"]
@@ -267,19 +392,44 @@ depends-member:
 - !private ["SQ", "awakeFromNib"]
 - !private ["SQ", "bounds"]
 - !private ["SQ", "catDel"]
+- !private ["SQ", "categoryCollectionView"]
 - !private ["SQ", "categoryHomeArray"]
+- ["SQ", "collectionView"]
+- ["SQ", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["SQ", "cornerRadius"]
 - !private ["SQ", "count"]
 - !private ["SQ", "currentImage"]
+- !private ["SQ", "dataSource"]
+- !private ["SQ", "delegate"]
+- !private ["SQ", "dequeueReusableCell"]
 - !private ["SQ", "font"]
 - !private ["SQ", "height"]
 - !private ["SQ", "hitCategoryAPI"]
 - !private ["SQ", "imageEdgeInsets"]
+- ["SQ", "indexPathForPreferredFocusedView"]
+- ["SQ", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["SQ", "indexTitles"]
+- ["SQ", "indexTitlesForCollectionView"]
 - ["SQ", "init"]
 - !private ["SQ", "jsonObject"]
 - !private ["SQ", "layer"]
+- ["SQ", "numberOfSections"]
+- ["SQ", "numberOfSectionsInCollectionView"]
 - !private ["SQ", "print"]
 - !private ["SQ", "rawValue"]
+- ["SQ", "scrollViewDidChangeAdjustedContentInset"]
+- ["SQ", "scrollViewDidEndDecelerating"]
+- ["SQ", "scrollViewDidEndDragging"]
+- ["SQ", "scrollViewDidEndScrollingAnimation"]
+- ["SQ", "scrollViewDidEndZooming"]
+- ["SQ", "scrollViewDidScroll"]
+- ["SQ", "scrollViewDidScrollToTop"]
+- ["SQ", "scrollViewDidZoom"]
+- ["SQ", "scrollViewShouldScrollToTop"]
+- ["SQ", "scrollViewWillBeginDecelerating"]
+- ["SQ", "scrollViewWillBeginDragging"]
+- ["SQ", "scrollViewWillBeginZooming"]
+- ["SQ", "scrollViewWillEndDragging"]
 - !private ["SQ", "setSelected"]
 - !private ["SQ", "size"]
 - !private ["SQ", "subscript"]
@@ -287,6 +437,8 @@ depends-member:
 - !private ["SQ", "titleEdgeInsets"]
 - !private ["SQ", "titleLabel"]
 - !private ["SQ", "utf8"]
+- ["SQ", "viewForZooming"]
+- ["SQ", "viewForZoomingInScrollView"]
 - !private ["SQ", "width"]
 - !private ["s25ExpressibleByArrayLiteralP", "append"]
 - !private ["s25ExpressibleByArrayLiteralP", "count"]
@@ -296,6 +448,8 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "addingPercentEscapes"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "size"]
+- !private ["s23ExpressibleByNilLiteralP", "dataSource"]
+- !private ["s23ExpressibleByNilLiteralP", "delegate"]
 - !private ["s32ExpressibleByStringInterpolationP", "Encoding"]
 - !private ["s32ExpressibleByStringInterpolationP", "init"]
 - !private ["s32ExpressibleByStringInterpolationP", "size"]
@@ -312,6 +466,8 @@ depends-member:
 - ["6SaveUp24FCategoriesTableViewCellC", "CategoryHome"]
 - ["6SaveUp24FCategoriesTableViewCellC", "CategorySelectDelegate"]
 - !private ["6SaveUp24FCategoriesTableViewCellC", "Data"]
+- ["6SaveUp24FCategoriesTableViewCellC", "IndexPath"]
+- ["6SaveUp24FCategoriesTableViewCellC", "Int"]
 - !private ["6SaveUp24FCategoriesTableViewCellC", "JSONSerialization"]
 - !private ["6SaveUp24FCategoriesTableViewCellC", "NSData"]
 - !private ["6SaveUp24FCategoriesTableViewCellC", "NSDictionary"]
@@ -320,6 +476,8 @@ depends-member:
 - ["6SaveUp24FCategoriesTableViewCellC", "String"]
 - ["6SaveUp24FCategoriesTableViewCellC", "StringToURL"]
 - ["6SaveUp24FCategoriesTableViewCellC", "UIButton"]
+- ["6SaveUp24FCategoriesTableViewCellC", "UICollectionView"]
+- ["6SaveUp24FCategoriesTableViewCellC", "UICollectionViewCell"]
 - ["6SaveUp24FCategoriesTableViewCellC", "URL"]
 - ["6SaveUp24FCategoriesTableViewCellC", "awakeFromNib"]
 - ["6SaveUp24FCategoriesTableViewCellC", "btnBeauty"]
@@ -333,13 +491,37 @@ depends-member:
 - ["6SaveUp24FCategoriesTableViewCellC", "btnTravel"]
 - ["6SaveUp24FCategoriesTableViewCellC", "btnTravelPressed"]
 - ["6SaveUp24FCategoriesTableViewCellC", "catDel"]
+- ["6SaveUp24FCategoriesTableViewCellC", "categoryCollectionView"]
 - ["6SaveUp24FCategoriesTableViewCellC", "categoryHomeArray"]
+- ["6SaveUp24FCategoriesTableViewCellC", "collectionView"]
+- ["6SaveUp24FCategoriesTableViewCellC", "collectionViewDidEndMultipleSelectionInteraction"]
 - ["6SaveUp24FCategoriesTableViewCellC", "deinit"]
 - ["6SaveUp24FCategoriesTableViewCellC", "hitCategoryAPI"]
+- ["6SaveUp24FCategoriesTableViewCellC", "indexPathForPreferredFocusedView"]
+- ["6SaveUp24FCategoriesTableViewCellC", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["6SaveUp24FCategoriesTableViewCellC", "indexTitles"]
+- ["6SaveUp24FCategoriesTableViewCellC", "indexTitlesForCollectionView"]
 - ["6SaveUp24FCategoriesTableViewCellC", "init"]
+- ["6SaveUp24FCategoriesTableViewCellC", "numberOfSections"]
+- ["6SaveUp24FCategoriesTableViewCellC", "numberOfSectionsInCollectionView"]
 - !private ["6SaveUp24FCategoriesTableViewCellC", "print"]
+- ["6SaveUp24FCategoriesTableViewCellC", "scrollViewDidChangeAdjustedContentInset"]
+- ["6SaveUp24FCategoriesTableViewCellC", "scrollViewDidEndDecelerating"]
+- ["6SaveUp24FCategoriesTableViewCellC", "scrollViewDidEndDragging"]
+- ["6SaveUp24FCategoriesTableViewCellC", "scrollViewDidEndScrollingAnimation"]
+- ["6SaveUp24FCategoriesTableViewCellC", "scrollViewDidEndZooming"]
+- ["6SaveUp24FCategoriesTableViewCellC", "scrollViewDidScroll"]
+- ["6SaveUp24FCategoriesTableViewCellC", "scrollViewDidScrollToTop"]
+- ["6SaveUp24FCategoriesTableViewCellC", "scrollViewDidZoom"]
+- ["6SaveUp24FCategoriesTableViewCellC", "scrollViewShouldScrollToTop"]
+- ["6SaveUp24FCategoriesTableViewCellC", "scrollViewWillBeginDecelerating"]
+- ["6SaveUp24FCategoriesTableViewCellC", "scrollViewWillBeginDragging"]
+- ["6SaveUp24FCategoriesTableViewCellC", "scrollViewWillBeginZooming"]
+- ["6SaveUp24FCategoriesTableViewCellC", "scrollViewWillEndDragging"]
 - ["6SaveUp24FCategoriesTableViewCellC", "setSelected"]
 - ["6SaveUp24FCategoriesTableViewCellC", "setShadowAndRoundedBorder"]
+- ["6SaveUp24FCategoriesTableViewCellC", "viewForZooming"]
+- ["6SaveUp24FCategoriesTableViewCellC", "viewForZoomingInScrollView"]
 - !private ["SH", "Api_Base_URL"]
 - ["SH", "CategoryHome"]
 - !private ["SH", "Encoding"]
@@ -357,18 +539,43 @@ depends-member:
 - !private ["SH", "awakeFromNib"]
 - !private ["SH", "bounds"]
 - !private ["SH", "catDel"]
+- !private ["SH", "categoryCollectionView"]
 - !private ["SH", "categoryHomeArray"]
+- ["SH", "collectionView"]
+- ["SH", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["SH", "cornerRadius"]
 - !private ["SH", "count"]
 - !private ["SH", "currentImage"]
+- !private ["SH", "dataSource"]
+- !private ["SH", "delegate"]
+- !private ["SH", "dequeueReusableCell"]
 - !private ["SH", "font"]
 - !private ["SH", "hitCategoryAPI"]
 - !private ["SH", "imageEdgeInsets"]
+- ["SH", "indexPathForPreferredFocusedView"]
+- ["SH", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["SH", "indexTitles"]
+- ["SH", "indexTitlesForCollectionView"]
 - ["SH", "init"]
 - !private ["SH", "jsonObject"]
 - !private ["SH", "layer"]
+- ["SH", "numberOfSections"]
+- ["SH", "numberOfSectionsInCollectionView"]
 - !private ["SH", "print"]
 - !private ["SH", "rawValue"]
+- ["SH", "scrollViewDidChangeAdjustedContentInset"]
+- ["SH", "scrollViewDidEndDecelerating"]
+- ["SH", "scrollViewDidEndDragging"]
+- ["SH", "scrollViewDidEndScrollingAnimation"]
+- ["SH", "scrollViewDidEndZooming"]
+- ["SH", "scrollViewDidScroll"]
+- ["SH", "scrollViewDidScrollToTop"]
+- ["SH", "scrollViewDidZoom"]
+- ["SH", "scrollViewShouldScrollToTop"]
+- ["SH", "scrollViewWillBeginDecelerating"]
+- ["SH", "scrollViewWillBeginDragging"]
+- ["SH", "scrollViewWillBeginZooming"]
+- ["SH", "scrollViewWillEndDragging"]
 - !private ["SH", "setSelected"]
 - !private ["SH", "size"]
 - !private ["SH", "subscript"]
@@ -376,6 +583,8 @@ depends-member:
 - !private ["SH", "titleEdgeInsets"]
 - !private ["SH", "titleLabel"]
 - !private ["SH", "utf8"]
+- ["SH", "viewForZooming"]
+- ["SH", "viewForZoomingInScrollView"]
 - !private ["So19NSJSONSerializationC", "jsonObject"]
 - !private ["So21NSAttributedStringKeya", "font"]
 - !private ["6SaveUp20KingfisherCompatibleP", "Encoding"]
@@ -419,21 +628,48 @@ depends-member:
 - !private ["So8NSCodingP", "awakeFromNib"]
 - !private ["So8NSCodingP", "bounds"]
 - !private ["So8NSCodingP", "catDel"]
+- !private ["So8NSCodingP", "categoryCollectionView"]
 - !private ["So8NSCodingP", "categoryHomeArray"]
+- ["So8NSCodingP", "collectionView"]
+- ["So8NSCodingP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So8NSCodingP", "cornerRadius"]
 - !private ["So8NSCodingP", "currentImage"]
+- !private ["So8NSCodingP", "dataSource"]
+- !private ["So8NSCodingP", "delegate"]
+- !private ["So8NSCodingP", "dequeueReusableCell"]
 - !private ["So8NSCodingP", "font"]
 - !private ["So8NSCodingP", "hitCategoryAPI"]
 - !private ["So8NSCodingP", "imageEdgeInsets"]
+- ["So8NSCodingP", "indexPathForPreferredFocusedView"]
+- ["So8NSCodingP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So8NSCodingP", "indexTitles"]
+- ["So8NSCodingP", "indexTitlesForCollectionView"]
 - !private ["So8NSCodingP", "init"]
 - !private ["So8NSCodingP", "layer"]
+- ["So8NSCodingP", "numberOfSections"]
+- ["So8NSCodingP", "numberOfSectionsInCollectionView"]
 - !private ["So8NSCodingP", "print"]
+- ["So8NSCodingP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So8NSCodingP", "scrollViewDidEndDecelerating"]
+- ["So8NSCodingP", "scrollViewDidEndDragging"]
+- ["So8NSCodingP", "scrollViewDidEndScrollingAnimation"]
+- ["So8NSCodingP", "scrollViewDidEndZooming"]
+- ["So8NSCodingP", "scrollViewDidScroll"]
+- ["So8NSCodingP", "scrollViewDidScrollToTop"]
+- ["So8NSCodingP", "scrollViewDidZoom"]
+- ["So8NSCodingP", "scrollViewShouldScrollToTop"]
+- ["So8NSCodingP", "scrollViewWillBeginDecelerating"]
+- ["So8NSCodingP", "scrollViewWillBeginDragging"]
+- ["So8NSCodingP", "scrollViewWillBeginZooming"]
+- ["So8NSCodingP", "scrollViewWillEndDragging"]
 - !private ["So8NSCodingP", "setSelected"]
 - !private ["So8NSCodingP", "size"]
 - !private ["So8NSCodingP", "subscript"]
 - !private ["So8NSCodingP", "text"]
 - !private ["So8NSCodingP", "titleEdgeInsets"]
 - !private ["So8NSCodingP", "titleLabel"]
+- ["So8NSCodingP", "viewForZooming"]
+- ["So8NSCodingP", "viewForZoomingInScrollView"]
 - !private ["So9NSCopyingP", "Key"]
 - !private ["So9NSCopyingP", "addingPercentEscapes"]
 - !private ["So9NSCopyingP", "init"]
@@ -461,6 +697,8 @@ depends-member:
 - ["So8NSObjectC", "CategoryHome"]
 - ["So8NSObjectC", "CategorySelectDelegate"]
 - !private ["So8NSObjectC", "Data"]
+- ["So8NSObjectC", "IndexPath"]
+- ["So8NSObjectC", "Int"]
 - !private ["So8NSObjectC", "JSONSerialization"]
 - !private ["So8NSObjectC", "Key"]
 - !private ["So8NSObjectC", "NSAttributedString"]
@@ -471,6 +709,8 @@ depends-member:
 - ["So8NSObjectC", "String"]
 - ["So8NSObjectC", "StringToURL"]
 - ["So8NSObjectC", "UIButton"]
+- ["So8NSObjectC", "UICollectionView"]
+- ["So8NSObjectC", "UICollectionViewCell"]
 - !private ["So8NSObjectC", "UIEdgeInsets"]
 - ["So8NSObjectC", "URL"]
 - !private ["So8NSObjectC", "addingPercentEscapes"]
@@ -487,17 +727,42 @@ depends-member:
 - ["So8NSObjectC", "btnTravel"]
 - ["So8NSObjectC", "btnTravelPressed"]
 - ["So8NSObjectC", "catDel"]
+- ["So8NSObjectC", "categoryCollectionView"]
 - ["So8NSObjectC", "categoryHomeArray"]
 - ["So8NSObjectC", "centerImageAndButton"]
+- ["So8NSObjectC", "collectionView"]
+- ["So8NSObjectC", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So8NSObjectC", "cornerRadius"]
 - !private ["So8NSObjectC", "currentImage"]
+- !private ["So8NSObjectC", "dataSource"]
+- !private ["So8NSObjectC", "delegate"]
+- !private ["So8NSObjectC", "dequeueReusableCell"]
 - !private ["So8NSObjectC", "font"]
 - ["So8NSObjectC", "hitCategoryAPI"]
 - !private ["So8NSObjectC", "imageEdgeInsets"]
+- ["So8NSObjectC", "indexPathForPreferredFocusedView"]
+- ["So8NSObjectC", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So8NSObjectC", "indexTitles"]
+- ["So8NSObjectC", "indexTitlesForCollectionView"]
 - ["So8NSObjectC", "init"]
 - !private ["So8NSObjectC", "jsonObject"]
 - !private ["So8NSObjectC", "layer"]
+- ["So8NSObjectC", "numberOfSections"]
+- ["So8NSObjectC", "numberOfSectionsInCollectionView"]
 - !private ["So8NSObjectC", "print"]
+- ["So8NSObjectC", "scrollViewDidChangeAdjustedContentInset"]
+- ["So8NSObjectC", "scrollViewDidEndDecelerating"]
+- ["So8NSObjectC", "scrollViewDidEndDragging"]
+- ["So8NSObjectC", "scrollViewDidEndScrollingAnimation"]
+- ["So8NSObjectC", "scrollViewDidEndZooming"]
+- ["So8NSObjectC", "scrollViewDidScroll"]
+- ["So8NSObjectC", "scrollViewDidScrollToTop"]
+- ["So8NSObjectC", "scrollViewDidZoom"]
+- ["So8NSObjectC", "scrollViewShouldScrollToTop"]
+- ["So8NSObjectC", "scrollViewWillBeginDecelerating"]
+- ["So8NSObjectC", "scrollViewWillBeginDragging"]
+- ["So8NSObjectC", "scrollViewWillBeginZooming"]
+- ["So8NSObjectC", "scrollViewWillEndDragging"]
 - ["So8NSObjectC", "setSelected"]
 - ["So8NSObjectC", "setShadowAndRoundedBorder"]
 - !private ["So8NSObjectC", "size"]
@@ -505,6 +770,8 @@ depends-member:
 - !private ["So8NSObjectC", "text"]
 - !private ["So8NSObjectC", "titleEdgeInsets"]
 - !private ["So8NSObjectC", "titleLabel"]
+- ["So8NSObjectC", "viewForZooming"]
+- ["So8NSObjectC", "viewForZoomingInScrollView"]
 - !private ["So8NSObjectP", "Api_Base_URL"]
 - ["So8NSObjectP", "CategoryHome"]
 - !private ["So8NSObjectP", "JSONSerialization"]
@@ -520,22 +787,49 @@ depends-member:
 - !private ["So8NSObjectP", "awakeFromNib"]
 - !private ["So8NSObjectP", "bounds"]
 - !private ["So8NSObjectP", "catDel"]
+- !private ["So8NSObjectP", "categoryCollectionView"]
 - !private ["So8NSObjectP", "categoryHomeArray"]
+- ["So8NSObjectP", "collectionView"]
+- ["So8NSObjectP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So8NSObjectP", "cornerRadius"]
 - !private ["So8NSObjectP", "currentImage"]
+- !private ["So8NSObjectP", "dataSource"]
+- !private ["So8NSObjectP", "delegate"]
+- !private ["So8NSObjectP", "dequeueReusableCell"]
 - !private ["So8NSObjectP", "font"]
 - !private ["So8NSObjectP", "hitCategoryAPI"]
 - !private ["So8NSObjectP", "imageEdgeInsets"]
+- ["So8NSObjectP", "indexPathForPreferredFocusedView"]
+- ["So8NSObjectP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So8NSObjectP", "indexTitles"]
+- ["So8NSObjectP", "indexTitlesForCollectionView"]
 - !private ["So8NSObjectP", "init"]
 - !private ["So8NSObjectP", "jsonObject"]
 - !private ["So8NSObjectP", "layer"]
+- ["So8NSObjectP", "numberOfSections"]
+- ["So8NSObjectP", "numberOfSectionsInCollectionView"]
 - !private ["So8NSObjectP", "print"]
+- ["So8NSObjectP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So8NSObjectP", "scrollViewDidEndDecelerating"]
+- ["So8NSObjectP", "scrollViewDidEndDragging"]
+- ["So8NSObjectP", "scrollViewDidEndScrollingAnimation"]
+- ["So8NSObjectP", "scrollViewDidEndZooming"]
+- ["So8NSObjectP", "scrollViewDidScroll"]
+- ["So8NSObjectP", "scrollViewDidScrollToTop"]
+- ["So8NSObjectP", "scrollViewDidZoom"]
+- ["So8NSObjectP", "scrollViewShouldScrollToTop"]
+- ["So8NSObjectP", "scrollViewWillBeginDecelerating"]
+- ["So8NSObjectP", "scrollViewWillBeginDragging"]
+- ["So8NSObjectP", "scrollViewWillBeginZooming"]
+- ["So8NSObjectP", "scrollViewWillEndDragging"]
 - !private ["So8NSObjectP", "setSelected"]
 - !private ["So8NSObjectP", "size"]
 - !private ["So8NSObjectP", "subscript"]
 - !private ["So8NSObjectP", "text"]
 - !private ["So8NSObjectP", "titleEdgeInsets"]
 - !private ["So8NSObjectP", "titleLabel"]
+- ["So8NSObjectP", "viewForZooming"]
+- ["So8NSObjectP", "viewForZoomingInScrollView"]
 - !private ["So14NSSecureCodingP", "Key"]
 - !private ["So14NSSecureCodingP", "addingPercentEscapes"]
 - !private ["So14NSSecureCodingP", "cornerRadius"]
@@ -545,6 +839,8 @@ depends-member:
 - !private ["So8NSStringC", "addingPercentEscapes"]
 - !private ["So8NSStringC", "size"]
 - !private ["So5NSURLC", "init"]
+- !private ["Sq", "dataSource"]
+- !private ["Sq", "delegate"]
 - !private ["6SaveUp11PlaceholderP", "size"]
 - !private ["Sk", "append"]
 - !private ["Sk", "count"]
@@ -598,19 +894,46 @@ depends-member:
 - !private ["So29UIAccessibilityIdentificationP", "awakeFromNib"]
 - !private ["So29UIAccessibilityIdentificationP", "bounds"]
 - !private ["So29UIAccessibilityIdentificationP", "catDel"]
+- !private ["So29UIAccessibilityIdentificationP", "categoryCollectionView"]
 - !private ["So29UIAccessibilityIdentificationP", "categoryHomeArray"]
+- ["So29UIAccessibilityIdentificationP", "collectionView"]
+- ["So29UIAccessibilityIdentificationP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So29UIAccessibilityIdentificationP", "currentImage"]
+- !private ["So29UIAccessibilityIdentificationP", "dataSource"]
+- !private ["So29UIAccessibilityIdentificationP", "delegate"]
+- !private ["So29UIAccessibilityIdentificationP", "dequeueReusableCell"]
 - !private ["So29UIAccessibilityIdentificationP", "font"]
 - !private ["So29UIAccessibilityIdentificationP", "hitCategoryAPI"]
 - !private ["So29UIAccessibilityIdentificationP", "imageEdgeInsets"]
+- ["So29UIAccessibilityIdentificationP", "indexPathForPreferredFocusedView"]
+- ["So29UIAccessibilityIdentificationP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So29UIAccessibilityIdentificationP", "indexTitles"]
+- ["So29UIAccessibilityIdentificationP", "indexTitlesForCollectionView"]
 - !private ["So29UIAccessibilityIdentificationP", "init"]
 - !private ["So29UIAccessibilityIdentificationP", "layer"]
+- ["So29UIAccessibilityIdentificationP", "numberOfSections"]
+- ["So29UIAccessibilityIdentificationP", "numberOfSectionsInCollectionView"]
 - !private ["So29UIAccessibilityIdentificationP", "print"]
+- ["So29UIAccessibilityIdentificationP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So29UIAccessibilityIdentificationP", "scrollViewDidEndDecelerating"]
+- ["So29UIAccessibilityIdentificationP", "scrollViewDidEndDragging"]
+- ["So29UIAccessibilityIdentificationP", "scrollViewDidEndScrollingAnimation"]
+- ["So29UIAccessibilityIdentificationP", "scrollViewDidEndZooming"]
+- ["So29UIAccessibilityIdentificationP", "scrollViewDidScroll"]
+- ["So29UIAccessibilityIdentificationP", "scrollViewDidScrollToTop"]
+- ["So29UIAccessibilityIdentificationP", "scrollViewDidZoom"]
+- ["So29UIAccessibilityIdentificationP", "scrollViewShouldScrollToTop"]
+- ["So29UIAccessibilityIdentificationP", "scrollViewWillBeginDecelerating"]
+- ["So29UIAccessibilityIdentificationP", "scrollViewWillBeginDragging"]
+- ["So29UIAccessibilityIdentificationP", "scrollViewWillBeginZooming"]
+- ["So29UIAccessibilityIdentificationP", "scrollViewWillEndDragging"]
 - !private ["So29UIAccessibilityIdentificationP", "setSelected"]
 - !private ["So29UIAccessibilityIdentificationP", "size"]
 - !private ["So29UIAccessibilityIdentificationP", "text"]
 - !private ["So29UIAccessibilityIdentificationP", "titleEdgeInsets"]
 - !private ["So29UIAccessibilityIdentificationP", "titleLabel"]
+- ["So29UIAccessibilityIdentificationP", "viewForZooming"]
+- ["So29UIAccessibilityIdentificationP", "viewForZoomingInScrollView"]
 - !private ["So12UIAppearanceP", "Api_Base_URL"]
 - ["So12UIAppearanceP", "CategoryHome"]
 - !private ["So12UIAppearanceP", "JSONSerialization"]
@@ -624,18 +947,45 @@ depends-member:
 - !private ["So12UIAppearanceP", "awakeFromNib"]
 - !private ["So12UIAppearanceP", "bounds"]
 - !private ["So12UIAppearanceP", "catDel"]
+- !private ["So12UIAppearanceP", "categoryCollectionView"]
 - !private ["So12UIAppearanceP", "categoryHomeArray"]
+- ["So12UIAppearanceP", "collectionView"]
+- ["So12UIAppearanceP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So12UIAppearanceP", "currentImage"]
+- !private ["So12UIAppearanceP", "dataSource"]
+- !private ["So12UIAppearanceP", "delegate"]
+- !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "font"]
 - !private ["So12UIAppearanceP", "hitCategoryAPI"]
 - !private ["So12UIAppearanceP", "imageEdgeInsets"]
+- ["So12UIAppearanceP", "indexPathForPreferredFocusedView"]
+- ["So12UIAppearanceP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So12UIAppearanceP", "indexTitles"]
+- ["So12UIAppearanceP", "indexTitlesForCollectionView"]
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "layer"]
+- ["So12UIAppearanceP", "numberOfSections"]
+- ["So12UIAppearanceP", "numberOfSectionsInCollectionView"]
 - !private ["So12UIAppearanceP", "print"]
+- ["So12UIAppearanceP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So12UIAppearanceP", "scrollViewDidEndDecelerating"]
+- ["So12UIAppearanceP", "scrollViewDidEndDragging"]
+- ["So12UIAppearanceP", "scrollViewDidEndScrollingAnimation"]
+- ["So12UIAppearanceP", "scrollViewDidEndZooming"]
+- ["So12UIAppearanceP", "scrollViewDidScroll"]
+- ["So12UIAppearanceP", "scrollViewDidScrollToTop"]
+- ["So12UIAppearanceP", "scrollViewDidZoom"]
+- ["So12UIAppearanceP", "scrollViewShouldScrollToTop"]
+- ["So12UIAppearanceP", "scrollViewWillBeginDecelerating"]
+- ["So12UIAppearanceP", "scrollViewWillBeginDragging"]
+- ["So12UIAppearanceP", "scrollViewWillBeginZooming"]
+- ["So12UIAppearanceP", "scrollViewWillEndDragging"]
 - !private ["So12UIAppearanceP", "setSelected"]
 - !private ["So12UIAppearanceP", "text"]
 - !private ["So12UIAppearanceP", "titleEdgeInsets"]
 - !private ["So12UIAppearanceP", "titleLabel"]
+- ["So12UIAppearanceP", "viewForZooming"]
+- ["So12UIAppearanceP", "viewForZoomingInScrollView"]
 - !private ["So21UIAppearanceContainerP", "Api_Base_URL"]
 - ["So21UIAppearanceContainerP", "CategoryHome"]
 - !private ["So21UIAppearanceContainerP", "JSONSerialization"]
@@ -649,18 +999,45 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "awakeFromNib"]
 - !private ["So21UIAppearanceContainerP", "bounds"]
 - !private ["So21UIAppearanceContainerP", "catDel"]
+- !private ["So21UIAppearanceContainerP", "categoryCollectionView"]
 - !private ["So21UIAppearanceContainerP", "categoryHomeArray"]
+- ["So21UIAppearanceContainerP", "collectionView"]
+- ["So21UIAppearanceContainerP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So21UIAppearanceContainerP", "currentImage"]
+- !private ["So21UIAppearanceContainerP", "dataSource"]
+- !private ["So21UIAppearanceContainerP", "delegate"]
+- !private ["So21UIAppearanceContainerP", "dequeueReusableCell"]
 - !private ["So21UIAppearanceContainerP", "font"]
 - !private ["So21UIAppearanceContainerP", "hitCategoryAPI"]
 - !private ["So21UIAppearanceContainerP", "imageEdgeInsets"]
+- ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
+- ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So21UIAppearanceContainerP", "indexTitles"]
+- ["So21UIAppearanceContainerP", "indexTitlesForCollectionView"]
 - !private ["So21UIAppearanceContainerP", "init"]
 - !private ["So21UIAppearanceContainerP", "layer"]
+- ["So21UIAppearanceContainerP", "numberOfSections"]
+- ["So21UIAppearanceContainerP", "numberOfSectionsInCollectionView"]
 - !private ["So21UIAppearanceContainerP", "print"]
+- ["So21UIAppearanceContainerP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So21UIAppearanceContainerP", "scrollViewDidEndDecelerating"]
+- ["So21UIAppearanceContainerP", "scrollViewDidEndDragging"]
+- ["So21UIAppearanceContainerP", "scrollViewDidEndScrollingAnimation"]
+- ["So21UIAppearanceContainerP", "scrollViewDidEndZooming"]
+- ["So21UIAppearanceContainerP", "scrollViewDidScroll"]
+- ["So21UIAppearanceContainerP", "scrollViewDidScrollToTop"]
+- ["So21UIAppearanceContainerP", "scrollViewDidZoom"]
+- ["So21UIAppearanceContainerP", "scrollViewShouldScrollToTop"]
+- ["So21UIAppearanceContainerP", "scrollViewWillBeginDecelerating"]
+- ["So21UIAppearanceContainerP", "scrollViewWillBeginDragging"]
+- ["So21UIAppearanceContainerP", "scrollViewWillBeginZooming"]
+- ["So21UIAppearanceContainerP", "scrollViewWillEndDragging"]
 - !private ["So21UIAppearanceContainerP", "setSelected"]
 - !private ["So21UIAppearanceContainerP", "text"]
 - !private ["So21UIAppearanceContainerP", "titleEdgeInsets"]
 - !private ["So21UIAppearanceContainerP", "titleLabel"]
+- ["So21UIAppearanceContainerP", "viewForZooming"]
+- ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
 - ["So8UIButtonC", "Bool"]
 - ["So8UIButtonC", "CGFloat"]
 - !private ["So8UIButtonC", "NSAttributedString"]
@@ -672,6 +1049,81 @@ depends-member:
 - !private ["So8UIButtonC", "layer"]
 - !private ["So8UIButtonC", "titleEdgeInsets"]
 - !private ["So8UIButtonC", "titleLabel"]
+- !private ["So16UICollectionViewC", "dataSource"]
+- !private ["So16UICollectionViewC", "delegate"]
+- !private ["So16UICollectionViewC", "dequeueReusableCell"]
+- !private ["So26UICollectionViewDataSourceP", "Api_Base_URL"]
+- ["So26UICollectionViewDataSourceP", "CategoryHome"]
+- !private ["So26UICollectionViewDataSourceP", "JSONSerialization"]
+- !private ["So26UICollectionViewDataSourceP", "NSData"]
+- !private ["So26UICollectionViewDataSourceP", "NSURL"]
+- !private ["So26UICollectionViewDataSourceP", "String"]
+- !private ["So26UICollectionViewDataSourceP", "URL"]
+- ["So26UICollectionViewDataSourceP", ""]
+- !private ["So26UICollectionViewDataSourceP", "catDel"]
+- !private ["So26UICollectionViewDataSourceP", "categoryCollectionView"]
+- !private ["So26UICollectionViewDataSourceP", "categoryHomeArray"]
+- ["So26UICollectionViewDataSourceP", "collectionView"]
+- ["So26UICollectionViewDataSourceP", "collectionViewDidEndMultipleSelectionInteraction"]
+- !private ["So26UICollectionViewDataSourceP", "hitCategoryAPI"]
+- ["So26UICollectionViewDataSourceP", "indexPathForPreferredFocusedView"]
+- ["So26UICollectionViewDataSourceP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So26UICollectionViewDataSourceP", "indexTitles"]
+- ["So26UICollectionViewDataSourceP", "indexTitlesForCollectionView"]
+- ["So26UICollectionViewDataSourceP", "numberOfSections"]
+- ["So26UICollectionViewDataSourceP", "numberOfSectionsInCollectionView"]
+- !private ["So26UICollectionViewDataSourceP", "print"]
+- ["So26UICollectionViewDataSourceP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So26UICollectionViewDataSourceP", "scrollViewDidEndDecelerating"]
+- ["So26UICollectionViewDataSourceP", "scrollViewDidEndDragging"]
+- ["So26UICollectionViewDataSourceP", "scrollViewDidEndScrollingAnimation"]
+- ["So26UICollectionViewDataSourceP", "scrollViewDidEndZooming"]
+- ["So26UICollectionViewDataSourceP", "scrollViewDidScroll"]
+- ["So26UICollectionViewDataSourceP", "scrollViewDidScrollToTop"]
+- ["So26UICollectionViewDataSourceP", "scrollViewDidZoom"]
+- ["So26UICollectionViewDataSourceP", "scrollViewShouldScrollToTop"]
+- ["So26UICollectionViewDataSourceP", "scrollViewWillBeginDecelerating"]
+- ["So26UICollectionViewDataSourceP", "scrollViewWillBeginDragging"]
+- ["So26UICollectionViewDataSourceP", "scrollViewWillBeginZooming"]
+- ["So26UICollectionViewDataSourceP", "scrollViewWillEndDragging"]
+- ["So26UICollectionViewDataSourceP", "viewForZooming"]
+- ["So26UICollectionViewDataSourceP", "viewForZoomingInScrollView"]
+- !private ["So24UICollectionViewDelegateP", "Api_Base_URL"]
+- ["So24UICollectionViewDelegateP", "CategoryHome"]
+- !private ["So24UICollectionViewDelegateP", "JSONSerialization"]
+- !private ["So24UICollectionViewDelegateP", "NSData"]
+- !private ["So24UICollectionViewDelegateP", "NSURL"]
+- !private ["So24UICollectionViewDelegateP", "String"]
+- !private ["So24UICollectionViewDelegateP", "URL"]
+- ["So24UICollectionViewDelegateP", ""]
+- !private ["So24UICollectionViewDelegateP", "catDel"]
+- !private ["So24UICollectionViewDelegateP", "categoryCollectionView"]
+- !private ["So24UICollectionViewDelegateP", "categoryHomeArray"]
+- ["So24UICollectionViewDelegateP", "collectionView"]
+- ["So24UICollectionViewDelegateP", "collectionViewDidEndMultipleSelectionInteraction"]
+- !private ["So24UICollectionViewDelegateP", "hitCategoryAPI"]
+- ["So24UICollectionViewDelegateP", "indexPathForPreferredFocusedView"]
+- ["So24UICollectionViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So24UICollectionViewDelegateP", "indexTitles"]
+- ["So24UICollectionViewDelegateP", "indexTitlesForCollectionView"]
+- ["So24UICollectionViewDelegateP", "numberOfSections"]
+- ["So24UICollectionViewDelegateP", "numberOfSectionsInCollectionView"]
+- !private ["So24UICollectionViewDelegateP", "print"]
+- ["So24UICollectionViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So24UICollectionViewDelegateP", "scrollViewDidEndDecelerating"]
+- ["So24UICollectionViewDelegateP", "scrollViewDidEndDragging"]
+- ["So24UICollectionViewDelegateP", "scrollViewDidEndScrollingAnimation"]
+- ["So24UICollectionViewDelegateP", "scrollViewDidEndZooming"]
+- ["So24UICollectionViewDelegateP", "scrollViewDidScroll"]
+- ["So24UICollectionViewDelegateP", "scrollViewDidScrollToTop"]
+- ["So24UICollectionViewDelegateP", "scrollViewDidZoom"]
+- ["So24UICollectionViewDelegateP", "scrollViewShouldScrollToTop"]
+- ["So24UICollectionViewDelegateP", "scrollViewWillBeginDecelerating"]
+- ["So24UICollectionViewDelegateP", "scrollViewWillBeginDragging"]
+- ["So24UICollectionViewDelegateP", "scrollViewWillBeginZooming"]
+- ["So24UICollectionViewDelegateP", "scrollViewWillEndDragging"]
+- ["So24UICollectionViewDelegateP", "viewForZooming"]
+- ["So24UICollectionViewDelegateP", "viewForZoomingInScrollView"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "font"]
 - !private ["So30UIContentSizeCategoryAdjustingP", "text"]
 - ["So9UIControlC", "Bool"]
@@ -698,18 +1150,48 @@ depends-member:
 - !private ["So17UICoordinateSpaceP", "awakeFromNib"]
 - !private ["So17UICoordinateSpaceP", "bounds"]
 - !private ["So17UICoordinateSpaceP", "catDel"]
+- !private ["So17UICoordinateSpaceP", "categoryCollectionView"]
 - !private ["So17UICoordinateSpaceP", "categoryHomeArray"]
+- ["So17UICoordinateSpaceP", "collectionView"]
+- ["So17UICoordinateSpaceP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So17UICoordinateSpaceP", "currentImage"]
+- !private ["So17UICoordinateSpaceP", "dataSource"]
+- !private ["So17UICoordinateSpaceP", "delegate"]
+- !private ["So17UICoordinateSpaceP", "dequeueReusableCell"]
 - !private ["So17UICoordinateSpaceP", "font"]
 - !private ["So17UICoordinateSpaceP", "hitCategoryAPI"]
 - !private ["So17UICoordinateSpaceP", "imageEdgeInsets"]
+- ["So17UICoordinateSpaceP", "indexPathForPreferredFocusedView"]
+- ["So17UICoordinateSpaceP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So17UICoordinateSpaceP", "indexTitles"]
+- ["So17UICoordinateSpaceP", "indexTitlesForCollectionView"]
 - !private ["So17UICoordinateSpaceP", "init"]
 - !private ["So17UICoordinateSpaceP", "layer"]
+- ["So17UICoordinateSpaceP", "numberOfSections"]
+- ["So17UICoordinateSpaceP", "numberOfSectionsInCollectionView"]
 - !private ["So17UICoordinateSpaceP", "print"]
+- ["So17UICoordinateSpaceP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So17UICoordinateSpaceP", "scrollViewDidEndDecelerating"]
+- ["So17UICoordinateSpaceP", "scrollViewDidEndDragging"]
+- ["So17UICoordinateSpaceP", "scrollViewDidEndScrollingAnimation"]
+- ["So17UICoordinateSpaceP", "scrollViewDidEndZooming"]
+- ["So17UICoordinateSpaceP", "scrollViewDidScroll"]
+- ["So17UICoordinateSpaceP", "scrollViewDidScrollToTop"]
+- ["So17UICoordinateSpaceP", "scrollViewDidZoom"]
+- ["So17UICoordinateSpaceP", "scrollViewShouldScrollToTop"]
+- ["So17UICoordinateSpaceP", "scrollViewWillBeginDecelerating"]
+- ["So17UICoordinateSpaceP", "scrollViewWillBeginDragging"]
+- ["So17UICoordinateSpaceP", "scrollViewWillBeginZooming"]
+- ["So17UICoordinateSpaceP", "scrollViewWillEndDragging"]
 - !private ["So17UICoordinateSpaceP", "setSelected"]
 - !private ["So17UICoordinateSpaceP", "text"]
 - !private ["So17UICoordinateSpaceP", "titleEdgeInsets"]
 - !private ["So17UICoordinateSpaceP", "titleLabel"]
+- ["So17UICoordinateSpaceP", "viewForZooming"]
+- ["So17UICoordinateSpaceP", "viewForZoomingInScrollView"]
+- !private ["So23UIDataSourceTranslatingP", "dataSource"]
+- !private ["So23UIDataSourceTranslatingP", "delegate"]
+- !private ["So23UIDataSourceTranslatingP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "Api_Base_URL"]
 - ["So13UIDynamicItemP", "CategoryHome"]
 - !private ["So13UIDynamicItemP", "JSONSerialization"]
@@ -723,18 +1205,45 @@ depends-member:
 - !private ["So13UIDynamicItemP", "awakeFromNib"]
 - !private ["So13UIDynamicItemP", "bounds"]
 - !private ["So13UIDynamicItemP", "catDel"]
+- !private ["So13UIDynamicItemP", "categoryCollectionView"]
 - !private ["So13UIDynamicItemP", "categoryHomeArray"]
+- ["So13UIDynamicItemP", "collectionView"]
+- ["So13UIDynamicItemP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So13UIDynamicItemP", "currentImage"]
+- !private ["So13UIDynamicItemP", "dataSource"]
+- !private ["So13UIDynamicItemP", "delegate"]
+- !private ["So13UIDynamicItemP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "font"]
 - !private ["So13UIDynamicItemP", "hitCategoryAPI"]
 - !private ["So13UIDynamicItemP", "imageEdgeInsets"]
+- ["So13UIDynamicItemP", "indexPathForPreferredFocusedView"]
+- ["So13UIDynamicItemP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So13UIDynamicItemP", "indexTitles"]
+- ["So13UIDynamicItemP", "indexTitlesForCollectionView"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "layer"]
+- ["So13UIDynamicItemP", "numberOfSections"]
+- ["So13UIDynamicItemP", "numberOfSectionsInCollectionView"]
 - !private ["So13UIDynamicItemP", "print"]
+- ["So13UIDynamicItemP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So13UIDynamicItemP", "scrollViewDidEndDecelerating"]
+- ["So13UIDynamicItemP", "scrollViewDidEndDragging"]
+- ["So13UIDynamicItemP", "scrollViewDidEndScrollingAnimation"]
+- ["So13UIDynamicItemP", "scrollViewDidEndZooming"]
+- ["So13UIDynamicItemP", "scrollViewDidScroll"]
+- ["So13UIDynamicItemP", "scrollViewDidScrollToTop"]
+- ["So13UIDynamicItemP", "scrollViewDidZoom"]
+- ["So13UIDynamicItemP", "scrollViewShouldScrollToTop"]
+- ["So13UIDynamicItemP", "scrollViewWillBeginDecelerating"]
+- ["So13UIDynamicItemP", "scrollViewWillBeginDragging"]
+- ["So13UIDynamicItemP", "scrollViewWillBeginZooming"]
+- ["So13UIDynamicItemP", "scrollViewWillEndDragging"]
 - !private ["So13UIDynamicItemP", "setSelected"]
 - !private ["So13UIDynamicItemP", "text"]
 - !private ["So13UIDynamicItemP", "titleEdgeInsets"]
 - !private ["So13UIDynamicItemP", "titleLabel"]
+- ["So13UIDynamicItemP", "viewForZooming"]
+- ["So13UIDynamicItemP", "viewForZoomingInScrollView"]
 - !private ["So12UIEdgeInsetsV", "init"]
 - !private ["So18UIFocusEnvironmentP", "Api_Base_URL"]
 - ["So18UIFocusEnvironmentP", "CategoryHome"]
@@ -749,18 +1258,45 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "awakeFromNib"]
 - !private ["So18UIFocusEnvironmentP", "bounds"]
 - !private ["So18UIFocusEnvironmentP", "catDel"]
+- !private ["So18UIFocusEnvironmentP", "categoryCollectionView"]
 - !private ["So18UIFocusEnvironmentP", "categoryHomeArray"]
+- ["So18UIFocusEnvironmentP", "collectionView"]
+- ["So18UIFocusEnvironmentP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So18UIFocusEnvironmentP", "currentImage"]
+- !private ["So18UIFocusEnvironmentP", "dataSource"]
+- !private ["So18UIFocusEnvironmentP", "delegate"]
+- !private ["So18UIFocusEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UIFocusEnvironmentP", "font"]
 - !private ["So18UIFocusEnvironmentP", "hitCategoryAPI"]
 - !private ["So18UIFocusEnvironmentP", "imageEdgeInsets"]
+- ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
+- ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So18UIFocusEnvironmentP", "indexTitles"]
+- ["So18UIFocusEnvironmentP", "indexTitlesForCollectionView"]
 - !private ["So18UIFocusEnvironmentP", "init"]
 - !private ["So18UIFocusEnvironmentP", "layer"]
+- ["So18UIFocusEnvironmentP", "numberOfSections"]
+- ["So18UIFocusEnvironmentP", "numberOfSectionsInCollectionView"]
 - !private ["So18UIFocusEnvironmentP", "print"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidEndDecelerating"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidEndDragging"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidEndScrollingAnimation"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidEndZooming"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidScroll"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidScrollToTop"]
+- ["So18UIFocusEnvironmentP", "scrollViewDidZoom"]
+- ["So18UIFocusEnvironmentP", "scrollViewShouldScrollToTop"]
+- ["So18UIFocusEnvironmentP", "scrollViewWillBeginDecelerating"]
+- ["So18UIFocusEnvironmentP", "scrollViewWillBeginDragging"]
+- ["So18UIFocusEnvironmentP", "scrollViewWillBeginZooming"]
+- ["So18UIFocusEnvironmentP", "scrollViewWillEndDragging"]
 - !private ["So18UIFocusEnvironmentP", "setSelected"]
 - !private ["So18UIFocusEnvironmentP", "text"]
 - !private ["So18UIFocusEnvironmentP", "titleEdgeInsets"]
 - !private ["So18UIFocusEnvironmentP", "titleLabel"]
+- ["So18UIFocusEnvironmentP", "viewForZooming"]
+- ["So18UIFocusEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So11UIFocusItemP", "Api_Base_URL"]
 - ["So11UIFocusItemP", "CategoryHome"]
 - !private ["So11UIFocusItemP", "JSONSerialization"]
@@ -774,18 +1310,45 @@ depends-member:
 - !private ["So11UIFocusItemP", "awakeFromNib"]
 - !private ["So11UIFocusItemP", "bounds"]
 - !private ["So11UIFocusItemP", "catDel"]
+- !private ["So11UIFocusItemP", "categoryCollectionView"]
 - !private ["So11UIFocusItemP", "categoryHomeArray"]
+- ["So11UIFocusItemP", "collectionView"]
+- ["So11UIFocusItemP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So11UIFocusItemP", "currentImage"]
+- !private ["So11UIFocusItemP", "dataSource"]
+- !private ["So11UIFocusItemP", "delegate"]
+- !private ["So11UIFocusItemP", "dequeueReusableCell"]
 - !private ["So11UIFocusItemP", "font"]
 - !private ["So11UIFocusItemP", "hitCategoryAPI"]
 - !private ["So11UIFocusItemP", "imageEdgeInsets"]
+- ["So11UIFocusItemP", "indexPathForPreferredFocusedView"]
+- ["So11UIFocusItemP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So11UIFocusItemP", "indexTitles"]
+- ["So11UIFocusItemP", "indexTitlesForCollectionView"]
 - !private ["So11UIFocusItemP", "init"]
 - !private ["So11UIFocusItemP", "layer"]
+- ["So11UIFocusItemP", "numberOfSections"]
+- ["So11UIFocusItemP", "numberOfSectionsInCollectionView"]
 - !private ["So11UIFocusItemP", "print"]
+- ["So11UIFocusItemP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So11UIFocusItemP", "scrollViewDidEndDecelerating"]
+- ["So11UIFocusItemP", "scrollViewDidEndDragging"]
+- ["So11UIFocusItemP", "scrollViewDidEndScrollingAnimation"]
+- ["So11UIFocusItemP", "scrollViewDidEndZooming"]
+- ["So11UIFocusItemP", "scrollViewDidScroll"]
+- ["So11UIFocusItemP", "scrollViewDidScrollToTop"]
+- ["So11UIFocusItemP", "scrollViewDidZoom"]
+- ["So11UIFocusItemP", "scrollViewShouldScrollToTop"]
+- ["So11UIFocusItemP", "scrollViewWillBeginDecelerating"]
+- ["So11UIFocusItemP", "scrollViewWillBeginDragging"]
+- ["So11UIFocusItemP", "scrollViewWillBeginZooming"]
+- ["So11UIFocusItemP", "scrollViewWillEndDragging"]
 - !private ["So11UIFocusItemP", "setSelected"]
 - !private ["So11UIFocusItemP", "text"]
 - !private ["So11UIFocusItemP", "titleEdgeInsets"]
 - !private ["So11UIFocusItemP", "titleLabel"]
+- ["So11UIFocusItemP", "viewForZooming"]
+- ["So11UIFocusItemP", "viewForZoomingInScrollView"]
 - !private ["So20UIFocusItemContainerP", "Api_Base_URL"]
 - ["So20UIFocusItemContainerP", "CategoryHome"]
 - !private ["So20UIFocusItemContainerP", "JSONSerialization"]
@@ -799,18 +1362,48 @@ depends-member:
 - !private ["So20UIFocusItemContainerP", "awakeFromNib"]
 - !private ["So20UIFocusItemContainerP", "bounds"]
 - !private ["So20UIFocusItemContainerP", "catDel"]
+- !private ["So20UIFocusItemContainerP", "categoryCollectionView"]
 - !private ["So20UIFocusItemContainerP", "categoryHomeArray"]
+- ["So20UIFocusItemContainerP", "collectionView"]
+- ["So20UIFocusItemContainerP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So20UIFocusItemContainerP", "currentImage"]
+- !private ["So20UIFocusItemContainerP", "dataSource"]
+- !private ["So20UIFocusItemContainerP", "delegate"]
+- !private ["So20UIFocusItemContainerP", "dequeueReusableCell"]
 - !private ["So20UIFocusItemContainerP", "font"]
 - !private ["So20UIFocusItemContainerP", "hitCategoryAPI"]
 - !private ["So20UIFocusItemContainerP", "imageEdgeInsets"]
+- ["So20UIFocusItemContainerP", "indexPathForPreferredFocusedView"]
+- ["So20UIFocusItemContainerP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So20UIFocusItemContainerP", "indexTitles"]
+- ["So20UIFocusItemContainerP", "indexTitlesForCollectionView"]
 - !private ["So20UIFocusItemContainerP", "init"]
 - !private ["So20UIFocusItemContainerP", "layer"]
+- ["So20UIFocusItemContainerP", "numberOfSections"]
+- ["So20UIFocusItemContainerP", "numberOfSectionsInCollectionView"]
 - !private ["So20UIFocusItemContainerP", "print"]
+- ["So20UIFocusItemContainerP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So20UIFocusItemContainerP", "scrollViewDidEndDecelerating"]
+- ["So20UIFocusItemContainerP", "scrollViewDidEndDragging"]
+- ["So20UIFocusItemContainerP", "scrollViewDidEndScrollingAnimation"]
+- ["So20UIFocusItemContainerP", "scrollViewDidEndZooming"]
+- ["So20UIFocusItemContainerP", "scrollViewDidScroll"]
+- ["So20UIFocusItemContainerP", "scrollViewDidScrollToTop"]
+- ["So20UIFocusItemContainerP", "scrollViewDidZoom"]
+- ["So20UIFocusItemContainerP", "scrollViewShouldScrollToTop"]
+- ["So20UIFocusItemContainerP", "scrollViewWillBeginDecelerating"]
+- ["So20UIFocusItemContainerP", "scrollViewWillBeginDragging"]
+- ["So20UIFocusItemContainerP", "scrollViewWillBeginZooming"]
+- ["So20UIFocusItemContainerP", "scrollViewWillEndDragging"]
 - !private ["So20UIFocusItemContainerP", "setSelected"]
 - !private ["So20UIFocusItemContainerP", "text"]
 - !private ["So20UIFocusItemContainerP", "titleEdgeInsets"]
 - !private ["So20UIFocusItemContainerP", "titleLabel"]
+- ["So20UIFocusItemContainerP", "viewForZooming"]
+- ["So20UIFocusItemContainerP", "viewForZoomingInScrollView"]
+- !private ["So30UIFocusItemScrollableContainerP", "dataSource"]
+- !private ["So30UIFocusItemScrollableContainerP", "delegate"]
+- !private ["So30UIFocusItemScrollableContainerP", "dequeueReusableCell"]
 - !private ["So27UIGestureRecognizerDelegateP", "Api_Base_URL"]
 - ["So27UIGestureRecognizerDelegateP", "CategoryHome"]
 - !private ["So27UIGestureRecognizerDelegateP", "JSONSerialization"]
@@ -821,11 +1414,35 @@ depends-member:
 - ["So27UIGestureRecognizerDelegateP", ""]
 - !private ["So27UIGestureRecognizerDelegateP", "awakeFromNib"]
 - !private ["So27UIGestureRecognizerDelegateP", "catDel"]
+- !private ["So27UIGestureRecognizerDelegateP", "categoryCollectionView"]
 - !private ["So27UIGestureRecognizerDelegateP", "categoryHomeArray"]
+- ["So27UIGestureRecognizerDelegateP", "collectionView"]
+- ["So27UIGestureRecognizerDelegateP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So27UIGestureRecognizerDelegateP", "hitCategoryAPI"]
+- ["So27UIGestureRecognizerDelegateP", "indexPathForPreferredFocusedView"]
+- ["So27UIGestureRecognizerDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So27UIGestureRecognizerDelegateP", "indexTitles"]
+- ["So27UIGestureRecognizerDelegateP", "indexTitlesForCollectionView"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
+- ["So27UIGestureRecognizerDelegateP", "numberOfSections"]
+- ["So27UIGestureRecognizerDelegateP", "numberOfSectionsInCollectionView"]
 - !private ["So27UIGestureRecognizerDelegateP", "print"]
+- ["So27UIGestureRecognizerDelegateP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So27UIGestureRecognizerDelegateP", "scrollViewDidEndDecelerating"]
+- ["So27UIGestureRecognizerDelegateP", "scrollViewDidEndDragging"]
+- ["So27UIGestureRecognizerDelegateP", "scrollViewDidEndScrollingAnimation"]
+- ["So27UIGestureRecognizerDelegateP", "scrollViewDidEndZooming"]
+- ["So27UIGestureRecognizerDelegateP", "scrollViewDidScroll"]
+- ["So27UIGestureRecognizerDelegateP", "scrollViewDidScrollToTop"]
+- ["So27UIGestureRecognizerDelegateP", "scrollViewDidZoom"]
+- ["So27UIGestureRecognizerDelegateP", "scrollViewShouldScrollToTop"]
+- ["So27UIGestureRecognizerDelegateP", "scrollViewWillBeginDecelerating"]
+- ["So27UIGestureRecognizerDelegateP", "scrollViewWillBeginDragging"]
+- ["So27UIGestureRecognizerDelegateP", "scrollViewWillBeginZooming"]
+- ["So27UIGestureRecognizerDelegateP", "scrollViewWillEndDragging"]
 - !private ["So27UIGestureRecognizerDelegateP", "setSelected"]
+- ["So27UIGestureRecognizerDelegateP", "viewForZooming"]
+- ["So27UIGestureRecognizerDelegateP", "viewForZoomingInScrollView"]
 - !private ["So7UIImageC", "size"]
 - !private ["So39UIItemProviderPresentationSizeProvidingP", "size"]
 - !private ["So7UILabelC", "font"]
@@ -843,18 +1460,45 @@ depends-member:
 - !private ["So24UILargeContentViewerItemP", "awakeFromNib"]
 - !private ["So24UILargeContentViewerItemP", "bounds"]
 - !private ["So24UILargeContentViewerItemP", "catDel"]
+- !private ["So24UILargeContentViewerItemP", "categoryCollectionView"]
 - !private ["So24UILargeContentViewerItemP", "categoryHomeArray"]
+- ["So24UILargeContentViewerItemP", "collectionView"]
+- ["So24UILargeContentViewerItemP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So24UILargeContentViewerItemP", "currentImage"]
+- !private ["So24UILargeContentViewerItemP", "dataSource"]
+- !private ["So24UILargeContentViewerItemP", "delegate"]
+- !private ["So24UILargeContentViewerItemP", "dequeueReusableCell"]
 - !private ["So24UILargeContentViewerItemP", "font"]
 - !private ["So24UILargeContentViewerItemP", "hitCategoryAPI"]
 - !private ["So24UILargeContentViewerItemP", "imageEdgeInsets"]
+- ["So24UILargeContentViewerItemP", "indexPathForPreferredFocusedView"]
+- ["So24UILargeContentViewerItemP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So24UILargeContentViewerItemP", "indexTitles"]
+- ["So24UILargeContentViewerItemP", "indexTitlesForCollectionView"]
 - !private ["So24UILargeContentViewerItemP", "init"]
 - !private ["So24UILargeContentViewerItemP", "layer"]
+- ["So24UILargeContentViewerItemP", "numberOfSections"]
+- ["So24UILargeContentViewerItemP", "numberOfSectionsInCollectionView"]
 - !private ["So24UILargeContentViewerItemP", "print"]
+- ["So24UILargeContentViewerItemP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So24UILargeContentViewerItemP", "scrollViewDidEndDecelerating"]
+- ["So24UILargeContentViewerItemP", "scrollViewDidEndDragging"]
+- ["So24UILargeContentViewerItemP", "scrollViewDidEndScrollingAnimation"]
+- ["So24UILargeContentViewerItemP", "scrollViewDidEndZooming"]
+- ["So24UILargeContentViewerItemP", "scrollViewDidScroll"]
+- ["So24UILargeContentViewerItemP", "scrollViewDidScrollToTop"]
+- ["So24UILargeContentViewerItemP", "scrollViewDidZoom"]
+- ["So24UILargeContentViewerItemP", "scrollViewShouldScrollToTop"]
+- ["So24UILargeContentViewerItemP", "scrollViewWillBeginDecelerating"]
+- ["So24UILargeContentViewerItemP", "scrollViewWillBeginDragging"]
+- ["So24UILargeContentViewerItemP", "scrollViewWillBeginZooming"]
+- ["So24UILargeContentViewerItemP", "scrollViewWillEndDragging"]
 - !private ["So24UILargeContentViewerItemP", "setSelected"]
 - !private ["So24UILargeContentViewerItemP", "text"]
 - !private ["So24UILargeContentViewerItemP", "titleEdgeInsets"]
 - !private ["So24UILargeContentViewerItemP", "titleLabel"]
+- ["So24UILargeContentViewerItemP", "viewForZooming"]
+- ["So24UILargeContentViewerItemP", "viewForZoomingInScrollView"]
 - !private ["So30UIPasteConfigurationSupportingP", "Api_Base_URL"]
 - ["So30UIPasteConfigurationSupportingP", "CategoryHome"]
 - !private ["So30UIPasteConfigurationSupportingP", "JSONSerialization"]
@@ -868,24 +1512,53 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "awakeFromNib"]
 - !private ["So30UIPasteConfigurationSupportingP", "bounds"]
 - !private ["So30UIPasteConfigurationSupportingP", "catDel"]
+- !private ["So30UIPasteConfigurationSupportingP", "categoryCollectionView"]
 - !private ["So30UIPasteConfigurationSupportingP", "categoryHomeArray"]
+- ["So30UIPasteConfigurationSupportingP", "collectionView"]
+- ["So30UIPasteConfigurationSupportingP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So30UIPasteConfigurationSupportingP", "currentImage"]
+- !private ["So30UIPasteConfigurationSupportingP", "dataSource"]
+- !private ["So30UIPasteConfigurationSupportingP", "delegate"]
+- !private ["So30UIPasteConfigurationSupportingP", "dequeueReusableCell"]
 - !private ["So30UIPasteConfigurationSupportingP", "font"]
 - !private ["So30UIPasteConfigurationSupportingP", "hitCategoryAPI"]
 - !private ["So30UIPasteConfigurationSupportingP", "imageEdgeInsets"]
+- ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
+- ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So30UIPasteConfigurationSupportingP", "indexTitles"]
+- ["So30UIPasteConfigurationSupportingP", "indexTitlesForCollectionView"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
 - !private ["So30UIPasteConfigurationSupportingP", "layer"]
+- ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
+- ["So30UIPasteConfigurationSupportingP", "numberOfSectionsInCollectionView"]
 - !private ["So30UIPasteConfigurationSupportingP", "print"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDecelerating"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndDragging"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndScrollingAnimation"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidEndZooming"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidScroll"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidScrollToTop"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewDidZoom"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewShouldScrollToTop"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginDecelerating"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginDragging"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewWillBeginZooming"]
+- ["So30UIPasteConfigurationSupportingP", "scrollViewWillEndDragging"]
 - !private ["So30UIPasteConfigurationSupportingP", "setSelected"]
 - !private ["So30UIPasteConfigurationSupportingP", "text"]
 - !private ["So30UIPasteConfigurationSupportingP", "titleEdgeInsets"]
 - !private ["So30UIPasteConfigurationSupportingP", "titleLabel"]
+- ["So30UIPasteConfigurationSupportingP", "viewForZooming"]
+- ["So30UIPasteConfigurationSupportingP", "viewForZoomingInScrollView"]
 - !private ["So11UIResponderC", "Api_Base_URL"]
 - ["So11UIResponderC", "Bool"]
 - ["So11UIResponderC", "CGFloat"]
 - ["So11UIResponderC", "CategoryHome"]
 - ["So11UIResponderC", "CategorySelectDelegate"]
 - !private ["So11UIResponderC", "Data"]
+- ["So11UIResponderC", "IndexPath"]
+- ["So11UIResponderC", "Int"]
 - !private ["So11UIResponderC", "JSONSerialization"]
 - !private ["So11UIResponderC", "NSAttributedString"]
 - !private ["So11UIResponderC", "NSData"]
@@ -895,6 +1568,8 @@ depends-member:
 - ["So11UIResponderC", "String"]
 - ["So11UIResponderC", "StringToURL"]
 - ["So11UIResponderC", "UIButton"]
+- ["So11UIResponderC", "UICollectionView"]
+- ["So11UIResponderC", "UICollectionViewCell"]
 - !private ["So11UIResponderC", "UIEdgeInsets"]
 - ["So11UIResponderC", "URL"]
 - ["So11UIResponderC", "awakeFromNib"]
@@ -910,20 +1585,47 @@ depends-member:
 - ["So11UIResponderC", "btnTravel"]
 - ["So11UIResponderC", "btnTravelPressed"]
 - ["So11UIResponderC", "catDel"]
+- ["So11UIResponderC", "categoryCollectionView"]
 - ["So11UIResponderC", "categoryHomeArray"]
 - ["So11UIResponderC", "centerImageAndButton"]
+- ["So11UIResponderC", "collectionView"]
+- ["So11UIResponderC", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So11UIResponderC", "currentImage"]
+- !private ["So11UIResponderC", "dataSource"]
+- !private ["So11UIResponderC", "delegate"]
+- !private ["So11UIResponderC", "dequeueReusableCell"]
 - !private ["So11UIResponderC", "font"]
 - ["So11UIResponderC", "hitCategoryAPI"]
 - !private ["So11UIResponderC", "imageEdgeInsets"]
+- ["So11UIResponderC", "indexPathForPreferredFocusedView"]
+- ["So11UIResponderC", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So11UIResponderC", "indexTitles"]
+- ["So11UIResponderC", "indexTitlesForCollectionView"]
 - ["So11UIResponderC", "init"]
 - !private ["So11UIResponderC", "layer"]
+- ["So11UIResponderC", "numberOfSections"]
+- ["So11UIResponderC", "numberOfSectionsInCollectionView"]
 - !private ["So11UIResponderC", "print"]
+- ["So11UIResponderC", "scrollViewDidChangeAdjustedContentInset"]
+- ["So11UIResponderC", "scrollViewDidEndDecelerating"]
+- ["So11UIResponderC", "scrollViewDidEndDragging"]
+- ["So11UIResponderC", "scrollViewDidEndScrollingAnimation"]
+- ["So11UIResponderC", "scrollViewDidEndZooming"]
+- ["So11UIResponderC", "scrollViewDidScroll"]
+- ["So11UIResponderC", "scrollViewDidScrollToTop"]
+- ["So11UIResponderC", "scrollViewDidZoom"]
+- ["So11UIResponderC", "scrollViewShouldScrollToTop"]
+- ["So11UIResponderC", "scrollViewWillBeginDecelerating"]
+- ["So11UIResponderC", "scrollViewWillBeginDragging"]
+- ["So11UIResponderC", "scrollViewWillBeginZooming"]
+- ["So11UIResponderC", "scrollViewWillEndDragging"]
 - ["So11UIResponderC", "setSelected"]
 - ["So11UIResponderC", "setShadowAndRoundedBorder"]
 - !private ["So11UIResponderC", "text"]
 - !private ["So11UIResponderC", "titleEdgeInsets"]
 - !private ["So11UIResponderC", "titleLabel"]
+- ["So11UIResponderC", "viewForZooming"]
+- ["So11UIResponderC", "viewForZoomingInScrollView"]
 - !private ["So30UIResponderStandardEditActionsP", "Api_Base_URL"]
 - ["So30UIResponderStandardEditActionsP", "CategoryHome"]
 - !private ["So30UIResponderStandardEditActionsP", "JSONSerialization"]
@@ -937,22 +1639,91 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "awakeFromNib"]
 - !private ["So30UIResponderStandardEditActionsP", "bounds"]
 - !private ["So30UIResponderStandardEditActionsP", "catDel"]
+- !private ["So30UIResponderStandardEditActionsP", "categoryCollectionView"]
 - !private ["So30UIResponderStandardEditActionsP", "categoryHomeArray"]
+- ["So30UIResponderStandardEditActionsP", "collectionView"]
+- ["So30UIResponderStandardEditActionsP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So30UIResponderStandardEditActionsP", "currentImage"]
+- !private ["So30UIResponderStandardEditActionsP", "dataSource"]
+- !private ["So30UIResponderStandardEditActionsP", "delegate"]
+- !private ["So30UIResponderStandardEditActionsP", "dequeueReusableCell"]
 - !private ["So30UIResponderStandardEditActionsP", "font"]
 - !private ["So30UIResponderStandardEditActionsP", "hitCategoryAPI"]
 - !private ["So30UIResponderStandardEditActionsP", "imageEdgeInsets"]
+- ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
+- ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So30UIResponderStandardEditActionsP", "indexTitles"]
+- ["So30UIResponderStandardEditActionsP", "indexTitlesForCollectionView"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
 - !private ["So30UIResponderStandardEditActionsP", "layer"]
+- ["So30UIResponderStandardEditActionsP", "numberOfSections"]
+- ["So30UIResponderStandardEditActionsP", "numberOfSectionsInCollectionView"]
 - !private ["So30UIResponderStandardEditActionsP", "print"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDecelerating"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidEndDragging"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidEndScrollingAnimation"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidEndZooming"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidScroll"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidScrollToTop"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewDidZoom"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewShouldScrollToTop"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginDecelerating"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginDragging"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewWillBeginZooming"]
+- ["So30UIResponderStandardEditActionsP", "scrollViewWillEndDragging"]
 - !private ["So30UIResponderStandardEditActionsP", "setSelected"]
 - !private ["So30UIResponderStandardEditActionsP", "text"]
 - !private ["So30UIResponderStandardEditActionsP", "titleEdgeInsets"]
 - !private ["So30UIResponderStandardEditActionsP", "titleLabel"]
+- ["So30UIResponderStandardEditActionsP", "viewForZooming"]
+- ["So30UIResponderStandardEditActionsP", "viewForZoomingInScrollView"]
+- !private ["So12UIScrollViewC", "dataSource"]
+- !private ["So12UIScrollViewC", "delegate"]
+- !private ["So12UIScrollViewC", "dequeueReusableCell"]
+- !private ["So20UIScrollViewDelegateP", "Api_Base_URL"]
+- ["So20UIScrollViewDelegateP", "CategoryHome"]
+- !private ["So20UIScrollViewDelegateP", "JSONSerialization"]
+- !private ["So20UIScrollViewDelegateP", "NSData"]
+- !private ["So20UIScrollViewDelegateP", "NSURL"]
+- !private ["So20UIScrollViewDelegateP", "String"]
+- !private ["So20UIScrollViewDelegateP", "URL"]
+- ["So20UIScrollViewDelegateP", ""]
+- !private ["So20UIScrollViewDelegateP", "catDel"]
+- !private ["So20UIScrollViewDelegateP", "categoryCollectionView"]
+- !private ["So20UIScrollViewDelegateP", "categoryHomeArray"]
+- ["So20UIScrollViewDelegateP", "collectionView"]
+- ["So20UIScrollViewDelegateP", "collectionViewDidEndMultipleSelectionInteraction"]
+- !private ["So20UIScrollViewDelegateP", "hitCategoryAPI"]
+- ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
+- ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So20UIScrollViewDelegateP", "indexTitles"]
+- ["So20UIScrollViewDelegateP", "indexTitlesForCollectionView"]
+- ["So20UIScrollViewDelegateP", "numberOfSections"]
+- ["So20UIScrollViewDelegateP", "numberOfSectionsInCollectionView"]
+- !private ["So20UIScrollViewDelegateP", "print"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidEndDecelerating"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidEndDragging"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidEndScrollingAnimation"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidEndZooming"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidScroll"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidScrollToTop"]
+- ["So20UIScrollViewDelegateP", "scrollViewDidZoom"]
+- ["So20UIScrollViewDelegateP", "scrollViewShouldScrollToTop"]
+- ["So20UIScrollViewDelegateP", "scrollViewWillBeginDecelerating"]
+- ["So20UIScrollViewDelegateP", "scrollViewWillBeginDragging"]
+- ["So20UIScrollViewDelegateP", "scrollViewWillBeginZooming"]
+- ["So20UIScrollViewDelegateP", "scrollViewWillEndDragging"]
+- ["So20UIScrollViewDelegateP", "viewForZooming"]
+- ["So20UIScrollViewDelegateP", "viewForZoomingInScrollView"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "NSAttributedString"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "UIEdgeInsets"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "bounds"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "currentImage"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "dataSource"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "delegate"]
+- !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "imageEdgeInsets"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "layer"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "titleEdgeInsets"]
@@ -962,6 +1733,8 @@ depends-member:
 - ["So15UITableViewCellC", "CategoryHome"]
 - ["So15UITableViewCellC", "CategorySelectDelegate"]
 - !private ["So15UITableViewCellC", "Data"]
+- ["So15UITableViewCellC", "IndexPath"]
+- ["So15UITableViewCellC", "Int"]
 - !private ["So15UITableViewCellC", "JSONSerialization"]
 - !private ["So15UITableViewCellC", "NSData"]
 - !private ["So15UITableViewCellC", "NSDictionary"]
@@ -970,6 +1743,8 @@ depends-member:
 - ["So15UITableViewCellC", "String"]
 - ["So15UITableViewCellC", "StringToURL"]
 - ["So15UITableViewCellC", "UIButton"]
+- ["So15UITableViewCellC", "UICollectionView"]
+- ["So15UITableViewCellC", "UICollectionViewCell"]
 - ["So15UITableViewCellC", "URL"]
 - ["So15UITableViewCellC", ""]
 - ["So15UITableViewCellC", "awakeFromNib"]
@@ -984,12 +1759,36 @@ depends-member:
 - ["So15UITableViewCellC", "btnTravel"]
 - ["So15UITableViewCellC", "btnTravelPressed"]
 - ["So15UITableViewCellC", "catDel"]
+- ["So15UITableViewCellC", "categoryCollectionView"]
 - ["So15UITableViewCellC", "categoryHomeArray"]
+- ["So15UITableViewCellC", "collectionView"]
+- ["So15UITableViewCellC", "collectionViewDidEndMultipleSelectionInteraction"]
 - ["So15UITableViewCellC", "hitCategoryAPI"]
+- ["So15UITableViewCellC", "indexPathForPreferredFocusedView"]
+- ["So15UITableViewCellC", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So15UITableViewCellC", "indexTitles"]
+- ["So15UITableViewCellC", "indexTitlesForCollectionView"]
 - ["So15UITableViewCellC", "init"]
+- ["So15UITableViewCellC", "numberOfSections"]
+- ["So15UITableViewCellC", "numberOfSectionsInCollectionView"]
 - !private ["So15UITableViewCellC", "print"]
+- ["So15UITableViewCellC", "scrollViewDidChangeAdjustedContentInset"]
+- ["So15UITableViewCellC", "scrollViewDidEndDecelerating"]
+- ["So15UITableViewCellC", "scrollViewDidEndDragging"]
+- ["So15UITableViewCellC", "scrollViewDidEndScrollingAnimation"]
+- ["So15UITableViewCellC", "scrollViewDidEndZooming"]
+- ["So15UITableViewCellC", "scrollViewDidScroll"]
+- ["So15UITableViewCellC", "scrollViewDidScrollToTop"]
+- ["So15UITableViewCellC", "scrollViewDidZoom"]
+- ["So15UITableViewCellC", "scrollViewShouldScrollToTop"]
+- ["So15UITableViewCellC", "scrollViewWillBeginDecelerating"]
+- ["So15UITableViewCellC", "scrollViewWillBeginDragging"]
+- ["So15UITableViewCellC", "scrollViewWillBeginZooming"]
+- ["So15UITableViewCellC", "scrollViewWillEndDragging"]
 - ["So15UITableViewCellC", "setSelected"]
 - ["So15UITableViewCellC", "setShadowAndRoundedBorder"]
+- ["So15UITableViewCellC", "viewForZooming"]
+- ["So15UITableViewCellC", "viewForZoomingInScrollView"]
 - !private ["So18UITraitEnvironmentP", "Api_Base_URL"]
 - ["So18UITraitEnvironmentP", "CategoryHome"]
 - !private ["So18UITraitEnvironmentP", "JSONSerialization"]
@@ -1003,18 +1802,45 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "awakeFromNib"]
 - !private ["So18UITraitEnvironmentP", "bounds"]
 - !private ["So18UITraitEnvironmentP", "catDel"]
+- !private ["So18UITraitEnvironmentP", "categoryCollectionView"]
 - !private ["So18UITraitEnvironmentP", "categoryHomeArray"]
+- ["So18UITraitEnvironmentP", "collectionView"]
+- ["So18UITraitEnvironmentP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So18UITraitEnvironmentP", "currentImage"]
+- !private ["So18UITraitEnvironmentP", "dataSource"]
+- !private ["So18UITraitEnvironmentP", "delegate"]
+- !private ["So18UITraitEnvironmentP", "dequeueReusableCell"]
 - !private ["So18UITraitEnvironmentP", "font"]
 - !private ["So18UITraitEnvironmentP", "hitCategoryAPI"]
 - !private ["So18UITraitEnvironmentP", "imageEdgeInsets"]
+- ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
+- ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So18UITraitEnvironmentP", "indexTitles"]
+- ["So18UITraitEnvironmentP", "indexTitlesForCollectionView"]
 - !private ["So18UITraitEnvironmentP", "init"]
 - !private ["So18UITraitEnvironmentP", "layer"]
+- ["So18UITraitEnvironmentP", "numberOfSections"]
+- ["So18UITraitEnvironmentP", "numberOfSectionsInCollectionView"]
 - !private ["So18UITraitEnvironmentP", "print"]
+- ["So18UITraitEnvironmentP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So18UITraitEnvironmentP", "scrollViewDidEndDecelerating"]
+- ["So18UITraitEnvironmentP", "scrollViewDidEndDragging"]
+- ["So18UITraitEnvironmentP", "scrollViewDidEndScrollingAnimation"]
+- ["So18UITraitEnvironmentP", "scrollViewDidEndZooming"]
+- ["So18UITraitEnvironmentP", "scrollViewDidScroll"]
+- ["So18UITraitEnvironmentP", "scrollViewDidScrollToTop"]
+- ["So18UITraitEnvironmentP", "scrollViewDidZoom"]
+- ["So18UITraitEnvironmentP", "scrollViewShouldScrollToTop"]
+- ["So18UITraitEnvironmentP", "scrollViewWillBeginDecelerating"]
+- ["So18UITraitEnvironmentP", "scrollViewWillBeginDragging"]
+- ["So18UITraitEnvironmentP", "scrollViewWillBeginZooming"]
+- ["So18UITraitEnvironmentP", "scrollViewWillEndDragging"]
 - !private ["So18UITraitEnvironmentP", "setSelected"]
 - !private ["So18UITraitEnvironmentP", "text"]
 - !private ["So18UITraitEnvironmentP", "titleEdgeInsets"]
 - !private ["So18UITraitEnvironmentP", "titleLabel"]
+- ["So18UITraitEnvironmentP", "viewForZooming"]
+- ["So18UITraitEnvironmentP", "viewForZoomingInScrollView"]
 - !private ["So23UIUserActivityRestoringP", "Api_Base_URL"]
 - ["So23UIUserActivityRestoringP", "CategoryHome"]
 - !private ["So23UIUserActivityRestoringP", "JSONSerialization"]
@@ -1028,24 +1854,53 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "awakeFromNib"]
 - !private ["So23UIUserActivityRestoringP", "bounds"]
 - !private ["So23UIUserActivityRestoringP", "catDel"]
+- !private ["So23UIUserActivityRestoringP", "categoryCollectionView"]
 - !private ["So23UIUserActivityRestoringP", "categoryHomeArray"]
+- ["So23UIUserActivityRestoringP", "collectionView"]
+- ["So23UIUserActivityRestoringP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So23UIUserActivityRestoringP", "currentImage"]
+- !private ["So23UIUserActivityRestoringP", "dataSource"]
+- !private ["So23UIUserActivityRestoringP", "delegate"]
+- !private ["So23UIUserActivityRestoringP", "dequeueReusableCell"]
 - !private ["So23UIUserActivityRestoringP", "font"]
 - !private ["So23UIUserActivityRestoringP", "hitCategoryAPI"]
 - !private ["So23UIUserActivityRestoringP", "imageEdgeInsets"]
+- ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedView"]
+- ["So23UIUserActivityRestoringP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So23UIUserActivityRestoringP", "indexTitles"]
+- ["So23UIUserActivityRestoringP", "indexTitlesForCollectionView"]
 - !private ["So23UIUserActivityRestoringP", "init"]
 - !private ["So23UIUserActivityRestoringP", "layer"]
+- ["So23UIUserActivityRestoringP", "numberOfSections"]
+- ["So23UIUserActivityRestoringP", "numberOfSectionsInCollectionView"]
 - !private ["So23UIUserActivityRestoringP", "print"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidChangeAdjustedContentInset"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidEndDecelerating"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidEndDragging"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidEndScrollingAnimation"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidEndZooming"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidScroll"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidScrollToTop"]
+- ["So23UIUserActivityRestoringP", "scrollViewDidZoom"]
+- ["So23UIUserActivityRestoringP", "scrollViewShouldScrollToTop"]
+- ["So23UIUserActivityRestoringP", "scrollViewWillBeginDecelerating"]
+- ["So23UIUserActivityRestoringP", "scrollViewWillBeginDragging"]
+- ["So23UIUserActivityRestoringP", "scrollViewWillBeginZooming"]
+- ["So23UIUserActivityRestoringP", "scrollViewWillEndDragging"]
 - !private ["So23UIUserActivityRestoringP", "setSelected"]
 - !private ["So23UIUserActivityRestoringP", "text"]
 - !private ["So23UIUserActivityRestoringP", "titleEdgeInsets"]
 - !private ["So23UIUserActivityRestoringP", "titleLabel"]
+- ["So23UIUserActivityRestoringP", "viewForZooming"]
+- ["So23UIUserActivityRestoringP", "viewForZoomingInScrollView"]
 - !private ["So6UIViewC", "Api_Base_URL"]
 - ["So6UIViewC", "Bool"]
 - ["So6UIViewC", "CGFloat"]
 - ["So6UIViewC", "CategoryHome"]
 - ["So6UIViewC", "CategorySelectDelegate"]
 - !private ["So6UIViewC", "Data"]
+- ["So6UIViewC", "IndexPath"]
+- ["So6UIViewC", "Int"]
 - !private ["So6UIViewC", "JSONSerialization"]
 - !private ["So6UIViewC", "NSAttributedString"]
 - !private ["So6UIViewC", "NSData"]
@@ -1055,6 +1910,8 @@ depends-member:
 - ["So6UIViewC", "String"]
 - ["So6UIViewC", "StringToURL"]
 - ["So6UIViewC", "UIButton"]
+- ["So6UIViewC", "UICollectionView"]
+- ["So6UIViewC", "UICollectionViewCell"]
 - !private ["So6UIViewC", "UIEdgeInsets"]
 - ["So6UIViewC", "URL"]
 - ["So6UIViewC", "awakeFromNib"]
@@ -1070,20 +1927,47 @@ depends-member:
 - ["So6UIViewC", "btnTravel"]
 - ["So6UIViewC", "btnTravelPressed"]
 - ["So6UIViewC", "catDel"]
+- ["So6UIViewC", "categoryCollectionView"]
 - ["So6UIViewC", "categoryHomeArray"]
 - ["So6UIViewC", "centerImageAndButton"]
+- ["So6UIViewC", "collectionView"]
+- ["So6UIViewC", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["So6UIViewC", "currentImage"]
+- !private ["So6UIViewC", "dataSource"]
+- !private ["So6UIViewC", "delegate"]
+- !private ["So6UIViewC", "dequeueReusableCell"]
 - !private ["So6UIViewC", "font"]
 - ["So6UIViewC", "hitCategoryAPI"]
 - !private ["So6UIViewC", "imageEdgeInsets"]
+- ["So6UIViewC", "indexPathForPreferredFocusedView"]
+- ["So6UIViewC", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["So6UIViewC", "indexTitles"]
+- ["So6UIViewC", "indexTitlesForCollectionView"]
 - ["So6UIViewC", "init"]
 - !private ["So6UIViewC", "layer"]
+- ["So6UIViewC", "numberOfSections"]
+- ["So6UIViewC", "numberOfSectionsInCollectionView"]
 - !private ["So6UIViewC", "print"]
+- ["So6UIViewC", "scrollViewDidChangeAdjustedContentInset"]
+- ["So6UIViewC", "scrollViewDidEndDecelerating"]
+- ["So6UIViewC", "scrollViewDidEndDragging"]
+- ["So6UIViewC", "scrollViewDidEndScrollingAnimation"]
+- ["So6UIViewC", "scrollViewDidEndZooming"]
+- ["So6UIViewC", "scrollViewDidScroll"]
+- ["So6UIViewC", "scrollViewDidScrollToTop"]
+- ["So6UIViewC", "scrollViewDidZoom"]
+- ["So6UIViewC", "scrollViewShouldScrollToTop"]
+- ["So6UIViewC", "scrollViewWillBeginDecelerating"]
+- ["So6UIViewC", "scrollViewWillBeginDragging"]
+- ["So6UIViewC", "scrollViewWillBeginZooming"]
+- ["So6UIViewC", "scrollViewWillEndDragging"]
 - ["So6UIViewC", "setSelected"]
 - ["So6UIViewC", "setShadowAndRoundedBorder"]
 - !private ["So6UIViewC", "text"]
 - !private ["So6UIViewC", "titleEdgeInsets"]
 - !private ["So6UIViewC", "titleLabel"]
+- ["So6UIViewC", "viewForZooming"]
+- ["So6UIViewC", "viewForZoomingInScrollView"]
 - !private ["10Foundation3URLV", "init"]
 - !private ["s14_ArrayProtocolP", "append"]
 - !private ["s14_ArrayProtocolP", "count"]
@@ -1135,22 +2019,49 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "awakeFromNib"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "bounds"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "catDel"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "categoryCollectionView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "categoryHomeArray"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "collectionView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "cornerRadius"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "currentImage"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dataSource"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "delegate"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "dequeueReusableCell"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "font"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "hitCategoryAPI"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "imageEdgeInsets"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "indexTitles"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "indexTitlesForCollectionView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "jsonObject"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "layer"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSectionsInCollectionView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidChangeAdjustedContentInset"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDecelerating"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndDragging"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndScrollingAnimation"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidEndZooming"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidScroll"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidScrollToTop"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewDidZoom"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewShouldScrollToTop"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillBeginDecelerating"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillBeginDragging"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillBeginZooming"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "scrollViewWillEndDragging"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "setSelected"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "size"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "subscript"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleEdgeInsets"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "titleLabel"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "viewForZooming"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "viewForZoomingInScrollView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Api_Base_URL"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CategoryHome"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "JSONSerialization"]
@@ -1166,25 +2077,54 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "awakeFromNib"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "bounds"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "catDel"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "categoryCollectionView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "categoryHomeArray"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "collectionView"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "cornerRadius"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "currentImage"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dataSource"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "delegate"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "dequeueReusableCell"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "font"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "hitCategoryAPI"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "imageEdgeInsets"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "indexPathForPreferredFocusedView"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "indexTitles"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "indexTitlesForCollectionView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "init"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "jsonObject"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "layer"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "numberOfSections"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "numberOfSectionsInCollectionView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "print"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidChangeAdjustedContentInset"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidEndDecelerating"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidEndDragging"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidEndScrollingAnimation"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidEndZooming"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidScroll"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidScrollToTop"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewDidZoom"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewShouldScrollToTop"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewWillBeginDecelerating"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewWillBeginDragging"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewWillBeginZooming"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "scrollViewWillEndDragging"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "setSelected"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "size"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "subscript"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "text"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "titleEdgeInsets"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "titleLabel"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewForZooming"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "viewForZoomingInScrollView"]
 - !private ["s21_ObjectiveCBridgeableP", "Encoding"]
 - !private ["s21_ObjectiveCBridgeableP", "append"]
 - !private ["s21_ObjectiveCBridgeableP", "count"]
+- !private ["s21_ObjectiveCBridgeableP", "dataSource"]
+- !private ["s21_ObjectiveCBridgeableP", "delegate"]
 - !private ["s21_ObjectiveCBridgeableP", "font"]
 - !private ["s21_ObjectiveCBridgeableP", "height"]
 - ["s21_ObjectiveCBridgeableP", "init"]
@@ -1204,18 +2144,45 @@ depends-member:
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "awakeFromNib"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "bounds"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "catDel"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "categoryCollectionView"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "categoryHomeArray"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "collectionView"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "collectionViewDidEndMultipleSelectionInteraction"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "currentImage"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dataSource"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "delegate"]
+- !private ["s38__DefaultCustomPlaygroundQuickLookableP", "dequeueReusableCell"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "font"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "hitCategoryAPI"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "imageEdgeInsets"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "indexPathForPreferredFocusedView"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "indexPathForPreferredFocusedViewInCollectionView"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "indexTitles"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "indexTitlesForCollectionView"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "init"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "layer"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "numberOfSections"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "numberOfSectionsInCollectionView"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "print"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollViewDidChangeAdjustedContentInset"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollViewDidEndDecelerating"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollViewDidEndDragging"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollViewDidEndScrollingAnimation"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollViewDidEndZooming"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollViewDidScroll"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollViewDidScrollToTop"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollViewDidZoom"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollViewShouldScrollToTop"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollViewWillBeginDecelerating"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollViewWillBeginDragging"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollViewWillBeginZooming"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "scrollViewWillEndDragging"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "setSelected"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "text"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "titleEdgeInsets"]
 - !private ["s38__DefaultCustomPlaygroundQuickLookableP", "titleLabel"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "viewForZooming"]
+- ["s38__DefaultCustomPlaygroundQuickLookableP", "viewForZoomingInScrollView"]
 depends-nominal:
 - "10Accelerate0A6BufferP"
 - "10Accelerate0A13MutableBufferP"
@@ -1243,6 +2210,7 @@ depends-nominal:
 - "s25ExpressibleByArrayLiteralP"
 - !private "s30ExpressibleByDictionaryLiteralP"
 - !private "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
 - !private "s32ExpressibleByStringInterpolationP"
 - !private "s26ExpressibleByStringLiteralP"
 - !private "s33ExpressibleByUnicodeScalarLiteralP"
@@ -1269,6 +2237,7 @@ depends-nominal:
 - !private "So14NSSecureCodingP"
 - !private "So8NSStringC"
 - !private "So5NSURLC"
+- !private "Sq"
 - !private "6SaveUp11PlaceholderP"
 - "Sk"
 - "Sm"
@@ -1285,14 +2254,19 @@ depends-nominal:
 - "So12UIAppearanceP"
 - "So21UIAppearanceContainerP"
 - "So8UIButtonC"
+- !private "So16UICollectionViewC"
+- "So26UICollectionViewDataSourceP"
+- "So24UICollectionViewDelegateP"
 - !private "So30UIContentSizeCategoryAdjustingP"
 - "So9UIControlC"
 - "So17UICoordinateSpaceP"
+- !private "So23UIDataSourceTranslatingP"
 - "So13UIDynamicItemP"
 - !private "So12UIEdgeInsetsV"
 - "So18UIFocusEnvironmentP"
 - "So11UIFocusItemP"
 - "So20UIFocusItemContainerP"
+- !private "So30UIFocusItemScrollableContainerP"
 - "So27UIGestureRecognizerDelegateP"
 - !private "So7UIImageC"
 - !private "So39UIItemProviderPresentationSizeProvidingP"
@@ -1301,6 +2275,8 @@ depends-nominal:
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
+- !private "So12UIScrollViewC"
+- "So20UIScrollViewDelegateP"
 - !private "So35UISpringLoadedInteractionSupportingP"
 - "So15UITableViewCellC"
 - "So18UITraitEnvironmentP"
@@ -1370,7 +2346,7 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseInstanceID/FirebaseInstanceID.framework/Headers/FirebaseInstanceID.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/EAGL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFURL.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKURL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURL.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFPlugInCOM.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/ImageIO.h"
@@ -1382,6 +2358,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseCore/FirebaseCore.framework/Headers/FirebaseCore-umbrella.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseRemoteConfig/FirebaseRemoteConfig.framework/Headers/FirebaseRemoteConfig-umbrella.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FirebaseAuth-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit-umbrella.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit-umbrella.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/LinearAlgebra.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapCamera.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFData.h"
@@ -1532,7 +2510,7 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/PayPalMobile/PayPalMobile.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/file.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/clonefile.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfile.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/copyfile.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSParagraphStyle.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTParagraphStyle.h"
@@ -1600,6 +2578,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CVBase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecBase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/IOSurface.framework/Headers/IOSurfaceBase.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKDeviceViewControllerBase.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Accelerate.framework/Frameworks/vecLib.framework/Headers/LinearAlgebra/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/base.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/base.h"
@@ -1620,7 +2599,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecCertificate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthUIDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITextPasteDelegate.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKApplicationDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTRunDelegate.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Headers/FIRAnalytics+AppDelegate.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManagerDelegate.h"
@@ -1684,12 +2663,12 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UISpringLoadedInteractionSupporting.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityContentSizeCategoryImageAdjusting.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIContentSizeCategoryAdjusting.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolving.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSKeyValueObserving.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStringDrawing.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSStringDrawing.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCopying.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMutableCopying.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/os/log.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/syslog.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/syslog.h"
@@ -1727,7 +2706,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/Block.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/dispatch/block.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/clock.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLink.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CADisplayLink.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKPlacemark.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLPlacemark.h"
@@ -1842,7 +2821,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIScreen.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/libgen.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFAccessToken.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAccessToken.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/netinet/in.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderDomain.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLErrorDomain.h"
@@ -1880,7 +2859,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKFoundation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CoreFoundation.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkNavigation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILocalizedIndexedCollation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CAAnimation.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/ImageIO.framework/Headers/CGImageAnimation.h"
@@ -1928,7 +2907,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontCollection.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSXPCConnection.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLConnection.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestConnection.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGFunction.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CAValueFunction.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CAMediaTimingFunction.h"
@@ -1943,10 +2922,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIBarCommon.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/secure/_common.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIButton.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKButton.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKDeviceButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKUserTrackingButton.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Headers/GIDSignInButton.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKCompassButton.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPattern.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CVReturn.h"
@@ -1959,7 +2939,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/spawn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/spawn.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreVideo.framework/Headers/CoreVideo.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginCodeInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTGlyphInfo.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGColorConversionInfo.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRUserInfo.h"
@@ -2076,14 +3056,14 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Le/YYWebImage/YYWebImageManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSFileManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLCaptureManager.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManager.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManager.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSkinManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreLocation.framework/Headers/CLLocationManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUndoManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStatusBarManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderManager.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKTestUsersManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/DocumentManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTFontManager.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSLayoutManager.h"
@@ -2102,7 +3082,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITabBarController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImagePickerController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPrinterPickerController.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPopoverController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIVideoEditorController.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAlertController.h"
@@ -2187,8 +3167,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CTTypesetter.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapSnapshotter.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSKeyedArchiver.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkResolver.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKWebViewAppLinkResolver.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UILargeContentViewer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/CALayer.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGLayer.h"
@@ -2238,7 +3218,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/error.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/mach_error.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageProcessor.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphErrorRecoveryProcessor.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/processor.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreImage.framework/Headers/CIImageAccumulator.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIDynamicAnimator.h"
@@ -2344,7 +3324,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/strings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/secure/_strings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFSettings.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRActionCodeSettings.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthSettings.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationSettings.h"
@@ -2443,11 +3423,11 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sysexits.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSUserDefaults.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/ttydefaults.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKConstants.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityConstants.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSPersonNameComponents.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppEvents.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/bsm/audit_uevents.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/appleapiopts.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/thread_special_ports.h"
@@ -2560,7 +3540,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/ShareSheet.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActionSheet.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/shims/Target.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkTarget.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFSocket.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/socket.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/arpa/inet.h"
@@ -2572,8 +3552,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIImageAsset.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_fd_isset.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKCoreKit.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginKit.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AccountKit.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Headers/AKFAccountKit.h"
@@ -2587,14 +3567,14 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthDataResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSTextCheckingResult.h"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Headers/FIRAuthTokenResult.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginManagerLoginResult.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKDeviceLoginManagerResult.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_s_ifmt.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGradient.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIMenuElement.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibilityElement.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSMeasurement.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequestDataAttachment.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationAttachment.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/NSTextAttachment.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGPDFDocument.h"
@@ -2608,7 +3588,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIEvent.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Metal.framework/Headers/MTLEvent.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPressesEvent.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKMeasurementEvent.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/event.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIFocusMovementHint.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/sys/_types/_u_int.h"
@@ -2642,7 +3622,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/SecImportExport.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSURLRequest.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKLocalSearchRequest.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKGraphRequest.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UserNotifications.framework/Headers/UNNotificationRequest.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/FileProvider.framework/Headers/NSFileProviderRequest.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKDirectionsRequest.h"
@@ -2691,7 +3671,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKCircleView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKPolylineView.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKProfilePictureView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKOverlayPathView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIStackView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIScrollView.h"
@@ -2701,10 +3681,10 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMarkerAnnotationView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UICollectionView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MKMapView.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKTooltipView.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Headers/FBSDKLoginTooltipView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIPickerView.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkReturnToRefererView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewHeaderFooterView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIActivityIndicatorView.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIProgressView.h"
@@ -2768,8 +3748,8 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/lib/swift/shims/Visibility.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIAccessibility.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/FoundationLegacySwiftCompatibility.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKUtility.h"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Headers/FBSDKAppLinkUtility.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreFoundation.framework/Headers/CFFileSecurity.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/mach/host_security.h"
@@ -2787,8 +3767,8 @@ depends-external:
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FirebaseAuth/FirebaseAuth.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/FirebaseAnalytics/Frameworks/FirebaseAnalytics.framework/Modules/module.modulemap"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKCoreKit.framework/Modules/module.modulemap"
-- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/FBSDKLoginKit.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKCoreKit/FBSDKCoreKit.framework/Modules/module.modulemap"
+- "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Products/Debug-iphoneos/FBSDKLoginKit/FBSDKLoginKit.framework/Modules/module.modulemap"
 - "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/AccountKit.framework/Modules/module.modulemap"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/usr/include/objc/ObjectiveC.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/OpenGLES.framework/Headers/OpenGLES.apinotes"
@@ -2808,4 +3788,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/MapKit.framework/Headers/MapKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS13.2.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "6f9a539a2727b539bc2c538a52bb15c6"
+interface-hash: "949a656d2df9093de0375341f8a91ecb"

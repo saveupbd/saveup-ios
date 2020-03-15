@@ -21,6 +21,7 @@
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/UIImage+YYWebImage.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/FilterView.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/Filter.o
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/TransactionsViewController.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/ViewController.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/AppDelegate.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/FHotDealsTableViewCell.o
@@ -33,10 +34,13 @@
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/AppConfig.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/ImageDownloader.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/Image.o
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/ScrollableSegmentedControl.o
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/TransactionTableViewCell.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/MyWishlist.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/FilterByCategoryViewController.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/MyOrdersViewController.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/MIBadgeButton.o
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/CategoryCollectionViewCell.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/FDetailsImagesCollectionViewCell.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/orderProductList.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/FWishListTableViewController.o
@@ -129,6 +133,7 @@
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/Toast.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/RelatedProducts.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/CityViewController.o
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/SubCatCollectionViewCell.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/MyAccountViewController.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/HelpVc.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/TermsViewController.o
@@ -145,6 +150,7 @@
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/NearmeViewController.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/MyCart.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/City.o
+/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/HBSegmentedControl.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/FDetailsRelatedArrayTableViewCell.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/PasswordViewController.o
 /Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Build/Intermediates.noindex/IBDesignables/Intermediates.noindex/Le.build/Debug-iphonesimulator/Le.build/Objects-normal/x86_64/SubModule.o

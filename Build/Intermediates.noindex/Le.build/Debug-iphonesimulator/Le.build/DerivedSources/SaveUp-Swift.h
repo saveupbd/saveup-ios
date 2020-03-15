@@ -310,6 +310,15 @@ SWIFT_CLASS("_TtC6SaveUp12CategoryCell")
 @end
 
 
+SWIFT_CLASS("_TtC6SaveUp26CategoryCollectionViewCell")
+@interface CategoryCollectionViewCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified cellLabel;
+@property (nonatomic, weak) IBOutlet UIImageView * _Null_unspecified cellImgView;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC6SaveUp12CategoryHome")
 @interface CategoryHome : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -326,6 +335,7 @@ SWIFT_CLASS("_TtC6SaveUp33CategoryProductListViewController")
 @interface CategoryProductListViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified catCollectionView;
 @property (nonatomic, weak) IBOutlet UISegmentedControl * _Null_unspecified upperSegment;
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified subCatCollectionView;
 - (void)viewDidLoad;
 - (IBAction)upperSegmentPressed:(UISegmentedControl * _Nonnull)sender;
 - (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
@@ -659,7 +669,8 @@ SWIFT_CLASS("_TtC6SaveUp20FBannerTableViewCell")
 
 
 SWIFT_CLASS("_TtC6SaveUp24FCategoriesTableViewCell")
-@interface FCategoriesTableViewCell : UITableViewCell
+@interface FCategoriesTableViewCell : UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
+@property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified categoryCollectionView;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnService;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnBeauty;
 @property (nonatomic, weak) IBOutlet UIButton * _Null_unspecified btnFitness;
@@ -672,6 +683,11 @@ SWIFT_CLASS("_TtC6SaveUp24FCategoriesTableViewCell")
 - (IBAction)btnServicePressed:(UIButton * _Nonnull)sender;
 - (IBAction)btnBeautyPressed:(UIButton * _Nonnull)sender;
 - (IBAction)btnFitnessPressed:(UIButton * _Nonnull)sender;
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView * _Nonnull)collectionView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)collectionView:(UICollectionView * _Nonnull)collectionView numberOfItemsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UICollectionViewCell * _Nonnull)collectionView:(UICollectionView * _Nonnull)collectionView cellForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)collectionView:(UICollectionView * _Nonnull)collectionView didSelectItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (CGSize)collectionView:(UICollectionView * _Nonnull)collectionView layout:(UICollectionViewLayout * _Nonnull)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -985,6 +1001,22 @@ SWIFT_CLASS("_TtC6SaveUp20ForgotViewController")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIColor;
+@class UIFont;
+
+SWIFT_CLASS("_TtC6SaveUp18HBSegmentedControl")
+@interface HBSegmentedControl : UIControl
+@property (nonatomic, strong) UIColor * _Nonnull selectedLabelColor;
+@property (nonatomic, strong) UIColor * _Nonnull unselectedLabelColor;
+@property (nonatomic, strong) UIColor * _Nonnull thumbColor;
+@property (nonatomic, strong) UIColor * _Nonnull borderColor;
+@property (nonatomic, strong) UIFont * _Null_unspecified font;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)layoutSubviews;
+- (BOOL)beginTrackingWithTouch:(UITouch * _Nonnull)touch withEvent:(UIEvent * _Nullable)event SWIFT_WARN_UNUSED_RESULT;
+@end
+
 @class UIActivityIndicatorView;
 @class WKWebView;
 
@@ -1159,7 +1191,6 @@ SWIFT_CLASS("_TtC6SaveUp13LoyalityModel")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class UIColor;
 
 SWIFT_CLASS("_TtC6SaveUp13MIBadgeButton")
 @interface MIBadgeButton : UIButton
@@ -1488,7 +1519,6 @@ SWIFT_CLASS("_TtC6SaveUp29NearMeListTableViewController")
 
 @protocol MKAnnotation;
 @class MKAnnotationView;
-@class UIControl;
 
 SWIFT_CLASS("_TtC6SaveUp20NearmeViewController")
 @interface NearmeViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate>
@@ -1866,6 +1896,47 @@ SWIFT_CLASS("_TtC6SaveUp18SJCenterFlowLayout")
 
 
 
+enum ScrollableSegmentedControlSegmentStyle : NSInteger;
+
+/// A ScrollableSegmentedControl object is horizontaly scrollable control made of multiple segments, each segment functioning as discrete button.
+SWIFT_CLASS("_TtC6SaveUp26ScrollableSegmentedControl")
+@interface ScrollableSegmentedControl : UIControl
+@property (nonatomic) enum ScrollableSegmentedControlSegmentStyle segmentStyle;
+@property (nonatomic, strong) UIColor * _Null_unspecified tintColor;
+@property (nonatomic, strong) UIColor * _Nullable segmentContentColor;
+@property (nonatomic) CGFloat underlineHeight;
+@property (nonatomic, strong) UIColor * _Nullable selectedSegmentContentColor;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (void)setTitleTextAttributes:(NSDictionary<NSAttributedStringKey, id> * _Nullable)attributes for:(UIControlState)state;
+- (NSDictionary<NSAttributedStringKey, id> * _Nullable)titleTextAttributesFor:(UIControlState)state SWIFT_WARN_UNUSED_RESULT;
+/// Inserts a segment at a specific position in the receiver and gives it a title as content.
+- (void)insertSegmentWithTitle:(NSString * _Nonnull)title at:(NSInteger)index;
+/// Inserts a segment at a specified position in the receiver and gives it an image as content.
+- (void)insertSegmentWith:(UIImage * _Nonnull)image at:(NSInteger)index;
+/// Inserts a segment at a specific position in the receiver and gives it a title as content and/or image as content.
+- (void)insertSegmentWithTitle:(NSString * _Nullable)title image:(UIImage * _Nullable)image at:(NSInteger)index;
+/// Removes segment at a specific position from the receiver.
+- (void)removeSegmentAt:(NSInteger)index;
+/// Returns the number of segments the receiver has.
+@property (nonatomic, readonly) NSInteger numberOfSegments;
+/// Returns the title of the specified segment.
+- (NSString * _Nullable)titleForSegmentAt:(NSInteger)segment SWIFT_WARN_UNUSED_RESULT;
+/// The index number identifying the selected segment (that is, the last segment touched).
+/// Set this property to -1 to turn off the current selection.
+@property (nonatomic) NSInteger selectedSegmentIndex;
+/// Configure if the selected segment should have underline. Default value is false.
+@property (nonatomic) BOOL underlineSelected;
+- (void)layoutSubviews;
+@end
+
+typedef SWIFT_ENUM(NSInteger, ScrollableSegmentedControlSegmentStyle, closed) {
+  ScrollableSegmentedControlSegmentStyleTextOnly = 0,
+  ScrollableSegmentedControlSegmentStyleImageOnly = 1,
+  ScrollableSegmentedControlSegmentStyleImageOnTop = 2,
+  ScrollableSegmentedControlSegmentStyleImageOnLeft = 3,
+};
+
 
 SWIFT_CLASS("_TtC6SaveUp13SecondaryCell")
 @interface SecondaryCell : UITableViewCell
@@ -2036,6 +2107,14 @@ SWIFT_CLASS("_TtC6SaveUp20StoresViewController")
 @end
 
 
+SWIFT_CLASS("_TtC6SaveUp24SubCatCollectionViewCell")
+@interface SubCatCollectionViewCell : UICollectionViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified subCatLabel;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 SWIFT_CLASS("_TtC6SaveUp24SubCategoryTableViewCell")
 @interface SubCategoryTableViewCell : UITableViewCell <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 @property (nonatomic, weak) IBOutlet UICollectionView * _Null_unspecified subCollectionView;
@@ -2113,6 +2192,35 @@ SWIFT_CLASS("_TtC6SaveUp9TopOffers")
 @end
 
 
+SWIFT_CLASS("_TtC6SaveUp24TransactionTableViewCell")
+@interface TransactionTableViewCell : UITableViewCell
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified timeLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified merchantNameLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified savingLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified discountedPriceLabel;
+@property (nonatomic, weak) IBOutlet UILabel * _Null_unspecified originalPriceLabel;
+- (void)awakeFromNib;
+- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
+- (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC6SaveUp26TransactionsViewController")
+@interface TransactionsViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@property (nonatomic, weak) IBOutlet UITableView * _Null_unspecified transactionTable;
+- (void)viewDidLoad;
+- (void)viewWillAppear:(BOOL)animated;
+- (NSInteger)numberOfSectionsInTableView:(UITableView * _Nonnull)tableView SWIFT_WARN_UNUSED_RESULT;
+- (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
+- (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (void)tableView:(UITableView * _Nonnull)tableView didSelectRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
 
 
 
@@ -2144,11 +2252,11 @@ SWIFT_CLASS("_TtC6SaveUp9TopOffers")
 
 
 
+
+
 @interface UIViewController (SWIFT_EXTENSION(SaveUp))
 - (void)dismissKeyboard;
 @end
-
-
 
 
 SWIFT_CLASS("_TtC6SaveUp14ViewController")

@@ -1,5 +1,5 @@
 version: "Apple Swift version 5.1.2 (swiftlang-1100.0.278 clang-1100.0.33.9)"
 options: "25d0a8ddcaeab86888be4947d1effcc2"
-build_time: [1582108724, 965597000]
+build_time: [1583430394, 335463000]
 inputs:
   "/Users/asif.seraje/Desktop/SaveUp_Master/SaveUp_Old/Pods/SwiftyJSON/Source/SwiftyJSON/SwiftyJSON.swift": [9223372036, 854775807]
