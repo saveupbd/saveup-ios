@@ -10,25 +10,25 @@ import UIKit
 
 class MoreTableViewController: UITableViewController {
     var moreOptions:[String]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        let appVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String
-        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String
-        let buildString = "Version: \(appVersion ?? ""); Build: \(build ?? "")"
-        
-        moreOptions = ["My Account", "How to use", "Help","Log Out",buildString]
-        tableView.tableFooterView = UIView()
         self.title = "More Options"
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        let appVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String
+        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String
+        let buildString = "Version: \(appVersion ?? ""); Build: \(build ?? "")"
         if let tempUserID = UserDefaults.standard.object(forKey: "UserID"){
             print("No need to show floating button")
+            moreOptions = ["My Account", "How To Use App", "Help","Log Out",buildString]
         }else{
             self.setupFloatingButton()
+            moreOptions = ["How To Use App","Help",buildString]
         }
+        tableView.tableFooterView = UIView()
         
     }
 
@@ -58,8 +58,6 @@ class MoreTableViewController: UITableViewController {
                 profileCell?.profileImage.image = UIImage(named: "no-image-icon")
                 profileCell?.profileNameLabel.text = "No User Info Available"
             }
-            
-            
             return profileCell!
         }else{
             let cell = tableView.dequeueReusableCell(withIdentifier: "moreCell", for: indexPath)
@@ -114,42 +112,19 @@ class MoreTableViewController: UITableViewController {
                     return
                 }
             }
-        }else{
+        }else{//["How To Use App","Help",buildString]
             if indexPath.section == 0{
                 return
             }else{
                 switch indexPath.row {
+                
                 case 0:
-                    let alert = UIAlertController(title: "Error", message: "You need to login to access this feature", preferredStyle: UIAlertController.Style.alert)
-                    alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.cancel, handler:{ (ACTION :UIAlertAction!)in
-                        self.dismiss(animated: true, completion: nil)
-                        
-                    }))
-                    alert.addAction(UIAlertAction(title: "Log In", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in
-                        self.dismiss(animated: true, completion: nil)
-                        let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "LoginViewController")
-                        theViewController.modalPresentationStyle = .fullScreen
-                        self.present(theViewController, animated: true, completion: nil)
-                    }))
-                    self.present(alert, animated: true, completion: nil)
+                    let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "HowToUseViewController")
+                    self.navigationController!.pushViewController(theViewController, animated: true)
                     return
                 case 1:
                     let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "HelpVc")
                     self.navigationController!.pushViewController(theViewController, animated: true)
-                    return
-                case 2:
-                    let alert = UIAlertController(title: "Error", message: "You need to login to access this feature", preferredStyle: UIAlertController.Style.alert)
-                    alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.cancel, handler:{ (ACTION :UIAlertAction!)in
-                        self.dismiss(animated: true, completion: nil)
-                        
-                    }))
-                    alert.addAction(UIAlertAction(title: "Log In", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in
-                        self.dismiss(animated: true, completion: nil)
-                        let theViewController = self.storyboard!.instantiateViewController(withIdentifier: "LoginViewController")
-                        theViewController.modalPresentationStyle = .fullScreen
-                        self.present(theViewController, animated: true, completion: nil)
-                    }))
-                    self.present(alert, animated: true, completion: nil)
                     return
                 default:
                     return

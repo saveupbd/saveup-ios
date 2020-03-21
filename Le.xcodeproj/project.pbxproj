@@ -45,6 +45,9 @@
 		3B4C4CBA225B1ADF002DE4C1 /* AccountKitStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C4CB5225B1ADD002DE4C1 /* AccountKitStrings.bundle */; };
 		3B4C4CBB225B1ADF002DE4C1 /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4C4CB6225B1ADE002DE4C1 /* AccountKit.framework */; };
 		4E95EA3F241D5DD3008E0F68 /* HowToUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95EA3E241D5DD3008E0F68 /* HowToUseViewController.swift */; };
+		4EFCD1F5242684F800A67113 /* RedemptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F4242684F800A67113 /* RedemptionViewController.swift */; };
+		4EFCD1F72426851E00A67113 /* RedemptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F62426851E00A67113 /* RedemptionTableViewCell.swift */; };
+		4EFCD1FB2426900300A67113 /* RedemOptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1FA2426900300A67113 /* RedemOptionsViewController.swift */; };
 		8D21EA89236D509900B1D0A9 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D21EA88236D509900B1D0A9 /* MoreTableViewController.swift */; };
 		8D21EA8B236D527B00B1D0A9 /* MoreImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D21EA8A236D527B00B1D0A9 /* MoreImageTableViewCell.swift */; };
 		8D21EA8D236D63E900B1D0A9 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D21EA8C236D63E900B1D0A9 /* RootTabBarController.swift */; };
@@ -269,6 +272,9 @@
 		3B4C4CB5225B1ADD002DE4C1 /* AccountKitStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AccountKitStrings.bundle; sourceTree = "<group>"; };
 		3B4C4CB6225B1ADE002DE4C1 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
 		4E95EA3E241D5DD3008E0F68 /* HowToUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseViewController.swift; sourceTree = "<group>"; };
+		4EFCD1F4242684F800A67113 /* RedemptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedemptionViewController.swift; sourceTree = "<group>"; };
+		4EFCD1F62426851E00A67113 /* RedemptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedemptionTableViewCell.swift; sourceTree = "<group>"; };
+		4EFCD1FA2426900300A67113 /* RedemOptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedemOptionsViewController.swift; sourceTree = "<group>"; };
 		7FA25A77EFF903ADC57D0F00 /* Pods-Le.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Le.debug.xcconfig"; path = "Target Support Files/Pods-Le/Pods-Le.debug.xcconfig"; sourceTree = "<group>"; };
 		834CA0046748FE65EDF75C9F /* Pods_Le.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Le.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D21EA88236D509900B1D0A9 /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
@@ -999,6 +1005,9 @@
 				8DA80C50240AC57E008EFA46 /* TransactionTableViewCell.swift */,
 				8DA80C52240AC59E008EFA46 /* TransactionsViewController.swift */,
 				4E95EA3E241D5DD3008E0F68 /* HowToUseViewController.swift */,
+				4EFCD1F4242684F800A67113 /* RedemptionViewController.swift */,
+				4EFCD1F62426851E00A67113 /* RedemptionTableViewCell.swift */,
+				4EFCD1FA2426900300A67113 /* RedemOptionsViewController.swift */,
 			);
 			path = Le;
 			sourceTree = "<group>";
@@ -1318,6 +1327,7 @@
 				8D21EA8B236D527B00B1D0A9 /* MoreImageTableViewCell.swift in Sources */,
 				BED8B78A1ED012D700099114 /* DetailsViewController.swift in Sources */,
 				BE0CDAF41E785EDF003D0A9C /* Country.swift in Sources */,
+				4EFCD1F72426851E00A67113 /* RedemptionTableViewCell.swift in Sources */,
 				8DB4625723F7D6D00062AC19 /* FTopPicksCollectionViewCell.swift in Sources */,
 				8D4E1385237544CC0072B53E /* FirstTableViewController.swift in Sources */,
 				BED675AF1EB25154005F3D00 /* EditViewController.swift in Sources */,
@@ -1326,6 +1336,7 @@
 				BEBA97441E81906F001E0AC8 /* UIButton+YYWebImage.m in Sources */,
 				2F5EB98122420A2100A5CCFC /* UnRedeemedModel.swift in Sources */,
 				201421AB20D0F5A100FFB665 /* ImageView+Kingfisher.swift in Sources */,
+				4EFCD1F5242684F800A67113 /* RedemptionViewController.swift in Sources */,
 				BE6E5CCE1E996926008ACA92 /* ProductDetailsViewController.swift in Sources */,
 				BEE67A4E1EA4A27800EEE1D1 /* Review.swift in Sources */,
 				BEC833641EA6712400203F8E /* MyCartViewController.swift in Sources */,
@@ -1413,6 +1424,7 @@
 				BE0CDAFB1E7866CA003D0A9C /* City.swift in Sources */,
 				BEBA97451E81906F001E0AC8 /* UIImage+YYWebImage.m in Sources */,
 				8D70BEAE240441780061EC91 /* HBSegmentedControl.swift in Sources */,
+				4EFCD1FB2426900300A67113 /* RedemOptionsViewController.swift in Sources */,
 				8D6ADBF123B12F7E00AC3CB1 /* FDetailsRelatedArrayTableViewCell.swift in Sources */,
 				BED675B21EB26373005F3D00 /* PasswordViewController.swift in Sources */,
 				BEE5D07F1E9D4D4E009BFC40 /* SubModule.swift in Sources */,

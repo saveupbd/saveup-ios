@@ -467,6 +467,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                             DispatchQueue.main.async {
                                 self.otpMessage = parseJSON.object(forKey: "message") as? String
                                 //self.otpCode = parseJSON.object(forKey: "code") as? NSInteger
+                                print("srjCode is \(parseJSON.object(forKey: "code") as? NSInteger)")
                                 self.otpMerchantId = parseJSON.object(forKey: "merchant_id") as? NSInteger
                                 self.otpStoreId = parseJSON.object(forKey: "store_id") as? NSInteger
                                 let alert = UIAlertController(title: "OTP Code", message: self.otpMessage, preferredStyle: UIAlertController.Style.alert)
@@ -490,7 +491,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                                     if let textField = alert.textFields?.first{
                                         self.otpCode = Int(textField.text!)
                                     }
-                                    //print(self.otpCode)
+                                    print(self.otpCode)
                                     self.verifyOtp()
                                 }))
                                 

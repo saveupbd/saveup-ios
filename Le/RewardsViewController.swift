@@ -88,7 +88,7 @@ class RewardsViewController: UIViewController,UITableViewDelegate,UITableViewDat
     }
     
     @IBAction func btnRedeemPressed(_ sender: UIButton) {
-        let vc = self.storyboard?.instantiateViewController(withIdentifier: "StoresViewController" ) as! StoresViewController
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: "RedemptionViewController" ) as! RedemptionViewController
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
