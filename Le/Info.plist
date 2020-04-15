@@ -66,6 +66,8 @@
 	<string>$(PRODUCT_NAME) would like to access the camera to take or upload your profile picture.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>$(PRODUCT_NAME) would like to access your location to show you nearby merchant stores.</string>
+	<key>NSLocationAlwaysUsageDescription</key>
+	<string>$(PRODUCT_NAME) would like to access your location to show you nearby merchant stores.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>$(PRODUCT_NAME) would like to access your location to show you nearby merchant stores.</string>
 	<key>NSPhotoLibraryUsageDescription</key>

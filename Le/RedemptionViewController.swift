@@ -16,6 +16,7 @@ class RedemptionViewController: UIViewController,UITableViewDelegate,UITableView
     var remdemTableImgArray = [""]
     
     override func viewDidLoad() {
+        self.title = "Redeem Options"
         redempTableView.delegate = self
         redempTableView.dataSource = self
     }

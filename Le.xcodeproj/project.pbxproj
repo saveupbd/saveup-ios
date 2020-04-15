@@ -1586,7 +1586,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Le/PayPalMobile",
 				);
-				MARKETING_VERSION = 1.4.5;
+				MARKETING_VERSION = 1.4.6;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lc++",
@@ -1632,7 +1632,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Le/PayPalMobile",
 				);
-				MARKETING_VERSION = 1.4.5;
+				MARKETING_VERSION = 1.4.6;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lc++",
@@ -1643,7 +1643,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.saveup.app;
 				PRODUCT_NAME = SaveUp;
 				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = nSaveup_AppStore;
+				PROVISIONING_PROFILE_SPECIFIER = SaveUpAppStore;
 				SWIFT_OBJC_BRIDGING_HEADER = "Le/Le-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
