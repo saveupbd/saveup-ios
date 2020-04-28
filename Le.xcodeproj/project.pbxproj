@@ -44,6 +44,7 @@
 		2FF69C1F2237C595009A8577 /* PymentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF69C1E2237C595009A8577 /* PymentVC.swift */; };
 		3B4C4CBA225B1ADF002DE4C1 /* AccountKitStrings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3B4C4CB5225B1ADD002DE4C1 /* AccountKitStrings.bundle */; };
 		3B4C4CBB225B1ADF002DE4C1 /* AccountKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B4C4CB6225B1ADE002DE4C1 /* AccountKit.framework */; };
+		4E81F4A82450A7DF006F4821 /* FDetailsVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E81F4A72450A7DF006F4821 /* FDetailsVideoTableViewCell.swift */; };
 		4E95EA3F241D5DD3008E0F68 /* HowToUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E95EA3E241D5DD3008E0F68 /* HowToUseViewController.swift */; };
 		4EFCD1F5242684F800A67113 /* RedemptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F4242684F800A67113 /* RedemptionViewController.swift */; };
 		4EFCD1F72426851E00A67113 /* RedemptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EFCD1F62426851E00A67113 /* RedemptionTableViewCell.swift */; };
@@ -271,6 +272,7 @@
 		2FF69C1E2237C595009A8577 /* PymentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PymentVC.swift; sourceTree = "<group>"; };
 		3B4C4CB5225B1ADD002DE4C1 /* AccountKitStrings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AccountKitStrings.bundle; sourceTree = "<group>"; };
 		3B4C4CB6225B1ADE002DE4C1 /* AccountKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AccountKit.framework; sourceTree = "<group>"; };
+		4E81F4A72450A7DF006F4821 /* FDetailsVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FDetailsVideoTableViewCell.swift; sourceTree = "<group>"; };
 		4E95EA3E241D5DD3008E0F68 /* HowToUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToUseViewController.swift; sourceTree = "<group>"; };
 		4EFCD1F4242684F800A67113 /* RedemptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedemptionViewController.swift; sourceTree = "<group>"; };
 		4EFCD1F62426851E00A67113 /* RedemptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedemptionTableViewCell.swift; sourceTree = "<group>"; };
@@ -552,6 +554,7 @@
 				8DBAD36823ADFC5100E188E6 /* FDetailsProductNamePriceTableViewCell.swift */,
 				8DBAD36A23ADFC6A00E188E6 /* FDetailsProductDescriptionTableViewCell.swift */,
 				8D6ADBF023B12F7E00AC3CB1 /* FDetailsRelatedArrayTableViewCell.swift */,
+				4E81F4A72450A7DF006F4821 /* FDetailsVideoTableViewCell.swift */,
 			);
 			name = DetailsPage;
 			sourceTree = "<group>";
@@ -1417,6 +1420,7 @@
 				BEDCC4821EA7D571003BDBF8 /* DealDetailsViewController.swift in Sources */,
 				201421A620D0F5A100FFB665 /* ImageTransition.swift in Sources */,
 				BEF87FD11E7B01F600FEF117 /* DealsHome.swift in Sources */,
+				4E81F4A82450A7DF006F4821 /* FDetailsVideoTableViewCell.swift in Sources */,
 				BEB734491E9A3A33006B3ACD /* ColorCell.swift in Sources */,
 				BE0C53FC1EBA5C50007BAE57 /* NearmeViewController.swift in Sources */,
 				BEC833661EA673DF00203F8E /* MyCart.swift in Sources */,

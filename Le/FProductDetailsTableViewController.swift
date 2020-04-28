@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import AVKit
 class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,RelatedCollectionCellDelegate,DetailsImagesTableViewCellDelegate {
 
     @IBOutlet weak var btnWishList: UIButton!
@@ -16,6 +16,8 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
     //@IBOutlet weak var imagesTable : UITableView?
     var productImage : UIImageView?
     var producttitleText = ""
+    var productUrl = ""
+    var videoUrl = ""
     var productpriceText = ""
     var productdiscountpriceText = ""
     var productpercentageText = ""
@@ -58,7 +60,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
     var storeName: UILabel?
     var storeAddress: UILabel?
     var storeImage: UIImage?
-    
+    var storePhoneNumber = ""
     var storeNameText = ""
     var storeAddressText = ""
     
@@ -230,9 +232,9 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         
-        let textToShare = "Check out this awsome deal from SaveUp"
+        let textToShare = "Check out this awsome deal from SaveUp - \(self.productUrl)"
         
-        if let myWebsite = URL(string: "http://itunes.apple.com/app/idXXXXXXXXX") {//Enter link to your app here
+        if let myWebsite = URL(string: self.productUrl) {//Enter link to your app here
             let objectsToShare = [textToShare, myWebsite, image ?? #imageLiteral(resourceName: "app-logo")] as [Any]
             let activityVC = UIActivityViewController(activityItems: objectsToShare, applicationActivities: nil)
             
@@ -271,6 +273,9 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             return 410
         }
         if indexPath.row == 0{
+            return 310
+        }
+        if indexPath.row == 9{
             return 310
         }
         return UITableView.automaticDimension
@@ -548,7 +553,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                 }else{
                     //self.addcartApi()
                     
-                    let alert = UIAlertController(title: "Payment", message: "Please enter amount to pay", preferredStyle: UIAlertController.Style.alert)
+                    let alert = UIAlertController(title: "Get Discount", message: "Enter total amount to get discount:", preferredStyle: UIAlertController.Style.alert)
                     
                     alert.addTextField(configurationHandler: { (textField) in
                         //self.otpTextField = textField
@@ -771,7 +776,12 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 9
+        if self.videoUrl != ""{
+            return 10
+        }else{
+            return 9
+        }
+        
     }
     
 //    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -780,6 +790,19 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
 //        }
 //        return 200
 //    }
+    
+    @objc func accessoryButtonTapped(sender:UIButton) {
+        if let phoneURL = NSURL(string: ("tel://" + self.storePhoneNumber)) {
+            let alert = UIAlertController(title: ("Call " + self.storePhoneNumber + "?"), message: nil, preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "Call", style: .default, handler: { (action) in
+                UIApplication.shared.open(phoneURL as URL, options: [:], completionHandler: nil)
+            }))
+            
+            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+            
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.row {
@@ -821,6 +844,13 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             tableCell.detailTextLabel?.text = self.storeAddressText
             
             tableCell.imageView?.image = self.storeImage
+            
+            let saveButton = UIButton(type: .custom) as UIButton
+            saveButton.frame = CGRect(x: 0, y: 0, width: 30, height: 30)
+            saveButton.addTarget(self, action: #selector(accessoryButtonTapped(sender:)), for: .touchUpInside)
+            saveButton.setImage(UIImage(named: "call_ic"), for: .normal)
+            tableCell.accessoryView = saveButton as UIView
+
             tableCell.selectionStyle = .none
             return tableCell
         case 3://direction
@@ -867,12 +897,26 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             tableCell.relatedCollectionCellDelegate = self
             tableCell.selectionStyle = .none
             return tableCell
+            
+        case 9://video
+            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsVideoTableViewCell", for: indexPath) as! FDetailsVideoTableViewCell
+
+            if cameOne == 0{
+                if self.productUrl != ""{
+                    let videoUrl = URL(string: self.videoUrl)
+                    let req = URLRequest(url: videoUrl!)
+                    tableCell.videoWebView.load(req)
+                }
+                cameOne = 1
+            }
+            
+            return tableCell
         default:
             return UITableViewCell()
         }
         
     }
-    
+    var cameOne = 0
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath, selectedSection: Int) {
         let objProductDetails = self.storyboard?.instantiateViewController(withIdentifier: "FProductDetailsTableViewController") as! FProductDetailsTableViewController
         objProductDetails.category_name = "Latest Product"
@@ -1056,6 +1100,8 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                             }
                             
                             self.producttitleText = parseJSON.value(forKeyPath: "product_details.product_title") as! String
+                            self.productUrl = parseJSON.value(forKeyPath: "product_details.url") as! String
+                            self.videoUrl = parseJSON.value(forKeyPath: "product_details.video_url") as! String
                             self.productType = parseJSON.value(forKeyPath: "product_details.product_type") as! String
                             if self.productType == "all_item"{
                                 self.productOff = parseJSON.value(forKeyPath: "product_details.product_discount") as! NSInteger
@@ -1151,8 +1197,8 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                             let store_longitude  = parseJSON.value(forKeyPath: "product_details.store_details.store_longitude") as? Double
                             userDefaultStore.set(store_longitude, forKey: "longitude")
                             print(store_longitude)
-                            
-                            
+                            let tempNumber = parseJSON.value(forKeyPath: "product_details.store_details.store_phone") as! Int
+                            self.storePhoneNumber = String(tempNumber)
                             let name = parseJSON.value(forKeyPath: "product_details.day") as? Int
                             let date = Calendar.current.date(byAdding: .day, value: name!, to: Date())
                             let dateFormatter = DateFormatter()
@@ -1322,4 +1368,19 @@ extension String{
     var htmlToString: String {
         return htmlToAttributedString?.string ?? ""
     }
+    
+    func getCleanedURL() -> URL? {
+        guard self.isEmpty == false else {
+            return nil
+        }
+        if let url = URL(string: self) {
+            return url
+        } else {
+            if let urlEscapedString = self.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) , let escapedURL = URL(string: urlEscapedString){
+                return escapedURL
+            }
+        }
+        return nil
+    }
+    
 }

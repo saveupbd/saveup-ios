@@ -581,6 +581,13 @@ class StoreDetailsViewController: UIViewController, UITableViewDelegate, UITable
         return downloadedImage!
     }
     
+    func StringToURL(text: String) -> URL{
+        let url : NSString = text as NSString
+        let urlStr : NSString = url.addingPercentEscapes(using: String.Encoding.utf8.rawValue)! as NSString
+        let imageURL : URL = URL(string: urlStr as String)!
+        return imageURL
+    }
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if tableView == productTable {
@@ -756,17 +763,22 @@ class StoreDetailsViewController: UIViewController, UITableViewDelegate, UITable
         }
         else {
             
-            let cellIdentifier = "CustomCell"
+            let cellIdentifier = "branchesCell"
             let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CustomCell
             
             if storesArray[indexPath.row].store_img == "" {
-                cell.storeImage.image = UIImage(named: "no-image-icon")
+                cell.imageView?.image = UIImage(named: "no-image-icon")
             }
             else {
-                cell.storeImage.yy_imageURL = URL(string: storesArray[indexPath.row].store_img)
+                cell.imageView?.kf.setImage(with: (StringToURL(text: storesArray[indexPath.row].store_img)), placeholder: nil, options: nil, progressBlock: nil, completionHandler: { (image, error, cacheType, URL) in
+                    cell.imageView?.image = cell.imageView?.image?.resized(toWidth:cell.contentView.bounds.width/3.5, height: cell.contentView.bounds.height - 2.0)
+                    cell.setNeedsLayout()
+                })
+                
+                //cell.storeImage.yy_imageURL = URL(string: storesArray[indexPath.row].store_img)
             }
             
-            cell.storenameLabel.text = storesArray[indexPath.row].store_name
+            cell.textLabel?.text = storesArray[indexPath.row].store_name
             
 //            if storesArray[indexPath.row].deal_count == "0" {
 //
@@ -784,14 +796,14 @@ class StoreDetailsViewController: UIViewController, UITableViewDelegate, UITable
             if storesArray[indexPath.row].product_count == "0" {
                 
                 let productLabelString = NSMutableAttributedString(string: String(format:"Deals N/A"))
-                productLabelString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.darkGray, range: NSRange(location: 0, length: 5))
-                cell.productcountLabel.attributedText = productLabelString
+                productLabelString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 0, length: 5))
+                cell.detailTextLabel?.attributedText = productLabelString
             }
             else {
                 
                 let productLabelString = NSMutableAttributedString(string: String(format:"Deals %@", storesArray[indexPath.row].product_count))
-                productLabelString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.darkGray, range: NSRange(location: 0, length: 5))
-                cell.productcountLabel.attributedText = productLabelString
+                productLabelString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.black, range: NSRange(location: 0, length: 5))
+                cell.detailTextLabel?.attributedText = productLabelString
             }
             
             //cell.selectionStyle = UITableViewCell.SelectionStyle.none

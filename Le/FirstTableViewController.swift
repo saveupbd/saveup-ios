@@ -295,7 +295,7 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
         case 7:
             return CGFloat(self.popularArray.count * 104)
         default:
-            return 100
+            return 0
         }
     }
     
