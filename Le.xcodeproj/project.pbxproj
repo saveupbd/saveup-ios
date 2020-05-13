@@ -1590,7 +1590,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Le/PayPalMobile",
 				);
-				MARKETING_VERSION = 1.4.6;
+				MARKETING_VERSION = 1.4.7;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lc++",
@@ -1636,7 +1636,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Le/PayPalMobile",
 				);
-				MARKETING_VERSION = 1.4.6;
+				MARKETING_VERSION = 1.4.7;
 				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = (
 					"-lc++",

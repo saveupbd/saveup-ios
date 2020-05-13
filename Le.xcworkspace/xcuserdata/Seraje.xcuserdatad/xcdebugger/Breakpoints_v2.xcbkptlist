@@ -1,38 +1,118 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bucket
-   uuid = "9E6B8F28-744D-45A1-8CCB-7F5DFD1186BC"
+   uuid = "68696BBF-32AD-4E23-9FF4-F5F3C5D6FA5D"
    type = "0"
    version = "2.0">
    <Breakpoints>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A1143F97-9283-4DFE-A80D-88FEFFC46345"
-            shouldBeEnabled = "No"
+            uuid = "9391264E-2508-43FA-85A0-15F0622022A3"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Le/FProductDetailsTableViewController.swift"
+            filePath = "Le/RedemOptionsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "490"
-            endingLineNumber = "490"
-            landmarkName = "payNowPressed()"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "postRechargeInfo()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "8172C8FB-B10F-4FEE-8F25-62ACAA750EF4"
+            uuid = "3A9D63B2-7220-420E-8985-0A06E2B0456A"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Le/RewardsViewController.swift"
+            filePath = "Le/RedemOptionsViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "187"
-            endingLineNumber = "187"
-            landmarkName = "hitLoyalityApi()"
+            startingLineNumber = "142"
+            endingLineNumber = "142"
+            landmarkName = "postRechargeInfo()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "886C18F6-F09B-4AED-94F3-91A1E0354D75"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Le/ProductViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "161"
+            endingLineNumber = "161"
+            landmarkName = "productApiForSearch()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94C24310-3BE7-4C21-9E54-D4625479888D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Le/FProductDetailsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "377"
+            endingLineNumber = "377"
+            landmarkName = "verifyOtp()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "94C24310-3BE7-4C21-9E54-D4625479888D - 4caa0125bb9caf1e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SaveUp.FProductDetailsTableViewController.verifyOtp() -&gt; ()"
+                  moduleName = "SaveUp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Seraje/Desktop/Test/SaveUp_Old/Le/FProductDetailsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "377"
+                  endingLineNumber = "377"
+                  offsetFromSymbolStart = "228">
+               </Location>
+               <Location
+                  uuid = "94C24310-3BE7-4C21-9E54-D4625479888D - e02c6512a84809ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SaveUp.FProductDetailsTableViewController.verifyOtp() -&gt; ()"
+                  moduleName = "SaveUp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Seraje/Desktop/Test/SaveUp_Old/Le/FProductDetailsTableViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "379"
+                  endingLineNumber = "379"
+                  offsetFromSymbolStart = "328">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "14E34CAF-0E2C-426F-9A7B-043842F088C9"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Le/FProductDetailsTableViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "284"
+            endingLineNumber = "284"
+            landmarkName = "tableView(_:heightForRowAt:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

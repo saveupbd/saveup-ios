@@ -270,7 +270,31 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.row == 8{
-            return 410
+            print("rrr c is \(relatedArray.count)")
+            var temp_relatedArray = relatedArray.prefix(4)
+//            if relatedArray.count > 4{
+//                relatedArray.prefix(4)
+//            }
+            if temp_relatedArray.count == 0{
+                return 0
+            }
+            else if ((temp_relatedArray.count % 2)==0){//even
+                return CGFloat((temp_relatedArray.count/2) * 220)
+            }else{//odd
+                return CGFloat((temp_relatedArray.count) * 240)
+            }
+            
+//            if relatedArray.count >= 4{
+//                return CGFloat((relatedArray.prefix(4).count/2) * 220)
+//            }else{
+//                if ((relatedArray.count % 2)==0){//even
+//                    return CGFloat((relatedArray.count/2) * 220)
+//                }else{//odd
+//                    return CGFloat((relatedArray.count) * 220)
+//                }
+//
+//            }
+            
         }
         if indexPath.row == 0{
             return 310
@@ -415,6 +439,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
     var otpMerchantId:NSInteger?
     var otpStoreId:NSInteger?
     var otpAmount:NSInteger?
+    var otpQuantity:NSInteger?
     var otpTextField: UITextField?
     
     func payNowPressed() {
@@ -430,21 +455,40 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         let storeId = UserDefaults.standard.object(forKey: "store_id") as! String
         let finalStoreId = Int(storeId)
         
-        if self.otpAmount == nil{
-            var style = ToastStyle()
-            style.messageFont = messageFont!
-            style.messageColor = UIColor.white
-            style.messageAlignment = .center
-            style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
+        if self.productType == "all_item"{
+            if self.otpAmount == nil{
+                var style = ToastStyle()
+                style.messageFont = messageFont!
+                style.messageColor = UIColor.white
+                style.messageAlignment = .center
+                style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
+                
+                self.view.makeToast("Please insert right amount.", duration: 3.0, position: .center, style: style)
+                return
+            }
             
-            self.view.makeToast("Please insert right amount.", duration: 3.0, position: .center, style: style)
-            return
-        }
-        
-        if let tempUserID = UserDefaults.standard.object(forKey: "UserID"){
-            postString = "amount=\(self.otpAmount!)&user_id=\(tempUserID)&store_id=\(finalStoreId!)&product_id=\(product_id!)"
+            if let tempUserID = UserDefaults.standard.object(forKey: "UserID"){
+                postString = "amount=\(self.otpAmount!)&user_id=\(tempUserID)&store_id=\(finalStoreId!)&product_id=\(product_id!)"
+            }else{
+                postString = "product_id=\(product_id!)&amount=\(product_size_id!)&merchantId=\(product_color_id!)"
+            }
         }else{
-            postString = "product_id=\(product_id!)&amount=\(product_size_id!)&merchantId=\(product_color_id!)"
+            if self.otpQuantity == nil{
+                var style = ToastStyle()
+                style.messageFont = messageFont!
+                style.messageColor = UIColor.white
+                style.messageAlignment = .center
+                style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
+                
+                self.view.makeToast("Please insert right quantity.", duration: 3.0, position: .center, style: style)
+                return
+            }
+            
+            if let tempUserID = UserDefaults.standard.object(forKey: "UserID"){
+                postString = "quantity=\(self.otpQuantity!)&user_id=\(tempUserID)&store_id=\(finalStoreId!)&product_id=\(product_id!)"//shanto vai amount must be int
+            }else{
+                postString = "product_id=\(product_id!)&quantity=\(product_size_id!)&merchantId=\(product_color_id!)"
+            }
         }
         
         request.httpBody = postString.data(using: String.Encoding.utf8);
@@ -552,27 +596,50 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                     return
                 }else{
                     //self.addcartApi()
-                    
-                    let alert = UIAlertController(title: "Get Discount", message: "Enter total amount to get discount:", preferredStyle: UIAlertController.Style.alert)
-                    
-                    alert.addTextField(configurationHandler: { (textField) in
-                        //self.otpTextField = textField
-                        textField.placeholder = "Enter amount Here"
-                        textField.keyboardType = .decimalPad
+                    if self.productType != "all_item"{
+                        let alert = UIAlertController(title: "Pay Now", message: "Enter Quantity of item:", preferredStyle: UIAlertController.Style.alert)
                         
-                    })
-                    
-                    alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.cancel, handler:{ (ACTION :UIAlertAction!)in
-                        self.dismiss(animated: true, completion: nil)
+                        alert.addTextField(configurationHandler: { (textField) in
+                            //self.otpTextField = textField
+                            textField.placeholder = "Enter Quantity Here"
+                            textField.keyboardType = .numberPad
+                            
+                        })
                         
-                    }))
-                    alert.addAction(UIAlertAction(title: "Proceed", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in
-                        if let textField = alert.textFields?.first{
-                            self.otpAmount = Int(textField.text!)
-                        }
-                        self.payNowPressed()
-                    }))
-                    self.present(alert, animated: true, completion: nil)
+                        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.cancel, handler:{ (ACTION :UIAlertAction!)in
+                            self.dismiss(animated: true, completion: nil)
+                            
+                        }))
+                        alert.addAction(UIAlertAction(title: "Proceed", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in
+                            if let textField = alert.textFields?.first{
+                                self.otpQuantity = Int(textField.text!)
+                            }
+                            self.payNowPressed()
+                        }))
+                        self.present(alert, animated: true, completion: nil)
+                    }else{
+                        let alert = UIAlertController(title: "Get Discount", message: "Enter total amount to get discount:", preferredStyle: UIAlertController.Style.alert)
+                        
+                        alert.addTextField(configurationHandler: { (textField) in
+                            //self.otpTextField = textField
+                            textField.placeholder = "Enter amount Here"
+                            textField.keyboardType = .decimalPad
+                            
+                        })
+                        
+                        alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.cancel, handler:{ (ACTION :UIAlertAction!)in
+                            self.dismiss(animated: true, completion: nil)
+                            
+                        }))
+                        alert.addAction(UIAlertAction(title: "Proceed", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in
+                            if let textField = alert.textFields?.first{
+                                self.otpAmount = Int(textField.text!)
+                            }
+                            self.payNowPressed()
+                        }))
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                    
                 }
             }
         }else {
@@ -831,9 +898,11 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                 attributeString.addAttribute(NSAttributedString.Key.strikethroughStyle, value: 2, range: NSMakeRange(0, attributeString.length))
                 tableCell.proMiddleLable.attributedText = attributeString
                 tableCell.proRightLabel.text = self.productpercentageText
+                self.btnAddToCart.setTitle("Get Discount", for: .normal)
             }else{
                 tableCell.proMiddleLable.text = String(self.productOff) + "% Off"
                 tableCell.proMiddleLable.textColor = UIColor(named: "appThemeColor")
+                self.btnAddToCart.setTitle("Pay Now", for: .normal)
             }
             
             tableCell.selectionStyle = .none
