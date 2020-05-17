@@ -19,6 +19,17 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
     
     @IBOutlet weak var masterSearchBar: UISearchBar!
     let reachability = Reachability()!
+    
+//    let MAX_VALUE:CGFloat = 50
+//    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+//        var scrollViewOffset = scrollView.contentOffset
+//        if scrollViewOffset.x > MAX_VALUE {
+//            scrollViewOffset.x = MAX_VALUE
+//        }
+//        scrollView.contentOffset = scrollViewOffset
+//    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.masterSearchBar.delegate = self
@@ -242,7 +253,7 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
                 }
                 
                 tableCell.imageView?.kf.setImage(with: (StringToURL(text: fiftyPercentArray[indexPath.row].product_image)))
-                tableCell.imageView?.image = tableCell.imageView?.image?.resized(toWidth:tableCell.contentView.bounds.width/3, height: tableCell.contentView.bounds.height - 2.0)
+                tableCell.imageView?.image = tableCell.imageView?.image?.resizeWithQuality(toWidth:tableCell.contentView.bounds.width/3, height: tableCell.contentView.bounds.height - 2.0)
             }else{
                 tableCell.textLabel?.text = "No items available currently"
                 tableCell.textLabel?.textAlignment = .center
@@ -289,7 +300,7 @@ class FirstTableViewController: UITableViewController,LatestCollectionCellDelega
         case 2,4,6:
             return 25
         case 5:
-            return CGFloat(self.fiftyPercentArray.count * 25)
+            return CGFloat(self.fiftyPercentArray.count * 20)
         case 3:
             return CGFloat(self.topOffersArray.count * 104)
         case 7:
@@ -622,6 +633,13 @@ extension UIImage {
         defer { UIGraphicsEndImageContext() }
         draw(in: CGRect(origin: .zero, size: canvasSize))
         return UIGraphicsGetImageFromCurrentImageContext()
+    }
+    
+    func resizeWithQuality(toWidth width: CGFloat,height:CGFloat) -> UIImage {
+        let canvasSize = CGSize(width: width, height: height)
+        return UIGraphicsImageRenderer(size:canvasSize).image { _ in
+            self.draw(in: CGRect(origin: .zero, size: canvasSize))
+        }
     }
 }
 

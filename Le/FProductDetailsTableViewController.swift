@@ -272,11 +272,13 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
         if indexPath.row == 8{
             print("rrr c is \(relatedArray.count)")
             var temp_relatedArray = relatedArray.prefix(4)
-//            if relatedArray.count > 4{
-//                relatedArray.prefix(4)
-//            }
+            //            if relatedArray.count > 4{
+            //                relatedArray.prefix(4)
+            //            }
             if temp_relatedArray.count == 0{
                 return 0
+            }else if (temp_relatedArray.count==2){//2
+                return 240
             }
             else if ((temp_relatedArray.count % 2)==0){//even
                 return CGFloat((temp_relatedArray.count/2) * 220)
@@ -284,25 +286,25 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                 return CGFloat((temp_relatedArray.count) * 240)
             }
             
-//            if relatedArray.count >= 4{
-//                return CGFloat((relatedArray.prefix(4).count/2) * 220)
-//            }else{
-//                if ((relatedArray.count % 2)==0){//even
-//                    return CGFloat((relatedArray.count/2) * 220)
-//                }else{//odd
-//                    return CGFloat((relatedArray.count) * 220)
-//                }
-//
-//            }
             
         }
         if indexPath.row == 0{
             return 310
         }
         if indexPath.row == 9{
-            return 310
+            if self.reviewArray.count == 0{
+                return 310
+            }else{
+                return 210
+            }
+            
+        }
+        if indexPath.row == 10{
+            return 210
         }
         return UITableView.automaticDimension
+        
+        
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -421,6 +423,35 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                             style.backgroundColor = UIColor(red: 28.0/255.0, green:161.0/255.0, blue: 222.0/255.0, alpha: 1.0)
                             
                             self.view.makeToast(parseJSON.object(forKey: "message") as! String, duration: 3.0, position: .center, style: style)
+                            
+
+                            let alert = UIAlertController(title: "Incorrect OTP Code.", message: self.otpMessage, preferredStyle: UIAlertController.Style.alert)
+                            
+                            alert.addTextField(configurationHandler: { (textField) in
+                                //self.otpTextField = textField
+                                textField.placeholder = "Please enter OTP Code again"
+                                textField.keyboardType = .numberPad
+                                if #available(iOS 12.0, *) {
+                                    textField.textContentType = .oneTimeCode
+                                } else {
+                                    // Fallback on earlier versions
+                                }
+                            })
+                            
+                            alert.addAction(UIAlertAction(title: "Dismiss", style: UIAlertAction.Style.cancel, handler:{ (ACTION :UIAlertAction!)in
+                                self.dismiss(animated: true, completion: nil)
+                                
+                            }))
+                            alert.addAction(UIAlertAction(title: "Proceed", style: UIAlertAction.Style.default, handler:{ (ACTION :UIAlertAction!)in
+                                if let textField = alert.textFields?.first{
+                                    self.otpCode = Int(textField.text!)
+                                }
+                                print(self.otpCode)
+                                self.verifyOtp()
+                            }))
+                            
+                            
+                            self.present(alert, animated: true, completion: nil)
                         }
                     }
                 }
@@ -597,7 +628,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                 }else{
                     //self.addcartApi()
                     if self.productType != "all_item"{
-                        let alert = UIAlertController(title: "Pay Now", message: "Enter Quantity of item:", preferredStyle: UIAlertController.Style.alert)
+                        let alert = UIAlertController(title: "Get Discount", message: "Enter Quantity of item:", preferredStyle: UIAlertController.Style.alert)
                         
                         alert.addTextField(configurationHandler: { (textField) in
                             //self.otpTextField = textField
@@ -618,7 +649,7 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                         }))
                         self.present(alert, animated: true, completion: nil)
                     }else{
-                        let alert = UIAlertController(title: "Get Discount", message: "Enter total amount to get discount:", preferredStyle: UIAlertController.Style.alert)
+                        let alert = UIAlertController(title: "Pay Now", message: "Enter total amount to get discount:", preferredStyle: UIAlertController.Style.alert)
                         
                         alert.addTextField(configurationHandler: { (textField) in
                             //self.otpTextField = textField
@@ -843,11 +874,33 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if self.videoUrl != ""{
+        
+        if self.videoUrl != "" && reviewArray.count != 0{
+            return 11
+        }else if self.videoUrl != ""{
+            return 10
+        }else if reviewArray.count != 0{
             return 10
         }else{
             return 9
         }
+//
+//        if self.videoUrl != ""{
+//            if reviewArray.count != 0{
+//                return 11
+//            }
+//            return 10
+//        }
+//        else if reviewArray.count != 0{
+//            if self.videoUrl != ""{
+//                return 11
+//            }
+//            return 10
+//        }
+//        else{
+//            return 9
+//        }
+//
         
     }
     
@@ -952,14 +1005,14 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             tableCell.proDescriptionDetailsTextView.attributedText = redemptionText.htmlToAttributedString
             tableCell.selectionStyle = .none
             return tableCell
-//        case 8://redeem offer time
-//            let tableCell = tableView.dequeueReusableCell(withIdentifier: "simpleCell", for: indexPath)
-//            tableCell.textLabel?.numberOfLines = 2
-//            tableCell.textLabel?.text = redeemOfferText
-//            tableCell.imageView?.image = UIImage(named: "redeem")
-//            tableCell.selectionStyle = .none
-//            return tableCell
-        
+            //        case 8://redeem offer time
+            //            let tableCell = tableView.dequeueReusableCell(withIdentifier: "simpleCell", for: indexPath)
+            //            tableCell.textLabel?.numberOfLines = 2
+            //            tableCell.textLabel?.text = redeemOfferText
+            //            tableCell.imageView?.image = UIImage(named: "redeem")
+            //            tableCell.selectionStyle = .none
+            //            return tableCell
+            
         case 8://related
             let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsRelatedArrayTableViewCell", for: indexPath) as! FDetailsRelatedArrayTableViewCell
             tableCell.product_id = self.product_id
@@ -968,16 +1021,45 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
             return tableCell
             
         case 9://video
-            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsVideoTableViewCell", for: indexPath) as! FDetailsVideoTableViewCell
-
-            if cameOne == 0{
-                if self.productUrl != ""{
-                    let videoUrl = URL(string: self.videoUrl)
-                    let req = URLRequest(url: videoUrl!)
-                    tableCell.videoWebView.load(req)
+            if self.reviewArray.count == 0{
+                let tableCell = tableView.dequeueReusableCell(withIdentifier: "FDetailsVideoTableViewCell", for: indexPath) as! FDetailsVideoTableViewCell
+                
+                if cameOne == 0{
+                    if self.productUrl != ""{
+                        let videoUrl = URL(string: self.videoUrl)
+                        let req = URLRequest(url: videoUrl!)
+                        tableCell.videoWebView.load(req)
+                    }
+                    cameOne = 1
                 }
-                cameOne = 1
+                
+                return tableCell
+            }else{
+                let tableCell = tableView.dequeueReusableCell(withIdentifier: "FParentReviewTableViewCell", for: indexPath) as! FParentReviewTableViewCell
+                //
+                //            if cameOne == 0{
+                //                if self.productUrl != ""{
+                //                    let videoUrl = URL(string: self.videoUrl)
+                //                    let req = URLRequest(url: videoUrl!)
+                //                    tableCell.videoWebView.load(req)
+                //                }
+                //                cameOne = 1
+                //            }
+                            
+                            return tableCell
             }
+            
+        case 10://reviw
+            let tableCell = tableView.dequeueReusableCell(withIdentifier: "FParentReviewTableViewCell", for: indexPath) as! FParentReviewTableViewCell
+//
+//            if cameOne == 0{
+//                if self.productUrl != ""{
+//                    let videoUrl = URL(string: self.videoUrl)
+//                    let req = URLRequest(url: videoUrl!)
+//                    tableCell.videoWebView.load(req)
+//                }
+//                cameOne = 1
+//            }
             
             return tableCell
         default:
@@ -1288,6 +1370,17 @@ class FProductDetailsTableViewController: UIViewController,UITableViewDelegate,U
                             UserDefaults.standard.set("\(store_id!)", forKey: "store_id")
                             print("here is the store_id \(store_id!)")
                             
+                            
+                            if let reposArray = parseJSON.value(forKeyPath: "product_details.product_review") as? [NSDictionary] {
+                                // 5
+                                if reposArray.count != 0 {
+                                    
+                                    for item in reposArray {
+                                        self.reviewArray.append(Review(Review: item))
+                                    }
+                                    //self.tblReview.reloadData()
+                                }
+                            }
                             
                             if (parseJSON.value(forKeyPath: "product_details.store_details.merchant_img") as? String) != nil {
                                 let url = (parseJSON.value(forKeyPath: "product_details.store_details.merchant_img") as? String)

@@ -771,7 +771,7 @@ class StoreDetailsViewController: UIViewController, UITableViewDelegate, UITable
             }
             else {
                 cell.imageView?.kf.setImage(with: (StringToURL(text: storesArray[indexPath.row].store_img)), placeholder: nil, options: nil, progressBlock: nil, completionHandler: { (image, error, cacheType, URL) in
-                    cell.imageView?.image = cell.imageView?.image?.resized(toWidth:cell.contentView.bounds.width/3.5, height: cell.contentView.bounds.height - 2.0)
+                    cell.imageView?.image = cell.imageView?.image?.resizeWithQuality(toWidth:cell.contentView.bounds.width/3.5, height: cell.contentView.bounds.height - 2.0)
                     cell.setNeedsLayout()
                 })
                 

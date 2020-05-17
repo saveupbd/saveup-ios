@@ -8,10 +8,11 @@
 
 import UIKit
 
-class CategoryProductListViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout {
+class CategoryProductListViewController: UIViewController,UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,UISearchBarDelegate {
 
     @IBOutlet weak var catCollectionView: UICollectionView!
     @IBOutlet weak var upperSegment: UISegmentedControl!
+    @IBOutlet weak var catSearchBar: UISearchBar!
     
     @IBOutlet weak var subCatCollectionView: UICollectionView!
     var topOffersArray = [TopOffers]()
@@ -41,7 +42,7 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
         self.subCatCollectionView.delegate = self
         self.subCatCollectionView.dataSource = self
         
-        
+        self.catSearchBar.delegate = self
         //upperSegment.apportionsSegmentWidthsByContent = true
         print(parent_category_id!)
         print(parent_category_name!)
@@ -67,12 +68,54 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
             self.view.hideToastActivity()
             self.view.makeToastActivity(.center)
             
-            subcategoryApi()
+            subcategoryApi(withSearchText: "")
             //upperSegment.isHidden = false
             print()
         }
         else {
             showNetworkErrorAlert()
+        }
+    }
+    
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        searchBar.text = ""
+        self.view.endEditing(true)
+        self.catSearchBar.showsCancelButton = false
+        subcategoryApi(withSearchText: "")
+    }
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
+        self.catSearchBar.resignFirstResponder()
+    }
+    
+    func searchBarTextDidBeginEditing(_ searchBar: UISearchBar) {
+        self.catSearchBar.showsCancelButton = true
+    }
+    
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText.isEmpty {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                self.view.endEditing(true)
+                self.catSearchBar.showsCancelButton = false
+                self.subcategoryApi(withSearchText: "")
+            }
+        }
+    }
+    
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        if searchBar.text != "" {
+            subcategoryApi(withSearchText: searchBar.text!)
+//            let objProduct = self.storyboard?.instantiateViewController(withIdentifier: "ListViewController") as! ListViewController
+//            objProduct.main_category_id = ""
+//            objProduct.sec_category_id = ""
+//            objProduct.sub_category_id = ""
+//            objProduct.sub_sec_category_id = ""
+//            objProduct.category_name = searchBar.text
+//            objProduct.titleString = searchBar.text
+//            objProduct.screenString = ""
+//            self.navigationController?.pushViewController(objProduct, animated: true)
+        }else{
+            self.view.endEditing(true)
         }
     }
     
@@ -139,7 +182,7 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
             self.view.hideToastActivity()
             self.view.makeToastActivity(.center)
             
-            subcategoryApi()
+            subcategoryApi(withSearchText: "")
             //   subcategoryApiOne()
         }
         else {
@@ -262,7 +305,7 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
                 self.view.hideToastActivity()
                 self.view.makeToastActivity(.center)
                 
-                subcategoryApi()
+                subcategoryApi(withSearchText: "")
                 //   subcategoryApiOne()
             }
             else {
@@ -286,15 +329,23 @@ class CategoryProductListViewController: UIViewController,UICollectionViewDelega
         
     }
     
-    func subcategoryApi() {
+    func subcategoryApi(withSearchText:String) {//search_query
         
         let myUrl = URL(string: String(format:"%@api/product_list_by_category", Api_Base_URL));
         //print(myUrl!)
         
         var request = URLRequest(url:myUrl!)
         request.httpMethod = "POST";
+        var postString = "main_category_id=\(sec_category_id!)"
         
-        let postString = "main_category_id=\(sec_category_id!)"  //&main_category_id=\(sec_category_id!)//&sec_category_id=\(sec_category_id!)&lang=en
+        self.topOffersArray.removeAll()
+        if withSearchText != ""{
+            
+            postString = "main_category_id=\(sec_category_id!)&search_query=\(withSearchText)"
+        }else{
+            postString = "main_category_id=\(sec_category_id!)"
+        }
+          //&main_category_id=\(sec_category_id!)//&sec_category_id=\(sec_category_id!)&lang=en
         //print(postString)
         request.httpBody = postString.data(using: String.Encoding.utf8);
         let task = URLSession.shared.dataTask(with: request, completionHandler: {

@@ -166,7 +166,7 @@ class FWishListTableViewController: UITableViewController {
         cell.detailTextLabel!.numberOfLines = 0
         cell.detailTextLabel!.text = "\("৳" + mywishArray[indexPath.row].product_discount_price!)\n\(mywishArray[indexPath.row].product_discount_percentage + "% off")"
         cell.imageView?.kf.setImage(with: (StringToURL(text: mywishArray[indexPath.row].product_image)))
-        cell.imageView?.image = cell.imageView?.image?.resized(toWidth:cell.contentView.bounds.width/3, height: cell.contentView.bounds.height - 2.0)
+        cell.imageView?.image = cell.imageView?.image?.resizeWithQuality(toWidth:cell.contentView.bounds.width/3, height: cell.contentView.bounds.height - 2.0)
         
 //        if mywishArray[indexPath.row].product_image == "" {
 //            cell.imageView?.image = UIImage(named: "no-image-icon")
